@@ -1,0 +1,13 @@
+---
+layout: default
+title: blotter
+---
+{% for post in site.categories.blog %}
+	<h3>
+		<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+	</h3>
+	<p class="date">
+		<a href="{{ post.url }}" class="off">{{ post.date | date_to_string }}</a>
+	{{ post.content }}
+{% endfor %}
+

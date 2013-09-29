@@ -1,0 +1,382 @@
+P { 
+	padding:0px; 
+	margin:15px 15px 15px 15px;
+	max-width:800px;
+}
+P.ref { 
+	margin:15px 5px 15px 5px;
+}
+P.date { 
+	font-family: Optima; Helvetica; Arial;
+	font-size:12px; 	
+	margin:-12px 0px 0px 5px;	
+}
+P.comments { 
+	font-family: Optima; Helvetica; Arial;
+	font-size:12px; 	
+	margin:10px 0px -10px 5px;	
+}
+P.app {
+	margin:25px 15px 25px 15px;
+	text-align:center;
+}
+P.emph {
+	font-size:18px;
+	font-style:italic;
+	margin:15px 15px 15px 15px;
+}
+P.updated {
+	font-family: Optima; Helvetica; Arial;
+	font-weight:300;	
+	font-size:14px; 
+	margin:25px 0px 5px 5px;
+	text-align:center;	
+	max-width:100%;	
+}
+P.thin {
+	margin:5px 0px 0px 5px;
+}
+P.margin {
+	margin:15px 15px 15px 15px;
+	max-width:100%;
+}
+P.initial {
+	margin-top:25px;
+}
+
+b {
+	font-weight:600;
+}
+
+.small-font {
+	font-size:12px; 	
+}
+
+em {
+	font-style:normal;
+	font-weight:600;
+}
+
+a { color: #9A1A4D; text-decoration:none; }
+a img { border:0; }
+a:hover { text-decoration:underline; }
+
+canvas {
+	border: solid 2px #f0f0f0;
+	-webkit-border-radius:18px;
+	-moz-border-radius:18px;
+	border-radius:18px;	
+}
+canvas.offset {
+	float:right; 
+	margin:5px 0px 10px 30px;
+}
+canvas.center {   
+	display: block;   
+	margin-left: auto;   
+	margin-right: auto; 
+}
+
+img.center {   
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+img.fig { float:right; padding:18px 10px 10px 18px; }
+img.tile { 
+	float:right; 
+	margin:5px;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	border-radius:7px;
+}
+img.offset {
+	float:right; 
+	margin:5px 0px 10px 30px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;	
+}
+
+H1, H2, H3 {
+	font-family: Optima; Helvetica; Arial;
+	margin-left:5px;
+	margin-top:25px;	
+}
+
+H1 {
+	font-weight:300;
+}
+
+H2 {
+	font-size:22px; 
+	font-weight:300;
+}
+
+H3 {
+	font-size:16px; 	
+	font-weight:600;
+}
+
+H4 {
+	font-size:14px; 	
+	font-weight:600;
+}
+
+
+.off { color:inherit; }
+.highlight { color:#3283A0; }
+
+body {
+	min-width:100%;
+	max-width:100%;	
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-bottom:30px;	
+	text-align: left;
+	background-color:#f6f6f6;
+	color:#333333;	
+}
+
+#header { 
+	min-width:600px;
+	max-width:1000px;
+	margin-left: auto; 
+	margin-right: auto;
+	padding: 30px 30px 35px 30px; 
+	position:relative; 
+	font-family: Optima, Helvetica; Arial;	
+	font-weight: 300;
+}
+#header .title { 
+	left:0px;
+	top:25px;
+	font-size:34px; 
+	position:relative; 
+}
+#header .subtitle { 
+	position:absolute;
+	left:20px;
+	top:17px;
+	font-size:21px; 
+}
+#header .mainnav { 
+	position:absolute;
+	right:30px;
+	top:45px;
+	font-size:21px; 
+}
+#header .icons {
+	position:absolute;
+	right:30px;
+	top:17px;
+	font-size:14px; 
+	font-weight: 400;	
+}
+
+#text { 
+	min-width:600px;
+	max-width:1000px;
+	margin-left: auto; 
+	margin-right: auto;
+	padding: 5px 30px 12px 30px;
+	font-size:14px;
+	line-height:23px; 	
+	font-family: georgia; serif;
+	font-weight:300;
+}
+
+#banner {
+	min-width:100%;
+	max-width:100%;
+	background-color: white;
+	border-top-style:solid;
+	border-top-width:2px;
+	border-top-color:#f0f0f0;
+	border-bottom-style:solid;
+	border-bottom-width:2px;	
+	border-bottom-color:#ededed;	
+}
+
+#text .thebibliography {
+	font-size:13px;
+	line-height:18px; 		
+}
+
+#text .figure {
+	font-size:13px;
+	line-height:18px; 	
+	padding: 10px 30px 10px 30px; 
+	position:relative; 
+	width:95%;
+	border: 0;
+}
+
+#text .id {
+	font-weight:600;
+}
+
+#text .cmbx-10x-x-109 {
+	font-weight:600;
+}
+
+#text .cmbx-10 {
+	font-weight:600;
+}
+
+#text .cmmi-10x-x-109 {
+  font-style:italic;
+}
+
+#text .cmmi-10 {
+  font-style:italic;
+}
+
+.table { 
+	font-size:13px;
+	line-height:18px; 
+	float:right; 
+	padding:10px 30px 15px 30px; 
+}
+
+td.td11 {
+  padding:2px 15px 2px 15px;
+}
+
+img.math-display {
+	vertical-align:middle;
+}
+
+hr {
+  border: 0;                                                                     
+}
+
+.endfigure {
+  border: 0;
+}
+
+.item {
+  margin:5px;
+  float:left;
+  overflow:hidden;
+  position:relative;
+}
+
+/* Minimum 320 */
+.small {
+  width:320px;
+}
+
+/* Minimum 440 */
+.large {
+  width:1000px;
+}
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* Boastful CSS */
+#boastful {
+  margin:15px 10px 0px 10px;
+}
+.boastful {
+  display: inline;
+}
+.boastful img {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  border: 0;
+  border-radius: 4px; 
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.twitter-share-button{
+  margin: 3px;
+}
+.boastful .boastful_pointer{
+  position: absolute;
+  z-index: 999;
+  left: -9999px;
+  opacity: .7;
+  display: none;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent; 
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #000;
+  border-top: 0;
+}
+.boastful .boastful_tweet{
+  position: absolute;
+  z-index: 999;
+  left: -9999px;
+  background-color: #222;
+  opacity: .8;
+  padding: 5px;
+  width: 400px;
+  font-size: 11px;
+  text-shadow: 1px 1px 0 #000;
+  color: #eee;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+}
+.boastful .boastful_handle{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+code.has-jax {
+	background: inherit; 
+	border: inherit;
+	font-size:16px;
+	line-height:23px; 	
+	font-family: georgia; serif;
+	font-weight:300;
+}
