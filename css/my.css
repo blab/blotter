@@ -32,6 +32,13 @@ a.off {
 .sub {
 	font-size: 13px;
 	font-weight: 300;
+	/* JAF Facit */
+}
+
+.tag {
+	font-size: 14px;
+	font-weight: 300;	
+	/* Museo sans */
 }
 
 code.has-jax {
@@ -64,9 +71,7 @@ div.post img {
     word-wrap: break-word;
 }
 
-.glyphs {
+.glyphbox {
 	width: 120px;
-	font-size: 14px;
-	font-weight: 300;	
 	line-height: 28px; 	
 }
