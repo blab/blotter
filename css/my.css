@@ -26,7 +26,7 @@ a.off {
 }
 
 .sub {
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: 300;
 }
 
@@ -35,22 +35,19 @@ code.has-jax {
 	color: inherit;
 }
 
-img {
+div.post img {
 	float: right; 
 	margin: 0px 0px 10px 15px;
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;	
 /*	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;	 */
-  	/*box-shadow:inset rgba(0,0,0,.75) 0px 0px 10px;
-  	-moz-box-shadow:inset rgba(0,0,0,.75) 0px 0px 10px;
-  	-webkit-box-shadow:inset rgba(0,0,0,.75) 0px 0px 10px;*/
 }
 
-img .tile {
-	float: right; 
-	margin: 0px 0px 10px 15px;
-	height: auto;
-    max-width: 100px;
+.paperbox {
+    height:200px;
 }
 
 .postbox {
