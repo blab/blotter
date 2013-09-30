@@ -1,0 +1,44 @@
+p {
+	font-weight: 300;
+}
+
+.title { 
+	font-size: 75px; 
+	font-weight: 100;
+	top: 10px;
+	position: relative;	
+}
+.navtitle { 
+	font-size: 30px; 
+	position: relative;	
+	font-weight: 100;
+}
+.navbar-text {
+	right: 14px;
+	position: relative;	
+	font-size: 16px;
+	font-weight: 300;
+	line-height:16px; 	
+}
+
+a.off { 
+	color: inherit; 
+}
+
+.sub {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+code.has-jax {
+	background: inherit; 
+	color: inherit;
+}
+
+img {
+	float:right; 
+	margin:5px 0px 10px 30px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;	
+}
