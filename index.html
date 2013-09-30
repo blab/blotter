@@ -1,13 +1,22 @@
 ---
 layout: default
-title: blotter
+title: Bedford Lab research blotter
 ---
-{% for post in site.categories.blog %}
-	<h3>
-		<a href="{{ post.url }}" class="off">{{ post.title }}</a>
-	</h3>
-	<p class="date">
-		<a href="{{ post.url }}" class="off">{{ post.date | date_to_string }}</a>
-	{{ post.content }}
-{% endfor %}
 
+{% for post in site.categories.blog %}
+    {% cycle 'add rows': '<div class="row">', nil, nil %}
+		<div class="col-md-4">
+			<span class="postbox">
+			<h4>
+				<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+			<br>
+			<span class="sub">
+				<a href="{{ post.url }}" class="off">{{ post.date | date_to_string }}</a>
+			</span>
+			</h4>
+			{{ post.excerpt }}
+			</span>
+        </div>
+    {% cycle 'close rows': nil, nil, '</div>' %}
+{% endfor %}
+{% cycle 'close rows': nil, '</div>', '</div>' %}

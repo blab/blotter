@@ -14,7 +14,7 @@ p {
 	font-weight: 100;
 }
 .navbar-text {
-	right: 14px;
+	right: 12px;
 	position: relative;	
 	font-size: 16px;
 	font-weight: 300;
@@ -36,9 +36,27 @@ code.has-jax {
 }
 
 img {
-	float:right; 
-	margin:5px 0px 10px 30px;
-	-webkit-border-radius:10px;
+	float: right; 
+	margin: 0px 0px 10px 15px;
+/*	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
-	border-radius:10px;	
+	border-radius:10px;	 */
+  	/*box-shadow:inset rgba(0,0,0,.75) 0px 0px 10px;
+  	-moz-box-shadow:inset rgba(0,0,0,.75) 0px 0px 10px;
+  	-webkit-box-shadow:inset rgba(0,0,0,.75) 0px 0px 10px;*/
+}
+
+img .tile {
+	float: right; 
+	margin: 0px 0px 10px 15px;
+	height: auto;
+    max-width: 100px;
+}
+
+.postbox {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:block;
+    height:212px;
+    word-wrap: break-word;
 }

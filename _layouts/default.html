@@ -77,45 +77,6 @@
 </head>
 
 <body>
-
-<!--
-	<div id="header">
-		<span class="title"><a class="off" href="/">Trevor Bedford</a></span>
-		<span class="mainnav">
-			<a href="/blog/" class="off">blog</a>  
-			&nbsp;•&nbsp; 
-			<a href="/papers/" class="off">papers</a>  
-			&nbsp;•&nbsp; 
-			<a href="/projects.html" class="off">projects</a>
-		</span>
-		<span class="icons">
-			<a href="http://www.twitter.com/trvrb" class="off"><img src="/images/twitter.png"> twitter</a> &nbsp; 
-			<a href="http://github.com/trvrb" class="off"><img src="/images/github.png"> github</a> &nbsp; 			
-			<a type="application/rss+xml" href="/feed.xml" class="off"><img src="/images/feed.png"> RSS</a>  &nbsp; 
-			<a href="/bio.html" class="off"><img src="/favicon.gif"> me</a>
-		</span>		
-	</div>
-	
-	<div id="banner">
-	<div id="text">	
--->
-
-	
-	<!-- 
-	<div id="header">
-		<div class="row">
-			<div class="title col-md-6">blotter</div>
-			<div class="navtitle col-md-6">
-				<ul class="nav nav-tabs pull-right">
-					<li class="active"><a href="/blog/">blog</a></li>
-					<li><a href="/papers/">papers</a></li>
-					<li><a href="#">projects</a></li>
-					<li><a href="#">team</a></li>
-				</ul>
-			</div>	
-		</div>
-	</div>
-	-->
 	
 	<div id="header">
 		<nav class="navbar navbar-default navbar-static-top navbar-inverse" role="navigation">	 
@@ -139,16 +100,18 @@
 	{{ content }}
 	
 	</div>
-
-<!--
-	</div>
-	</div>
--->
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!--<script src="//code.jquery.com/jquery.js"></script>-->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/jquery.autoellipsis.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!--<script src="/js/bootstrap.min.js"></script>-->	
+    	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.postbox').ellipsis();
+		});	
+	</script>
 	
 </body>
 </html>
