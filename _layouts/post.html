@@ -2,9 +2,10 @@
 layout: default
 ---
 <h3>
-	<a href="{{ page.url }}" class="off">{{ page.title }}</a>
+	{{ page.title }}
+	<br>
+	<span class="sub">
+		{{ page.date | date_to_string }}
+	</span>
 </h3>
-<h4>
-	<a href="{{ page.url }}" class="off">{{ page.date | date_to_string }}</a>
-</h4>
 {{ content }}
