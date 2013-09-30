@@ -10,34 +10,37 @@ title: blotter [blog]
 		{% endif %}
 	{% endfor %}
 
+	<p class="spacer">
 	<div class="row">
 		<div class="col-md-1"></div>
 		<div class="col-md-10">
 			<div class="media">
-				<a class="pull-left" href="{{ author.url }}">
-					<img class="media-object" height="20" width="20" src="http://www.gravatar.com/avatar/{{ author.gravatar }}.png">
-				</a>
-				<div class="media-body">
+				<div class="media-object pull-left glyphs">
+					<a class="off" href="{{ author.url }}">
+						<span class="glyphicon glyphicon-user" style="font-size:18px;"></span>
+						{{ author.handle }}
+					</a>
+					<br>
+					<span class="glyphicon glyphicon-time" style="font-size:18px;"></span>
+					{{ post.date | date_to_string }}		
+					{% if post.link %}
+					<br>
+					<a class="off" href="{{ post.link }}">
+						<span class="glyphicon glyphicon-link" style="font-size:18px;"></span>
+						link
+					</a>					
+					{% endif %}
+				</div>
+				<div class="media-body post">
 					<h3 class="media-heading">
 						<a href="{{ post.url }}" class="off">{{ post.title }}</a>
-					<br>
-					<span class="sub">
-						<a href="{{ post.url }}" class="off">{{ post.date | date_to_string }}</a>
-					</span>
 					</h3>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-1"></div>
-	</div>
-	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			<div class="post">
-				{% if post.image %}
+					<p>					
+					{% if post.image %}
 					<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
-				{% endif %}
-				{{ post.content }}
+					{% endif %}
+					{{ post.content }}
+				</div>
 			</div>
 		</div>
 		<div class="col-md-1"></div>

@@ -2,6 +2,10 @@ p {
 	font-weight: 300;
 }
 
+p.spacer {
+	height: 10px;
+}
+
 .title { 
 	font-size: 75px; 
 	font-weight: 100;
@@ -60,7 +64,9 @@ div.post img {
     word-wrap: break-word;
 }
 
-img .avatar {
-	max-width: 20px;
-	height: auto;
+.glyphs {
+	width: 120px;
+	font-size: 14px;
+	font-weight: 300;	
+	line-height: 28px; 	
 }
