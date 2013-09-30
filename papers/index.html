@@ -1,0 +1,21 @@
+---
+layout: default
+title: blotter [papers]
+---
+<p>
+{% for paper in site.categories.papers %}
+    {% cycle 'add rows': '<div class="row">', nil, nil %}
+		<div class="col-md-4 paperbox">
+			<div class="media">
+  				<a class="pull-right" href="{{ paper.url }}">
+    				<img class="media-object" src="{{ paper.image }}">
+  				</a>
+ 			 	<div class="media-body">
+    				<h4 class="media-heading"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></h4>
+    				<p class="sub">{{ paper.shortcitation }}</p>
+  				</div>
+			</div>
+        </div>
+    {% cycle 'close rows': nil, nil, '</div>' %}
+{% endfor %}
+{% cycle 'close rows': nil, '</div>', '</div>' %}
