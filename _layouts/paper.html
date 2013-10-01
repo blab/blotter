@@ -37,9 +37,15 @@ layout: default
 			</div>
 			<div class="media-body">
 				<h2 class="media-heading">
-					<a href="{{ page.url }}" class="off">{{ page.title }}</a>
+					{{ page.title }}
 				</h2>
 				<p>
+				<h4>
+					{{ page.authors }}
+					{{ page.year }}.
+					{{ page.journal }}
+				</h4>
+				<p class="smallspacer">
 				<div class="post">					
 				{% if page.image %}
 				<a href="{{ page.url }}"><img class="offset" src="{{ page.image }}"></a>

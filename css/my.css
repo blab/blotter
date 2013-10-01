@@ -2,8 +2,16 @@ p {
 	font-weight: 300;
 }
 
+p.bigspacer {
+	height: 15px;
+}
+
 p.spacer {
 	height: 10px;
+}
+
+p.smallspacer {
+	height: 3px;
 }
 
 .title { 
