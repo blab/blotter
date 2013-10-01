@@ -2,12 +2,8 @@ p {
 	font-weight: 300;
 }
 
-p.bigspacer {
-	height: 15px;
-}
-
 p.spacer {
-	height: 10px;
+	height: 12px;
 }
 
 p.smallspacer {
@@ -19,6 +15,13 @@ p.smallspacer {
 	font-weight: 100;
 	top: 10px;
 	position: relative;	
+}
+.subtitle { 
+	font-size: 75px; 
+	font-weight: 100;
+	position: relative;	
+	top:-45px;
+	height:50px;
 }
 .navtitle { 
 	font-size: 30px; 
