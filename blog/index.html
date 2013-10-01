@@ -17,15 +17,15 @@ title: blotter [blog]
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">		
-				<h2>
+				<h2 style="line-height:30px;">
 					<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+					<div class="sub">
+						{{ post.date | date_to_string }}
+						{% if author %}
+						by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+						{% endif %}				
+					</div>				
 				</h2>
-				<p class="sub">
-					{{ post.date | date_to_string }}
-					{% if author %}
-					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-					{% endif %}				
-				</p>					
 				{% if post.image %}
 				<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
 				{% endif %}
