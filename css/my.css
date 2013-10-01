@@ -86,3 +86,7 @@ span.iconbox {
 	width: 25px; 
 	text-align:center;
 }
+
+#footer {
+	height: 80px;
+}
