@@ -2,57 +2,61 @@
 layout: default
 title: blotter [blog]
 ---
-{% for post in site.categories.blog %}
+{% for post in paginator.posts %}
 
-	{% for member in site.categories.team %}
-		{% if member.title == post.author %}
-  			{% assign author = member %}
-		{% endif %}
-	{% endfor %}
+	{% if post.categories.first == 'blog' %}
 
-	<p class="spacer">
-	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			<div class="media">
-				<div class="media-object pull-left glyphbox">
-					<a class="off" href="{{ author.url }}">		
+		{% for member in site.categories.team %}
+			{% if member.title == post.author %}
+				{% assign author = member %}
+			{% endif %}
+		{% endfor %}
+	
+		<p class="spacer">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="media">
+					<div class="media-object pull-left glyphbox">
+						<a class="off" href="{{ author.url }}">		
+							<span class="iconbox">
+								<img class="media-object" style="display:inline;" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=18.png">
+							</span>
+							{{ author.handle }}						
+						</a>
+						<br>
 						<span class="iconbox">
-							<img class="media-object" style="display:inline;" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=18.png">
+							<i class="icon-time icon-large"></i> 
 						</span>
-						{{ author.handle }}						
-					</a>
-					<br>
-					<span class="iconbox">
-						<i class="icon-time icon-large"></i> 
-					</span>
-					{{ post.date | date_to_string }}		
-					{% if post.link %}
-					<br>
-					<a class="off" href="{{ post.link }}">
-						<span class="iconbox">
-							<i class="icon-circle-arrow-right icon-large"></i> 
-						</span>
-						link
-					</a>					
-					{% endif %}
-				</div>
-				<div class="media-body">
-					<div class="post">
-						<h3 class="media-heading">
-							<a href="{{ post.url }}" class="off">{{ post.title }}</a>
-						</h3>
-						<p>					
-						{% if post.image %}
-						<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
+						{{ post.date | date_to_string }}		
+						{% if post.link %}
+						<br>
+						<a class="off" href="{{ post.link }}">
+							<span class="iconbox">
+								<i class="icon-circle-arrow-right icon-large"></i> 
+							</span>
+							link
+						</a>					
 						{% endif %}
-						{{ post.content }}
+					</div>
+					<div class="media-body">
+						<div class="post">
+							<h3 class="media-heading">
+								<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+							</h3>
+							<p>					
+							{% if post.image %}
+							<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
+							{% endif %}
+							{{ post.content }}
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="col-md-1"></div>
 		</div>
-		<div class="col-md-1"></div>
-	</div>
+
+	{% endif %}
 
 {% endfor %}
 
