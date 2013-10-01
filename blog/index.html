@@ -13,50 +13,27 @@ title: blotter [blog]
 			{% endif %}
 		{% endfor %}
 	
-		<p class="spacer">
+		<p class="spacer">	
 		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-9">
-				<div class="media">
-					<div class="media-object pull-left glyphbox">
-						<a class="off" href="{{ author.url }}">		
-							<span class="iconbox">
-								<img class="media-object" style="display:inline;" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=18.png">
-							</span>
-							{{ author.handle }}						
-						</a>
-						<br>
-						<span class="iconbox">
-							<i class="icon-time icon-large"></i> 
-						</span>
-						{{ post.date | date_to_string }}		
-						{% if post.link %}
-						<br>
-						<a class="off" href="{{ post.link }}">
-							<span class="iconbox">
-								<i class="icon-circle-arrow-right icon-large"></i> 
-							</span>
-							link
-						</a>					
-						{% endif %}
-					</div>
-					<div class="media-body">
-						<div class="post">
-							<h3 class="media-heading">
-								<a href="{{ post.url }}" class="off">{{ post.title }}</a>
-							</h3>
-							<p>					
-							{% if post.image %}
-							<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
-							{% endif %}
-							{{ post.content }}
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="col-md-2"></div>
-		</div>
-
+			<div class="col-md-8">		
+				<h2>
+					<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+				</h2>
+				<p class="sub">
+					{{ post.date | date_to_string }}
+					{% if author %}
+					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+					{% endif %}				
+				</p>					
+				{% if post.image %}
+				<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
+				{% endif %}
+				{{ post.content }}				
+			</div>			
+			<div class="col-md-2"></div>
+		</div>		
+		
 	{% endif %}
 
 {% endfor %}

@@ -80,8 +80,8 @@ img.offset {
 }
 
 .glyphbox {
-	width: 120px;
-	line-height: 28px; 	
+	line-height: 28px; 
+	display: block;
 }
 
 span.iconbox {
