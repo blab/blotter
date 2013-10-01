@@ -29,7 +29,9 @@ title: blotter [blog]
 				{% if post.image %}
 				<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
 				{% endif %}
-				{{ post.content }}				
+				<div class="post">
+					{{ post.content }}
+				</div>
 			</div>			
 			<div class="col-md-2"></div>
 		</div>		
