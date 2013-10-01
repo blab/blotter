@@ -3,13 +3,6 @@ layout: default
 title: blotter [blog]
 ---
 
-<div class="row">
-	<div class="col-md-2 subtitle">
-	blog
-	</div>
-	<div class="col-md-10"></div>
-</div>
-
 {% for post in site.categories.blog %}
 
 	<!-- {% if post.categories.first == 'blog' %} -->
@@ -23,7 +16,7 @@ title: blotter [blog]
 		<p class="spacer">
 		<div class="row">
 			<div class="col-md-1"></div>
-			<div class="col-md-10">
+			<div class="col-md-9">
 				<div class="media">
 					<div class="media-object pull-left glyphbox">
 						<a class="off" href="{{ author.url }}">		
@@ -61,7 +54,7 @@ title: blotter [blog]
 					</div>
 				</div>
 			</div>
-			<div class="col-md-1"></div>
+			<div class="col-md-2"></div>
 		</div>
 
 	{% endif %}
