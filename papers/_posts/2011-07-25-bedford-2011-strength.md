@@ -1,18 +1,12 @@
 ---
 layout: paper
 title: Strength and tempo of selection revealed in viral gene genealogies
-image: images/strength-and-tempo.png
-citation: "Bedford T, Cobey S, Pascual M. 2011. Strength and tempo of selection revealed in viral gene genealogies. BMC Evol Biol 11: 220."
-shortcitation: "Bedford et al. 2011. BMC Evol Biol 11: 220."
-authors:
- - Trevor Bedford
- - Sarah Cobey
- - Mercedes Pascual 
-links:
- - name: HTML
-   url: tree_topology/
- - name: PDF
-   url: pdfs/bedford-tree-topology-2011.pdf
+image: images/bedford-2011-strength.png
+authors: Bedford T, Cobey S, Pascual M.
+year: 2011
+ref: Bedford et al. 2011.
+journal: "BMC Evol Biol 11: 220."
+pdf: pdfs/bedford-2011-strength.pdf
 ---
 
 Abstract: 

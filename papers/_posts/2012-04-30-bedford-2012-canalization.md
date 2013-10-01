@@ -1,20 +1,14 @@
 ---
 layout: paper
 title: Canalization of the evolutionary trajectory of the human influenza virus
-image: images/canalization.png
-citation: "Bedford T, Rambaut A, Pascual M. 2012. Canalization of the evolutionary trajectory of the human influenza virus. BMC Biol 10: 38."
-shortcitation: "Bedford et al. 2012. BMC Biol 10: 38."
-authors:
- - Trevor Bedford
- - Andrew Rambaut
- - Mercedes Pascual 
-links:
- - name: HTML
-   url: canalization/index.html
- - name: PDF
-   url: pdfs/bedford-canalization-2012.pdf
- - name: GitHub
-   url: http://github.com/trvrb/canalization
+image: images/bedford-2012-canalization.png
+authors: Bedford T, Rambaut A, Pascual M.
+year: 2012
+ref: Bedford et al. 2012.
+journal: "BMC Biol 10: 38."
+pdf: pdfs/bedford-2012-canalization.pdf
+supplement: pdfs/bedford-canalization-2012-supp.pdf
+github: http://github.com/trvrb/canalization
 ---
 
 Abstract: 
