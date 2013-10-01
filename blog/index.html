@@ -2,9 +2,9 @@
 layout: default
 title: blotter [blog]
 ---
-{% for post in paginator.posts %}
+{% for post in site.categories.blog %}
 
-	{% if post.categories.first == 'blog' %}
+	<!-- {% if post.categories.first == 'blog' %} -->
 
 		{% for member in site.categories.team %}
 			{% if member.title == post.author %}
