@@ -8,64 +8,44 @@ layout: default
 	<div class="col-md-10">
 		<div class="media">
 			<div class="media-object pull-left glyphbox">
-				<a class="off" href="{{ author.url }}">
-					<span class="glyphicon glyphicon-user" style="font-size:18px;"></span>
-					{{ author.handle }}
-				</a>
-				<br>
-				<span class="glyphicon glyphicon-time" style="font-size:18px;"></span>
-				{{ page.date | date_to_string }}		
-				{% if page.link %}
-				<br>
-				<a class="off" href="{{ page.link }}">
-					<span class="glyphicon glyphicon-link" style="font-size:18px;"></span>
-					link
+				{% if page.pdf %}
+				<a class="off" href="{{ page.pdf }}">
+					<span class="iconbox">
+						<i class="icon-file-alt icon-large"></i> 
+					</span>
+					pdf
 				</a>					
-				{% endif %}
+				{% endif %}	
+				{% if page.pdf %}
+				<br>
+				<a class="off" href="{{ page.supplement }}">
+					<span class="iconbox">
+						<i class="icon-paper-clip icon-large"></i> 
+					</span>
+					supplement
+				</a>					
+				{% endif %}	
+				{% if page.github %}
+				<br>
+				<a class="off" href="{{ page.github }}">
+					<span class="iconbox">
+						<i class="icon-github icon-large"></i> 
+					</span>
+					github
+				</a>					
+				{% endif %}					
 			</div>
 			<div class="media-body">
-			
-				<h3 class="media-heading">
+				<h2 class="media-heading">
 					<a href="{{ page.url }}" class="off">{{ page.title }}</a>
-				</h3>
-				
+				</h2>
+				<p>
 				<div class="post">					
 				{% if page.image %}
 				<a href="{{ page.url }}"><img class="offset" src="{{ page.image }}"></a>
 				{% endif %}
 				{{ content }}
 				</div>
-				
-				<script>
-					$(document).ready(function() {
-						$('#boastful').boastful({
-						location: '{{ page.url }}',
-						empty_message: ''
-						});
-						{% if page.link %}
-						$('#boastful').boastful({
-						location: '{{ page.link }}',
-						empty_message: ''
-						});
-						{% endif %}
-					});
-				</script>
-				
-				<div class="tag">
-					{% if page.link %}
-					{% assign link = page.link %}
-					{% else %}
-					{% assign link = page.url %}
-					{% endif %}
-					<a class="off" href="http://twitter.com/share?url={{ link | replace: ' ', '%20' }}&text={{ page.title | replace: ' ', '%20' }}
-					{% if author.twitter %}
-					&via={{ author.twitter }}
-					{% endif %}
-					" target="_blank">
-						Join the discussion: 
-					</a>
-				</div>
-				<div id="boastful"></div>
 				
 			</div>
 		</div>

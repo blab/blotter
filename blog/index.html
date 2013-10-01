@@ -16,17 +16,23 @@ title: blotter [blog]
 		<div class="col-md-10">
 			<div class="media">
 				<div class="media-object pull-left glyphbox">
-					<a class="off" href="{{ author.url }}">
-						<span class="glyphicon glyphicon-user" style="font-size:18px;"></span>
-						{{ author.handle }}
+					<a class="off" href="{{ author.url }}">		
+						<span class="iconbox">
+							<img class="media-object" style="display:inline;" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=18.png">
+						</span>
+						{{ author.handle }}						
 					</a>
 					<br>
-					<span class="glyphicon glyphicon-time" style="font-size:18px;"></span>
+					<span class="iconbox">
+						<i class="icon-time icon-large"></i> 
+					</span>
 					{{ post.date | date_to_string }}		
 					{% if post.link %}
 					<br>
 					<a class="off" href="{{ post.link }}">
-						<span class="glyphicon glyphicon-link" style="font-size:18px;"></span>
+						<span class="iconbox">
+							<i class="icon-circle-arrow-right icon-large"></i> 
+						</span>
 						link
 					</a>					
 					{% endif %}

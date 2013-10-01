@@ -13,17 +13,23 @@ layout: default
 	<div class="col-md-10">
 		<div class="media">
 			<div class="media-object pull-left glyphbox">
-				<a class="off" href="{{ author.url }}">
-					<span class="glyphicon glyphicon-user" style="font-size:18px;"></span>
-					{{ author.handle }}
+				<a class="off" href="{{ author.url }}">		
+					<span class="iconbox">
+						<img class="media-object" style="display:inline;" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=18.png">
+					</span>
+					{{ author.handle }}						
 				</a>
 				<br>
-				<span class="glyphicon glyphicon-time" style="font-size:18px;"></span>
+				<span class="iconbox">
+					<i class="icon-time icon-large"></i> 
+				</span>
 				{{ page.date | date_to_string }}		
 				{% if page.link %}
 				<br>
 				<a class="off" href="{{ page.link }}">
-					<span class="glyphicon glyphicon-link" style="font-size:18px;"></span>
+					<span class="iconbox">
+						<i class="icon-circle-arrow-right icon-large"></i> 
+					</span>
 					link
 				</a>					
 				{% endif %}
@@ -31,9 +37,9 @@ layout: default
 			<div class="media-body">
 			
 				<div class="post">	
-					<h1 class="media-heading">
+					<h2 class="media-heading">
 						{{ page.title }}
-					</h1>
+					</h2>
 					<p>		
 					{% if page.image %}
 					<img class="offset" src="{{ page.image }}">

@@ -48,15 +48,12 @@ code.has-jax {
 
 div.post img {
 	float: right; 
-	margin: 0px 0px 10px 15px;
-	/*
-   -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;	
-   */
-/*	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;	 */
+	margin: 12px 0px 10px 15px;
+}
+
+img.offset {
+	float: right; 
+	margin: 12px 0px 10px 15px;
 }
 
 .paperbox {
@@ -74,4 +71,10 @@ div.post img {
 .glyphbox {
 	width: 120px;
 	line-height: 28px; 	
+}
+
+span.iconbox {
+	display: inline-block; 
+	width: 25px; 
+	text-align:center;
 }
