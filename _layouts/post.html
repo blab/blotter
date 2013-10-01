@@ -30,15 +30,15 @@ layout: default
 			</div>
 			<div class="media-body">
 			
-				<h3 class="media-heading">
-					<a href="{{ page.url }}" class="off">{{ page.title }}</a>
-				</h3>
-				
-				<div class="post">					
-				{% if page.image %}
-				<a href="{{ page.url }}"><img class="offset" src="{{ page.image }}"></a>
-				{% endif %}
-				{{ content }}
+				<div class="post">	
+					<h1 class="media-heading">
+						{{ page.title }}
+					</h1>
+					<p>		
+					{% if page.image %}
+					<img class="offset" src="{{ page.image }}">
+					{% endif %}
+					{{ content }}
 				</div>
 				
 				<script>

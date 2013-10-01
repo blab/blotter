@@ -31,15 +31,17 @@ title: blotter [blog]
 					</a>					
 					{% endif %}
 				</div>
-				<div class="media-body post">
-					<h3 class="media-heading">
-						<a href="{{ post.url }}" class="off">{{ post.title }}</a>
-					</h3>
-					<p>					
-					{% if post.image %}
-					<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
-					{% endif %}
-					{{ post.content }}
+				<div class="media-body">
+					<div class="post">
+						<h3 class="media-heading">
+							<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+						</h3>
+						<p>					
+						{% if post.image %}
+						<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
+						{% endif %}
+						{{ post.content }}
+					</div>
 				</div>
 			</div>
 		</div>
