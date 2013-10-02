@@ -13,9 +13,8 @@ title: blotter [blog]
 	
 		<p class="spacer">	
 		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8">		
-				<div class="head">
+			<div class="col-md-3">
+						<div class="head">
 					<a href="{{ post.url }}" class="off">{{ post.title }}</a>
 				</div>
 				<div class="sub">
@@ -23,8 +22,10 @@ title: blotter [blog]
 					{% if author %}
 					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
 					{% endif %}				
-				</div>				
-				<p>				
+				</div>	
+			</div>
+			<div class="col-md-8">		
+				<div style="height:5px;"></div>			
 				{% if post.image %}
 				<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
 				{% endif %}
@@ -32,7 +33,7 @@ title: blotter [blog]
 					{{ post.content }}
 				</div>
 			</div>			
-			<div class="col-md-2"></div>
+			<div class="col-md-1"></div>
 		</div>		
 		
 {% endfor %}
