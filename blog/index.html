@@ -5,8 +5,6 @@ title: blotter [blog]
 
 {% for post in site.categories.blog %}
 
-	<!-- {% if post.categories.first == 'blog' %} -->
-
 		{% for member in site.categories.team %}
 			{% if member.title == post.author %}
 				{% assign author = member %}
@@ -17,15 +15,16 @@ title: blotter [blog]
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">		
-				<h2 style="line-height:30px;">
+				<div class="head">
 					<a href="{{ post.url }}" class="off">{{ post.title }}</a>
-					<div class="sub">
-						{{ post.date | date_to_string }}
-						{% if author %}
-						by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-						{% endif %}				
-					</div>				
-				</h2>
+				</div>
+				<div class="sub">
+					{{ post.date | date_to_string }}
+					{% if author %}
+					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+					{% endif %}				
+				</div>				
+				<p>				
 				{% if post.image %}
 				<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
 				{% endif %}
@@ -36,7 +35,5 @@ title: blotter [blog]
 			<div class="col-md-2"></div>
 		</div>		
 		
-	{% endif %}
-
 {% endfor %}
 

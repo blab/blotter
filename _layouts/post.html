@@ -9,78 +9,77 @@ layout: default
 
 <p class="spacer">
 <div class="row">
-	<div class="col-md-1"></div>
-	<div class="col-md-10">
-		<div class="media">
-			<div class="media-object pull-left glyphbox">
-				<a class="off" href="{{ author.url }}">		
-					<span class="iconbox">
-						<img class="media-object" style="display:inline;" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=18.png">
-					</span>
-					{{ author.handle }}						
-				</a>
-				<br>
-				<span class="iconbox">
-					<i class="icon-time icon-large"></i> 
-				</span>
-				{{ page.date | date_to_string }}		
-				{% if page.link %}
-				<br>
-				<a class="off" href="{{ page.link }}">
-					<span class="iconbox">
-						<i class="icon-circle-arrow-right icon-large"></i> 
-					</span>
-					link
-				</a>					
-				{% endif %}
-			</div>
-			<div class="media-body">
-			
-				<div class="post">	
-					<h2 class="media-heading">
-						{{ page.title }}
-					</h2>
-					<p>		
-					{% if page.image %}
-					<img class="offset" src="{{ page.image }}">
-					{% endif %}
-					{{ content }}
-				</div>
-				
-				<script>
-					$(document).ready(function() {
-						$('#boastful').boastful({
-						location: '{{ page.url }}',
-						empty_message: ''
-						});
-						{% if page.link %}
-						$('#boastful').boastful({
-						location: '{{ page.link }}',
-						empty_message: ''
-						});
-						{% endif %}
-					});
-				</script>
-				
-				<div class="tag">
-					{% if page.link %}
-					{% assign link = page.link %}
-					{% else %}
-					{% assign link = page.url %}
-					{% endif %}
-					<a class="off" href="http://twitter.com/share?url={{ link | replace: ' ', '%20' }}&text={{ page.title | replace: ' ', '%20' }}
-					{% if author.twitter %}
-					&via={{ author.twitter }}
-					{% endif %}
-					" target="_blank">
-						Join the discussion: 
-					</a>
-				</div>
-				<div id="boastful"></div>
-				
-			</div>
+	<div class="col-md-2"></div>
+	<div class="col-md-8">		
+	
+		<div class="head">
+			{{ page.title }}
 		</div>
+		<div class="sub">
+			{{ page.date | date_to_string }}
+			{% if author %}
+			by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+			{% endif %}				
+		</div>				
+		<p>
+		{% if page.image %}
+		<img class="offset" src="{{ page.image }}">
+		{% endif %}
+		<div class="post">
+			{{ content }}
+		</div>
+		
+		{% if page.link %}
+		<div>
+		<a class="off pull-right" href="{{ page.link }}">
+			<span class="iconbox">
+				<i class="icon-circle-arrow-right icon-large"></i> 
+			</span>
+			link
+		</a>			
+		</div>
+		{% endif %}		
+		
+	</div>			
+	<div class="col-md-2"></div>
+</div>	
+<p>
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">	
+		<script>
+			$(document).ready(function() {
+				$('#boastful').boastful({
+				location: '{{ page.url }}',
+				empty_message: ''
+				});
+				{% if page.link %}
+				$('#boastful').boastful({
+				location: '{{ page.link }}',
+				empty_message: ''
+				});
+				{% endif %}
+			});
+		</script>
+		
+		<div class="tag">
+			{% if page.link %}
+			{% assign link = page.link %}
+			{% else %}
+			{% assign link = page.url %}
+			{% endif %}
+			<a class="off" href="http://twitter.com/share?url={{ link | replace: ' ', '%20' }}&text={{ page.title | replace: ' ', '%20' }}
+			{% if author.twitter %}
+			&via={{ author.twitter }}
+			{% endif %}
+			" target="_blank">
+				Join the discussion: 
+			</a>
+		</div>
+		<div id="boastful"></div>	
 	</div>
-	<div class="col-md-1"></div>
+	<div class="col-md-2"></div>
 </div>
+
+
 

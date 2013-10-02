@@ -40,6 +40,13 @@ a.off {
 	color: inherit; 
 }
 
+.head {
+	font-size: 28px;
+	font-weight: 300;
+	line-height:34px;
+	/* Museo sans */
+}
+
 .sub {
 	font-size: 13px;
 	font-weight: 300;
