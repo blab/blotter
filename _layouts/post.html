@@ -10,9 +10,8 @@ layout: default
 <p class="spacer">
 <div class="row">
 	<div class="col-md-2"></div>
-	<div class="col-md-8">		
-	
-		<div class="head">
+	<div class="col-md-8">	
+		<div class="bighead">
 			{{ page.title }}
 		</div>
 		<div class="sub">
@@ -20,8 +19,8 @@ layout: default
 			{% if author %}
 			by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
 			{% endif %}				
-		</div>				
-		<p>
+		</div>	
+		<p class="smallspacer">
 		{% if page.image %}
 		<img class="offset" src="{{ page.image }}">
 		{% endif %}
@@ -62,7 +61,7 @@ layout: default
 			});
 		</script>
 		
-		<div class="tag">
+		<div class="sub">
 			{% if page.link %}
 			{% assign link = page.link %}
 			{% else %}

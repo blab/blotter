@@ -40,7 +40,21 @@ a.off {
 	color: inherit; 
 }
 
+.bighead {
+	font-size: 36px;
+	font-weight: 300;
+	line-height:40px;
+	/* Museo sans */
+}
+
 .head {
+	font-size: 28px;
+	font-weight: 300;
+	line-height:34px;
+	/* Museo sans */
+}
+
+.smallhead {
 	font-size: 28px;
 	font-weight: 300;
 	line-height:34px;
@@ -50,12 +64,6 @@ a.off {
 .sub {
 	font-size: 13px;
 	font-weight: 300;
-	/* JAF Facit */
-}
-
-.tag {
-	font-size: 14px;
-	font-weight: 300;	
 	/* Museo sans */
 }
 
