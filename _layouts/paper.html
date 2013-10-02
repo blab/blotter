@@ -6,6 +6,9 @@ layout: default
 <div class="row">
 	<div class="col-md-2"></div>
 	<div class="col-md-8">	
+		{% if page.image %}
+		<img class="offset" src="{{ page.image }}">
+		{% endif %}
 		<div class="bighead">
 			{{ page.title }}
 		</div>
@@ -16,9 +19,6 @@ layout: default
 			{{ page.journal }}
 		</div>
 		<p class="smallspacer">
-		{% if page.image %}
-		<img class="offset" src="{{ page.image }}">
-		{% endif %}
 		<div class="post">
 			{{ content }}
 		</div>
