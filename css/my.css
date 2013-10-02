@@ -41,23 +41,23 @@ a.off {
 }
 
 .bighead {
-	font-size: 36px;
+	font-size: 32px;
 	font-weight: 300;
-	line-height:40px;
+	line-height:36px;
 	/* Museo sans */
 }
 
 .head {
-	font-size: 28px;
+	font-size: 26px;
 	font-weight: 300;
-	line-height:34px;
+	line-height:30px;
 	/* Museo sans */
 }
 
 .smallhead {
-	font-size: 28px;
+	font-size: 18px;
 	font-weight: 300;
-	line-height:34px;
+	line-height: 22px;
 	/* Museo sans */
 }
 
@@ -101,7 +101,7 @@ img.offset {
 
 span.iconbox {
 	display: inline-block; 
-	width: 25px; 
+	width: 20px; 
 	text-align:center;
 }
 

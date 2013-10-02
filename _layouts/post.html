@@ -29,8 +29,8 @@ layout: default
 		</div>
 		
 		{% if page.link %}
-		<div>
-		<a class="off pull-right" href="{{ page.link }}">
+		<div class="glyphbox">
+		<a class="off" href="{{ page.link }}">
 			<span class="iconbox">
 				<i class="icon-circle-arrow-right icon-large"></i> 
 			</span>
@@ -46,36 +46,38 @@ layout: default
 <div class="row">
 	<div class="col-md-2"></div>
 	<div class="col-md-8">	
-		<script>
-			$(document).ready(function() {
-				$('#boastful').boastful({
-				location: '{{ page.url }}',
-				empty_message: ''
+		<div>
+			<script>
+				$(document).ready(function() {
+					$('#boastful').boastful({
+					location: '{{ page.url }}',
+					empty_message: ''
+					});
+					{% if page.link %}
+					$('#boastful').boastful({
+					location: '{{ page.link }}',
+					empty_message: ''
+					});
+					{% endif %}
 				});
+			</script>
+			
+			<div class="sub">
 				{% if page.link %}
-				$('#boastful').boastful({
-				location: '{{ page.link }}',
-				empty_message: ''
-				});
+				{% assign link = page.link %}
+				{% else %}
+				{% assign link = page.url %}
 				{% endif %}
-			});
-		</script>
-		
-		<div class="sub">
-			{% if page.link %}
-			{% assign link = page.link %}
-			{% else %}
-			{% assign link = page.url %}
-			{% endif %}
-			<a class="off" href="http://twitter.com/share?url={{ link | replace: ' ', '%20' }}&text={{ page.title | replace: ' ', '%20' }}
-			{% if author.twitter %}
-			&via={{ author.twitter }}
-			{% endif %}
-			" target="_blank">
-				Join the discussion: 
-			</a>
+				<a class="off" href="http://twitter.com/share?url={{ link | replace: ' ', '%20' }}&text={{ page.title | replace: ' ', '%20' }}
+				{% if author.twitter %}
+				&via={{ author.twitter }}
+				{% endif %}
+				" target="_blank">
+					Join the discussion: 
+				</a>
+			</div>
+			<div id="boastful"></div>	
 		</div>
-		<div id="boastful"></div>	
 	</div>
 	<div class="col-md-2"></div>
 </div>

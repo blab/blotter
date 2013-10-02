@@ -4,58 +4,52 @@ layout: default
 
 <p class="spacer">
 <div class="row">
-	<div class="col-md-1"></div>
-	<div class="col-md-10">
-		<div class="media">
-			<div class="media-object pull-left glyphbox">
-				{% if page.pdf %}
-				<a class="off" href="{{ page.pdf }}">
-					<span class="iconbox">
-						<i class="icon-file-alt icon-large"></i> 
-					</span>
-					pdf
-				</a>					
-				{% endif %}	
-				{% if page.pdf %}
-				<br>
-				<a class="off" href="{{ page.supplement }}">
-					<span class="iconbox">
-						<i class="icon-paper-clip icon-large"></i> 
-					</span>
-					supplement
-				</a>					
-				{% endif %}	
-				{% if page.github %}
-				<br>
-				<a class="off" href="{{ page.github }}">
-					<span class="iconbox">
-						<i class="icon-github icon-large"></i> 
-					</span>
-					github
-				</a>					
-				{% endif %}					
-			</div>
-			<div class="media-body">
-				<h2 class="media-heading">
-					{{ page.title }}
-				</h2>
-				<p>
-				<h4>
-					{{ page.authors }}
-					{{ page.year }}.
-					{{ page.journal }}
-				</h4>
-				<p class="smallspacer">
-				<div class="post">					
-				{% if page.image %}
-				<a href="{{ page.url }}"><img class="offset" src="{{ page.image }}"></a>
-				{% endif %}
-				{{ content }}
-				</div>
-				
-			</div>
+	<div class="col-md-2"></div>
+	<div class="col-md-8">	
+		<div class="bighead">
+			{{ page.title }}
 		</div>
-	</div>
-	<div class="col-md-1"></div>
-</div>
-
+		<p>
+		<div class="smallhead">
+			{{ page.authors }}
+			{{ page.year }}.
+			{{ page.journal }}
+		</div>
+		<p class="smallspacer">
+		{% if page.image %}
+		<img class="offset" src="{{ page.image }}">
+		{% endif %}
+		<div class="post">
+			{{ content }}
+		</div>
+		<div class="glyphbox">
+			{% if page.pdf %}
+			<a class="off" href="{{ page.pdf }}">
+				<span class="iconbox">
+					<i class="icon-file-alt icon-large"></i> 
+				</span>
+				pdf
+			</a>					
+			{% endif %}		
+			{% if page.supplement %}
+			<br>
+			<a class="off" href="{{ page.supplement }}">
+				<span class="iconbox">
+					<i class="icon-paper-clip icon-large"></i> 
+				</span>
+				supplement
+			</a>					
+			{% endif %}	
+			{% if page.github %}
+			<br>
+			<a class="off" href="{{ page.github }}">
+				<span class="iconbox">
+					<i class="icon-github icon-large"></i> 
+				</span>
+				github
+			</a>					
+			{% endif %}	
+		</div>
+	</div>			
+	<div class="col-md-2"></div>
+</div>	
