@@ -1,11 +1,66 @@
 ---
 layout: default
 ---
-<h3>
-	{{ page.title }}
-	<br>
-	<span class="sub">
-		{{ page.date | date_to_string }}
-	</span>
-</h3>
-{{ content }}
+
+{% assign member = page %}
+
+<p class="spacer">
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">	
+		<div class="bighead">
+			{{ member.title }}
+		</div>
+		<div class="sub">
+			{{ member.position | }}		
+		</div>	
+		<p class="smallspacer">
+		<div class="post">
+			{{ content }}
+		</div>
+		{% if member.cv %}
+		<div class="glyphbox">
+		<a class="off" href="{{ member.cv }}">
+			<span class="iconbox">
+				<i class="icon-file icon-large"></i> 
+			</span>
+			cv
+		</a>			
+		</div>
+		{% endif %}	    				
+		{% if member.twitter %}
+		<div class="glyphbox">
+		<a class="off" href="https://twitter.com/{{ member.twitter }}">
+			<span class="iconbox">
+				<i class="icon-twitter icon-large"></i> 
+			</span>
+			{{ member.twitter }}
+		</a>			
+		</div>
+		{% endif %}	
+		{% if member.github %}
+		<div class="glyphbox">
+		<a class="off" href="https://github.com/{{ member.github }}">
+			<span class="iconbox">
+				<i class="icon-github icon-large"></i> 
+			</span>
+			{{ member.github }}
+		</a>			
+		</div>
+		{% endif %}		   	
+		{% if member.email %}
+		{% assign emailarray = member.email | split: '@' %}
+		<div class="glyphbox">
+			<span class="iconbox">
+				<i class="icon-envelope"></i> 
+			</span>
+			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+		</div>
+		{% endif %}				
+	</div>			
+	<div class="col-md-2"></div>
+</div>	
+
+
+
+
