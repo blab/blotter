@@ -3,8 +3,9 @@ layout: post
 title: Model comparison through path sampling and AICM
 author: Trevor Bedford
 link: http://mbe.oxfordjournals.org/content/29/9/2157
-image: images/roc_curve.png
 ---
+
+![](images/roc_curve.png)
 
 We just had a paper published in MBE [on comparing different phylogenetic models](/pdfs/baele-model-comparison-2012.pdf).  Generally, its much easier to estimate the parameters of a particular model (including a level of uncertainty on these estimates) than it is to assess which model of several is the "best" fit.  More complicated models will necessarily better fit the data at hand.  However, overly complicated models will be brittle and not generalize well when new data is confronted.  Thus, there is a trade-off between number of effective parameters and a model's likelihood.  Assessing this trade-off can be quite difficult computationally.
 
