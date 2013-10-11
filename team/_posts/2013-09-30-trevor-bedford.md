@@ -9,7 +9,6 @@ twitter: trvrb
 github: trvrb
 image: images/trevor-bedford.jpg
 cv: pdfs/bedford-cv.pdf
-permalink: /team/trevor-bedford.html
 ---
 
 ![](images/trevor-bedford-full.jpg)
