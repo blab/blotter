@@ -86,6 +86,10 @@ img.offset {
     height:200px;
 }
 
+.memberbox {
+    height:520px;
+}
+
 .postbox {
     overflow:hidden;
     text-overflow:ellipsis;

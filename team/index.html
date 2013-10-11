@@ -5,55 +5,52 @@ title: blotter [team]
 <p>
 {% for member in site.categories.team %}
     {% cycle 'add rows': '<div class="row">', nil, nil %}
-		<div class="col-md-4 paperbox">
-			<div class="media">
-  				<a class="pull-right" href="{{ member.url }}">
-    				<img class="media-object" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="sub">{{ member.position }}</p>    
-					{% if member.cv %}
-					<div class="glyphbox">
-					<a class="off" href="{{ member.cv }}">
-						<span class="iconbox">
-							<i class="icon-file icon-large"></i> 
-						</span>
-						cv
-					</a>			
-					</div>
-					{% endif %}	    				
-					{% if member.twitter %}
-					<div class="glyphbox">
-					<a class="off" href="https://twitter.com/{{ member.twitter }}">
-						<span class="iconbox">
-							<i class="icon-twitter icon-large"></i> 
-						</span>
-						{{ member.twitter }}
-					</a>			
-					</div>
-					{% endif %}	
-					{% if member.github %}
-					<div class="glyphbox">
-					<a class="off" href="https://github.com/{{ member.github }}">
-						<span class="iconbox">
-							<i class="icon-github icon-large"></i> 
-						</span>
-						{{ member.github }}
-					</a>			
-					</div>
-					{% endif %}		   	
-					{% if member.email %}
-					{% assign emailarray = member.email | split: '@' %}
-					<div class="glyphbox">
-						<span class="iconbox">
-							<i class="icon-envelope"></i> 
-						</span>
-						{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
-					</div>
-					{% endif %}						
-  				</div>
+		<div class="col-md-4 memberbox">
+			<a href="{{ member.url }}">
+				<img src="{{ member.image }}">
+			</a>
+			<p>
+			<div class="head"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+			<p class="sub">{{ member.position }}</p>    
+			{% if member.cv %}
+			<div class="glyphbox">
+			<a class="off" href="{{ member.cv }}">
+				<span class="iconbox">
+					<i class="icon-file icon-large"></i> 
+				</span>
+				cv
+			</a>			
 			</div>
+			{% endif %}	    				
+			{% if member.twitter %}
+			<div class="glyphbox">
+			<a class="off" href="https://twitter.com/{{ member.twitter }}">
+				<span class="iconbox">
+					<i class="icon-twitter icon-large"></i> 
+				</span>
+				{{ member.twitter }}
+			</a>			
+			</div>
+			{% endif %}	
+			{% if member.github %}
+			<div class="glyphbox">
+			<a class="off" href="https://github.com/{{ member.github }}">
+				<span class="iconbox">
+					<i class="icon-github icon-large"></i> 
+				</span>
+				{{ member.github }}
+			</a>			
+			</div>
+			{% endif %}		   	
+			{% if member.email %}
+			{% assign emailarray = member.email | split: '@' %}
+			<div class="glyphbox">
+				<span class="iconbox">
+					<i class="icon-envelope"></i> 
+				</span>
+				{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+			</div>
+			{% endif %}						
         </div>
     {% cycle 'close rows': nil, nil, '</div>' %}
 {% endfor %}
