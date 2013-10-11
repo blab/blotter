@@ -61,6 +61,52 @@ layout: default
 	<div class="col-md-2"></div>
 </div>	
 
+{% for paper in site.categories.papers %}
+{% if paper.authors contains member.lastname %}
+{% assign papersq = true %}
+{% endif %}
+{% endfor %}
+
+{% if papersq == true %}
+<p class="spacer">
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">	
+		<div class="head">Papers</div>
+		<p class="smallspacer">
+		{% for paper in site.categories.papers %}
+		{% if paper.authors contains member.lastname %}
+		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
+		{% endif %}
+		{% endfor %}
+	</div>			
+	<div class="col-md-2"></div>
+</div>		
+{% endif %}
+
+{% for post in site.categories.blog %}
+{% if member.title == post.author %}
+{% assign postsq = true %}
+{% endif %}
+{% endfor %}
+
+{% if postsq == true %}
+<p class="spacer">
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">	
+		<div class="head">Posts</div>
+		<p class="smallspacer">
+		{% for post in site.categories.blog %}
+		{% if member.title == post.author %}
+		<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
+		{% endif %}
+		{% endfor %}
+	</div>			
+	<div class="col-md-2"></div>
+</div>		
+{% endif %}		
+
 
 
 
