@@ -56,17 +56,25 @@
 					<p class="navbar-text">&nbsp;<br>&nbsp;<br>bedford lab research</p>
 				</div>
 				<ul class="nav navbar-nav navbar-right navtitle">
-					<li class="active"><a href="/blog/">blog</a></li>
-					<li><a href="/papers/">papers</a></li>
-					<li><a href="#">projects</a></li>	  
-					<li><a href="/team/">team</a></li>	  	  
+					<li 
+					{% if page.categories.first == 'blog' %}class="active"{% endif %}
+					><a href="/blog/">blog</a></li>
+					<li
+					{% if page.categories.first == 'papers' %}class="active"{% endif %}
+					><a href="/papers/">papers</a></li>
+					<li
+					{% if page.categories.first == 'projects' %}class="active"{% endif %}
+					><a href="#">projects</a></li>	  
+					<li
+					{% if page.categories.first == 'team' %}class="active"{% endif %}
+					><a href="/team/">team</a></li>	  	  
 				</ul>
 			</div>
 		</nav>	
 	</div>
 	
 	<div class="container">	
-	
+		
 	{{ content }}
 	
 	</div>
