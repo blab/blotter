@@ -10,3 +10,5 @@ cv: pdfs/cheung-cv.pdf
 ---
 
 ![](images/charles-cheung-full.jpg)
+
+For more information see [Charles's website](http://charlescheung-statgen.com/).

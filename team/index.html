@@ -3,7 +3,7 @@ layout: default
 title: blotter [team]
 ---
 <p>
-{% for member in site.categories.team %}
+{% for member in site.categories.team reversed %}
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 memberbox">
 			<a href="{{ member.url }}">
