@@ -2,3 +2,5 @@ markdown: redcarpet
 pygments: true
 permalink: none
 
+redcarpet: 
+  extensions: [tables]
