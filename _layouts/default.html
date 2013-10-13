@@ -46,13 +46,13 @@
 <body>
 	
 	<div id="header">
-		<nav class="navbar navbar-default navbar-static-top navbar-inverse" role="navigation">	 
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
 			<div class="container">	
 				<div class="navbar-header">
 					<a class="navbar-brand title" href="/">blotter</a>
-					<p class="navbar-text">&nbsp;<br>&nbsp;<br>bedford lab research</p>
+					<span class="navbar-text">bedford lab research</span>
 				</div>
-				<ul class="nav navbar-nav navbar-right navtitle">
+				<ul class="nav navbar-nav navbar-right">
 					<li 
 					{% if page.categories.first == 'blog' %}class="active"{% endif %}
 					><a href="/blog/">blog</a></li>
