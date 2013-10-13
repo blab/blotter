@@ -103,16 +103,9 @@
   .glyphicon-chevron-right {
     position: absolute;
     top: 50%;
+    left: 50%;
     z-index: 5;
     display: inline-block;
-  }
-  .icon-prev,
-  .glyphicon-chevron-left {
-    left: 50%;
-  }
-  .icon-next,
-  .glyphicon-chevron-right {
-    right: 50%;
   }
   .icon-prev,
   .icon-next {
@@ -190,20 +183,16 @@
 
 
 // Scale up controls for tablets and up
-@media screen and (min-width: @screen-sm-min) {
+@media screen and (min-width: @screen-tablet) {
 
   // Scale up the controls a smidge
-  .carousel-control {
-    .glyphicons-chevron-left,
-    .glyphicons-chevron-right,
-    .icon-prev,
-    .icon-next {
-      width: 30px;
-      height: 30px;
-      margin-top: -15px;
-      margin-left: -15px;
-      font-size: 30px;
-    }
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    font-size: 30px;
   }
 
   // Show and left align the captions
