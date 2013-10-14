@@ -14,7 +14,7 @@ layout: default
 		<div class="bighead">
 			{{ page.title }}
 		</div>
-		<div class="sub">
+		<div class="subhead">
 			{{ page.date | date_to_string }}
 			{% if author %}
 			by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
@@ -62,7 +62,7 @@ layout: default
 				});
 			</script>
 			
-			<div class="sub">
+			<div class="subhead">
 				{% if page.link %}
 				{% assign link = page.link %}
 				{% else %}
