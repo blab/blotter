@@ -3,9 +3,8 @@ layout: post
 title: Global migration dynamics underlie evolution and persistence of human influenza A (H3N2)
 author: Trevor Bedford
 link: http://www.trevorbedford.com/pdfs/bedford-flu-mig-2010.pdf
+image: images/flumap.png
 ---
-
-![](images/flumap.png)
 
 Today, my paper on [migration patterns in the flu virus](/pdfs/bedford-flu-mig-2010.pdf) was published in PLoS Pathogens.  This was fun work to do, requiring approaches from multiple disciplines.  While the basics of the migration model came from population genetics and coalescent theory, fitting this model to sequence data required a lot of heavy-lifting computation implemented by Peter Beerli in the program [Migrate](http://popgen.sc.fsu.edu/Migrate-n.html).  I originally wrote my program [PACT](/pact/index.html) to deal with the enormous (2000+ tips) phylogenetic trees produced by this analysis.  Additionally, a lot of epidemiology went in to making realistic simulations on which to hone the methods.
 

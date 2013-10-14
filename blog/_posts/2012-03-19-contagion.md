@@ -2,9 +2,8 @@
 layout: post
 title: Running the numbers for Contagion... they don't come out well
 author: Trevor Bedford
+image: images/contagion_movie.jpg
 ---
-
-![](images/contagion_movie.jpg)
 
 I know I'm totally late to the party with this, but after seeing [Contagion](http://en.wikipedia.org/wiki/Contagion_(film)) on the plane back from the states in December, I've been wanting to run the numbers comparing their stated epidemiological parameters with how quickly we see the pandemic spread.  I finally got my hands on a DVD copy, so I was able to go through and record some of the epidemiological details.  I was initially skeptical of the movie, thinking they'd do the standard Hollywood thing of grossly exaggerating everything.  With this in mind, I was pleasantly surprised to see <i>R</i><sub>0</sub> listed as a very reasonable 2 and not, say, 20, and mortality rate listed around 20% or 25% rather than a Hollywood 90%.
 

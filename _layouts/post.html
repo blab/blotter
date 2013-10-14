@@ -21,6 +21,9 @@ layout: default
 			{% endif %}				
 		</div>	
 		<p class="smallspacer">
+		{% if page.image %}
+		<img class="offset" src="{{ page.image }}">
+		{% endif %}	
 		<div class="post">
 			{{ content }}
 		</div>

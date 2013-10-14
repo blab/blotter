@@ -3,4 +3,10 @@ pygments: true
 permalink: none
 
 redcarpet: 
-  extensions: [tables]
+  extensions:
+   - tables
+   - no_intra_emphasis
+   - autolink
+   - superscript
+   - strikethrough
+   

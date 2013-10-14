@@ -3,9 +3,8 @@ layout: post
 title: What limits the rate of virus adaptation?
 author: Trevor Bedford
 link: http://www.plospathogens.org/article/info%3Adoi%2F10.1371%2Fjournal.ppat.1003104
+image: images/limited_div_tile.png
 ---
-
-![](images/limited_div_tile.png)
 
 We just had [a new paper published](/pdfs/zinder-limited-diversity-2013.pdf) in PLoS Pathogens lead by graduate student [Daniel Zinder](http://www.ccmb.med.umich.edu/node/120) that addresses antigenic evolution in the influenza virus. Generally, what sets the pace of antigenic evolution in influenza has remained something of a mystery.  There is massive pressure for the virus to evolve to escape human immunity.  However, dramatically new variants (ones that necessitate a vaccine update) only emerge every year or three. In this study, we wanted to find out whether the emergence of new influenza variants is limited by waiting for new, advantageous, mutations to appear or whether emergence is limited by waiting for immunological circumstances to change in the human population.
 

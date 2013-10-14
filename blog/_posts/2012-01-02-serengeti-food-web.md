@@ -3,9 +3,8 @@ layout: post
 title: Spatial guilds in the Serengeti food web revealed by a Bayesian group model
 author: Trevor Bedford
 link: http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1002321
+image: images/serengeti.jpg
 ---
-
-![](images/serengeti.jpg)
 
 Our [paper on modeling food webs](/pdfs/baskerville-serengeti-2011.pdf) was just published in PLoS Computational Biology.  Here, I was happy to bring the statistics I've learned from phylogenetic analysis to an entirely different field.  I advised [Ed Baskerville](http://edbaskerville.com/) in implementing MCMC and marginal likelihood estimation for network data.  In this case, the data is a matrix of predator-prey relationships, which can be thought of as a network of directed edges specifying who-eats-whom.  We investigated <i>structure</i> in the Serengeti food web through a model in which groups of species behave similarly to one another in terms of what species they eat and what species they are eaten by.  The inferred model shows a high degree of trophic and spatial clustering in which a number of spatially distinct plant groups are fed upon by a few wider-ranging herbivore groups, which are in turn fed upon by just a couple of predator groups.  
 
