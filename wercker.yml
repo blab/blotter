@@ -7,8 +7,12 @@ build:
     # future builds
     - bundle-install
 
-    # A custom script step
-    # that actually builds the jekyll site
+    # Preprocess markdown for Jekyll
+    - script:
+        name: preprocess markdown
+        code: bundle exec ruby _scripts/preprocess_markdown.rb
+
+    # Build site with Jekyll
     - script:
         name: generate site
         code: bundle exec jekyll build --trace
