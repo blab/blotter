@@ -3,7 +3,9 @@ box: wercker/ruby
 build:
   steps:
     # Update all submodules
-    - git pull --recurse-submodules
+    - script:
+        name: pull submodules
+        code: git pull --recurse-submodules 
   
     # Run a smart version of bundle install
     # which improves build execution time of
