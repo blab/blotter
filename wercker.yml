@@ -2,6 +2,9 @@
 box: wercker/ruby
 build:
   steps:
+    # Update all submodules
+    - git pull --recurse-submodules
+  
     # Run a smart version of bundle install
     # which improves build execution time of
     # future builds
@@ -9,9 +12,7 @@ build:
 
     # A custom script step
     # that actually builds the jekyll site
-    - script:
-        name: generate site
-        code: bundle exec jekyll build --trace
+    - bundle exec jekyll build --trace
 
 deploy:
   steps:
