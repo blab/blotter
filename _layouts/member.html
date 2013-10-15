@@ -15,6 +15,9 @@ layout: default
 			{{ member.position | }}		
 		</div>	
 		<p class="smallspacer">
+		{% if page.image %}
+		<img class="offset" src="{{ member.image }}">
+		{% endif %}			
 		<div class="post">
 			{{ content }}
 		</div>

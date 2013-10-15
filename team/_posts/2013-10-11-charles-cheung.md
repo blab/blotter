@@ -10,6 +10,4 @@ image: images/charles-cheung.jpg
 cv: pdfs/cheung-cv.pdf
 ---
 
-![](images/charles-cheung-full.jpg)
-
-For more information see [Charles's website](http://charlescheung-statgen.com/).
+For more information, see [Charles's website](http://charlescheung-statgen.com/).
