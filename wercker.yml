@@ -1,4 +1,4 @@
-# our build should run within a Ruby box
+# Our build should run within a Ruby box
 box: wercker/ruby
 build:
   steps:  
