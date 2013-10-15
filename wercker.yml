@@ -12,7 +12,9 @@ build:
 
     # A custom script step
     # that actually builds the jekyll site
-    - bundle exec jekyll build --trace
+    - script:
+        name: generate site
+        code: bundle exec jekyll build --trace
 
 deploy:
   steps:
