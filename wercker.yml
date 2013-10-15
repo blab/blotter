@@ -1,12 +1,7 @@
 # our build should run within a Ruby box
 box: wercker/ruby
 build:
-  steps:
-    # Update all submodules
-    - script:
-        name: pull submodules
-        code: git pull --recurse-submodules 
-  
+  steps:  
     # Run a smart version of bundle install
     # which improves build execution time of
     # future builds
