@@ -1,3 +1,7 @@
+---
+layout: project
+---
+
 # blotter: bedford lab research
 
 
@@ -10,9 +14,10 @@ Each project exists as a git submodule.  To add a project and have it automatica
 	git submodule add https://github.com/owner/project-name.git projects/project-name
 	```
 
-2. 	**Add the project to the Jekyll index.** Create a new markdown post at `blotter/projects/_posts/`.  The YAML front matter should include:
+2. 	**Add the project to the Jekyll index.** Create a new markdown post with the format `blotter/projects/_posts/2013-01-01-project-name`.  The YAML front matter should include:
 	```
 	title: project description
+	owner: owner
 	repo: project-name
 	```
 	where `project-name` corresponds to the name of the git submodule, as above.

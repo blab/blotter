@@ -1,0 +1,25 @@
+---
+layout: default
+title: blotter [projects]
+categories: 
+ - projects
+---
+
+{% for project in site.categories.projects %}
+
+		<p class="spacer">	
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">		
+				<div class="head">
+					<a href="/projects/{{ project.repo }}/" class="off">{{ project.repo }}</a>
+				</div>
+				<div class="subhead">
+					{{ project.title }}			
+				</div>	
+			</div>			
+			<div class="col-md-2"></div>
+		</div>		
+		
+{% endfor %}
+
