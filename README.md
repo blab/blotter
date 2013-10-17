@@ -11,11 +11,13 @@ Each project exists as a git submodule.  To add a project and have it automatica
 	```
 
 2. 	**Add the project to the Jekyll index.** Create a new markdown post at `blotter/projects/_posts/`.  The YAML front matter should include:
-	* `title: project description`
-	* `repo: github repo name`
-	This corresponds to project-name in the directory structure, as above.
+	```
+	title: project description
+	repo: project-name
+	```
+	where `project-name` corresponds to the name of the git submodule, as above.
 
 	
-3. 	**Set a webhook from GitHub.** Go to `Settings` / `Service Hooks` / `WebHook URLs`, and add `http://blotter-hook.herokuapp.com/` to the list.
+3. 	**Set a webhook from GitHub.** Go to Settings / Service Hooks / WebHook URLs, and add `http://blotter-hook.herokuapp.com/` to the list.
 
-After steps 1 and 2, changes to the `blotter` repo should be pushed to GitHub.
+After steps 1 and 2, changes to the blotter repo should be pushed to GitHub.
