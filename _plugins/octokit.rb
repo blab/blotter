@@ -18,7 +18,7 @@ module Jekyll
 		end
 		def render(context)
 			puts "Getting Github Commits via octokit.rb"
-			client = Octokit::Client.new :netrc => true
+			client = Octokit::Client.new(:netrc => true, :access_token => ENV['GITHUB_TOKEN'])
 			@repo = Liquid::Template.parse(@markup).render context
 			puts @repo
 			commits = client.commits(@repo)
