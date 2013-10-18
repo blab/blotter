@@ -8,6 +8,12 @@
 @line-height-base: 1.6;
 @navbar-height: 60px;
 
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
 // navbar
 .navbar-brand { 
 	font-size: 70px; 
@@ -74,8 +80,7 @@ code.has-jax {
 }
 
 div.post img {
-     margin-left: auto;
-     margin-right: auto;
+	.center;
 }
 
 table {
@@ -91,6 +96,11 @@ img {
 img.offset {
 	float: right; 
 	margin: 12px 0px 10px 15px;
+}
+
+canvas {
+	.center;
+	display: block;
 }
 
 .paperbox {
