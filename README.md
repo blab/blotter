@@ -1,7 +1,3 @@
----
-layout: project
----
-
 # blotter: bedford lab research
 
 
