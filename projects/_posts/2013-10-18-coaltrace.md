@@ -1,5 +1,5 @@
 ---
-title: Simulating genealogies using charged particles
-owner: trvrb
-repo: coaltrace
+title: coaltrace
+description: Simulating genealogies using charged particles
+repo: trvrb/coaltrace
 ---

@@ -12,11 +12,13 @@ categories:
 			<div class="col-md-2"></div>
 			<div class="col-md-8">		
 				<div class="head">
-					<a href="/projects/{{ project.repo }}/" class="off">{{ project.repo }}</a>
+					<a href="/projects/{{ project.title }}/" class="off">{{ project.title }}</a>
 				</div>
 				<div class="subhead">
-					{{ project.title }}			
+					{{ project.description }}			
 				</div>	
+				<p>
+				{% octokit_commits {{project.repo}} %}
 			</div>			
 			<div class="col-md-2"></div>
 		</div>		

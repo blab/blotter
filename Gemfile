@@ -9,3 +9,7 @@ gem 'less'
 
 # minifying
 gem 'jekyll-press'
+
+# octokit
+gem 'octokit'
+gem 'netrc'
