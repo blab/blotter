@@ -3,7 +3,7 @@
 # and to rename readme.md files to index.md
 
 # collect all markdown files 
-mdarray = Dir.glob("**/*.md")
+mdarray = Dir.glob("projects/**/*.md")
 # mdarray = Dir.glob("[^_]**/**/*.md")	# in directories not descending from directories beginning with "_" 
 
 # go through each markdown file
@@ -18,6 +18,14 @@ mdarray.each { |md|
 			md = indexmd
 		end
 	end
+	
+	# get project name if possible
+	project_name = nil
+	dirarray = File.dirname(md).split('/')
+	temp_name = dirarray[dirarray.index("projects") + 1]
+	if temp_name =~ /^[^_]/
+		project_name = temp_name
+	end
 
 	# if file is lacking YAML front matter, add some
 	contents = File.open(md, "r").read	
@@ -25,6 +33,9 @@ mdarray.each { |md|
 		out = File.new(md, "w")
 		out.puts "---"
 		out.puts "layout: project"
+		if project_name != nil
+			out.puts "project: #{project_name}"
+		end
 		out.puts "---"
 		out.puts
 		out.puts contents	
