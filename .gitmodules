@@ -4,3 +4,6 @@
 [submodule "projects/coaltrace"]
 	path = projects/coaltrace
 	url = https://github.com/trvrb/coaltrace.git
+[submodule "projects/antigen"]
+	path = projects/antigen
+	url = https://github.com/trvrb/antigen.git
