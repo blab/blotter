@@ -46,18 +46,31 @@
 					<span class="navbar-text">bedford lab research</span>
 				</div>
 				<ul class="nav navbar-nav navbar-right">
-					<li 
-					{% if page.categories.first == 'blog' %}class="active"{% endif %}
-					><a href="/blog/">blog</a></li>
-					<li
-					{% if page.categories.first == 'papers' %}class="active"{% endif %}
-					><a href="/papers/">papers</a></li>
-					<li
-					{% if page.categories.first == 'projects' %}class="active"{% endif %}
-					><a href="/projects/">projects</a></li>	  
-					<li
-					{% if page.categories.first == 'team' %}class="active"{% endif %}
-					><a href="/team/">team</a></li>	  	  
+					{% if page.categories.first == 'blog' %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+					<a href="/blog/">blog</a>
+					</li>
+					{% if page.categories.first == 'papers' %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+					<a href="/papers/">papers</a></li>
+					{% if page.categories.first == 'projects' %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+					<a href="/projects/">projects</a></li>	  
+					{% if page.categories.first == 'team' %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+					<a href="/team/">team</a></li>	  	  
 				</ul>
 			</div>
 		</nav>	
