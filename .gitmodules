@@ -1,3 +1,6 @@
 [submodule "projects/influenza-dynamics-practical"]
 	path = projects/influenza-dynamics-practical
 	url = https://github.com/trvrb/influenza-dynamics-practical.git
+[submodule "projects/coaltrace"]
+	path = projects/coaltrace
+	url = https://github.com/trvrb/coaltrace.git
