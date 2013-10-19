@@ -10,14 +10,20 @@ category: blog
   
 	{% if paginator.previous_page %}
 		{% if paginator.previous_page == 1 %}
-		<a class="prev" href="/{{ page.category }}/"><span class="icon prev">Prev</span></a>
+		<a class="prev" href="/{{ page.category }}/">
+			<i class="icon-chevron-left icon-large"></i>
+		</a>
 		{% else %}
-		<a class="prev" href="/{{ page.category }}/page{{ paginator.previous_page }}"><span class="icon prev">Prev</span></a>
+		<a class="prev" href="/{{ page.category }}/page{{ paginator.previous_page }}">
+			<i class="icon-chevron-left icon-large"></i>
+		</a>
 		{% endif %}  		
 	{% endif %}  
   
 	{% if paginator.next_page %}  
-	<a class="next" href="/{{ page.category }}/page{{ paginator.next_page }}"><span class="icon next">Next</span></a>	
+	<a class="next" href="/{{ page.category }}/page{{ paginator.next_page }}">
+		<i class="icon-chevron-right icon-large"></i>
+	</a>	
 	{% endif %}  	
     
 </div>
