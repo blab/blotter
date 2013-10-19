@@ -5,11 +5,11 @@
 
 # Examples:
 #  {% octokit_commits trvrb/coaltrace %}
+#  {% octokit_contributors trvrb/coaltrace %}
 
 require 'octokit'
 
-## Commit gets issues on the day given.  
-
+# Get commits
 module Jekyll
 	class OctokitCommits < Liquid::Tag
 		def initialize(tag_name, markup, tokens)
@@ -25,10 +25,11 @@ module Jekyll
 			out = "<ul class=\"list-unstyled\">"
 			for i in 0 ... [commits.size, 5].min
 				href = commits[i].rels[:html].href
-				date = DateTime.parse(commits[i].commit.author.date).to_time.strftime("%I:%M %P %d %b %Y")
+				date = DateTime.parse(commits[i].commit.author.date).to_time.strftime("%d %b %Y")
 				message = commits[i].commit.message
 				out = out + "<li> <a class=\"off\" href=\"#{href}\">" +
-				"#{date}: #{message}" +
+				"#{date} - " + 
+				"<span class=\"text-gray\">#{message}</span>" +
 				"</a> </li>"
 			end
 			out = out + "</ul>"
@@ -37,8 +38,33 @@ module Jekyll
 	end
 end
 
-## Use context-specific github flavored markdown to convert sha into link.  e.g.
-## Octokit.markdown("Hello world github/linguist#1 **cool**, and #1!", :mode => "gfm", :context => "github/gollum")
-#
-
 Liquid::Template.register_tag('octokit_commits', Jekyll::OctokitCommits)
+
+# Get contributors
+module Jekyll
+	class OctokitContributors < Liquid::Tag
+		def initialize(tag_name, markup, tokens)
+			super
+			@markup = "#{markup}".strip
+		end
+		def render(context)
+			puts "Getting Github Contributors via octokit.rb"
+			client = Octokit::Client.new(:netrc => true, :access_token => ENV['GITHUB_TOKEN'])
+			@repo = Liquid::Template.parse(@markup).render context
+			puts @repo
+			contributors = client.contributors(@repo)
+			out = "<ul class=\"list-unstyled\">"
+			for i in 0 ... [contributors.size, 5].min
+				href = contributors[i].rels[:html].href
+				login = contributors[i].login
+				out = out + "<li> <a class=\"off\" href=\"#{href}\">" +
+				"#{login}" +
+				"</a> </li>"
+			end
+			out = out + "</ul>"
+			out
+		end
+	end
+end
+
+Liquid::Template.register_tag('octokit_contributors', Jekyll::OctokitContributors)
