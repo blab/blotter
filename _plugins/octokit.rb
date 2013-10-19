@@ -53,15 +53,19 @@ module Jekyll
 			@repo = Liquid::Template.parse(@markup).render context
 			puts @repo
 			contributors = client.contributors(@repo)
-			out = "<ul class=\"list-unstyled\">"
+			out = "<div class=\"glyphbox\">"
 			for i in 0 ... [contributors.size, 5].min
 				href = contributors[i].rels[:html].href
 				login = contributors[i].login
-				out = out + "<li> <a class=\"off\" href=\"#{href}\">" +
-				"#{login}" +
-				"</a> </li>"
+				avatar = contributors[i].rels[:avatar].href
+				out = out + "<a class=\"off\" href=\"#{href}\">" +
+				"<span class=\"iconbox\">" +
+    			"<img width=30 src=\"#{avatar}\">" +
+    			"</span>" +
+    			"#{login}" +
+ 				"</a>"
 			end
-			out = out + "</ul>"
+			out = out + "</div>"
 			out
 		end
 	end
