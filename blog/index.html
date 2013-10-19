@@ -6,6 +6,18 @@ categories:
 category: blog
 ---
 
+<div class='pager'>
+  
+	{% if paginator.previous_page %}
+	<a class="prev" href="page{{ paginator.previous_page }}"><span class="icon prev">Prev</span></a>
+	{% endif %}  
+  
+	{% if paginator.next_page %}  
+	<a class="next" href="page{{ paginator.next_page }}"><span class="icon next">Next</span></a>	
+	{% endif %}  	
+    
+</div>
+
 {% for post in paginator.posts %}
 
 		{% for member in site.categories.team %}
