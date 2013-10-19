@@ -9,7 +9,7 @@ journal: "BMC Evol Biol 11: 220."
 pdf: pdfs/bedford-2011-strength.pdf
 ---
 
-Abstract: 
+# Abstract
 
 Background: RNA viruses evolve extremely quickly, allowing them to rapidly adapt to new environmental conditions. Viral pathogens, such as influenza virus, exploit this capacity for evolutionary change to persist within the human population despite substantial immune pressure. Understanding the process of adaptation in these viral systems is essential to our efforts to combat infectious disease.
 
