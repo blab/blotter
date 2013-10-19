@@ -27,21 +27,21 @@ layout: default
 		<div class="smallhead">
 			Source code
 		</div>
-		<div class="normalhead">
+		<div class="note">
 			<a class="off" href="http://github.com/{{ project.repo }}">github.com/{{ project.repo }}</a>
 		</div>
 		<p class="spacer">
 		<div class="smallhead">
 			Contributors
 		</div>
-		<div class="normalhead">
+		<div class="note">
 			{% octokit_contributors {{project.repo}} %}
 		</div>
 		<p class="spacer">
 		<div class="smallhead">
 			Latest commits
 		</div>
-		<div class="subhead">
+		<div class="smallnote">
 			{% octokit_commits {{project.repo}} %}
 		</div>		
 	</div>
