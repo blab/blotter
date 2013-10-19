@@ -2,7 +2,7 @@
 layout: post
 title: Some thoughts on a GitHub of Science
 author: Trevor Bedford
-image: images/github_large.png
+image: /images/github_large.png
 ---
 
 Lately, I've been thinking more about issues surrounding Open Science and scientific publishing.  This post is in part a response to posts by [Scott Chamberlain](http://schamberlain.github.com/scott/2012/02/13/a-github-publishing-model/) and [Marcio von Muhlen](http://marciovm.com/i-want-a-github-of-science/).  Marcio's idea represents a major call-to-arms for innovation in how science is conducted and communicated.  He states that "we need a social network of science, meaning scientific bundles of knowledge must be structured and accessible by API, with the connections among those bundles and appropriate utility metrics being what connects and prioritizes scientists."  I would completely agree here.  Making small steps, this is why I chose to post my latest paper to the [arXiv](http://arxiv.org/abs/1111.4579) and to [GitHub itself](http://trvrb.github.com/canalization/).

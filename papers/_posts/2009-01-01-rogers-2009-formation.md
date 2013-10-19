@@ -1,12 +1,12 @@
 ---
 layout: paper
 title: Formation and longevity of chimeric and duplicate genes in Drosophila melanogaster
-image: images/rogers-2009-formation.png
+image: /images/rogers-2009-formation.png
 authors: Rogers RL, Bedford T, Hartl DL.
 year: 2009
 ref: Rogers et al. 2009.
 journal: "Genetics 181: 313-322."
-pdf: pdfs/rogers-2009-formation.pdf
+pdf: /pdfs/rogers-2009-formation.pdf
 ---
 
 # Abstract

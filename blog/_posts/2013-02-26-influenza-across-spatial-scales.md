@@ -8,7 +8,7 @@ It's clear that there exists [substantial global genetic diversity in influenza 
 
 I began by collecting all the sequences I could for influenza A/H3N2 from GenBank from 1995 to 2011, keeping only sequences with complete dates. Because we're interested in functional diversity, I reduced this to only amino acid sequences from the HA1 protein and further reduced these sequences to 129 epitope sites following [Munoz and Deem (2005)](http://www.sciencedirect.com/science/article/pii/S0264410X0400636X). These epitope sites represent residues that when mutated often result in proteins that elicit a novel immune response, and hence mutations to these sites often provide a transmission advantage to the virus. I removed sequences which possessed gaps at any of these 129 sites, leaving a total of 8482 sequences to work from.
 
-![](images/theta_by_scale.png)		
+![](/images/theta_by_scale.png)		
 
 I next calculated the number of unique variants present for each Northern Hemisphere influenza season (October to March), giving the relationship between sample count and number of unique sequence types shown here. I calculated this relationship for the entire global sample, for the USA, Europe, Japan and Korea (Northern), for just the USA and within each state in the US.  This relationship can be quantified with the [Ewen's sampling formula](http://en.wikipedia.org/wiki/Ewens's_sampling_formula), giving an expectation for the number of unique variants <i>k</i> observed in a sample of <i>n</i> sequences 
 `\[ \sum_{i=1}^n \frac{\theta}{\theta +i - 1}, \]` 

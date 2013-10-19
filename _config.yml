@@ -1,6 +1,6 @@
 markdown: redcarpet
 pygments: true
-permalink: none
+permalink: /:categories/:title/
 
 redcarpet: 
   extensions:

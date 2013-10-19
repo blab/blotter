@@ -8,8 +8,8 @@ gravatar: ab7fe2db559c7924316c4391ba00b3f0
 email: trvrb@trevorbedford.com
 twitter: trvrb
 github: trvrb
-image: images/trevor-bedford.jpg
-cv: pdfs/bedford-cv.pdf
+image: /images/trevor-bedford.jpg
+cv: /pdfs/bedford-cv.pdf
 ---
 
 I'm an Assistant Member at the [Fred Hutchinson Cancer Research Center](http://www.fhcrc.org/) affiliated with the [Vaccine and Infectious Disease Division](https://www.fhcrc.org/en/labs/vaccine-and-infectious-disease.html) and with the [Computational Biology Program](http://labs.fhcrc.org/compbio/).  I study the dynamics of virus populations.  How do strains spread through the world?  How do strains evolve in response to immune pressure?  And ultimately, what makes a strain successful?  
