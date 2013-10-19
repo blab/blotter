@@ -3,9 +3,10 @@ layout: default
 title: blotter [blog]
 categories: 
  - blog
+category: blog
 ---
 
-{% for post in site.categories.blog %}
+{% for post in paginator.posts %}
 
 		{% for member in site.categories.team %}
 			{% if member.title == post.author %}

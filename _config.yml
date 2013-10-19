@@ -9,4 +9,6 @@ redcarpet:
    - autolink
    - superscript
    - strikethrough
-   
+
+pagination: true
+paginate: 5
