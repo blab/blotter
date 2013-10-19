@@ -2,23 +2,31 @@
 layout: default
 ---
 
-<p class="spacer">
+<p class="smallspacer">
+
 <div class="row">
-	<div class="col-md-2"></div>
-	<div class="col-md-8">	
-		<div class="bighead">
-			{{ page.title }}
+	<div class="col-md-12">
+		<div class="media">
+			{% if page.image %}
+			<img class="pull-left pad-right media-object" width=120 src="{{ page.image }}">
+			{% endif %}
+			<div class="media-body">
+				<div class="bigtitle media-heading">
+					{{ page.title }}
+				</div>
+				<p>
+				<div class="smallhead">
+					{{ page.position }}
+				</div>
+			</div>
 		</div>
-		<div class="smallnote">
-			{{ page.position | }}		
-		</div>	
-		<p class="smallspacer">
-		{% if page.image %}
-		<img class="offset" src="{{ page.image }}">
-		{% endif %}			
-		<div class="post">
-			{{ content }}
-		</div>
+	</div>				
+</div>
+
+<p class="spacer">
+
+<div class="row">
+	<div class="col-md-3">
 		{% if page.cv %}
 		<div class="glyphbox note">
 		<a class="off" href="{{ page.cv }}">
@@ -30,7 +38,7 @@ layout: default
 		</div>
 		{% endif %}	    				
 		{% if page.twitter %}
-		<div class="glyphbox">
+		<div class="glyphbox note">
 		<a class="off" href="https://twitter.com/{{ page.twitter }}">
 			<span class="iconbox">
 				<i class="icon-twitter icon-large"></i> 
@@ -40,7 +48,7 @@ layout: default
 		</div>
 		{% endif %}	
 		{% if page.github %}
-		<div class="glyphbox">
+		<div class="glyphbox note">
 		<a class="off" href="https://github.com/{{ page.github }}">
 			<span class="iconbox">
 				<i class="icon-github icon-large"></i> 
@@ -51,15 +59,21 @@ layout: default
 		{% endif %}		   	
 		{% if page.email %}
 		{% assign emailarray = page.email | split: '@' %}
-		<div class="glyphbox">
+		<div class="glyphbox note">
 			<span class="iconbox">
 				<i class="icon-envelope"></i> 
 			</span>
 			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
 		</div>
 		{% endif %}				
+	</div>
+	<div class="col-md-8">	
+		<p class="smallspacer">	
+		<div class="post">
+			{{ content }}
+		</div>
 	</div>			
-	<div class="col-md-2"></div>
+	<div class="col-md-1"></div>
 </div>	
 
 {% for paper in site.categories.papers %}
@@ -71,7 +85,7 @@ layout: default
 {% if papersq == true %}
 <p class="spacer">
 <div class="row">
-	<div class="col-md-2"></div>
+	<div class="col-md-3"></div>
 	<div class="col-md-8">	
 		<div class="head">Papers</div>
 		<p class="smallspacer">
@@ -81,7 +95,7 @@ layout: default
 		{% endif %}
 		{% endfor %}
 	</div>			
-	<div class="col-md-2"></div>
+	<div class="col-md-1"></div>
 </div>		
 {% endif %}
 
@@ -94,7 +108,7 @@ layout: default
 {% if postsq == true %}
 <p class="spacer">
 <div class="row">
-	<div class="col-md-2"></div>
+	<div class="col-md-3"></div>
 	<div class="col-md-8">	
 		<div class="head">Posts</div>
 		<p class="smallspacer">
@@ -104,7 +118,7 @@ layout: default
 		{% endif %}
 		{% endfor %}
 	</div>			
-	<div class="col-md-2"></div>
+	<div class="col-md-1"></div>
 </div>		
 {% endif %}		
 
