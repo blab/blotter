@@ -2,17 +2,40 @@
 layout: default
 ---
 
-<p class="spacer">
+{% for test in site.categories.projects %}
+	{% if test.title == page.project %}
+		{% assign project = test %}
+	{% endif %}
+{% endfor %}
+
 <div class="row">
-	<div class="col-md-2"></div>
-	<div class="col-md-8">	
-		<div class="bighead">
-			{{ page.title }}
+	<div class="col-md-12">
+		<div class="bigtitle">
+			{{ project.title }}
 		</div>
+		<div class="head">
+			{{ project.description }}
+		</div>
+	</div>				
+</div>
+
+<p class="spacer">	
+
+<div class="row">
+	<div class="col-md-2">
+		<p class="smallspacer">
+		<div class="smallhead">
+			Latest commits
+		</div>
+		<div class="subhead">
+			{% octokit_commits {{project.repo}} %}
+		</div>
+	</div>
+	<div class="col-md-8">				
 		<div class="post">
 			{{ content }}
 		</div>
-				
 	</div>			
 	<div class="col-md-2"></div>
-</div>	
+</div>
+

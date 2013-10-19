@@ -22,16 +22,14 @@ module Jekyll
 			@repo = Liquid::Template.parse(@markup).render context
 			puts @repo
 			commits = client.commits(@repo)
-			out = "<ul>"
-			for i in 0 ... [commits.size, 8].min
-				out = out + "<li>" +
-				commits[i].commit.message + " " + 
-				"<a href=\"" +
-				commits[i].rels[:html].href +
-				"\">" + 
-				DateTime.parse(commits[i].commit.author.date).to_time.strftime("%I:%M %P %d %b %Y") +
-				"</a>" +
-				"</li>"
+			out = "<ul class=\"list-unstyled\">"
+			for i in 0 ... [commits.size, 5].min
+				href = commits[i].rels[:html].href
+				date = DateTime.parse(commits[i].commit.author.date).to_time.strftime("%I:%M %P %d %b %Y")
+				message = commits[i].commit.message
+				out = out + "<li> <a class=\"off\" href=\"#{href}\">" +
+				"#{date}: #{message}" +
+				"</a> </li>"
 			end
 			out = out + "</ul>"
 			out

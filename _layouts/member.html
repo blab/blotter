@@ -2,28 +2,26 @@
 layout: default
 ---
 
-{% assign member = page %}
-
 <p class="spacer">
 <div class="row">
 	<div class="col-md-2"></div>
 	<div class="col-md-8">	
 		<div class="bighead">
-			{{ member.title }}
+			{{ page.title }}
 		</div>
 		<div class="subhead">
-			{{ member.position | }}		
+			{{ page.position | }}		
 		</div>	
 		<p class="smallspacer">
 		{% if page.image %}
-		<img class="offset" src="{{ member.image }}">
+		<img class="offset" src="{{ page.image }}">
 		{% endif %}			
 		<div class="post">
 			{{ content }}
 		</div>
-		{% if member.cv %}
+		{% if page.cv %}
 		<div class="glyphbox">
-		<a class="off" href="{{ member.cv }}">
+		<a class="off" href="{{ page.cv }}">
 			<span class="iconbox">
 				<i class="icon-file icon-large"></i> 
 			</span>
@@ -31,28 +29,28 @@ layout: default
 		</a>			
 		</div>
 		{% endif %}	    				
-		{% if member.twitter %}
+		{% if page.twitter %}
 		<div class="glyphbox">
-		<a class="off" href="https://twitter.com/{{ member.twitter }}">
+		<a class="off" href="https://twitter.com/{{ page.twitter }}">
 			<span class="iconbox">
 				<i class="icon-twitter icon-large"></i> 
 			</span>
-			{{ member.twitter }}
+			{{ page.twitter }}
 		</a>			
 		</div>
 		{% endif %}	
-		{% if member.github %}
+		{% if page.github %}
 		<div class="glyphbox">
-		<a class="off" href="https://github.com/{{ member.github }}">
+		<a class="off" href="https://github.com/{{ page.github }}">
 			<span class="iconbox">
 				<i class="icon-github icon-large"></i> 
 			</span>
-			{{ member.github }}
+			{{ page.github }}
 		</a>			
 		</div>
 		{% endif %}		   	
-		{% if member.email %}
-		{% assign emailarray = member.email | split: '@' %}
+		{% if page.email %}
+		{% assign emailarray = page.email | split: '@' %}
 		<div class="glyphbox">
 			<span class="iconbox">
 				<i class="icon-envelope"></i> 
@@ -65,7 +63,7 @@ layout: default
 </div>	
 
 {% for paper in site.categories.papers %}
-{% if paper.authors contains member.lastname %}
+{% if paper.authors contains page.lastname %}
 {% assign papersq = true %}
 {% endif %}
 {% endfor %}
@@ -78,7 +76,7 @@ layout: default
 		<div class="head">Papers</div>
 		<p class="smallspacer">
 		{% for paper in site.categories.papers %}
-		{% if paper.authors contains member.lastname %}
+		{% if paper.authors contains page.lastname %}
 		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
 		{% endif %}
 		{% endfor %}
@@ -88,7 +86,7 @@ layout: default
 {% endif %}
 
 {% for post in site.categories.blog %}
-{% if member.title == post.author %}
+{% if page.title == post.author %}
 {% assign postsq = true %}
 {% endif %}
 {% endfor %}
@@ -101,7 +99,7 @@ layout: default
 		<div class="head">Posts</div>
 		<p class="smallspacer">
 		{% for post in site.categories.blog %}
-		{% if member.title == post.author %}
+		{% if page.title == post.author %}
 		<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
 		{% endif %}
 		{% endfor %}

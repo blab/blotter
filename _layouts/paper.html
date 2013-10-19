@@ -2,26 +2,36 @@
 layout: default
 ---
 
-<p class="spacer">
+<p class="smallspacer">
+
 <div class="row">
-	<div class="col-md-2"></div>
-	<div class="col-md-8">	
-		{% if page.image %}
-		<img class="offset" src="{{ page.image }}">
-		{% endif %}
-		<div class="bighead">
-			{{ page.title }}
+	<div class="col-md-12">
+		<div class="media">
+			{% if page.image %}
+			<a class="pull-right" href="#">
+    			<img class="media-object" src="{{ page.image }}">
+  			</a>
+			{% endif %}
+			<div class="media-body">
+				<div class="title media-heading">
+					{{ page.title }}
+				</div>
+				<p>
+				<div class="smallhead">
+					{{ page.authors }}
+					{{ page.year }}.
+					{{ page.journal }}
+				</div>
+			</div>
 		</div>
-		<p>
-		<div class="smallhead">
-			{{ page.authors }}
-			{{ page.year }}.
-			{{ page.journal }}
-		</div>
-		<p class="smallspacer">
-		<div class="post">
-			{{ content }}
-		</div>
+	</div>				
+</div>
+
+<p class="smallspacer">
+
+<div class="row">
+	<div class="col-md-2">
+		<p class="spacer">
 		<div class="glyphbox">
 			{% if page.pdf %}
 			<a class="off" href="{{ page.pdf }}">
@@ -50,6 +60,11 @@ layout: default
 			</a>					
 			{% endif %}	
 		</div>
+	</div>
+	<div class="col-md-8">	
+		<div class="post">
+			{{ content }}
+		</div>	
 	</div>			
 	<div class="col-md-2"></div>
 </div>	
