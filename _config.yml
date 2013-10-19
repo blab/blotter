@@ -12,3 +12,10 @@ redcarpet:
 
 pagination: true
 paginate: 5
+
+exclude:
+  - "*.branches"
+  - "*.kml"  
+  - "*.log"
+  - "*.nb"  
+  - "*.trees"
