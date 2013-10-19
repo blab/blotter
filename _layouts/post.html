@@ -7,27 +7,38 @@ layout: default
 	{% endif %}
 {% endfor %}
 
-<p class="spacer">
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Boastful -->
+<link href="/css/boastful.css" rel="stylesheet">		
+<script src="/js/jquery.boastful.js"></script>	
+
+<p class="smallspacer">
+
 <div class="row">
-	<div class="col-md-2"></div>
-	<div class="col-md-8">	
-		<div class="bighead">
-			{{ page.title }}
+	<div class="col-md-12">
+		<div class="media">
+			<div class="media-body">
+				<div class="title media-heading">
+					{{ page.title }}
+				</div>
+				<p>
+				<div class="smallhead">
+					{{ page.date | date_to_string }}
+					{% if author %}
+					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+					{% endif %}		
+				</div>
+			</div>
 		</div>
-		<div class="subhead">
-			{{ page.date | date_to_string }}
-			{% if author %}
-			by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-			{% endif %}				
-		</div>	
-		<p class="smallspacer">
-		{% if page.image %}
-		<img class="offset" src="{{ page.image }}">
-		{% endif %}	
-		<div class="post">
-			{{ content }}
-		</div>
-		
+	</div>				
+</div>
+
+<p class="spacer">
+
+<div class="row">
+	<div class="col-md-3">
 		{% if page.link %}
 		<div class="glyphbox">
 		<a class="off" href="{{ page.link }}">
@@ -37,22 +48,23 @@ layout: default
 			link
 		</a>			
 		</div>
-		{% endif %}		
-		
+		{% endif %}	
+	</div>
+	<div class="col-md-8">	
+		<div class="post">
+			{% if page.image %}
+			<img class="offset" src="{{ page.image }}">
+			{% endif %}
+			{{ content }}
+		</div>	
 	</div>			
-	<div class="col-md-2"></div>
+	<div class="col-md-1"></div>
 </div>	
+
 <p>
 
-<!-- jQuery -->
-<script src="/js/jquery.min.js"></script>
-
-<!-- Boastful -->
-<link href="/css/boastful.css" rel="stylesheet">		
-<script src="/js/jquery.boastful.js"></script>	
-
 <div class="row">
-	<div class="col-md-2"></div>
+	<div class="col-md-3"></div>
 	<div class="col-md-8">	
 		<div>
 			<script>
@@ -87,7 +99,7 @@ layout: default
 			<div id="boastful"></div>	
 		</div>
 	</div>
-	<div class="col-md-2"></div>
+	<div class="col-md-1"></div>
 </div>
 
 

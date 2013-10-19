@@ -8,9 +8,7 @@ layout: default
 	<div class="col-md-12">
 		<div class="media">
 			{% if page.image %}
-			<a class="pull-right" href="#">
-    			<img class="media-object" src="{{ page.image }}">
-  			</a>
+			<img class="pull-right media-object" src="{{ page.image }}">
 			{% endif %}
 			<div class="media-body">
 				<div class="title media-heading">
@@ -30,7 +28,7 @@ layout: default
 <p class="smallspacer">
 
 <div class="row">
-	<div class="col-md-2">
+	<div class="col-md-3">
 		<p class="spacer">
 		<div class="glyphbox">
 			{% if page.pdf %}
@@ -66,5 +64,5 @@ layout: default
 			{{ content }}
 		</div>	
 	</div>			
-	<div class="col-md-2"></div>
+	<div class="col-md-1"></div>
 </div>	
