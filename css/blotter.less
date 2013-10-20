@@ -16,6 +16,12 @@ h5, .h5 { font-size:  @font-size-base; }
 h6, .h6 { font-size: ceil(@font-size-base * 0.85); } // ~12px
 
 // general
+
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 h1,
 h2,
 h3,
@@ -123,6 +129,15 @@ a.off {
 code.has-jax {
 	background: inherit; 
 	color: inherit;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+pre code {
+    overflow-wrap: normal;
+    white-space: pre;
 }
 
 table {
