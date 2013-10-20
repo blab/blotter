@@ -10,3 +10,6 @@
 [submodule "projects/stem"]
 	path = projects/stem
 	url = https://github.com/trvrb/stem
+[submodule "projects/PACT"]
+	path = projects/PACT
+	url = https://github.com/trvrb/PACT
