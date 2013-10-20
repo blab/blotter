@@ -27,7 +27,8 @@ module Jekyll
 				href = commits[i].rels[:html].href
 				date = DateTime.parse(commits[i].commit.author.date).to_time.strftime("%d %b %Y")
 				message = commits[i].commit.message
-				out = out + "<li> <a class=\"off\" href=\"#{href}\">" +
+				out = out + "<div class=\"smallspacer\"></div>" +
+				"<li> <a class=\"off\" href=\"#{href}\">" +
 				"#{date} - " + 
 				"<span class=\"text-gray\">#{message}</span>" +
 				"</a> </li>"
@@ -58,7 +59,8 @@ module Jekyll
 				href = contributors[i].rels[:html].href
 				login = contributors[i].login
 				avatar = contributors[i].rels[:avatar].href
-				out = out + "<div>" +
+				out = out + "<div class=\"smallspacer\"></div>" +
+				"<div>" +
 				"<a class=\"off\" href=\"#{href}\">" +
     			"<img class=\"pull-left\" width=30 src=\"#{avatar}\">" +
     			"<div class=\"handlebox\">" +
