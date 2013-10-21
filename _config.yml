@@ -19,3 +19,8 @@ exclude:
   - "*.log"
   - "*.nb"  
   - "*.trees"
+
+projects:
+  - trvrb/coaltrace
+  - trvrb/stem
+  - trvrb/PACT
