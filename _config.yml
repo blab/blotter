@@ -19,6 +19,8 @@ exclude:
   - "*.log"
   - "*.nb"  
   - "*.trees"
+  - "Gemfile"
+  - "Gemfile.lock"
 
 projects:
   - trvrb/coaltrace
