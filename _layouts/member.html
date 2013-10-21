@@ -99,6 +99,24 @@ layout: default
 </div>		
 {% endif %}
 
+<p class="spacer">
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-8">	
+		<div class="head">Projects</div>
+		<p class="smallspacer">
+		{% for project in site.categories.projects %}
+			{% capture contributors %}
+				{% octokit_contributors {{project.repo}} %}
+			{% endcapture %}
+			{% if contributors contains page.github %}
+				<p><a href="{{ project.url }}" class="off">{{ project.title }} - {{ project.description }}</a>
+			{% endif %}
+		{% endfor %}
+	</div>			
+	<div class="col-md-1"></div>
+</div>		
+
 {% for post in site.categories.blog %}
 {% if page.title == post.author %}
 {% assign postsq = true %}
