@@ -29,16 +29,19 @@ mdarray.each { |md|
 
 	# if file is lacking YAML front matter, add some
 	contents = File.open(md, "r").read	
+	out = File.new(md, "w")	
 	if contents !~ /^(---\s*\n.*?\n?)^(---\s*$\n?)/m
-		out = File.new(md, "w")
 		out.puts "---"
 		out.puts "layout: project"
 		if project_name != nil
 			out.puts "project: #{project_name}"
 		end
 		out.puts "---"
-		out.puts
-		out.puts contents	
+		out.puts	
 	end
+	
+	# go through file and replace all links that point to .md files with the equivalent .html file
+	contents.gsub!(/\((\S+)\.md\)/, "(\\1.html)")
+	out.puts contents
 	
 }
