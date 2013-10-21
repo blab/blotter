@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<p class="smallspacer">
+<div class="bigspacer"></div>
 
 <div class="row">
 	<div class="col-md-12">
@@ -23,7 +23,7 @@ layout: default
 	</div>				
 </div>
 
-<p class="spacer">
+<div class="bigspacer"></div>
 
 <div class="row">
 	<div class="col-md-3">
@@ -68,7 +68,6 @@ layout: default
 		{% endif %}				
 	</div>
 	<div class="col-md-8">	
-		<p class="smallspacer">	
 		<div class="post">
 			{{ content }}
 		</div>
@@ -83,12 +82,12 @@ layout: default
 {% endfor %}
 
 {% if papersq == true %}
-<p class="spacer">
+<div class="bigspacer"></div>
 <div class="row">
 	<div class="col-md-3"></div>
 	<div class="col-md-8">	
 		<div class="head">Papers</div>
-		<p class="smallspacer">
+		<div class="spacer"></div>
 		{% for paper in site.categories.papers %}
 		{% if paper.authors contains page.lastname %}
 		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
@@ -99,12 +98,21 @@ layout: default
 </div>		
 {% endif %}
 
-<p class="spacer">
+{% for project in site.projects %}
+	{% for contributor in project.contributors %}
+		{% if contributor.login == page.github %}
+			{% assign projectsq = true %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+
+{% if projectsq == true %}
+<div class="bigspacer"></div>
 <div class="row">
 	<div class="col-md-3"></div>
 	<div class="col-md-8">	
 		<div class="head">Projects</div>
-		<p class="smallspacer">
+		<div class="spacer"></div>
 		{% for project in site.projects %}
 			{% assign present = false %}
 			{% for contributor in project.contributors %}
@@ -118,7 +126,8 @@ layout: default
 		{% endfor %}
 	</div>			
 	<div class="col-md-1"></div>
-</div>		
+</div>
+{% endif %}
 
 {% for post in site.categories.blog %}
 {% if page.title == post.author %}
@@ -127,12 +136,12 @@ layout: default
 {% endfor %}
 
 {% if postsq == true %}
-<p class="spacer">
+<div class="bigspacer"></div>
 <div class="row">
 	<div class="col-md-3"></div>
 	<div class="col-md-8">	
 		<div class="head">Posts</div>
-		<p class="smallspacer">
+		<div class="spacer"></div>
 		{% for post in site.categories.blog %}
 		{% if page.title == post.author %}
 		<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>

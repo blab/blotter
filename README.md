@@ -10,11 +10,12 @@ Each project exists as a git submodule.  To add a project and have it automatica
 	git submodule add https://github.com/owner/project-name.git projects/project-name
 	```
 
-2. 	**Add the project to the Jekyll index.** Open the file `_config.yml` and append the full repo name to the YAML `projects` listing.  This should look then look like:
+2. 	**Add the project to the Jekyll index.** Open the file `_config.yml` and append the full repo name to the YAML `projects` listing.  This should then look like:
 	```
 	projects:
 	  - trvrb/coaltrace
 	  - trvrb/stem
+	  ...
 	  - owner/project-name
 	```
 	where `project-name` corresponds to the name of the git submodule, as above.

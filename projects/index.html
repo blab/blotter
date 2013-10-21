@@ -5,39 +5,35 @@ categories:
  - projects
 ---
 
+<div class="bigspacer"></div>
 {% for project in site.projects %}
-		
-		<p class="spacer">	
-		<div class="row">
-			<div class="col-md-3">
-				<div class="head">
-					<a href="{{ project.url }}" class="off">{{ project.title }}</a>
-				</div>
-			</div>
-			<div class="col-md-8">		
-				<div class="smallhead">
-					<a href="{{ project.url }}" class="off">{{ project.description }}</a>
-				</div>	
-				<div class="smallspacer"></div>	
-				<div class="note">
-					Last updated <a class="off" href="{{ project.commits.first.url }}">{{ project.date | date_to_string }}</a>
-				</div>		
-				<div class="smallspacer"></div>
-				<div class="note">
-					<div class="pull-left">
-						<div class="handlebox" style="padding-right: 3px;">
-    					Built by 
-    					</div>
-    				</div>
-					{% for contributor in project.contributors %}
-					<a class="off" href="{{ contributor.url }}">
-    					<img class="pull-left avatar" style="padding: 3px;" src="{{ contributor.avatar }}">
- 					</a>
-					{% endfor %}
-				</div>					
-			</div>			
-			<div class="col-md-1"></div>
-		</div>		
-		
-{% endfor %}
 
+    {% cycle 'add rows': '<div class="row">', nil, nil %}
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="{{ project.url }}" class="off">{{ project.title }}</a>
+			</div>	
+			<div class="note">
+				<a href="{{ project.url }}" class="off">{{ project.description }}</a>
+			</div>	
+			<div class="spacer"></div>	
+			<div class="note">
+				Last updated <a class="off" href="{{ project.commits.first.url }}">{{ project.date | date_to_string }}</a>
+			</div>		
+			<div class="smallspacer"></div>
+			<div class="note">
+				<div class="pull-left">
+					<div class="handlebox" style="padding-right: 3px;">
+					Built by 
+					</div>
+				</div>
+				{% for contributor in project.contributors %}
+				<a class="off" href="{{ contributor.url }}">
+					<img class="pull-left avatar" style="padding: 3px;" src="{{ contributor.avatar }}">
+				</a>
+				{% endfor %}
+			</div>									
+		</div>
+    {% cycle 'close rows': nil, nil, '</div>' %}
+{% endfor %}
+{% cycle 'close rows': nil, '</div>', '</div>' %}	

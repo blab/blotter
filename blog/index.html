@@ -6,7 +6,7 @@ categories:
 category: blog
 ---
 
-<div class='pager'>
+<div class="pager">
   
 	{% if paginator.previous_page %}
 		{% if paginator.previous_page == 1 %}
@@ -36,7 +36,7 @@ category: blog
 			{% endif %}
 		{% endfor %}
 	
-		<p class="spacer">	
+		<div class="bigspacer"></div>	
 		<div class="row">
 			<div class="col-md-3">
 				<div class="head">
@@ -63,12 +63,12 @@ category: blog
 		
 {% endfor %}
 
-<p class="spacer">	
+<div class="bigspacer"></div>	
 <div class="row">
 	<div class="col-md-12 text-center">
 		<a class="off" href="/{{ page.category }}/archive/">
 			<div class="smallhead">Archive</div>
-			<i class="text-gray icon-chevron-sign-down icon-2x"></i>
+			<i class="icon-chevron-sign-down icon-2x"></i>
 		</a>
 	</div>
 </div>
