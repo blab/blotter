@@ -13,3 +13,6 @@
 [submodule "projects/PACT"]
 	path = projects/PACT
 	url = https://github.com/trvrb/PACT
+[submodule "projects/haplotypes"]
+	path = projects/haplotypes
+	url = https://github.com/trvrb/haplotypes.git
