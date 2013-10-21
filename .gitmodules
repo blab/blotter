@@ -16,3 +16,6 @@
 [submodule "projects/haplotypes"]
 	path = projects/haplotypes
 	url = https://github.com/trvrb/haplotypes.git
+[submodule "projects/divergence"]
+	path = projects/divergence
+	url = https://github.com/trvrb/divergence.git
