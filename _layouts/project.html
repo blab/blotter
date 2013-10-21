@@ -1,8 +1,10 @@
 ---
 layout: default
+categories: 
+ - projects
 ---
 
-{% for test in site.categories.projects %}
+{% for test in site.projects %}
 	{% if test.title == page.project %}
 		{% assign project = test %}
 	{% endif %}
@@ -11,7 +13,7 @@ layout: default
 <div class="row">
 	<div class="col-md-12">
 		<div class="bigtitle">
-			{{ project.title }}
+			<a class="off" href="{{ project.url }}">{{ project.title }}</a>
 		</div>
 		<div class="head">
 			{{ project.description }}
@@ -26,23 +28,42 @@ layout: default
 		<p class="spacer">
 		<div class="smallhead">
 			Source code
-		</div>
+		</div>	
 		<div class="note">
 			<a class="off" href="http://github.com/{{ project.repo }}">github.com/{{ project.repo }}</a>
 		</div>
 		<p class="spacer">
 		<div class="smallhead">
 			Contributors
-		</div>
+		</div>	
 		<div class="note">
-			{% octokit_contributors {{project.repo}} %}
+			{% for contributor in project.contributors %}	
+			<div class="smallspacer"></div>				
+			<div>
+				<a class="off" href="{{ contributor.url }}">
+    			<img class="pull-left avatar" src="{{ contributor.avatar }}">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				{{ contributor.login }}
+    			</div>
+ 				</a>
+ 			</div>			
+ 			{% endfor %}
 		</div>
 		<p class="spacer">
 		<div class="smallhead">
 			Latest commits
-		</div>
+		</div>		
 		<div class="smallnote">
-			{% octokit_commits {{project.repo}} %}
+			<ul class="list-unstyled">
+			{% for commit in project.commits %}
+				<div class="smallspacer"></div>
+				<li> 
+					<a class="off" href="{{ commit.url }}">
+					{{ commit.date | date_to_string }} - <span class="text-gray">{{ commit.message }}</span>
+					</a> 
+				</li>
+			{% endfor %}
+			</ul>
 		</div>		
 	</div>
 	<div class="col-md-8">				

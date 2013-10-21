@@ -105,11 +105,14 @@ layout: default
 	<div class="col-md-8">	
 		<div class="head">Projects</div>
 		<p class="smallspacer">
-		{% for project in site.categories.projects %}
-			{% capture contributors %}
-				{% octokit_contributors {{project.repo}} %}
-			{% endcapture %}
-			{% if contributors contains page.github %}
+		{% for project in site.projects %}
+			{% assign present = false %}
+			{% for contributor in project.contributors %}
+				{% if contributor.login == page.github %}
+					{% assign present = true %}
+				{% endif %}
+			{% endfor %}
+			{% if present == true %}
 				<p><a href="{{ project.url }}" class="off">{{ project.title }} - {{ project.description }}</a>
 			{% endif %}
 		{% endfor %}

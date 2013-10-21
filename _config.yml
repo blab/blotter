@@ -24,3 +24,5 @@ projects:
   - trvrb/coaltrace
   - trvrb/stem
   - trvrb/PACT
+  - trvrb/influenza-dynamics-practical
+  - trvrb/antigen

@@ -5,22 +5,38 @@ categories:
  - projects
 ---
 
-{% for project in site.categories.projects %}
-
+{% for project in site.projects %}
+		
 		<p class="spacer">	
 		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8">		
+			<div class="col-md-3">
 				<div class="head">
-					<a href="/projects/{{ project.title }}/" class="off">{{ project.title }}</a>
+					<a href="{{ project.url }}" class="off">{{ project.title }}</a>
 				</div>
-				<div class="subhead">
-					{{ project.description }}			
+			</div>
+			<div class="col-md-8">		
+				<div class="smallhead">
+					<a href="{{ project.url }}" class="off">{{ project.description }}</a>
 				</div>	
-				<p>
-				{% octokit_commits {{project.repo}} %}
+				<div class="smallspacer"></div>	
+				<div class="note">
+					Last updated <a class="off" href="{{ project.commits.first.url }}">{{ project.date | date_to_string }}</a>
+				</div>		
+				<div class="smallspacer"></div>
+				<div class="note">
+					<div class="pull-left">
+						<div class="handlebox" style="padding-right: 3px;">
+    					Built by 
+    					</div>
+    				</div>
+					{% for contributor in project.contributors %}
+					<a class="off" href="{{ contributor.url }}">
+    					<img class="pull-left avatar" style="padding: 3px;" src="{{ contributor.avatar }}">
+ 					</a>
+					{% endfor %}
+				</div>					
 			</div>			
-			<div class="col-md-2"></div>
+			<div class="col-md-1"></div>
 		</div>		
 		
 {% endfor %}
