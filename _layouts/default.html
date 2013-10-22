@@ -44,10 +44,12 @@
 	<div id="header">
 		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
 			<div class="container">	
+				{% if page.categories.first != 'home' %}
 				<div class="navbar-header">
 					<object class="pull-left logo" data="/logo/logo.svg" type="image/svg+xml"></object>
 					<a class="navbar-brand" href="/">bedford lab</a>
 				</div>
+				{% endif %}
 				<ul class="nav navbar-nav navbar-right">
 					{% if page.categories.first == 'blog' %}
 					<li class="active">

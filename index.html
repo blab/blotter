@@ -1,13 +1,24 @@
 ---
 layout: default
 title: Bedford Lab research blotter
+categories:
+ - home
 ---
+
+<div class="bigspacer"></div>
 
 <div class="row">
 	<div class="col-md-12">
-
-	</div>
+		<div>
+			<object class="pull-left biglogo" data="/logo/logo.svg" type="image/svg+xml"></object>
+			<div class="bigtitle logobox">
+				bedford lab research
+			</div>
+		</div>
+	</div>				
 </div>
+
+<div class="hugespacer"></div>
 
 <div class="row">
 	<div class="col-md-4">
@@ -16,7 +27,7 @@ title: Bedford Lab research blotter
 		</div>
 		<div class="bigspacer"></div>
 		<div class="feedbox">
-			{% for post in site.categories.blog limit:5 %}
+			{% for post in site.categories.blog limit:8 %}
 			
 				{% for member in site.categories.team %}
 					{% if member.title == post.author %}
@@ -54,7 +65,7 @@ title: Bedford Lab research blotter
 		</div>
 		<div class="bigspacer"></div>
 		<div class="feedbox">		
-			{% for paper in site.categories.papers limit:5 %}
+			{% for paper in site.categories.papers limit:8 %}
 				<div class="smallhead">
 					<a class="off" href="{{ paper.url }}">
 					{{ paper.title }}
@@ -81,7 +92,7 @@ title: Bedford Lab research blotter
 		</div>
 		<div class="bigspacer"></div>
 		<div class="feedbox">
-			{% for project in site.projects limit:6 %}
+			{% for project in site.projects limit:8 %}
 				<div class="smallhead">
 					<a class="off" href="{{ project.url }}">
 					{{ project.title }}
