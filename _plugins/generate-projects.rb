@@ -35,6 +35,8 @@ module Jekyll
 			if site.config.key? 'projects'
 				site.config['projects'].each do |repo|
 				
+					puts "Generating #{repo}"
+					
 					# load repo metadata
 					octokit_repo = client.repository(repo)
 					project_title = octokit_repo.name
