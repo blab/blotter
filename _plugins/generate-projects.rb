@@ -66,11 +66,16 @@ module Jekyll
 						commit_date = octokit_commits[i].commit.author.date
 						commit_message = octokit_commits[i].commit.message
 						commit_url = octokit_commits[i].rels[:html].href
+						commit_author_login = octokit_commits[i].author.login
+						commit_author_url = octokit_commits[i].author.rels[:html].href				
 						project_commits = project_commits.push(
 							"date" => commit_date,
 							"message" => commit_message,
-							"url" => commit_url
+							"url" => commit_url,
+							"author_login" => commit_author_login,							
+							"author_url" => commit_author_url					
 						)
+						
 					end
 					
 					# assemble metadata
