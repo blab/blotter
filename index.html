@@ -49,15 +49,10 @@ categories:
 					{% endif %}						
 				</div>
 				<div class="spacer"></div>	
-				
+				<div class="smallspacer"></div>				
 			{% endfor %}
 		</div>
-		<div class="smallspacer"></div>
-		<div class="dotdotdot">
-			&bull;<br>
-			&bull;<br>
-			&bull;			
-		</div>	
+		<div class="bigspacer"></div>		
 	</div>
 	<div class="col-md-4">
 		<div class="bighead">
@@ -76,15 +71,11 @@ categories:
 					Posted
 					{{ paper.date | date_to_string }}
 				</div>
-				<div class="spacer"></div>			
+				<div class="spacer"></div>	
+				<div class="smallspacer"></div>				
 			{% endfor %}
 		</div>
-		<div class="smallspacer"></div>
-		<div class="dotdotdot">
-			&bull;<br>
-			&bull;<br>
-			&bull;			
-		</div>	
+		<div class="bigspacer"></div>		
 	</div>
 	<div class="col-md-4">
 		<div class="bighead">
@@ -95,7 +86,7 @@ categories:
 			{% for project in site.projects limit:8 %}
 				<div class="smallhead">
 					<a class="off" href="{{ project.url }}">
-					{{ project.title }}
+					{{ project.title }} - {{ project.description }}
 					</a>
 				</div>
 				<div class="smallspacer"></div>
@@ -109,14 +100,10 @@ categories:
 					{{ project.commits.first.author_login }}
 					</a>
 				</div>
-				<div class="spacer"></div>			
+				<div class="spacer"></div>	
+				<div class="smallspacer"></div>				
 			{% endfor %}
 		</div>
-		<div class="smallspacer"></div>
-		<div class="dotdotdot">
-			&bull;<br>
-			&bull;<br>
-			&bull;			
-		</div>	
+		<div class="bigspacer"></div>		
 	</div>	
 </div>
