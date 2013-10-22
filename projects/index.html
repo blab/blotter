@@ -10,29 +10,24 @@ categories:
 
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 projectbox">
+			<div class="pull-right">
+				<div class="note">
+					<a class="off" href="{{ project.commits.first.url }}">{{ project.date | date_to_string }}</a>
+				</div>		
+				<div class="pull-right note">
+					{% for contributor in project.contributors %}
+					<a class="off" href="{{ contributor.url }}">
+						<img class="pull-left avatar" style="padding: 2px;" src="{{ contributor.avatar }}">
+					</a>
+					{% endfor %}
+				</div>					
+			</div>		
 			<div class="head">
 				<a href="{{ project.url }}" class="off">{{ project.title }}</a>
 			</div>	
 			<div class="note">
 				<a href="{{ project.url }}" class="off">{{ project.description }}</a>
 			</div>
-			<div class="spacer"></div>	
-			<div class="note">
-				Last updated <a class="off" href="{{ project.commits.first.url }}">{{ project.date | date_to_string }}</a>
-			</div>		
-			<div class="smallspacer"></div>
-			<div class="note">
-				<div class="pull-left">
-					<div class="handlebox" style="padding-right: 3px;">
-					Built by 
-					</div>
-				</div>
-				{% for contributor in project.contributors %}
-				<a class="off" href="{{ contributor.url }}">
-					<img class="pull-left avatar" style="padding: 3px;" src="{{ contributor.avatar }}">
-				</a>
-				{% endfor %}
-			</div>									
 		</div>
     {% cycle 'close rows': nil, nil, '</div><div class="bigspacer"></div>' %}
 {% endfor %}
