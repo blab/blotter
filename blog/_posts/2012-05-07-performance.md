@@ -10,12 +10,11 @@ We're still in the planning stages and one of the big questions is which Javascr
 
 Here, I coded up a simple Brownian motion style visualization using both programs.  The Processing.js visualization is [here](/performance/processing/) and the D3.js visualization is [here](/performance/d3/).  There are 500 particles, the velocity of which is constantly being bumped up and down by random noise.  The XY window is adjusted every frame to match up with the extent of the XY locations of the particles.  In addition to random noise, there is some friction slowing down the particle velocities and there is an attraction of each particle to {0,0}, making this an [OU process](http://en.wikipedia.org/wiki/Ornstein–Uhlenbeck_process).  Particle sizes are proportional to their velocities.
 
-<table style="float:right; text-align:center; padding:0px 30px 10px 30px;" width=300>
-<tr><td><em>Browser</em></td><td><em>Processing.js</em></td><td><em>D3.js</em></td></tr>
-<tr><td>Safari</td><td>58</td><td>29</td></tr>
-<tr><td>Chrome</td><td>40</td><td>34</td></tr>
-<tr><td>Firefox</td><td>40</td><td>4</td></tr>			
-</table>			
+Browser | Processing.js | D3.js
+--------|---------------|------
+Safari  | 58            | 29
+Chrome  | 40            | 34
+Firefox | 40            | 4
 
 Here, I've recorded the frame rates I was getting for both Processing.js and D3.js.  I'm doing all of this on my MacBook Pro.  Your results may vary.  Processing.js running in Safari comes out on top, nearly hitting 60 FPS, while D3.js under Safari gave roughly half this.  Chrome fairs substantially worse with Processing.js, but slightly better with D3.js, while Firefox does terribly with D3.js.  I would imagine that almost all of the differences here will lie in the handling of SVG vs canvas rather than in the D3 and Processing libraries.  Still, although I'm sure SVG performance will continue to improve, for the moment it seems that Processing.js is the clear winner.
 
