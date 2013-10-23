@@ -9,11 +9,22 @@ categories:
 
 <div class="row">
 	<div class="col-md-12">
-		<div>
-			<object class="pull-left biglogo" data="/logo/logo.svg" type="image/svg+xml"></object>
-			<div class="bigtitle logobox">
-				bedford lab research
-			</div>
+		<object class="pull-left biglogo" data="/logo/logo.svg" type="image/svg+xml"></object>
+		<div class="bigtitle logobox">
+			bedford lab research
+		</div>
+	</div>				
+</div>
+
+<div class="hugespacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="smallhead">
+			The Bedford Lab at the <a class="off" href="http://http://www.fhcrc.org/">FHCRC</a> works at the interface of evolution, 
+			epidemiology and immunology. We apply sequence data to understand viral dynamics, looking at the geographic circulation 
+			of viral strains and their evolution. We are interested in linking mutations in the virus to changes in acquired immunity 
+			in the human population, and then looking at how human immunity influences viral transmission patterns.
 		</div>
 	</div>				
 </div>
@@ -23,6 +34,7 @@ categories:
 <div class="row">
 	<div class="col-md-4">
 		<div class="head">
+			<i class="icon-time"></i>
 			<a class="off" href="/blog/">Recent posts</a>
 		</div>
 		<div class="bigspacer"></div>
@@ -35,7 +47,7 @@ categories:
 					{% endif %}
 				{% endfor %}		
 			
-				<div class="smallhead">
+				<div class="note">
 					<a class="off" href="{{ post.url }}">
 					{{ post.title }}
 					</a>
@@ -56,12 +68,15 @@ categories:
 	</div>
 	<div class="col-md-4">
 		<div class="head">
-			<a class="off" href="/papers/">Recent papers</a>
+			<a class="off" href="/papers/">
+				<i class="icon-file-alt"></i>
+				Recent papers
+			</a>
 		</div>
 		<div class="bigspacer"></div>
 		<div class="feedbox">		
 			{% for paper in site.categories.papers limit:8 %}
-				<div class="smallhead">
+				<div class="note">
 					<a class="off" href="{{ paper.url }}">
 					{{ paper.title }}
 					</a>
@@ -79,12 +94,13 @@ categories:
 	</div>
 	<div class="col-md-4">
 		<div class="head">
+			<i class="icon-github"></i>		
 			<a class="off" href="/projects/">Active projects</a>
 		</div>
 		<div class="bigspacer"></div>
 		<div class="feedbox">
 			{% for project in site.projects limit:8 %}
-				<div class="smallhead">
+				<div class="note">
 					<a class="off" href="{{ project.url }}">
 					{{ project.title }} - {{ project.description }}
 					</a>
