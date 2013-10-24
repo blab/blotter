@@ -1,6 +1,6 @@
 ---
 layout: default
-title: blotter [projects]
+title: bedford lab [projects]
 categories: 
  - projects
 ---
@@ -29,7 +29,8 @@ categories:
 			<div class="note">
 				<a href="{{ project.url }}" class="off">{{ project.description }}</a>
 			</div>
+			<div class="bigspacer"></div>
 		</div>
-    {% cycle 'close rows': nil, nil, '</div><div class="bigspacer"></div>' %}
+    {% cycle 'close rows': nil, nil, '</div>' %}
 {% endfor %}
-{% cycle 'close rows': nil, '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}	
+{% cycle 'close rows': nil, '</div>', '</div>' %}	

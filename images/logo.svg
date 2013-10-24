@@ -5,18 +5,17 @@
 	 width="99px" height="99.154px" viewBox="0 0 99 99.154" enable-background="new 0 0 99 99.154" xml:space="preserve">
 <g>
 	<g>
-		<path fill-rule="evenodd" clip-rule="evenodd" fill="#DD2D2D" d="M97.5,49.577c0-12.751-5.057-24.979-14.059-33.996
-			C74.439,6.565,62.23,1.5,49.5,1.5c-12.73,0-24.939,5.065-33.941,14.081C6.557,24.598,1.5,36.826,1.5,49.577
-			s5.057,24.979,14.059,33.996C24.561,92.589,36.77,97.654,49.5,97.654c12.73,0,24.939-5.065,33.941-14.081
-			C92.443,74.556,97.5,62.328,97.5,49.577z"/>
+		<path fill="#DD2D2D" d="M97.5,49.577c0-12.751-5.057-24.979-14.059-33.996C74.439,6.565,62.23,1.5,49.5,1.5
+			c-12.73,0-24.939,5.065-33.941,14.081C6.557,24.598,1.5,36.826,1.5,49.577s5.057,24.979,14.059,33.996
+			C24.561,92.589,36.77,97.654,49.5,97.654c12.73,0,24.939-5.065,33.941-14.081C92.443,74.556,97.5,62.328,97.5,49.577z"/>
 		
 			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="61.795" y1="94.671" x2="67.783" y2="93.926"/>
 		
 			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="61.795" y1="94.671" x2="56.26" y2="97.078"/>
 		
-			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="75.641" y1="13.286" x2="72.466" y2="7.47"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="75.641" y1="13.286" x2="72.466" y2="7.469"/>
 		
-			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="75.641" y1="13.286" x2="82.153" y2="14.47"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="75.641" y1="13.286" x2="82.152" y2="14.469"/>
 		
 			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="4.348" y1="53.539" x2="2.672" y2="59.691"/>
 		
@@ -38,7 +37,7 @@
 		
 			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="45.981" y1="4.383" x2="49.5" y2="1.596"/>
 		
-			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="79.479" y1="21.509" x2="89.81" y2="23.653"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="79.479" y1="21.509" x2="89.811" y2="23.653"/>
 		
 			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="79.479" y1="21.509" x2="75.641" y2="13.286"/>
 		
@@ -78,13 +77,13 @@
 		
 			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="12.805" y1="43.385" x2="4.348" y2="53.539"/>
 		
-			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="69.944" y1="54.523" x2="96.234" y2="49.224"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="69.943" y1="54.523" x2="96.234" y2="49.224"/>
 		
-			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="69.944" y1="54.523" x2="75.701" y2="67.577"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="69.943" y1="54.523" x2="75.701" y2="67.577"/>
 		
-			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="54.974" y1="19.815" x2="45.981" y2="4.383"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="54.975" y1="19.815" x2="45.981" y2="4.383"/>
 		
-			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="54.974" y1="19.815" x2="67.1" y2="18.207"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="54.975" y1="19.815" x2="67.1" y2="18.207"/>
 		
 			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="10.85" y1="75.352" x2="6.626" y2="70.981"/>
 		
@@ -102,12 +101,9 @@
 		
 			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="49.5" y1="49.577" x2="44.759" y2="46.478"/>
 		
-			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="56.441" y1="42.931" x2="54.974" y2="19.815"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="56.441" y1="42.931" x2="54.975" y2="19.815"/>
 		
-			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="56.441" y1="42.931" x2="69.944" y2="54.523"/>
-		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M51.5,49.577c0-0.53-0.211-1.039-0.586-1.414
-			s-0.884-0.586-1.414-0.586s-1.039,0.211-1.414,0.586S47.5,49.047,47.5,49.577s0.211,1.039,0.586,1.414s0.884,0.586,1.414,0.586
-			s1.039-0.211,1.414-0.586S51.5,50.107,51.5,49.577z"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="56.441" y1="42.931" x2="69.943" y2="54.523"/>
 		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" d="M51.5,49.577"/>
 		
 			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="3.25" x1="49.5" y1="49.577" x2="56.441" y2="42.931"/>
