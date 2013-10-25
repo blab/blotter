@@ -13,7 +13,7 @@ categories:
 			<div class="pull-right">
 				<div class="smallnote">
 					Updated
-					<a class="off" href="{{ project.commits.first.url }}">{{ project.date | date_to_string }}</a>
+					<a class="off" href="{{ project.commits.first.url }}">{{ project.commits.first.date | date_to_string }}</a>
 				</div>		
 				<div class="pull-right note">
 					{% for contributor in project.contributors %}

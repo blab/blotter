@@ -19,6 +19,7 @@ exclude:
   - "*.log"
   - "*.nb"  
   - "*.trees"
+  - "*.xml"
   - "Gemfile"
   - "Gemfile.lock"
 

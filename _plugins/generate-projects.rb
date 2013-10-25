@@ -85,13 +85,12 @@ module Jekyll
 						"owner" => project_owner,
 						"description" => project_description,
 						"url" => project_url,
-						"date" => project_date,
 						"contributors" => project_contributors,
 						"commits" => project_commits
 					)
 					
 					# sort by date
-					array.sort! { |x, y| y["date"] <=> x["date"] } 
+					array.sort! { |x, y| y["commits"].first["date"] <=> x["commits"].first["date"] } 
 					
 				end
 			end
