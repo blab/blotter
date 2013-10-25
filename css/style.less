@@ -206,6 +206,19 @@ blockquote {
     }
 }
 
+.breadcrumb {
+	padding: 5px 0px;
+	background-color: @body-bg;
+	> li {
+		&+li:before {  
+			padding: 0px;
+		}
+		&+li:after {  
+			padding: 0px;
+		}		
+	}
+}
+
 .feedbox {
     height: 420px;
     overflow: hidden;    

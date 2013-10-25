@@ -15,7 +15,19 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="bigtitle">
-			<a class="off" href="{{ project.url }}">{{ project.title }}</a>
+			<!-- <a class="off" href="{{ project.url }}">{{ project.title }}</a> -->
+			<ol class="breadcrumb">
+			{% assign crumbs = page.title | breadcrumb_array %}
+			{% for crumb in crumbs %}
+				{% assign name = crumb | split: '/' | last %}
+				{% for page in site.pages %}			
+					{% if page.title == crumb %}
+						{% assign url = page.url %}
+					{% endif %}
+				{% endfor %}
+				<li><a class="off" href="{{ url }}">{{ name }}</a></li>
+			{% endfor %}
+			</ol>
 		</div>
 		<div class="head">
 			{{ project.description }}
