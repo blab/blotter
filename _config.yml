@@ -26,7 +26,7 @@ projects:
   - trvrb/coaltrace
   - trvrb/stem
   - trvrb/PACT
-  - trvrb/influenza-dynamics-practical
+  - trvrb/dynamics-practical
   - trvrb/antigen
   - trvrb/haplotypes
   - trvrb/divergence
