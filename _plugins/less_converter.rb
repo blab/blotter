@@ -1,7 +1,5 @@
 # less converter via https://gist.github.com/KBalderson/5689220
 
-
-
 module Jekyll
   class LessConverter < Converter
     safe true

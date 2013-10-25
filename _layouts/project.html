@@ -11,8 +11,6 @@ categories:
 	{% endif %}
 {% endfor %}
 
-{% assign title = project.title %}
-
 <div class="spacer"></div>
 
 <div class="row">
@@ -69,6 +67,20 @@ categories:
 				</li>
 			{% endfor %}
 			</ul>
+		</div>		
+		<div class="spacer"></div>	
+		<div class="smallhead">
+			Pages
+		</div>				
+		<div class="note">
+			{% for page in site.pages %}
+			{% if page.project == project.title %}
+			<a class="off" href="{{ page.path | project_page_url }}">
+				{{ page.path | project_page_name }}
+			</a>
+			<br>
+			{% endif %}
+			{% endfor %}
 		</div>		
 	</div>
 	<div class="col-md-8">				
