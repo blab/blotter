@@ -73,7 +73,7 @@ categories:
 			Pages
 		</div>				
 		<div class="note">
-			{% for page in site.pages %}
+			{% for page in site.pages | sort %}
 			{% if page.project == project.title %}
 			<a class="off" href="{{ page.path | project_page_url }}">
 				{{ page.path | project_page_name }}
