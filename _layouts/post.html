@@ -39,16 +39,18 @@ layout: default
 
 <div class="row">
 	<div class="col-md-3">
-		<div class="glyphbox note">
+		<div class="bigspacer"></div>
 		{% if page.link %}
-		<a class="off" href="{{ page.link }}">
-			<span class="iconbox">
-				<i class="fa fa-external-link icon-large"></i> 
-			</span>
-			link
-		</a>			
-		{% endif %}	
+		<div class="smallhead">
+			<i class="fa fa-external-link fa-fw"></i>
+			Link
+		</div>	
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<a class="off" style="word-wrap: break-word;" href="{{ page.link }}">{{ page.link | remove: 'http://' }}</a>
 		</div>		
+		<div class="bigspacer"></div>			
+		{% endif %}		
 	</div>
 	<div class="col-md-8">	
 		<div class="post">

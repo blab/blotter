@@ -13,43 +13,27 @@ categories:
 			</a>
 			<p>
 			<div class="head"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-			<p class="note">{{ member.position }}</p>    
-			{% if member.cv %}
-			<div class="glyphbox note">
-			<a class="off" href="{{ member.cv }}">
-				<span class="iconbox">
-					<i class="fa fa-file-text-o fa-lg"></i> 
-				</span>
-				cv
-			</a>			
-			</div>
-			{% endif %}	    				
+			<p class="note">{{ member.position }}</p>       				
 			{% if member.twitter %}
-			<div class="glyphbox">
+			<div class="glyphbox note">
 			<a class="off" href="https://twitter.com/{{ member.twitter }}">
-				<span class="iconbox">
-					<i class="fa fa-twitter fa-lg"></i> 
-				</span>
+				<i class="fa fa-twitter fa-lg fa-fw"></i>
 				{{ member.twitter }}
 			</a>			
 			</div>
 			{% endif %}	
 			{% if member.github %}
-			<div class="glyphbox">
+			<div class="glyphbox note">
 			<a class="off" href="https://github.com/{{ member.github }}">
-				<span class="iconbox">
-					<i class="fa fa-github fa-lg"></i> 
-				</span>
+				<i class="fa fa-github-alt fa-lg fa-fw"></i>
 				{{ member.github }}
 			</a>			
 			</div>
 			{% endif %}		   	
 			{% if member.email %}
 			{% assign emailarray = member.email | split: '@' %}
-			<div class="glyphbox">
-				<span class="iconbox">
-					<i class="fa fa-envelope fa-lg"></i> 
-				</span>
+			<div class="glyphbox note">
+				<i class="fa fa-inbox fa-lg fa-fw"></i>
 				{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
 			</div>
 			{% endif %}						

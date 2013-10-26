@@ -26,46 +26,52 @@ layout: default
 <div class="bigspacer"></div>
 
 <div class="row">
-	<div class="col-md-3">
-		{% if page.cv %}
-		<div class="glyphbox note">
-		<a class="off" href="{{ page.cv }}">
-			<span class="iconbox">
-				<i class="fa fa-file-text-o fa-lg"></i>
-			</span>
-			cv
-		</a>			
-		</div>
-		{% endif %}	    				
-		{% if page.twitter %}
-		<div class="glyphbox note">
-		<a class="off" href="https://twitter.com/{{ page.twitter }}">
-			<span class="iconbox">		
-				<i class="fa fa-twitter fa-lg"></i>
-			</span>
-			{{ page.twitter }}
-		</a>			
-		</div>
+	<div class="col-md-3">  				
+		{% if page.twitter %}		
+		<div class="smallhead">
+			<i class="fa fa-twitter fa-fw"></i>
+			Twitter
+		</div>	
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<a class="off" href="https://twitter.com/{{ page.twitter }}">{{ page.twitter }}</a>
+		</div>		
+		<div class="bigspacer"></div>				
 		{% endif %}	
 		{% if page.github %}
-		<div class="glyphbox note">
-		<a class="off" href="https://github.com/{{ page.github }}">
-			<span class="iconbox">		
-				<i class="iconbox fa fa-github fa-lg"></i>
-			</span>
-			{{ page.github }}
-		</a>			
-		</div>
+		<div class="smallhead">
+			<i class="fa fa-github-alt fa-fw"></i>
+			GitHub
+		</div>	
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<a class="off" href="https://github.com/{{ page.github }}">{{ page.github }}</a>
+		</div>		
+		<div class="bigspacer"></div>	
 		{% endif %}		   	
 		{% if page.email %}
 		{% assign emailarray = page.email | split: '@' %}
-		<div class="glyphbox note">
-			<span class="iconbox">		
-				<i class="fa fa-envelope"></i>
-			</span>
+		<div class="smallhead">
+			<i class="fa fa-inbox fa-fw"></i>
+			Email
+		</div>	
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
 			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
-		</div>
+		</div>		
+		<div class="bigspacer"></div>			
 		{% endif %}				
+		{% if page.cv %}		
+		<div class="smallhead">
+			<i class="fa fa-file-text-o fa-fw"></i>
+			CV
+		</div>	
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<a class="off" href="{{ page.cv }}">{{ page.cv | split: '/' | last }}</a>
+		</div>		
+		<div class="bigspacer"></div>		
+		{% endif %}	  		
 	</div>
 	<div class="col-md-8">	
 		<div class="post">
