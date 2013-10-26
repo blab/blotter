@@ -18,7 +18,7 @@ categories:
 			<div class="glyphbox note">
 			<a class="off" href="{{ member.cv }}">
 				<span class="iconbox">
-					<i class="icon-file icon-large"></i> 
+					<i class="fa fa-file-text-o fa-lg"></i> 
 				</span>
 				cv
 			</a>			
@@ -28,7 +28,7 @@ categories:
 			<div class="glyphbox">
 			<a class="off" href="https://twitter.com/{{ member.twitter }}">
 				<span class="iconbox">
-					<i class="icon-twitter icon-large"></i> 
+					<i class="fa fa-twitter fa-lg"></i> 
 				</span>
 				{{ member.twitter }}
 			</a>			
@@ -38,7 +38,7 @@ categories:
 			<div class="glyphbox">
 			<a class="off" href="https://github.com/{{ member.github }}">
 				<span class="iconbox">
-					<i class="icon-github icon-large"></i> 
+					<i class="fa fa-github fa-lg"></i> 
 				</span>
 				{{ member.github }}
 			</a>			
@@ -48,7 +48,7 @@ categories:
 			{% assign emailarray = member.email | split: '@' %}
 			<div class="glyphbox">
 				<span class="iconbox">
-					<i class="icon-envelope"></i> 
+					<i class="fa fa-envelope fa-lg"></i> 
 				</span>
 				{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
 			</div>
