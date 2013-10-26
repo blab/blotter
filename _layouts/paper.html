@@ -60,7 +60,7 @@ layout: default
 			</div>	
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
-				<a class="off" href="{{ page.github }}">{{ page.github | remove: 'http://' }}</a>
+				<a class="off" href="{{ page.github }}">{{ page.github | remove: 'http://' | remove: 'https://' }}</a>
 			</div>		
 			<div class="bigspacer"></div>				
 			{% endif %}	

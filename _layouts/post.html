@@ -47,7 +47,7 @@ layout: default
 		</div>	
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<a class="off" style="word-wrap: break-word;" href="{{ page.link }}">{{ page.link | remove: 'http://' }}</a>
+			<a class="off" href="{{ page.link }}">{{ page.link | remove: 'http://' | remove: 'https://' | replace: '/', '/<wbr>' }}</a>
 		</div>		
 		<div class="bigspacer"></div>			
 		{% endif %}		

@@ -10,24 +10,23 @@ categories:
 
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 projectbox">
-			<div class="pull-right">
-				<div class="smallnote">
-					Updated
-					<a class="off" href="{{ project.commits.first.url }}">{{ project.commits.first.date | date_to_string }}</a>
-				</div>		
-				<div class="pull-right note">
-					{% for contributor in project.contributors %}
-					<a class="off" href="{{ contributor.url }}">
-						<img class="pull-left avatar" style="padding: 2px;" src="{{ contributor.avatar }}">
-					</a>
-					{% endfor %}
-				</div>					
-			</div>		
 			<div class="head">
 				<a href="{{ project.url }}" class="off">{{ project.title }}</a>
 			</div>	
+			<div class="smallspacer"></div>
 			<div class="note">
 				<a href="{{ project.url }}" class="off">{{ project.description }}</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="{{ project.commits.first.url }}">
+				{{ project.commits.first.date | date_to_string }}
+				</a>
+				by
+				<a class="off" href="{{ project.commits.first.author_url }}">				
+				{{ project.commits.first.author_login }}
+				</a>
 			</div>
 			<div class="bigspacer"></div>
 		</div>

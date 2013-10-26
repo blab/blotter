@@ -26,7 +26,18 @@ layout: default
 <div class="bigspacer"></div>
 
 <div class="row">
-	<div class="col-md-3">  				
+	<div class="col-md-3">  			
+		{% if page.cv %}		
+		<div class="smallhead">
+			<i class="fa fa-file-text-o fa-fw"></i>
+			CV
+		</div>	
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<a class="off" href="{{ page.cv }}">{{ page.cv | split: '/' | last }}</a>
+		</div>		
+		<div class="bigspacer"></div>		
+		{% endif %}	  		
 		{% if page.twitter %}		
 		<div class="smallhead">
 			<i class="fa fa-twitter fa-fw"></i>
@@ -60,18 +71,7 @@ layout: default
 			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
 		</div>		
 		<div class="bigspacer"></div>			
-		{% endif %}				
-		{% if page.cv %}		
-		<div class="smallhead">
-			<i class="fa fa-file-text-o fa-fw"></i>
-			CV
-		</div>	
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<a class="off" href="{{ page.cv }}">{{ page.cv | split: '/' | last }}</a>
-		</div>		
-		<div class="bigspacer"></div>		
-		{% endif %}	  		
+		{% endif %}						
 	</div>
 	<div class="col-md-8">	
 		<div class="post">

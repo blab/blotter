@@ -13,31 +13,8 @@ categories:
 			</a>
 			<p>
 			<div class="head"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-			<p class="note">{{ member.position }}</p>       				
-			{% if member.twitter %}
-			<div class="glyphbox note">
-			<a class="off" href="https://twitter.com/{{ member.twitter }}">
-				<i class="fa fa-twitter fa-lg fa-fw"></i>
-				{{ member.twitter }}
-			</a>			
-			</div>
-			{% endif %}	
-			{% if member.github %}
-			<div class="glyphbox note">
-			<a class="off" href="https://github.com/{{ member.github }}">
-				<i class="fa fa-github-alt fa-lg fa-fw"></i>
-				{{ member.github }}
-			</a>			
-			</div>
-			{% endif %}		   	
-			{% if member.email %}
-			{% assign emailarray = member.email | split: '@' %}
-			<div class="glyphbox note">
-				<i class="fa fa-inbox fa-lg fa-fw"></i>
-				{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
-			</div>
-			{% endif %}						
-        </div>
+			<div class="note">{{ member.position }}</div>    
+	    </div>
     {% cycle 'close rows': nil, nil, '</div>' %}
 {% endfor %}
 {% cycle 'close rows': nil, '</div>', '</div>' %}
