@@ -173,6 +173,28 @@ column A | column B | column C | column D
 
 ------------------
 
+## Equations
+
+Equations are rendered using MathJax and take the follow LaTeX syntax.  In order not to cause conflicts LaTeX equation delimiters must be surrounded by code ticks.
+
+```
+Inline equations: `\( \dot{x} = \sigma(y-x) \)` or `$ \dot{y} = \rho x - y - xz $`
+
+Displayed equations: 
+`\[ \mathrm{Pr}(k)   = {n \choose k} p^k (1-p)^{ n-k} \]` 
+or 
+`$$ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) $$`
+```
+
+Inline equations: `\( \dot{x} = \sigma(y-x) \)` or `$ \dot{y} = \rho x - y - xz $`
+
+Displayed equations: 
+`\[ \mathrm{Pr}(k)   = {n \choose k} p^k (1-p)^{ n-k} \]` 
+or 
+`$$ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) $$`
+
+------------------
+
 ## Horizontal rule
 
 Use three of more hyphens, asterisks or underscores.
@@ -192,7 +214,7 @@ ___
 ```
 Here's a line for us to start with.
 
-This line is separated from the one above by two newlines, so it will be a separate paragraph.
+This line is separated by two newlines, so it will be a separate paragraph.
 
 This line is also a separate paragraph, though...
 Adding a single line break does not create a new paragraph.
@@ -200,7 +222,7 @@ Adding a single line break does not create a new paragraph.
 
 Here's a line for us to start with.
 
-This line is separated from the one above by two newlines, so it will be a separate paragraph.
+This line is separated by two newlines, so it will be a separate paragraph.
 
 This line is also a separate paragraph, though...
 Adding a single line break does not create a new paragraph.
