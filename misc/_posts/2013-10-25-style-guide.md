@@ -145,3 +145,62 @@ puts s
 
 ------------------
  
+## Tables
+
+```
+column A | column B | column C | column D
+-------- | -------- | -------- | --------
+1A       | 1B       | 1C       | 1D
+2A       | 2B       | 2C       | 2D
+3A       | 3B       | 3C       | 3D
+```
+
+column A | column B | column C | column D
+-------- | -------- | -------- | --------
+1A       | 1B       | 1C       | 1D
+2A       | 2B       | 2C       | 2D
+3A       | 3B       | 3C       | 3D
+
+------------------
+
+## Blockquotes
+
+```
+> The data we have is not the data we want, and the data we need is not the data we have.
+```
+
+> The data we have is not the data we want, and the data we need is not the data we have.
+
+------------------
+
+## Horizontal rule
+
+Use three of more hyphens, asterisks or underscores.
+
+```
+***
+---
+___
+```
+
+***
+---
+___
+
+## Line breaks
+
+```
+Here's a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a separate paragraph.
+
+This line is also a separate paragraph, though...
+Adding a single line break does not create a new paragraph.
+```
+
+Here's a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a separate paragraph.
+
+This line is also a separate paragraph, though...
+Adding a single line break does not create a new paragraph.
