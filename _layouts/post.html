@@ -42,11 +42,11 @@ layout: default
 		<div class="bigspacer"></div>
 		{% if page.link %}
 		<div class="smallhead">
-			<i class="fa fa-external-link fa-fw"></i>
 			Link
 		</div>	
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
+			<i class="fa fa-external-link fa-fw"></i>
 			<a class="off" href="{{ page.link }}">{{ page.link | remove: 'http://' | remove: 'https://' | replace: '/', '/<wbr>' }}</a>
 		</div>		
 		<div class="bigspacer"></div>			

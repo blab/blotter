@@ -35,11 +35,10 @@ categories:
 <div class="row">
 	<div class="col-md-4">
 		<div class="head">
-			<i class="fa fa-comments fa-fw"></i>
 			<a class="off" href="/blog/">Recent posts</a>
 		</div>
 		<div class="bigspacer"></div>
-		<div class="feedbox">
+		<div class="feedbox pad-left">
 			{% for post in site.categories.blog limit:8 %}
 			
 				{% for member in site.categories.team %}
@@ -47,8 +46,9 @@ categories:
 						{% assign author = member %}
 					{% endif %}
 				{% endfor %}		
-			
+				
 				<div class="note">
+					<i class="fa fa-comment-o fa-fw"></i>
 					<a class="off" href="{{ post.url }}">
 					{{ post.title }}
 					</a>
@@ -70,14 +70,14 @@ categories:
 	<div class="col-md-4">
 		<div class="head">
 			<a class="off" href="/papers/">
-				<i class="fa fa-folder-open fa-fw"></i>
 				Recent papers
 			</a>
 		</div>
 		<div class="bigspacer"></div>
-		<div class="feedbox">		
+		<div class="feedbox pad-left">		
 			{% for paper in site.categories.papers limit:8 %}
 				<div class="note">
+					<i class="fa fa-file-text-o fa-fw"></i>
 					<a class="off" href="{{ paper.url }}">
 					{{ paper.title }}
 					</a>
@@ -94,14 +94,14 @@ categories:
 		<div class="bigspacer"></div>		
 	</div>
 	<div class="col-md-4">
-		<div class="head">
-			<i class="fa fa-cogs fa-fw"></i>		
+		<div class="head">		
 			<a class="off" href="/projects/">Active projects</a>
 		</div>
 		<div class="bigspacer"></div>
-		<div class="feedbox">
+		<div class="feedbox pad-left">
 			{% for project in site.projects limit:8 %}
 				<div class="note">
+					<i class="fa fa-edit fa-fw"></i>
 					<a class="off" href="{{ project.url }}">
 					{{ project.title }} - {{ project.description }}
 					</a>

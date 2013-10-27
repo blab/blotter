@@ -41,16 +41,15 @@ categories:
 	<div class="col-md-3">
 		<div class="bigspacer"></div>
 		<div class="smallhead">
-			<i class="fa fa-cog fa-fw"></i>
 			Source code
 		</div>	
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
+			<i class="fa fa-cog fa-fw"></i>
 			<a class="off" href="http://github.com/{{ project.repo }}">github.com/{{ project.repo }}</a>
 		</div>
 		<div class="bigspacer"></div>
 		<div class="smallhead">
-			<i class="fa fa-user fa-fw"></i>
 			Contributors
 		</div>	
 		<div class="pad-left note">
@@ -68,7 +67,6 @@ categories:
 		</div>
 		<div class="bigspacer"></div>
 		<div class="smallhead">
-			<i class="fa fa-check-square-o fa-fw"></i>
 			Latest commits
 		</div>		
 		<div class="pad-left smallnote">
@@ -76,6 +74,7 @@ categories:
 			{% for commit in project.commits %}
 				<div class="smallspacer"></div>
 				<li> 
+					<i class="fa fa-check-square-o fa-fw"></i>
 					<a class="off" href="{{ commit.url }}">
 					{{ commit.date | date_to_string }} - <span class="text-gray">{{ commit.message }}</span>
 					</a> 
@@ -85,7 +84,6 @@ categories:
 		</div>		
 		<div class="spacer"></div>	
 		<div class="smallhead">
-			<i class="fa fa-list fa-fw"></i>
 			Pages
 		</div>				
 		<div class="pad-left smallnote">
