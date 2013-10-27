@@ -1,0 +1,147 @@
+---
+layout: misc
+title: Markdown style guide
+---
+
+## Introduction
+
+This is a style guide to help in formatting Markdown content for the site.  In general, I've tried to adhere to GitHub style, with the intention that anything that renders on GitHub will render here as well.  The following isn't meant to be exhaustive, just a reminder of what's possible with Markdown.
+
+------------------
+
+## Headings
+
+```
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+```
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
+------------------
+
+## Emphasis
+
+```
+Italicize text by surrounding it in *asterisks* or _underscores_.
+Bold text by surrounding it with **double asterisks** or __double underscores__.
+Combine with **_double asterisks plus underscores_**.
+``` 
+
+Italicize text by surrounding it in *asterisks* or _underscores_.
+
+Bold text by surrounding it with **double asterisks** or __double underscores__.
+
+Combine with **_double asterisks plus underscores_**.
+
+------------------
+
+## Lists
+
+```
+* Thing one with an asterisk
++ Thing two with a plus
+- Thing three with a minus
+
+1. The first order of business
+2. The second order of business
+  * The first part of the 2nd order
+  * The second part of the 2nd order
+3. The third order of business
+```
+
+* Thing one with an asterisk
++ Thing two with a plus
+- Thing three with a minus
+
+1. The first order of business
+2. The second order of business
+  * The first part of the 2nd order
+  * The second part of the 2nd order
+3. The third order of business
+  
+------------------
+
+## Links
+
+```
+[This is an external link to Google](http://www.google.com/)
+[This is a relative link to elsewhere in the site](/projects/)
+```
+
+[This is an external link to Google](http://www.google.com/)
+
+[This is a relative link to elsewhere in the site](/projects/)
+
+------------------
+
+## Images
+
+Images work like links, but with a prefaced !.  This supports SVG as well PNG, JPG, etc...
+
+```
+![](/images/bedford-2012-canalization.png)
+![An image with alt text](/images/bedford-2010-global.png)
+![](/images/logo.svg)
+```
+![](/images/bedford-2012-canalization.png)
+
+![An image with alt text](/images/bedford-2010-global.png)
+
+![](/images/logo.svg)
+
+------------------
+
+Can always drop in HTML, so sizing adjustments can be done with:
+
+```
+<img style="width:30px;" src="/images/logo.svg"/>
+```
+
+<img style="width:30px;" src="/images/logo.svg"/>
+
+------------------
+
+## Code
+
+```
+A bit of inline monospaced font can be made `by surrounding text with backticks`.
+```
+
+A bit of inline monospaced font can be made `by surrounding text with backticks`.
+
+------------------
+
+Larger code blocks can be made by surrounding the block with three backticks <code>```</code>, and code can be highlighted by specifying language after the backticks, like so:
+
+    ```javascript
+    var s = "JavaScript syntax highlighting";
+    alert(s);
+    ```
+    
+    ```ruby
+    s = "Ruby syntax highlighting";
+    puts s
+    ```
+    
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+```ruby
+s = "Ruby syntax highlighting";
+puts s
+```   
+
+------------------
+ 
