@@ -6,7 +6,9 @@
 @line-height-base: 1.6;
 @navbar-height: 60px;
 @code-color: @pre-color;
-@code-bg: @pre-bg;
+@well-bg: #f8f8f8;
+@code-bg: #f8f8f8;
+@pre-bg: #f8f8f8;
 
 @import "/css/font-awesome/font-awesome.less";
 @fa-font-path: "font";
@@ -138,6 +140,10 @@ h6 {
 	color: @gray-light;
 }
 
+.text-dark-gray {
+	color: @gray;
+}
+
 // other
 body {
 	font-weight: 300;
@@ -183,7 +189,6 @@ pre code {
 
 table {
 	.table;
-	.table-bordered;
 	.table-striped;
 }
 
@@ -261,6 +266,12 @@ blockquote {
 
 #footer {
 	height: 80px;
+}
+
+.footernav {
+	.note;
+	.text-dark-gray;
+	text-align: center;
 }
 
 /* Next/Prev pager */

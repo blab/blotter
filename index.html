@@ -124,3 +124,24 @@ categories:
 		<div class="bigspacer"></div>		
 	</div>	
 </div>
+
+<div class="bigspacer"></div>
+
+
+<div class="head">		
+	Misc
+</div>
+<div class="spacer"></div>
+<ul class="list-inline">
+	{% for page in site.categories.misc %}
+	<li class="footernav">
+		&gt; <a class="off" href="{{ page.url }}">{{ page.title }}</a>
+	</li>
+	{% endfor %}
+</ul>
+
+
+
+
+
+

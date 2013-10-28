@@ -1,6 +1,6 @@
 ---
 layout: misc
-title: Markdown style guide
+title: Style guide
 ---
 
 ## Introduction
