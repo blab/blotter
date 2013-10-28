@@ -29,12 +29,14 @@ This is a style guide to help in formatting Markdown content for the site.  In g
 
 ------------------
 
-## Emphasis
+## Text styling
 
 ```
 Italicize text by surrounding it in *asterisks* or _underscores_.
 Bold text by surrounding it with **double asterisks** or __double underscores__.
 Combine with **_double asterisks plus underscores_**.
+Strike-through text with ~~double tildes~~.
+Superscript contiguous text with carrots like x^2y, surround with parentheses for more complex expressions like x^(2y + 3z).
 ``` 
 
 Italicize text by surrounding it in *asterisks* or _underscores_.
@@ -42,6 +44,10 @@ Italicize text by surrounding it in *asterisks* or _underscores_.
 Bold text by surrounding it with **double asterisks** or __double underscores__.
 
 Combine with **_double asterisks plus underscores_**.
+
+Strike-through text with ~~double tildes~~.
+
+Superscript contiguous text with carrots like x^2y, surround with parentheses for more complex expressions like x^(2y + 3z).
 
 ------------------
 
