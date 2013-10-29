@@ -36,10 +36,10 @@ layout: default
 </div>
 
 <div class="bigspacer"></div>
+<div class="spacer"></div>
 
 <div class="row">
 	<div class="col-md-3">
-		<div class="bigspacer"></div>
 		{% if page.link %}
 		<div class="smallhead">
 			Link
@@ -47,7 +47,7 @@ layout: default
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-external-link fa-fw"></i>
-			<a class="off" href="{{ page.link }}">{{ page.link | remove: 'http://' | remove: 'https://' | replace: '/', '/<wbr>' }}</a>
+			<a class="off" href="{{ page.link }}">{{ page.link | remove: 'http://' | remove: 'https://' | replace: '/', '/<wbr>' | replace: '%', '%<wbr>' }}</a>
 		</div>		
 		<div class="bigspacer"></div>			
 		{% endif %}		

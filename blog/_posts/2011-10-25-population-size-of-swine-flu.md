@@ -5,7 +5,7 @@ author: Trevor Bedford
 image: /images/measles_swine_human.png
 ---
 
-In my paper on [selection in viral phylogenies](/tree_topology/), I compared the effective population size of measles virus to the effective population of human influenza virus.  The concept of effective population size <i>N<sub>e</sub></i> is central to population genetics.  It measures the timescale of population turnover, or, looking backwards in time, it measures how long it takes for individuals in the population to find a common ancestor.  Genetic diversity is a combination of this timescale and mutation rate.  
+In my paper on [selection in viral phylogenies](/papers/bedford-2011-strength/), I compared the effective population size of measles virus to the effective population of human influenza virus.  The concept of effective population size <i>N<sub>e</sub></i> is central to population genetics.  It measures the timescale of population turnover, or, looking backwards in time, it measures how long it takes for individuals in the population to find a common ancestor.  Genetic diversity is a combination of this timescale and mutation rate.  
 
 This is just a small addendum to that paper.  I had wanted to include swine influenza in with the comparison of measles virus and human influenza virus, but decided that this would detract from the paper's focus.  Here, the sequences of swine influenza come from [de Jong et al. (2007)](http://jvi.asm.org/cgi/content/short/81/8/4315).
 
