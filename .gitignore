@@ -1,2 +1,6 @@
-# Compiled site #
+# Compiled site
 _site/
+
+# Projects
+projects/
+!projects/index.html
