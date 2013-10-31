@@ -53,7 +53,7 @@
     }
 
     $.ajax({
-      url:'http://otter.topsy.com/trackbacks.js?&apikey=4HJUMHH5K2UXXOGJBUMQAAAAAAIYCYIONBJAAAAAAAAFQGYA',
+      url:'http://otter.topsy.com/trackbacks.js?&apikey=AMCFA45IVHQ6DT7VBUMQAAAAADYRPKIYTJJAAAAAAAAFQGYA',
       data:
         {
           url: options.location,
