@@ -39,7 +39,7 @@ The `layout`, `title` and `author` tags are required, while `link` and `image` a
 
 ## License
 
-All source code in this repository (consisting of files with extensions `.html`, `.rb` or `.js`) is freely available under an MIT license.
+All source code in this repository, consisting of files with extensions `.html`, `.rb` or `.js`, is freely available under an MIT license, unless otherwise noted within a file.
 
 **The MIT License (MIT)**
 
