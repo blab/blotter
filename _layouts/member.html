@@ -83,8 +83,9 @@ layout: default
 	<div class="col-md-1"></div>
 </div>	
 
+{% assign lastname = member.title | split: ' ' | last %}
 {% for paper in site.categories.papers %}
-{% if paper.authors contains member.title | split: ' ' | last %}
+{% if paper.authors contains lastname %}
 {% assign papersq = true %}
 {% endif %}
 {% endfor %}
@@ -97,7 +98,7 @@ layout: default
 		<div class="head">Papers</div>
 		<div class="spacer"></div>
 		{% for paper in site.categories.papers %}
-		{% if paper.authors contains member.lastname %}
+		{% if paper.authors contains lastname %}
 		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
 		{% endif %}
 		{% endfor %}
