@@ -2,7 +2,7 @@
 layout: post
 title: Fixation of new alleles
 author: Trevor Bedford
-image: /images/chance_of_fixation.png
+image: /images/blog/chance_of_fixation.png
 ---
 
 More population genetics...  Here, I wanted to look at the process of fixation, that is the process by which a mutant allele comes to take over the entire population.  There is a very classic result by Kimura that the chance of fixation depends on population frequency <i>p</i> and the product of the effective population size <i>N</i> and the selective advantage of the mutant allele <i>s</i>, such that 

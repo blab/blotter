@@ -5,8 +5,8 @@ position: Postdoc
 handle: cykc
 email: cykc@uw.edu
 github: cykc
-image: /images/charles-cheung.jpg
-cv: /pdfs/cheung-cv.pdf
+image: /images/team/charles-cheung.jpg
+cv: /pdfs/team/cheung-cv.pdf
 ---
 
 For more information, see [Charles's website](http://charlescheung-statgen.com/).

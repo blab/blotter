@@ -3,7 +3,7 @@ layout: post
 title: Basic coalescent simulation with physics-based layout
 author: Trevor Bedford
 link: /projects/coaltrace/
-image: /images/coaltrace_large.jpg
+image: /images/blog/coaltrace_large.jpg
 ---
 
 I've written a small Processing [app to visualize the genealogical process](/projects/coaltrace/).  I've seen a lot of evolutionary trees drawn quite nicely.  However, this is the first example that I've seen that presents trees in a dynamic fashion, showing how they evolve over time.  It also allows for interactivity.  For instance, you can see how adding more individuals to an evolving population causes their evolutionary tree to deepen.

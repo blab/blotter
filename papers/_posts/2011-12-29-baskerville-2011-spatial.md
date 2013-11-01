@@ -1,13 +1,13 @@
 ---
 layout: paper
 title: Spatial guilds in the Serengeti food web revealed by a Bayesian group model
-image: /images/baskerville-2011-spatial.png
+image: /images/papers/baskerville-2011-spatial.png
 authors: Baskerville EB, Dobson AP, Bedford T, Allesina S, Anderson TM, Pascual M.
 year: 2011
 ref: Baskerville et al. 2011.
 journal: "PLoS Comput Biol 7: e1002321."
-pdf: /pdfs/baskerville-2011-spatial.pdf
-supplement: /pdfs/baskerville-2011-spatial-supp.pdf
+pdf: /pdfs/papers/baskerville-2011-spatial.pdf
+supplement: /pdfs/papers/baskerville-2011-spatial-supp.pdf
 ---
 
 # Abstract
