@@ -11,7 +11,7 @@ Antigenic differences between strains are commonly quantified using the [hemaggl
 
 In our new paper, [available on the arXiv](http://arxiv.org/abs/1304.3637), we extend techniques of [multidimensional scaling](http://en.wikipedia.org/wiki/Multidimensional_scaling) (MDS) pioneered by [Derek Smith and colleagues](http://antigenic-cartography.org/) for the analysis of influenza antigenic data.  Here, we attempted to bring the MDS antigenic model into a fully Bayesian framework and refer to the revised technique as Bayesian MDS (BMDS).  In this model, viruses and sera are represented as 2D coordinates on an antigenic map in which their pairwise distances yield expectations for the HI titers, with antigenically similar viruses lying close to one another and antigenically distant viruses lying far apart.
 
-<a href="/pdfs/bedford-flux-2013.pdf">![](/images/bmds_h3.png)</a>
+![](/images/blog/bmds_h3.png)
 
 By placing antigenic cartography in a Bayesian context, we are able to integrate other data sources, most notably sequence data.  In this case, genetic sequences provide an evolutionary tree relating virus strains and we assume that antigenic location evolves along this tree in a 2D diffusion process.  This process imposes a prior on antigenic locations in which evolutionary similar viruses have a prior expectation of lying close to one another on the map.  In the paper, we use this BMDS / diffusion model to investigate patterns of antigenic evolution in 4 circulating lineages of influenza and show that antigenic drift determines to a large degree incidence patterns across time and across lineages.
 
