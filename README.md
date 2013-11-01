@@ -26,7 +26,7 @@ layout: post
 title: Newton Institute presentation
 author: Trevor Bedford
 link: http://www.newton.ac.uk/programmes/IDD/seminars/2013082213301.html
-image: /images/transmission.png
+image: /images/blog/transmission.png
 ---
 ```
 
