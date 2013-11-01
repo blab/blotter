@@ -1,7 +1,6 @@
 ---
 layout: member
 title: Charles Y K Cheung
-lastname: Cheung
 position: Postdoc
 handle: cykc
 email: cykc@uw.edu
