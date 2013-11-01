@@ -1,12 +1,12 @@
 ---
 layout: paper
 title: Accelerated rates of intron gain/loss and protein evolution in duplicate genes in human and mouse malaria parasites
-image: /images/papers/castillodavis-2004-accelerated.png
+image: /images/papers/castillodavis-plasmodium-duplicates.png
 authors: Castillo-Davis CI, Bedford T, Hartl DL.
 year: 2004
 ref: Castillo-Davis et al. 2004.
 journal: "Mol Biol Evol 21: 1422-1427."
-pdf: /pdfs/papers/castillodavis-2004-accelerated.pdf
+pdf: /pdfs/papers/castillodavis-plasmodium-duplicates.pdf
 ---
 
 # Abstract

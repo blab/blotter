@@ -1,12 +1,12 @@
 ---
 layout: paper
 title: Genomic heterogeneity in the density of noncoding single-nucleotide and microsatellite polymorphisms in Plasmodium falciparum
-image: /images/papers/volkman-2007-genomic.png
+image: /images/papers/volkman-plasmodium-diversity.png
 authors: Volkman SK, Lozovsky E, Barry AE, Bedford T, Bethke L, Myrick A, Day KP, Hartl DL, Wirth DF, Sawyer SA.
 year: 2007
 ref: Volkman et al. 2007.
 journal: "Gene 387: 1-6."
-pdf: /pdfs/papers/volkman-2007-genomic.pdf
+pdf: /pdfs/papers/volkman-plasmodium-diversity.pdf
 ---
 
 # Abstract

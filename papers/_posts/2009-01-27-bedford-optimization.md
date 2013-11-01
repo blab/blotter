@@ -1,13 +1,13 @@
 ---
 layout: paper
 title: Optimization of gene expression by natural selection
-image: /images/papers/bedford-2009-optimization.png
+image: /images/papers/bedford-optimization.png
 authors: Bedford T, Hartl DL.
 year: 2009
 ref: Bedford and Hartl. 2009.
 journal: "Proc Natl Acad Sci USA 106: 1133-1138."
-pdf: /pdfs/papers/bedford-2009-optimization.pdf
-supplement: /pdfs/papers/bedford-2009-optimization-supp.pdf
+pdf: /pdfs/papers/bedford-optimization.pdf
+supplement: /pdfs/papers/bedford-optimization-supp.pdf
 ---
 
 # Abstract

@@ -1,12 +1,12 @@
 ---
 layout: paper
 title: The roles of competition and mutation in shaping antigenic and genetic diversity in influenza
-image: /images/papers/zinder-2013-roles.png
+image: /images/papers/zinder-limited-diversity.png
 authors: Zinder D, Bedford T, Gupta S, Pascual M.
 year: 2013
 ref: Zinder et al. 2013.
 journal: "PLoS Pathog 9: e1003104."
-pdf: /pdfs/papers/zinder-2013-roles.pdf
+pdf: /pdfs/papers/zinder-limited-diversity.pdf
 ---
 
 # Abstract

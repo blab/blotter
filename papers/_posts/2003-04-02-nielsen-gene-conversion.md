@@ -1,12 +1,12 @@
 ---
 layout: paper
 title: Gene conversion as a source of nucleotide diversity in Plasmodium falciparum
-image: /images/papers/nielsen-2003-gene.png
+image: /images/papers/nielsen-gene-conversion.png
 authors: Nielsen KM, Kasper J, Choi M, Bedford T, Kristiansen K, Wirth DF, Volkman SK, Lozovsky ER, Hartl DL.
 year: 2003
 ref: Nielsen et al. 2003.
 journal: "Mol Biol Evol 20: 726-734."
-pdf: /pdfs/papers/nielsen-2003-gene.pdf
+pdf: /pdfs/papers/nielsen-gene-conversion.pdf
 ---
 
 # Abstract
