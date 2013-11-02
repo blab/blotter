@@ -7,13 +7,6 @@ layout: default
 	{% endif %}
 {% endfor %}
 
-<!-- jQuery -->
-<script src="/js/jquery.min.js"></script>
-
-<!-- Boastful -->
-<link href="/css/boastful.css" rel="stylesheet">		
-<script src="/js/jquery.boastful.js"></script>	
-
 <div class="bigspacer"></div>
 
 <div class="row">
@@ -51,6 +44,14 @@ layout: default
 		</div>		
 		<div class="bigspacer"></div>			
 		{% endif %}		
+		<div class="smallhead">
+			Share
+		</div>			
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-twitter fa-fw"></i>
+			{% tweet {{page.url}} {{page.title}} %}
+		</div>		
 	</div>
 	<div class="col-md-8">	
 		<div class="post">
@@ -63,46 +64,7 @@ layout: default
 	<div class="col-md-1"></div>
 </div>	
 
-<div class="spacer"></div>
 
-<div class="row">
-	<div class="col-md-3"></div>
-	<div class="col-md-8">	
-		<div>
-			<script>
-				$(document).ready(function() {
-					$('#boastful').boastful({
-					location: '{{ page.url }}',
-					empty_message: ''
-					});
-					{% if page.link %}
-					$('#boastful').boastful({
-					location: '{{ page.link }}',
-					empty_message: ''
-					});
-					{% endif %}
-				});
-			</script>
-			
-			<div class="smallnote">
-				{% if page.link %}
-				{% assign link = page.link %}
-				{% else %}
-				{% assign link = page.url %}
-				{% endif %}
-				<a class="off" href="http://twitter.com/share?url={{ link | replace: ' ', '%20' }}&text={{ page.title | replace: ' ', '%20' }}
-				{% if author.twitter %}
-				&via={{ author.twitter }}
-				{% endif %}
-				" target="_blank">
-					Join the discussion: 
-				</a>
-			</div>
-			<div id="boastful"></div>	
-		</div>
-	</div>
-	<div class="col-md-1"></div>
-</div>
 
 
 

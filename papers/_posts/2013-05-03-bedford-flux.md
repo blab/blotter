@@ -7,7 +7,7 @@ year: 2013
 ref: Bedford et al. 2013.
 journal: "arXiv 1304.3637."
 pdf: /pdfs/papers/bedford-flux.pdf
-github: http://github.com/trvrb/flux
+github: https://github.com/trvrb/flux
 ---
 
 # Abstract

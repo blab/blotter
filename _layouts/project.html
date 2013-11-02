@@ -15,7 +15,6 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="bigtitle">
-			<!-- <a class="off" href="{{ project.url }}">{{ project.title }}</a> -->
 			<ol class="breadcrumb">
 			{% assign crumbs = page.title | breadcrumb_array %}
 			{% for crumb in crumbs %}
@@ -99,7 +98,16 @@ categories:
 				{% endif %}
 			{% endfor %}
 			</ul>			
+		</div>	
+		<div class="spacer"></div>		
+		<div class="smallhead">
+			Share
 		</div>			
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-twitter fa-fw"></i>
+			{% tweet {{project.url}} {{project.description}} %}
+		</div>						
 	</div>
 	<div class="col-md-8">				
 		<div class="post">

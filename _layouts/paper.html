@@ -63,8 +63,16 @@ layout: default
 				<a class="off" href="{{ page.github }}">{{ page.github | remove: 'http://' | remove: 'https://' }}</a>
 			</div>		
 			<div class="bigspacer"></div>				
-			{% endif %}	
-		</div>
+			{% endif %}
+			<div class="smallhead">
+				Share
+			</div>			
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-twitter fa-fw"></i>
+				{% tweet {{page.url}} {{page.title}} %}
+			</div>					
+			</div>
 	</div>
 	<div class="col-md-8">	
 		<div class="post">
