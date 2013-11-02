@@ -82,6 +82,14 @@ categories:
 			</ul>
 		</div>		
 		<div class="spacer"></div>	
+		
+		{% for page in site.pages %}			
+			{% if page.project == project.title %}
+			<!-- {% increment pagecount %} -->
+			{% endif %}
+		{% endfor %}
+				
+		{% if pagecount > 1 %}
 		<div class="smallhead">
 			Pages
 		</div>				
@@ -100,6 +108,8 @@ categories:
 			</ul>			
 		</div>	
 		<div class="spacer"></div>		
+		{% endif %}
+		
 		<div class="smallhead">
 			Share
 		</div>			
