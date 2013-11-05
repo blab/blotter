@@ -2,7 +2,7 @@
 layout: post
 title: Strength and tempo of selection revealed in viral gene genealogies
 author: Trevor Bedford
-link: /papers/bedford-2011-strength/
+link: /papers/bedford-tree-topology/
 ---
 
 I just had [a paper published online](http://www.biomedcentral.com/1471-2148/11/220) in BMC Evolutionary Biology. 
