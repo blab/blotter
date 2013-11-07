@@ -34,8 +34,8 @@ The `layout`, `title` and `author` tags are required, while `link` and `image` a
 
 ## For more information
 
-* Look over the [metadata format guide](http://d222d025jpv90o.cloudfront.net/guide/format/)
-* Look over the [Markdown style guide](http://d222d025jpv90o.cloudfront.net/guide/style/)
+* Look over the [metadata format guide](http://bedford.io/guide/format/)
+* Look over the [Markdown style guide](http://bedford.io/guide/style/)
 
 ## License
 
