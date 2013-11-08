@@ -6,6 +6,7 @@ handle: trvrb
 email: trvrb@trevorbedford.com
 twitter: trvrb
 github: trvrb
+scholar: RIi-1pAAAAAJ
 image: /images/team/trevor-bedford.jpg
 cv: /pdfs/team/bedford-cv.pdf
 ---

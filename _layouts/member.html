@@ -61,7 +61,18 @@ layout: default
 			<a class="off" href="https://github.com/{{ member.github }}">{{ member.github }}</a>
 		</div>		
 		<div class="bigspacer"></div>	
-		{% endif %}		   	
+		{% endif %}		
+		{% if member.scholar %}
+		<div class="smallhead">
+			Google Scholar
+		</div>	
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-book fa-fw"></i>
+			<a class="off" href="http://scholar.google.com/citations?user={{ member.scholar }}">{{ member.title }}</a>
+		</div>		
+		<div class="bigspacer"></div>	
+		{% endif %}				   	
 		{% if member.email %}
 		{% assign emailarray = member.email | split: '@' %}
 		<div class="smallhead">
@@ -79,22 +90,16 @@ layout: default
 		<div class="post">
 			{{ content }}
 		</div>
-	</div>			
-	<div class="col-md-1"></div>
-</div>	
+		
+		{% assign lastname = member.title | split: ' ' | last %}
+		{% for paper in site.categories.papers %}
+		{% if paper.authors contains lastname %}
+		{% assign papersq = true %}
+		{% endif %}
+		{% endfor %}
 
-{% assign lastname = member.title | split: ' ' | last %}
-{% for paper in site.categories.papers %}
-{% if paper.authors contains lastname %}
-{% assign papersq = true %}
-{% endif %}
-{% endfor %}
-
-{% if papersq == true %}
-<div class="bigspacer"></div>
-<div class="row">
-	<div class="col-md-3"></div>
-	<div class="col-md-8">	
+		{% if papersq == true %}
+		<div class="bigspacer"></div>
 		<div class="head">Papers</div>
 		<div class="spacer"></div>
 		{% for paper in site.categories.papers %}
@@ -102,24 +107,18 @@ layout: default
 		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
 		{% endif %}
 		{% endfor %}
-	</div>			
-	<div class="col-md-1"></div>
-</div>		
-{% endif %}
-
-{% for project in site.projects %}
-	{% for contributor in project.contributors %}
-		{% if contributor.login == member.github %}
-			{% assign projectsq = true %}
-		{% endif %}
-	{% endfor %}
-{% endfor %}
-
-{% if projectsq == true %}
-<div class="bigspacer"></div>
-<div class="row">
-	<div class="col-md-3"></div>
-	<div class="col-md-8">	
+		{% endif %}		
+		
+		{% for project in site.projects %}
+			{% for contributor in project.contributors %}
+				{% if contributor.login == member.github %}
+					{% assign projectsq = true %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+		
+		{% if projectsq == true %}
+		<div class="bigspacer"></div>
 		<div class="head">Projects</div>
 		<div class="spacer"></div>
 		{% for project in site.projects %}
@@ -132,35 +131,26 @@ layout: default
 			{% if present == true %}
 				<p><a href="{{ project.url }}" class="off">{{ project.title }} - {{ project.description }}</a>
 			{% endif %}
+		{% endfor %}	
+		{% endif %}							
+		
+		{% for post in site.categories.blog %}
+		{% if member.title == post.author %}
+		{% assign postsq = true %}
+		{% endif %}
 		{% endfor %}
-	</div>			
-	<div class="col-md-1"></div>
-</div>
-{% endif %}
-
-{% for post in site.categories.blog %}
-{% if member.title == post.author %}
-{% assign postsq = true %}
-{% endif %}
-{% endfor %}
-
-{% if postsq == true %}
-<div class="bigspacer"></div>
-<div class="row">
-	<div class="col-md-3"></div>
-	<div class="col-md-8">	
+		
+		{% if postsq == true %}
+		<div class="bigspacer"></div>		
 		<div class="head">Posts</div>
 		<div class="spacer"></div>
 		{% for post in site.categories.blog %}
 		{% if member.title == post.author %}
 		<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
 		{% endif %}
-		{% endfor %}
+		{% endfor %}	
+		{% endif %}	
+		
 	</div>			
 	<div class="col-md-1"></div>
-</div>		
-{% endif %}		
-
-
-
-
+</div>	
