@@ -23,6 +23,7 @@ module Jekyll
 			html = ""
 			url.gsub!(/ /, '%20')
 			text.gsub!(/ /, '%20')
+			html += "<i class=\"fa fa-twitter fa-fw\"></i> "
             html += "<a class=\"off\" href=\"http://twitter.com/share?url=#{url}&text=#{text}\" target=\"_blank\">"
             html += "tweet"
             html += "</a>" 
