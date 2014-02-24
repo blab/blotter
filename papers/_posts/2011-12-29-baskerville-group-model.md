@@ -8,6 +8,7 @@ ref: Baskerville et al. 2011.
 journal: "PLoS Comput Biol 7: e1002321."
 pdf: /pdfs/papers/baskerville-group-model.pdf
 supplement: /pdfs/papers/baskerville-group-model-supp.pdf
+doi: 10.1371/journal.pcbi.1002321 
 ---
 
 # Abstract

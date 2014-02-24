@@ -7,6 +7,7 @@ year: 2007
 ref: Volkman et al. 2007.
 journal: "Gene 387: 1-6."
 pdf: /pdfs/papers/volkman-plasmodium-diversity.pdf
+doi: 10.1016/j.gene.2006.07.026 
 ---
 
 # Abstract

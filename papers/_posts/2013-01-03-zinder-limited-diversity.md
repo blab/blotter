@@ -7,6 +7,7 @@ year: 2013
 ref: Zinder et al. 2013.
 journal: "PLoS Pathog 9: e1003104."
 pdf: /pdfs/papers/zinder-limited-diversity.pdf
+doi: 10.1371/journal.ppat.1003104 
 ---
 
 # Abstract

@@ -7,6 +7,7 @@ year: 2003
 ref: Nielsen et al. 2003.
 journal: "Mol Biol Evol 20: 726-734."
 pdf: /pdfs/papers/nielsen-gene-conversion.pdf
+doi: 10.1093/molbev/msg076 
 ---
 
 # Abstract

@@ -8,6 +8,7 @@ ref: Bedford et al. 2012.
 journal: "BMC Biol 10: 38."
 pdf: /pdfs/papers/bedford-canalization.pdf
 supplement: /pdfs/papers/bedford-canalization-supp.pdf
+doi: 10.1186/1741-7007-10-38
 github: https://github.com/trvrb/canalization
 ---
 

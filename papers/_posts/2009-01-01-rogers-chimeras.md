@@ -7,6 +7,7 @@ year: 2009
 ref: Rogers et al. 2009.
 journal: "Genetics 181: 313-322."
 pdf: /pdfs/papers/rogers-chimeras.pdf
+doi: 10.1534/genetics.108.091538 
 ---
 
 # Abstract

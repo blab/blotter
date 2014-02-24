@@ -7,6 +7,7 @@ year: 2014
 ref: Bedford et al. 2014.
 journal: "eLife 3: e01914."
 pdf: /pdfs/papers/bedford-flux.pdf
+doi: 10.7554/elife.01914
 github: https://github.com/trvrb/flux
 ---
 

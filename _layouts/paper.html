@@ -53,6 +53,17 @@ layout: default
 			</div>		
 			<div class="bigspacer"></div>							
 			{% endif %}	
+			{% if page.doi %}
+			<div class="smallhead">
+				DOI
+			</div>	
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>
+			</div>		
+			<div class="bigspacer"></div>							
+			{% endif %}				
 			{% if page.github %}
 			<div class="smallhead">
 				Source code

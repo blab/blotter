@@ -7,6 +7,7 @@ year: 2008
 ref: Bedford and Hartl. 2008.
 journal: "Mol Biol Evol 25: 1631-1638."
 pdf: /pdfs/papers/bedford-overdispersion.pdf
+doi: 10.1093/molbev/msn112 
 ---
 
 # Abstract

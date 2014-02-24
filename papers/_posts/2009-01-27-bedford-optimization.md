@@ -8,6 +8,7 @@ ref: Bedford and Hartl. 2009.
 journal: "Proc Natl Acad Sci USA 106: 1133-1138."
 pdf: /pdfs/papers/bedford-optimization.pdf
 supplement: /pdfs/papers/bedford-optimization-supp.pdf
+doi: 10.1073/pnas.0812009106 
 ---
 
 # Abstract

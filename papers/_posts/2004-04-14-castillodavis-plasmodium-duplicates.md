@@ -7,6 +7,7 @@ year: 2004
 ref: Castillo-Davis et al. 2004.
 journal: "Mol Biol Evol 21: 1422-1427."
 pdf: /pdfs/papers/castillodavis-plasmodium-duplicates.pdf
+doi: 10.1093/molbev/msh143 
 ---
 
 # Abstract

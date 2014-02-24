@@ -8,6 +8,7 @@ ref: Bedford et al. 2010.
 journal: "PLoS Pathog 6: e1000918."
 pdf: /pdfs/papers/bedford-global-migration.pdf
 supplement: /pdfs/papers/bedford-global-migration-supp.pdf
+doi: 10.1371/journal.ppat.1000918 
 ---
 
 # Abstract
