@@ -8,14 +8,16 @@ categories:
 {% for member in site.categories.team reversed %}
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 memberbox">
-			<a href="{{ member.url }}">
-				<img width=260 src="{{ member.image }}">
-			</a>
-			<p>
-			<div class="head"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-			<div class="note">{{ member.position }}</div>
-			<div class="bigspacer"></div>    
-	    </div>
-    {% cycle 'close rows': nil, nil, '</div>' %}
+			<div class="media">
+  				<a class="pull-left" href="{{ member.url }}">
+    				<img width=170 class="media-object" src="{{ member.image }}">
+  				</a>
+ 			 	<div class="media-body">
+    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+    				<p class="note">{{ member.position }}</p>
+  				</div>
+			</div>
+        </div>	  
+    {% cycle 'close rows': nil, nil, '</div><div class="bigspacer"></div>' %}
 {% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}
+{% cycle 'close rows': nil, '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
