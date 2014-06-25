@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Assessing correlations in the evolution of phenotypic traits
+title: Assessing correlated trait evolution
 author: Trevor Bedford
 link: /papers/cybis-latent-liability/
 ---
