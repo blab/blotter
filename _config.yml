@@ -46,3 +46,4 @@ projects:
   - trvrb/haplotypes
   - trvrb/divergence
   - trvrb/ancestry
+  - trvrb/medium-data
