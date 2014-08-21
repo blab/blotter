@@ -7,6 +7,7 @@ year: 2014
 ref: Roche et al. 2014.
 journal: "PLoS Biol 12: e1001931."
 pdf: /pdfs/papers/roche-aiv-persistence.pdf
+supplement: /pdfs/papers/roche-aiv-persistence-supp.pdf
 doi: 10.1371/journal.pbio.1001931
 ---
 
