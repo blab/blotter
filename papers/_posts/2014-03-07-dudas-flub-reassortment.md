@@ -7,6 +7,7 @@ year: 2014
 ref: Dudas et al. 2014.
 journal: "arXiv: 1403.1094."
 pdf: /pdfs/papers/dudas-flub-reassortment.pdf
+github: https://github.com/evogytis/fluB
 ---
 
 # Abstract
