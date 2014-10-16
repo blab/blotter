@@ -4,7 +4,7 @@ title: "The early spread and epidemic ignition of HIV-1 in human populations"
 image: /images/papers/faria-hiv-spread.png
 authors: Faria NR, Rambaut A, Suchard MA, Baele G, Bedford T, Ward MJ, Tatem AJ, Sousa JD, Arinaminpathy N, P&eacute;pin J, Posada D, Peeters M, Pybus OG, Lemey P.
 year: 2014
-ref: Faria et al. 2014.
+ref: Faria et al. 2014. Science.
 journal: "Science 346: 56-61."
 pdf: /pdfs/papers/faria-hiv-spread.pdf
 supplement: /pdfs/papers/faria-hiv-spread-supp.pdf

@@ -4,7 +4,7 @@ title: Formation and longevity of chimeric and duplicate genes in Drosophila mel
 image: /images/papers/rogers-chimeras.png
 authors: Rogers RL, Bedford T, Hartl DL.
 year: 2009
-ref: Rogers et al. 2009.
+ref: Rogers et al. 2009. Genetics.
 journal: "Genetics 181: 313-322."
 pdf: /pdfs/papers/rogers-chimeras.pdf
 doi: 10.1534/genetics.108.091538 

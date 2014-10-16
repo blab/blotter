@@ -4,7 +4,7 @@ title: The roles of competition and mutation in shaping antigenic and genetic di
 image: /images/papers/zinder-limited-diversity.png
 authors: Zinder D, Bedford T, Gupta S, Pascual M.
 year: 2013
-ref: Zinder et al. 2013.
+ref: Zinder et al. 2013. PLoS Pathog.
 journal: "PLoS Pathog 9: e1003104."
 pdf: /pdfs/papers/zinder-limited-diversity.pdf
 doi: 10.1371/journal.ppat.1003104 

@@ -4,7 +4,7 @@ title: Integrating influenza antigenic dynamics with molecular evolution
 image: /images/papers/bedford-flux.png
 authors: Bedford T, Suchard MA, Lemey P, Dudas G, Gregory V, Hay AJ, McCauley JW, Russell CA, Smith DJ, Rambaut A.
 year: 2014
-ref: Bedford et al. 2014.
+ref: Bedford et al. 2014. eLife.
 journal: "eLife 3: e01914."
 pdf: /pdfs/papers/bedford-flux.pdf
 doi: 10.7554/elife.01914

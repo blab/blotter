@@ -4,7 +4,7 @@ title: Accelerated rates of intron gain/loss and protein evolution in duplicate 
 image: /images/papers/castillodavis-plasmodium-duplicates.png
 authors: Castillo-Davis CI, Bedford T, Hartl DL.
 year: 2004
-ref: Castillo-Davis et al. 2004.
+ref: Castillo-Davis et al. 2004. Mol Biol Evol.
 journal: "Mol Biol Evol 21: 1422-1427."
 pdf: /pdfs/papers/castillodavis-plasmodium-duplicates.pdf
 doi: 10.1093/molbev/msh143 

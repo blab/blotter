@@ -4,7 +4,7 @@ title: "Overdispersion of the molecular clock: temporal variation of gene-specif
 image: /images/papers/bedford-overdispersion.png
 authors: Bedford T, Hartl DL.
 year: 2008
-ref: Bedford and Hartl. 2008.
+ref: Bedford and Hartl. 2008. Mol Biol Evol.
 journal: "Mol Biol Evol 25: 1631-1638."
 pdf: /pdfs/papers/bedford-overdispersion.pdf
 doi: 10.1093/molbev/msn112 

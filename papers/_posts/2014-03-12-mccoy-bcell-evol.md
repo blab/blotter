@@ -4,7 +4,7 @@ title: Substitution and site-specific selection driving B cell affinity maturati
 image: /images/papers/mccoy-bcell-evol.png
 authors: McCoy CO, Bedford T, Minin VN, Bradley P, Robins H, Matsen FA.
 year: 2014
-ref: McCoy et al. 2014.
+ref: McCoy et al. 2014. arXiv.
 journal: "arXiv: 1403.3066."
 pdf: /pdfs/papers/mccoy-bcell-evol.pdf
 ---

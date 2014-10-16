@@ -4,7 +4,7 @@ title: Adaptive evolution and environmental durability jointly structure phylody
 image: /images/papers/roche-aiv-persistence.png
 authors: Roche B, Drake JM, Brown J, Stallknecht DE, Bedford T, Rohani P.
 year: 2014
-ref: Roche et al. 2014.
+ref: Roche et al. 2014. PLoS Biol.
 journal: "PLoS Biol 12: e1001931."
 pdf: /pdfs/papers/roche-aiv-persistence.pdf
 supplement: /pdfs/papers/roche-aiv-persistence-supp.pdf

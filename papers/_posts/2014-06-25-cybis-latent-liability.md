@@ -4,7 +4,7 @@ title: Assessing phenotypic correlation through the multivariate phylogenetic la
 image: /images/papers/cybis-latent-liability.png
 authors: Cybis GB, Sinsheimer JS, Bedford T, Mather AE, Lemey P, Suchard MA.
 year: 2014
-ref: Cybis et al. 2014.
+ref: Cybis et al. 2014. arXiv.
 journal: "arXiv: 1406.3863."
 pdf: /pdfs/papers/cybis-latent-liability.pdf
 ---

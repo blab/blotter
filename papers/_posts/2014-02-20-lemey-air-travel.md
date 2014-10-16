@@ -4,7 +4,7 @@ title: Unifying viral genetics and human transportation data to predict the glob
 image: /images/papers/lemey-air-travel.png
 authors: Lemey P, Rambaut A, Bedford T, Faria N, Bielejec F, Baele G, Russell CA, Smith DJ, Pybus OG, Brockmann D, Suchard MA.
 year: 2014
-ref: Lemey et al. 2014.
+ref: Lemey et al. 2014. PLoS Pathog.
 journal: "PLoS Pathog 10: e1003932."
 pdf: /pdfs/papers/lemey-air-travel.pdf
 doi: 10.1371/journal.ppat.1003932

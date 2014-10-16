@@ -4,8 +4,8 @@ title: Challenges in phylodynamic inference
 image: /images/papers/frost-challenges.png
 authors: Frost SDW, Pybus OG, Gog JR, Viboud C, Bonhoeffer S, Bedford T.
 year: 2014
-ref: Frost et al. 2014.
-journal: "Epidemics."
+ref: Frost et al. 2014. Epidemics.
+journal: "Epidemics. In press."
 pdf: /pdfs/papers/frost-challenges.pdf
 doi: 10.1016/j.epidem.2014.09.001
 ---

@@ -4,7 +4,7 @@ title: Global migration dynamics underlie evolution and persistence of human inf
 image: /images/papers/bedford-global-migration.png
 authors: Bedford T, Cobey S, Beerli P, Pascual M.
 year: 2010
-ref: Bedford et al. 2010.
+ref: Bedford et al. 2010. PLoS Pathog.
 journal: "PLoS Pathog 6: e1000918."
 pdf: /pdfs/papers/bedford-global-migration.pdf
 supplement: /pdfs/papers/bedford-global-migration-supp.pdf

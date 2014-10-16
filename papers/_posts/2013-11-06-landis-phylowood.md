@@ -4,7 +4,7 @@ title: "Phylowood: interactive web-based animations of biogeographic and phyloge
 image: /images/papers/landis-phylowood.png
 authors: Landis MJ, Bedford T.
 year: 2014
-ref: Landis and Bedford. 2014.
+ref: Landis and Bedford. 2014. Bioinformatics.
 journal: "Bioinformatics 30: 123-124."
 pdf: /pdfs/papers/landis-phylowood.pdf
 doi: 10.1093/bioinformatics/btt635

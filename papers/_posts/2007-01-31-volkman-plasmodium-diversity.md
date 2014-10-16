@@ -4,7 +4,7 @@ title: Genomic heterogeneity in the density of noncoding single-nucleotide and m
 image: /images/papers/volkman-plasmodium-diversity.png
 authors: Volkman SK, Lozovsky E, Barry AE, Bedford T, Bethke L, Myrick A, Day KP, Hartl DL, Wirth DF, Sawyer SA.
 year: 2007
-ref: Volkman et al. 2007.
+ref: Volkman et al. 2007. Gene.
 journal: "Gene 387: 1-6."
 pdf: /pdfs/papers/volkman-plasmodium-diversity.pdf
 doi: 10.1016/j.gene.2006.07.026 
