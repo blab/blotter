@@ -1,5 +1,5 @@
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: /:categories/:title/
 
 redcarpet: 
@@ -10,8 +10,9 @@ redcarpet:
    - superscript
    - strikethrough
 
-pagination: true
-paginate: 5
+paginate: 6
+paginate_path: "blog/page:num"
+paginate_category: "blog"
 
 exclude:
   - "*.branches"

@@ -10,11 +10,11 @@ categories:
 	{% endif %}
 {% endfor %}
 
-<div class="spacer"></div>
+<div class="bigspacer"></div>
 
 <div class="row">
 	<div class="col-md-12">
-		<div class="bigtitle">
+		<div class="bigtitle titlebox">
 			<ol class="breadcrumb">
 			{% assign crumbs = page.title | breadcrumb_array %}
 			{% for crumb in crumbs %}
@@ -24,10 +24,15 @@ categories:
 						{% assign url = page.url %}
 					{% endif %}
 				{% endfor %}
+				{% if crumb == page.title %}
+				<li>{{ name }}</li>
+				{% else %}
 				<li><a class="off" href="{{ url | replace: 'index.html', '' }}">{{ name }}</a></li>
+				{% endif %}
 			{% endfor %}
 			</ol>
 		</div>
+		<p>
 		<div class="head">
 			{{ project.description }}
 		</div>
@@ -122,6 +127,7 @@ categories:
 	</div>
 	<div class="col-md-8">				
 		<div class="post">
+			<p>
 			{{ content }}
 		</div>
 	</div>			
