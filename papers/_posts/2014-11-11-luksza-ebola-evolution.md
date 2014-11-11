@@ -2,9 +2,9 @@
 layout: paper
 title: Epidemiological and evolutionary analysis of the 2014 Ebola virus outbreak
 image: /images/papers/luksza-ebola-evolution.png
-authors: Luksza M, Bedford T, L&auml;ssig M.
+authors: "&#321;uksza M, Bedford T, L&auml;ssig M."
 year: 2014
-ref: Luksza et al. 2014. arXiv.
+ref: "&#321;uksza et al. 2014. arXiv."
 journal: "arXiv: 1411.1722."
 pdf: /pdfs/papers/luksza-ebola-evolution.pdf
 ---
