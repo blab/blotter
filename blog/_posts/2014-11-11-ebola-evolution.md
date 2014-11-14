@@ -5,7 +5,7 @@ author: Trevor Bedford
 link: /papers/luksza-ebola-evolution/
 ---
 
-[Marta &#321;uksza](https://systemsbiology.columbia.edu/people/marta-luksza), [Michael L&auml;ssig](http://www.thp.uni-koeln.de/~lassig/michael_laessig.html) and I have done [an analysis of Ebola virus evolution](/papers/luksza-ebola-evolution/) using the recently published [Gire et al. dataset](http://www.sciencemag.org/content/345/6202/1369.abstract) of 78 full genomes.  We've put the manuscript up on the [arXiv](http://arxiv.org/abs/1411.1722).
+[Marta &#321;uksza](http://www.ias.edu/people/cos/users/11847), [Michael L&auml;ssig](http://www.thp.uni-koeln.de/~lassig/michael_laessig.html) and I have done [an analysis of Ebola virus evolution](/papers/luksza-ebola-evolution/) using the recently published [Gire et al. dataset](http://www.sciencemag.org/content/345/6202/1369.abstract) of 78 full genomes.  We've put the manuscript up on the [arXiv](http://arxiv.org/abs/1411.1722).
 
 The Gire et al. paper examines Ebola sequences from Sierra Leone during May and June identifying 55 new mutations that have occurred during the West African outbreak.  Most of these mutations are shared by just one or a small handful of cases, but there is a particular mutation at genomic site 10218 that first appears at the beginning of June that distinguishes two major clades of virus (shown in blue and red below).
 
