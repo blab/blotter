@@ -50,7 +50,7 @@ module Jekyll
 					project_contributors = Array.new
 					for i in 0 ... [octokit_contributors.size, 5].min
 						contributor_login = octokit_contributors[i].login
-						contributor_avatar = octokit_contributors[i].rels[:avatar].href						
+						contributor_avatar = octokit_contributors[i].rels[:avatar].href + "&s=50"
 						contributor_url = octokit_contributors[i].rels[:html].href
 						project_contributors = project_contributors.push(
 							"login" => contributor_login,
