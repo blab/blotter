@@ -1,3 +1,7 @@
+name: Bedford Lab Research
+description: Science updates on evolution, epidemiology and immunology from the Bedford lab at the Fred Hutch
+url: http://bedford.io
+
 markdown: redcarpet
 highlighter: pygments
 permalink: /:categories/:title/
@@ -20,7 +24,6 @@ exclude:
   - "*.log"
   - "*.nb"
   - "*.trees"
-  - "*.xml"
   - "*.cpp"
   - "*.h"
   - "*.hh"
