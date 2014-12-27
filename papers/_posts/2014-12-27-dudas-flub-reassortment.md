@@ -3,8 +3,8 @@ layout: paper
 title: Reassortment between influenza B lineages and the emergence of a co-adapted PB1-PB2-HA gene complex
 image: /images/papers/dudas-flub-reassortment.png
 authors: Dudas G, Bedford T, Lycett S, Rambaut A.
-year: 2014
-ref: Dudas et al. 2014. Mol Biol Evol.
+year: 2015
+ref: Dudas et al. 2015. Mol Biol Evol.
 journal: "Mol Biol Evol 32: 162-172."
 pdf: /pdfs/papers/dudas-flub-reassortment.pdf
 supplement: /pdfs/papers/dudas-flub-reassortment-supp.pdf
