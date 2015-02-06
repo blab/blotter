@@ -4,8 +4,8 @@ title: "Simultaneously estimating evolutionary history and repeated traits phylo
 image: /images/papers/vrancken-phylogenetic-signal.png
 authors: Vrancken B, Lemey P, Rambaut A, Bedford T, Longdon B, Gunthard H, Suchard MA.
 year: 2014
-ref: Vrancken et al. 2014. Methods Ecol Evol.
-journal: "Methods Ecol Evol. In press."
+ref: Vrancken et al. 2015. Methods Ecol Evol.
+journal: "Methods Ecol Evol 6: 56-82."
 pdf: /pdfs/papers/vrancken-phylogenetic-signal.pdf
 supplement: /pdfs/papers/vrancken-phylogenetic-signal-supp.pdf
 doi: 10.1111/2041-210X.12293
