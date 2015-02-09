@@ -3,7 +3,7 @@ layout: paper
 title: "Simultaneously estimating evolutionary history and repeated traits phylogenetic signal: applications to viral and host phenotypic evolution"
 image: /images/papers/vrancken-phylogenetic-signal.png
 authors: Vrancken B, Lemey P, Rambaut A, Bedford T, Longdon B, Gunthard H, Suchard MA.
-year: 2014
+year: 2015
 ref: Vrancken et al. 2015. Methods Ecol Evol.
 journal: "Methods Ecol Evol 6: 56-82."
 pdf: /pdfs/papers/vrancken-phylogenetic-signal.pdf
