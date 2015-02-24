@@ -49,9 +49,10 @@ module Jekyll
 					octokit_contributors = client.contributors(repo)					
 					project_contributors = Array.new
 					for i in 0 ... [octokit_contributors.size, 5].min
-						contributor_login = octokit_contributors[i].login
-						contributor_avatar = octokit_contributors[i].rels[:avatar].href + "&s=50"
-						contributor_url = octokit_contributors[i].rels[:html].href
+						contributor = octokit_contributors[i]					
+						contributor_login = contributor.login
+						contributor_avatar = contributor.rels[:avatar].href + "&s=50"
+						contributor_url = contributor.rels[:html].href
 						project_contributors = project_contributors.push(
 							"login" => contributor_login,
 							"avatar" => contributor_avatar,
@@ -62,19 +63,22 @@ module Jekyll
 					# load commit metadata
 					octokit_commits = client.commits(repo)
 					project_commits = Array.new		
-					for i in 0 ... [octokit_commits.size, 5].min
-						commit_date = octokit_commits[i].commit.author.date
-						commit_message = octokit_commits[i].commit.message
-						commit_url = octokit_commits[i].rels[:html].href
-						commit_author_login = octokit_commits[i].author.login
-						commit_author_url = octokit_commits[i].author.rels[:html].href				
-						project_commits = project_commits.push(
-							"date" => commit_date,
-							"message" => commit_message,
-							"url" => commit_url,
-							"author_login" => commit_author_login,							
-							"author_url" => commit_author_url					
-						)
+					for i in 0 ... [octokit_commits.size, 5].min	
+						commit = octokit_commits[i]		
+						commit_date = commit.commit.author.date
+						commit_message = commit.commit.message
+						commit_url = commit.rels[:html].href
+						if commit.author != nil then
+							commit_author_login = commit.author.login
+							commit_author_url = commit.author.rels[:html].href				
+							project_commits = project_commits.push(
+								"date" => commit_date,
+								"message" => commit_message,
+								"url" => commit_url,
+								"author_login" => commit_author_login,							
+								"author_url" => commit_author_url					
+							)
+						end
 						
 					end
 					
