@@ -5,9 +5,10 @@ image: /images/papers/zinder-seasonal-migration.png
 authors: Zinder D, Bedford T, Baskerville EB, Woods RJ, Roy M, Pascual M.
 year: 2014
 ref: Zinder et al. 2014. BMC Evol Biol.
-journal: "BMC Evol Biol. 14: 3."
+journal: "BMC Evol Biol. 14: 272."
 pdf: /pdfs/papers/zinder-seasonal-migration.pdf
 supplement: /pdfs/papers/zinder-seasonal-migration-supp.pdf
+doi: 10.1186/s12862-014-0272-2
 ---
 
 # Abstract
