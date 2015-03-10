@@ -40,6 +40,7 @@ exclude:
   - "*.nex"
   - "Gemfile"
   - "Gemfile.lock"
+  - "projects/nextflu/auspice/css/*"  
 
 projects:
   - trvrb/coaltrace
