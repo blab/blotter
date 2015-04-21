@@ -52,4 +52,5 @@ projects:
   - trvrb/divergence
   - trvrb/ancestry
   - trvrb/medium-data
+  - trvrb/flutrace
   - blab/nextflu
