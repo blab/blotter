@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Postdoc in B cell informatics
+title: Postdoc in immune repertoire dynamics
 author: Trevor Bedford
 ---
 
