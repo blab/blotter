@@ -40,7 +40,12 @@ exclude:
   - "*.nex"
   - "Gemfile"
   - "Gemfile.lock"
-  - "projects/nextflu/auspice/css/*"  
+  - "projects/nextflu/auspice/css/*"
+  - "projects/nextflu/auspice/H3N2/*"
+  - "projects/nextflu/auspice/H1N1pdm/*"
+  - "projects/nextflu/auspice/Vic/*"
+  - "projects/nextflu/auspice/Yam/*"
+  - "projects/nextflu/auspice/muttree/*"        
 
 projects:
   - trvrb/coaltrace
@@ -53,3 +58,4 @@ projects:
   - trvrb/ancestry
   - trvrb/medium-data
   - blab/nextflu
+  - alvason/infectious-pulse
