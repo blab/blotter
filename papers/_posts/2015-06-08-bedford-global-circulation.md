@@ -6,8 +6,8 @@ authors: Bedford T, Riley S, Barr IG, Broor S, Chadha M, Cox NJ, Daniels RS, Gun
 year: 2015
 ref: Bedford et al. 2015. Nature.
 journal: "Nature. In press."
-github: https://github.com/blab/global-migration
 doi: 10.1038/nature14460
+github: https://github.com/blab/global-migration
 ---
 
 # Abstract
