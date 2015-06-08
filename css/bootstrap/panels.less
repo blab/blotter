@@ -36,7 +36,11 @@
   font-size: ceil((@font-size-base * 1.125));
   color: inherit;
 
-  > a {
+  > a,
+  > small,
+  > .small,
+  > small > a,
+  > .small > a {
     color: inherit;
   }
 }
@@ -56,7 +60,8 @@
 // any kind of custom content between the two.
 
 .panel {
-  > .list-group {
+  > .list-group,
+  > .panel-collapse > .list-group {
     margin-bottom: 0;
 
     .list-group-item {
@@ -67,15 +72,15 @@
     // Add border top radius for first one
     &:first-child {
       .list-group-item:first-child {
-	border-top: 0;
-	.border-top-radius((@panel-border-radius - 1));
+        border-top: 0;
+        .border-top-radius((@panel-border-radius - 1));
       }
     }
     // Add border bottom radius for last one
     &:last-child {
       .list-group-item:last-child {
         border-bottom: 0;
-	.border-bottom-radius((@panel-border-radius - 1));
+        .border-bottom-radius((@panel-border-radius - 1));
       }
     }
   }
@@ -100,6 +105,11 @@
   > .table-responsive > .table,
   > .panel-collapse > .table {
     margin-bottom: 0;
+
+    caption {
+      padding-left: @panel-body-padding;
+      padding-right: @panel-body-padding;
+    }
   }
   // Add border top radius for first one
   > .table:first-child,
@@ -109,14 +119,17 @@
     > thead:first-child,
     > tbody:first-child {
       > tr:first-child {
-	td:first-child,
-	th:first-child {
-	  border-top-left-radius: (@panel-border-radius - 1);
-	}
-	td:last-child,
-	th:last-child {
-	  border-top-right-radius: (@panel-border-radius - 1);
-	}
+        border-top-left-radius: (@panel-border-radius - 1);
+        border-top-right-radius: (@panel-border-radius - 1);
+
+        td:first-child,
+        th:first-child {
+          border-top-left-radius: (@panel-border-radius - 1);
+        }
+        td:last-child,
+        th:last-child {
+          border-top-right-radius: (@panel-border-radius - 1);
+        }
       }
     }
   }
@@ -128,19 +141,24 @@
     > tbody:last-child,
     > tfoot:last-child {
       > tr:last-child {
-	td:first-child,
-	th:first-child {
-	  border-bottom-left-radius: (@panel-border-radius - 1);
-	}
-	td:last-child,
-	th:last-child {
-	  border-bottom-right-radius: (@panel-border-radius - 1);
-	}
+        border-bottom-left-radius: (@panel-border-radius - 1);
+        border-bottom-right-radius: (@panel-border-radius - 1);
+
+        td:first-child,
+        th:first-child {
+          border-bottom-left-radius: (@panel-border-radius - 1);
+        }
+        td:last-child,
+        th:last-child {
+          border-bottom-right-radius: (@panel-border-radius - 1);
+        }
       }
     }
   }
   > .panel-body + .table,
-  > .panel-body + .table-responsive {
+  > .panel-body + .table-responsive,
+  > .table + .panel-body,
+  > .table-responsive + .panel-body {
     border-top: 1px solid @table-border-color;
   }
   > .table > tbody:first-child > tr:first-child th,
@@ -154,32 +172,32 @@
     > tbody,
     > tfoot {
       > tr {
-	> th:first-child,
-	> td:first-child {
-	  border-left: 0;
-	}
-	> th:last-child,
-	> td:last-child {
-	  border-right: 0;
-	}
+        > th:first-child,
+        > td:first-child {
+          border-left: 0;
+        }
+        > th:last-child,
+        > td:last-child {
+          border-right: 0;
+        }
       }
     }
     > thead,
     > tbody {
       > tr:first-child {
-	> td,
-	> th {
-	  border-bottom: 0;
-	}
+        > td,
+        > th {
+          border-bottom: 0;
+        }
       }
     }
     > tbody,
     > tfoot {
       > tr:last-child {
-	> td,
-	> th {
-	  border-bottom: 0;
-	}
+        > td,
+        > th {
+          border-bottom: 0;
+        }
       }
     }
   }
@@ -202,6 +220,7 @@
   .panel {
     margin-bottom: 0;
     border-radius: @panel-border-radius;
+
     + .panel {
       margin-top: 5px;
     }
@@ -209,10 +228,13 @@
 
   .panel-heading {
     border-bottom: 0;
-    + .panel-collapse > .panel-body {
+
+    + .panel-collapse > .panel-body,
+    + .panel-collapse > .list-group {
       border-top: 1px solid @panel-inner-border;
     }
   }
+
   .panel-footer {
     border-top: 0;
     + .panel-collapse .panel-body {
