@@ -8,6 +8,8 @@ ref: Bedford et al. 2015. Nature.
 journal: "Nature. In press."
 doi: 10.1038/nature14460
 github: https://github.com/blab/global-migration
+pdf: /pdfs/papers/bedford-global-circulation.pdf
+supp: /pdfs/papers/bedford-global-circulation-supp.pdf
 ---
 
 # Abstract
