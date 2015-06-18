@@ -6,6 +6,7 @@ authors: Park DJ, Dudas G, Wohl S, Goba A, Whitmer SLM, Andersen KG, Sealfon RS,
 year: 2015
 ref: Park et al. 2015. Cell.
 journal: "Cell 161: 1-11."
+pdf: /pdfs/papers/park-ebola-transmission.pdf
 doi: 10.1016/j.cell.2015.06.007
 ---
 
