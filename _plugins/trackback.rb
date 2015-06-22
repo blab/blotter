@@ -27,7 +27,7 @@ module Jekyll
 			html = ""
 			if count > 0
 				html += "<span class=\"smallnote\">"
-				html += "<i class=\"fa fa-angle-left\"></i> "
+				html += "<i class=\"fa fa-retweet\"></i> "
 				html += "<a class=\"off\" href=\"http://topsy.com/trackback?url=#{topsy_url}\">"
 				html += "#{count}"
 				html += "</a>"
