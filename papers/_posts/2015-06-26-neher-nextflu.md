@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "nextflu: Real-time tracking of seasonal influenza virus evolution in humans"
+title: "nextflu: real-time tracking of seasonal influenza virus evolution in humans"
 image: /images/papers/neher-nextflu.png
 authors: Neher RA, Bedford T.
 year: 2015

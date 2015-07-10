@@ -5,7 +5,7 @@ image: /images/papers/bedford-global-circulation.png
 authors: Bedford T, Riley S, Barr IG, Broor S, Chadha M, Cox NJ, Daniels RS, Gunasekaran CP, Hurt AC, Kelso A, Klimov A, Lewis NS, Li X, McCauley JW, Odagiri T, Potdar V, Rambaut A, Shu Y, Skepner E, Smith DJ, Suchard MA, Tashiro M, Wang D, Xu X, Lemey P, Russell CA.
 year: 2015
 ref: Bedford et al. 2015. Nature.
-journal: "Nature. In press."
+journal: "Nature 523: 217-220."
 doi: 10.1038/nature14460
 github: https://github.com/blab/global-migration
 pdf: /pdfs/papers/bedford-global-circulation.pdf
