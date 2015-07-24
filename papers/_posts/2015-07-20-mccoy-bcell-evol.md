@@ -7,6 +7,7 @@ year: 2015
 ref: McCoy et al. 2015. Phil Trans R Soc B.
 journal: "Phil Trans R Soc B: 370: 20140244."
 pdf: /pdfs/papers/mccoy-bcell-evol.pdf
+doi: 10.1098/rstb.2014.0244
 ---
 
 # Abstract
