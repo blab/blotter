@@ -7,6 +7,7 @@ github: alliblk
 scholar: hcBF4HkAAAAJ
 image: /images/team/allison-black.jpg
 email: black.alli@gmail.com
+twitter: alliblk
 ---
 
 In the fall I will be starting my PhD in Epidemiology at the University of Washington. I’m interested in how we can use pathogen sequence data to understand patterns in disease transmission, and from an applied public health perspective, how we use that data to better prepare for and respond to outbreaks.
