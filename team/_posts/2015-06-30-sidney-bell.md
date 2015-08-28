@@ -4,7 +4,7 @@ title: Sidney Bell
 position: PhD student
 github: sidneymbell
 image: /images/team/sidney-bell.jpg
-email: sidneymbell@gmail.com
+email: sidneymb@uw.edu
 twitter: sidneymbell 
 ---
 
