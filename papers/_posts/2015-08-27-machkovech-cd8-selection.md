@@ -6,6 +6,7 @@ authors: Machovech HM, Bedford T, Suchard MA, Bloom JD.
 year: 2015
 ref: Machovech et al. 2015. J Virol.
 journal: "J Virol. In press."
+github: https://github.com/hmmachko/TcellEpitopeComparisons
 pdf: /pdfs/papers/machovech-cd8-selection.pdf
 doi: 10.1128/JVI.01571-15
 ---
