@@ -6,7 +6,6 @@ authors: Meyer AG, Spielman SJ, Bedford T, Wilke CO.
 year: 2015
 ref: Meyer et al. 2015. Virus Evol.
 journal: "Virus Evol 1: vev006."
-github: https://github.com/wilkelab/influenza_pH1N1_timecourse
 pdf: /pdfs/papers/meyer-time-dependence.pdf
 supplement: /pdfs/papers/meyer-time-dependence-supp.pdf
 doi: 10.1093/ve/vev006
