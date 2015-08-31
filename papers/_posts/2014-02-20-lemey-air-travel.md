@@ -7,6 +7,7 @@ year: 2014
 ref: Lemey et al. 2014. PLoS Pathog.
 journal: "PLoS Pathog 10: e1003932."
 pdf: /pdfs/papers/lemey-air-travel.pdf
+supplement: /pdfs/papers/lemey-air-travel-supp.pdf
 doi: 10.1371/journal.ppat.1003932
 ---
 
