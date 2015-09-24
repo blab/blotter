@@ -45,7 +45,8 @@ exclude:
   - "projects/nextflu/auspice/H1N1pdm/*"
   - "projects/nextflu/auspice/Vic/*"
   - "projects/nextflu/auspice/Yam/*"
-  - "projects/nextflu/auspice/muttree/*"        
+  - "projects/nextflu/auspice/muttree/*"
+  - "projects/nextflu/auspice/reports/*"
 
 projects:
   - trvrb/coaltrace
