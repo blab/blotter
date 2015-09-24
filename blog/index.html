@@ -6,28 +6,6 @@ categories:
 category: blog
 ---
 
-<div class="pager">
-  
-	{% if paginator.previous_page %}
-		{% if paginator.previous_page == 1 %}
-		<a class="prev" href="/{{ page.category }}/">
-			<i class="fa fa-chevron-left fa-lg"></i>
-		</a>
-		{% else %}
-		<a class="prev" href="/{{ page.category }}/page{{ paginator.previous_page }}">
-			<i class="fa fa-chevron-left fa-lg"></i>
-		</a>
-		{% endif %}  		
-	{% endif %}  
-  
-	{% if paginator.next_page %}  
-	<a class="next" href="/{{ page.category }}/page{{ paginator.next_page }}">
-		<i class="fa fa-chevron-right fa-lg"></i>
-	</a>	
-	{% endif %}  	
-    
-</div>
-
 {% for post in paginator.posts %}
 
 		{% for member in site.categories.team %}
@@ -36,7 +14,6 @@ category: blog
 			{% endif %}
 		{% endfor %}
 	
-		<div class="bigspacer"></div>
 		<div class="row">
 			<div class="col-md-3">
 				<div class="head">
@@ -59,11 +36,33 @@ category: blog
 				</div>
 			</div>			
 			<div class="col-md-1"></div>
-		</div>		
+		</div>
+		<div class="bigspacer"></div>	
 
 {% endfor %}
 
-<div class="bigspacer"></div>	
+<div class="pager">
+  
+	{% if paginator.previous_page %}
+		{% if paginator.previous_page == 1 %}
+		<a class="prev" href="/{{ page.category }}/">
+			<i class="fa fa-chevron-left fa-lg"></i>
+		</a>
+		{% else %}
+		<a class="prev" href="/{{ page.category }}/page{{ paginator.previous_page }}">
+			<i class="fa fa-chevron-left fa-lg"></i>
+		</a>
+		{% endif %}  		
+	{% endif %}  
+  
+	{% if paginator.next_page %}  
+	<a class="next" href="/{{ page.category }}/page{{ paginator.next_page }}">
+		<i class="fa fa-chevron-right fa-lg"></i>
+	</a>	
+	{% endif %}  	
+    
+</div>
+
 <div class="row">
 	<div class="col-md-12 text-center">
 		<a class="off" href="/{{ page.category }}/archive/">
