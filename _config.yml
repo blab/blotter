@@ -47,6 +47,7 @@ exclude:
   - "projects/nextflu/auspice/Yam/*"
   - "projects/nextflu/auspice/muttree/*"
   - "projects/nextflu/auspice/reports/*"
+  - "projects/nextflu/auspice/js/*"    
 
 projects:
   - trvrb/coaltrace
