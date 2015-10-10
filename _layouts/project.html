@@ -4,7 +4,7 @@ categories:
  - projects
 ---
 
-{% for test in site.projects %}
+{% for test in site.data.projects %}
 	{% if test.title == page.project %}
 		{% assign project = test %}
 	{% endif %}

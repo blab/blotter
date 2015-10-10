@@ -4,6 +4,4 @@ _site/
 # Projects
 projects/
 !projects/index.html
-
-# Pre-processing scripts
-scripts/
+_data/projects.yml
