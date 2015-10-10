@@ -4,4 +4,3 @@ _site/
 # Projects
 projects/
 !projects/index.html
-_data/projects.yml
