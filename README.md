@@ -16,6 +16,14 @@ jekyll build
 
 To view the site, run `jekyll serve` and point a browser to `http://localhost:4000/`.  More information on Jekyll can be found [here](http://jekyllrb.com/).
 
+To include projects, preprocessing scripts are necessary to clone project repos and update Jekyll metadata. This can be accomplished with:
+
+```
+ruby _scripts/update-and-preprocess.rb
+```
+
+Then `jekyll build` works as normal.
+
 ## Contribute
 
 Blog posts just require YAML top matter that looks something like:
