@@ -2,10 +2,10 @@
 layout: default
 title: bedford lab / talks
 categories: 
- - projects
+ - talks
 ---
 
-{% for talk in site.talks %}
+{% for talk in site.categories.talks %}
 
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 projectbox">
@@ -14,11 +14,11 @@ categories:
 			</div>	
 			<div class="smallspacer"></div>
 			<div class="note">
-				<a href="{{ project.url }}" class="off">{{ talk.venue }}</a>
+				<a href="{{ talk.url }}" class="off">{{ talk.venue }}</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="note">
-				<a href="{{ project.url }}" class="off">{{ talk.date | date_to_string }}</a>
+				<a href="{{ talk.url }}" class="off">{{ talk.date | date_to_string }}</a>
 			</div>
 			<div class="bigspacer"></div>
 		</div>
