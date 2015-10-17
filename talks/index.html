@@ -1,31 +1,24 @@
 ---
 layout: default
-title: bedford lab / projects
+title: bedford lab / talks
 categories: 
  - projects
 ---
 
-{% for project in site.projects %}
+{% for talk in site.talks %}
 
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 projectbox">
 			<div class="head">
-				<a href="{{ project.url }}" class="off">{{ project.title }}</a>
+				<a href="{{ talk.url }}" class="off">{{ talk.title }}</a>
 			</div>	
 			<div class="smallspacer"></div>
 			<div class="note">
-				<a href="{{ project.url }}" class="off">{{ project.description }}</a>
+				<a href="{{ project.url }}" class="off">{{ talk.venue }}</a>
 			</div>
 			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Updated
-				<a class="off" href="{{ project.commits.first.url }}">
-				{{ project.commits.first.date | date_to_string }}
-				</a>
-				by
-				<a class="off" href="{{ project.commits.first.author_url }}">				
-				{{ project.commits.first.author_login }}
-				</a>
+			<div class="note">
+				<a href="{{ project.url }}" class="off">{{ talk.date | date_to_string }}</a>
 			</div>
 			<div class="bigspacer"></div>
 		</div>
