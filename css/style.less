@@ -313,54 +313,6 @@ blockquote {
     display: inline
 }
 
-/* Next/Prev pager */
-.pager a {
-	position:fixed;
-	top:50%;
-	z-index:101;
-	margin-top:-30px;
-	padding: 10px 5px 30px 5px;
-	height:20px;
-	width:20px;
-	display:block;
-	overflow:hidden;
-	transition:background-color .2s;
-	-moz-transition:background-color .2s;
-	-webkit-transition:background-color .2s;
-	color: #fff;
-}
-
-body.exhibit .pager a {
-	background-color:#fff;
-	box-shadow:rgba(0,0,0,0.25) 0px 0px 10px;
-}
-
-.pager a.prev {
-	left:0%;
-	border-radius:0px 3px 3px 0px;
-}
-
-.pager a.next {
-	right:0%;
-	border-radius:3px 0px 0px 3px;
-}
-
-.pager a,
-body.dark .pager a:hover { background-color: @gray-light; }
-
-.pager a:hover,
-body.dark .pager a,
-body.exhibit .pager a:hover { background-color: @gray-dark; }
-
-.pager .icon.prev,
-body.dark .pager a:hover .icon.prev { background-position:-80px -90px; }
-.pager .icon.next,
-body.dark .pager a:hover .icon.next { background-position:-100px -90px; }
-body.dark .pager .icon.prev,
-.pager a:hover .icon.prev { background-position:-80px -70px; }
-body.dark .pager .icon.next,
-.pager a:hover .icon.next { background-position:-100px -70px; }
-
 /* Infinite scroll */
 
 .infinite-spinner {
