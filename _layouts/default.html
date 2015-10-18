@@ -37,7 +37,14 @@
 		ga('send', 'pageview');
 
 	</script>
-			
+	
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="/js/transition.js"></script>
+	<script src="/js/collapse.js"></script>
+
 </head>
 
 <body>
@@ -45,39 +52,47 @@
 	<div id="header">
 		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
 			<div class="container">	
-				{% if page.categories.first != 'home' %}
 				<div class="navbar-header">
-					<object class="pull-left logo" data="/images/logo.svg" type="image/svg+xml"></object>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					{% if page.categories.first != 'home' %}					
+					<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
 					<a class="navbar-brand" href="/">bedford lab</a>
+					{% endif %}
 				</div>
-				{% endif %}
-				<ul class="nav navbar-nav navbar-right">
-					{% if page.categories.first == 'blog' %}
-					<li class="active">
-					{% else %}
-					<li>
-					{% endif %}
-					<a href="/blog/">blog</a>
-					</li>
-					{% if page.categories.first == 'papers' %}
-					<li class="active">
-					{% else %}
-					<li>
-					{% endif %}
-					<a href="/papers/">papers</a></li>
-					{% if page.categories.first == 'projects' %}
-					<li class="active">
-					{% else %}
-					<li>
-					{% endif %}
-					<a href="/projects/">projects</a></li>	  
-					{% if page.categories.first == 'team' %}
-					<li class="active">
-					{% else %}
-					<li>
-					{% endif %}
-					<a href="/team/">team</a></li>	  	  
-				</ul>
+				<div class="collapse navbar-collapse" id="navbar-collapse-element">
+					<ul class="nav navbar-nav navbar-right">
+						{% if page.categories.first == 'blog' %}
+						<li class="active">
+						{% else %}
+						<li>
+						{% endif %}
+						<a href="/blog/">blog</a>
+						</li>
+						{% if page.categories.first == 'papers' %}
+						<li class="active">
+						{% else %}
+						<li>
+						{% endif %}
+						<a href="/papers/">papers</a></li>
+						{% if page.categories.first == 'projects' %}
+						<li class="active">
+						{% else %}
+						<li>
+						{% endif %}
+						<a href="/projects/">projects</a></li>	  
+						{% if page.categories.first == 'team' %}
+						<li class="active">
+						{% else %}
+						<li>
+						{% endif %}
+						<a href="/team/">team</a></li>	  	  
+					</ul>
+				</div>
 			</div>
 		</nav>	
 	</div>
@@ -87,15 +102,9 @@
 	{{ content }}
 	
 	</div>
-		
+	
 	<div id="footer"><span style="display:none">foo</span></div>
-	    		
-	<!-- MathJax support -->
-	<script async type="text/javascript"
-	 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	<!-- MathJax config -->
-	<script async src="/js/mathjax.config.js"></script>	
-			
+		
 </body>
 </html>
 

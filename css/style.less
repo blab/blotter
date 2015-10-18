@@ -10,14 +10,17 @@
 @pre-color: #586E75;
 @well-bg: #f8f8f8;
 @code-bg: #f8f8f8;
-@pre-bg: #f8f8f8;
+@pre-bg: #f8f8f8;  
+@nav-pills-active-link-hover-bg: @navbar-default-bg;
+@nav-pills-active-link-hover-color: @gray;
 
 @import "/css/font-awesome/font-awesome.less";
 @fa-font-path: "font";
 
 @import "/css/solarized.less";
+@import "/css/katex.less";
 
-h1, .h1 { font-size: floor(@font-size-base * 2.60); } /* ~36px */
+h1, .h1 { font-size: floor(@font-size-base * 2.50); } /* ~34px */
 h2, .h2 { font-size: floor(@font-size-base * 2.15); } /* ~30px */
 h3, .h3 { font-size: ceil(@font-size-base * 1.70); }  /* ~24px */
 h4, .h4 { font-size: ceil(@font-size-base * 1.25); }  /* ~18px */
@@ -69,13 +72,13 @@ h6 {
 }
 
 .biglogo {
-	width: 180px;
-	height: 180px;
+	width: 170px;
+	height: 170px;
 	padding: 5px;
 }
 
 .logobox {
-	height: 180px;
+	height: 170px;
 	display: table-cell; 
 	vertical-align: middle;
 }
@@ -102,14 +105,14 @@ h6 {
 
 .bigtitle {
 	font-size: 60px; 
-	line-height: 65px;	
+	line-height: 55px;	
 	font-weight: 100;
 	/* Museo */	
 }
 
 .title {
-	font-size: 45px; 
-	line-height: 50px;	
+	font-size: 36px; 
+	line-height: 40px;	
 	font-weight: 100;
 	/* Museo */	
 }
@@ -185,11 +188,6 @@ p {
 
 a.off { 
 	color: inherit; 
-}
-
-code.has-jax {
-	background: inherit; 
-	color: inherit;
 }
 
 pre {
@@ -299,50 +297,51 @@ blockquote {
 	text-align: center;
 }
 
-/* Next/Prev pager */
-.pager a {
-	position:fixed;
-	top:50%;
-	z-index:101;
-	margin-top:-30px;
-	padding: 10px 5px 30px 5px;
-	height:20px;
-	width:20px;
-	display:block;
-	overflow:hidden;
-	transition:background-color .2s;
-	-moz-transition:background-color .2s;
-	-webkit-transition:background-color .2s;
-	color: #fff;
+.centered-pills {  
+    text-align: center
+}
+.centered-pills ul.nav-pills {
+    display: inline-block
+}
+.centered-pills li {
+    display: inline
+}
+.centered-pills a {
+    float: left
+}
+* html .centered-pills ul.nav-pills, *+html .centered-pills ul.nav-pills {
+    display: inline
 }
 
-body.exhibit .pager a {
-	background-color:#fff;
-	box-shadow:rgba(0,0,0,0.25) 0px 0px 10px;
+/* Infinite scroll */
+
+.infinite-spinner {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #333;
+  margin: 60px auto;
+  
+  -webkit-animation: scaleout 1.0s infinite ease-in-out;
+  animation: scaleout 1.0s infinite ease-in-out;
 }
 
-.pager a.prev {
-	left:0%;
-	border-radius:0px 3px 3px 0px;
+@-webkit-keyframes scaleout {
+  0% { -webkit-transform: scale(0.0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
 }
 
-.pager a.next {
-	right:0%;
-	border-radius:3px 0px 0px 3px;
+@keyframes scaleout {
+  0% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 100% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
 }
-
-.pager a,
-body.dark .pager a:hover { background-color: @gray-light; }
-
-.pager a:hover,
-body.dark .pager a,
-body.exhibit .pager a:hover { background-color: @gray-dark; }
-
-.pager .icon.prev,
-body.dark .pager a:hover .icon.prev { background-position:-80px -90px; }
-.pager .icon.next,
-body.dark .pager a:hover .icon.next { background-position:-100px -90px; }
-body.dark .pager .icon.prev,
-.pager a:hover .icon.prev { background-position:-80px -70px; }
-body.dark .pager .icon.next,
-.pager a:hover .icon.next { background-position:-100px -70px; }
