@@ -1,11 +1,29 @@
 ---
 layout: default
-title: blotter [blog]
+title: bedford lab / blog / archive
 categories: 
  - blog
 ---
 
-<div class="bigspacer"></div>	
+<div class="row">
+	<div class="col-md-12">
+		<div class="centered-pills">
+			<ul class="nav nav-pills note">
+				<li role="presentation">
+					<a class="off" href="/blog/">
+						<i class="fa fa-refresh fa-fw"></i> Timeline
+					</a>
+				</li>
+				<li role="presentation" class="active">
+					<a class="off" href="/blog/archive/">
+						<i class="fa fa-list-ul fa-fw"></i> Index
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bigspacer"></div>
+	</div>
+</div>
 
 {% for post in site.categories.blog %}
 
