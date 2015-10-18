@@ -8,7 +8,9 @@ module Jekyll
 			@markup = "#{markup}".strip
 		end
 		def render(context)
-		
+
+			require 'execjs'
+
 			parsed = Liquid::Template.parse(@markup).render context
 			
 			katexsrc = open("./js/katex.min.js").read
@@ -18,7 +20,7 @@ module Jekyll
 		end
 		def eqn_to_html(string)
 			return @katex.call("katex.renderToString", string)
-		end		
+		end
 	end
 end
 

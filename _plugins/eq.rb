@@ -9,17 +9,20 @@ module Jekyll
 		end
 		def render(context)
 		
+			require 'execjs'
+		
 			parsed = Liquid::Template.parse(@markup).render context
-			
+
 			katexsrc = open("./js/katex.min.js").read
 			@katex = ExecJS.compile(katexsrc)
-			
+
             style = "text-align: center; margin-top: 0.5em; margin-bottom: 0.5em;"
 			div_open = "<div style='#{style}'>"
 			parsed = "\\displaystyle " + parsed			
 			div_close = "</div>"
+			output = div_open + eqn_to_html(parsed) + div_close
 			
-			return div_open + eqn_to_html(parsed) + div_close			
+			return output			
 
 		end
 		def eqn_to_html(string)

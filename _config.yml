@@ -3,7 +3,6 @@ description: Science updates on evolution, epidemiology and immunology from the 
 url: http://bedford.io
 
 markdown: redcarpet
-highlighter: pygments
 permalink: /:categories/:title/
 
 redcarpet: 
