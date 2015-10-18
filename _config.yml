@@ -14,10 +14,6 @@ redcarpet:
    - superscript
    - strikethrough
 
-paginate: 6
-paginate_path: "blog/page:num"
-paginate_category: "blog"
-
 exclude:
   - "*.branches"
   - "*.kml"

@@ -6,14 +6,17 @@ categories:
 category: blog
 ---
 
-{% for post in paginator.posts %}
+<div class="post-list">
+
+{% for post in site.categories.blog limit: 10 %}
 
 		{% for member in site.categories.team %}
 			{% if member.title == post.author %}
 				{% assign author = member %}
 			{% endif %}
 		{% endfor %}
-	
+
+	<div class="blog-post">
 		<div class="row">
 			<div class="col-md-3">
 				<div class="head">
@@ -37,37 +40,11 @@ category: blog
 			</div>			
 			<div class="col-md-1"></div>
 		</div>
-		<div class="bigspacer"></div>	
+		<div class="bigspacer"></div>
+	</div>	
 
 {% endfor %}
 
-<div class="pager">
-  
-	{% if paginator.previous_page %}
-		{% if paginator.previous_page == 1 %}
-		<a class="prev" href="/{{ page.category }}/">
-			<i class="fa fa-chevron-left fa-lg"></i>
-		</a>
-		{% else %}
-		<a class="prev" href="/{{ page.category }}/page{{ paginator.previous_page }}">
-			<i class="fa fa-chevron-left fa-lg"></i>
-		</a>
-		{% endif %}  		
-	{% endif %}  
-  
-	{% if paginator.next_page %}  
-	<a class="next" href="/{{ page.category }}/page{{ paginator.next_page }}">
-		<i class="fa fa-chevron-right fa-lg"></i>
-	</a>	
-	{% endif %}  	
-    
 </div>
 
-<div class="row">
-	<div class="col-md-12 text-center">
-		<a class="off" href="/{{ page.category }}/archive/">
-			<div class="smallhead">Archive</div>
-			<i class="text-gray fa fa-chevron-circle-down fa-2x"></i>
-		</a>
-	</div>
-</div>
+<div class="infinite-spinner"></div>
