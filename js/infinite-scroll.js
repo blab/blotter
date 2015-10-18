@@ -35,6 +35,20 @@ $(function() {
     }
   });
   
+  $(window).load(function(e){
+    if (!shouldFetchPosts || isFetchingPosts) return;
+    
+    var windowHeight = $(window).height(),
+        windowScrollPosition = $(window).scrollTop(),
+        bottomScrollPosition = windowHeight + windowScrollPosition,
+        documentHeight = $(document).height();
+    
+    // If we've scrolled past the loadNewPostsThreshold, fetch posts
+    if ((documentHeight - loadNewPostsThreshold) < bottomScrollPosition) {
+      fetchPosts();
+    }
+  });  
+  
   // Fetch a chunk of posts
   function fetchPosts() {
     // Exit if postURLs haven't been loaded

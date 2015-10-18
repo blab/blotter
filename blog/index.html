@@ -8,40 +8,55 @@ category: blog
 
 <div class="post-list">
 
-{% for post in site.categories.blog limit: 10 %}
+{% for post in site.categories.blog limit: 8 %}
 
-		{% for member in site.categories.team %}
-			{% if member.title == post.author %}
-				{% assign author = member %}
-			{% endif %}
-		{% endfor %}
+	{% for member in site.categories.team %}
+		{% if member.title == post.author %}
+			{% assign author = member %}
+		{% endif %}
+	{% endfor %}
 
 	<div class="blog-post">
 		<div class="row">
-			<div class="col-md-3">
-				<div class="head">
-					<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+			<div class="col-md-1"></div>	
+			<div class="col-md-10">
+				<div class="media">
+					<div class="media-body">
+						<div class="title media-heading">
+							<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+						</div>
+						<p>
+						<div class="smallhead">
+							{{ post.date | date_to_string }}
+							{% if author %}
+							by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+							{% endif %}		
+						</div>
+					</div>
 				</div>
-				<div class="smallnote">
-					{{ post.date | date_to_string }}
-					{% if author %}
-					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-					{% endif %}				
-				</div>	
 			</div>
-			<div class="col-md-8">		
-				<div style="height:5px;"></div>			
+			<div class="col-md-1"></div>					
+		</div>
+
+		<div class="bigspacer"></div>
+
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">	
 				{% if post.image %}
-				<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
+				<img class="offset" src="{{ post.image }}">
 				{% endif %}
 				<div class="post">
 					{{ post.content }}
-				</div>
+				</div>	
 			</div>			
 			<div class="col-md-1"></div>
 		</div>
+	
 		<div class="bigspacer"></div>
-	</div>	
+		<div class="spacer"></div>	
+
+	</div>
 
 {% endfor %}
 

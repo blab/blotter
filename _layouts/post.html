@@ -9,11 +9,12 @@ layout: default
 
 <div class="blog-post">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
 			<div class="media">
 				<div class="media-body">
 					<div class="title media-heading">
-						{{ page.title }}
+						<a href="{{ page.url }}" class="off">{{ page.title }}</a>
 					</div>
 					<p>
 					<div class="smallhead">
@@ -24,36 +25,15 @@ layout: default
 					</div>
 				</div>
 			</div>
-		</div>				
+		</div>
+		<div class="col-md-1"></div>					
 	</div>
 
 	<div class="bigspacer"></div>
-	<div class="spacer"></div>
 
 	<div class="row">
-		<div class="col-md-3">
-			{% if page.link %}
-			<div class="smallhead">
-				Link
-			</div>	
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-external-link fa-fw"></i>
-				<a class="off" href="{{ page.link }}">{{ page.link | remove: 'http://' | remove: 'https://' | replace: '/', '/<wbr>' | replace: '%', '%<wbr>' }}</a>
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-			<div class="smallhead">
-				Share
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				{% tweet {{page.url}} {{page.title}} %}
-				{% trackback {{page.url}} %}
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-		<div class="col-md-8">	
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
 			{% if page.image %}
 			<img class="offset" src="{{ page.image }}">
 			{% endif %}
@@ -63,9 +43,8 @@ layout: default
 		</div>			
 		<div class="col-md-1"></div>
 	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
 </div>
-
-
-
-
-
