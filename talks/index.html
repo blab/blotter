@@ -20,12 +20,8 @@ categories:
 			</div>	
 			<div class="smallspacer"></div>
 			<div class="smallnote">
-				{{ talk.date | date_to_string }}
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				{{ talk.venue }}
-			</div>			
+				{{ talk.date | date_to_string }} at {{ talk.venue }}
+			</div>	
         </div>
     {% cycle 'close rows': nil, nil, '</div><div class="bigspacer"></div>' %}
 {% endfor %}
