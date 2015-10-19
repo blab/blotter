@@ -7,21 +7,26 @@ categories:
 
 {% for talk in site.categories.talks %}
 
+	{% for member in site.categories.team %}
+		{% if member.title == talk.author %}
+			{% assign author = member %}
+		{% endif %}
+	{% endfor %}
+
     {% cycle 'add rows': '<div class="row">', nil, nil %}
-		<div class="col-md-4 projectbox">
-			<div class="head">
+		<div class="col-md-4 postbox">
+			<div class="smallhead">
 				<a href="{{ talk.url }}" class="off">{{ talk.title }}</a>
 			</div>	
 			<div class="smallspacer"></div>
-			<div class="note">
-				<a href="{{ talk.url }}" class="off">{{ talk.venue }}</a>
+			<div class="smallnote">
+				{{ talk.date | date_to_string }}
 			</div>
 			<div class="smallspacer"></div>
-			<div class="note">
-				<a href="{{ talk.url }}" class="off">{{ talk.date | date_to_string }}</a>
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-    {% cycle 'close rows': nil, nil, '</div>' %}
+			<div class="smallnote">
+				{{ talk.venue }}
+			</div>			
+        </div>
+    {% cycle 'close rows': nil, nil, '</div><div class="bigspacer"></div>' %}
 {% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}	
+{% cycle 'close rows': nil, '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
