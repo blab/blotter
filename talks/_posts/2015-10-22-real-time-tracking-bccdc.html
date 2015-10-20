@@ -6,7 +6,9 @@ event: Research Week Symposium
 author: Trevor Bedford
 ---
 
-<section data-background="#82A8DD">
+<!-- Color ramp: ["#59A3AA", "#7CB879", "#AABD52", "#D4B13F", "#E68634"] -->
+
+<section data-background="#000000">
 	<h2 class="title">{{ page.title }}</h2>
 	<br>
 	<p class="title">
@@ -19,7 +21,11 @@ author: Trevor Bedford
 	{{ page.venue }}	
 </section>	
 
-<section data-background="#777777">
+<section data-background="#000000">
+	<h3 class="title">Slides at bedford.io/talks/</h3>
+</section>
+
+<section data-background="#59A3AA">
 	<h2 class="title">Phylogenies</h2>
 </section>
 
@@ -50,10 +56,6 @@ author: Trevor Bedford
 	<div class="citation">
 		Darwin 1859
 	</div>	
-</section>
-
-<section data-background="#777777">
-	<h2 class="title">Phylogeny emerges from infection history</h2>
 </section>
 
 <section>
@@ -100,8 +102,12 @@ author: Trevor Bedford
 	</div>	
 </section>
 
-<section data-background="#777777">
-	<h2 class="title">Influenza virus</h2>
+<section>
+	<h3>Applications of evolutionary analysis for vaccine strain selection in influenza and charting epidemic spread in Ebola</h3>
+</section>
+
+<section data-background="#7CB879">
+	<h2 class="title">Influenza</h2>
 </section>
 
 <section>
@@ -125,6 +131,14 @@ author: Trevor Bedford
 </section>	
 
 <section>
+	<h4>Antigenic evolution drives viral dynamics</h4>
+	<img class="stretch" src="/images/talks/canalization_dynamics.jpg">
+	<div class="citation">
+		<a href="http://bedford.io/papers/bedford-canalization/">Bedford et al 2012</a>
+	</div>				
+</section>
+
+<section>
 	<h3>Antigenic evolution in H3N2</h3>
 	<img class="stretch" src="/images/talks/flu_h3n2_tree.png">				
 </section>	
@@ -137,4 +151,104 @@ author: Trevor Bedford
 <section>
 	<h3>Vaccine strain selection timeline</h3>
 	<img class="stretch" src="/images/talks/flu_vaccine_schedule.jpg">
+</section>
+
+<section>
+	<h3>Antigenic "match" of key importance</h3>
+	<br>
+	<p>Antibodies by vaccination should effectively bind to circulating viruses. This requires:
+	<br>
+	<ol>
+		<li>Identification of antigenically distinct clades of virus</li>
+		<li>Prediction of clade growth/decline</li>
+	</ol>
+</section>
+
+<section>
+	<h3>Hemagglutination inhibition (HI) assays measure binding</h3>
+	<img class="stretch" src="/images/talks/hi_table.png">
+	<div class="citation">
+		<a href="http://www.crick.ac.uk/research/worldwide-influenza-centre/annual-and-interim-reports/">NIMR 2010</a>
+	</div>	
+</section>
+
+<section>
+	<h3>H3N2 population in Feb 2014</h3>
+	<img class="stretch" src="/images/talks/3c2a_tree_1.png">
+</section>
+
+<section data-transition="none">
+	<h3>H3N2 population in Jun 2014</h3>
+	<img class="stretch" src="/images/talks/3c2a_tree_2.png">
+</section>
+
+<section data-transition="none">
+	<h3>H3N2 population in Oct 2014</h3>
+	<img class="stretch" src="/images/talks/3c2a_tree_3.png">
+</section>
+
+<section data-transition="none">
+	<h3>H3N2 population in Feb 2015</h3>
+	<img class="stretch" src="/images/talks/3c2a_tree_4.png">
+</section>
+
+<section>
+	<h3>Resulted in a mismatched 2014-2015 vaccine</h3>
+	<img class="stretch" src="/images/talks/3c2a_frequencies.jpg">
+</section>
+
+<section>
+	<h2>
+		<span class="c2">n</span><span class="c3">e</span><span class="c4">x</span><span class="c5">t</span><span class="c6">f</span><span class="c7">l</span><span class="c8">u</span>
+	</h2>
+	<p>Project to provide a real-time view of the evolving influenza population
+	<p class="fragment" data-fragment-index="1">All in collaboration with <a href="https://neherlab.wordpress.com/">Richard Neher</a></p>
+	<img class="stretch fragment" data-fragment-index="1" src="/images/talks/neher.jpg">
+</section>
+
+<section>
+	<h3>
+		<span class="c2">n</span><span class="c3">e</span><span class="c4">x</span><span class="c5">t</span><span class="c6">f</span><span class="c7">l</span><span class="c8">u</span>
+		pipeline
+	</h3>
+	<p>
+	<ol>
+		<li>Download all recent HA sequences from GISAID</li>
+		<li>Filter to remove outliers</li>
+		<li>Align sequences</li>
+		<li>More filtering</li>
+		<li>Build tree</li>
+		<li>Estimate frequencies</li>
+		<li>Export JSON for visualization</li>
+	</ol>
+</section>
+
+<section>
+	<h1>
+		<a href="http://nextflu.org">
+			<span class="c2">n</span><span class="c3">e</span><span class="c4">x</span><span class="c5">t</span><span class="c6">f</span><span class="c7">l</span><span class="c8">u</span><span class="text-gray">.org</span>
+		</a>
+	</h1>
+</section>
+
+<section>
+	<h3>Predictive models</h3>
+	<br>
+	<p>A simple predictive model estimates the fitness $f$ of virus $i$ as</p>
+	<p>$$\hat{f}_i = \beta^\mathrm{ep} \, f_i^\mathrm{ep} + \beta^\mathrm{ne} \, f_i^\mathrm{ne}$$</p>
+	<p>where $f_i^\mathrm{ep}$ measures cross-immunity via substitutions at epitope sites and $f_i^\mathrm{ep}$ measures mutational load via substitutions at non-epitope sites.</p>
+	<img class="stretch" src="/images/talks/prediction_ll.jpg">	
+	<div class="citation">
+		<a href="http://www.nature.com/nature/journal/v507/n7490/full/nature13087.html">&#321;uksza and L&auml;ssig 2014</a>
+	</div>	
+</section>
+
+<section>
+	<h3>Predictive models</h3>
+	<br>
+	<p>Another approach quantifies phylogenetic branching patterns</p>
+	<img class="stretch" src="/images/talks/prediction_neher.jpg">	
+	<div class="citation">
+		<a href="http://elifesciences.org/content/elife/3/e03568">Neher et al 2014</a>
+	</div>	
 </section>

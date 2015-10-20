@@ -209,3 +209,17 @@ body {
 
 .reveal table tr:last-child td {
   border-bottom: none; }
+
+
+/* colors */
+
+.c1 { color: #4C90C0; }
+.c2 { color: #5DA8A3; }
+.c3 { color: #75B681; }
+.c4 { color: #92BC63; }
+.c5 { color: #B2BD4D; }
+.c6 { color: #CEB541; }
+.c7 { color: #E1A03A; }
+.c8 { color: #E67C32; }
+.c9 { color: #E04929; }
+.text-gray { color: #777777; }
