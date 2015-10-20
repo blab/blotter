@@ -52,6 +52,10 @@ body {
   line-height: 1.6em;
 }
 
+.reveal .smaller {
+	font-size: smaller;
+}
+
 .citation {
 	position: absolute;
 	bottom:0px;
