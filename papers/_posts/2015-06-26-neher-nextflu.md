@@ -5,7 +5,7 @@ image: /images/papers/neher-nextflu.png
 authors: Neher RA, Bedford T.
 year: 2015
 ref: Neher and Bedford. 2015. Bioinformatics.
-journal: "Bioinformatics. In press."
+journal: "Bioinformatics 31: 3546-3548."
 doi: 10.1093/bioinformatics/btv381
 github: https://github.com/blab/nextflu
 pdf: /pdfs/papers/neher-nextflu.pdf

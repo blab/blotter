@@ -5,7 +5,7 @@ image: /images/papers/machovech-cd8-selection.png
 authors: Machovech HM, Bedford T, Suchard MA, Bloom JD.
 year: 2015
 ref: Machovech et al. 2015. J Virol.
-journal: "J Virol. In press."
+journal: "J Virol 89: 11275-11283."
 pdf: /pdfs/papers/machovech-cd8-selection.pdf
 doi: 10.1128/JVI.01571-15
 ---
