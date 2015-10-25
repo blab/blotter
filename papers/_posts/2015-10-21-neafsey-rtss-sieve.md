@@ -2,19 +2,21 @@
 layout: paper
 title: Genetic diversity and protective efficacy of the RTS,S/AS01 malaria vaccine
 image: /images/papers/neafsey-rtss-sieve.png
-authors: Neafsey DE, Juraska M, Bedford T, Benkeser D, Valim C, Griggs A, Lievens M, Abdulla S, Adjei S, Agbenyega T, Agnandji ST, Aide P, Anderson S, Ansong D, Aponte JJ, Asante KP, Bejon P, Birkett AJ, Bruls M, Connolly KM, D'Alessandro U, Dobaño C, Gesase S, Greenwood B, Grimsby J, Halidou T, Hamel MJ, Hoffman I, Kamthunzi P, Kariuki S, Kremsner PG, Leach A, Lell B, Lennon NJ, Lusingu J, Marsh K, Martinson F, Molel JT, Moss EL, Njuguna P, Ockenhouse CF, Ragama BO, Otieno W, Otieno L, Otieno K, Owusu-Agyei S, Park DJ, Pellé K, Robbins D, Russ C, Ryan EM, Sacarlal J, Sogoloff B, Sorgho H, Tanner M, Theander T, Valea I, Volkman SK, Yu Q, Lapierre D, Birren BW, Gilbert PB, Wirth DF.
+authors: Neafsey DE, Juraska M, Bedford T, Benkeser D, Valim C, Griggs A, Lievens M, Abdulla S, Adjei S, Agbenyega T, Agnandji ST, Aide P, Anderson S, Ansong D, Aponte JJ, Asante KP, Bejon P, Birkett AJ, Bruls M, Connolly KM, D'Alessandro U, Dobaño C, Gesase S, Greenwood B, Grimsby J, Tinto H, Hamel MJ, Hoffman I, Kamthunzi P, Kariuki S, Kremsner PG, Leach A, Lell B, Lennon NJ, Lusingu J, Marsh K, Martinson F, Molel JT, Moss EL, Njuguna P, Ockenhouse CF, Ragama Ogutu B, Otieno W, Otieno L, Otieno K, Owusu‑Agyei S, Park DJ, Pellé K, Robbins D, Russ C, Ryan EM, Sacarlal J, Sogoloff B, Sorgho H, Tanner M, Theander T, Valea I, Volkman SK, Yu Q, Lapierre D, Birren BW, Gilbert PB, Wirth DF .
 year: 2015
 ref: Neafsey et al. 2015. N Engl J Med.
-journal: XXX
-pdf: /pdfs/papers/XXX.pdf
+journal: "N Engl J Med. In press."
+pdf: /pdfs/papers/neafsey-rtss-sieve.pdf
+supplement: /pdfs/papers/neafsey-rtss-sieve-supp.pdf
+doi: 10.1056/NEJMoa1505819
 ---
 
 # Abstract
 
-**Background:** The RTS,S/AS01 vaccine targets the circumsporozoite (CS) protein of Plasmodium falciparum and confers partial protective efficacy against clinical and severe malaria disease in infants and children for 12 months post vaccination (NCT00866619). We investigated whether vaccine efficacy was specific to parasite genotypes at CS.
+**Background:** The RTS,S/AS01 vaccine targets the circumsporozoite protein of *Plasmodium falciparum* and has partial protective efficacy against clinical and severe malaria dis- ease in infants and children. We investigated whether the vaccine efficacy was specific to certain parasite genotypes at the circumsporozoite protein locus.
 
-**Methods:** We employed PCR-based next-generation sequencing of DNA extracted from 4985 participant samples to survey polymorphisms in CS. We evaluated the impact of polymorphic CS positions and several haplotypic regions on vaccine efficacy (VE) against first or only episodes of clinical malaria within a year of vaccination.
+**Methods:** We used polymerase chain reaction–based next-generation sequencing of DNA extracted from samples from 4985 participants to survey circumsporozoite protein polymorphisms. We evaluated the effect that polymorphic positions and haplotypic regions within the circumsporozoite protein had on vaccine efficacy against first episodes of clinical malaria within 1 year after vaccination.
 
-**Results:** VE was significantly greater against clinical malaria with infections matching the vaccine strain in several haplotype regions and individual amino acid positions of the CS C-terminus in the 5-17 month old per-protocol category of 4557 RTS,S/AS01 vaccinated and 2328 control vaccinated participants. For matched versus mismatched malaria based on the entire CS C-terminus, 1-year cumulative VE after vaccination was 50.3% (95% confidence interval [CI], 34.6 to 62.3) versus 33.4% (95% CI, 29.3 to 37.2), P = 0.04 for differential VE; and VE based on a hazard ratio was 62.7% (95% CI, 51.6 to 71.3) versus 54.2% (95% CI, 49.9 to 58.1), P = 0.06. In the 6-12 week old category, VE against matched and mismatched malaria was similar.
+**Results:** In the per-protocol group of 4577 RTS,S/AS01-vaccinated participants and 2335 control-vaccinated participants who were 5 to 17 months of age, the 1-year cumulative vaccine efficacy was 50.3% (95% confidence interval [CI], 34.6 to 62.3) against clinical malaria in which parasites matched the vaccine in the entire circumsporozoite protein C-terminal (139 infections), as compared with 33.4% (95% CI, 29.3 to 37.2) against mismatched malaria (1951 infections) (P=0.04 for differential vaccine efficacy). The vaccine efficacy based on the hazard ratio was 62.7% (95% CI, 51.6 to 71.3) against matched infections versus 54.2% (95% CI, 49.9 to 58.1) against mismatched infections (P=0.06). In the group of infants 6 to 12 weeks of age, there was no evidence of differential allele-specific vaccine efficacy.
 
-**Conclusions:** Given the low frequency of parasites matching the vaccine strain at many of the study sites, these results suggest that parasite genotype contributes to the partial nature of protection conferred by RTS,S/AS01 vaccination in 5-17 month old children.
+**Conclusions:** These results suggest that among children 5 to 17 months of age, the RTS,S vaccine has greater activity against malaria parasites with the matched circumsporo- zoite protein allele than against mismatched malaria. The overall vaccine efficacy in this age category will depend on the proportion of matched alleles in the local parasite population; in this trial, less than 10% of parasites had matched alleles.
