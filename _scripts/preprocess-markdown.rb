@@ -37,6 +37,7 @@ mdarray.each { |md|
 			title = md.sub(/^.*projects\//, '').sub(/.md$/, '').sub(/index$/, '')
 			out.puts "title: #{title}"		
 			out.puts "project: #{project_name}"
+			out.puts "permalink: /:path/:basename:output_ext"
 		end
 		out.puts "---"
 		out.puts	
