@@ -356,7 +356,62 @@ author: Trevor Bedford
 	<img class="stretch" src="/images/talks/flu_geo_h1_tree.png">
 </section>
 
-<!-- END -->
+<section>
+	<h3>B/Vic phylogeny</h3>
+	<img class="stretch" src="/images/talks/flu_geo_vic_tree.png">
+</section>
+
+<section>
+	<h3>B/Yam phylogeny</h3>
+	<img class="stretch" src="/images/talks/flu_geo_yam_tree.png">
+</section>
+
+<section>
+	<h3>Ancestry patterns across lineages</h3>
+	<img class="stretch" src="/images/talks/flu_geo_lineages_histories.png">
+</section>
+
+<section>
+	<h3>Regional persistence patterns</h3>
+	<img class="stretch" src="/images/talks/flu_geo_lineages_persistence.png">
+</section>
+
+<section>
+	<h3>How to explain these differences?</h3>
+</section>
+
+<section>
+	<h3>Age distribution across viruses</h3>
+	<img class="stretch" src="/images/talks/flu_geo_age_of_infection.png">
+</section>
+
+<section>
+	<h3>Air travel differences between adults and children</h3>
+	<img class="stretch" src="/images/talks/flu_geo_air_travel_by_age.png">
+</section>
+
+<section>
+	<h3>Epidemiological model of varying rates of antigenic drift</h3>
+	<img class="stretch" src="/images/talks/flu_geo_model_dynamics.jpg">
+</section>
+
+<section>
+	<h3>Results of varying antigenic drift</h3>
+	<img class="stretch" src="/images/talks/flu_geo_model_results.png">
+</section>
+
+<section>
+	<h3>Interaction between virus evolution, epidemiology and human behavior drives migration rate differences</h3>
+</section>
+
+<section>
+	<h3>Circulating antigenic variants</h3>
+	<img class="stretch" src="/images/talks/flu_geo_vic_tree_map.png">
+</section>
+
+<section data-background="#CFB541">
+	<h2 class="title">Vaccine strain prediction</h2>
+</section>
 
 <section>
 	<h3>Antigenic evolution in H3N2</h3>
@@ -369,47 +424,25 @@ author: Trevor Bedford
 </section>
 
 <section>
-	<h3>Antigenic "match" of key importance</h3>
+	<h3>Predictive models</h3>
 	<br>
-	<p>Antibodies by vaccination should effectively bind to circulating viruses. This requires:
-	<br>
-	<ol>
-		<li>Identification of antigenically distinct clades of virus</li>
-		<li>Prediction of clade growth/decline</li>
-	</ol>
-</section>
-
-<section>
-	<h3>Antigenic cartography</h3>
-	<img class="stretch" src="/images/talks/hi_h3_map.png">
+	<p>A simple predictive model estimates the fitness $f$ of virus $i$ as</p>
+	<p>$$\hat{f}_i = \beta^\mathrm{ep} \, f_i^\mathrm{ep} + \beta^\mathrm{ne} \, f_i^\mathrm{ne}$$</p>
+	<p>where $f_i^\mathrm{ep}$ measures cross-immunity via substitutions at epitope sites and $f_i^\mathrm{ep}$ measures mutational load via substitutions at non-epitope sites.</p>
+	<img class="stretch" src="/images/talks/prediction_ll.jpg">	
 	<div class="citation">
-		<a href="/papers/bedford-flux/">Bedford et al 2014</a>
+		<a href="http://www.nature.com/nature/journal/v507/n7490/full/nature13087.html">&#321;uksza and L&auml;ssig 2014</a>
 	</div>	
 </section>
 
 <section>
-	<h3>H3N2 population in Feb 2014</h3>
-	<img class="stretch" src="/images/talks/3c2a_tree_1.png">
-</section>
-
-<section data-transition="none">
-	<h3>H3N2 population in Jun 2014</h3>
-	<img class="stretch" src="/images/talks/3c2a_tree_2.png">
-</section>
-
-<section data-transition="none">
-	<h3>H3N2 population in Oct 2014</h3>
-	<img class="stretch" src="/images/talks/3c2a_tree_3.png">
-</section>
-
-<section data-transition="none">
-	<h3>H3N2 population in Feb 2015</h3>
-	<img class="stretch" src="/images/talks/3c2a_tree_4.png">
-</section>
-
-<section>
-	<h3>Resulted in a mismatched 2014-2015 vaccine</h3>
-	<img class="stretch" src="/images/talks/3c2a_frequencies.png">
+	<h3>Predictive models</h3>
+	<br>
+	<p>Another approach quantifies phylogenetic branching patterns</p>
+	<img class="stretch" src="/images/talks/prediction_neher.jpg">	
+	<div class="citation">
+		<a href="http://elifesciences.org/content/elife/3/e03568">Neher et al 2014</a>
+	</div>
 </section>
 
 <section>
@@ -447,76 +480,15 @@ author: Trevor Bedford
 </section>
 
 <section>
-	<h3>Predictive models</h3>
-	<br>
-	<p>A simple predictive model estimates the fitness $f$ of virus $i$ as</p>
-	<p>$$\hat{f}_i = \beta^\mathrm{ep} \, f_i^\mathrm{ep} + \beta^\mathrm{ne} \, f_i^\mathrm{ne}$$</p>
-	<p>where $f_i^\mathrm{ep}$ measures cross-immunity via substitutions at epitope sites and $f_i^\mathrm{ep}$ measures mutational load via substitutions at non-epitope sites.</p>
-	<img class="stretch" src="/images/talks/prediction_ll.jpg">	
-	<div class="citation">
-		<a href="http://www.nature.com/nature/journal/v507/n7490/full/nature13087.html">&#321;uksza and L&auml;ssig 2014</a>
-	</div>	
-</section>
-
-<section>
-	<h3>Predictive models</h3>
-	<br>
-	<p>Another approach quantifies phylogenetic branching patterns</p>
-	<img class="stretch" src="/images/talks/prediction_neher.jpg">	
-	<div class="citation">
-		<a href="http://elifesciences.org/content/elife/3/e03568">Neher et al 2014</a>
-	</div>
-</section>
-
-<section>
-	<h3>
-		We're now working to include quantitative predictions of future clade behavior in
-		<span class="c2">n</span><span class="c3">e</span><span class="c4">x</span><span class="c5">t</span><span class="c6">f</span><span class="c7">l</span><span class="c8">u</span>
-	</h3>
-	<p class="fragment" data-fragment-index="1">And also including other predictors, like geography:</p>
-	<img class="stretch fragment" data-fragment-index="1" src="/images/talks/flu_geo_h3_map.png">
-	<div class="citation fragment" data-fragment-index="1">
-		<a href="http://bedford.io/papers/bedford-global-circulation/">Bedford et al 2015</a>
-	</div>
-</section>
-
-<section>
-	<h3>Global influenza phylogeny</h3>
-	<img class="stretch" src="/images/talks/pathogen_phylogeny_flu.png">
-	<div class="citation">
-		<a href="http://bedford.io/papers/bedford-global-circulation/">Bedford et al 2015</a>
-	</div>
-</section>
-
-<section>
-	<h3>Global influenza circulation shows source-sink dynamics</h3>
-	<img class="stretch" src="/images/talks/flu_geo_h3_trunk.png">
-	<div class="citation">
-		<a href="http://bedford.io/papers/bedford-global-circulation/">Bedford et al 2015</a>
-	</div>
-</section>
-
-<section>
-	<h3>Global influenza circulation shows source-sink dynamics</h3>
-	<img class="stretch" src="/images/talks/flu_geo_h3_trunk.png">
-	<div class="citation">
-		<a href="http://bedford.io/papers/bedford-global-circulation/">Bedford et al 2015</a>
-	</div>
-</section>
-
-<section>
-	<h3>Evolutionary analyses can inform influenza vaccine strain selection</h3>
-</section>
-
-<section>
 	<h3>Acknowledgements</h3>
 	<br>
 	<p class="smaller">Richard Neher (Max Planck T&uuml;bingen), Andrew Rambaut (University of Edinburgh), 
-		Colin Russell (Cambridge University), Michael L&auml;ssig (University of Cologne), 
-		Marta &#321;uksza (Institute for Advanced Study), Gytis Dudas (University of Edinburgh),
-		Pardis Sabeti (Harvard University), Danny Park (Harvard University), Nick Loman (University of Birmingham)
-		Matthew Cotten (Sanger Institute), Paul Kellam (Sanger Institute),
-		WHO Global Influenza Surveillance Network
+		Colin Russell (Cambridge University), Charles Cheung (Fred Hutch),
+		Marc Suchard (UCLA), Steven Riley (Imperial College),
+		Philippe Lemey (Philippe Lemey (KU Leuven), Gytis Dudas (University of Edinburgh)
+		<br>
+		WHO Global Influenza Surveillance Network: Ian Barr, Shobha Broor, Mandeep Chadha, Nancy Cox, Rod Daniels, Palani 
+Gunasekaran, Aeron Hurt, Anne Kelso, Alexander Klimov, Nicola Lewis, Xiyan Li, John McCauley, Takato Odagiri, Varsha Potdar, Yuelong Shu, Eugene Skepner, Masato Tashiro, Dayan Wang, Xiyan Xu
 	</p>
 	<div style="vertical-align: bottom; display: table-cell;">
 		<img width="33%" src="/images/talks/logo_royal_society.jpg">
@@ -537,4 +509,3 @@ author: Trevor Bedford
 		<li>Slides: bedford.io{{ page.url }}</li>
 	</ul>
 </section>
-
