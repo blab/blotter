@@ -64,6 +64,10 @@ body {
 	font-size: smaller;
 }
 
+.reveal .larger {
+	font-size: larger;
+}
+
 .citation {
 	position: absolute;
 	bottom:0px;

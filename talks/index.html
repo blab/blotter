@@ -16,6 +16,7 @@ categories:
 <div class="bigspacer"></div>
 
 {% for talk in site.categories.talks %}
+{% unless talk.draft %}
 
 	{% for member in site.categories.team %}
 		{% if member.title == talk.author %}
@@ -41,5 +42,6 @@ categories:
 			<div class="spacer"></div>			
         </div>
     {% cycle 'close rows': nil, nil, '</div>' %}
+{% endunless %}    
 {% endfor %}
 {% cycle 'close rows': nil, '</div>', '</div>' %}
