@@ -5,7 +5,7 @@ image: /images/papers/neafsey-rtss-sieve.png
 authors: Neafsey DE, Juraska M, Bedford T, Benkeser D, Valim C, Griggs A, Lievens M, Abdulla S, Adjei S, Agbenyega T, Agnandji ST, Aide P, Anderson S, Ansong D, Aponte JJ, Asante KP, Bejon P, Birkett AJ, Bruls M, Connolly KM, D'Alessandro U, Dobaño C, Gesase S, Greenwood B, Grimsby J, Tinto H, Hamel MJ, Hoffman I, Kamthunzi P, Kariuki S, Kremsner PG, Leach A, Lell B, Lennon NJ, Lusingu J, Marsh K, Martinson F, Molel JT, Moss EL, Njuguna P, Ockenhouse CF, Ragama Ogutu B, Otieno W, Otieno L, Otieno K, Owusu‑Agyei S, Park DJ, Pellé K, Robbins D, Russ C, Ryan EM, Sacarlal J, Sogoloff B, Sorgho H, Tanner M, Theander T, Valea I, Volkman SK, Yu Q, Lapierre D, Birren BW, Gilbert PB, Wirth DF .
 year: 2015
 ref: Neafsey et al. 2015. N Engl J Med.
-journal: "N Engl J Med. In press."
+journal: "N Engl J Med 373: 2025-2037."
 pdf: /pdfs/papers/neafsey-rtss-sieve.pdf
 supplement: /pdfs/papers/neafsey-rtss-sieve-supp.pdf
 doi: 10.1056/NEJMoa1505819
