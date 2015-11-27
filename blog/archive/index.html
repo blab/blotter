@@ -40,7 +40,7 @@ categories:
 			</div>	
 			<div class="smallspacer"></div>
 			<div class="smallnote">
-				{{ post.date | date_to_string }}
+				{{ post.date | date: "%-d %b %Y" }}
 				{% if author %}
 				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
 				{% endif %}	

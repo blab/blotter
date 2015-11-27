@@ -35,7 +35,7 @@ categories:
 			</div>			
 			<div class="smallspacer"></div>
 			<div class="smallnote">
-				{{ talk.date | date_to_string }}
+				{{ talk.date | date: "%-d %b %Y" }}
 				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
 			</div>
 			<div class="bigspacer"></div>
