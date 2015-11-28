@@ -169,7 +169,7 @@ draft: true
 	<h3>Fitness models can project clade frequencies</h3>
 	<br>
 	<p>Clade frequencies $X$ derive from the fitnesses $f$ and frequencies $x$ of constituent viruses, such that</p>
-	<p>$$\hat{X}_v(t+1) = \sum_{i:v,t} x_i \, \mathrm{exp}(f_i)$$</p>
+	<p>$$\hat{X}_v(t+\Delta t) = \sum_{i:v} x_i(t) \, \mathrm{exp}(f_i \, \Delta t)$$</p>
 	<p>This captures clonal interference between competing lineages</p>
 	<img class="stretch" src="/images/talks/clonal_interferance.jpg">		
 	<div class="citation">
