@@ -5,9 +5,10 @@ image: /images/papers/lorenzo-redondo-hiv-persistence.png
 authors: Lorenzo-Redondo R, Fryer HR, Bedford T, Kim EY, Archer J, Kosakovsky Pond SL, Chung YS, Penugonda S, Chipman JG, Fletcher CV, Schacker TW, Malim MH, Rambaut A, Haase AT, McLean AR, Wolinsky SM.
 year: 2016
 ref: Lorenzo-Redondo et al. 2016. Nature.
-journal: "Nature XXX."
+journal: "Nature. In press."
 pdf: /pdfs/papers/lorenzo-redondo-hiv-persistence.pdf
-doi: XXX
+supplement: /pdfs/papers/lorenzo-redondo-hiv-persistence.pdf
+doi: 10.1038/nature16933
 ---
 
 # Abstract
