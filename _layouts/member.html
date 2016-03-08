@@ -90,8 +90,11 @@ layout: default
 		</div>
 		
 		{% assign lastname = member.title | split: ' ' | last %}
+		{% assign firstinitial = member.title | split: ' ' | first | slice: 0 %}
+		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
+
 		{% for paper in site.categories.papers %}
-		{% if paper.authors contains lastname %}
+		{% if paper.authors contains searchstring %}
 		{% assign papersq = true %}
 		{% endif %}
 		{% endfor %}
@@ -101,13 +104,13 @@ layout: default
 		<div class="head">Papers</div>
 		<div class="spacer"></div>
 		{% for paper in site.categories.papers %}
-		{% if paper.authors contains lastname %}
+		{% if paper.authors contains searchstring %}
 		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
 		{% endif %}
 		{% endfor %}
 		{% endif %}		
 		
-		{% for project in site.projects %}
+		{% for project in site.data.projects %}
 			{% for contributor in project.contributors %}
 				{% if contributor.login == member.github %}
 					{% assign projectsq = true %}
@@ -119,7 +122,7 @@ layout: default
 		<div class="bigspacer"></div>
 		<div class="head">Projects</div>
 		<div class="spacer"></div>
-		{% for project in site.projects %}
+		{% for project in site.data.projects %}
 			{% assign present = false %}
 			{% for contributor in project.contributors %}
 				{% if contributor.login == member.github %}
