@@ -5,7 +5,7 @@ image: /images/papers/neher-titers.png
 authors: Neher RA, Bedford T, Daniels RS, Russell CA, Shraiman BI.
 year: 2016
 ref: Neher et al. 2016. Proc Natl Acad Sci USA.
-journal: "Proc Natl Acad Sci USA. In press."
+journal: "Proc Natl Acad Sci USA 113: E1701–E1709."
 pdf: /pdfs/papers/neher-titers.pdf
 supplement: /pdfs/papers/neher-titers-supp.pdf
 doi: 10.1073/pnas.1525578113
