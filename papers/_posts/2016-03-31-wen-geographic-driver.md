@@ -5,7 +5,7 @@ image: /images/papers/wen-geographic-driver.png
 authors: Wen F, Bedford T, Cobey S.
 year: 2016
 ref: Wen et al. 2016. arXiv.
-journal: "arXiv: XXX."
+journal: "arXiv: 1603.09397."
 pdf: /pdfs/papers/wen-geographic-driver.pdf
 ---
 
