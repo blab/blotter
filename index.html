@@ -6,12 +6,33 @@ categories:
 ---
 
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-md-8">
 		<object class="pull-left biglogo" data="/images/logo.svg" type="image/svg+xml"></object>
 		<div class="bigtitle logobox">
 			bedford lab research
 		</div>
-	</div>				
+	</div>
+	<div class="col-md-4">
+<!--		<div class="pad-left pull-right">
+			{% for page in site.categories.misc %}
+			<div class="note">
+				<i class="fa fa-angle-right fa-fw"></i>
+				<a class="off" href="{{ paper.url }}">{{ page.title }}</a>
+			</div>
+			<div class="smallspacer"></div>
+			{% endfor %}
+		</div>
+-->
+		<div class="pull-right">
+		<ul class="list-inline">
+			{% for page in site.categories.misc %}
+			<li class="footernav">
+				<i class="fa fa-angle-right fa-fw"></i><a class="off" href="{{ page.url }}">{{ page.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		</div>
+	</div>							
 </div>
 
 <div class="bigspacer"></div>
@@ -25,7 +46,7 @@ categories:
 			virus to changes in acquired immunity in the human population, and then looking at how human immunity influences viral 
 			transmission patterns.
 		</div>
-	</div>				
+	</div>	
 </div>
 
 <div class="hugespacer"></div>
@@ -125,18 +146,26 @@ categories:
 
 <div class="bigspacer"></div>
 
-
-<div class="head">		
-	Misc
+<div class="row">
+	<div class="col-md-8">
+		<div class="head">		
+			Misc
+		</div>
+		<div class="spacer"></div>
+		<ul class="list-inline">
+			{% for page in site.categories.misc %}
+			<li class="footernav">
+				&gt; <a class="off" href="{{ page.url }}">{{ page.title }}</a>
+			</li>
+			{% endfor %}
+			<li class="footernav">
+				&gt; <a class="off" href="/talks/">Talks</a>
+			</li>
+		</ul>
+		<div class="spacer"></div>		
+	</div>
+	<div class="col-md-4">
+		<div class="bigspacer"></div>		
+		<a href="http://www.fredhutch.org/"><img class="pull-right" width=200 src="/images/fhcrc-logo-bw-small.png"></a>
+	</div>	
 </div>
-<div class="spacer"></div>
-<ul class="list-inline">
-	{% for page in site.categories.misc %}
-	<li class="footernav">
-		&gt; <a class="off" href="{{ page.url }}">{{ page.title }}</a>
-	</li>
-	{% endfor %}
-	<li class="footernav">
-		&gt; <a class="off" href="/talks/">Talks</a>
-	</li>
-</ul>
