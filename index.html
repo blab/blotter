@@ -28,7 +28,8 @@ categories:
 	</div>	
 </div>
 
-<div class="hugespacer"></div>
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
 
 <div class="row">
 	<div class="col-md-12">
@@ -148,18 +149,23 @@ categories:
 			Misc
 		</div>
 		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 reduced-gutter">
 		<div class="pad-left">
 			<ul class="list-inline">
 				{% for page in site.categories.misc %}
 				<li class="footernav">
-					<i class="fa fa-angle-right fa-fw"></i><a class="off" href="{{ page.url }}">{{ page.title }}</a>
+					<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url }}">{{ page.title }}</a>
 				</li>
 				{% endfor %}
 				<li class="footernav">
-					<i class="fa fa-angle-right fa-fw"></i><a class="off" href="/talks/">Talks</a>
+					<i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
 				</li>
 				<li class="footernav">
-					<i class="fa fa-angle-right fa-fw"></i><a class="off" href="http://www.fredhutch.org/">Fred Hutch</a>
+					<i class="fa fa-angle-right"></i> <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a>
 				</li>				
 			</ul>
 		</div>
