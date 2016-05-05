@@ -6,33 +6,12 @@ categories:
 ---
 
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-12">
 		<object class="pull-left biglogo" data="/images/logo.svg" type="image/svg+xml"></object>
 		<div class="bigtitle logobox">
 			bedford lab research
 		</div>
 	</div>
-	<div class="col-md-4">
-<!--		<div class="pad-left pull-right">
-			{% for page in site.categories.misc %}
-			<div class="note">
-				<i class="fa fa-angle-right fa-fw"></i>
-				<a class="off" href="{{ paper.url }}">{{ page.title }}</a>
-			</div>
-			<div class="smallspacer"></div>
-			{% endfor %}
-		</div>
--->
-		<div class="pull-right">
-		<ul class="list-inline">
-			{% for page in site.categories.misc %}
-			<li class="footernav">
-				<i class="fa fa-angle-right fa-fw"></i><a class="off" href="{{ page.url }}">{{ page.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-		</div>
-	</div>							
 </div>
 
 <div class="bigspacer"></div>
@@ -52,120 +31,138 @@ categories:
 <div class="hugespacer"></div>
 
 <div class="row">
-	<div class="col-md-4">
+	<div class="col-md-12">
 		<div class="head">
 			<a class="off" href="/blog/">Recent posts</a>
 		</div>
-		<div class="bigspacer"></div>
-		<div class="feedbox pad-left">
-			{% for post in site.categories.blog limit:8 %}
-			
-				{% for member in site.categories.team %}
-					{% if member.title == post.author %}
-						{% assign author = member %}
-					{% endif %}
-				{% endfor %}		
-				
-				<div class="note">
-					<i class="fa fa-comment-o fa-fw"></i>
-					<a class="off" href="{{ post.url }}">
-					{{ post.title }}
-					</a>
-				</div>
-				<div class="smallspacer"></div>
-				<div class="smallnote">
-					Posted
-					{{ post.date | date: "%-d %b %Y" }}
-					{% if author %}
-					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-					{% endif %}						
-				</div>
-				<div class="spacer"></div>	
-				<div class="spacer"></div>				
-			{% endfor %}
-		</div>
-		<div class="bigspacer"></div>		
+		<div class="spacer"></div>
 	</div>
-	<div class="col-md-4">
-		<div class="head">
-			<a class="off" href="/papers/">
-				Recent papers
-			</a>
-		</div>
-		<div class="bigspacer"></div>
-		<div class="feedbox pad-left">		
-			{% for paper in site.categories.papers limit:8 %}
-				<div class="note">
-					<i class="fa fa-file-text-o fa-fw"></i>
-					<a class="off" href="{{ paper.url }}">
-					{{ paper.title }}
-					</a>
-				</div>
-				<div class="smallspacer"></div>
-				<div class="smallnote">
-					Posted
-					{{ paper.date | date: "%-d %b %Y" }}
-				</div>
-				<div class="spacer"></div>	
-				<div class="spacer"></div>				
-			{% endfor %}
-		</div>
-		<div class="bigspacer"></div>		
-	</div>
-	<div class="col-md-4">
-		<div class="head">		
-			<a class="off" href="/projects/">Active projects</a>
-		</div>
-		<div class="bigspacer"></div>
-		<div class="feedbox pad-left">
-			{% for project in site.data.projects limit:8 %}
-				<div class="note">
-					<i class="fa fa-edit fa-fw"></i>
-					<a class="off" href="{{ project.url }}">
-					{{ project.title }} - {{ project.description }}
-					</a>
-				</div>
-				<div class="smallspacer"></div>
-				<div class="smallnote">
-					Updated
-					<a class="off" href="{{ project.commits.first.url }}">
-					{{ project.commits.first.date | date: "%-d %b %Y" }}
-					</a>
-					by
-					<a class="off" href="{{ project.commits.first.author_url }}">				
-					{{ project.commits.first.author_login }}
-					</a>
-				</div>
-				<div class="spacer"></div>	
-				<div class="spacer"></div>				
-			{% endfor %}
-		</div>
-		<div class="bigspacer"></div>		
-	</div>	
 </div>
 
-<div class="bigspacer"></div>
+<div class="row">		
+	{% for post in site.categories.blog limit:4 %}
+	
+	{% for member in site.categories.team %}
+		{% if member.title == post.author %}
+			{% assign author = member %}
+		{% endif %}
+	{% endfor %}		
+	
+	<div class="col-md-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-comment-o fa-fw"></i>
+				<a class="off" href="{{ post.url }}">
+				{{ post.title }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Posted
+				{{ post.date | date: "%-d %b %Y" }}
+				{% if author %}
+				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+				{% endif %}						
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>			
+	{% endfor %}	
+</div>
+
+<div class="spacer"></div>
 
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-12">
+		<div class="head">
+			<a class="off" href="/papers/">Recent papers</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">		
+	{% for paper in site.categories.papers limit:4 %}		
+	<div class="col-md-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="{{ paper.url }}">
+				{{ paper.title }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Posted
+				{{ paper.date | date: "%-d %b %Y" }}
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}	
+</div>
+
+<div class="spacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="head">
+			<a class="off" href="/projects/">Active projects</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">		
+	{% for project in site.data.projects limit:4 %}		
+	<div class="col-md-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-edit fa-fw"></i>
+				<a class="off" href="{{ project.url }}">
+				{{ project.title }} - {{ project.description }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="{{ project.commits.first.url }}">
+				{{ project.commits.first.date | date: "%-d %b %Y" }}
+				</a>
+				by
+				<a class="off" href="{{ project.commits.first.author_url }}">				
+				{{ project.commits.first.author_login }}
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}	
+</div>
+
+<div class="spacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
 		<div class="head">		
 			Misc
 		</div>
 		<div class="spacer"></div>
-		<ul class="list-inline">
-			{% for page in site.categories.misc %}
-			<li class="footernav">
-				&gt; <a class="off" href="{{ page.url }}">{{ page.title }}</a>
-			</li>
-			{% endfor %}
-			<li class="footernav">
-				&gt; <a class="off" href="/talks/">Talks</a>
-			</li>
-		</ul>
+		<div class="pad-left">
+			<ul class="list-inline">
+				{% for page in site.categories.misc %}
+				<li class="footernav">
+					<i class="fa fa-angle-right fa-fw"></i><a class="off" href="{{ page.url }}">{{ page.title }}</a>
+				</li>
+				{% endfor %}
+				<li class="footernav">
+					<i class="fa fa-angle-right fa-fw"></i><a class="off" href="/talks/">Talks</a>
+				</li>
+				<li class="footernav">
+					<i class="fa fa-angle-right fa-fw"></i><a class="off" href="http://www.fredhutch.org/">Fred Hutch</a>
+				</li>				
+			</ul>
+		</div>
 		<div class="spacer"></div>		
 	</div>
-	<div class="col-md-4">
-		<div class="bigspacer"></div>		
-		<a href="http://www.fredhutch.org/"><img class="pull-right" width=200 src="/images/fhcrc-logo-bw-small.png"></a>
-	</div>	
 </div>
