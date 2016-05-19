@@ -24,6 +24,12 @@ body {
   color: white;
   background: #134674;
   text-shadow: none; }
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
   
 /*********************************************
  * HEADERS
