@@ -136,41 +136,17 @@ author: Trevor Bedford
 	</h2>
 </section>
 
-<section data-background="#8BBB6A">
+<section data-background="#79B77D">
 	<h2 class="title">Forecasting</h2>
 </section>
-
-
-<section>
-	<h3><p><q>The future is here, it's just not evenly distributed yet</q> &mdash; William Gibson</p></h3>
-</section>
-
-<section>
-	<h3>USA music industry, 2011 dollars per capita</h3>
-	<img class="stretch" src="/images/talks/music_industry.jpg">
-</section>
-
-<section>
-	<h3>Influenza population turnover</h3>
-	<img class="stretch" src="/images/talks/flu_turnover.png">
-</section>
-
 
 <section>
 	<h3>Vaccine strain selection timeline</h3>
 	<img class="stretch" src="/images/talks/flu_vaccine_schedule.jpg">
 </section>
 
-<!--
 <section>
-	<h3>Seek to explain change in clade frequencies over 1 year</h3>
-	<img class="stretch" src="/images/talks/prediction_clade_frequencies.png">
-</section>
--->
-
-
-<section>
-	<h3>Fitness models can project clade frequencies</h3>
+	<h3>Fitness models can project strain dynamics</h3>
 	<br>
 	<p>Clade frequencies $X$ derive from the fitnesses $f$ and frequencies $x$ of constituent viruses, such that</p>
 	<p>$$\hat{X}_v(t+\Delta t) = \sum_{i:v} x_i(t) \, \mathrm{exp}(f_i \, \Delta t)$$</p>
@@ -181,21 +157,6 @@ author: Trevor Bedford
 	</div>	
 </section>
 
-
-<!--
-<section>
-	<h3>Predictive fitness models</h3>
-	<br>
-	<p>A simple predictive model estimates the fitness $f$ of virus $i$ as</p>
-	<p>$$\hat{f}_i = \beta^\mathrm{ep} \, f_i^\mathrm{ep} + \beta^\mathrm{ne} \, f_i^\mathrm{ne}$$</p>
-	<p>where $f_i^\mathrm{ep}$ measures cross-immunity via substitutions at epitope sites and $f_i^\mathrm{ep}$ measures mutational load via substitutions at non-epitope sites</p>
-	<img class="stretch" src="/images/talks/prediction_ll.jpg">	
-	<div class="citation">
-		<a href="http://www.nature.com/nature/journal/v507/n7490/full/nature13087.html">&#321;uksza and L&auml;ssig 2014</a>
-	</div>	
-</section>
--->
-
 <section>
 	<h3>We implement a model based on two predictors</h3>
 	<br>
@@ -205,41 +166,9 @@ author: Trevor Bedford
 	</ol>
 </section>
 
-<!--
 <section>
-	<h3>Project frequencies forward, <br> growing clades have high fitness</h3>
-	<img class="stretch" src="/images/talks/prediction_frequency_trajectories.png">
-</section>
-
-<section>
-	<h3>Calculate HI drop from ancestor, <br> drifted clades have high fitness</h3>
-	<img class="stretch" src="/images/talks/prediction_antigenic_drift.png">
-</section>
-
-<section>
-	<h3>Fitness model parameterization</h3>
-	<br>
-	<p>Our predictive model estimates the fitness $f$ of virus $i$ as</p>
-	<br>
-	<p>$$\hat{f}_i = \beta^\mathrm{freq} \, f_i^\mathrm{freq} + \beta^\mathrm{HI} \, f_i^\mathrm{HI}$$</p>
-	<br>	
-	<p>We learn coefficients and validate model based on previous 15 H3N2 seasons</p>
-</section>	
--->
-
-<section>
-	<h3>Clade frequency trajectories show congruence</h3>
+	<h3>Predicted clade frequency trajectories show congruence</h3>
 	<img class="stretch" src="/images/talks/prediction_trajectories_grid.png">
-</section>
-
-<section>
-	<h3>Clade growth rate is well correlated (<i>&rho;</i> = 0.66)</h3>
-	<img class="stretch" src="/images/talks/prediction_validation_growth_rates.png">
-</section>
-
-<section>
-	<h3>Growth vs decline correct in 84% of cases</h3>
-	<img class="stretch" src="/images/talks/prediction_validation_growth_rates_window.png">
 </section>
 
 <section>
@@ -250,7 +179,7 @@ author: Trevor Bedford
 	<h2 class="title">Outbreak analysis</h2>
 </section>
 
-<section data-background="#9EBE5A">
+<section data-background="#8BBB6A">
 	<h2 class="title">Ebola</h2>
 </section>
 
@@ -287,22 +216,6 @@ author: Trevor Bedford
 </section>
 
 <section>
-	<h3>Evolutionary analyses helped to establish the degree of adaptive evolution occurring</h3>
-	<img class="stretch" src="/images/talks/ebola_selection_average.png">
-	<div class="citation">
-		<a href="http://bedford.io/papers/park-ebola-transmission/">Park et al 2015</a>
-	</div>
-</section>
-
-<section>
-	<h3>Phylogeographic analyses reveal detailed patterns of spatial movement</h3>
-	<img class="stretch" src="/images/talks/ebola_spatial_spread_grid.png">
-	<div class="citation">
-		Dudas et al 2016
-	</div>
-</section>
-
-<section>
 	<h3>Important analyses, let's make them more rapid and more automated</h3>
 </section>
 
@@ -328,7 +241,7 @@ author: Trevor Bedford
 	</div>
 </section>
 
-<section data-background="#B2BD4D">
+<section data-background="#9EBE5A">
 	<h2 class="title">Zika</h2>
 </section>
 
@@ -349,14 +262,6 @@ author: Trevor Bedford
 </section>
 
 <section>
-	<h3>Isolated epidemics in the South Pacific</h3>
-	<img class="stretch" src="/images/talks/zika_fp_timeseries.png">
-	<div class="citation">
-		<a href="http://biorxiv.org/content/early/2016/02/07/038588">Kucharski et al 2016</a>
-	</div>
-</section>
-
-<section>
 	<h3>Single arrival into the Americas in early 2014</h3>
 	<img class="stretch" src="/images/talks/zika_faria_tmrca.png">
 	<div class="citation">
@@ -373,23 +278,19 @@ author: Trevor Bedford
 	</h2>	
 </section>
 
+<section data-background="#B2BD4D">
+	<h2 class="title">Discussion points for breakout session</h2>
+</section>
+
 <section>
-	<h3>Moving forward, genetically-informed outbreak response requires:</h3>
+	<h3>Discussion points</h3>
 	<br>
 	<p>
 	<ul>
-		<li>Rapid sharing of sequence data, <i>genetic context critical</i></li>
-		<li>Technologies to rapidly conduct phylogenetic inference</li>
-		<li>Technologies to explore genetic relationships and inform epidemiological investigation</li>
+		<li>Mechanisms to promote data sharing (genetic data, epi data) and proper scientific attribution</li>
+		<li>Key insights from phylodynamic analyses for understanding outbreak spread and aiding epidemiological investigation</li>
+		<li>Interface of modeling results with public health policy</li>
 	</ul>
-</section>
-
-<section data-background="#000000">
-	<h2 class="title">Future work</h2>
-</section>
-
-<section>
-	<img class="stretch" src="/images/talks/all_the_things.png">
 </section>
 
 <section>
@@ -408,16 +309,6 @@ author: Trevor Bedford
 		&nbsp;
 		<img width="15%" src="/images/talks/logo_midas.jpg">
 	</div>
-</section>
-
-<section data-background="#000000">
-	<h3 class="title">Discussion points</h3>
-	<br>
-	<p>
-	<ul class="title">
-		<li>Mechanisms for data sharing: genetic data, epi data</li>
-		<li>Mechanisms for proper scientific attribution</li>
-	</ul>
 </section>
 
 <section data-background="#000000">
