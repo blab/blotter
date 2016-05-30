@@ -63,4 +63,7 @@ projects:
   - blab/global-migration
   - trvrb/sismid
   - trvrb/sctrace
-  - trvrb/phylodynamics-lecture  
+  - trvrb/phylodynamics-lecture
+  - blab/nextstrain-db
+  - blab/nextstrain-augur
+  - blab/nextstrain-auspice
