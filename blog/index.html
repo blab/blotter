@@ -64,7 +64,13 @@ category: blog
 			<div class="col-md-1"></div>
 			<div class="col-md-10">	
 				{% if post.image %}
+				{% if post.link %}
+				<a href="{{ post.link }}">
+					<img class="offset" src="{{ post.image }}">
+				</a>			
+				{% else %}
 				<img class="offset" src="{{ post.image }}">
+				{% endif %}				
 				{% endif %}
 				<div class="post">
 					{{ post.content }}

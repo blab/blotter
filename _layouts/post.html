@@ -35,7 +35,13 @@ layout: default
 		<div class="col-md-1"></div>
 		<div class="col-md-10">	
 			{% if page.image %}
+			{% if page.link %}
+			<a href="{{ page.link }}">
+				<img class="offset" src="{{ page.image }}">
+			</a>			
+			{% else %}
 			<img class="offset" src="{{ page.image }}">
+			{% endif %}				
 			{% endif %}
 			<div class="post">
 				{{ content }}
