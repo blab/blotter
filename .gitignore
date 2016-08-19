@@ -7,3 +7,6 @@ projects/
 
 # Jekyll metadata
 .jekyll-metadata
+
+# Other files
+.DS_Store
