@@ -64,7 +64,7 @@ mdarray.each { |md|
 	contents.gsub!(/\((\S+)\.md\)/, "(\\1.html)")
 
 	# go through file and replace all links that point to source code files with equivalent GitHub links
-	filetypes = ['class', 'cpp', 'h', 'hh', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'txt', 'xml']
+	filetypes = ['class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'txt', 'xml']
 	filetypes.each {|filetype|
 		contents.gsub!(/\((\S+)\.#{filetype}\)/, "(https://github.com/#{repo}/tree/master/#{within_project_directory}\\1.#{filetype})")
 	}

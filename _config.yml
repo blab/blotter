@@ -19,6 +19,7 @@ exclude:
   - "*.cpp"
   - "*.h"
   - "*.hh"
+  - "*.ipynb"
   - "*.jar"
   - "*.java"
   - "*.nb"
