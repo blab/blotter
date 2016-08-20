@@ -42,10 +42,12 @@ exclude:
   - "projects/nextflu/auspice/h1n1pdm/*"
   - "projects/nextflu/auspice/vic/*"
   - "projects/nextflu/auspice/yam/*"
-  - "projects/nextflu/auspice/zika/*"  
+  - "projects/nextflu/auspice/zika/*"
+  - "projects/nextflu/auspice/zibra/*"
   - "projects/nextflu/auspice/muttree/*"
   - "projects/nextflu/auspice/reports/*"
-  - "projects/nextflu/auspice/js/*"    
+  - "projects/nextflu/auspice/js/*"
+  - "projects/nextstrain-auspice/src/*"
 
 projects:
   - trvrb/coaltrace
@@ -68,3 +70,4 @@ projects:
   - blab/nextstrain-augur
   - blab/nextstrain-auspice
   - blab/baltic
+  - blab/chikv
