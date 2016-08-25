@@ -44,6 +44,21 @@ Outline:
 
 <!-- Color ramp: ["#5097BA", "#5BA6A7", "#69B091", "#79B77D", "#8BBB6A", "#9EBE5A", "#B2BD4D", "#C4B945", "#D4B13F", "#DFA43B"] -->
 
+<section data-background="#000000">
+	<ul class="title" style="list-style-type:none">
+		<li>Trevor Bedford, PhD</li>
+		<li>Assistant Member</li>		
+		<li>Fred Hutchinson Cancer Research Center, Seattle, WA, USA</li>
+	</ul>
+	<p>&nbsp;<p>
+	<h3 class="title">
+		I have no financial relationships with commercial interests to disclose
+	</h3>
+	<h3 class="title">
+		My presentation does not include discussion of off-label or investigational use
+	</h3>	
+</section>
+
 <section data-background="#000000" data-background-iframe="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-112.41,39.56,1182">
 	<h2 class="title">{{ page.title }}</h2>
 	<br>
@@ -267,7 +282,7 @@ Outline:
 </section>
 
 <section>
-	<h3>The question of forecasting becomes: how do we accurately estimate fitnesses of circulating viruses</h3>
+	<h3>The question of forecasting becomes: how do we accurately estimate fitnesses of circulating viruses?</h3>
 </section>
 
 <section>
@@ -311,49 +326,42 @@ Outline:
 	</div>
 </section>
 
-
-
 <section>
-	<h3>Predictive fitness models</h3>
-	<br>
-	<p>A simple predictive model estimates the fitness $f$ of virus $i$ as</p>
-	<p>$$\hat{f}_i = \beta^\mathrm{ep} \, f_i^\mathrm{ep} + \beta^\mathrm{ne} \, f_i^\mathrm{ne}$$</p>
-	<p>where $f_i^\mathrm{ep}$ measures cross-immunity via substitutions at epitope sites and $f_i^\mathrm{ep}$ measures mutational load via substitutions at non-epitope sites</p>
-	<img class="stretch" src="/images/talks/prediction_ll.jpg">	
-	<div class="citation">
-		<a href="http://www.nature.com/nature/journal/v507/n7490/full/nature13087.html">&#321;uksza and L&auml;ssig 2014</a>
-	</div>	
-</section>
-
-<section>
-	<h3>We implement a similar model based on two predictors</h3>
-	<br>
-	<ol>
-		<li class="larger">Clade frequency change</li>
-		<li class="larger">Antigenic advancement</li>
-	</ol>
-</section>
-
-<section>
-	<h3>Project frequencies forward, <br> growing clades have high fitness</h3>
-	<img class="stretch" src="/images/talks/prediction_frequency_trajectories.png">
-</section>
-
-<section>
-	<h3>Calculate HI drop from ancestor, <br> drifted clades have high fitness</h3>
+	<h3>Predictor: calculate HI drop from ancestor, <br> drifted clades have high fitness</h3>
 	<img class="stretch" src="/images/talks/prediction_antigenic_drift.png">
 </section>
 
 <section>
-	<h3>Fitness model parameterization</h3>
-	<br>
-	<p>Our predictive model estimates the fitness $f$ of virus $i$ as</p>
-	<br>
-	<p>$$\hat{f}_i = \beta^\mathrm{freq} \, f_i^\mathrm{freq} + \beta^\mathrm{HI} \, f_i^\mathrm{HI}$$</p>
-	<br>	
-	<p>We learn coefficients and validate model based on previous 15 H3N2 seasons</p>
-</section>	
+	<h3>Branching rate gives an estimate of viral fitness</h3>
+	<img class="stretch" src="/images/talks/prediction_neher.jpg">	
+	<div class="citation">
+		<a href="http://elifesciences.org/content/elife/3/e03568">Neher et al 2014</a>
+	</div>
+</section>
 
+<section data-transition="slide-in fade-out">
+	<h3>"Local branching index" correlates with fitness</h3>
+	<img class="stretch" src="/images/talks/prediction_lbi_3c2a.png">
+</section>
+
+<section data-transition="fade-in slide-out">
+	<h3>"Local branching index" correlates with fitness</h3>
+	<img class="stretch" src="/images/talks/prediction_lbi_171k.png">
+</section>
+
+<section>
+	<h3>Predictor: project frequencies forward, <br> growing clades have high fitness</h3>
+	<img class="stretch" src="/images/talks/prediction_frequency_trajectories.png">
+</section>
+
+<section>
+	<h3>We predict fitness based on a simple formula</h3>
+	<br>
+	<p>where the fitness $f$ of virus $i$ is estimated as</p>
+	<p>$$\hat{f}_i = \beta^\mathrm{HI} \, f_i^\mathrm{HI} + \beta^\mathrm{freq} \, f_i^\mathrm{freq}$$</p>
+	<p>where $f_i^\mathrm{HI}$ measures antigenic drift via HI and $f_i^\mathrm{freq}$ measures clade growth/decline</p>
+	<p>We learn coefficients and validate model based on previous 15 H3N2 seasons</p>	
+</section>
 
 <section>
 	<h3>Validation of 1 year clade frequency change</h3>
@@ -371,20 +379,30 @@ Outline:
 	<img class="stretch" src="/images/talks/prediction_validation_growth_rates_window.png">
 </section>
 
-
-<section>
-	<h3>Clade error increases steadily over time</h3>
-	<img class="stretch" src="/images/talks/prediction_trajectories_envelope.png">
-</section>
-
-
-<section>
+<section data-transition="slide-in zoom-out" data-transition-speed="slow">
 	<h3>Trajectories show more detailed congruence</h3>
 	<img class="stretch" src="/images/talks/prediction_trajectories_grid.png">
 </section>
 
+<section data-transition="zoom-in slide-out">
+	<h3>Trajectories show more detailed congruence</h3>
+	<img class="stretch" src="/images/talks/prediction_trajectories_zoom.png">
+</section>
+
 <section>
-	<h3>Formalizes intuition about drivers of influenza dynamics</h3>
+	<h3>This model is similar in formulation and performance to &#321;uksza and L&auml;ssig</h3>
+	<br>
+	<p>This model estimates the fitness $f$ of virus $i$ as</p>
+	<p>$$\hat{f}_i = \beta^\mathrm{ep} \, f_i^\mathrm{ep} + \beta^\mathrm{ne} \, f_i^\mathrm{ne}$$</p>
+	<p>where $f_i^\mathrm{ep}$ measures cross-immunity via substitutions at epitope sites and $f_i^\mathrm{ep}$ measures mutational load via substitutions at non-epitope sites.</p>
+	<img class="stretch" src="/images/talks/prediction_ll.jpg">	
+	<div class="citation">
+		<a href="http://www.nature.com/nature/journal/v507/n7490/full/nature13087.html">&#321;uksza and L&auml;ssig 2014</a>
+	</div>	
+</section>
+
+<section>
+	<h3>We find that HI is preferred over epitope mutations</h3>
 	<br>
 	<table>
 		<thead>
@@ -421,6 +439,16 @@ Outline:
 		</tbody>
 	</table>
 </section>
+
+<!-- WE"RE HERE -->
+<!--
+* Projections and model validation
+  - When does the forecast fail? Emerging clades.
+* New mutations difficult
+  - Interpolation vs extrapolation of genotype-phenotype
+* The world today and projections
+  - "Barring substantial changes in other clades, we predict the (HA1:171K, HA2:77V/155E) variant to dominate."
+-->
 
 <section>
 	<h3>Further work on predictive modeling</h3>
