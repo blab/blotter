@@ -300,9 +300,9 @@ body {
 
 .citation {
   position: absolute;
-  bottom:0px;
-  right:0px;
-  z-index:100;
+  bottom: 0px;
+  right: 0px;
+  z-index: 100;
   font-size: 0.45em !important;
 }
 
