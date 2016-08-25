@@ -4,7 +4,6 @@ title: Forecasting the Future of Flu
 venue: Chicago, IL
 event: Options IX
 author: Trevor Bedford
-draft: true
 ---
 
 <!--
@@ -58,13 +57,10 @@ Outline:
 	{{ page.venue }}	
 </section>
 
-<section data-background="#000000" data-background-iframe="https://www.wunderground.com/cgi-bin/findweather/getForecast?query=chicago">
-</section>
-
 <section>
 	<h3>What would it look like to have forecast for flu?</h3>
-	<!-- Replace with image -->
-	<iframe class="stretch" data-src="https://www.wunderground.com/cgi-bin/findweather/getForecast?query=chicago"></iframe>
+	<img class="stretch" src="/images/talks/weather_forecast.png">
+	<!--<iframe class="stretch" data-src="https://www.wunderground.com/cgi-bin/findweather/getForecast?query=chicago"></iframe>-->
 </section>
 
 <section>
@@ -203,19 +199,17 @@ Outline:
 </section>
 
 <section>
+	<h3>Model can be used to interpolate across tree and predict phenotype of untested viruses</h3>
+	<img class="stretch" src="/images/talks/titers_tree_model.png">
+</section>
+
+<section>
 	<h3>Model is highly predictive of missing titer values</h3>
 	<img class="stretch" src="/images/talks/titers_validation.png">
 	<div class="citation">
 		<a href="http://bedford.io/papers/neher-titers/">Neher et al 2016</a>
 	</div>		
 </section>
-
-
-<section>
-	<h3>Broad patterns agree with cartographic analyses</h3>
-	<img class="stretch" src="/images/talks/titers_h3n2_drift_comparison.png">
-</section>
-
 
 <section>
 	<h3>Recent HI data from London WHO Collaborating Center</h3>
@@ -231,42 +225,6 @@ Outline:
 </section>
 
 <!-- Demo of titer tool using H3N2 / 12y. Look at measurements and antigenic clusters surrounding vaccine strains. -->
-
-<section data-background="#69B091">
-	<h3 class="title">Analytics can identify drifted clades (with drops in HI titers and signature genetic changes)</h3>
-	<br>
-	<h3 class="title">The frequencies of these clades can then be tracked through time</h3>
-</section>
-
-<section>
-	<h3>Clades continually appear and sometimes fix</h3>
-	<img class="stretch" src="/images/talks/flu_h3n2_tree.png">				
-</section>
-
-<section>
-	<h3>Clade frequency trajectories over past 15 years</h3>
-	<img class="stretch" src="/images/talks/prediction_combined_trajectories.png">
-</section>
-
-<section>
-	<h3>Interference visible between clades</h3>
-	<br>
-	<div style="vertical-align: bottom; display: table-cell;">
-		<img width="49%" src="/images/talks/prediction_combined_trajectories.png">
-		&nbsp;
-		<img width="49%" src="/images/talks/clonal_interferance.jpg">
-	</div>	
-</section>
-
-<section>
-	<h3>Chance of fixation based on initial frequency</h3>
-	<img class="stretch" src="/images/talks/prediction_chance_of_fixation.png">
-</section>
-
-<section>
-	<h3>Chance of fixation based on initial frequency and growth rate</h3>
-	<img class="stretch" src="/images/talks/prediction_chance_of_fixation_by_growth_rate.png">
-</section>
 
 <section data-background="#8BBB6A">
 	<h2 class="title">Forecasting</h2>
@@ -307,6 +265,53 @@ Outline:
 		<a href="http://www.nature.com/nature/journal/v507/n7490/full/nature13087.html">&#321;uksza and L&auml;ssig 2014</a>
 	</div>	
 </section>
+
+<section>
+	<h3>The question of forecasting becomes: how do we accurately estimate fitnesses of circulating viruses</h3>
+</section>
+
+<section>
+	<h3>Fortunately, there's lots of training data and previously successful strains have had:</h3>
+	<br>
+	<ol>
+		<li class="larger">Amino acid changes at epitope sites</li>
+		<li class="larger">Antigenic novelty based on HI</li>
+		<li class="larger">Rapid phylogenetic growth</li>
+	</ol>
+</section>
+
+<section>
+	<h3>"Trunk" branches show an excess of non-synonymous change at epitope sites</h3>
+	<img class="stretch" src="/images/talks/prediction_mutation_table.png">
+	<div class="citation">
+		<a href="https://biologydirect.biomedcentral.com/articles/10.1186/1745-6150-1-34">
+			Wolf et al. 2006
+		</a>
+	</div>
+</section>
+
+<section>
+	<h3>"Trunk" branches show an excess of non-synonymous change at epitope sites</h3>
+	<img class="stretch" src="/images/talks/prediction_mutation_tree.png">
+	<div class="citation">
+		<a href="http://www.genetics.org/content/192/2/671">
+			Strelkowa and L&auml;ssig 2012
+		</a>
+	</div>
+</section>
+
+<!-- REMAKE FIGURE FROM NEW TITER TOOL -->
+<section>
+	<h3>"Trunk" is antigenically advanced relative to the population average</h3>
+	<img class="stretch" src="/images/talks/bmds_h3n2_diffusion_drift.png">
+	<div class="citation">
+		<a href="/papers/bedford-flux/">
+			Bedford et al. 2014
+		</a>
+	</div>
+</section>
+
+
 
 <section>
 	<h3>Predictive fitness models</h3>
@@ -477,12 +482,23 @@ Outline:
 
 <section>
 	<h3>Acknowledgements</h3>
-	<br>
-	<p class="smaller">WHO Global Influenza Surveillance Network, Worldwide Influenza Centre at the Francis Crick Institute, Richard Neher, Colin Russell, Andrew Rambaut</p>
+	<p class="smaller">Richard Neher (Max Planck T&uuml;bingen), Charlton Callender (Fred Hutch), 
+		Colin Megill (Polis), Andrew Rambaut (University of Edinburgh), Colin Russell (Cambridge University),
+		Charles Cheung (Fred Hutch), Marc Suchard (UCLA), Steven Riley (Imperial College),
+		Philippe Lemey (Philippe Lemey (KU Leuven), Gytis Dudas (University of Edinburgh)</p>	
+	<p class="smaller">WHO Global Influenza Surveillance Network: Ian Barr, Shobha Broor, Mandeep Chadha,
+		Nancy Cox, Rod Daniels, Palani Gunasekaran, Aeron Hurt, Anne Kelso, Alexander Klimov, Nicola Lewis,
+		Xiyan Li, John McCauley, Takato Odagiri, Varsha Potdar, Yuelong Shu, Eugene Skepner, Masato Tashiro,
+		Dayan Wang, Xiyan Xu
+	</p>
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
-		<img width="50%" src="/images/talks/logo_fred_hutch.png">
+		<img width="40%" src="/images/talks/logo_fred_hutch.png">
 		&nbsp;
-		<img width="25%" src="/images/talks/logo_midas.jpg">	
+		<img width="13%" src="/images/talks/logo_midas.jpg">
+		&nbsp; &nbsp;
+		<img width="13%" src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="13%" src="/images/talks/logo_nih.jpg">			
 	</div>
 </section>
 
