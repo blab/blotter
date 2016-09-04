@@ -6,6 +6,7 @@ github: gabeerion
 scholar: g1yn3_wAAAAJ
 image: /images/team/gabriel-erion.jpg
 email: erion@uw.edu
+alumni: true
 ---
 
 I am a first-year MD-PhD student at the University of Washington. My research interests focus on building algorithmic and statistical tools to learn about and combat disease.
