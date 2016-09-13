@@ -6,7 +6,7 @@ markdown: redcarpet
 permalink: /:categories/:title/
 future: true
 
-redcarpet: 
+redcarpet:
   extensions:
    - tables
    - no_intra_emphasis
@@ -71,10 +71,11 @@ projects:
   - trvrb/sismid
   - trvrb/sctrace
   - trvrb/phylodynamics-lecture
-  - blab/nextstrain-db
-  - blab/nextstrain-augur
-  - blab/nextstrain-auspice
   - blab/baltic
   - blab/chikv
   - blab/yellow-fever
   - blab/unsampled
+  - nextstrain/fauna
+  - nextstrain/augur
+  - nextstrain/auspice
+  
