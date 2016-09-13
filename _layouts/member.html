@@ -20,75 +20,86 @@ layout: default
 				</div>
 			</div>
 		</div>
-	</div>				
+	</div>
 </div>
 
 <div class="bigspacer"></div>
 
 <div class="row">
-	<div class="col-md-3">  			
-		{% if member.cv %}		
+	<div class="col-md-3">
+		{% if member.cv %}
 		<div class="smallhead">
 			CV
-		</div>	
+		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fa fa-file-text-o fa-fw"></i>			
+			<i class="fa fa-file-text-o fa-fw"></i>
 			<a class="off" href="{{ member.cv }}">{{ member.cv | split: '/' | last }}</a>
-		</div>		
-		<div class="bigspacer"></div>		
-		{% endif %}	  		
-		{% if member.twitter %}		
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.twitter %}
 		<div class="smallhead">
 			Twitter
-		</div>	
+		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-twitter fa-fw"></i>
 			<a class="off" href="https://twitter.com/{{ member.twitter }}">{{ member.twitter }}</a>
-		</div>		
-		<div class="bigspacer"></div>				
-		{% endif %}	
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
 		{% if member.github %}
 		<div class="smallhead">
 			GitHub
-		</div>	
+		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-github-alt fa-fw"></i>
 			<a class="off" href="https://github.com/{{ member.github }}">{{ member.github }}</a>
-		</div>		
-		<div class="bigspacer"></div>	
-		{% endif %}		
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
 		{% if member.scholar %}
 		<div class="smallhead">
 			Google Scholar
-		</div>	
+		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-book fa-fw"></i>
 			<a class="off" href="http://scholar.google.com/citations?user={{ member.scholar }}">{{ member.title }}</a>
-		</div>		
-		<div class="bigspacer"></div>	
-		{% endif %}				   	
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.calendar %}
+		<div class="smallhead">
+			Calendar
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-calendar fa-fw"></i>
+			<a class="off" href="{{ member.calendar }}">{{ member.title }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
 		{% if member.email %}
 		{% assign emailarray = member.email | split: '@' %}
 		<div class="smallhead">
 			Email
-		</div>	
+		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-inbox fa-fw"></i>
 			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
-		</div>		
-		<div class="bigspacer"></div>			
-		{% endif %}						
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
 	</div>
-	<div class="col-md-8">	
+	<div class="col-md-8">
 		<div class="post">
 			{{ content }}
 		</div>
-		
+
 		{% assign lastname = member.title | split: ' ' | last %}
 		{% assign firstinitial = member.title | split: ' ' | first | slice: 0 %}
 		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
@@ -108,8 +119,8 @@ layout: default
 		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
 		{% endif %}
 		{% endfor %}
-		{% endif %}		
-		
+		{% endif %}
+
 		{% for project in site.data.projects %}
 			{% for contributor in project.contributors %}
 				{% if contributor.login == member.github %}
@@ -117,7 +128,7 @@ layout: default
 				{% endif %}
 			{% endfor %}
 		{% endfor %}
-		
+
 		{% if projectsq == true %}
 		<div class="bigspacer"></div>
 		<div class="head">Projects</div>
@@ -132,26 +143,26 @@ layout: default
 			{% if present == true %}
 				<p><a href="{{ project.url }}" class="off">{{ project.title }} - {{ project.description }}</a>
 			{% endif %}
-		{% endfor %}	
-		{% endif %}							
-		
+		{% endfor %}
+		{% endif %}
+
 		{% for post in site.categories.blog %}
 		{% if member.title == post.author %}
 		{% assign postsq = true %}
 		{% endif %}
 		{% endfor %}
-		
+
 		{% if postsq == true %}
-		<div class="bigspacer"></div>		
+		<div class="bigspacer"></div>
 		<div class="head">Posts</div>
 		<div class="spacer"></div>
 		{% for post in site.categories.blog %}
 		{% if member.title == post.author %}
 		<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
 		{% endif %}
-		{% endfor %}	
-		{% endif %}	
-		
-	</div>			
+		{% endfor %}
+		{% endif %}
+
+	</div>
 	<div class="col-md-1"></div>
-</div>	
+</div>

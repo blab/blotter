@@ -7,6 +7,7 @@ email: trevor@bedford.io
 twitter: trvrb
 github: trvrb
 scholar: RIi-1pAAAAAJ
+calendar: https://calendar.google.com/calendar/embed?src=io3serp3kuogi3a5lmkm0tla20%40group.calendar.google.com&ctz=America/Los_Angeles
 image: /images/team/trevor-bedford.jpg
 cv: /pdfs/team/trevor-bedford-cv.pdf
 ---
