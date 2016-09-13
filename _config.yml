@@ -52,7 +52,7 @@ exclude:
   - "projects/nextflu/auspice/muttree/*"
   - "projects/nextflu/auspice/reports/*"
   - "projects/nextflu/auspice/js/*"
-  - "projects/nextstrain-auspice/src/*"
+  - "projects/auspice/src/*"
 
 projects:
   - trvrb/coaltrace
@@ -78,4 +78,3 @@ projects:
   - nextstrain/fauna
   - nextstrain/augur
   - nextstrain/auspice
-  
