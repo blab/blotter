@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Gabriel Erion
-position: MD-PhD student
+position: Rotation student
 github: gabeerion
 scholar: g1yn3_wAAAAJ
 image: /images/team/gabriel-erion.jpg
