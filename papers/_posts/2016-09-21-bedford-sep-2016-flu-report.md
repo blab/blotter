@@ -5,8 +5,9 @@ image: /images/papers/bedford-sep-2016-flu-report.png
 authors: Bedford T, Neher R.
 year: 2016
 ref: Bedford and Neher. 2016. bioRxiv.
-journal: "bioRxiv: XXX."
+journal: "bioRxiv: 076638."
 pdf: /pdfs/papers/bedford-sep-2016-flu-report.pdf
+doi: 10.1101/076638
 ---
 
 # Abstract
