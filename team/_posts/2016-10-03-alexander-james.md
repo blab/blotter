@@ -2,11 +2,12 @@
 layout: member
 title: Alexander James
 position: Undergraduate
-handle: alex_james
+handle: ak_james
 email: akeenjames@gmail.com
 twitter:
 github:
 scholar:
-image: /images/team/john-huddleston.jpg
+image: /images/team/alexander-james.jpg
 calendar:
+alumni: false
 ---

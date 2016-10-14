@@ -1,9 +1,10 @@
 ---
 layout: member
 title: William Ortez
-position: Undergraduate student
-handle: ebaberga
-github: ebaberga
-image: /images/team/eden-berga.jpg
+position: Undergraduate
+handle: will_o
+email:
+github: will_o
+image: /images/team/william-ortez.jpg
 alumni: false
 ---
