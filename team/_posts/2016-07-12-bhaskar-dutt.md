@@ -5,6 +5,6 @@ position: Undergraduate
 handle: sam_d
 email: bhaskar.m.dutt@gmail.com
 github:
-image: /images/team/natalie-boesen.jpg
+image: /images/team/bhaskar-dutt.jpg
 alumni: false
 ---
