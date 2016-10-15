@@ -8,7 +8,7 @@ twitter:
 github: jayich
 scholar:
 calendar:
-image: /images/team/trevor-bedford.jpg
+image: /images/team/andrew-jayich.jpg
 cv: /pdfs/team/trevor-bedford-cv.pdf
 ---
 
