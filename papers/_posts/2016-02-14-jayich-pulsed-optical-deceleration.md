@@ -6,7 +6,7 @@ authors: Jayich, A. M. and Vutha, A. C. and Hummon, M. T. and Porto, J. V. and C
 year: 2014
 ref: Jayich et al., PRA 89, 023425 (2014)
 journal: "PRA 89, 023425 (2014)"
-pdf: /pdfs/papers/jayich-2014-pra.pdf
+pdf: /pdfs/papers/jayich-pra-2014.pdf
 supplement:
 doi: 10.1103/PhysRevA.89.023425
 ---

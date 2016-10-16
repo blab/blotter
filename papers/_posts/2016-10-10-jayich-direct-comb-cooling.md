@@ -6,8 +6,8 @@ authors: A.M. Jayich, X. Long, W. Campbell
 year: 2016
 ref: Jayich et al., PRX 6, 041004 (2016)
 journal: "PRX 6, 041004 (2016)"
-pdf: /pdfs/papers/jayich-2016-prx.pdf
-supplement: /pdfs/papers/jayich-2016-prx-supplement.pdf
+pdf: /pdfs/papers/jayich-prx-2016.pdf
+supplement: /pdfs/papers/jayich-prx-supplement-2016.pdf
 doi: 10.1103/PhysRevX.6.041004
 ---
 
