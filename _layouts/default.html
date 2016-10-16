@@ -92,6 +92,12 @@
 						<li>
 						{% endif %}
 						<a href="/people/">people</a></li>
+						{% if page.categories.first == 'contact' %}
+						<li class="active">
+						{% else %}
+						<li>
+						{% endif %}
+						<a href="/contact/">contact</a></li>
 					</ul>
 				</div>
 			</div>
