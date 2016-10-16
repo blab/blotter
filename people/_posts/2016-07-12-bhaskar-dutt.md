@@ -5,6 +5,6 @@ position: Undergraduate
 handle: sam_d
 email: bhaskar.m.dutt@gmail.com
 github:
-image: /images/team/bhaskar-dutt.jpg
+image: /images/people/bhaskar-dutt.jpg
 alumni: false
 ---

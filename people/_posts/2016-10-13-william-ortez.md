@@ -5,6 +5,6 @@ position: Undergraduate
 handle: will_o
 email:
 github: will_o
-image: /images/team/william-ortez.jpg
+image: /images/people/william-ortez.jpg
 alumni: false
 ---

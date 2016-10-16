@@ -18,7 +18,7 @@ categories:
 {% for talk in site.categories.talks %}
 {% unless talk.draft %}
 
-	{% for member in site.categories.team %}
+	{% for member in site.categories.people %}
 		{% if member.title == talk.author %}
 			{% assign author = member %}
 		{% endif %}

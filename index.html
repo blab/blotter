@@ -43,7 +43,7 @@ categories:
 <div class="row">
 	{% for post in site.categories.news limit:4 %}
 
-	{% for member in site.categories.team %}
+	{% for member in site.categories.people %}
 		{% if member.title == post.author %}
 			{% assign author = member %}
 		{% endif %}

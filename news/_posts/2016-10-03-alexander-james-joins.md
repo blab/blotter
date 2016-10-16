@@ -3,7 +3,7 @@ layout: post
 title: Second group member
 link:
 author: Andrew Jayich
-image: /images/team/alexander-james.jpg
+image: /images/people/alexander-james.jpg
 ---
 
-[Alexander James](/team/alexander-james/) joins the group.
+[Alexander James](/people/alexander-james/) joins the group.
