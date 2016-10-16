@@ -83,7 +83,7 @@ $(function() {
     var postURL = postURLs[index];
 		
     $.get(postURL, function(data) {
-      $(data).find(".blog-post").appendTo(".post-list");
+      $(data).find(".news-post").appendTo(".post-list");
       console.log(postURL);
       console.log($(".post-list").children().length);
       callback();

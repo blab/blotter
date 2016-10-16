@@ -34,14 +34,14 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
-			<a class="off" href="/blog/">Recent posts</a>
+			<a class="off" href="/news/">Recent posts</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
 </div>
 
 <div class="row">
-	{% for post in site.categories.blog limit:4 %}
+	{% for post in site.categories.news limit:4 %}
 
 	{% for member in site.categories.team %}
 		{% if member.title == post.author %}
