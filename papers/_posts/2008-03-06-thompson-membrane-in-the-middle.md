@@ -6,8 +6,8 @@ authors: Thompson, J. D. and Zwickl, B. M. and Jayich, A. M. and Marquardt, Flor
 year: 2008
 ref: Thompson et al., Nature 452, 72 (2008)
 journal: "Nature 452, 72 (2008)"
-pdf: /pdfs/papers/thompson-2008-nature.pdf
-supplement: /pdfs/papers/thompson-2008-nature-supplement.pdf
+pdf: /pdfs/papers/thompson-nature-2008.pdf
+supplement: /pdfs/papers/thompson-nature-supplement-2008.pdf
 doi: http://dx.doi.org/10.1038/nature06715
 ---
 

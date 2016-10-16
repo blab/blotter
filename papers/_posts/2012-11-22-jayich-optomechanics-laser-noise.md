@@ -5,8 +5,8 @@ image: /images/papers/jayich-2012-optomechanics-laser-noise.png
 authors: A M Jayich and J C Sankey and K Børkje and D Lee and C Yang and M Underwood and L Childress and A Petrenko and S M Girvin and J G E Harris
 year: 2012
 ref: Jayich et al., NJP 14, 115018 (2012)
-journal: "NJP"
-pdf:
+journal: "NJP 14, 115018 (2012)"
+pdf: /pdfs/papers/jayich-njp-2012.pdf
 supplement:
 doi: http://stacks.iop.org/1367-2630/14/i=11/a=115018
 github:

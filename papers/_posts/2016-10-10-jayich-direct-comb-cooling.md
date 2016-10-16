@@ -5,9 +5,9 @@ image: /images/papers/jayich-2016-comb-cooling-graphic.png
 authors: A.M. Jayich, X. Long, W. Campbell
 year: 2016
 ref: Jayich et al., PRX 6, 041004 (2016)
-journal: "PRX"
-pdf: /pdfs/papers/bedford-sep-2016-flu-report.pdf
-supplement:
+journal: "PRX 6, 041004 (2016)"
+pdf: /pdfs/papers/jayich-2016-prx.pdf
+supplement: /pdfs/papers/jayich-2016-prx-supplement.pdf
 doi: 10.1103/PhysRevX.6.041004
 ---
 
