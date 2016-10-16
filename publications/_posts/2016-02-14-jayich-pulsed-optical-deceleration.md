@@ -1,12 +1,12 @@
 ---
 layout: paper
 title: Continuous all-optical deceleration and single-photon cooling of molecular beams
-image: /images/papers/jayich-2014-arp.png
+image: /images/publications/jayich-2014-arp.png
 authors: Jayich, A. M. and Vutha, A. C. and Hummon, M. T. and Porto, J. V. and Campbell, W. C.
 year: 2014
 ref: Jayich et al., PRA 89, 023425 (2014)
 journal: "PRA 89, 023425 (2014)"
-pdf: /pdfs/papers/jayich-pra-2014.pdf
+pdf: /pdfs/publications/jayich-pra-2014.pdf
 supplement:
 doi: 10.1103/PhysRevA.89.023425
 ---

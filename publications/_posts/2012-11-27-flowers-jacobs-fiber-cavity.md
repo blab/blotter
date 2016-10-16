@@ -1,13 +1,13 @@
 ---
 layout: paper
 title: Fiber-cavity-based optomechanical device
-image: /images/papers/flowers-jacobs-2012-fiber-cavity-dispersion.png
+image: /images/publications/flowers-jacobs-2012-fiber-cavity-dispersion.png
 authors: Flowers-Jacobs, N. E. and Hoch, S. W. and Sankey, J. C. and Kashkanova, A. and Jayich, A. M. and Deutsch, C. and Reichel, J. and Harris, J. G. E.
 year: 2012
 ref: Flowers-Jacobs et al. APL 101, 221109 (2012)
 journal: "APL 101, 221109 (2012)"
 doi: http://dx.doi.org/10.1063/1.4768779
-pdf: /pdfs/papers/flowers-jacobs-apl-2012.pdf
+pdf: /pdfs/publications/flowers-jacobs-apl-2012.pdf
 ---
 
 # Abstract

@@ -1,13 +1,13 @@
 ---
 layout: paper
 title: Direct Frequency Comb Laser Cooling and Trapping
-image: /images/papers/jayich-2016-comb-cooling-graphic.png
+image: /images/publications/jayich-2016-comb-cooling-graphic.png
 authors: A.M. Jayich, X. Long, W. Campbell
 year: 2016
 ref: Jayich et al., PRX 6, 041004 (2016)
 journal: "PRX 6, 041004 (2016)"
-pdf: /pdfs/papers/jayich-prx-2016.pdf
-supplement: /pdfs/papers/jayich-prx-supplement-2016.pdf
+pdf: /pdfs/publications/jayich-prx-2016.pdf
+supplement: /pdfs/publications/jayich-prx-supplement-2016.pdf
 doi: 10.1103/PhysRevX.6.041004
 ---
 

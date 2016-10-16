@@ -1,12 +1,12 @@
 ---
 layout: paper
 title: Dispersive optomechanics\*:\* a membrane inside a cavity
-image: /images/papers/jayich-2008-quantum-jumps.png
+image: /images/publications/jayich-2008-quantum-jumps.png
 authors: Jayich, A. M., and Sankey, J. C. and Zwickl, B. M. and Yang, C. and Thompson, J. D. and Girvin, S. M. and Clerk, A. A. and Marquardt, F. and Harris, J. G. E.
 year: 2008
 ref: Jayich et al., NJP 10, 095008 (2008)
 journal: "NJP 10, 095008 (2008)"
-pdf: /pdfs/papers/jayich-njp-2008.pdf
+pdf: /pdfs/publications/jayich-njp-2008.pdf
 doi: http://iopscience.iop.org/article/10.1088/1367-2630/10/9/095008/meta
 ---
 

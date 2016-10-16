@@ -1,12 +1,12 @@
 ---
 layout: paper
 title: Stable, mode-matched, medium-finesse optical cavity incorporating a microcantilever mirror\*:\* Optical characterization and laser cooling
-image: /images/papers/harris-2007-reflection.png
+image: /images/publications/harris-2007-reflection.png
 authors: J. G. E. Harris and B. M. Zwickl and A. M. Jayich
 year: 2007
 ref: Harris et al., RSI 78, 013107 (2007)
 journal: "RSI 78, 013107 (2007)"
-pdf: /pdfs/papers/harris-rsi-2007.pdf
+pdf: /pdfs/publications/harris-rsi-2007.pdf
 doi: http://dx.doi.org/10.1063/1.2405373
 ---
 

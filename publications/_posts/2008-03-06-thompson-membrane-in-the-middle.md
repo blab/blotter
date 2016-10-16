@@ -1,13 +1,13 @@
 ---
 layout: paper
 title: Strong dispersive coupling of a high-finesse cavity to a micromechanical membrane
-image: /images/papers/thompson-2008-membrane-in-the-middle.png
+image: /images/publications/thompson-2008-membrane-in-the-middle.png
 authors: Thompson, J. D. and Zwickl, B. M. and Jayich, A. M. and Marquardt, Florian and Girvin, S. M. and Harris, J. G. E.
 year: 2008
 ref: Thompson et al., Nature 452, 72 (2008)
 journal: "Nature 452, 72 (2008)"
-pdf: /pdfs/papers/thompson-nature-2008.pdf
-supplement: /pdfs/papers/thompson-nature-supplement-2008.pdf
+pdf: /pdfs/publications/thompson-nature-2008.pdf
+supplement: /pdfs/publications/thompson-nature-supplement-2008.pdf
 doi: http://dx.doi.org/10.1038/nature06715
 ---
 

@@ -1,12 +1,12 @@
 ---
 layout: paper
 title: Linear optical properties of a high-finesse cavity dispersively coupled to a micromechanical membrane
-image: /images/papers/harris-2008-cavity-ringdowns.png
+image: /images/publications/harris-2008-cavity-ringdowns.png
 authors: Harris, J. G. E. and Jayich, A. M. and Zwickl, B. M. and Yang, C. and Sankey, J. C.
 year: 2008
 ref: Harris et al., SPIE 6907, (2008)
 journal: "SPIE 6907, (2008)"
-pdf: /pdfs/papers/harris-spie-2008.pdf
+pdf: /pdfs/publications/harris-spie-2008.pdf
 doi: http://dx.doi.org/10.1117/12.760993
 ---
 

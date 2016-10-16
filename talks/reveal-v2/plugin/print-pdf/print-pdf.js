@@ -16,7 +16,7 @@ page.viewportSize  = {
 	height: 768
 };
 
-page.paperSize = {
+page.publicationsize = {
 	format: 'letter',
 	orientation: 'landscape',
 	margin: {

@@ -23,7 +23,7 @@ page.viewportSize = {
 // Something is wrong with these config values. An input
 // paper width of 1920px actually results in a 756px wide
 // PDF.
-page.paperSize = {
+page.publicationsize = {
 	width: Math.round( slideWidth * 2 ),
 	height: Math.round( slideHeight * 2 ),
 	border: 0
@@ -36,7 +36,7 @@ if( outputFile.match( /\.pdf$/gi ) === null ) {
 	outputFile += '.pdf';
 }
 
-console.log( 'Printing PDF (Paper size: '+ page.paperSize.width + 'x' + page.paperSize.height +')' );
+console.log( 'Printing PDF (Paper size: '+ page.publicationsize.width + 'x' + page.publicationsize.height +')' );
 
 page.open( inputFile, function( status ) {
 	window.setTimeout( function() {
