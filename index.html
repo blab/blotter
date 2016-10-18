@@ -34,13 +34,13 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
-			<a class="off" href="/news/">Recent posts</a>
+			<a class="off" href="/news/">Recent news</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
 </div>
 
-<!-- Recent news posts -->
+<!-- Recent news -->
 <div class="row">
 	{% for post in site.categories.news limit:4 %}
 
@@ -53,14 +53,13 @@ categories:
 	<div class="col-md-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<i class="fa fa-comment-o fa-fw"></i>
+				<!-- <i class="fa fa-comment-o fa-fw"></i> -->
 				<a class="off" href="{{ post.url }}">
 				{{ post.title }}
 				</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
-				Posted
 				{{ post.date | date: "%-d %b %Y" }}
 				{% if author %}
 				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
