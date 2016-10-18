@@ -1,0 +1,9 @@
+---
+layout: misc
+title: Resources
+categories:
+---
+
+{% for post in site.categories.resources limit: 8 %}
+  {{ post.content }}
+{% endfor %}
