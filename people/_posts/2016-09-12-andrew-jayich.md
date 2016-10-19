@@ -9,7 +9,7 @@ github: jayich
 scholar:
 calendar:
 image: /images/people/andrew-jayich.jpg
-cv: /pdfs/people/trevor-bedford-cv.pdf
+cv: 
 ---
 
 I'm an assistant professor at [UC Santa Barbara](http://www.ucsb.edu/) in the [Department of Physics](http://www.physics.ucsb.edu/). I study fundamental symmetries and quantum chemical reactions.
