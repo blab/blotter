@@ -19,11 +19,7 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="smallhead">
-			The Jayich Lab at the <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a> works at the interface of evolution,
-			epidemiology and immunology. We apply computational and statistical methods to sequence data to understand viral dynamics,
-			looking at the geographic circulation of viral strains and their evolution. We are interested in linking mutations in the
-			virus to changes in acquired immunity in the human population, and then looking at how human immunity influences viral
-			transmission patterns.
+			The Jayich Lab  in the <a class="off" href="http://physics.ucsb.edu/">UCSB Physics Department</a> works...
 		</div>
 	</div>
 </div>
@@ -44,16 +40,9 @@ categories:
 <div class="row">
 	{% for post in site.categories.news limit:4 %}
 
-	{% for member in site.categories.people %}
-		{% if member.title == post.author %}
-			{% assign author = member %}
-		{% endif %}
-	{% endfor %}
-
 	<div class="col-md-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<!-- <i class="fa fa-comment-o fa-fw"></i> -->
 				<a class="off" href="{{ post.url }}">
 				{{ post.title }}
 				</a>
@@ -61,9 +50,6 @@ categories:
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				{{ post.date | date: "%-d %b %Y" }}
-				{% if author %}
-				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-				{% endif %}
 			</div>
 			<div class="bigspacer"></div>
 		</div>
