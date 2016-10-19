@@ -36,6 +36,8 @@ categories:
 {% endfor %}
 {% cycle 'close rows': nil, '</div>', '</div>' %}
 
+<!-- TODO: if statement to render "Past members" only when member.alumni > 0 -->
+<!--
 <div class="row">
 	<div class="col-md-12">
 		<div class="title">
@@ -43,7 +45,7 @@ categories:
 		</div>
 	</div>
 </div>
-
+-->
 <div class="bigspacer"></div>
 
 {% for member in site.categories.people reversed %}
