@@ -121,31 +121,6 @@ layout: default
 		{% endfor %}
 		{% endif %}
 
-		{% for project in site.data.projects %}
-			{% for contributor in project.contributors %}
-				{% if contributor.login == member.github %}
-					{% assign projectsq = true %}
-				{% endif %}
-			{% endfor %}
-		{% endfor %}
-
-		{% if projectsq == true %}
-		<div class="bigspacer"></div>
-		<div class="head">Projects</div>
-		<div class="spacer"></div>
-		{% for project in site.data.projects %}
-			{% assign present = false %}
-			{% for contributor in project.contributors %}
-				{% if contributor.login == member.github %}
-					{% assign present = true %}
-				{% endif %}
-			{% endfor %}
-			{% if present == true %}
-				<p><a href="{{ project.url }}" class="off">{{ project.title }} - {{ project.description }}</a>
-			{% endif %}
-		{% endfor %}
-		{% endif %}
-
 		{% for post in site.categories.news %}
 		{% if member.title == post.author %}
 		{% assign postsq = true %}
