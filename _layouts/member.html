@@ -104,17 +104,17 @@ layout: default
 		{% assign firstinitial = member.title | split: ' ' | first | slice: 0 %}
 		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
 
-		{% for paper in site.categories.publications %}
+		{% for paper in site.categories.papers %}
 		{% if paper.authors contains searchstring %}
-		{% assign publicationsq = true %}
+		{% assign papersq = true %}
 		{% endif %}
 		{% endfor %}
 
-		{% if publicationsq == true %}
+		{% if papersq == true %}
 		<div class="bigspacer"></div>
-		<div class="head">publications</div>
+		<div class="head">papers</div>
 		<div class="spacer"></div>
-		{% for paper in site.categories.publications %}
+		{% for paper in site.categories.papers %}
 		{% if paper.authors contains searchstring %}
 		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
 		{% endif %}
