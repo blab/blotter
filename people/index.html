@@ -15,7 +15,7 @@ categories:
 
 <div class="bigspacer"></div>
 
-{% for member in site.categories.people reversed %}
+{% for member in site.categories.people %}
 	{% if member.alumni != true %}
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 memberbox">
