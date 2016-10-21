@@ -1,0 +1,9 @@
+---
+layout: misc
+title: Join
+categories:
+---
+
+{% for post in site.categories.join limit: 8 %}
+  {{ post.content }}
+{% endfor %}

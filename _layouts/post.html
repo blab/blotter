@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-{% for member in site.categories.team %}
+{% for member in site.categories.people %}
 	{% if member.title == page.author %}
 		{% assign author = member %}
 	{% endif %}
 {% endfor %}
 
-<div class="blog-post">
+<div class="news-post">
 	<div class="row">
 		<div class="col-md-1"></div>	
 		<div class="col-md-10">

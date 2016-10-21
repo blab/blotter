@@ -14,6 +14,7 @@
 @nav-pills-active-link-hover-bg: @navbar-default-bg;
 @nav-pills-active-link-hover-color: @gray;
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
 @import "/css/font-awesome/font-awesome.less";
 @fa-font-path: "font";
 
@@ -60,7 +61,6 @@ h4,
 h5,
 h6 {
 	font-weight: 300;
-	/* Museo */
 }
 
 .center {
@@ -115,51 +115,44 @@ h6 {
 
 .bigtitle {
 	font-size: 60px;
-	line-height: 55px;
 	font-weight: 100;
-	/* Museo */
+  line-height: 55px;
 }
 
 .title {
 	font-size: 36px;
-	line-height: 40px;
 	font-weight: 100;
-	/* Museo */
+  line-height: 40px;
 }
 
 .bighead {
 	font-size: 32px;
 	font-weight: 300;
 	line-height:36px;
-	/* Museo */
 }
 
 .head {
 	font-size: 24px;
 	font-weight: 300;
 	line-height:30px;
-	/* Museo */
 }
 
 .smallhead {
 	font-size: 19px;
 	font-weight: 300;
 	line-height: 23px;
-	/* Museo */
 }
 
 .note {
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 18px;
-	/* Museo */
 }
 
 .smallnote {
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 16px;
-	/* Museo */
 }
 
 .text-gray {
@@ -170,10 +163,10 @@ h6 {
 	color: @gray;
 }
 
-/* other */
-
 body {
+  /* font weight global */
 	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -231,6 +224,10 @@ img.avatar {
      float: none;
      margin-left: auto;
      margin-right: auto;
+}
+
+hr.thick {
+  border-top-width: 3px;
 }
 
 blockquote {
@@ -302,7 +299,7 @@ blockquote {
 }
 
 #footer {
-	height: 80px;
+	margin-bottom: 100px;
 }
 
 .footernav {
@@ -359,4 +356,8 @@ blockquote {
     -webkit-transform: scale(1.0);
     opacity: 0;
   }
+}
+
+.invisible {
+  visibility: hidden;
 }

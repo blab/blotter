@@ -4,10 +4,6 @@ environment*
 # Compiled site
 _site/
 
-# Projects
-projects/
-!projects/index.html
-
 # Jekyll metadata
 .jekyll-metadata
 

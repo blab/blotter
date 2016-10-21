@@ -5,53 +5,43 @@
 	<meta charset="utf-8"/>
 	<title>{{ page.title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<!-- RSS feed -->
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
-	
+
     <!-- Customized Bootstrap + Font Awesome + Solarized -->
     <link href="/css/style.css" rel="stylesheet" media="screen">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="/images/favicon.png"/>	
+	<link rel="shortcut icon" href="/images/favicon.png"/>
 
-	<!-- Typekit -->
-	<script>
-	  (function(d) {
-		var config = {
-		  kitId: 'xeu8jut',
-		  scriptTimeout: 3000
-		},
-		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-	  })(document);
-	</script>
-		
-	<!-- Google Analytics -->	
+	<!-- Google Analytics -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('create', '', '');
 		ga('send', 'pageview');
 
 	</script>
-	
+
 	<!-- jQuery -->
 	<script src="/js/jquery.min.js"></script>
-	
+
 	<!-- Bootstrap -->
 	<script src="/js/transition.js"></script>
 	<script src="/js/collapse.js"></script>
 
 </head>
 
+<!-- Header -->
 <body>
-	
+
 	<div id="header">
-		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
-			<div class="container">	
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
@@ -59,19 +49,19 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					{% if page.categories.first != 'home' %}					
+					{% if page.categories.first != 'home' %}
 					<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
-					<a class="navbar-brand" href="/">bedford lab</a>
+					<a class="navbar-brand" href="/">jayich lab</a>
 					{% endif %}
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse-element">
 					<ul class="nav navbar-nav navbar-right">
-						{% if page.categories.first == 'blog' %}
+						{% if page.categories.first == 'news' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/blog/">blog</a>
+						<a href="/news/">news</a>
 						</li>
 						{% if page.categories.first == 'papers' %}
 						<li class="active">
@@ -80,32 +70,68 @@
 						{% endif %}
 						<a href="/papers/">papers</a>
 						</li>
-						{% if page.categories.first == 'projects' %}
+						{% if page.categories.first == 'physics' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/projects/">projects</a></li>	  
-						{% if page.categories.first == 'team' %}
+						<a href="/physics/">physics</a></li>
+						{% if page.categories.first == 'people' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/team/">team</a></li>	  	  
+						<a href="/people/">people</a></li>
+						{% if page.categories.first == 'contact' %}
+						<li class="active">
+						{% else %}
+						<li>
+						{% endif %}
 					</ul>
 				</div>
 			</div>
-		</nav>	
+		</nav>
 	</div>
-	
-	<div class="container">	
-		
-	{{ content }}
-	
-	</div>
-	
-	<div id="footer"><span style="display:none">foo</span></div>
-		
-</body>
-</html>
 
+	<div class="container">
+
+	{{ content }}
+
+	</div>
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="container">
+			<hr class="thick">
+			<div class="row">
+				<!-- Header links that are included in the footer-->
+				<div class="col-sm-6">
+					<a class="off" href="/">jayich lab</a>
+				  	<div class="spacer"></div>
+					<a class="off" href="/news/">news</a>
+					<div class="spacer"></div>
+					<a class="off" href="/papers/">papers</a>
+					<div class="spacer"></div>
+					<a class="off" href="/physics/">physics</a>
+					<div class="spacer"></div>
+					<a class="off" href="/people/">people</a>
+					<div class="spacer"></div>
+				</div>
+				<!-- Footer only links -->
+				<div class="col-sm-6">
+					<a class="off" href="/contact/">contact</a>
+					<div class="spacer"></div>
+					<a class="off" href="/join/">join</a>
+					<div class="spacer"></div>
+					<a class="off" href="/resources/">resources</a>
+					<div class="spacer"></div>
+					<a class="off" href="/about/">about</a>
+					<div class="spacer"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
