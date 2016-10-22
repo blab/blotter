@@ -1,6 +1,6 @@
 name: Jayich Research Lab
 description: Physics research at UCSB
-url: http://bedford.io
+url: jayich.io
 
 markdown: redcarpet
 permalink: /:categories/:title/
