@@ -5,7 +5,7 @@ image: /images/papers/wen-geographic-driver.png
 authors: Wen F, Bedford T, Cobey S.
 year: 2016
 ref: Wen et al. 2016. Proc R Soc B.
-journal: "Proc R Soc B: 283: 20161312."
+journal: "Proc R Soc B 283: 20161312."
 pdf: /pdfs/papers/wen-geographic-driver.pdf
 supplement: /pdfs/papers/wen-geographic-driver-supp.pdf
 doi: 10.1098/rspb.2016.1312
