@@ -6,7 +6,7 @@ authors: Bedford T, Malik HS.
 year: 2016
 ref: Bedford and Malik. 2016. Cell.
 journal: "Cell 167: 892-894."
-pdf: /pdfs/papers/bedford-gp82-adaptation.pdf
+pdf: /pdfs/papers/bedford-ebola-gp82-adaptation.pdf
 doi: 10.1016/j.cell.2016.10.032
 ---
 
