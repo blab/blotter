@@ -2,11 +2,12 @@
 layout: paper
 title: Viral factors in influenza pandemic risk assessment
 image: /images/papers/lipsitch-pandemic-risk.png
-authors: Lipsitch M, Barclay W, Raman R, Russell CJ, Belser J, Cobey S, Kasson P, Lloyd-Smith JO, Maurer-Stroh S, Riley S, Beauchemin C, Bedford T, Friedrich TC, Handel A, Herfst S, Murcia P, Roche B, Wilke CO, Russell C.
+authors: Lipsitch M, Barclay W, Raman R, Russell CJ, Belser JA, Cobey S, Kasson PM, Lloyd-Smith JO, Maurer-Stroh S, Riley S, Beauchemin CAA, Bedford T, Friedrich TC, Handel A, Herfst S, Murcia PR, Roche B, Wilke CO, Russell CA.
 year: 2016
 ref: Lipsitch et al. 2016. eLife.
 journal: "eLife. In press."
 pdf: /pdfs/papers/lipsitch-pandemic-risk.pdf
+doi: 10.7554/eLife.18491
 ---
 
 # Abstract
