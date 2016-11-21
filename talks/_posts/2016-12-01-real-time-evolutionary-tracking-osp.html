@@ -1,0 +1,297 @@
+---
+layout: talk_reveal3
+title: "Nextstrain.org: Real-Time evolutionary tracking for pathogen surveillance and epidemiological investigation"
+venue: Bethesda, MD
+event: BD2K Open Data Science Symposium
+author: Trevor Bedford and Richard Neher
+---
+
+<!--
+Outline:
+* Phylodynamics and tracking outbreaks with sequencing
+  - example trees for Ebola, starting with Gire et al
+* Key challenges
+  - Publication process slow, not sharing data
+	- Not epidemiologically actionable
+* Our solution
+  - nextstrain.org/ebola/ demoed with photos from the field
+  - nextstrain.org/zika/ demoed with photos from the field
+* Brief technology overview
+  - fauna, augur, auspice wiring diagram
+* What we're building towards
+-->
+
+<!-- Color ramp: ["#5097BA", "#5BA6A7", "#69B091", "#79B77D", "#8BBB6A", "#9EBE5A", "#B2BD4D", "#C4B945", "#D4B13F", "#DFA43B"] -->
+
+<section data-background="#000000">
+	<h3 class="title">{{ page.title }}</h3>
+	<br>
+	<p class="title">
+	Trevor Bedford (@trvrb) and Richard Neher (@richardneher)
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<section data-background="#5BA6A7">
+	<h2 class="title">Sequencing to reconstruct pathogen spread</h2>
+</section>
+
+<!-- <section data-background="#000000">
+	<img width=100 src="/images/talks/giphy_virus.gif">
+</section> -->
+
+<section>
+	<h3>Epidemic process</h3>
+	<img class="stretch" src="/images/talks/infection_tree_1.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sample some individuals</h3>
+	<img class="stretch" src="/images/talks/infection_tree_2.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" src="/images/talks/infection_tree_3.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" src="/images/talks/infection_tree_4.png">
+</section>
+
+<section>
+	<h3>Localized Middle Eastern MERS-CoV phylogeny</h3>
+	<img class="stretch" src="/images/talks/pathogen_phylogeny_mers.jpg">
+	<div class="citation">
+		<a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)61887-5/abstract">Cotten et al 2013</a>
+	</div>
+</section>
+
+<section>
+	<h3>Regional West African Ebola phylogeny</h3>
+	<img class="stretch" src="/images/talks/pathogen_phylogeny_ebola.png">
+	<div class="citation">
+		<a href="http://bedford.io/papers/park-ebola-transmission/">Park et al 2015</a>
+	</div>
+</section>
+
+<section>
+	<h3>Global influenza phylogeny</h3>
+	<img class="stretch" src="/images/talks/pathogen_phylogeny_flu.png">
+	<div class="citation">
+		<a href="http://bedford.io/papers/bedford-global-circulation/">Bedford et al 2015</a>
+	</div>
+</section>
+
+<section data-background="#8BBB6A">
+	<h2 class="title">Ebola</h2>
+</section>
+
+<section>
+	<h3>Epidemic nearly contained, but resulted in >28,000 confirmed cases and >11,000 deaths</h3>
+	<img class="stretch" src="/images/talks/ebola_timeseries.png">
+</section>
+
+<section>
+	<h3>Outbreaks are independent spillovers from the animal reservoir</h3>
+	<img class="stretch" src="/images/talks/ebola_between_outbreak_tree.png">
+	<div class="citation">
+		<a href="https://www.sciencemag.org/content/345/6202/1369.full">Gire et al 2014</a>
+	</div>
+</section>
+
+<section>
+	<h3>Person-to-person spread in the early West African outbreak</h3>
+	<img class="stretch" src="/images/talks/ebola_early_outbreak_tree.png">
+	<div class="citation">
+		<a href="https://www.sciencemag.org/content/345/6202/1369.full">Gire et al 2014</a>
+	</div>
+</section>
+
+<section>
+	<h3>Continued spread through Dec 2014</h3>
+	<img class="stretch" src="/images/talks/ebola_mid_outbreak_mst.png">
+	<div class="citation">
+		<a href="http://bedford.io/papers/park-ebola-transmission/">Park et al 2015</a>
+	</div>
+</section>
+
+<section>
+	<h3>At epidemic height, geographic spread of particular interest</h3>
+	<img class="stretch" src="/images/talks/ebola_spatial_spread_grid.png">
+	<div class="citation">
+		Dudas et al 2016
+	</div>
+</section>
+
+<section>
+	<h3>Later on, tracking transmission clusters of primary importance</h3>
+	<img class="stretch" src="/images/talks/ebola_late_outbreak_tree.png">
+	<div class="citation">
+		<a href="http://virological.org/t/update-on-ebola-virus-circulating-in-sierra-leone-and-guinea/151">Rambaut 2015</a>
+	</div>
+</section>
+
+<section>
+	<h3>Important analyses, let's make them more rapid and more automated</h3>
+</section>
+
+<section>
+	<h3>Tracking epidemic spread in real-time:</h3>
+	<h2>
+		<a href="http://nextstrain.org/ebola/">
+			<span class="text-gray">nextstrain.org/ebola/</span>
+		</a>
+	</h2>
+</section>
+
+<section data-background="/images/talks/nextstrain_in_sierra_leone.jpg">
+	<h3 class="title">Rapid on-the-ground sequencing by Ian Goodfellow, Matt Cotten and colleagues</h3>
+	<br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p>
+</section>
+
+<section>
+	<h3>MinION sequencing in Guinea with Nick Loman, Josh Quick, Lauren Cowley and colleagues</h3>
+	<img class="stretch" src="/images/talks/minion_ebola_sequencing.jpg">
+	<div class="citation">
+		<a href="http://www.nature.com/nature/journal/v530/n7589/full/nature16996.html">Quick et al 2016</a>
+	</div>
+</section>
+
+<section data-background="#9EBE5A">
+	<h2 class="title">Zika</h2>
+</section>
+
+<section>
+	<h3>Single arrival into the Americas in early 2014</h3>
+	<img class="stretch" src="/images/talks/zika_faria_tmrca.png">
+	<div class="citation">
+		<a href="http://science.sciencemag.org/content/early/2016/03/23/science.aaf5036">Faria et al 2016</a>
+	</div>
+</section>
+
+<section>
+	<h3>Analysis of ongoing evolution:</h3>
+	<h2>
+		<a href="http://nextstrain.org/zika/">
+			<span class="text-gray">nextstrain.org/zika/</span>
+		</a>
+	</h2>
+</section>
+
+<section>
+	<h3>ZiBRA: Project to do real-time sequencing of Zika in Brazil</h3>
+	<p class="smaller"><i>
+	with Nick Loman, Oli Pybus, Nuno Faria, Luiz Alcantara, Ester Cerdeira Sabino, Marcio Nunes, Josh Quick, Alli Black, Ingra Morales and many others
+	</i></p>
+	<a href="http://www.zibraproject.org/">
+		<img class="stretch" src="/images/talks/zika_zibra_logo.png">
+	</a>
+</section>
+
+<section>
+	<h3>Road trip through northeast Brazil to collect samples and sequence</h3>
+	<img class="stretch" src="/images/talks/zika_zibra_roadtrip_samples.jpg">
+</section>
+
+<section data-background="/images/talks/zika_zibra_bus.jpg">
+</section>
+
+<section data-background="/images/talks/zika_zibra_natal_lacen.jpg">
+</section>
+
+<section data-background="/images/talks/zika_zibra_trevor_in_lab.jpg">
+</section>
+
+<section data-background="/images/talks/zika_zibra_minion.jpg">
+</section>
+
+<section>
+	<h3>Introduction and spread through Brazil</h3>
+</section>
+
+<section>
+	<h2>Zika in Florida</h2>
+	<p class="smaller"><i>
+	with Kristian Andersen, Nathan Grubaugh, Oli Pybus, Pardis Sabeti, Sharon Isern, Jason Ladner, Gytis Dudas, Karthik Gangavarapu and many others
+	</i></p>
+</section>
+
+<section data-background="/images/talks/zika_florida_miami_map.png">
+</section>
+
+<section>
+	<h3>Multiple introductions and sustained transmission chains</h3>
+</section>
+
+<section>
+	<h3>Nextstrain working as intended</h3>
+</section>
+
+<section data-background="#C4B945">
+	<h2 class="title">Software architecture</h2>
+</section>
+
+<section>
+	<h3>Nextstrain components</h3>
+	<p><i>Insert wiring diagram of fauna, augur and auspice</i></p>
+</section>
+
+<section>
+	<h3>Nextstrain development team</h3>
+	<p>Richard Neher, Trevor Bedford, Colin Megill, Charlton Callender, Sarah Murata, Sidney Bell</p>
+</section>
+
+<!-- <section>
+	<h2><a href="https://github.com/nextstrain/fauna">Fauna</a></h2>
+	<p>Rethink database of virus and titer data</p>
+	<p class="smaller"><i>
+	with Charlton Callender, Sidney Bell, Sarah Murata and Barney Potter
+	</i></p>
+</section>
+
+<section>
+	<h2><a href="https://github.com/nextstrain/augur">Augur</a></h2>
+	<p>Build scrips to align sequences, build trees and annotate</p>
+	<p class="smaller"><i>
+	with Richard Neher, Sarah Murata, Sidney Bell and Barney Potter
+	</i></p>
+</section>
+
+<section>
+	<h2><a href="https://github.com/nextstrain/auspice">Auspice</a></h2>
+	<p>React / D3 visualization of resulting trees</p>
+	<p class="smaller"><i>
+	with Colin Megill and Richard Neher
+	</i></p>
+</section> -->
+
+<section>
+	<h3>Acknowledgements</h3>
+	<br>
+	<p class="smaller"><b>Ebola</b>: data producers, Gytis Dudas, Andrew Rambaut, Nick Loman, Ian Goodfellow, Paul Kellam, Danny Park, Kristian Andersen, Pardis Sabeti</p>
+
+	<p class="smaller"><b>Zika</b>: data producers, Nick Loman, Kristian Andersen, Gytis Dudas, Nuno Faria, Andrew Rambaut, Oliver Pybus, Allison Black, Luiz Alcantara and the rest of the ZiBRA team</p>
+
+	<p class="smaller"><b>Nextstrain</b>: Colin Megill, Charlton Callender, Sarah Murata, Sidney Bell</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="18%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp;
+		<img width="16%" data-src="/images/talks/logo_max_planck.png">
+		&nbsp;
+		<img width="13%" data-src="/images/talks/logo_hhmi.jpg">
+		&nbsp; &nbsp;
+		<img width="15%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="13%" data-src="/images/talks/logo_nih.jpg">
+	</div>
+</section>
+
+<section data-background="#000000">
+</section>
