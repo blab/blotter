@@ -4,6 +4,7 @@ title: "Nextstrain.org: Real-Time evolutionary tracking for pathogen surveillanc
 venue: Bethesda, MD
 event: BD2K Open Data Science Symposium
 author: Trevor Bedford and Richard Neher
+draft: true
 ---
 
 <!--
@@ -36,14 +37,25 @@ Outline:
 	{{ page.venue }}
 </section>
 
+<section>
+	<h3>Spread of epidemics</h3>
+	<p><i>Spread of the plague</i></p>
+</section>
+
+<section>
+	<h3>Spread of epidemics today</h3>
+	<p><i>Spread of swine flu</i></p>
+</section>
+
+<!-- Fight epidemics by learning transmission patterns -->
+<section data-background="/images/talks/snow_cholera_map.jpg">
+</section>
+
 <section data-background="#5BA6A7">
 	<h2 class="title">Sequencing to reconstruct pathogen spread</h2>
 </section>
 
-<!-- <section data-background="#000000">
-	<img width=100 src="/images/talks/giphy_virus.gif">
-</section> -->
-
+<!-- Improve these slides by including mutations and haplotype readouts -->
 <section>
 	<h3>Epidemic process</h3>
 	<img class="stretch" src="/images/talks/infection_tree_1.png">
@@ -64,81 +76,31 @@ Outline:
 	<img class="stretch" src="/images/talks/infection_tree_4.png">
 </section>
 
-<section>
-	<h3>Localized Middle Eastern MERS-CoV phylogeny</h3>
-	<img class="stretch" src="/images/talks/pathogen_phylogeny_mers.jpg">
-	<div class="citation">
-		<a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)61887-5/abstract">Cotten et al 2013</a>
-	</div>
-</section>
-
-<section>
-	<h3>Regional West African Ebola phylogeny</h3>
-	<img class="stretch" src="/images/talks/pathogen_phylogeny_ebola.png">
-	<div class="citation">
-		<a href="http://bedford.io/papers/park-ebola-transmission/">Park et al 2015</a>
-	</div>
-</section>
-
-<section>
-	<h3>Global influenza phylogeny</h3>
-	<img class="stretch" src="/images/talks/pathogen_phylogeny_flu.png">
-	<div class="citation">
-		<a href="http://bedford.io/papers/bedford-global-circulation/">Bedford et al 2015</a>
-	</div>
-</section>
-
 <section data-background="#79B77D">
-	<h2 class="title">Ebola</h2>
+	<h2 class="title">Phylogenetic tracking has the capacity to revolutionize epidemiology</h2>
 </section>
 
 <section>
-	<h3>Epidemic contained, but resulted in >28,000 confirmed cases and >11,000 deaths</h3>
-	<img class="stretch" src="/images/talks/ebola_timeseries.png">
-</section>
-
-<section>
-	<h3>Outbreaks are independent spillovers from the animal reservoir</h3>
-	<img class="stretch" src="/images/talks/ebola_between_outbreak_tree.png">
+	<h3>Detailed understanding of Ebola spread from sequence data</h3>
+	<img class="stretch" src="/images/talks/ebola_mig_tree.png">
 	<div class="citation">
-		<a href="https://www.sciencemag.org/content/345/6202/1369.full">Gire et al 2014</a>
+		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al 2016</a>
 	</div>
 </section>
 
-<section>
-	<h3>Person-to-person spread in the early West African outbreak</h3>
-	<img class="stretch" src="/images/talks/ebola_early_outbreak_tree.png">
-	<div class="citation">
-		<a href="https://www.sciencemag.org/content/345/6202/1369.full">Gire et al 2014</a>
-	</div>
+<!-- ffmpeg -i Untitled.mov -filter_complex "setpts=0.75*PTS" -an -vcodec libx264 ebola_mig_movie.mp4 -->
+<section data-autoplay data-background-video="/images/talks/ebola_mig_movie.mp4">
 </section>
 
 <section>
-	<h3>Continued spread through Dec 2014</h3>
-	<img class="stretch" src="/images/talks/ebola_mid_outbreak_mst.png">
-	<div class="citation">
-		<a href="http://bedford.io/papers/park-ebola-transmission/">Park et al 2015</a>
-	</div>
+	<h2>However, this has mostly been done in a retrospective manner</h2>
 </section>
 
 <section>
-	<h3>At epidemic height, geographic spread of particular interest</h3>
-	<img class="stretch" src="/images/talks/ebola_spatial_spread_grid.png">
-	<div class="citation">
-		Dudas et al 2016
-	</div>
-</section>
-
-<section>
-	<h3>Later on, tracking transmission clusters of primary importance</h3>
-	<img class="stretch" src="/images/talks/ebola_late_outbreak_tree.png">
-	<div class="citation">
-		<a href="http://virological.org/t/update-on-ebola-virus-circulating-in-sierra-leone-and-guinea/151">Rambaut 2015</a>
-	</div>
-</section>
-
-<section>
-	<h2>Phylogenetic tracking has the capacity to revolutionize epidemiology</h2>
+	<h1>
+		<span class="c1s">n</span><span class="c2s">e</span><span class="c3s">x</span><span class="c4s">t</span><span class="c5s">s</span><span class="c6s">t</span><span class="c7s">r</span><span class="c8s">a</span><span class="c9s">i</span><span class="c10s">n</span>
+	</h1>
+	<p>Project to conduct real-time molecular epidemiology and evolutionary analysis of emerging epidemics</p>
 </section>
 
 <section>
@@ -173,12 +135,8 @@ Outline:
 	</div>
 </section>
 
-<section data-background="#9EBE5A">
-	<h2 class="title">Zika</h2>
-</section>
-
 <section>
-	<h3>Arrival and spread in the Americas</h3>
+	<h3>Zika's arrival and spread in the Americas</h3>
 	<img class="stretch" src="/images/talks/zika_who_map.png">
 	<div class="citation">
 		<a href="http://www.who.int/emergencies/zika-virus/situation-report/17-november-2016/en/">WHO 2016</a>
@@ -193,58 +151,11 @@ Outline:
 	</h1>
 </section>
 
-<!-- Detailed slides on ongoing Zika sequencing projects. Commented out but could be resurrected -->
-
-<!-- <section>
-	<h3>ZiBRA: Project to do real-time sequencing of Zika in Brazil</h3>
-	<p class="smaller"><i>
-	with Nick Loman, Oli Pybus, Nuno Faria, Luiz Alcantara, Ester Cerdeira Sabino, Marcio Nunes, Josh Quick, Alli Black, Ingra Morales and many others
-	</i></p>
-	<a href="http://www.zibraproject.org/">
-		<img class="stretch" src="/images/talks/zika_zibra_logo.png">
-	</a>
-</section>
-
-<section>
-	<h3>Road trip through northeast Brazil to collect samples and sequence</h3>
-	<img class="stretch" src="/images/talks/zika_zibra_roadtrip_samples.jpg">
-</section>
-
-<section data-background="/images/talks/zika_zibra_bus.jpg">
-</section>
-
-<section data-background="/images/talks/zika_zibra_natal_lacen.jpg">
-</section>
-
-<section data-background="/images/talks/zika_zibra_trevor_in_lab.jpg">
-</section>
-
-<section data-background="/images/talks/zika_zibra_minion.jpg">
-</section>
-
-<section>
-	<h3>Introduction and spread through Brazil</h3>
-</section>
-
-<section>
-	<h2>Zika in Florida</h2>
-	<p class="smaller"><i>
-	with Kristian Andersen, Nathan Grubaugh, Oli Pybus, Pardis Sabeti, Sharon Isern, Jason Ladner, Gytis Dudas, Karthik Gangavarapu and many others
-	</i></p>
-</section>
-
-<section data-background="/images/talks/zika_florida_miami_map.png">
-</section>
-
-<section>
-	<h3>Multiple introductions and sustained transmission chains</h3>
-</section> -->
-
 <section>
 	<h3>Nextstrain working as intended as open science resource</h3>
 </section>
 
-<section data-background="#C4B945">
+<section data-background="#9EBE5A">
 	<h2 class="title">Nextstrain development</h2>
 </section>
 
@@ -265,42 +176,25 @@ Outline:
 	<img class="stretch" src="/images/talks/nextstrain_components.png">
 </section>
 
-<!-- Detailed slides on fauna, augur, auspice. Commented out but could be resurrected -->
-
-<!-- <section>
+<section>
 	<h2><a href="https://github.com/nextstrain/fauna">Fauna</a></h2>
 	<p>Rethink database of virus and titer data</p>
-	<p class="smaller"><i>
-	with Charlton Callender, Sidney Bell and Sarah Murata
-	</i></p>
 </section>
 
 <section>
 	<h2><a href="https://github.com/nextstrain/augur">Augur</a></h2>
 	<p>Build scrips to align sequences, build trees and annotate</p>
-	<p class="smaller"><i>
-	with Sarah Murata and Sidney Bell
-	</i></p>
 </section>
 
 <section>
 	<h2><a href="https://github.com/nextstrain/auspice">Auspice</a></h2>
 	<p>React / D3 visualization of resulting trees</p>
-	<p class="smaller"><i>
-	with Colin Megill
-	</i></p>
-</section> -->
-
-<section>
-	<h3>Visualization refactor (auspice 2.0):</h3>
-	<h3>
+	<p>Major refactor to enable further development at
 		<a href="http://dev.nextstrain.org/">
 			<span class="text-gray">dev.nextstrain.org</span>
 		</a>
-	</h3>
+	</p>
 </section>
-
-<!-- Conclusion. Feel free to revise. -->
 
 <section>
 	<h3>Moving forward, genetically-informed outbreak response requires:</h3>
