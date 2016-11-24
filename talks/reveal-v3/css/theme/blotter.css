@@ -17,7 +17,7 @@ body {
 .reveal {
   font-family: "Lato", sans-serif;
   font-size: 30px;
-  font-weight: 300;  
+  font-weight: 300;
   color: #333; }
 
 ::selection {
@@ -47,7 +47,7 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 3.33em; }
 
 .reveal h2 {
   font-size: 2.11em; }
@@ -317,10 +317,17 @@ body {
   margin-right: auto;
 }
 
+.img-avatar {
+  border-radius: 50% !important;
+  vertical-align: middle !important;
+}
+
 /*********************************************
  * COLORS
  *********************************************/
 
+.text-gray { color: #777777; }
+.text-light-gray { color: #CCCCCC; }
 .c1 { color: #4C90C0; }
 .c2 { color: #5DA8A3; }
 .c3 { color: #75B681; }
@@ -330,4 +337,13 @@ body {
 .c7 { color: #E1A03A; }
 .c8 { color: #E67C32; }
 .c9 { color: #E04929; }
-.text-gray { color: #777777; }
+.c1s { color: #5097BA; }
+.c2s { color: #5DA8A3; }
+.c3s { color: #6EB389; }
+.c4s { color: #83BA70; }
+.c5s { color: #9ABE5C; }
+.c6s { color: #B2BD4D; }
+.c7s { color: #C8B944; }
+.c8s { color: #D9AD3D; }
+.c9s { color: #E49938; }
+.c10s { color: #E67C32; }

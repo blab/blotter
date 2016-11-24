@@ -1,0 +1,234 @@
+---
+layout: talk_reveal3
+title: "Nextstrain.org: Real-Time evolutionary tracking for pathogen surveillance and epidemiological investigation"
+venue: Bethesda, MD
+event: BD2K Open Data Science Symposium
+author: Trevor Bedford and Richard Neher
+draft: true
+---
+
+<!--
+Outline:
+* Phylodynamics and tracking outbreaks with sequencing
+  - example trees for Ebola, starting with Gire et al
+* Key challenges
+  - Publication process slow, not sharing data
+	- Not epidemiologically actionable
+* Our solution
+  - nextstrain.org/ebola/ demoed with photos from the field
+  - nextstrain.org/zika/ demoed with photos from the field
+* Brief technology overview
+  - fauna, augur, auspice wiring diagram
+* What we're building towards
+-->
+
+<!-- Color ramp: ["#5097BA", "#5BA6A7", "#69B091", "#79B77D", "#8BBB6A", "#9EBE5A", "#B2BD4D", "#C4B945", "#D4B13F", "#DFA43B"] -->
+
+<section data-background="#000000">
+	<h3 class="title">{{ page.title }}</h3>
+	<br>
+	<p class="title">
+	Trevor Bedford (@trvrb) and Richard Neher (@richardneher)
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<section>
+	<h3>Spread of epidemics</h3>
+	<p><i>Spread of the plague</i></p>
+</section>
+
+<section>
+	<h3>Spread of epidemics today</h3>
+	<p><i>Spread of swine flu</i></p>
+</section>
+
+<!-- Fight epidemics by learning transmission patterns -->
+<section data-background="/images/talks/snow_cholera_map.jpg">
+</section>
+
+<section data-background="#5BA6A7">
+	<h2 class="title">Sequencing to reconstruct pathogen spread</h2>
+</section>
+
+<!-- Improve these slides by including mutations and haplotype readouts -->
+<section>
+	<h3>Epidemic process</h3>
+	<img class="stretch" src="/images/talks/infection_tree_1.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sample some individuals</h3>
+	<img class="stretch" src="/images/talks/infection_tree_2.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" src="/images/talks/infection_tree_3.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" src="/images/talks/infection_tree_4.png">
+</section>
+
+<section data-background="#79B77D">
+	<h2 class="title">Phylogenetic tracking has the capacity to revolutionize epidemiology</h2>
+</section>
+
+<section>
+	<h3>Detailed understanding of Ebola spread from sequence data</h3>
+	<img class="stretch" src="/images/talks/ebola_mig_tree.png">
+	<div class="citation">
+		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al 2016</a>
+	</div>
+</section>
+
+<!-- ffmpeg -i Untitled.mov -filter_complex "setpts=0.75*PTS" -an -vcodec libx264 ebola_mig_movie.mp4 -->
+<section data-autoplay data-background-video="/images/talks/ebola_mig_movie.mp4">
+</section>
+
+<section>
+	<h2>However, this has mostly been done in a retrospective manner</h2>
+</section>
+
+<section>
+	<h1>
+		<span class="c1s">n</span><span class="c2s">e</span><span class="c3s">x</span><span class="c4s">t</span><span class="c5s">s</span><span class="c6s">t</span><span class="c7s">r</span><span class="c8s">a</span><span class="c9s">i</span><span class="c10s">n</span>
+	</h1>
+	<p>Project to conduct real-time molecular epidemiology and evolutionary analysis of emerging epidemics</p>
+</section>
+
+<section>
+	<h3>Key challenges</h3>
+	<br>
+	<ol>
+		<li>Timely analysis and sharing of results critical</li>
+		<li>Dissemination must be scalable</li>
+		<li>Integrate many data sources</li>
+		<li>Results must be easily interpretable and queryable</li>
+	</ol>
+</section>
+
+<section data-background="#000000">
+	<h1 style="font-weight: 500;">
+		<a href="http://nextstrain.org/ebola/">
+			<span class="c1s">n</span><span class="c2s">e</span><span class="c3s">x</span><span class="c4s">t</span><span class="c5s">s</span><span class="c6s">t</span><span class="c7s">r</span><span class="c8s">a</span><span class="c9s">i</span><span class="c10s">n</span><span class="text-light-gray">.org/ebola/</span>
+		</a>
+	</h1>
+</section>
+
+<section data-background="/images/talks/nextstrain_in_sierra_leone.jpg">
+	<h3 class="title">Rapid on-the-ground sequencing by Ian Goodfellow, Matt Cotten and colleagues</h3>
+	<br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p>
+</section>
+
+<section>
+	<h3>MinION sequencing in Guinea with Nick Loman, Josh Quick, Lauren Cowley and colleagues</h3>
+	<img class="stretch" src="/images/talks/minion_ebola_sequencing.jpg">
+	<div class="citation">
+		<a href="http://www.nature.com/nature/journal/v530/n7589/full/nature16996.html">Quick et al 2016</a>
+	</div>
+</section>
+
+<section>
+	<h3>Zika's arrival and spread in the Americas</h3>
+	<img class="stretch" src="/images/talks/zika_who_map.png">
+	<div class="citation">
+		<a href="http://www.who.int/emergencies/zika-virus/situation-report/17-november-2016/en/">WHO 2016</a>
+	</div>
+</section>
+
+<section data-background="#000000">
+	<h1 style="font-weight: 500;">
+		<a href="http://nextstrain.org/zika/">
+			<span class="c1s">n</span><span class="c2s">e</span><span class="c3s">x</span><span class="c4s">t</span><span class="c5s">s</span><span class="c6s">t</span><span class="c7s">r</span><span class="c8s">a</span><span class="c9s">i</span><span class="c10s">n</span><span class="text-light-gray">.org/zika/</span>
+		</a>
+	</h1>
+</section>
+
+<section>
+	<h3>Nextstrain working as intended as open science resource</h3>
+</section>
+
+<section data-background="#9EBE5A">
+	<h2 class="title">Nextstrain development</h2>
+</section>
+
+<section>
+	<h3>Nextstrain development team</h3>
+	<p>
+		<img width=60 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,
+		<img width=60 class="img-avatar" src="/images/team/trevor-bedford.jpg"> Trevor Bedford,
+		<img width=60 class="img-avatar" src="/images/team/colin-megill.jpg"> Colin Megill,
+		<img width=60 class="img-avatar" src="/images/team/charlton-callender.jpg"> Charlton Callender,
+		<img width=60 class="img-avatar" src="/images/team/sarah-murata.jpg"> Sarah Murata,
+		<img width=60 class="img-avatar" src="/images/team/sidney-bell.jpg"> Sidney Bell
+	</p>
+</section>
+
+<section>
+	<h3>Nextstrain components</h3>
+	<img class="stretch" src="/images/talks/nextstrain_components.png">
+</section>
+
+<section>
+	<h2><a href="https://github.com/nextstrain/fauna">Fauna</a></h2>
+	<p>Rethink database of virus and titer data</p>
+</section>
+
+<section>
+	<h2><a href="https://github.com/nextstrain/augur">Augur</a></h2>
+	<p>Build scrips to align sequences, build trees and annotate</p>
+</section>
+
+<section>
+	<h2><a href="https://github.com/nextstrain/auspice">Auspice</a></h2>
+	<p>React / D3 visualization of resulting trees</p>
+	<p>Major refactor to enable further development at
+		<a href="http://dev.nextstrain.org/">
+			<span class="text-gray">dev.nextstrain.org</span>
+		</a>
+	</p>
+</section>
+
+<section>
+	<h3>Moving forward, genetically-informed outbreak response requires:</h3>
+	<br>
+	<p>
+	<ul>
+		<li>Rapid sharing of sequence data, <i>genetic context critical</i></li>
+		<li>Technologies for rapid diagnostics and sequencing</li>
+		<li>Technologies to rapidly conduct phylogenetic inference</li>
+		<li>Technologies to explore genetic relationships and inform epidemiological investigation</li>
+	</ul>
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+	<br>
+	<p class="smaller"><b>Ebola</b>: data producers, Gytis Dudas, Andrew Rambaut, Nick Loman, Ian Goodfellow, Paul Kellam, Danny Park, Kristian Andersen, Pardis Sabeti</p>
+
+	<p class="smaller"><b>Zika</b>: data producers, Nick Loman, Kristian Andersen, Gytis Dudas, Nuno Faria, Andrew Rambaut, Oliver Pybus, Allison Black, Luiz Alcantara and the rest of the ZiBRA team</p>
+
+	<p class="smaller"><b>Nextstrain</b>: Colin Megill, Charlton Callender, Sarah Murata, Sidney Bell</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="18%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp;
+		<img width="16%" data-src="/images/talks/logo_max_planck.png">
+		&nbsp;
+		<img width="13%" data-src="/images/talks/logo_hhmi.jpg">
+		&nbsp; &nbsp;
+		<img width="15%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="13%" data-src="/images/talks/logo_nih.jpg">
+	</div>
+</section>
+
+<section data-background="#000000">
+</section>
