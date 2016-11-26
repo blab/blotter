@@ -2,7 +2,7 @@
 layout: paper
 title: Strong and tunable nonlinear optomechanical coupling in a low-loss system
 image: /images/papers/sankey-2010-tunable-coupling.png
-authors: Sankey, J. C. and Yang, C. and Zwickl, B. M. and Jayich, A. M. and Harris, J. G. E.
+authors: J.C. Sankey, C. Yang, B.M. Zwickl, A.M. Jayich, J.G.E. Harris 
 year: 2010
 ref: Sankey et al., Nat. Phys. 6, 707 (2010)
 journal: "Nat. Phys. 6, 707 (2010)"
