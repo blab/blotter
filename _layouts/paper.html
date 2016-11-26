@@ -3,11 +3,13 @@ layout: default
 ---
 
 <div class="row">
-	<div class="col-md-12">
-		<div class="media">
+	<div class="media">
+		<div class="col-md-3">
 			{% if page.image %}
-			<img class="pull-left pad-right media-object" src="{{ page.image }}">
+			<img class="pull-left pad-right media-object subpaper-thumbnail" src="{{ page.image }}">
 			{% endif %}
+		</div>
+		<div class="col-md-9">
 			<div class="media-body titlebox">
 				<div class="title media-heading">
 					{{ page.title }}
