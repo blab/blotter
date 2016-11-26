@@ -7,7 +7,7 @@ year: 2008
 ref: Jayich et al., NJP 10, 095008 (2008)
 journal: "NJP 10, 095008 (2008)"
 pdf: /pdfs/papers/jayich-njp-2008.pdf
-doi: http://iopscience.iop.org/article/10.1088/1367-2630/10/9/095008/meta
+doi: 10.1088/1367-2630/10/9/095008
 ---
 
 # Abstract

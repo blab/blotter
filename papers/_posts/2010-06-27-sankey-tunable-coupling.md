@@ -7,7 +7,7 @@ year: 2010
 ref: Sankey et al., Nat. Phys. 6, 707 (2010)
 journal: "Nat. Phys. 6, 707 (2010)"
 pdf: /pdfs/papers/sankey-nature-physics-2010.pdf
-doi: http://dx.doi.org/10.1038/nphys1707
+doi: 10.1038/nphys1707
 ---
 
 # Abstract

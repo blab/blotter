@@ -7,7 +7,7 @@ year: 2008
 ref: Harris et al., SPIE 6907, (2008)
 journal: "SPIE 6907, (2008)"
 pdf: /pdfs/papers/harris-spie-2008.pdf
-doi: http://dx.doi.org/10.1117/12.760993
+doi: 10.1117/12.760993
 ---
 
 # Abstract

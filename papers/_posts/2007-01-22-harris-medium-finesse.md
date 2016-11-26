@@ -7,7 +7,7 @@ year: 2007
 ref: Harris et al., RSI 78, 013107 (2007)
 journal: "RSI 78, 013107 (2007)"
 pdf: /pdfs/papers/harris-rsi-2007.pdf
-doi: http://dx.doi.org/10.1063/1.2405373
+doi: 10.1063/1.2405373
 ---
 
 # Abstract

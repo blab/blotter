@@ -8,7 +8,7 @@ ref: Sankey et al., ICAP Proc., (2008)
 journal: "ICAP Proc., (2009)"
 pdf: /pdfs/papers/sankey-ICAP-2008.pdf
 supplement:
-doi: https://arxiv.org/abs/0811.1343
+doi: arxiv.org/abs/0811.1343
 ---
 
 # Abstract

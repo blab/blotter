@@ -8,7 +8,7 @@ ref: Thompson et al., Nature 452, 72 (2008)
 journal: "Nature 452, 72 (2008)"
 pdf: /pdfs/papers/thompson-nature-2008.pdf
 supplement: /pdfs/papers/thompson-nature-supplement-2008.pdf
-doi: http://dx.doi.org/10.1038/nature06715
+doi: 10.1038/nature06715
 ---
 
 # Abstract

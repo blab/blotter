@@ -7,7 +7,7 @@ year: 2008
 ref: Zwickl et al., APL 92, 103125 (2008)
 journal: "APL 92, 103125 (2008)"
 pdf: /pdfs/papers/zwickl-apl-2008.pdf
-doi: http://scitation.aip.org/content/aip/journal/apl/92/10/10.1063/1.2884191
+doi: 10.1063/1.2884191
 ---
 
 # Abstract

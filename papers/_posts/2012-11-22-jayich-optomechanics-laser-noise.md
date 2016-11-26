@@ -8,7 +8,7 @@ ref: Jayich et al., NJP 14, 115018 (2012)
 journal: "NJP 14, 115018 (2012)"
 pdf: /pdfs/papers/jayich-njp-2012.pdf
 supplement:
-doi: http://stacks.iop.org/1367-2630/14/i=11/a=115018
+doi: 10.1088/1367-2630/14/11/115018
 github:
 ---
 
