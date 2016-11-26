@@ -2,13 +2,13 @@
 layout: paper
 title: Improved "Position Squared" Readout Using Degenerate Cavity Modes
 image: /images/papers/sankey-2009-improved-position-squared.png
-authors: J.C. Sankey, A.M. Jayich, B.M. Zwickl, C. Yang, J.G.E. Harris 
+authors: J.C. Sankey, A.M. Jayich, B.M. Zwickl, C. Yang, J.G.E. Harris
 year: 2008
 ref: Sankey et al., ICAP Proc., (2008)
 journal: "ICAP Proc., (2009)"
 pdf: /pdfs/papers/sankey-ICAP-2008.pdf
 supplement:
-doi: arxiv.org/abs/0811.1343
+doi: 10.1142/9789814273008_0014 
 ---
 
 # Abstract
