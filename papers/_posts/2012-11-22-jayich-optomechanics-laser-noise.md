@@ -2,13 +2,13 @@
 layout: paper
 title: Cryogenic optomechanics with a Si 3 N 4 membrane and classical laser noise
 image: /images/papers/jayich-2012-optomechanics-laser-noise.png
-authors: A M Jayich and J C Sankey and K Børkje and D Lee and C Yang and M Underwood and L Childress and A Petrenko and S M Girvin and J G E Harris
+authors: A.M. Jayich, J.C. Sankey, K. Børkje, D. Lee, C. Yang, M. Underwood, L. Childress, A. Petrenko, S.M. Girvin, J.G.E. Harris
 year: 2012
 ref: Jayich et al., NJP 14, 115018 (2012)
 journal: "NJP 14, 115018 (2012)"
 pdf: /pdfs/papers/jayich-njp-2012.pdf
 supplement:
-doi: http://stacks.iop.org/1367-2630/14/i=11/a=115018
+doi: 10.1088/1367-2630/14/11/115018
 github:
 ---
 
