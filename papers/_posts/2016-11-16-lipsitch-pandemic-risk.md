@@ -5,7 +5,7 @@ image: /images/papers/lipsitch-pandemic-risk.png
 authors: Lipsitch M, Barclay W, Raman R, Russell CJ, Belser JA, Cobey S, Kasson PM, Lloyd-Smith JO, Maurer-Stroh S, Riley S, Beauchemin CAA, Bedford T, Friedrich TC, Handel A, Herfst S, Murcia PR, Roche B, Wilke CO, Russell CA.
 year: 2016
 ref: Lipsitch et al. 2016. eLife.
-journal: "eLife. In press."
+journal: "eLife 5: e18491."
 pdf: /pdfs/papers/lipsitch-pandemic-risk.pdf
 doi: 10.7554/eLife.18491
 ---
