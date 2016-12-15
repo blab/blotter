@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Open Science Prize and a shared scientific endeavour
+title: The Open Science Prize and a shared scientific endeavor
 author: Trevor Bedford
 ---
 
