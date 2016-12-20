@@ -4,7 +4,7 @@ title: William Ortez
 position: Undergraduate
 handle: will_o
 email: williamortez@umail.ucsb.edu
-github: 
+github: williamortez
 image: /images/people/william-ortez.jpg
 alumni: false
 ---
