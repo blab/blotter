@@ -2,12 +2,12 @@
 layout: paper
 title: High quality mechanical and optical properties of commercial silicon nitride membranes
 image: /images/papers/zwickl-2008-membrane.png
-authors: B. M. Zwickl and W. E. Shanks and A. M. Jayich and C. Yang and A. C. Bleszynski Jayich and J. D. Thompson and J. G. E. Harris
+authors: B.M. Zwickl, W.E. Shanks, A.M. Jayich, C. Yang, A.C. Bleszynski Jayich, J.D. Thompson, J.G.E. Harris
 year: 2008
 ref: Zwickl et al., APL 92, 103125 (2008)
 journal: "APL 92, 103125 (2008)"
 pdf: /pdfs/papers/zwickl-apl-2008.pdf
-doi: http://scitation.aip.org/content/aip/journal/apl/92/10/10.1063/1.2884191
+doi: 10.1063/1.2884191
 ---
 
 # Abstract
