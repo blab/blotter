@@ -4,7 +4,7 @@ title: Evolutionary dynamics of infectious hematopoietic necrosis virus in Pacif
 author: Allison Black
 ---
 
-We've just published a paper in [Virus Evolution]() investigating the [evolutionary dynamics of infectious hematopoietic necrosis virus (IHNV) in Pacific salmon](/papers/black-ihnv-dynamics/). This is work that I did during my Master's degree in the [Kurath lab](http://globalhealth.washington.edu/faculty/gael-kurath) and that I continued to develop during the first year of my PhD here in the Bedford lab.
+We've just published a paper in [Virus Evolution](http://ve.oxfordjournals.org/content/2/2/vew034) investigating the [evolutionary dynamics of infectious hematopoietic necrosis virus (IHNV) in Pacific salmon](/papers/black-ihnv-dynamics/). This is work that I did during my Master's degree in the [Kurath lab](http://globalhealth.washington.edu/faculty/gael-kurath) and that I continued to develop during the first year of my PhD here in the Bedford lab.
 
 IHNV is endemic along the Pacific coast of Canada and the United States, from California up to Alaska, and also in the Columbia River Basin. The Columbia River Basin is a large and complex watershed draining most of Washington, Oregon and Idaho, and one of the largest salmon runs in the continental US. There's a fair amount of interest in IHNV because it can cause severe epidemics, with up to 90% mortality rates, that can greatly affect conservation hatcheries and commercial aquaculture. Because there are no treatments for IHNV, a lot of effort goes in to understanding viral transmission dynamics in the hopes of preventing big outbreaks.
 
