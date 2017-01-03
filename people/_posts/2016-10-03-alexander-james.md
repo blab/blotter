@@ -5,7 +5,7 @@ position: Undergraduate
 handle: ak_james
 email: akeenjames@gmail.com
 twitter:
-github:
+github: alexkjames
 scholar:
 image: /images/people/alexander-james.jpg
 calendar:
