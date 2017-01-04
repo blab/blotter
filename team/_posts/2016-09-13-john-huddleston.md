@@ -9,6 +9,7 @@ github: huddlej
 scholar: KCqa_hUAAAAJ
 image: /images/team/john-huddleston.jpg
 calendar: https://calendar.google.com/calendar/embed?src=jlhudd%40uw.edu&ctz=America/Los_Angeles
+alumni: true
 ---
 
 I am a first-year MCB student rotating in the Bedford Lab. I am generally
