@@ -11,10 +11,10 @@ git clone https://github.com/blab/blotter.git
 Then install necessary Ruby dependencies by running `bundle install` from within the `blotter` directory.  After this, the site can be be built with:
 
 ```
-jekyll build
+bundle exec jekyll build
 ```
 
-To view the site, run `jekyll serve` and point a browser to `http://localhost:4000/`.  More information on Jekyll can be found [here](http://jekyllrb.com/).
+To view the site, run `bundle exec jekyll serve` and point a browser to `http://localhost:4000/`.  More information on Jekyll can be found [here](http://jekyllrb.com/).
 
 To include projects, preprocessing scripts are necessary to clone project repos and update Jekyll metadata. This can be accomplished with:
 
