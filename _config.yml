@@ -79,3 +79,4 @@ projects:
   - nextstrain/augur
   - nextstrain/auspice
   - blab/zika-seq
+  - blab/siv-cst
