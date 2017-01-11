@@ -53,6 +53,9 @@ exclude:
   - "projects/nextflu/auspice/reports/*"
   - "projects/nextflu/auspice/js/*"
   - "projects/auspice/src/*"
+  - "projects/siv-cst/beast/main/empiricalTrees/xml/*"
+  - "projects/siv-cst/beast/supplement/discreteTraits/xml/*"
+  - "projects/siv-cst/beast/supplement/empiricalTrees/xml/*"
 
 projects:
   - trvrb/coaltrace
