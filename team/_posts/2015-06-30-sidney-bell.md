@@ -2,6 +2,7 @@
 layout: member
 title: Sidney Bell
 position: PhD student
+handle: sidneymbell
 github: sidneymbell
 email: sidneymb@uw.edu
 image: /images/team/sidney-bell.jpg
