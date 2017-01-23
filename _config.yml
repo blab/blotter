@@ -39,6 +39,8 @@ exclude:
   - "*.tips"
   - "*.trees"
   - "*.txt"
+  - "*.zip"
+  - "*.gz"    
   - "Gemfile"
   - "Gemfile.lock"
   - "projects/nextflu/auspice/index.html"
