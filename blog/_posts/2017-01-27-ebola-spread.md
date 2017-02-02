@@ -5,7 +5,7 @@ link: /papers/dudas-ebola-epidemic-spread/
 author: Gytis Dudas
 ---
 
-We just had a big paper accepted in XXX, which looks at the entirety of the West African Ebola virus epidemic of 2013-2015.
+We just had a big paper accepted in XXX, which looks at the [entirety of the West African Ebola virus epidemic of 2013-2015](/papers/dudas-ebola-epidemic-spread/).
 The project has existed in a variety of incarnations for well over a year with hints here and there of something big in the making, which unsurprisingly is the last bit of work that followed me from my PhD in Edinburgh to Seattle.
 
 <div class="embed-responsive embed-responsive-16by9">
@@ -15,8 +15,11 @@ The project has existed in a variety of incarnations for well over a year with h
 Whereas most publications over the last couple of years have focused on specific regions of the three most affected countries (Sierra Leone, Liberia and Guinea) and over specific time periods, we have analysed all publicly available data (comprising over 5% of all known Ebola virus disease cases!) to arrive at an overarching narrative for the epidemic.
 By using a Bayesian generalised linear model jointly with phylogenetic inference we not only reconstructed the history of the epidemic from its beginning to its end, but also inferred where the virus had been and what factors were associated with its spread.
 Our key findings are that:
+
 - Ebola virus migration largely followed a classic gravity model with international borders acting as potent barriers. Large population centers tended to receive more infected travellers, especially if incoming cases were from locations that were physically closer. However, migration was reduced if locations were in different countries (i.e. separated by an international border) and further apart.
+
 - Regions immediately bordering the three most affected countries, in Guinea-Bissau, Senegal, Mali, and Cote d'Ivoire, were spared their own Ebola outbreaks largely because of their remoteness. By looking into correlates of local Ebola virus proliferation we identified regions of these four neighbouring countries that had the potential to develop large outbreaks, had the virus been introduced.
+
 - The population of Ebola virus in West Africa was comprised of small mobile transmission chains, rather than large sweeping outbreaks. Individual transmission chains had poor persistence within any given location, so migration played a key role in sustaining the epidemic.
 
 Beyond scientific findings there are several important implications of our work as well.
