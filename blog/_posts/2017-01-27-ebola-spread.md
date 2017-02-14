@@ -3,6 +3,7 @@ layout: post
 title: Ebola spread through West Africa
 link: /papers/dudas-ebola-epidemic-spread/
 author: Gytis Dudas
+image: /images/blog/ebola-spread.png
 ---
 
 We just had a big paper accepted in XXX, which looks at the [entirety of the West African Ebola virus epidemic of 2013-2015](/papers/dudas-ebola-epidemic-spread/).
@@ -22,17 +23,19 @@ Our key findings are that:
 
 - The population of Ebola virus in West Africa was comprised of small mobile transmission chains, rather than large sweeping outbreaks. Individual transmission chains had poor persistence within any given location, so migration played a key role in sustaining the epidemic.
 
-Beyond scientific findings there are several important implications of our work as well.
+Beyond science our work exemplifies the slow turnover of ideas that has been taking place in the field.
 First and foremost, the West African epidemic was the first infectious disease epidemic of its kind, where the sequence data were generated, analysed and shared in real time.
 It is a huge step in the right direction and could not possibly have happened without the data collectors' efforts, support and trust.
+I sincerely hope that the collaborative spirit of 2014-2015 lives on for when the next outbreak hits.
 
 Secondly, there is a lot to be said about leveraging cutting edge technologies against challenges like the West African Ebola virus epidemic.
-I doubt we could have learned nearly as much about this epidemic from small regions of the viral genome, as was convention to sequence just years before, were it not for vast advances in sequencing technology.
-Now you can pick and choose a sequencer tailored to your needs, be it identifying rare viral variants within individual patients or bringing a sequencer anywhere you go in your pocket.
+I doubt we could have learned nearly as much about this epidemic from small regions of the viral genome (as was convention for sequencing just years before), nor from a small number of of strains. 
+This wouldn't have happened were it not for vast advances in sequencing technology.
+Now you can pick and choose from any number of sequencing platforms tailored to your needs, be it identifying rare viral variants within individual patients or bringing a sequencer anywhere you go in your pocket.
 
-Lastly, our work joins a list of other publications that highlight how important sequencing is to modern infectious disease outbreak response.
+Lastly, our work is one of many other publications that highlight how important sequencing is to modern infectious disease outbreak response.
 Sequencing is occasionally equated with stamp collecting, which unjustly ignores the unparalleled perspective that sequence data offer into the heart of any outbreak - the history of the pathogen itself.
-A handful of sequences go a long way and our work joins a long list of others that identified the origins of the epidemic, documented unusual patterns of transmission, tracked individual transmission chains in the last stages of the epidemic and linked flare ups of Ebola virus to latent infections, to name a few.
+A handful of sequences go a long way in the right hands, like identifying the origins of the epidemic, documenting unusual patterns of transmission, tracking individual transmission chains in the last stages of the epidemic and linking flare ups of Ebola virus to latent infections, to name a few.
 
 And finally I would like to point out that work of such proportions does not happen in a vacuum.
 Although there were many who have directly or indirectly contributed to this project, Philippe Lemey, Marc Suchard, Trevor Bedford, Andy Tatem, Luiz Max Carvalho and Andrew Rambaut were the real analytical, theoretical and creative masterminds behind the whole thing.
