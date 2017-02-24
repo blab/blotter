@@ -6,7 +6,7 @@ image: /images/blog/sep_2016_nextflu_tree.png
 link: /papers/bedford-sep-2016-flu-report/
 ---
 
-[Richard Neher](https://neherlab.wordpress.com/) and I have compiled another report on [recent patterns of seasonal influenza virus evolution](/papers/bedford-sep-2016-flu-report/) with an eye toward projecting forward to 2016 and 2017 flu seasons. All analyses are best on the nextflu platform. Doing weekly updates on [nextflu](http://nextflu.org/) has forced us to keep pipelines current and has made putting together these reports not such a chore.
+[Richard Neher](https://neherlab.org/) and I have compiled another report on [recent patterns of seasonal influenza virus evolution](/papers/bedford-sep-2016-flu-report/) with an eye toward projecting forward to 2016 and 2017 flu seasons. All analyses are based on the nextflu platform. Doing weekly updates on [nextflu](http://nextflu.org/) has forced us to keep pipelines current and has made putting together these reports not such a chore.
 
 This time around, the biggest news is within H3N2, where we're seeing the rapid spread of a subclade within 3c2.a viruses. This subclade is primarily distinguished by the HA1:171K mutation (along with changes HA2:77V/155E). We predict these viruses will predominate in the future H3N2 population. However, we lack antigenic data to really say whether the vaccine needs updating. It's possible to have this sort genetic evolution without strong antigenic evolution necessitating a vaccine update.
 
