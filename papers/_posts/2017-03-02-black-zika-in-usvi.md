@@ -5,8 +5,8 @@ image: /images/papers/black-zika-in-usvi.png
 authors: Black A, Potter B, Dudas G, Feldstein L, Grubaugh ND, Andersen KG, Ellis BR, Ellis EM, Bedford T.
 year: 2017
 ref: Black et al. 2017. bioRxiv.
-journal: "bioRxiv: XXX."
-doi: 10.1101/XXX
+journal: "bioRxiv: 113100."
+doi: 10.1101/113100
 github: https://github.com/blab/zika-usvi
 pdf: /pdfs/papers/black-zika-in-usvi.pdf
 ---
