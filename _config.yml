@@ -4,7 +4,7 @@ url: http://bedford.io
 
 markdown: redcarpet
 permalink: /:categories/:title/
-future: false
+future: true
 
 redcarpet:
   extensions:
