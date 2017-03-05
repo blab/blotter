@@ -30,18 +30,24 @@ categories:
 				<a href="{{ talk.url }}" class="off">{{ talk.title }}</a>
 			</div>
 			<div class="smallspacer"></div>
+      {% if talk.venue %}
 			<div class="note">
 				{{ talk.event }} at {{ talk.venue }}
-			</div>			
+			</div>
+      {% else %}
+      <div class="note">
+				{{ talk.event }}
+			</div>
+      {% endif %}
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				{{ talk.date | date: "%-d %b %Y" }}
 				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
 			</div>
 			<div class="bigspacer"></div>
-			<div class="spacer"></div>			
+			<div class="spacer"></div>
         </div>
     {% cycle 'close rows': nil, nil, '</div>' %}
-{% endunless %}    
+{% endunless %}
 {% endfor %}
 {% cycle 'close rows': nil, '</div>', '</div>' %}
