@@ -9,7 +9,6 @@ journal: "bioRxiv: 113100."
 doi: 10.1101/113100
 github: https://github.com/blab/zika-usvi
 pdf: /pdfs/papers/black-zika-in-usvi.pdf
-published: false
 ---
 
 # Abstract
