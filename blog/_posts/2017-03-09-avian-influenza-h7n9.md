@@ -34,7 +34,7 @@ Reassortment led to the origin of human H7N9 and continues to play a role during
 
 
 ### Acknowledgements
-A full list of labs and authors who have made data available for analysis in these samples is available in [this spreadsheet](http://data.nextstrain.org/gisaid_acknowledge_table_H7N9.xls). All figures from [nextstrain](http://nextstrain.org). Many thanks to Gytis Dudas, Richard Neher and Trevor Bedford for assistance.
+A full list of labs and authors who have made data available for analysis in these samples is available in [this spreadsheet](http://data.nextstrain.org/flu_h7n9_acknowledgement_table.xls). All figures from [nextstrain](http://nextstrain.org). Many thanks to Gytis Dudas, Richard Neher and Trevor Bedford for assistance.
 
 
 <!-- ### mutations on branches leading to expansion -->
