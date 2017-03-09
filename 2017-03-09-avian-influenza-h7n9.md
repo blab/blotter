@@ -10,8 +10,8 @@ Avian influenza A(H7N9) has resulted in annual epidemics over the past five year
 
 
 ### Nextstrain
-Thanks to the data sharing of the influenza research community through [GISAID](http://platform.gisaid.org), we have been able to analyze over 1200 HA and NA genes and make them available on [nextstrain](http://nextstrain.org/flu/H7N9/HA).
-It is our hope that making these data available to the community in this fashion will aid understanding of this epidemic as it unfolds.
+[Nextstrain](http://nextstrain.org) now has the ability to display phylogenies and geographical data for both the [NA](http://nextstrain.org/flu/H7N9/HA) and [HA](http://nextstrain.org/flu/H7N9/NA) genes, drawn from over 1200 samples covering all five human epidemics of H7N9.
+This analysis was possible thanks to the data sharing of the influenza research community through [GISAID](http://platform.gisaid.org). It is our hope that making these analyses available to the community will aid understanding of this epidemic as it unfolds.
 Please note that the analysis currently presented in nextstrain is preliminary and further research is required.
 
 
@@ -23,6 +23,7 @@ The HA phylogeny indicates that the expansion of a single lineage contributes 86
 ### Insertion in the Protease Cleavage Site
 Highly pathogenic avian influenza viruses are often characterized by insertions in the host protease cleavage site, which enhance the cleavage of HA protein to HA1 and HA2 - a process necessary for infection.
 We find a lineage consisting of four isolates with a four amino-acid insertion (KRTA) in this region, in agreement with (Iuliano _et al._)[https://www.cdc.gov/mmwr/volumes/66/wr/mm6609e2.htm]
+This insertion is not present in any other isolates, and this lineage contributes less than 10% of the sequences from the current epidemic.
 Interestingly, this lineage diverged from the lineage causing most fifth epidemic infections around 2.5 years ago. Despite the lack of expansion during this epidemic, the potential for a highly pathogenic H7N9 variant is worrying and warrants closer inspection.
 
 
