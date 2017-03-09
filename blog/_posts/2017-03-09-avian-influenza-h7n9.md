@@ -22,18 +22,19 @@ The HA phylogeny indicates that the expansion of a single lineage contributes 86
 
 ### Insertion in the Protease Cleavage Site
 Highly pathogenic avian influenza viruses are often characterized by insertions in the host protease cleavage site, which enhance the cleavage of HA protein to HA1 and HA2 - a process necessary for infection.
-We find a lineage consisting of four isolates with a four amino-acid insertion (KRTA) in this region, in agreement with (Iuliano _et al._)[https://www.cdc.gov/mmwr/volumes/66/wr/mm6609e2.htm]
+We find a lineage consisting of four isolates with a four amino-acid insertion (KRTA) in this region, in agreement with [Iuliano et al](https://www.cdc.gov/mmwr/volumes/66/wr/mm6609e2.htm).
 This insertion is not present in any other isolates, and this lineage contributes less than 10% of the sequences from the current epidemic.
-Interestingly, this lineage diverged from the lineage causing most fifth epidemic infections around 2.5 years ago. Despite the lack of expansion during this epidemic, the potential for a highly pathogenic H7N9 variant is worrying and warrants closer inspection.
+Interestingly, this lineage appears to have diverged from the lineage causing most fifth epidemic infections in mid-2014.
+Despite the lack of expansion during this epidemic, the potential for a highly pathogenic H7N9 variant is worrying and warrants closer inspection.
 
 
 ### Reassortment
 ![reassortment](/images/blog/h7n9_tangle.png)
-Reassortment led to the origin of human H7N9 and continues to play a role during the epidemics. The above figure shows that the monophyly in the HA phylogeny, which contributes the majority of fifth epidemic cases, is comprised of at least two NA clades due to reassortment. The isolates containing the protease cleavage site insertion (in HA) are monophyletic in both HA and NA segments.
+Reassortment led to the origin of human H7N9 and continues to play a role during the epidemics. The above figure shows that the current dominant clade in the HA phylogeny, which contributes the majority of fifth epidemic cases, is comprised of at least two NA clades due to reassortment. The isolates containing the protease cleavage site insertion (in HA) are monophyletic in both HA and NA segments.
 
 
 ### Acknowledgements
-A full list of labs and authors who have made data available for analysis in these samples is in [this spreadsheet](http://data.nextstrain.org/gisaid_acknowledge_table_H7N9.xls). All figures from [nextstrain](http://nextstrain.org). Many thanks to Gytis Dudas, Richard Neher and Trevor Bedford for assistance.
+A full list of labs and authors who have made data available for analysis in these samples is available in [this spreadsheet](http://data.nextstrain.org/gisaid_acknowledge_table_H7N9.xls). All figures from [nextstrain](http://nextstrain.org). Many thanks to Gytis Dudas, Richard Neher and Trevor Bedford for assistance.
 
 
 <!-- ### mutations on branches leading to expansion -->
