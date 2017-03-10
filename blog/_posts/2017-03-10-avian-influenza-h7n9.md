@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Preliminary analysis of the fifth epidemic of avian influenza A(H7N9)
+title: Preliminary analysis of the fifth epidemic of avian influenza A/H7N9
 author: James Hadfield
 image: /images/blog/h7n9_geo.png
 ---
@@ -10,7 +10,7 @@ Avian influenza A(H7N9) has resulted in annual epidemics over the past five year
 
 
 ### Nextstrain
-[Nextstrain](http://nextstrain.org) now has the ability to display phylogenies and geographical data for both the [NA](http://nextstrain.org/flu/H7N9/HA) and [HA](http://nextstrain.org/flu/H7N9/NA) genes, drawn from over 1200 samples covering all five human epidemics of H7N9.
+[Nextstrain](http://nextstrain.org) now has the ability to display phylogenies and geographical data for both the [NA](http://nextstrain.org/flu/h7n9/ha) and [HA](http://nextstrain.org/flu/h7n9/na) genes, drawn from over 1200 samples covering all five human epidemics of H7N9.
 This analysis was possible thanks to the data sharing of the influenza research community through [GISAID](http://platform.gisaid.org). It is our hope that making these analyses available to the community will aid understanding of this epidemic as it unfolds.
 Please note that the analysis currently presented in nextstrain is preliminary and further research is required.
 
