@@ -8,27 +8,34 @@ image:
 
 UCSB sophmores [Sam "Bhaskar" Dutt](/people/bhaskar-dutt/) and [William Ortez](/people/william-ortez/) join the group.
 
-
- | ![Sam](/images/people/bhaskar-dutt.jpg)  | ![William](/images/people/william-ortez.jpg)  |
-
-
-img.logo
-{
-display:inline-block;
-margin-left:auto;
-margin-right:auto;
-width:400px;
-height:312px;
-}
-
-
-<div class="image123">
-    <div class="imgContainer">
-        <img src="/images/people/bhaskar-dutt.jpg" height="200" width="200"/>
-        <p>This is image 1</p>
-    </div>
-    <div class="imgContainer">
-        <img class="middle-img" src="/images/people/william-ortez.jpg"/ height="200" width="200"/>
-        <p>This is image 2</p>
-    </div>
+<div class="row">
+	<div class="bigspacer"></div>
+	<div class="bigspacer"></div>
+	<div class="col-md-4 memberbox">
+		<div class="media">
+				<a class="pull-left" href="/people/bhaskar-dutt/">
+				<img width=170 class="media-object" src="/images/people/bhaskar-dutt.jpg">
+				</a>
+			 	<div class="media-body">
+				<div class="head media-heading"><a href="/people/bhaskar-dutt/" class="off">Sam "Bhaskar" Dutt</a></div>
+				<p class="note">Undergraduate</p>
+				</div>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="bigspacer"></div>
+	</div>
+	<div class="col-md-4 memberbox">
+		<div class="media">
+				<a class="pull-left" href="/people/william-ortez/">
+				<img width=170 class="media-object" src="/images/people/william-ortez.jpg">
+				</a>
+			 	<div class="media-body">
+				<div class="head media-heading"><a href="/people/william-ortez/" class="off">William Ortez</a></div>
+				<p class="note">Undergraduate</p>
+				</div>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="bigspacer"></div>
+	</div>
 </div>
+
