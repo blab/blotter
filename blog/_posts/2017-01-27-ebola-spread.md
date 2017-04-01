@@ -3,7 +3,6 @@ layout: post
 title: Ebola spread through West Africa
 link: /papers/dudas-ebola-epidemic-spread/
 author: Gytis Dudas
-image: /images/blog/ebola-spread.png
 ---
 
 We just had a big paper accepted in XXX, which looks at the [entirety of the West African Ebola virus epidemic of 2013-2015](/papers/dudas-ebola-epidemic-spread/).
@@ -12,6 +11,7 @@ The project has existed in a variety of incarnations for well over a year with h
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/eWnIhWUpQiQ"></iframe>
 </div>
+<br>
 
 Whereas most publications over the last couple of years have focused on specific regions of the three most affected countries (Sierra Leone, Liberia and Guinea) and over specific time periods, we have analysed all publicly available data (comprising over 5% of all known Ebola virus disease cases!) to arrive at an overarching narrative for the epidemic.
 By using a Bayesian generalised linear model jointly with phylogenetic inference we not only reconstructed the history of the epidemic from its beginning to its end, but also inferred where the virus had been and what factors were associated with its spread.
@@ -29,7 +29,7 @@ It is a huge step in the right direction and could not possibly have happened wi
 I sincerely hope that the collaborative spirit of 2014-2015 lives on for when the next outbreak hits.
 
 Secondly, there is a lot to be said about leveraging cutting edge technologies against challenges like the West African Ebola virus epidemic.
-I doubt we could have learned nearly as much about this epidemic from small regions of the viral genome (as was convention for sequencing just years before), nor from a small number of of strains. 
+I doubt we could have learned nearly as much about this epidemic from small regions of the viral genome (as was convention for sequencing just years before), nor from a small number of of strains.
 This wouldn't have happened were it not for vast advances in sequencing technology.
 Now you can pick and choose from any number of sequencing platforms tailored to your needs, be it identifying rare viral variants within individual patients or bringing a sequencer anywhere you go in your pocket.
 
