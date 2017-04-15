@@ -1,15 +1,14 @@
 ---
 layout: talk_reveal3
-title: Bedford lab projects
+title: Viral phylodynamics
 venue: Fred Hutch
 event: Comp Bio Symposium
 author: Trevor Bedford
-draft: true
 ---
 
-<!-- 10 minutes for talk, 5 minutes for questions -->
+<!-- 15 minutes for talk, 5 minutes for questions -->
 
-<!-- Color ramp: ["#5097BA", "#5BA6A7", "#69B091", "#79B77D", "#8BBB6A", "#9EBE5A", "#B2BD4D", "#C4B945", "#D4B13F", "#DFA43B"] -->
+<!-- TREVOR TALKS FOR 5 MINUTES -->
 
 <section data-background="#000000">
 	<h2 class="title">{{ page.title }}</h2>
@@ -37,79 +36,147 @@ draft: true
 </section>
 
 <section>
-	<h2>Tracking geographic spread of the Ebola epidemic</h2>
-	<p>
-		<img width=60 class="img-avatar" src="/images/team/gytis-dudas.jpg"> Gytis Dudas
-	</p>
+	<h2>Broad scale patterns</h2>
+</section>
+
+<section>
+	<h3>Global spread of influenza</h3>
+	<img class="stretch" src="/images/talks/pathogen_phylogeny_flu.png">
 	<div class="citation">
-		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
+		<a href="http://bedford.io/papers/bedford-global-circulation/">Bedford et al 2015</a>
 	</div>
 </section>
 
 <section>
-	<h3>Sequencing of 1610 Ebola virus genomes collected during the 2013-2016 West African epidemic</h3>
-	<img class="stretch" data-src="/images/talks/ebola_mig_sampling.png">
+	<h3>Spread of Ebola in West Africa</h3>
+	<div style="vertical-align: bottom; display: table-cell;">
+		<img width="49%" src="/images/talks/ebola_mig_tree.png">
+		&nbsp;
+		<img width="49%" src="/images/talks/ebola_mig_geo_tree.png">
+	</div>
 	<div class="citation">
-		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al 2016</a>
+		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al 2017</a>
 	</div>
 </section>
 
 <section>
-	<h3>Phylogenetic reconstruction of evolution and spread</h3>
-	<img class="stretch" data-src="/images/talks/ebola_mig_tree.png">
+	<h2>Fine scale patterns</h2>
+</section>
+
+<section>
+	<h2>Local spread of Zika in Florida</h2>
+	<p class="smaller"><i>
+	with Kristian Andersen, Nathan Grubaugh, Jason Ladner, Gustavo Palacios, Sharon Isern, Oli Pybus,
+	Moritz Kraemer, Gytis Dudas, Amanda Tan, Karthik Gangavarapu, Michael Wiley, Stephen White,
+	Julien Thézé, Scott Michael, Leah Gillis, Pardis Sabeti, and many others
+	</i></p>
 	<div class="citation">
-		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al 2016</a>
+		<a href="/papers/grubaugh-zika-in-florida/">Grubaugh et al. 2017</a>
 	</div>
 </section>
 
 <section>
-	<h3>Tracking migration events</h3>
-	<img class="stretch" data-src="/images/talks/ebola_mig_geo_tree.png">
+	<h3>Outbreak of locally-acquired infections focused in Miami-Dade county</h3>
+	<img class="stretch" src="/images/talks/zika_florida_epi_timeseries.png">
 	<div class="citation">
-		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al 2016</a>
+		<a href="/papers/grubaugh-zika-in-florida/">Grubaugh et al. 2017</a>
 	</div>
 </section>
-
-<!-- Possibly drop for time -->
-<section>
-	<h3>Spatial structure at the country level</h3>
-	<img class="stretch" data-src="/images/talks/ebola_mig_exploded_tree.png">
-	<div class="citation">
-		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al 2016</a>
-	</div>
-</section>
-
-<!-- Possibly drop for time -->
-<section>
-	<h3>Substantial mixing at the regional level</h3>
-	<img class="stretch" data-src="/images/talks/ebola_mig_exploded_tree_regions_sierra_leone.png">
-	<div class="citation">
-		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al 2016</a>
-	</div>
-</section>
-
-<!-- Possibly drop for time -->
-<section>
-	<h3>Regional outbreaks due to multiple introductions</h3>
-	<img class="stretch" data-src="/images/talks/ebola_mig_clusters_sierra_leone.png">
-	<div class="citation">
-		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al 2016</a>
-	</div>
-</section>
-
-<!-- ffmpeg -i Untitled.mov -filter_complex "setpts=0.75*PTS" -an -vcodec libx264 ebola_mig_movie.mp4 -->
-<section data-autoplay data-background-video="/images/talks/ebola_mig_movie.mp4">
-</section>
-
-
 
 <section>
-	<h3>However, this has mostly been done in a retrospective manner</h3>
-	<p class="smaller">(with some notable exceptions, ala Kristian's recent Zika work)</p>
-	<img class="stretch" data-src="/images/talks/ebola_sampling_rugplots.png">
+	<h3>Phylogeny shows a surprising degree of clustering</h3>
+	<img class="stretch" src="/images/talks/zika_florida_tree.png">
 	<div class="citation">
-		Dudas and Rambaut 2016
+		<a href="/papers/grubaugh-zika-in-florida/">Grubaugh et al. 2017</a>
 	</div>
+</section>
+
+<section>
+	<h3>Clustering suggests fewer, longer transmission chains and higher <i>R</i><sub>0</sub></h3>
+	<img class="stretch" src="/images/talks/zika_florida_r0.png">
+	<div class="citation">
+		<a href="/papers/grubaugh-zika-in-florida/">Grubaugh et al. 2017</a>
+	</div>
+</section>
+
+<section>
+	<h3>Flow of infected travelers greatest from Caribbean</h3>
+	<img class="stretch" src="/images/talks/zika_florida_travel_patterns.png">
+	<div class="citation">
+		<a href="/papers/grubaugh-zika-in-florida/">Grubaugh et al. 2017</a>
+	</div>
+</section>
+
+<section>
+	<h3>Southern Florida has high potential for <i>Aedes</i> borne outbreaks</h3>
+	<img class="stretch" src="/images/talks/zika_florida_suitability.png">
+	<div class="citation">
+		<a href="/papers/grubaugh-zika-in-florida/">Grubaugh et al. 2017. bioRxiv.</a>
+	</div>
+</section>
+
+<section data-background="#000000">
+</section>
+
+<!-- ALLI TALKS FOR 5 MINUTES -->
+<!-- Alli: Do whatever you'd like here. Don't feel like you need to keep any of these slides -->
+
+<section>
+	<h3>Zika's arrival and spread in the Americas</h3>
+	<img class="stretch" src="/images/talks/zika_who_map.png">
+	<div class="citation">
+		<a href="http://www.who.int/emergencies/zika-virus/situation-report/17-november-2016/en/">WHO 2016</a>
+	</div>
+</section>
+
+<section>
+	<h2>Tracking origins of the Zika epidemic</h2>
+	<p class="smaller"><i>
+	with Nuno Faria, Nick Loman, Oli Pybus, Luiz Alcantara, Ester Sabino, Josh Quick, Ingra Morales, Julien Thézé,
+	Marcio Nunes, Jacqueline de Jesus, Marta Giovanetti, Moritz Kraemer, Sarah Hill and many others
+	</i></p>
+	<div class="citation">
+		<a href="/papers/faria-zika-in-brazil/">Faria et al. 2017. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Road trip through northeast Brazil to collect samples and sequence</h3>
+	<img class="stretch" src="/images/talks/zika_zibra_roadtrip_samples.jpg">
+</section>
+
+<section>
+	<h3>Case reports and diagnostics suggest initiation in northeast Brazil</h3>
+	<img class="stretch" src="/images/talks/zika_zibra_epi_timeseries.png">
+	<div class="citation">
+		<a href="/papers/faria-zika-in-brazil/">Faria et al. 2017</a>
+	</div>
+</section>
+
+<section>
+	<h3>Sequencing shows accumulating genetic diversity</h3>
+	<img class="stretch" src="/images/talks/zika_zibra_sequencing.png">
+	<div class="citation">
+		<a href="/papers/faria-zika-in-brazil/">Faria et al. 2017</a>
+	</div>
+</section>
+
+<section>
+	<h3>Phylogeny infers an origin in northeast Brazil</h3>
+	<img class="stretch" src="/images/talks/zika_zibra_tree.png">
+	<div class="citation">
+		<a href="/papers/faria-zika-in-brazil/">Faria et al. 2017</a>
+	</div>
+</section>
+
+<section data-background="#000000">
+</section>
+
+<!-- JAMES TALKS FOR 5 MINUTES -->
+<!-- James: Do whatever you'd like here. Don't feel like you need to keep any of these slides -->
+
+<section data-background="#9EBE5A">
+	<h3 class="title">Important analyses, let's make them more rapid and more automated</h3>
 </section>
 
 <section>
@@ -120,15 +187,21 @@ draft: true
 	<br>
 	<p>
 		<img width=50 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,
+		<img width=50 class="img-avatar" src="/images/team/trevor-bedford.jpg"> Trevor Bedford,
 		<img width=50 class="img-avatar" src="/images/team/colin-megill.jpg"> Colin Megill,
-		<img width=50 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,
 		<br>
-		<img width=50 class="img-avatar" src="/images/team/charlton-callender.jpg"> Charlton Callender,
+		<img width=50 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,
 		<img width=50 class="img-avatar" src="/images/team/sidney-bell.jpg"> Sidney Bell,
 		<img width=50 class="img-avatar" src="/images/team/barney-potter.jpg"> Barney Potter,
 		<br>
+		<img width=50 class="img-avatar" src="/images/team/charlton-callender.jpg"> Charlton Callender,
 		<img width=50 class="img-avatar" src="/images/team/sarah-murata.jpg"> Sarah Murata,
 	</p>
+</section>
+
+<section>
+	<h3>Nextstrain architecture</h3>
+	<img class="stretch" src="/images/talks/nextstrain_components.png">
 </section>
 
 <section data-background="#000000">
@@ -139,66 +212,43 @@ draft: true
 	</h1>
 </section>
 
-<section data-background="/images/talks/nextstrain_ebola_tree_2017_03_04.png">
-</section>
-
-<section data-autoplay data-background-video="/images/talks/nextstrain_ebola_tree_transitions.mp4">
-</section>
-
-<section data-background="/images/talks/nextstrain_ebola_map_2017_03_04.png">
-</section>
+<!-- Live demo of Ebola and Zika -->
 
 <section data-background="/images/talks/nextstrain_in_sierra_leone.jpg">
 	<h3 class="title">Rapid on-the-ground sequencing by Ian Goodfellow, Matt Cotten and colleagues</h3>
 	<br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p>
 </section>
 
-<section>
-	<h2>Now with the Zika epidemic, we have the possibility of doing this in a closer to real-time fashion</h2>
-</section>
-
-<section>
-	<h3>Zika's arrival and spread in the Americas</h3>
-	<img class="stretch" src="/images/talks/zika_who_map.png">
-	<div class="citation">
-		<a href="http://www.who.int/emergencies/zika-virus/situation-report/17-november-2016/en/">WHO 2016</a>
-	</div>
-</section>
-
-<section data-background="/images/talks/nextstrain_zika_tree_2017_03_04.png">
-</section>
-
-<section data-background="/images/talks/nextstrain_zika_map_regions_2017_03_04.png">
-</section>
-
-<section data-background="/images/talks/nextstrain_zika_map_2017_03_04.png">
+<section data-background="#B2BD4D">
+	<h3 class="title">Desired analytics are pathogen specific and tied to response measures</h3>
 </section>
 
 <section>
 	<h3>Acknowledgements</h3>
-	<br>
-	<p class="smaller"><b>Ebola</b>: data producers, Gytis Dudas, Andrew Rambaut, Luiz Carvalho, Philippe Lemey,
-	Marc Suchard, Andrew Tatem, Nick Loman, Ian Goodfellow, Matt Cotten, Paul Kellam, Kristian Andersen,
-	Pardis Sabeti, many others</p>
 
-	<p class="smaller"><b>Zika</b>: data producers, Kristian Andersen, Nathan Grubaugh, Nick Loman, Nuno Faria,
-	Oliver Pybus, Josh Quick, Allison Black, Gytis Dudas, many others</p>
+	<p class="smaller"><b>Zika in Florida</b>: Kristian Andersen, Nathan Grubaugh, Jason Ladner, Gustavo Palacios,
+	Sharon Isern, Oli Pybus, Moritz Kraemer, Gytis Dudas, Amanda Tan, Karthik Gangavarapu, Michael Wiley, Stephen White,
+	Julien Thézé, Scott Michael, many others</p>
 
-	<p class="smaller"><b>Nextstrain</b>: Richard Neher, Colin Megill, James Hadfield, Charlton Callender,
-	Sarah Murata, Sidney Bell, Barney Potter</p>
+	<p class="smaller"><b>Zika in Brazil</b>: Nuno Faria, Nick Loman, Oli Pybus, Luiz Alcantara, Ester Sabino,
+	Josh Quick, Ingra Morales, Julien Thézé, Marcio Nunes, Jacqueline de Jesus, Marta Giovanetti, Moritz Kraemer,
+	Sarah Hill, many others</p>
+
+	<p class="smaller"><b>Nextstrain</b>: Richard Neher, Colin Megill, James Hadfield, Sidney Bell, Barney Potter,
+	Charlton Callender, Sarah Murata</p>
 
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
-		<img width="16%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		<img width="15%" data-src="/images/talks/logo_fred_hutch_vertical.png">
 		&nbsp; &nbsp;
-		<img width="12%" data-src="/images/talks/logo_pew.png">
+		<img width="11%" data-src="/images/talks/logo_pew.png">
 		&nbsp; &nbsp;
-		<img width="11%" data-src="/images/talks/logo_hhmi.jpg">
+		<img width="10%" data-src="/images/talks/logo_hhmi.jpg">
 		&nbsp; &nbsp;
-		<img width="13%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		<img width="12%" data-src="/images/talks/logo_wellcome_trust.jpg">
 		&nbsp; &nbsp;
-		<img width="11%" data-src="/images/talks/logo_nih.jpg">
+		<img width="10%" data-src="/images/talks/logo_nih.jpg">
 		&nbsp; &nbsp;
-		<img width="16%" data-src="/images/talks/logo_osp.jpg">
+		<img width="15%" data-src="/images/talks/logo_osp.jpg">
 	</div>
 </section>
 
