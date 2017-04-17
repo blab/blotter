@@ -14,6 +14,8 @@ Then install necessary Ruby dependencies by running `bundle install` from within
 bundle exec jekyll build
 ```
 
+(If you are getting errors at this stage, it may be due to your version of `bundle`. Try `gem uninstall bundler` + `gem install bundler -v 1.13.1`.)
+
 To view the site, run `bundle exec jekyll serve` and point a browser to `http://localhost:4000/`.  More information on Jekyll can be found [here](http://jekyllrb.com/).
 
 To include projects, preprocessing scripts are necessary to clone project repos and update Jekyll metadata. This can be accomplished with:
