@@ -44,7 +44,7 @@ Outline
 	<img class="stretch" src="/images/talks/spread_of_swine_flu.gif">
 </section>
 
-<section data-background="#5BA6A7">
+<section data-background="#5097BA">
 	<h2 class="title">Sequencing to reconstruct pathogen spread</h2>
 </section>
 
@@ -92,7 +92,7 @@ Outline
 	</div>
 </section>
 
-<section data-background="#69B091">
+<section data-background="#5BA6A7">
 	<h2 class="title">Phylogenetic tracking has the capacity to revolutionize epidemiology</h2>
 </section>
 
@@ -107,7 +107,7 @@ Outline
 	</p>
 </section>
 
-<section data-background="#79B77D">
+<section data-background="#69B091">
 	<h2 class="title">Ebola</h2>
 </section>
 
@@ -211,7 +211,7 @@ Outline
 		international borders, in which spread is driven by short-lived migratory clusters</h3>
 </section>
 
-<section data-background="#8BBB6A">
+<section data-background="#79B77D">
 	<h2 class="title">Zika</h2>
 </section>
 
@@ -322,10 +322,10 @@ Outline
 	</div>
 </section>
 
-<section data-background="/images/talks/zika_usvi_island_beach.jpg">
+<section data-background="/images/talks/zika_zibra_alli_minion_loading.jpg">
 </section>
 
-<section data-background="/images/talks/zika_zibra_alli_minion_loading.jpg">
+<section data-background="/images/talks/zika_usvi_island_beach.jpg">
 </section>
 
 <section>
@@ -336,7 +336,7 @@ Outline
 <section data-background="/images/talks/zika_usvi_nextstrain_map.png">
 </section>
 
-<section data-background="#9EBE5A">
+<section data-background="#8BBB6A">
 	<h3 class="title">Important analyses, let's make them more rapid and more automated</h3>
 </section>
 
@@ -361,11 +361,11 @@ Outline
 	<p>
 		<img width=50 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,
 		<img width=50 class="img-avatar" src="/images/team/trevor-bedford.jpg"> Trevor Bedford,
-		<img width=50 class="img-avatar" src="/images/team/colin-megill.jpg"> Colin Megill,
-		<br>
 		<img width=50 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,
-		<img width=50 class="img-avatar" src="/images/team/charlton-callender.jpg"> Charlton Callender,
+		<br>
+		<img width=50 class="img-avatar" src="/images/team/colin-megill.jpg"> Colin Megill,
 		<img width=50 class="img-avatar" src="/images/team/sidney-bell.jpg"> Sidney Bell,
+		<img width=50 class="img-avatar" src="/images/team/charlton-callender.jpg"> Charlton Callender,
 		<br>
 		<img width=50 class="img-avatar" src="/images/team/barney-potter.jpg"> Barney Potter,
 		<img width=50 class="img-avatar" src="/images/team/sarah-murata.jpg"> Sarah Murata,
@@ -407,6 +407,18 @@ Outline
 </section>
 
 <section style="text-align: left;">
+	<h3>Example augur pipeline for 1600 Ebola genomes</h3>
+	<p>
+	<ul>
+		<li>Align with MAFFT (XXX minutes)</li>
+		<li>Build ML tree with RAxML (XXX minutes)</li>
+		<li>Infer ML temporally-resolved tree with TreeTime (XXX minutes)</li>
+		<li>Infer ML geographic ancestry with TreeTime (XXX minutes)</li>
+	</ul>
+	</p>
+</section>
+
+<section style="text-align: left;">
 	<h2><a href="https://github.com/nextstrain/auspice">Auspice</a></h2>
 	<p>
 		<b>Web visualization of resulting trees</b>
@@ -415,11 +427,7 @@ Outline
 	<ul>
 		<li>Interactive data exploration and filtering</li>
 		<li>Framework through React / D3</li>
-		<li>Major refactor to enable further development at
-			<a href="http://dev.nextstrain.org/">
-				<span class="text-gray">dev.nextstrain.org</span>
-			</a>
-		</li>
+		<li>Connects phylogeny, geography and genotypes</li>
 	<ul>
 	</p>
 </section>
@@ -439,22 +447,20 @@ Outline
 	<br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p>
 </section>
 
-<section data-background="#B2BD4D">
+<section data-background="#9EBE5A">
 	<h3 class="title">Desired analytics are pathogen specific and tied to response measures</h3>
 </section>
 
 <section>
 	<h3>Acknowledgements</h3>
 	<br>
-	<p class="smaller"><b>Ebola</b>: data producers, Gytis Dudas, Andrew Rambaut, Luiz Carvalho, Philippe Lemey,
-	Marc Suchard, Andrew Tatem, Nick Loman, Ian Goodfellow, Matt Cotten, Paul Kellam, Kristian Andersen,
-	Pardis Sabeti, many others</p>
+	<p class="smaller"><b>Ebola</b>: Gytis Dudas, Andrew Rambaut, Luiz Carvalho, Philippe Lemey,
+	Marc Suchard, Andrew Tatem, Nick Loman, Ian Goodfellow, Matt Cotten, Paul Kellam,
+	Kristian Andersen, Pardis Sabeti, many others</p>
 
-	<p class="smaller"><b>Zika</b>: data producers, Nick Loman, Nuno Faria,	Oliver Pybus, Josh Quick,
-	Allison Black, Kristian Andersen, Nathan Grubaugh, Gytis Dudas, many others</p>
+	<p class="smaller"><b>Zika</b>: Nick Loman, Nuno Faria,	Oliver Pybus, Josh Quick, Kristian Andersen, Nathan Grubaugh, Jason Ladner, Gustavo Palacios, Sharon Isern, Gytis Dudas, Allison Black, Barney Potter, Esther Ellis, many others</p>
 
-	<p class="smaller"><b>Nextstrain</b>: Richard Neher, Colin Megill, James Hadfield, Charlton Callender,
-	Sarah Murata, Sidney Bell, Barney Potter</p>
+	<p class="smaller"><b>Nextstrain</b>: Richard Neher, James Hadfield, Colin Megill, Sidney Bell, Charlton Callender, Barney Potter, Sarah Murata</p>
 
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
 		<img width="16%" data-src="/images/talks/logo_fred_hutch_vertical.png">
