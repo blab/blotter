@@ -1,12 +1,12 @@
 ---
 layout: paper
-title: Epidemic establishment and cryptic transmission of Zika virus in Brazil and the Americas
+title: Establishment and cryptic transmission of Zika virus in Brazil and the Americas
 image: /images/papers/faria-zika-in-brazil.png
 authors: Faria NR, Quick J, Morales I, Thézé J, Jesus JG, Giovanetti M, Kraemer MUG, Hill SC, Black A, da Costa AC, Franco LC, Silva SP, Wu C-H, Ragwhani J, Cauchemez S, du Plessis L, Verotti MP, Oliveira WK, Carmo EH, Coelho GE, Santelli ACFS, Vinhal LC, Henriques CMP, Simpson J, Loose M, Andersen KG, Grubaugh N, Somasekar S, Chiu CY, Lewis-Ximenez LL, Baylis SA, Chieppe AO, Aguiar SF, Fernandes CA, Lemos PS, Nascimento BLS, Monteiro HAO, Siqueira IC, de Queiroz MGL, Souza TR, Bezerra JF, Lemos MR, Pereira GF, Teixeira DLF, Moura LC, Dhalia R, França RF, Magalhães T, Marques ET, Jaenish T, Wallau GL, de Lima MC, Nascimento V, de Cerqueira EM, de Lima MM, Mascarenhas DL, Neto JPM, Levin AS, Tozetto-Mendoza TR, Fonseca SN, Mendes-Correa MC, Milagres FP, Segurado A, Holmes EC, Rambaut A, Bedford T, Teixeira MNR, Sabino EC, Alcantara LCJ, Loman N, Pybus OG.
 year: 2017
-ref: Faria et al. 2017. bioRxiv.
-journal: "bioRxiv: 105171."
-doi: 10.1101/105171
+ref: Faria et al. 2017. Nature.
+journal: "Nature. In press."
+doi: 10.1038/nature22401
 pdf: /pdfs/papers/faria-zika-in-brazil.pdf
 ---
 

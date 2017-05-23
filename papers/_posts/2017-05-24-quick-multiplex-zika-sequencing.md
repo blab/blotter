@@ -4,9 +4,9 @@ title: Multiplex PCR method for MinION and Illumina sequencing of Zika and other
 image: /images/papers/quick-multiplex-zika-sequencing.png
 authors: Quick J, Grubaugh ND, Pullan ST, Claro IM, Smith AD, Gangavarapu K, Oliveira G, Robles-Sikisaka R, Rogers TF, Beutler NA, Burton DR, Lewis-Ximenez LL, Goes de Jesus J, Giovanetti M, Hill S, Black A, Bedford T, Carroll MW, Nunes M, Alcantara LCJ, Sabino EC, Baylis SA, Faria N, Loose M, Simpson JT, Pybus OG, Andersen KG, Loman NJ
 year: 2017
-ref: Quick et al. 2017. bioRxiv.
-journal: "bioRxiv: 098913."
-doi: 10.1101/098913
+ref: Quick et al. 2017. Nat Protoc.
+journal: "Nat Protoc. In press."
+doi: 10.1038/nprot.2017.066
 pdf: /pdfs/papers/quick-multiplex-zika-sequencing.pdf
 ---
 

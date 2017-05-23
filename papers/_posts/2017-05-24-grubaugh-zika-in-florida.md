@@ -1,12 +1,12 @@
 ---
 layout: paper
-title: Multiple introductions of Zika virus into the United States revealed through genomic epidemiology
+title: Genomic epidemiology reveals multiple introductions of Zika virus into the United States
 image: /images/papers/grubaugh-zika-in-florida.png
 authors: Grubaugh ND, Ladner JT, Kraemer MUG, Dudas G, Tan AL, Gangavarapu K, Wiley MR, White S, Thézé J, Magnani DM, Prieto K, Reyes D, Bingham A, Paul LM, Robles-Sikisaka R, Oliveira G, Pronty D, Metsky HC, Baniecki ML, Barnes KG, Chak B, Freije CA, Gladden-Young A, Gnirke A, Luo C, MacInnis B, Matranga CB, Park DJ, Qu J, Schaffner SF, Tomkins-Tinch C, West KL, Winnicki SM, Wohl S, Yozwiak NL, Quick J, Fauver JR, Khan K, Brent SE, Reiner RC, Lichtenberger PN, Ricciardi M, Bailey VK, Watkins DI, Cone MR, Kopp EW, Hogan KN, Cannons AC, Jean R, Garry RF, Loman NJ, Faria NR, Porcelli MC, Vasquez C, Nagle ER, Cummings DAT, Stanek D, Rambaut A, Sanchez-Lockhart M, Sabeti PC, Gillis LD, Michael SF, Bedford T, Pybus OG, Isern S, Palacios G, Andersen KG.
 year: 2017
-ref: Grubaugh et al. 2017. bioRxiv.
-journal: "bioRxiv: 104794."
-doi: 10.1101/104794
+ref: Grubaugh et al. 2017. Nature.
+journal: "Nature. In press."
+doi: 10.1038/nature22400
 pdf: /pdfs/papers/grubaugh-zika-in-florida.pdf
 ---
 
