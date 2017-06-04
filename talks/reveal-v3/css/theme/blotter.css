@@ -302,6 +302,10 @@ body {
 	font-size: larger;
 }
 
+.reveal .even-smaller {
+	font-size: 75%;
+}
+
 .citation {
   position: absolute;
   bottom: 0px;
