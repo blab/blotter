@@ -1,11 +1,10 @@
 ---
 layout: member
 title: Stephanie Stacy
-position: Undergraduate
+position: Research assistant
 handle: stacyste
 github: stacyste
 image: /images/team/stephanie-stacy.jpg
-alumni: true
 ---
 
-Stephanie is pursuing a BA in Statistics / Psychology from Williams College. She joined the lab as a [SURP undergraduate intern](https://www.fredhutch.org/en/education-training/undergraduate-students.html) for summer 2016. In her internship, she worked on using the coalescent to [infer numbers of missing cases from pathogen sequence data](/projects/unsampled/).
+Stephanie graduated from Williams College with a BA in Statistics / Psychology and is joining the UCLA Statistics as PhD student in fall 2017. She spent summer 2016 in the lab as a [SURP undergraduate intern](https://www.fredhutch.org/en/education-training/undergraduate-students.html) and continues in summer 2017 as a research assistant. In her internship and as research assistant, she worked on using the coalescent to [infer numbers of missing cases from pathogen sequence data](/projects/unsampled/).
