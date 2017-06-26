@@ -51,6 +51,22 @@ Outline
 	<img class="stretch" src="/images/talks/cluster_r0_distribution.png">
 </section>
 
+<section>
+	<h3>Generative model</h3>
+	<p>Transmission chains: $\mathbf{C} = (c_1, \ldots, c_K)$</p>
+	<p>Sequence clusters: $\mathbf{S} = (s_1, \ldots, s_K)$</p>
+	<p>Binomial sampling: $P(s_i \, | \, c_i, \psi) = \binom{c_i}{s_i} \psi^s_i (1-\psi)^{c_i-s_i}$</p>
+	<p>Full model: $P(\theta \, | \, M, \mathbf{S}) \propto
+		P(\mathbf{S} \, | \, \mathbf{C}, \psi) \;
+		P(M \, | \, N, \rho) \;
+		P(\mathbf{C}, N \, | \, R_0, \omega, k) \;
+		P(\mathbf{C}, R_0, \omega, \rho, \psi)$</p>
+</section>
+
+<section>
+	<h3>Monte Carlo sampling and Approximate Bayesian Computation</h3>
+</section>
+
 <!-- Zika -->
 
 <section>
@@ -206,7 +222,7 @@ Outline
 	<ul>
 		<li class="title">Nipah virus (fruit bats / pigs, Southeast Asia)</li>
 		<li class="title">Lassa virus (rodents, West Africa)</li>
-		<li class="title">Avian influenza (birds, mainland China)</li>		
+		<li class="title">Avian influenza (birds, mainland China)</li>
 	</ul>
 	</p>
 </section>
