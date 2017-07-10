@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+  <head>
+    <style>
+
+      .node {
+        stroke: #777;
+        stroke-width: 1.5px;
+        fill: #5097BA;
+      }
+
+    </style>
+  </head>
+
+  <body style="background-color:#fff;">
+
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+
+    <script>
+
+    </script>
+
+    <svg>
+    </svg>
+
+    <script>
+
+      var width = parseInt(d3.select("body").style("width"), 10),
+        height = width / 2;
+
+      var svg = d3.select("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+      var data = [ {x: 0, y: 0} ];
+
+      var xScale = d3.scaleLinear()
+        .domain([-1, 1])
+        .range([0, width]);
+
+      var yScale = d3.scaleLinear()
+        .domain([-1, 1])
+        .range([0, height]);
+
+      var nodes = svg.selectAll(".node")
+        .data(data, function(d) { return d; });
+
+      nodes.enter().append("circle")
+        .attr("class", "node")
+        .attr("cx", function(d) { return xScale(d.x)} )
+        .attr("cy", function(d) { return yScale(d.y)} )
+        .attr("r", 5);
+
+      var step = 0;
+
+      var timer = d3.interval(function(elapsed) {
+
+        var liveData = data.filter(function(d){
+          return d.x == step;
+        })
+
+        var newData = liveData.map(function(d) {
+          return {x: step + 1, y: 0};
+        });
+
+        data = data.concat(newData);
+
+        var b = slidingBounds(data);
+        xScale.domain([b.xMin - 1, b.xMax + 1]);
+        yScale.domain([b.yMin - 1, b.yMax + 1]);
+
+        nodes.data(newData).enter().append("circle")
+          .attr("class", "node")
+          .attr("cx", function(d) { return xScale(d.x - 1)} )
+          .attr("cy", function(d) { return yScale(d.y)} )
+          .attr("r", 5);
+
+        d3.selectAll(".node").transition().duration(1000).ease(d3.easeLinear)
+          .attr("cx", function(d) { return xScale(d.x)} )
+          .attr("cy", function(d) { return yScale(d.y)} );
+
+        step = step + 1;
+
+      }, 1000);
+
+      function fullBounds(data) {
+        xValues = data.map(function(d) { return d.x });
+        yValues = data.map(function(d) { return d.y });
+        xMax = Math.max.apply(Math, xValues);
+        xMin = Math.min.apply(Math, xValues);
+        yMax = Math.max.apply(Math, yValues);
+        yMin = Math.min.apply(Math, yValues);
+        return { xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax };
+      }
+
+      function slidingBounds(data) {
+        xValues = data.map(function(d) { return d.x });
+        yValues = data.map(function(d) { return d.y });
+        xMax = Math.max.apply(Math, xValues);
+        xMin = xMax - 10;
+        yMin = Math.min.apply(Math, yValues);
+        yMax = Math.max.apply(Math, yValues);
+        return { xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax };
+      }
+
+    </script>
+
+  </body>
+</html>

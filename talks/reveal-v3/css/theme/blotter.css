@@ -306,12 +306,16 @@ body {
 	font-size: 75%;
 }
 
+.reveal .tiny {
+	font-size: 65%;
+}
+
 .citation {
   position: absolute;
   bottom: 0px;
   right: 0px;
   z-index: 100;
-  font-size: 0.45em !important;
+  font-size: 0.5em !important;
 }
 
 .title {
