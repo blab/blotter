@@ -19,13 +19,19 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="smallhead">
-			The Bedford Lab at the <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a> works at the interface of evolution, 
-			epidemiology and immunology. We apply computational and statistical methods to sequence data to understand viral dynamics, 
-			looking at the geographic circulation of viral strains and their evolution. We are interested in linking mutations in the 
-			virus to changes in acquired immunity in the human population, and then looking at how human immunity influences viral 
-			transmission patterns.
+      <p>
+        The Bedford Lab at the <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a> works at the
+        interface of evolution, epidemiology and virology. We apply computational and statistical methods to
+        sequence data to understand viral dynamics, and reconstruct patterns of epidemic growth and
+        geographic spread. We also link viral mutations to human population immunity and use this knowledge
+        to forecast evolutionary outcomes.
+      </p>
+      <p>
+        We maintain real-time views of influenza evolution at <a href="http://nextflu.org">nextflu.org</a>
+        and pathogen evolution and epidemic spread at <a href="http://nextstrain.org">nextstrain.org</a>.
+      </p>
 		</div>
-	</div>	
+	</div>
 </div>
 
 <div class="bigspacer"></div>
@@ -40,15 +46,15 @@ categories:
 	</div>
 </div>
 
-<div class="row">		
+<div class="row">
 	{% for post in site.categories.blog limit:4 %}
-	
+
 	{% for member in site.categories.team %}
 		{% if member.title == post.author %}
 			{% assign author = member %}
 		{% endif %}
-	{% endfor %}		
-	
+	{% endfor %}
+
 	<div class="col-md-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
@@ -63,12 +69,12 @@ categories:
 				{{ post.date | date: "%-d %b %Y" }}
 				{% if author %}
 				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-				{% endif %}						
+				{% endif %}
 			</div>
 			<div class="bigspacer"></div>
 		</div>
-	</div>			
-	{% endfor %}	
+	</div>
+	{% endfor %}
 </div>
 
 <div class="spacer"></div>
@@ -82,8 +88,8 @@ categories:
 	</div>
 </div>
 
-<div class="row">		
-	{% for paper in site.categories.papers limit:4 %}		
+<div class="row">
+	{% for paper in site.categories.papers limit:4 %}
 	<div class="col-md-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
@@ -100,7 +106,7 @@ categories:
 			<div class="bigspacer"></div>
 		</div>
 	</div>
-	{% endfor %}	
+	{% endfor %}
 </div>
 
 <div class="spacer"></div>
@@ -114,8 +120,8 @@ categories:
 	</div>
 </div>
 
-<div class="row">		
-	{% for project in site.data.projects limit:4 %}		
+<div class="row">
+	{% for project in site.data.projects limit:4 %}
 	<div class="col-md-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
@@ -131,21 +137,21 @@ categories:
 				{{ project.commits.first.date | date: "%-d %b %Y" }}
 				</a>
 				by
-				<a class="off" href="{{ project.commits.first.author_url }}">				
+				<a class="off" href="{{ project.commits.first.author_url }}">
 				{{ project.commits.first.author_login }}
 				</a>
 			</div>
 			<div class="bigspacer"></div>
 		</div>
 	</div>
-	{% endfor %}	
+	{% endfor %}
 </div>
 
 <div class="spacer"></div>
 
 <div class="row">
 	<div class="col-md-12">
-		<div class="head">		
+		<div class="head">
 			Misc
 		</div>
 		<div class="spacer"></div>
@@ -166,9 +172,9 @@ categories:
 				</li>
 				<li class="footernav">
 					<i class="fa fa-angle-right"></i> <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a>
-				</li>				
+				</li>
 			</ul>
 		</div>
-		<div class="spacer"></div>		
+		<div class="spacer"></div>
 	</div>
 </div>
