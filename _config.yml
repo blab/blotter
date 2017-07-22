@@ -41,6 +41,7 @@ exclude:
   - "*.txt"
   - "*.zip"
   - "*.gz"
+  - "*.tiff"
   - "Gemfile"
   - "Gemfile.lock"
   - "projects/nextflu/auspice/index.html"
@@ -87,4 +88,3 @@ projects:
   - blab/siv-cst
   - blab/zika-usvi
   - blab/mitii
-  
