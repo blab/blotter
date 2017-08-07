@@ -9,7 +9,7 @@ layout: default
 
 <div class="blog-post">
 	<div class="row">
-		<div class="col-md-1"></div>	
+		<div class="col-md-1"></div>
 		<div class="col-md-10">
 			<div class="media">
 				<div class="media-body">
@@ -18,39 +18,39 @@ layout: default
 					</div>
 					<p>
 					<div class="smallhead">
-						{{ page.date | date_to_string }}
+						{{ page.date | date: "%-d %b %Y" }}
 						{% if author %}
 						by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-						{% endif %}		
+						{% endif %}
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-1"></div>					
+		<div class="col-md-1"></div>
 	</div>
 
 	<div class="bigspacer"></div>
 
 	<div class="row">
 		<div class="col-md-1"></div>
-		<div class="col-md-10">	
+		<div class="col-md-10">
 			{% if page.image %}
 			{% if page.link %}
 			<a href="{{ page.link }}">
 				<img class="offset" src="{{ page.image }}">
-			</a>			
+			</a>
 			{% else %}
 			<img class="offset" src="{{ page.image }}">
-			{% endif %}				
+			{% endif %}
 			{% endif %}
 			<div class="post">
 				{{ content }}
-			</div>	
-		</div>			
+			</div>
+		</div>
 		<div class="col-md-1"></div>
 	</div>
-	
+
 	<div class="bigspacer"></div>
-	<div class="spacer"></div>	
+	<div class="spacer"></div>
 
 </div>
