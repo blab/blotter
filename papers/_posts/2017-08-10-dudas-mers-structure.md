@@ -5,8 +5,8 @@ image: /images/papers/dudas-mers-structure.png
 authors: Dudas G, Max Carvalho L, Rambaut A, Bedford T.
 year: 2017
 ref: Dudas et al. 2017. bioRxiv.
-journal: "bioRxiv: XXX."
-doi: XXX
+journal: "bioRxiv: 173211."
+doi: 10.1101/173211
 github: https://github.com/blab/mers-structure
 pdf: /pdfs/papers/dudas-mers-structure.pdf
 ---

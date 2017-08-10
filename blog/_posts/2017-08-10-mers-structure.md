@@ -6,7 +6,7 @@ image: /images/blog/mers_exploded.png
 link: /papers/dudas-mers-structure/
 ---
 
-We've just posted a manuscript to bioRxiv on [transmission dynamics of Middle East respiratory syndrome (MERS) coronavirus or MERS-CoV](/papers/dudas-mers-structure/).
+We've just posted a manuscript to [bioRxiv](http://www.biorxiv.org/content/early/2017/08/10/173211) on [transmission dynamics of Middle East respiratory syndrome (MERS) coronavirus or MERS-CoV](/papers/dudas-mers-structure/).
 MERS-CoV has been identified as the cause of sporadic outbreaks of severe respiratory illness in the Middle East, largely in the Arabian peninsula, since 2012.
 Its epidemiology has sometimes been described as mysterious, since only the most severe cases are usually admitted to hospitals, sometimes without reports of contact with camels, the accepted reservoir for the virus.
 That, as well as large hospital-associated outbreaks of MERS, have suggested that there should be a sizeable community transmission contribution to the ongoing outbreaks.
