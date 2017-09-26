@@ -4,8 +4,9 @@ title: Seasonal influenza circulation patterns and projections for Sep 2017 to S
 image: /images/papers/bedford-sep-2017-flu-report.png
 authors: Bedford T, Neher RA.
 year: 2017
-ref: Bedford and Neher. 2017. Technical report.
-journal: "Technical report."
+ref: Bedford and Neher. 2017. bioRxiv.
+journal: "bioRxiv: 191676."
+doi: 10.1101/191676
 pdf: /pdfs/papers/bedford-sep-2017-flu-report.pdf
 ---
 
