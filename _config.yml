@@ -42,6 +42,7 @@ exclude:
   - "*.zip"
   - "*.gz"
   - "*.tiff"
+  - "*.xml"
   - "Gemfile"
   - "Gemfile.lock"
   - "projects/nextflu/auspice/index.html"
@@ -86,6 +87,8 @@ projects:
   - nextstrain/fauna
   - nextstrain/augur
   - nextstrain/auspice
+  - nextstrain/janus
+  - nextstrain/sacra
   - blab/zika-seq
   - blab/siv-cst
   - blab/zika-usvi
