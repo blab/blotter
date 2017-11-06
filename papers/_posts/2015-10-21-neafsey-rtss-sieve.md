@@ -9,6 +9,7 @@ journal: "N Engl J Med 373: 2025-2037."
 pdf: /pdfs/papers/neafsey-rtss-sieve.pdf
 supplement: /pdfs/papers/neafsey-rtss-sieve-supp.pdf
 doi: 10.1056/NEJMoa1505819
+github: https://github.com/trvrb/malaria-sieve
 ---
 
 # Abstract
