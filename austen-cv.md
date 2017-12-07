@@ -1,8 +1,6 @@
 ---
 layout: cv
 title: Austen Lamacraft's CV
-categories:
- - papers
 ---
 
 
@@ -27,7 +25,7 @@ __University of Cambridge__ Reader in Theoretical Physics, Department of Physics
 
 
 `2007-2012`
-__University of Virginia__ Assistant Professor, Department of Physics (tenure 2012)
+__University of Virginia__ Assistant Professor, Department of Physics (Tenure 2012)
 
 `2005-2007`
 __University of Oxford__ Postdoctoral Fellow, All Souls College
@@ -44,7 +42,7 @@ __Barclays Capital__ Derivatives Trader, Interest Rate Exotics
 ## Education
 
 `1999-2002`
-__University of Cambridge__ PhD Theoretical Physics (supervisor: Ben Simons)
+__University of Cambridge__ PhD Theoretical Physics (Supervisor: Ben Simons)
 
 `1997-1998`
 __University of Cambridge__ MMath (Part III Mathematics, _Distinction_)
@@ -60,7 +58,7 @@ __University of Cambridge__ BA Natural Sciences (_First Class Honours_)
     {% cycle 'add rows': '<div class="row">', nil, nil %}
       <p><code class="highlighter-rouge">{{ paper.year }}</code>
       {{ paper.title }}
-      <br /> 
+      <br />
       <a class="off" href="http://dx.doi.org/{{ paper.doi }}">{{ paper.ref }}</a></p>
 			<div class="bigspacer"></div>
 			<div class="spacer"></div>
@@ -88,11 +86,3 @@ __University of Cambridge__ BA Natural Sciences (_First Class Honours_)
 *  <i class="fa fa-wikipedia"></i> <a href="https://en.wikipedia.org/wiki/User:Ben_Moore">Ben Moore</a><br />
 *  <i class="fa fa-stack-overflow"></i> <a href="http://stackoverflow.com/users/1274516/blmoore">blmoore</a>
 * <i class="fa fa-google"></i> <a href="http://scholar.google.com/citations?user=YMxsGpsAAAAJ">scholar</a>
-
-## References
-
-Available on request.
-
-<!-- ### Footer
-
-Last updated: May 2013 -->
