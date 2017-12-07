@@ -7,7 +7,7 @@ year: 2017
 ref: SciPost Phys. 2, 005 (2017)
 journal: SciPost
 doi: 10.21468/SciPostPhys.2.1.005
-pdf: /pdfs/papers/nonlinear-luttinger.pdf
+pdf: /pdfs/papers/PainleveIVNonlinearLLLetter-DK.pdf
 ---
 
 # Abstract
