@@ -27,7 +27,7 @@ categories:
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 talkbox">
 			<div class="smallhead">
-				<a href="{{ talk.url }}" class="off">{{ talk.title }}</a>
+				<a href="{{ site.baseurl }}{{ talk.url }}" class="off">{{ talk.title }}</a>
 			</div>
 			<div class="smallspacer"></div>
       {% if talk.venue %}
@@ -42,7 +42,7 @@ categories:
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				{{ talk.date | date: "%-d %b %Y" }}
-				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+				by <a class="off" href="{{ site.baseurl }}{{ author.url }}">{{ author.handle }}</a>
 			</div>
 			<div class="bigspacer"></div>
 			<div class="spacer"></div>

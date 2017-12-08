@@ -7,13 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- RSS feed -->
-	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml">
 
     <!-- Customized Bootstrap + Font Awesome + Solarized -->
-    <link href="/css/style.css" rel="stylesheet" media="screen">
+    <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet" media="screen">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="/images/favicon.png"/>
+	<link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.png"/>
 
 	<!-- Typekit -->
 	<script>
@@ -29,11 +29,11 @@
 
 
 	<!-- jQuery -->
-	<script src="/js/jquery.min.js"></script>
+	<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="/js/transition.js"></script>
-	<script src="/js/collapse.js"></script>
+	<script src="{{ site.baseurl }}/js/transition.js"></script>
+	<script src="{{ site.baseurl }}/js/collapse.js"></script>
 
 <!-- KaTeX -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha2/katex.min.css" integrity="sha384-exe4Ak6B0EoJI0ogGxjJ8rn+RN3ftPnEQrGwX59KTCl5ybGzvHGKjhPKk/KC3abb" crossorigin="anonymous">
@@ -63,8 +63,8 @@
 						<span class="icon-bar"></span>
 					</button>
 					{% if page.categories.first != 'home' %}
-					<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
-					<a class="navbar-brand" href="/">austen lamacraft</a>
+					<object class="logo navbar-brand" data="{{ site.baseurl }}/images/logo.svg" type="image/svg+xml"></object>
+					<a class="navbar-brand" href="{{ site.baseurl }}/">austen lamacraft</a>
 					{% endif %}
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse-element">
@@ -74,27 +74,27 @@
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/blog/">blog</a>
+						<a href="{{ site.baseurl }}/blog/">blog</a>
 						</li>
 						{% if page.categories.first == 'papers' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/papers/">papers</a>
+						<a href="{{ site.baseurl }}/papers/">papers</a>
 						</li>
 						<!-- {% if page.categories.first == 'projects' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/projects/">projects</a></li>
+						<a href="{{ site.baseurl }}/projects/">projects</a></li>
 						{% if page.categories.first == 'team' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/team/">team</a></li> -->
+						<a href="{{ site.baseurl }}/team/">team</a></li> -->
 					</ul>
 				</div>
 			</div>

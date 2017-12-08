@@ -10,12 +10,12 @@ categories:
 		<div class="centered-pills">
 			<ul class="nav nav-pills note">
 				<li role="presentation">
-					<a class="off" href="/blog/">
+					<a class="off" href="{{ site.baseurl }}/blog/">
 						<i class="fa fa-refresh fa-fw"></i> Timeline
 					</a>
 				</li>
 				<li role="presentation" class="active">
-					<a class="off" href="/blog/archive/">
+					<a class="off" href="{{ site.baseurl }}/blog/archive/">
 						<i class="fa fa-list-ul fa-fw"></i> Index
 					</a>
 				</li>
@@ -36,13 +36,13 @@ categories:
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 postbox">
 			<div class="smallhead">
-				<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+				<a href="{{ site.baseurl }}{{ post.url }}" class="off">{{ post.title }}</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				{{ post.date | date: "%-d %b %Y" }}
 				{% if author %}
-				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+				by <a class="off" href="{{ site.baseurl }}{{ author.url }}">{{ author.handle }}</a>
 				{% endif %}
 			</div>
 			<div class="bigspacer"></div>

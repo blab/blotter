@@ -6,7 +6,7 @@ layout: default
 	<div class="col-md-12">
 		<div class="media">
 			{% if page.image %}
-			<img class="pull-left pad-right media-object" src="{{ page.image }}">
+			<img class="pull-left pad-right media-object" src="{{ site.baseurl }}{{ page.image }}">
 			{% endif %}
 			<div class="media-body titlebox">
 				<div class="title media-heading">
@@ -36,7 +36,7 @@ layout: default
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-file-text-o fa-fw"></i>
-				<a class="off" href="{{ page.pdf }}">{{ page.pdf | split: '/' | last }}</a>
+				<a class="off" href="{{ site.baseurl }}{{ page.pdf }}">{{ page.pdf | split: '/' | last }}</a>
 			</div>
 			<div class="bigspacer"></div>
 			{% endif %}
@@ -47,7 +47,7 @@ layout: default
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-paperclip fa-fw"></i>
-				<a class="off" href="{{ page.supplement }}">{{ page.supplement | split: '/' | last }}</a>
+				<a class="off" href="{{ site.baseurl }}{{ page.supplement }}">{{ page.supplement | split: '/' | last }}</a>
 			</div>
 			<div class="bigspacer"></div>
 			{% endif %}

@@ -9,11 +9,11 @@ categories:
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 paperbox">
 			<div class="media">
-  				<a class="pull-right" href="{{ paper.url }}">
-    				<img width=100 class="media-object" src="{{ paper.image }}">
+  				<a class="pull-right" href="{{ site.baseurl }}{{ paper.url }}">
+    				<img width=100 class="media-object" src="{{ site.baseurl }}{{ paper.image }}">
   				</a>
  			 	<div class="media-body">
-    				<div class="smallhead media-heading"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
+    				<div class="smallhead media-heading"><a href="{{ site.baseurl }}{{ paper.url }}" class="off">{{ paper.title }}</a></div>
     				<p class="note">{{ paper.ref }}</p>
   				</div>
 			</div>

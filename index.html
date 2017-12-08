@@ -7,7 +7,7 @@ categories:
 
 <div class="row">
 	<div class="col-md-12">
-		<object class="pull-left biglogo" data="/images/logo.svg" type="image/svg+xml"></object>
+		<object class="pull-left biglogo" data="{{ site.baseurl }}/images/logo.svg" type="image/svg+xml"></object>
 		<div class="bigtitle logobox">
 			austen lamacraft
 		</div>
@@ -30,7 +30,7 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
-			<a class="off" href="/blog/">Recent posts</a>
+			<a class="off" href="{{ site.baseurl }}/blog/">Recent posts</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
@@ -49,7 +49,7 @@ categories:
 		<div class="pad-left">
 			<div class="note">
 				<i class="fa fa-comment-o fa-fw"></i>
-				<a class="off" href="{{ post.url }}">
+				<a class="off" href="{{ site.baseurl }}{{ post.url }}">
 				{{ post.title }}
 				</a>
 			</div>
@@ -58,7 +58,7 @@ categories:
 				Posted
 				{{ post.date | date: "%-d %b %Y" }}
 				{% if author %}
-				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+				by <a class="off" href="{{ site.baseurl }}{{ author.url }}">{{ author.handle }}</a>
 				{% endif %}
 			</div>
 			<div class="bigspacer"></div>
@@ -72,7 +72,7 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
-			<a class="off" href="/papers/">Recent papers</a>
+			<a class="off" href="{{ site.baseurl }}/papers/">Recent papers</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
@@ -84,7 +84,7 @@ categories:
 		<div class="pad-left">
 			<div class="note">
 				<i class="fa fa-file-text-o fa-fw"></i>
-				<a class="off" href="{{ paper.url }}">
+				<a class="off" href="{{ site.baseurl }}{{ paper.url }}">
 				{{ paper.title }}
 				</a>
 			</div>
@@ -154,7 +154,7 @@ categories:
 			<ul class="list-inline">
 				{% for page in site.categories.misc %}
 				<li class="footernav">
-					<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url }}">{{ page.title }}</a>
+					<i class="fa fa-angle-right"></i> <a class="off" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
 				</li>
 				{% endfor %}
 				<li class="footernav">

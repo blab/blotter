@@ -1,11 +1,13 @@
 name: austen lamacraft
 description: Many body and statistical physics at the University of Cambridge
-url: https://austenlamacraft.github.io
-baseurl: /notebook
+url: 'https://austenlamacraft.github.io'
+baseurl: '/notebook'
 
 markdown: kramdown
 kramdown:
   math_engine: mathjax
+
+# Permalinks
 
 permalink: /:categories/:title/
 future: true

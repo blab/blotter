@@ -11,12 +11,12 @@ category: blog
 		<div class="centered-pills">
 			<ul class="nav nav-pills note">
 				<li role="presentation" class="active">
-					<a class="off" href="/blog/">
+					<a class="off" href="{{ site.baseurl }}/blog/">
 						<i class="fa fa-refresh fa-fw"></i> Timeline
 					</a>
 				</li>
 				<li role="presentation">
-					<a class="off" href="/blog/archive/">
+					<a class="off" href="{{ site.baseurl }}/blog/archive/">
 						<i class="fa fa-list-ul fa-fw"></i> Index
 					</a>
 				</li>
@@ -43,13 +43,13 @@ category: blog
 				<div class="media">
 					<div class="media-body">
 						<div class="title media-heading">
-							<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+							<a href="{{ site.baseurl }}{{ post.url }}" class="off">{{ post.title }}</a>
 						</div>
 						<p>
 						<div class="smallhead">
 							{{ post.date | date: "%-d %b %Y" }}
 							{% if author %}
-							by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+							by <a class="off" href="{{ site.baseurl }}{{ author.url }}">{{ author.handle }}</a>
 							{% endif %}
 						</div>
 					</div>
@@ -65,11 +65,11 @@ category: blog
 			<div class="col-md-10">
 				{% if post.image %}
 				{% if post.link %}
-				<a href="{{ post.link }}">
-					<img class="offset" src="{{ post.image }}">
+				<a href="{{ site.baseurl }}{{ post.link }}">
+					<img class="offset" src="{{ site.baseurl }}{{ post.image }}">
 				</a>
 				{% else %}
-				<img class="offset" src="{{ post.image }}">
+				<img class="offset" src="{{ site.baseurl }}{{ post.image }}">
 				{% endif %}
 				{% endif %}
 				<div class="post">
@@ -95,7 +95,7 @@ category: blog
 		<div id="scroll" class="centered-pills">
 			<ul class="nav nav-pills note">
 				<li role="presentation">
-					<a class="off" href="/blog/">
+					<a class="off" href="{{ site.baseurl }}/blog/">
 						<i class="fa fa-chevron-up fa-fw"></i> Back to top
 					</a>
 				</li>
@@ -105,4 +105,4 @@ category: blog
 </div>
 
 <!-- Infinite scroll -->
-<script async src="/js/infinite-scroll.js"></script>
+<script async src="{{ site.baseurl }}/js/infinite-scroll.js"></script>
