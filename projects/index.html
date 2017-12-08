@@ -1,7 +1,7 @@
 ---
 layout: default
-title: bedford lab / projects
-categories: 
+title: austen lamacraft / projects
+categories:
  - projects
 ---
 
@@ -11,7 +11,7 @@ categories:
 		<div class="col-md-4 projectbox">
 			<div class="head">
 				<a href="{{ project.url }}" class="off">{{ project.title }}</a>
-			</div>	
+			</div>
 			<div class="smallspacer"></div>
 			<div class="note">
 				<a href="{{ project.url }}" class="off">{{ project.description }}</a>
@@ -23,7 +23,7 @@ categories:
 				{{ project.commits.first.date | date: "%-d %b %Y" }}
 				</a>
 				by
-				<a class="off" href="{{ project.commits.first.author_url }}">				
+				<a class="off" href="{{ project.commits.first.author_url }}">
 				{{ project.commits.first.author_login }}
 				</a>
 			</div>
@@ -32,4 +32,4 @@ categories:
 		</div>
     {% cycle 'close rows': nil, nil, '</div>' %}
 {% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}	
+{% cycle 'close rows': nil, '</div>', '</div>' %}
