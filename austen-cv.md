@@ -23,7 +23,6 @@ __University of Cambridge__ Reader in Theoretical Physics, Department of Physics
 
 ## Employment
 
-
 `2007-2012`
 __University of Virginia__ Assistant Professor, Department of Physics (Tenure 2012)
 
