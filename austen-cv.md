@@ -23,30 +23,30 @@ __University of Cambridge__ Reader in Theoretical Physics, Department of Physics
 
 ## Employment
 
-`2007-2012`
+`2007-12`
 __University of Virginia__ Assistant Professor, Department of Physics (Tenure 2012)
 
-`2005-2007`
+`2005-07`
 __University of Oxford__ Postdoctoral Fellow, All Souls College
 
-`2002-2005`
+`2002-05`
 __Princeton University__ Robert H. Dicke Fellow, Department of Physics
 
-`2001-2007`
+`2001-07`
 __University of Cambridge__ Junior Reseach Fellow, Trinity College
 
-`1998-1999`
+`1998-99`
 __Barclays Capital__ Derivatives Trader, Interest Rate Exotics
 
 ## Education
 
-`1999-2002`
+`1999-02`
 __University of Cambridge__ PhD Theoretical Physics (Supervisor: Ben Simons)
 
-`1997-1998`
+`1997-98`
 __University of Cambridge__ MMath (Part III Mathematics, _Distinction_)
 
-`1994-1997`
+`1994-97`
 __University of Cambridge__ BA Natural Sciences (_First Class Honours_)
 
 
