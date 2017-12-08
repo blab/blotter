@@ -6,7 +6,7 @@ markdown: kramdown
 kramdown:
   math_engine: mathjax
 
-permalink: /:categories/:title/
+permalink: notebook/:categories/:title/
 future: true
 
 redcarpet:
