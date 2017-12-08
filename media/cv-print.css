@@ -54,7 +54,7 @@ table {
 
 body {
 	font: normal normal 400;
-	font-size: 9pt;
+	font-size: 12pt;
 	line-height: 1.35em;
 	font-family: "Open sans", sans-serif;
 	/*margin-top: 1em;
@@ -64,7 +64,7 @@ body {
 p {
 	position: relative;
 	left: 28%;
-	/* margin-bottom: 0.2em; */
+	 margin-bottom: 0.2em;
 	margin-right: 0;
 	width: 70%;
 }
@@ -190,7 +190,7 @@ strong {
 
 
 #projects {
-	 page-break-before: always; 
+	 page-break-before: always;
 }
 
 .footer {
