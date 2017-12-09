@@ -193,6 +193,10 @@ strong {
 	 page-break-before: always;
 }
 
+#publications {
+	 page-break-before: always;
+}
+
 .footer {
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
