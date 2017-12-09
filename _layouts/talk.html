@@ -13,12 +13,35 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="/talks/reveal-v2/css/reveal.min.css">
-		<link rel="stylesheet" href="/talks/reveal-v2/css/theme/trvrb.css" id="theme">
-		<link rel="stylesheet" href="/talks/reveal-v2/css/font-awesome/css/font-awesome.min.css">			
+		<link rel="stylesheet" href="{{ site.baseurl }}/talks/reveal-v3/css/reveal.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/talks/reveal-v3/css/theme/blotter.css" id="theme">
+		<link rel="stylesheet" href="{{ site.baseurl }}/talks/reveal-v3/css/font-awesome/css/font-awesome.min.css">
 
 		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="/talks/reveal-v2/lib/css/zenburn.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/talks/reveal-v3/lib/css/zenburn.css">
+
+		<!-- KaTeX -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha2/katex.min.css" integrity="sha384-exe4Ak6B0EoJI0ogGxjJ8rn+RN3ftPnEQrGwX59KTCl5ybGzvHGKjhPKk/KC3abb" crossorigin="anonymous">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha2/katex.min.js" integrity="sha384-OMvkZ24ANLwviZR2lVq8ujbE/bUO8IR1FdBrKLQBI14Gq5Xp/lksIccGkmKL8m+h" crossorigin="anonymous"></script>
+
+		<!--  KaTeX auto-render -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha2/contrib/auto-render.min.js" integrity="sha384-cXpztMJlr2xFXyDSIfRWYSMVCXZ9HeGXvzyKTYrn03rsMAlOtIQVzjty5ULbaP8L" crossorigin="anonymous"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				renderMathInElement(document.body);
+			});
+		</script>
+
+		<!-- Rendering of math elements  -->
+		<script type="text/javascript">window.onload = function(){var mathElements = document.getElementsByClassName("math");
+
+		for (var i=0; i < mathElements.length; i++)
+	  {
+	   var texText = mathElements[i].firstChild
+	   katex.render(texText.data, mathElements[i])
+	  }}
+	  </script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -28,7 +51,7 @@
 	<body>
 
 		<div style="position: absolute; top:10px; left:10px; z-index:100;">
-			<a href="/talks/">
+			<a href="{{ site.baseurl }}/talks/">
 				<i class="fa fa-times-circle" style="color: #bbb;"></i>
 			</a>
 		</div>
@@ -39,19 +62,18 @@
 			<div class="slides">
 
 				{{ content }}
-				
+
 			</div>
 
 		</div>
 
-		<script src="/talks/reveal-v2/lib/js/head.min.js"></script>
-		<script src="/talks/reveal-v2/js/reveal.min.js"></script>
-		<script src="/talks/reveal-v2/js/config.js"></script>
+		<script src="{{ site.baseurl }}/talks/reveal-v3/lib/js/head.min.js"></script>
+		<script src="{{ site.baseurl }}/talks/reveal-v3/js/reveal.js"></script>
+		<script src="{{ site.baseurl }}/talks/reveal-v3/js/config.js"></script>
+
+		<script>
+			Reveal.configure({ slideNumber: 'c/t', controls: true });
+		</script>
 
 	</body>
 </html>
-
-
-
-
-
