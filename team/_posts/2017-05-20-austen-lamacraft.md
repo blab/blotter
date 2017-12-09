@@ -3,7 +3,7 @@ layout: member
 title: Austen Lamacraft
 position: Principal investigator
 handle: austen  
-email: al200@cam.ac.uk
+email: austen@lamacraft.io
 twitter: AustenLamacraft
 github: AustenLamacraft
 scholar: ERR4TF0AAAAJ
