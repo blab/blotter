@@ -1,4 +1,4 @@
-# austen lamacraft
+# Austen Lamacraft
 
 ## Build site
 

@@ -20,6 +20,9 @@ redcarpet:
    - superscript
    - strikethrough
 
+plugins:
+  - jekyll-postfiles
+
 exclude:
   - "*.class"
   - "*.cpp"
