@@ -11,7 +11,7 @@ gem 'less'
 # # minifying
 # gem 'jekyll-press'
 
-gem 'jekyll-postfiles'
+# gem 'jekyll-postfiles'
 
 # octokit
 gem 'octokit'

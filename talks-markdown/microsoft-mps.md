@@ -112,6 +112,7 @@ $$
  $$
  \Psi = U\Lambda V^\dagger=\sum_{i=1}^d \lambda\_i \mathbf{u}\_i\otimes \mathbf{v}\_i^*
  $$
+ 
  $$
  \Psi\_{s\_1s\_2} = \left(U\Lambda V^\dagger\right)\_{s\_1s\_2}
  $$
