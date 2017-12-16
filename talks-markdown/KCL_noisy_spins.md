@@ -37,9 +37,11 @@ University of Cambridge
 ## Model Hamiltonian
 
 -
+
 $$
-H = H_\text{S} + H_\text{B} + H_\text{int}
+H = H\_\text{S} + H\_\text{B} + H\_\text{int}
 $$
+
 $$
 H_\text{int} = \sum_j s_j B_j
 $$
@@ -53,9 +55,11 @@ $$
 \dot \rho = i\left[\rho, H_\text{S}\right] + \sum_{j,k}\left[-s_j q_{jk}\rho + q_{jk} \rho s_j-\rho q_{jk} s_j + s_j\rho q_{jk}  \right]
 \end{aligned}
 $$
+
 $$
-q_{jk} = \frac{1}{2}\langle n\rvert s_l\lvert m\rangle g_{jk}(\omega_m-\omega_n)
+q\_{jk} = \frac{1}{2}\langle n\rvert s\_l\lvert m\rangle g\_{jk}(\omega\_m-\omega\_n)
 $$
+
 $$
 g_{jk}(\omega) = \int dt e^{i\omega t}\langle B_j(\tau)B_k(0) \rangle
 $$
@@ -397,7 +401,7 @@ $$
 
 ---
 
-![](figures/Energy-comparison-large-N.png)
+![](assets/Energy-comparison-large-N.png)
 
 Gap $\propto\Delta_\omega^2/g$ at small $g^{-1}$
 
