@@ -101,6 +101,37 @@ categories:
 
 <div class="spacer"></div>
 
+<div class="row">
+	<div class="col-md-12">
+		<div class="head">
+			<a class="off" href="{{ site.baseurl }}/talks/">Recent talks</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	{% for talk in site.categories.talks limit:4 %}
+	<div class="col-md-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="{{ site.baseurl }}{{ talk.url }}">
+				{{ talk.title }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Posted
+				{{ talk.date | date: "%-d %b %Y" }}
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+
 <!-- <div class="row">
 	<div class="col-md-12">
 		<div class="head">

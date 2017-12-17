@@ -47,9 +47,6 @@
 		<script src="{{ site.baseurl }}/talks/reveal-v3/js/reveal.js"></script>
 		<script src="{{ site.baseurl }}/talks/reveal-v3/js/config.js"></script>
 
-		<!-- <script>
-			Reveal.configure({ slideNumber: 'c/t', controls: true });
-		</script> -->
 
 		<script>
 			// Full list of configuration options available here:
@@ -60,12 +57,12 @@
 				history: true,
 				center: true,
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: 'fade', // default/cube/page/concave/zoom/linear/fade/none
-				{% if page.revealOptions %}
-				{{ page.revealOptions | append:',' }}
-				{% endif %}
+				transition: 'fade', // default/cube/page/concave/zoom/linear/fade/non
 
 			});
+
+			Reveal.configure({{ page.revealOptions | jsonify }});
+
 		</script>
 
 

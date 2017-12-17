@@ -83,6 +83,13 @@
 						{% endif %}
 						<a href="{{ site.baseurl }}/papers/">papers</a>
 						</li>
+						{% if page.categories.first == 'talks' %}
+						<li class="active">
+						{% else %}
+						<li>
+						{% endif %}
+						<a href="{{ site.baseurl }}/talks/">talks</a>
+						</li>
 						<!-- {% if page.categories.first == 'projects' %}
 						<li class="active">
 						{% else %}
