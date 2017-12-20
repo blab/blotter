@@ -4,8 +4,8 @@ title: "Bayesian nonparametric clustering in phylogenetics: modeling antigenic e
 image: /images/papers/cybis-antigenic-clustering.png
 authors: Cybis GB, Sinsheimer JS, Bedford T, Rambaut A, Lemey P, Suchard MA.
 year: 2017
-ref: Cybis et al. 2017. Stat Med.
-journal: "Stat Med 10.1002/sim.7196."
+ref: Cybis et al. 2018. Stat Med.
+journal: "Stat Med 37: 195-206."
 pdf: /pdfs/papers/cybis-antigenic-clustering.pdf
 doi: 10.1002/sim.7196
 ---
