@@ -57,7 +57,7 @@ exclude:
   - "projects/nextflu/auspice/reports/*"
   - "projects/nextflu/auspice/js/*"
   - "projects/nextflu/auspice/cdc/*"
-  - "projects/nextflu/auspice/gisaid/*"    
+  - "projects/nextflu/auspice/gisaid/*"
   - "projects/auspice/src/*"
   - "projects/siv-cst/beast/main/empiricalTrees/xml/*"
   - "projects/siv-cst/beast/supplement/discreteTraits/xml/*"
@@ -94,3 +94,4 @@ projects:
   - blab/zika-usvi
   - blab/mitii
   - blab/mers-structure
+  - blab/roka
