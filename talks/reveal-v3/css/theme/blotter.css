@@ -47,10 +47,11 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.33em; }
+  font-size: 3.22em;
+  line-height: 1.0em; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 2.22em; }
 
 .reveal h3 {
   font-size: 1.55em; }
