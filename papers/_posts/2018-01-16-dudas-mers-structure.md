@@ -5,7 +5,7 @@ image: /images/papers/dudas-mers-structure.png
 authors: Dudas G, Max Carvalho L, Rambaut A, Bedford T.
 year: 2018
 ref: Dudas et al. 2018. eLife.
-journal: "eLife: e31257."
+journal: "eLife 7: e31257."
 doi: 10.7554/eLife.31257
 github: https://github.com/blab/mers-structure
 pdf: /pdfs/papers/dudas-mers-structure.pdf
