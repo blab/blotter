@@ -1,7 +1,7 @@
 ---
 layout: default
 title: bedford lab / blog
-categories: 
+categories:
  - blog
 category: blog
 ---
@@ -30,15 +30,9 @@ category: blog
 
 {% for post in site.categories.blog limit: 8 %}
 
-	{% for member in site.categories.team %}
-		{% if member.title == post.author %}
-			{% assign author = member %}
-		{% endif %}
-	{% endfor %}
-
 	<div class="blog-post">
 		<div class="row">
-			<div class="col-md-1"></div>	
+			<div class="col-md-1"></div>
 			<div class="col-md-10">
 				<div class="media">
 					<div class="media-body">
@@ -48,39 +42,69 @@ category: blog
 						<p>
 						<div class="smallhead">
 							{{ post.date | date: "%-d %b %Y" }}
-							{% if author %}
-							by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-							{% endif %}		
+							{% if post.author %}
+							by <a class="off" href="
+                {% for member in site.categories.team %}
+                  {% if member.title == post.author %}
+                    {{ member.url }}
+                  {% endif %}
+                {% endfor %}
+              ">
+              {{ post.author }}
+              </a>
+							{% endif %}
+              {% if post.authors %}
+              by
+              <a class="off" href="
+                {% for member in site.categories.team %}
+                  {% if member.title == post.authors.first %}
+                    {{ member.url }}
+                  {% endif %}
+                {% endfor %}
+              ">
+              {{ post.authors.first }}
+              </a>
+              and
+              <a class="off" href="
+                {% for member in site.categories.team %}
+                  {% if member.title == post.authors.last %}
+                    {{ member.url }}
+                  {% endif %}
+                {% endfor %}
+              ">
+              {{ post.authors.last }}
+              </a>
+              {% endif %}
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-1"></div>					
+			<div class="col-md-1"></div>
 		</div>
 
 		<div class="bigspacer"></div>
 
 		<div class="row">
 			<div class="col-md-1"></div>
-			<div class="col-md-10">	
+			<div class="col-md-10">
 				{% if post.image %}
 				{% if post.link %}
 				<a href="{{ post.link }}">
 					<img class="offset" src="{{ post.image }}">
-				</a>			
+				</a>
 				{% else %}
 				<img class="offset" src="{{ post.image }}">
-				{% endif %}				
+				{% endif %}
 				{% endif %}
 				<div class="post">
 					{{ post.content }}
-				</div>	
-			</div>			
+				</div>
+			</div>
 			<div class="col-md-1"></div>
 		</div>
-	
+
 		<div class="bigspacer"></div>
-		<div class="spacer"></div>	
+		<div class="spacer"></div>
 
 	</div>
 
@@ -98,11 +122,11 @@ category: blog
 					<a class="off" href="/blog/">
 						<i class="fa fa-chevron-up fa-fw"></i> Back to top
 					</a>
-				</li>				
+				</li>
 			</ul>
 		</div>
 	</div>
 </div>
 
-<!-- Infinite scroll -->	
+<!-- Infinite scroll -->
 <script async src="/js/infinite-scroll.js"></script>

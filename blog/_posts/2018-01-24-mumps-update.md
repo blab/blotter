@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Characterization of 27 mumps virus genomes from the Washington state outbreak
-author: Louise Moncla and Alli Black
+authors:
+  - Louise Moncla
+  - Allison Black
 image: /images/blog/mumps_nextstrain_na_tree_WA_clade_2018-01-24.png
 ---
 
@@ -9,4 +11,4 @@ In 2016 and 2017, mumps outbreaks were reported in several countries, and the CD
 
 We recently completed sequencing the first batch of mumps virus genomes provided by the Washington State Department of Health and have released the first 27 draft genomes on [nextstrain.org/mumps](http://www.nextstrain.org/mumps/global). Protocols for sample preparation and sequencing are available at [https://github.com/blab/mumps-seq](https://github.com/blab/mumps-seq). The 27 sequences from Washington state were collected between December 2016 and April 2017. The vast majority of these sequences (25 out of 27) cluster together within a single large clade, which we will refer to as the primary outbreak clade. This finding indicates that the majority of transmission within Washington likely occurred due to a single introduction of mumps followed by sustained person-to-person transmission. This conclusion may change as we sequence further viruses, which may provide evidence for additional clades of circulating viruses. The primary outbreak clade is closely related to all sequenced viruses sampled from the Arkansas outbreak, and is nested within the diversity of viruses sampled during Massachusetts outbreaks in 2016. Thus, we hypothesize that mumps outbreaks within the US are likely related. We also find a single genome from Washington state that clusters outside of the primary outbreak clade, which could represent a separate introduction of Mumps virus to Washington which did not yield sustained person-to-person transmission. We note that further sequencing and more sophisticated genomic analysis is required to confidently determine the total number of introductions that occurred, and how each introduction contributed to observed transmission. Finally, the primary outbreak clade also includes a single sequence from British Columbia, providing evidence for some degree of transmission between the US and Canada.
 
-We are aiming to sequencing ~100 clinical samples in total, and will continue sequencing and adding data to nextstrain.org/mumps in the coming months. Stay tuned! 
+We are aiming to sequencing ~100 clinical samples in total, and will continue sequencing and adding data to nextstrain.org/mumps in the coming months. Stay tuned!
