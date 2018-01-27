@@ -147,20 +147,42 @@ layout: default
 		{% endif %}
 
 		{% for post in site.categories.blog %}
-		{% if member.title == post.author %}
-		{% assign postsq = true %}
-		{% endif %}
+			{% if post.author %}
+				{% if member.title == post.author %}
+					{% assign postsq = true %}
+				{% endif %}
+			{% endif %}
+			{% if post.authors %}
+				{% for author in post.authors %}
+					{% if member.title == author %}
+						{% assign postsq = true %}
+					{% endif %}
+				{% endfor %}
+			{% endif %}
 		{% endfor %}
 
 		{% if postsq == true %}
-		<div class="bigspacer"></div>
-		<div class="head">Posts</div>
-		<div class="spacer"></div>
-		{% for post in site.categories.blog %}
-		{% if member.title == post.author %}
-		<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
-		{% endif %}
-		{% endfor %}
+			<div class="bigspacer"></div>
+			<div class="head">Posts</div>
+			<div class="spacer"></div>
+			{% for post in site.categories.blog %}
+				{% if post.author %}
+					{% if member.title == post.author %}
+						<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
+					{% endif %}
+				{% endif %}
+				{% if post.authors %}
+					{% assign found = false %}
+					{% for author in post.authors %}
+						{% if member.title == author %}
+							{% assign found = true %}
+						{% endif %}
+					{% endfor %}
+					{% if found %}
+						<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
 		{% endif %}
 
 	</div>

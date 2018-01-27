@@ -67,9 +67,39 @@ categories:
 			<div class="smallnote">
 				Posted
 				{{ post.date | date: "%-d %b %Y" }}
-				{% if author %}
-				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-				{% endif %}
+        {% if post.author %}
+        by <a class="off" href="
+          {% for member in site.categories.team %}
+            {% if member.title == post.author %}
+              {{ member.url }}
+            {% endif %}
+          {% endfor %}
+        ">
+        {{ post.author }}
+        </a>
+        {% endif %}
+        {% if post.authors %}
+        by
+        <a class="off" href="
+          {% for member in site.categories.team %}
+            {% if member.title == post.authors.first %}
+              {{ member.url }}
+            {% endif %}
+          {% endfor %}
+        ">
+        {{ post.authors.first }}
+        </a>
+        and
+        <a class="off" href="
+          {% for member in site.categories.team %}
+            {% if member.title == post.authors.last %}
+              {{ member.url }}
+            {% endif %}
+          {% endfor %}
+        ">
+        {{ post.authors.last }}
+        </a>
+        {% endif %}
 			</div>
 			<div class="bigspacer"></div>
 		</div>
