@@ -3,9 +3,9 @@ layout: paper
 title: Predictive modeling of influenza shows the promise of applied evolutionary biology
 image: /images/papers/morris-predictive-modeling.png
 authors: Morris DH, Gostic KM, Pompei S, Bedford T, Łuksza M, Neher RA, Grenfell BT, Lässig M, McCauley JW
-year: 2017
-ref: Morris et al. 2017. Trends Microbiol.
-journal: "Trends Microbiol. In press."
+year: 2018
+ref: Morris et al. 2018. Trends Microbiol.
+journal: "Trends Microbiol 26: 102-118."
 doi: 10.1016/j.tim.2017.09.004
 pdf: /pdfs/papers/morris-predictive-modeling.pdf
 ---
