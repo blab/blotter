@@ -2,7 +2,6 @@
 layout: paper
 title: Within-host evolution of human influenza virus
 image: /images/papers/xue-within-host-evolution.png
-authors: Morris DH, Gostic KM, Pompei S, Bedford T, Łuksza M, Neher RA, Grenfell BT, Lässig M, McCauley JW
 authors: Xue KS, Moncla LH, Bedford T, Bloom JD
 year: 2018
 ref: Xue et al. 2018. Trends Microbiol.
