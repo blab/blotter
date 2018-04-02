@@ -15,11 +15,7 @@
 
   <body style="background-color:#fff;">
 
-    <script src="http://d3js.org/d3.v4.min.js"></script>
-
-    <script>
-
-    </script>
+    <script src="/js/d3.v4.min.js"></script>
 
     <svg>
     </svg>
@@ -33,7 +29,8 @@
         .attr("width", width)
         .attr("height", height);
 
-      var data = [ {x: 0, y: 0} ];
+      // x location, y location, index and parent index
+      var data = [ {x: 0, y: 0, i: 0, p: 0} ];
 
       var xScale = d3.scaleLinear()
         .domain([-1, 1])
@@ -61,7 +58,7 @@
         })
 
         var newData = liveData.map(function(d) {
-          return {x: step + 1, y: 0};
+          return {x: step + 1, y: 0, i: d.i + 1, p: d.i};
         });
 
         data = data.concat(newData);
@@ -72,11 +69,11 @@
 
         nodes.data(newData).enter().append("circle")
           .attr("class", "node")
-          .attr("cx", function(d) { return xScale(d.x - 1)} )
+          .attr("cx", function(d) { return xScale(d.x)} )
           .attr("cy", function(d) { return yScale(d.y)} )
           .attr("r", 5);
 
-        d3.selectAll(".node").transition().duration(1000).ease(d3.easeLinear)
+        d3.selectAll(".node").transition().duration(1000).ease(d3.easeCubic)
           .attr("cx", function(d) { return xScale(d.x)} )
           .attr("cy", function(d) { return yScale(d.y)} );
 
