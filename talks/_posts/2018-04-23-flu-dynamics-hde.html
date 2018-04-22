@@ -24,7 +24,7 @@ strain frequencies. These dynamics may particularly inform approaches to the stu
 HIV evolution.
 -->
 
-<section data-background="#000">
+<section data-background-iframe="/talks/viz/gradient/">
 	<h1 class="title">{{ page.title }}</h1>
 	<br>
 	<p class="title">
@@ -46,7 +46,45 @@ HIV evolution.
 	<h3>HIV within-host phylogeny vs influenza between-host phylogeny</h3>
 	<img class="stretch" src="/images/talks/hiv_vs_flu_grenfell.png">
 	<div class="citation">
-		Grenfell et al. 2004. Science.
+		<a href="http://science.sciencemag.org/content/303/5656/327.long">Grenfell et al. 2004. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h2>Fundamentally driven by the same process</h2>
+</section>
+
+<section>
+	<h3>Antigenic drift driven by acquired immunity</h3>
+	<img class="stretch" src="/images/talks/antigenic_drift_diagram.png">
+</section>
+
+<section>
+	<h3>Selection visible in diversity and divergence</h3>
+	<img class="stretch" src="/images/talks/diversity_and_divergence_diagram.png">
+</section>
+
+<section>
+	<h3>Systematic divergence at gp120 through time</h3>
+	<img class="stretch" src="/images/talks/hiv_gp120_divergence.png">
+	<div class="citation">
+		<a href="https://elifesciences.org/articles/11282">Zanini et al. 2015. eLife.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Within-host HIV shows adaptive evolution in envelope and purifying selection in enzymes</h3>
+	<img class="stretch" src="/images/talks/hiv_diversity_and_divergence.png">
+	<div class="citation">
+		<a href="https://elifesciences.org/articles/11282">Zanini et al. 2015. eLife.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Between-host influenza shows adaptive evolution in surface proteins and purifying selection in internal proteins</h3>
+	<img class="stretch" src="/images/talks/flu_mcdonald_kreitman.png">
+	<div class="citation">
+		<a href="https://academic.oup.com/mbe/article/28/9/2443/1007907">Bhatt et al. 2011. Mol Biol Evol.</a>
 	</div>
 </section>
 
@@ -111,15 +149,9 @@ HIV evolution.
 	</ul>
 </section>
 
-<section>
-	<h3>My own work suffered from this</h3>
-	<img class="stretch" src="/images/talks/bmds_h3n2_diffusion_drift.png">
-	<div class="citation">
-		<a href="http://bedford.io/papers/bedford-flux/">Bedford et al. 2014. eLife.</a>
-	</div>
-</section>
-
 <section data-background="/images/talks/kavli.jpg">
+	<h3 class="title">Microbial evolution workshop at the Kavli Institute for Theoretical Physics</h3>
+	<br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p>
 </section>
 
 <section style="text-align: left;">
@@ -262,23 +294,15 @@ HIV evolution.
 		<img data-src="/images/talks/hi_smith_map.jpg">
 	</div>
 	<div class="citation">
-		<a href="http://www.sciencemag.org/content/305/5682/371.abstract">Smith et al 2004</a>
+		<a href="http://science.sciencemag.org/content/305/5682/371">Smith et al. 2004. Science.</a>
 	</div>
 </section>
 
 <section>
-	<h3>Instead of a geometric model, we sought a phylogenetic model of HI titer data</h3>
+	<h3>We sought an evolutionary model of HI titer data in which particular substitutions drop titer</h3>
 	<img class="stretch" data-src="/images/talks/titers_tree_example.png">
 	<div class="citation">
-		<a href="http://bedford.io/papers/neher-titers/">Neher et al 2016</a>
-	</div>
-</section>
-
-<section>
-	<h3>Identify phylogeny branches associated with drops in HI titer</h3>
-	<img class="stretch" data-src="/images/talks/titer_model_with_table.png">
-	<div class="citation">
-		<a href="http://bedford.io/papers/neher-titers/">Neher et al 2016</a>
+		<a href="http://bedford.io/papers/neher-titers/">Neher et al. 2016. PNAS.</a>
 	</div>
 </section>
 
@@ -286,7 +310,7 @@ HIV evolution.
 	<h3>Model can be used to interpolate across tree and predict phenotype of untested viruses</h3>
 	<img class="stretch" data-src="/images/talks/titers_tree_model.png">
 	<div class="citation">
-		<a href="http://bedford.io/papers/neher-titers/">Neher et al 2016</a>
+		<a href="http://bedford.io/papers/neher-titers/">Neher et al. 2016. PNAS.</a>
 	</div>
 </section>
 
@@ -294,7 +318,7 @@ HIV evolution.
 	<h3>Model is highly predictive of missing titer values</h3>
 	<img class="stretch" data-src="/images/talks/titers_validation.png">
 	<div class="citation">
-		<a href="http://bedford.io/papers/neher-titers/">Neher et al 2016</a>
+		<a href="http://bedford.io/papers/neher-titers/">Neher et al. 2016. PNAS.</a>
 	</div>
 </section>
 
@@ -363,7 +387,7 @@ HIV evolution.
 	</ol>
 </section>
 
-<section>
+<!-- <section>
 	<h3>Predictor: calculate HI drop from ancestor, <br> drifted clades have high fitness</h3>
 	<img class="stretch" data-src="/images/talks/prediction_antigenic_drift.png">
 </section>
@@ -371,7 +395,7 @@ HIV evolution.
 <section>
 	<h3>Predictor: project frequencies forward, <br> growing clades have high fitness</h3>
 	<img class="stretch" data-src="/images/talks/prediction_frequency_trajectories.png">
-</section>
+</section> -->
 
 <section>
 	<h3>We predict fitness based on a simple formula</h3>
@@ -482,11 +506,18 @@ HIV evolution.
 	<img class="stretch" src="/images/talks/flu_geo_corr_matrix_12m_lag.png">
 </section>
 
-<section>
-	<h2>Goal is to include migration forcings in predictive fitness model</h2>
-</section>
+<!----------------------------------------->
 
-<!----------------------------------->
+<section style="text-align: left;">
+	<h2>Next steps</h2>
+	<ul>
+		<li>Systematically test fitness predictors</li>
+		<li>Include geographic component to fitness model</li>
+		<li>Incorporate information from other segments</li>
+		<li>Integrate human serology to estimate selective landscape</li>
+	<ul>
+	</p>
+</section>
 
 <section>
 	<h3>Acknowledgements</h3>
