@@ -3,10 +3,10 @@ layout: paper
 title: "Nextstrain: real-time tracking of pathogen evolution"
 image: /images/papers/hadfield-nextstrain.png
 authors: Hadfield J, Megill C, Bell SM, Huddleston J, Potter B, Callender C, Sagulenko P, Bedford T, Neher RA.
-year: 2017
-ref: Hadfield et al. 2017. bioRxiv.
-journal: "bioRxiv: 224048."
-doi: 10.1101/224048
+year: 2018
+ref: Hadfield et al. 2018. Bioinformatics.
+journal: "Bioinformatics. In press."
+doi: 10.1093/bioinformatics/bty407
 github: https://github.com/nextstrain/
 pdf: /pdfs/papers/hadfield-nextstrain.pdf
 ---
