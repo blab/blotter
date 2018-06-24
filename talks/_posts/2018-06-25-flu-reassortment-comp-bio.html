@@ -108,72 +108,6 @@ draft: true
 	<h3>Like to do something more systematic here</h3>
 </section>
 
-<!----------------------------------------->
-
-<section data-background="#000">
-	<h1 class="title">Forecasting</h1>
-</section>
-
-<section>
-	<h3>Fitness models can project clade frequencies</h3>
-	<br>
-	<p>Clade frequencies $X$ derive from the fitnesses $f$ and frequencies $x$ of constituent viruses, such that</p>
-	<p>$$\hat{X}_v(t+\Delta t) = \sum_{i:v} x_i(t) \, \mathrm{exp}(f_i \, \Delta t)$$</p>
-	<p>This captures clonal interference between competing lineages</p>
-	<img class="stretch" data-src="/images/talks/clonal_interferance.jpg">
-	<div class="citation">
-		<a href="http://www.nature.com/nature/journal/v507/n7490/full/nature13087.html">&#321;uksza and L&auml;ssig 2014</a>
-	</div>
-</section>
-
-<section>
-	<h3>Fit viruses have:</h3>
-	<br>
-	<ol>
-		<li class="larger">Amino acid changes at epitope sites</li>
-		<li class="larger">Antigenic novelty based on HI</li>
-		<li class="larger">Rapid phylogenetic growth</li>
-	</ol>
-</section>
-
-<section>
-	<h3>We predict fitness based on a simple formula</h3>
-	<br>
-	<p>where the fitness $f$ of virus $i$ is estimated as</p>
-	<p>$$\hat{f}_i = \beta^\mathrm{HI} \, f_i^\mathrm{HI} + \beta^\mathrm{freq} \, f_i^\mathrm{freq}$$</p>
-	<p>where $f_i^\mathrm{HI}$ measures antigenic drift via HI and $f_i^\mathrm{freq}$ measures clade growth/decline</p>
-	<p>We learn coefficients and validate model based on previous 15 H3N2 seasons</p>
-</section>
-
-<section>
-	<h3>Clade growth rate is well predicted (<i>&rho;</i> = 0.66)</h3>
-	<img class="stretch" data-src="/images/talks/prediction_validation_growth_rates.png">
-</section>
-
-<section>
-	<h3>Growth vs decline correct in 84% of cases</h3>
-	<img class="stretch" data-src="/images/talks/prediction_validation_growth_rates_window.png">
-</section>
-
-<section data-transition="slide-in zoom-out" data-transition-speed="slow">
-	<h3>Trajectories show more detailed congruence</h3>
-	<img class="stretch" data-src="/images/talks/prediction_trajectories_grid.png">
-</section>
-
-<section data-transition="zoom-in slide-out">
-	<h3>Trajectories show more detailed congruence</h3>
-	<img class="stretch" data-src="/images/talks/prediction_trajectories_zoom.png">
-</section>
-
-<section>
-	<h3>Current forecast favors drifted A1b clade</h3>
-	<img class="stretch" data-src="/images/talks/nextflu_feb2018_h3n2_freq_prediction.png">
-</section>
-
-<section>
-	<h3>Plan to do full genome fitnesses. Predict HA clade growth, but incorporate NA fitness effects.</h3>
-</section>
-
 <!---------------------------------->
 
 <section data-background="#000">
@@ -243,6 +177,103 @@ draft: true
 <section>
 	<h3>Correlations across regions with 12-month lag</h3>
 	<img class="stretch" src="/images/talks/flu_geo_corr_matrix_12m_lag.png">
+</section>
+
+<section>
+	<h3>Frequency diffusion model</h3>
+	<p>Single deme</p>
+	<p>$$X(t+\mathrm{d}t) = \mathcal{N}\big( X(t) , \; \mathrm{d}t \, \sigma^2 \, X(t) \, (1-X(t)) \big),$$</p>
+	<p>Multiple deme</p>
+	<p>$$X(t+\mathrm{d}t) = \mathcal{N}\big( X(t) + \mathrm{d}t \, \alpha \, (Y(t)-X(t)), \; \mathrm{d}t \, \sigma^2 \, X(t) \, (1-X(t)) \big),$$</p>
+	<p>$$Y(t+\mathrm{d}t) = \mathcal{N}\big( Y(t) + \mathrm{d}t \, \beta \, (X(t)-Y(t)), \; \mathrm{d}t \, \sigma^2 \, Y(t) \, (1-Y(t)) \big),$$</p>
+	<p>where $\alpha$ represents flow into deme X and $\beta$ represents flow into deme Y</p>
+</section>
+
+<section>
+	<h3>Migration pulls frequencies to be similar to each other</h3>
+	<img class="stretch" src="/images/talks/flu_geo_diffusion_model_equal_streamplot.png">
+</section>
+
+<section>
+	<h3>Biased migration pulls deme Y more strongly than deme X</h3>
+	<img class="stretch" src="/images/talks/flu_geo_diffusion_model_biased_streamplot.png">
+</section>
+
+<section>
+	<h3>Simulate from this biased diffusion model</h3>
+	<img class="stretch" src="/images/talks/flu_geo_diffusion_model_biased_trajplot.png">
+</section>
+
+<section>
+	<h3>This shows asymmetry in lagged correlation</h3>
+	<img class="stretch" src="/images/talks/flu_geo_diffusion_model_biased_corrplot.png">
+</section>
+
+<!----------------------------------------->
+
+<section data-background="#000">
+	<h1 class="title">Forecasting</h1>
+</section>
+
+<section>
+	<h3>Fitness models can project clade frequencies</h3>
+	<br>
+	<p>Clade frequencies $X$ derive from the fitnesses $f$ and frequencies $x$ of constituent viruses, such that</p>
+	<p>$$\hat{X}_v(t+\Delta t) = \sum_{i:v} x_i(t) \, \mathrm{exp}(f_i \, \Delta t)$$</p>
+	<p>This captures clonal interference between competing lineages</p>
+	<img class="stretch" data-src="/images/talks/clonal_interferance.jpg">
+	<div class="citation">
+		<a href="http://www.nature.com/nature/journal/v507/n7490/full/nature13087.html">&#321;uksza and L&auml;ssig 2014</a>
+	</div>
+</section>
+
+<section>
+	<h3>Fit viruses have:</h3>
+	<br>
+	<ol>
+		<li class="larger">Amino acid changes at epitope sites</li>
+		<li class="larger">Antigenic novelty based on HI</li>
+		<li class="larger">Rapid phylogenetic growth</li>
+	</ol>
+</section>
+
+<section>
+	<h3>We predict fitness based on a simple formula</h3>
+	<br>
+	<p>where the fitness $f$ of virus $i$ is estimated as</p>
+	<p>$$\hat{f}_i = \beta^\mathrm{HI} \, f_i^\mathrm{HI} + \beta^\mathrm{freq} \, f_i^\mathrm{freq}$$</p>
+	<p>where $f_i^\mathrm{HI}$ measures antigenic drift via HI and $f_i^\mathrm{freq}$ measures clade growth/decline</p>
+	<p>We learn coefficients and validate model based on previous 15 H3N2 seasons</p>
+</section>
+
+<section>
+	<h3>Clade growth rate is well predicted (<i>&rho;</i> = 0.66)</h3>
+	<img class="stretch" data-src="/images/talks/prediction_validation_growth_rates.png">
+</section>
+
+<section>
+	<h3>Growth vs decline correct in 84% of cases</h3>
+	<img class="stretch" data-src="/images/talks/prediction_validation_growth_rates_window.png">
+</section>
+
+<section data-transition="slide-in zoom-out" data-transition-speed="slow">
+	<h3>Trajectories show more detailed congruence</h3>
+	<img class="stretch" data-src="/images/talks/prediction_trajectories_grid.png">
+</section>
+
+<section data-transition="zoom-in slide-out">
+	<h3>Trajectories show more detailed congruence</h3>
+	<img class="stretch" data-src="/images/talks/prediction_trajectories_zoom.png">
+</section>
+
+<section>
+	<h3>Current forecast favors drifted A1b clade</h3>
+	<img class="stretch" data-src="/images/talks/nextflu_feb2018_h3n2_freq_prediction.png">
+</section>
+
+<section>
+	<h3>Plan to do full genome fitnesses. Predict HA clade growth, but incorporate NA fitness effects.</h3>
+	<h3>Also incorporate geography.</h3>
 </section>
 
 <!----------------------------------------->
