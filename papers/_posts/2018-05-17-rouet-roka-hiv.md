@@ -3,9 +3,9 @@ layout: paper
 title: Massive iatrogenic outbreak of human immunodeficiency virus type 1 in rural Cambodia, 2014-2015
 image: /images/papers/rouet-roka-hiv.png
 authors: Rouet F, Nouhin J, Zheng D-P, Roche B, Black A, Prak S, Leoz M, Gaudy-Graffin C, Ferradini L, Mom C, Mam S, Gautier C, Lesage G, Ken S, Phon K, Kerleguer A, Yang C, Killam W, Fujita M, Mean C, Fontenille D, Barin F, Plantier J-C, Bedford T, Ramos A, Saphonn V
-year: 2017
-ref: Rouet et al. 2017. Clin Infect Dis.
-journal: "Clin Infect Dis. In press."
+year: 2018
+ref: Rouet et al. 2018. Clin Infect Dis.
+journal: "Clin Infect Dis 66: 1733–1741."
 doi: 10.1093/cid/cix1071
 github: https://github.com/blab/roka
 pdf: /pdfs/papers/rouet-roka-hiv.pdf
