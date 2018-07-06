@@ -9,6 +9,7 @@ github: evogytis
 scholar: nwiME18AAAAJ
 image: /images/team/gytis-dudas.jpg
 cv: /pdfs/team/gytis-dudas-cv.pdf
+alumni: true
 ---
 
 I'm a [Mahan Postdoctoral Fellow](http://www.fredhutch.org/en/labs/phs/projects/herbold-computational-biology-program.html) at the [Fred Hutchinson Cancer Research Center](http://www.fhcrc.org/) and I study RNA viruses over time. Imprints of evolutionary forces on viral genomes can be investigated in great detail when sequence data, population genetics theory and phylogenetics are used in combination, offering a glimpse into the dynamics of their hosts, ecology and conflicts.
