@@ -1,6 +1,6 @@
 ---
 layout: talk_reveal3
-title: Genomic surveillance of emerging threats and epidemic spread
+title: Real-time tracking of virus evolution
 venue: IDM
 event: 	Weekly Seminar
 author: Trevor Bedford
@@ -22,6 +22,8 @@ author: Trevor Bedford
 	<br>
 	{{ page.venue }}
 </section>
+
+<!------------------------------->
 
 <section>
 	<h2>Sequencing to reconstruct pathogen spread</h2>
@@ -48,171 +50,16 @@ author: Trevor Bedford
 </section>
 
 <section>
-	<h2>Phylogenetic tracking critical to pandemic warning systems and outbreak response</h2>
+	<h2>Phylogenetic tracking has the capacity to revolutionize epidemiology</h2>
 </section>
 
 <section style="text-align: left;">
-	<h3>Monitoring of animal-to-human spillover</h3>
-	<p>
-		&nbsp; &nbsp; &nbsp;
-		<i>MERS spillover in the Arabian Peninsula</i>
-	</p>
-	<br>
-	<h3>Monitoring of human-to-human transmission</h3>
-	<p>
-		&nbsp; &nbsp; &nbsp;
-		<i>Ebola spread in West Africa</i>
-		<br>
-		&nbsp; &nbsp; &nbsp;
-		<i>Zika spread in the Americas</i>
-	</p>
-</section>
-
-<section data-background="#000">
-	<h1 class="title">MERS-CoV</h1>
-</section>
-
-<section style="text-align: left;">
-	<h3>Middle East respiratory syndrome coronavirus (MERS-CoV)</h3>
+	<h3>Outline</h3>
 	<p>
 	<ul>
-		<li>First identified in Saudi Arabia in 2012</li>
-		<li>2220 confirmed cases to date and 790 deaths</li>
-		<li>Camels thought to be the intermediate host</li>
-		<li>30% of common colds due to endemic human coronaviruses</li>
-	</ul>
-	</p>
-</section>
-
-<section>
-	<h3>Ongoing incidence, but lack of epidemic growth</h3>
-	<img class="stretch" src="/images/talks/mers_who_timeseries.png">
-</section>
-
-<section>
-	<h3>Cases localized to the Arabian Peninsula</h3>
-	<img class="stretch" src="/images/talks/mers_map.jpg">
-</section>
-
-<section>
-	<h3>Hypotheses for MERS transmission</h3>
-	<img class="stretch" src="/images/talks/mers_network.png">
-</section>
-
-<section>
-	<h3>MERS-CoV spillover at the camel-human interface</h3>
-	<p class="smaller"><i>
-	with <img width=40 class="img-avatar" src="/images/team/gytis-dudas.jpg"> Gytis Dudas, Luiz Carvalho and Andrew Rambaut
-	</i></p>
-	<div class="citation">
-		<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
-	</div>
-</section>
-
-<section style="text-align: left;">
-	<h3>Genomic dataset</h3>
-	<p>
-	<ul>
-		<li>174 virus genomes from human infections</li>
-		<li>100 virus genomes from camel infections</li>
-	</ul>
-	</p>
-</section>
-
-<section>
-	<h3>MERS tree with host state</h3>
-	<img class="stretch" src="/images/talks/mers_tree_ml.png">
-	<div class="citation">
-		<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
-	</div>
-</section>
-
-<section>
-	<h3>Phylodynamic reconstruction of host state</h3>
-	<img class="stretch" src="/images/talks/mers_tree.png">
-	<div class="citation">
-		<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
-	</div>
-</section>
-
-<section>
-	<h3>Humans are transient hosts</h3>
-	<img class="stretch" src="/images/talks/mers_exploded_tree.png">
-	<div class="citation">
-		<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
-	</div>
-</section>
-
-<!-- <section>
-	<h3>Asymmetric migration rates</h3>
-	<p>
-	<ul>
-		<li>56 (48–63) camel-to-human transmission events resulting in 174 sequenced human infections</li>
-		<li>3 (0-12) human-to-camel transmission events</li>
-	</ul>
-	</p>
-	<img class="stretch" src="/images/talks/mers_mig_rates.png">
-	<div class="citation">
-		<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
-	</div>
-</section> -->
-<!--
-<section>
-	<h3>Introduction events tend to occur between April and July</h3>
-	<img class="stretch" src="/images/talks/mers_seasonality.png">
-	<div class="citation">
-		<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
-	</div>
-</section>
-
-<section data-background="/images/talks/mers_camel_calving.jpg">
-	<h3 class="title">Dromedary camel calving occurs between Nov and Feb</h3>
-	<br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p>
-</section> -->
-
-<section>
-	<h3>Monte Carlo simulation</h3>
-	<img class="stretch" src="/images/talks/mers_abc_method.png">
-	<div class="citation">
-		<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
-	</div>
-</section>
-
-<section>
-
-	<section>
-		<h3>Phylogenetic clustering suggests $R_0$ below 1.0 and ~2000 human cases driven by ~600 introduction events</h3>
-		<img class="stretch" src="/images/talks/mers_cluster_r0_combined.png">
-		<div class="citation">
-			<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
-		</div>
-	</section>
-
-	<section>
-		<h3>Similar results when we assume larger clusters are more likely to be sequenced</h3>
-		<img class="stretch" src="/images/talks/mers_cluster_r0_bias.png">
-		<div class="citation">
-			<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
-		</div>
-	</section>
-
-</section>
-
-<section>
-	<h3>Critically, no evidence of increasing cluster sizes through time</h3>
-	<img class="stretch" src="/images/talks/mers_introductions.png">
-	<div class="citation">
-		<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
-	</div>
-</section>
-
-<section style="text-align: left;">
-	<h3>Many other viruses that exhibit stuttering chains of human infection</h3>
-	<p>
-	<ul>
-		<li>Nipah virus (fruit bats / pigs, Southeast Asia)</li>
-		<li>Lassa virus (rodents, West Africa)</li>
-		<li>Avian influenza (birds, mainland China)</li>
+		<li>Ebola spread in West Africa</li>
+		<li>Zika spread in the Americas</li>
+		<li>"Real-time" analyses</li>
 	</ul>
 	</p>
 </section>
@@ -242,13 +89,13 @@ author: Trevor Bedford
 	</div>
 </section>
 
-<!-- <section>
+<section>
 	<h3>Sequenced genomes were representative of spatiotemporal diversity</h3>
 	<img class="stretch" data-src="/images/talks/ebola_mig_sampling_corr.png">
 	<div class="citation">
 		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
 	</div>
-</section> -->
+</section>
 
 <section>
 	<h3>Phylogenetic reconstruction of epidemic</h3>
@@ -257,7 +104,7 @@ author: Trevor Bedford
 		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
 	</div>
 </section>
-<!--
+
 <section data-background="/images/talks/ebola_mig_tree.png">
 </section>
 
@@ -283,7 +130,7 @@ author: Trevor Bedford
 	<div class="citation">
 		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
 	</div>
-</section> -->
+</section>
 
 <section>
 	<h3>Spatial structure at the country level</h3>
@@ -432,6 +279,34 @@ author: Trevor Bedford
 </section>
 
 <section style="text-align: left;">
+	<h2><a href="https://github.com/nextstrain/fauna">Fauna</a></h2>
+	<p>
+		<b>Rethink database of virus and titer data</b>
+	</p>
+	<p >
+	<ul>
+		<li>Harmonizes data from different sources</li>
+		<li>Integrates different types of data (serology, sequences, case details)</li>
+		<li>Provides an interface for downstream analysis</li>
+	<ul>
+	</p>
+</section>
+
+<section style="text-align: left;">
+	<h2><a href="https://github.com/nextstrain/augur">Augur</a></h2>
+	<p>
+		<b>Build scripts to align sequences, build trees and annotate</b>
+	</p>
+	<p>
+	<ul>
+		<li>Flexible build scripts to incorporate different viruses and analyses</li>
+		<li>Constructs time-resolved phylogenies</li>
+		<li>Annotates with geographic transitions and mutation events</li>
+	<ul>
+	</p>
+</section>
+
+<section style="text-align: left;">
 	<h3>Example augur pipeline for 1600 Ebola genomes</h3>
 	<p>
 	<ul>
@@ -440,6 +315,37 @@ author: Trevor Bedford
 		<li>Temporally resolve tree and geographic ancestry with TreeTime <i>(16 min)</i></li>
 		<li>Total pipeline <i>(1 hr 46 min)</i></li>
 	</ul>
+	</p>
+</section>
+
+<section>
+	<div class="left" style="float:left;width:63%">
+		<h3>Pipeline consists of Unix-like command line modules</h3>
+		<p>
+		<ul>
+			<li>Modules called via <code>augur filter</code>, <code>augur tree</code>, <code>augur traits</code>, etc...
+			<li>Designed to be composable across pathogen builds</li>
+			<li>Uses Snakemake to define a pipeline, making steps obvious</li>
+			<li>Provides depedency graph for fast recomputation</li>
+			<li>Pathogen-specific repos give users an obvious foundation to build off of</li>
+		</ul>
+	</div>
+	<div class="right" style="float:right;width:35%">
+		<img data-src="/images/talks/nextstrain_augur_dag.png">
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<h2><a href="https://github.com/nextstrain/auspice">Auspice</a></h2>
+	<p>
+		<b>Web visualization of resulting trees</b>
+	</p>
+	<p>
+	<ul>
+		<li>Interactive data exploration and filtering</li>
+		<li>Framework through React / D3</li>
+		<li>Connects phylogeny, geography and genotypes</li>
+	<ul>
 	</p>
 </section>
 
@@ -483,8 +389,6 @@ author: Trevor Bedford
 		<img width=50 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Tom Sibley
 		</p>
 
-	<p class="tiny"><b>MERS</b>: Gytis Dudas, Andrew Rambaut, Luiz Carvalho</p>
-
 	<p class="tiny"><b>Ebola</b>: Gytis Dudas, Andrew Rambaut, Luiz Carvalho, Philippe Lemey,
 	Marc Suchard, Andrew Tatem</p>
 
@@ -493,7 +397,7 @@ author: Trevor Bedford
 	Ester Sabino, Luiz Alcantara</p>
 
 	<p class="tiny"><b>Nextstrain</b>: Richard Neher, James Hadfield, Colin Megill, Sidney Bell,
-	Charlton Callender, Barney Potter, John Huddleston, Emma Hodcroft</p>
+	Charlton Callender, Barney Potter, John Huddleston, Emma Hodcroft, Tom Sibley</p>
 
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
 		<img width="15%" data-src="/images/talks/logo_fred_hutch_vertical.png">
