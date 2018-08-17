@@ -5,7 +5,7 @@ image: /images/papers/xue-within-host-evolution.png
 authors: Xue KS, Moncla LH, Bedford T, Bloom JD
 year: 2018
 ref: Xue et al. 2018. Trends Microbiol.
-journal: "Trends Microbiol. In press."
+journal: "Trends Microbiol 26: 781-793."
 doi: 10.1016/j.tim.2018.02.007
 pdf: /pdfs/papers/xue-within-host-evolution.pdf
 ---
