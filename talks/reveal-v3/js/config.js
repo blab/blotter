@@ -19,7 +19,7 @@ Reveal.initialize({
 	// parallaxBackgroundSize: '2100px 900px',
 
     math: {
-        mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+        mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
         config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
     },
 
