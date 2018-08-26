@@ -11,16 +11,6 @@ widescreen: true
 
 <!-- Color ramp: ["#511EA8", "#4432BD", "#3F4BCA", "#4065CF", "#447ECC", "#4C91BF", "#56A0AE", "#63AC9A", "#71B486", "#81BA72", "#94BD62", "#A7BE54", "#BABC4A", "#CBB742", "#D9AE3E", "#E29E39", "#E68935", "#E56E30", "#E14F2A", "#DC2F24"] -->
 
-<!-- Outline
-Background
-MERS
-Yellow Fever (maybe)
-Ebola
-Zika
-Influenza
-Nextstrain
--->
-
 <section data-background="#000000">
 	<h1 class="title">{{ page.title }}</h1>
 	<br>
@@ -383,6 +373,14 @@ Nextstrain
 </section>
 
 <section>
+	<h3>Each introduction results in a minor outbreak</h3>
+	<img class="stretch" data-src="/images/talks/ebola_mig_cluster_distributions.png">
+	<div class="citation">
+		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
+	</div>
+</section>
+
+<section>
 	<h3>Regional outbreaks due to multiple introductions</h3>
 	<img class="stretch" data-src="/images/talks/ebola_mig_clusters_sierra_leone.png">
 	<div class="citation">
@@ -391,15 +389,18 @@ Nextstrain
 </section>
 
 <section>
-	<h3>Each introduction results in a minor outbreak</h3>
-	<img class="stretch" data-src="/images/talks/ebola_mig_cluster_distributions.png">
+	<h3>Regional outbreaks due to multiple introductions</h3>
+	<img class="stretch" data-src="/images/talks/ebola_mig_stacked_epi_curve.png">
 	<div class="citation">
 		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
 	</div>
 </section>
 
-<!-- ffmpeg -i Untitled.mov -filter_complex "setpts=0.75*PTS" -an -vcodec libx264 ebola_mig_movie.mp4 -->
-<section data-autoplay data-background-video="/images/talks/ebola_mig_movie.mp4">
+<section>
+	<h3>
+		Ebola spread in West Africa followed a gravity model with moderate slowing by international borders,
+		in which spread is driven by short-lived migratory clusters
+	</h3>
 </section>
 
 <!--- Zika --->
@@ -502,32 +503,59 @@ Nextstrain
 		with
 		<img width=40 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,
 		<img width=40 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,
-		<img width=40 class="img-avatar" src="/images/team/colin-megill.jpg"> Colin Megill,
-		<br>
-		<img width=40 class="img-avatar" src="/images/team/sidney-bell.jpg"> Sidney Bell,
-		<img width=40 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,
-		<img width=40 class="img-avatar" src="/images/team/barney-potter.jpg"> Barney Potter,
-		<br>
 		<img width=40 class="img-avatar" src="/images/team/emma-hodcroft.jpg"> Emma Hodcroft,
+		<img width=40 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Tom Sibley,
+		<img width=40 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,
+		<br>
+		<img width=40 class="img-avatar" src="/images/team/colin-megill.jpg"> Colin Megill,
+		<img width=40 class="img-avatar" src="/images/team/sidney-bell.jpg"> Sidney Bell,
+		<img width=40 class="img-avatar" src="/images/team/barney-potter.jpg"> Barney Potter,
 		<img width=40 class="img-avatar" src="/images/team/charlton-callender.jpg"> Charlton Callender
-		<img width=40 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Tom Sibley
 	</i></p>
 </section>
 
 <section>
 	<h3>Nextstrain architecture</h3>
+	<p>Two central aims: <b>(1) rapid and flexible phylodynamic analysis</b> and <b> (2) interactive visualization</b></p>
 	<p>All code open source at <a class="off" href="https://github.com/nextstrain">github.com/nextstrain</a></p>
 	<img class="stretch" src="/images/talks/nextstrain_components.png">
 </section>
 
 <section style="text-align: left;">
-	<h3>Example pipeline for 1600 Ebola genomes</h3>
+	<h3>Rapid pipeline for 1600 Ebola genomes</h3>
 	<p>
 	<ul>
 		<li>Align with MAFFT <i>(34 min)</i></li>
 		<li>Build ML tree with RAxML <i>(54 min)</i></li>
 		<li>Temporally resolve tree and geographic ancestry with TreeTime <i>(16 min)</i></li>
 		<li>Total pipeline <i>(1 hr 46 min)</i></li>
+	</ul>
+	</p>
+</section>
+
+<section>
+	<div class="left" style="float:left;width:65%">
+		<h3>Flexible pipeline of Unix-like command line modules</h3>
+		<p>
+		<ul>
+			<li>Modules called via <code>augur filter</code>, <code>augur tree</code>, <code>augur traits</code>, etc...
+			<li>Designed to be composable across pathogen builds</li>
+			<li>Uses Snakemake to define a pipeline, making steps obvious</li>
+			<li>Provides depedency graph for fast recomputation</li>
+			<li>Pathogen-specific repos give users an obvious foundation to build off of</li>
+		</ul>
+	</div>
+	<div class="right" style="float:right;width:28%">
+		<img data-src="/images/talks/nextstrain_augur_dag.png">
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<h3>Nextstrain is two things:</h3>
+	<p>
+	<ul>
+		<li>a bioinformatics toolkit and visualisation app, which can be used for a broad range of datasets</li>
+		<li>a real-time pathogen analysis kept up-to-date on the website nextstrain.org</i></li>
 	</ul>
 	</p>
 </section>
@@ -540,22 +568,54 @@ Nextstrain
 	</h1>
 </section>
 
-<!-- Live demo of Ebola and Zika -->
+<section data-background="/images/talks/nextstrain_demo_ebola.png">
+</section>
+
+<section data-background="/images/talks/nextstrain_demo_ebola_colorby_date.png">
+</section>
+
+<section data-background="/images/talks/nextstrain_demo_ebola_root_to_tip.png">
+</section>
+
+<section data-background="/images/talks/nextstrain_demo_ebola_clade.png">
+</section>
+
+<section data-background="/images/talks/nextstrain_demo_zika.png">
+</section>
+
+<section data-background="/images/talks/nextstrain_demo_zika_t1.png">
+</section>
+
+<section data-background="/images/talks/nextstrain_demo_zika_t2.png">
+</section>
+
+<section data-background="/images/talks/nextstrain_demo_zika_t3.png">
+</section>
+
+<section data-background="/images/talks/nextstrain_demo_zika_t4.png">
+</section>
+
+<section data-background="/images/talks/nextstrain_demo_zika_t5.png">
+</section>
 
 <section>
 	<img class="stretch" src="/images/talks/gates_nextstrain_tweet.png">
 </section>
 
 <section data-background="/images/talks/nextstrain_in_sierra_leone.jpg">
-	<h3 class="title">Rapid on-the-ground sequencing by Ian Goodfellow, Matt Cotten and colleagues</h3>
+	<h2 class="title">Rapid on-the-ground sequencing in Makeni, Sierra Leone</h2>
 	<br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p>
 </section>
 
 <section>
-	<h3>Build out pipelines for different pathogens,
-		improve databasing and lower <br>
-		bioinformatics bar</h3>
+	<h2>
+		Build out pipelines for different pathogens (including bacteria),
+		enable painless sharing of results and lower bioinformatics bar
+	</h2>
 </section>
+
+<!-- TODO -->
+<!-- TB and community builds -->
 
 <section>
 	<h3>Acknowledgements</h3>
@@ -565,8 +625,8 @@ Nextstrain
 		<img width=50 class="img-avatar" src="/images/team/sidney-bell.jpg"> Sidney Bell,
 		<img width=50 class="img-avatar" src="/images/team/gytis-dudas.jpg"> Gytis Dudas,
 		<img width=50 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,
-		<br>
 		<img width=50 class="img-avatar" src="/images/team/barney-potter.jpg"> Barney Potter,
+		<br>
 		<img width=50 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,
 		<img width=50 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,
 		<img width=50 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Tom Sibley
@@ -597,8 +657,4 @@ Nextstrain
 		&nbsp; &nbsp;
 		<img width="15%" data-src="/images/talks/logo_osp.jpg">
 	</div>
-</section>
-
-<section data-background="#000">
-	<img width=100 src="/images/talks/giphy_virus.gif">
 </section>
