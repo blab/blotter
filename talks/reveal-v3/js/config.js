@@ -8,7 +8,7 @@ Reveal.initialize({
 	margin: 0.05,
 	minScale: 0.1,
 	maxScale: 5.0,
-	width: 960,
+	width: 960, // 960 for 4/3, 1280 for 16/9 widescreen
 	height: 720,
 
 	theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
