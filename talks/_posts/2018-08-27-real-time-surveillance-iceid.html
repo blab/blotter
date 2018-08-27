@@ -118,7 +118,7 @@ author: Trevor Bedford
 	<p>
 	<ul>
 		<li>First identified in Saudi Arabia in 2012</li>
-		<li>2220 confirmed cases to date and 790 deaths</li>
+		<li>2229 confirmed cases to date and 791 deaths</li>
 		<li>Camels thought to be the intermediate host</li>
 		<li>30% of common colds due to endemic human coronaviruses</li>
 	</ul>
@@ -516,8 +516,8 @@ author: Trevor Bedford
 
 <section>
 	<h3>Nextstrain architecture</h3>
-	<p>Two central aims: (1) <i>rapid and flexible phylodynamic analysis</i> and <br> (2) <i>interactive visualization</i></p>
 	<p>All code open source at <a class="off" href="https://github.com/nextstrain">github.com/nextstrain</a></p>
+	<p>Two central aims: (1) <i>rapid and flexible phylodynamic analysis</i> and <br> (2) <i>interactive visualization</i></p>
 	<img class="stretch" src="/images/talks/nextstrain_components.png">
 </section>
 
@@ -540,7 +540,7 @@ author: Trevor Bedford
 		<ul>
 			<li>Modules called via <code>augur filter</code>, <code>augur tree</code>, <code>augur traits</code>, etc...
 			<li>Designed to be composable across pathogen builds</li>
-			<li>Uses Snakemake to define a pipeline, making steps obvious</li>
+			<li>Defined pipeline, making steps obvious</li>
 			<li>Provides dependency graph for fast recomputation</li>
 			<li>Pathogen-specific repos give users an obvious foundation to build from</li>
 		</ul>
@@ -631,8 +631,23 @@ author: Trevor Bedford
 
 <section>
 	<h3>Genomic epidemiology of Lassa virus in Nigeria</h3>
-	<p>Data and builds courtesy of Paul Oluniyi, Christian Happi and ACEGID at Redeemer’s University</p>
+	<p>Data and builds courtesy of Paul Oluniyi, Christian Happi and ACEGID at Redeemer's University</p>
 	<img class="stretch" src="/images/talks/nextstrain_demo_lassa_nigeria.png">
+</section>
+
+<section>
+	<h3>Stable clustering by geography</h3>
+	<img class="stretch" src="/images/talks/nextstrain_demo_lassa_nigeria_timetree.png">
+</section>
+
+<section>
+	<h3>Recent "outbreak" originates from a diverse group of viruses</h3>
+	<img class="stretch" src="/images/talks/nextstrain_demo_lassa_nigeria_colorby_date.png">
+</section>
+
+<section>
+	<h3>Page live at nextstrain.org/community/pauloluniyi/lassa/s</h3>
+	<img class="stretch" src="/images/talks/nextstrain_demo_lassa_nigeria_live.png">
 </section>
 
 <section>
@@ -675,8 +690,8 @@ author: Trevor Bedford
 	Julien Thézé, Jaquilene de Jesus, Marta Giovanetti, Moritz Kraemer, Sarah Hill, Allison Black,
 	Ester Sabino, Luiz Alcantara</p>
 
-	<p class="tiny"><b>Nextstrain</b>: Richard Neher, James Hadfield, Colin Megill, Sidney Bell,
-	Charlton Callender, Barney Potter, John Huddleston, Emma Hodcroft, Tom Sibley</p>
+	<p class="tiny"><b>Nextstrain</b>: Richard Neher, James Hadfield, Emma Hodcroft, Tom Sibley,
+	Paul Oluniyi, John Huddleston, Sidney Bell, Barney Potter, Colin Megill, Charlton Callender</p>
 
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
 		<img width="15%" data-src="/images/talks/logo_fred_hutch_vertical.png">
