@@ -10,6 +10,8 @@ email: black.alli@gmail.com
 twitter: alliblk
 ---
 
-In the fall I will be starting my PhD in Epidemiology at the University of Washington. I’m interested in how we can use pathogen sequence data to understand patterns in disease transmission, and from an applied public health perspective, how we use that data to better prepare for and respond to outbreaks.
+I'm a PhD student in the [Department of Epidemiology](https://epi.washington.edu/) at the University of Washington. My research focuses on using evolutionary analysis of viral genome sequences to explore how diseases move around, whether that be from person-to-person or country-to-country.
 
-I received my bachelor’s from Quest University in British Columbia, Canada, studying health sciences, and did a post-baccalaureate year at the University of Manitoba studying microbiology. I’m currently finishing my master’s in Genetic Epidemiology at the University of Washington, investigating evolutionary and epidemiological dynamics of Infectious Hematopoietic Necrosis Virus, a rhabdovirus that infects Pacific salmon.
+Most of my work so far has focused on understanding the Zika epidemic in the Americas. I've been involved in estimating when [Zika was introduced to Brazil](https://bedford.io/papers/faria-zika-in-brazil/) and investigating how frequently [Zika was introduced to the US Virgin Islands](https://www.biorxiv.org/content/early/2017/03/03/113100.1). While joint analysis of sequence data and surveillance data is a relatively new domain for infectious disease epidemiologists, these analyses can help us better define populations at risk, investigate factors associated with disease spread, and evaluate infection control measures, all of which are critical components of epidemiology.
+
+I received my Bachelor’s of Arts and Sciences from [Quest University](https://questu.ca/) in British Columbia, Canada, studying health sciences, and did a post-baccalaureate year at the [University of Manitoba](http://www.sci.umanitoba.ca/microbiology/) studying microbiology. I have a [Master's in Genetic Epidemiology](http://iphg.biostat.washington.edu/programs/ms) from the University of Washington.
