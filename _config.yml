@@ -96,3 +96,5 @@ projects:
   - blab/mers-structure
   - blab/roka
   - blab/mumps-seq
+  - blab/dengue-antigenic-dynamics
+  - blab/zika-colombia  
