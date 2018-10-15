@@ -27,6 +27,10 @@
 
     <script>
 
+      // epi parameter
+      var replicationProb = 0.2,
+          deathProb = 0.1;
+
       var width = parseInt(d3.select("body").style("width"), 10),
         height = width / 2;
 
@@ -35,7 +39,7 @@
         .attr("height", height);
 
       // x location, y location, index and parent index
-      var data = [ {x: 0, y: 0, i: 0, p: 0} ];
+      var data = [ {x: 0, y: 0, px: 0, py: 0} ];
 
       var xScale = d3.scaleLinear()
         .domain([-1, 1])
@@ -53,9 +57,9 @@
 
       links.enter().append("line")
         .attr("class", "link")
-        .attr("x1", function(d) { return xScale( data[d.p].x )} )
+        .attr("x1", function(d) { return xScale( d.px )} )
         .attr("x2", function(d) { return xScale( d.x )} )
-        .attr("y1", function(d) { return yScale( data[d.p].y )} )
+        .attr("y1", function(d) { return yScale( d.py )} )
         .attr("y2", function(d) { return yScale( d.y )} );
 
       nodes.enter().append("circle")
@@ -68,37 +72,75 @@
 
       var timer = d3.interval(function(elapsed) {
 
-        var liveData = data.filter(function(d){
+        var liveData = data.filter(function(d) {
           return d.x == step;
         })
 
-        var newData = liveData.map(function(d) {
-          return {x: step + 1, y: 0, i: d.i + 1, p: d.i};
+        var replicateData = liveData.map(function(d) {
+          if (Math.random() < replicationProb) {
+            var offset = 1;
+            if (Math.random() < 0.5) {
+              offset = -1
+            }
+            return {x: d.x + 1, y: d.y + offset, px: d.x, py: d.y};
+          } else {
+            return {x: null, y: null, i: null, p: null};
+          }
         });
 
+        var replicateData = replicateData.filter(function(d) {
+          return d.x !== null;
+        })
+
+        var extendData = liveData.map(function(d) {
+          if (Math.random() < deathProb && liveData.length > 1) {
+            return {x: null, y: null, i: null, p: null};
+          } else {
+            return {x: d.x + 1, y: d.y, px: d.x, py: d.y};
+          }
+        });
+
+        var extendData = extendData.filter(function(d) {
+          return d.x !== null;
+        })
+
+        newData = replicateData.concat(extendData);
         data = data.concat(newData);
+
+        var b = slidingBounds(data);
+        xScale.domain([b.xMin - 1, b.xMax + 1]);
+
+        links.data(newData).enter().append("line")
+          .attr("class", "link")
+          .attr("x1", function(d) { return xScale( d.x )} )
+          .attr("x2", function(d) { return xScale( d.x )} )
+          .attr("y1", function(d) { return yScale( d.py )} )
+          .attr("y2", function(d) { return yScale( d.py )} );
+
+        nodes.data(newData).enter().append("circle")
+          .attr("class", "node")
+          .attr("cx", function(d) { return xScale(d.x)} )
+          .attr("cy", function(d) { return yScale(d.py)} )
+          .attr("r", 5);
+
+        d3.selectAll(".link").transition().duration(1000).ease(d3.easeCubic)
+          .attr("x1", function(d) { return xScale( d.px )} )
+          .attr("x2", function(d) { return xScale( d.x )} )
+          .attr("y1", function(d) { return yScale( d.py )} )
+          .attr("y2", function(d) { return yScale( d.y )} );
+
+        d3.selectAll(".node").transition().duration(1000).ease(d3.easeCubic)
+          .attr("cx", function(d) { return xScale(d.x)} )
+          .attr("cy", function(d) { return yScale(d.y)} );
 
         var b = slidingBounds(data);
         xScale.domain([b.xMin - 1, b.xMax + 1]);
         yScale.domain([b.yMin - 1, b.yMax + 1]);
 
-        links.data(newData).enter().append("line")
-          .attr("class", "link")
-          .attr("x1", function(d) { return xScale( data[d.p].x )} )
-          .attr("x2", function(d) { return xScale( d.x )} )
-          .attr("y1", function(d) { return yScale( data[d.p].y )} )
-          .attr("y2", function(d) { return yScale( d.y )} );
-
-        nodes.data(newData).enter().append("circle")
-          .attr("class", "node")
-          .attr("cx", function(d) { return xScale(d.x)} )
-          .attr("cy", function(d) { return yScale(d.y)} )
-          .attr("r", 5);
-
         d3.selectAll(".link").transition().duration(1000).ease(d3.easeCubic)
-          .attr("x1", function(d) { return xScale( data[d.p].x )} )
+          .attr("x1", function(d) { return xScale( d.px )} )
           .attr("x2", function(d) { return xScale( d.x )} )
-          .attr("y1", function(d) { return yScale( data[d.p].y )} )
+          .attr("y1", function(d) { return yScale( d.py )} )
           .attr("y2", function(d) { return yScale( d.y )} );
 
         d3.selectAll(".node").transition().duration(1000).ease(d3.easeCubic)
