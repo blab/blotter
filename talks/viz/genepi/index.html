@@ -10,6 +10,11 @@
         fill: #5097BA;
       }
 
+      .link {
+        stroke: #777;
+        stroke-width: 1.5px;
+      }
+
     </style>
   </head>
 
@@ -40,8 +45,18 @@
         .domain([-1, 1])
         .range([0, height]);
 
-      var nodes = svg.selectAll(".node")
+      var links = svg.append("g").selectAll(".link")
         .data(data, function(d) { return d; });
+
+      var nodes = svg.append("g").selectAll(".node")
+        .data(data, function(d) { return d; });
+
+      links.enter().append("line")
+        .attr("class", "link")
+        .attr("x1", function(d) { return xScale( data[d.p].x )} )
+        .attr("x2", function(d) { return xScale( d.x )} )
+        .attr("y1", function(d) { return yScale( data[d.p].y )} )
+        .attr("y2", function(d) { return yScale( d.y )} );
 
       nodes.enter().append("circle")
         .attr("class", "node")
@@ -67,11 +82,24 @@
         xScale.domain([b.xMin - 1, b.xMax + 1]);
         yScale.domain([b.yMin - 1, b.yMax + 1]);
 
+        links.data(newData).enter().append("line")
+          .attr("class", "link")
+          .attr("x1", function(d) { return xScale( data[d.p].x )} )
+          .attr("x2", function(d) { return xScale( d.x )} )
+          .attr("y1", function(d) { return yScale( data[d.p].y )} )
+          .attr("y2", function(d) { return yScale( d.y )} );
+
         nodes.data(newData).enter().append("circle")
           .attr("class", "node")
           .attr("cx", function(d) { return xScale(d.x)} )
           .attr("cy", function(d) { return yScale(d.y)} )
           .attr("r", 5);
+
+        d3.selectAll(".link").transition().duration(1000).ease(d3.easeCubic)
+          .attr("x1", function(d) { return xScale( data[d.p].x )} )
+          .attr("x2", function(d) { return xScale( d.x )} )
+          .attr("y1", function(d) { return yScale( data[d.p].y )} )
+          .attr("y2", function(d) { return yScale( d.y )} );
 
         d3.selectAll(".node").transition().duration(1000).ease(d3.easeCubic)
           .attr("cx", function(d) { return xScale(d.x)} )
