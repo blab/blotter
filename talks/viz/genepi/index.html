@@ -32,6 +32,7 @@
           deathProb = 0.25,
           maxLiving = 10,
           inView = 10,
+          xStep = 0.5,
           timestep = 800;
 
       var width = parseInt(d3.select("body").style("width"), 10),
@@ -93,8 +94,9 @@
             if (Math.random() < 0.5) {
               offset = -1
             }
-            if (liveYValues.indexOf(d.y + offset) == -1) {
-              return {x: d.x + 1, y: d.y + offset, px: d.x, py: d.y};
+            if (liveYValues.indexOf(d.y + offset) == -1 && d.y == d.py) {
+              liveYValues.push(d.y + offset);
+              return {x: d.x + xStep, y: d.y + offset, px: d.x, py: d.y};
             }
             else {
               return {x: null, y: null, i: null, p: null};
@@ -111,10 +113,10 @@
         var extendData = []
         while (extendData.length == 0) {
           extendData = liveData.map(function(d) {
-            if (Math.random() < deathProb && liveData.length > 1) {
+            if (Math.random() < deathProb && liveData.length > 1 && d.y == d.py) {
               return {x: null, y: null, i: null, p: null};
             } else {
-              return {x: d.x + 1, y: d.y, px: d.x, py: d.y};
+              return {x: d.x + xStep, y: d.y, px: d.x, py: d.y};
             }
           });
           extendData = extendData.filter(function(d) {
@@ -165,7 +167,7 @@
           .attr("cx", function(d) { return xScale(d.x)} )
           .attr("cy", function(d) { return yScale(d.y)} );
 
-        step = step + 1;
+        step = step + xStep;
 
       }, timestep);
 
