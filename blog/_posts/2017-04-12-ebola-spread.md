@@ -9,7 +9,7 @@ We just had a big paper accepted in [Nature](http://www.nature.com/nature/journa
 The project has existed in a variety of incarnations for well over a year with hints here and there of something big in the making, which unsurprisingly is the last bit of work that followed me from my PhD in Edinburgh to Seattle.
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/j4Ut4krp8GQ"></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j4Ut4krp8GQ"></iframe>
 </div>
 <br>
 
