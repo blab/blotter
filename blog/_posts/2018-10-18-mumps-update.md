@@ -2,7 +2,7 @@
 layout: post
 title: Multiple introductions of mumps virus into Washington State
 author: Louise Moncla and Alli Black
-image: /images/blog/mumps-nextstrain-na-tree-2018-10-18.png
+image: /images/blog/mumps-nextstrain-na-tree-2018-10-19.png
 ---
 
 In 2016 and 2017, there were mumps virus outbreaks reported across the United States, with 5,629 total cases reported by the CDC. Washington state experienced one of the highest incidence rates nationwide, reporting 891 confirmed cases between October 2016 and September 2017. To characterize the timing and number of mumps introductions into Washington, and to describe how the virus spread within the state, we have been collaborating with the Washington State Department of Health to sequence mumps viruses from buccal swabs collected throughout the outbreak. You can find all of our protocols for sample processing and sequencing [on our mumps-seq github page](https://github.com/blab/mumps-seq), and a downloadable fasta file with all consensus sequences [here](https://github.com/blab/mumps-seq/tree/master/data/consensus-genomes). We have sequenced 72 near-complete mumps genomes from Washington so far, and will probably take a break from sequencing for awhile to see what we can learn from these genomes. All of our genomes have been added to [nextstrain.org/mumps](https://nextstrain.org/mumps/na), where they can be viewed in the context of other mumps viruses sequenced from 2016/2017 outbreaks in the US and Canada.
