@@ -5,7 +5,7 @@ image: /images/papers/neher-real-time-analysis.png
 authors: Neher RA, Bedford T.
 year: 2018
 ref: Neher and Bedford. 2018. J Clin Microbiol.
-journal: "J Clin Microbiol. In press."
+journal: "J Clin Microbiol 56: e00480-18."
 doi: 10.1128/JCM.00480-18
 pdf: /pdfs/papers/neher-real-time-analysis.pdf
 ---
