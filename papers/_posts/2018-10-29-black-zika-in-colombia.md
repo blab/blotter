@@ -2,7 +2,7 @@
 layout: paper
 title: Genomic epidemiology supports multiple introductions and cryptic transmission of Zika virus in Colombia
 image: /images/papers/black-zika-in-colombia.png
-authors: Black A, Moncla LH, Laiton-Donato K, Pardo L, Tovar C, Rojas DP, Longini IM, Halloran ME, Peláez-Carvajal D, Ramírez JD, Mercado-Reyes M, Bedford T.
+authors: Black A, Moncla LH, Laiton-Donato K, Potter B, Pardo L, Tovar C, Rojas DP, Longini IM, Halloran ME, Peláez-Carvajal D, Ramírez JD, Mercado-Reyes M, Bedford T.
 year: 2018
 ref: Black et al. 2018. bioRxiv.
 journal: "bioRxiv: 454777."
