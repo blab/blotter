@@ -5,9 +5,9 @@ image: /images/papers/black-zika-in-colombia.png
 authors: Black A, Moncla LH, Laiton-Donato K, Pardo L, Tovar C, Rojas DP, Longini IM, Halloran ME, Peláez-Carvajal D, Ramírez JD, Mercado-Reyes M, Bedford T.
 year: 2018
 ref: Black et al. 2018. bioRxiv.
-journal: "bioRxiv: XXX."
+journal: "bioRxiv: 454777."
 pdf: /pdfs/papers/black-zika-in-colombia.pdf
-doi:  10.1101/XXX
+doi:  10.1101/454777
 github: https://github.com/blab/zika-colombia
 ---
 
