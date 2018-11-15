@@ -8,10 +8,11 @@ Positions for a __full-stack developer__ and __bioinformatician__ are available 
 
 In collaboration with groups at the Fred Hutch, the University of Washington, Seattle Children's, the Institute for Disease Modeling, and area hospitals, we're embarking on a high-resolution, multi-year study of influenza and other respiratory illnesses in Seattle.
 Through the study thousands of influenza and other respiratory pathogens will be sampled and sequenced in near-real time and from these viral genome sequences, transmission dynamics uncovered.
-Initial work this year will set the course for future years.
 The primary task of both positions will be to develop the information and analysis systems underlying the study's research aims, with potential expansion to new studies around the world in the future.
 This new platform will build upon the software behind [Nextstrain](https://nextstrain.org), an award-winning tool for tracking infectious disease epidemics developed in collaboration with the [Neher lab](https://neherlab.org/) at the University of Basel.
-The platform will ingest subject and sample metadata, lab assay results, and raw and processed genome data as well as provide access to this curated data to streamline downstream analysis.
+Nextstrain won the [Open Science Prize in Feb 2017](https://www.openscienceprize.org/) and has already been instrumental in analysis of [Ebola spread](https://nextstrain.org/ebola/) in West Africa, [Zika spread](https://nextstrain.org/zika/) in the Americas and is used by the World Health Organization to aid in the process of [influenza vaccine strain selection](https://nextstrain.org/flu/).
+
+The envisioned software platform will ingest subject and sample metadata, lab assay results, and raw and processed genome data as well as provide access to this curated data to streamline downstream analysis.
 This platform will be open-source, adaptable, and designed with future outbreak surveillance in mind, regardless of if the targeted pathogen is viral, bacterial, or eukaryotic in nature.
 On top of this data warehousing platform, we will deploy analytic pipelines that align sequences, build phylogenies and reconstruct city-scale transmission chains.
 
