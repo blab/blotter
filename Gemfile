@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # jekyll
-gem "jekyll", "3.1.1"
+gem "jekyll", "3.8.5"
 gem "redcarpet"
 
 # compiling less
@@ -14,3 +14,7 @@ gem 'jekyll-press'
 # octokit
 gem 'octokit'
 gem 'netrc'
+
+group :jekyll_plugins do
+  gem 'jekyll-katex'
+end

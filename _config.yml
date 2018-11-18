@@ -6,6 +6,9 @@ markdown: redcarpet
 permalink: /:categories/:title/
 future: true
 
+plugins:
+  - jekyll-katex
+
 redcarpet:
   extensions:
    - tables
