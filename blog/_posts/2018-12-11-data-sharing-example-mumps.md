@@ -1,13 +1,13 @@
 ---
 layout: post
-title: A concrete example of the value of data sharing:
-  - Allison Black
-image: /images/blog/mumps-ontario-genomes.jpeg
+title: A concrete example of the value of data sharing
+author: Allison Black
+image: /images/blog/mumps_ontario_genomes.png
 ---
 
 If you are reading this blog, you are probably already onboard with releasing data openly as it's generated. You may even have led the charge in getting other researchers and/or journals to be more open with protocols, data, and analyses. You probably don't _need_ a reminder of why open data sharing is awesome, but sometimes it's nice to take stock and remember that what we're pushing for has real tangible value.
 
-[Louise](https://bedford.io/team/louise-moncla/) has been investigating the genomic epidemiology of the mumps outbreak in Washington, and I've been helping out a bit too. If you want some big picture details about the project, you can read more about it [here](https://bedford.io/blog/mumps-in-washington-state/) and [here](https://bedford.io/blog/mumps-update/). As part of this project, Louise been managing [Nextstrain Mumps](https://nextstrain.org/mumps/na). Recently, Patrick Stapleton from Public Health Ontario shared his sequences with us (thank you!!). Louise rebuilt Nextstrain with them, and we were totally struck by how much context the Ontario viruses provided for [one of our "one-off" Washingtonian sequences](https://nextstrain.org/mumps/na?s=Washington.USA/2017321/17.17/3/G).
+[Louise](/team/louise-moncla/) has been investigating the genomic epidemiology of the mumps outbreak in Washington, and I've been helping out a bit too. If you want some big picture details about the project, you can read more about it [here](/blog/mumps-in-washington-state/) and [here](/blog/mumps-update/). As part of this project, Louise been managing [Nextstrain Mumps](https://nextstrain.org/mumps/na). Recently, Patrick Stapleton from Public Health Ontario shared his sequences with us (thank you!!). Louise rebuilt Nextstrain with them, and we were totally struck by how much context the Ontario viruses provided for [one of our "one-off" Washingtonian sequences](https://nextstrain.org/mumps/na?s=Washington.USA/2017321/17.17/3/G).
 
 Take a look at the image with the before and after. Before, we see that we have a couple of viruses that don't nest within the primary Washington outbreak clade. They are most closely related to Canadian viruses (Manitoba, BC), but those branches are pretty long, an indicator that there's unsampled transmission occurring. This crops up not infrequently in sparse datasets, but I still always find myself wanting to know where this transmission chain was circulating before it pops up on our radar. Importantly, this isn't just about my curiosity; knowing where importations come from, and their frequency, is important for tailoring surveillance efforts and designing or evaluating infection control measures.
 
