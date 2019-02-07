@@ -26,6 +26,7 @@ Candidates for both positions should be fluent in at least one high-level progra
 Candidates should also have excellent written and verbal communication skills.
 Interfacing with project collaborators in-person and online is a key aspect of both positions.
 Both positions will work within a small team of existing members of the Bedford lab.
+If you think you might be a great fit for this position but are concerned about meeting all qualifications, we'd like to hear from you.
 
 The [Fred Hutch](https://fredhutch.org) is located in South Lake Union in Seattle, WA and offers a dynamic work environment with cutting-edge science and computational resources.
 The position is available immediately with flexible starting dates.
