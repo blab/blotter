@@ -80,7 +80,7 @@ projects:
   - trvrb/sismid
   - trvrb/sctrace
   - trvrb/phylodynamics-lecture
-  - blab/baltic
+  - evogytis/baltic
   - blab/chikv
   - blab/yellow-fever
   - blab/unsampled
@@ -89,6 +89,7 @@ projects:
   - nextstrain/auspice
   - nextstrain/janus
   - nextstrain/sacra
+  - nextstrain/cli
   - blab/zika-seq
   - blab/siv-cst
   - blab/zika-usvi
@@ -97,4 +98,5 @@ projects:
   - blab/roka
   - blab/mumps-seq
   - blab/dengue-antigenic-dynamics
-  - blab/zika-colombia  
+  - blab/zika-colombia
+  - blab/h3n2-reassortment
