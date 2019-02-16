@@ -8,6 +8,7 @@ twitter: trvrb
 github: trvrb
 scholar: RIi-1pAAAAAJ
 calendar: /calendar/
+image: /images/team/trevor-bedford.jpg
 cv: /pdfs/team/trevor-bedford-cv.pdf
 ---
 
