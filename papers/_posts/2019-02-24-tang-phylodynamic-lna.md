@@ -2,7 +2,7 @@
 layout: paper
 title: Fitting stochastic epidemic models to gene genealogies using linear noise approximation
 image: /images/papers/tang-phylodynamic-lna.png
-authors: Tang M, Dudas G, Bedford T, Minin VN
+authors: Tang M, Dudas G, Bedford T, Minin VN.
 year: 2019
 ref: Tang et al. 2019. arXiv.
 journal: "arXiv: 1902.08877."
