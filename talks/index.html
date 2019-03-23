@@ -1,7 +1,7 @@
 ---
 layout: default
 title: bedford lab / talks
-categories: 
+categories:
  - talks
 ---
 
@@ -9,9 +9,9 @@ categories:
 	<div class="col-md-12">
 		<div class="bigtitle">
 			Talks
-		</div>	
+		</div>
 	</div>
-</div>	
+</div>
 
 <div class="bigspacer"></div>
 
@@ -24,7 +24,7 @@ categories:
 		{% endif %}
 	{% endfor %}
 
-    {% cycle 'add rows': '<div class="row">', nil, nil %}
+    {% cycle 'add rows': '<div class="row">', '', '' %}
 		<div class="col-md-4 talkbox">
 			<div class="smallhead">
 				<a href="{{ talk.url }}" class="off">{{ talk.title }}</a>
@@ -47,7 +47,7 @@ categories:
 			<div class="bigspacer"></div>
 			<div class="spacer"></div>
         </div>
-    {% cycle 'close rows': nil, nil, '</div>' %}
+    {% cycle 'close rows': '', '', '</div>' %}
 {% endunless %}
 {% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}
+{% cycle 'close rows': '', '</div>', '</div>' %}
