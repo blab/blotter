@@ -6,10 +6,6 @@ GEM
     colorator (1.1.0)
     commonjs (0.2.7)
     concurrent-ruby (1.1.5)
-    css_press (0.3.2)
-      csspool-st (= 3.1.2)
-      json
-    csspool-st (3.1.2)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -19,11 +15,6 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.10.0)
     forwardable-extended (2.6.0)
-    html_press (0.8.2)
-      htmlentities
-      multi_css (>= 0.1.0)
-      multi_js (>= 0.1.0)
-    htmlentities (4.3.4)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -40,16 +31,10 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-press (0.2.1)
-      html_press (>= 0.8.2)
-      jekyll
-      multi_css (>= 0.1.0)
-      multi_js (>= 0.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.2.0)
     kramdown (1.17.0)
     less (2.6.0)
       commonjs (~> 0.2.7)
@@ -60,10 +45,6 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
-    multi_css (0.1.0)
-      css_press
-    multi_js (0.1.0)
-      uglifier (~> 2)
     multipart-post (2.0.0)
     netrc (0.11.0)
     octokit (4.13.0)
@@ -90,16 +71,13 @@ GEM
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
       ref
-    uglifier (2.7.2)
-      execjs (>= 0.3.0)
-      json (>= 1.8.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  execjs
   jekyll (= 3.8.5)
-  jekyll-press
   less
   netrc
   octokit
