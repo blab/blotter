@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Kairsten Fay
-position: Full stack developer
+position: Full-stack developer
 handle: kairsten
 email: kfay@fredhutch.org
 twitter: kairstenfay
