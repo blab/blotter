@@ -14,6 +14,9 @@ redcarpet:
    - superscript
    - strikethrough
 
+include:
+  - "all-posts.json"
+
 exclude:
   - "*.class"
   - "*.cpp"
@@ -43,6 +46,7 @@ exclude:
   - "*.gz"
   - "*.tiff"
   - "*.xml"
+  - "*.json"
   - "Gemfile"
   - "Gemfile.lock"
   - "projects/nextflu/auspice/index.html"
