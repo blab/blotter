@@ -14,9 +14,6 @@ redcarpet:
    - superscript
    - strikethrough
 
-include:
-  - "all-posts.json"
-
 exclude:
   - "*.class"
   - "*.cpp"
@@ -46,7 +43,6 @@ exclude:
   - "*.gz"
   - "*.tiff"
   - "*.xml"
-  - "*.json"
   - "Gemfile"
   - "Gemfile.lock"
   - "projects/nextflu/auspice/index.html"
@@ -66,6 +62,9 @@ exclude:
   - "projects/siv-cst/beast/main/empiricalTrees/xml/*"
   - "projects/siv-cst/beast/supplement/discreteTraits/xml/*"
   - "projects/siv-cst/beast/supplement/empiricalTrees/xml/*"
+  - "projects/h3n2-reassortment/auspice/*"
+  - "projects/dengue-antigenic-dynamics/titer_model/seasia_output/*"
+  - "projects/h5n1-cambodia/data/tree-jsons/*"
 
 projects:
   - trvrb/coaltrace
