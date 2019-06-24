@@ -329,6 +329,10 @@ body {
   margin-right: auto;
 }
 
+.nobreak {
+  white-space: nowrap;
+}
+
 .img-avatar {
   border-radius: 50% !important;
   vertical-align: middle !important;
