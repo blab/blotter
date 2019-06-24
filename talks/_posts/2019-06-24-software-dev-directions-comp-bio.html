@@ -84,7 +84,7 @@ draft: true
 <section style="text-align: left;">
 	<h2><a href="https://github.com/seattleflu/id3c">Database: ID3C</a></h2>
 	<p style="line-height: 2em;">
-		<b>Datasystem to support data ingest, warehousing and shipping views</b>
+		<b>Datasystem to support data receiving, warehousing and shipping views</b>
 		<br>
 		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span>
 		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span>
@@ -94,17 +94,17 @@ draft: true
 	<ul>
 		<li>Three "areas": receiving, warehouse, shipping</li>
 		<li>Extract, transform, load (ETL) pipelines run on receiving</li>
-		<li>Datatypes include: individual, encounter, sample, genome, place</li>
+		<li>Datatypes include individual, encounter, sample, genome, place</li>
 		<li>Written in PostgreSQL, (mostly) requiring structured schemas</li>
 		<li>More work on data import, but ensures downstream cleanliness</li>
 		<li>Postgres highly performant on a single server</li>
-		<li>Structured data allows laying of tools like Metabase</li>
+		<li>Structured data allows layering of tools like Metabase</li>
 	<ul>
 	</p>
 </section>
 
 <section style="text-align: left;">
-	<h2><a href="https://github.com/nextstrain/augur">Workflows: Augur</a></h2>
+	<h2><a href="https://github.com/nextstrain/augur">Workflow: Augur</a></h2>
 	<p style="line-height: 2em;">
 		<b>Workflows for phylodynamic analyses</b>
 		<br>
@@ -133,7 +133,7 @@ draft: true
 			<li>Rewritten to be a series of modules called via <code>augur filter</code>, <code>augur tree</code>, <code>augur traits</code>, etc...</li>
 			<li>Composable across pathogen builds</li>
 			<li>Uses <a href="https://github.com/nextstrain/zika/blob/master/Snakefile#L1">Snakemake to define a pipeline</a>, making steps obvious</li>
-			<li>Provides depedency graph for fast recomputation</li>
+			<li>Provides dependency graph for fast recomputation</li>
 			<li>Pathogen-specific repos give users an obvious foundation to build off of</li>
 		</ul>
 	</div>
