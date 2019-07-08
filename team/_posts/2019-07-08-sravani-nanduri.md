@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Sravani Nanduri
-position: High School Intern
+position: High school intern
 handle: sravani
 github: nandsra21
 image: /images/team/sravani-nanduri.jpg

@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Misja Ilcisin
-position: Program Manager
+position: Program manager
 handle: misja
 email: milcisin@fredhutch.org
 github: milcisin
