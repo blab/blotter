@@ -4,7 +4,6 @@ title: Kairsten Fay
 position: Full-stack developer
 handle: kairsten
 email: kfay@fredhutch.org
-twitter: kairstenfay
 github: kairstenfay
 image: /images/team/kairsten-fay.jpg
 ---
