@@ -6,7 +6,7 @@ event: Options X
 author: Trevor Bedford
 ---
 
-<!-- 20 minutes without Q&A. -->
+<!-- 20 minutes including Q&A. Aim for ~15-17 minutes for talk. -->
 
 <!-- Outline:
 1. Nextflu / Nextstrain and our tracking of influenza evolution
@@ -43,16 +43,6 @@ author: Trevor Bedford
 <section>
 	<h3>Population turnover of A/H3N2 influenza is extremely rapid</h3>
 	<img class="stretch" data-src="/images/talks/flu_h3n2_tree_beast.png">
-</section>
-
-<section>
-	<h3>Clades emerge, die out and take over</h3>
-	<img class="stretch" data-src="/images/talks/flu_h3n2_tree_clades.png">
-</section>
-
-<section>
-	<h3>Clades show rapid turnover</h3>
-	<img class="stretch" data-src="/images/talks/prediction_combined_trajectories.png">
 </section>
 
 <section>
@@ -130,7 +120,7 @@ author: Trevor Bedford
 </section>
 
 <section>
-	<h2>Forecasting model should allow for changing dynamics</h2>
+	<h2>Risk of eventual "speciation"</h2>
 </section>
 
 <section data-background="#000">
@@ -216,6 +206,11 @@ author: Trevor Bedford
 </section>
 
 <section>
+	<h3>Train in 6-year sliding windows from 1995 to 2015 with most recent years held out as test</h3>
+	<img class="stretch" data-src="/images/talks/prediction_cross_validation_strategy.png">
+</section>
+
+<section>
 	<h3>Within-category performance favors HI drift, non-epitope fitness and local branching index</h3>
 	<img class="stretch" data-src="/images/talks/prediction_performance_within_category.png">
 </section>
@@ -236,8 +231,17 @@ author: Trevor Bedford
 </section>
 
 <section>
+	<h3>Since March these two clades have begun to spread throughout the world</h3>
+	<img class="stretch" data-src="/images/talks/nextflu_aug2019_6m_map_193_196.png">
+</section>
+
+<section>
 	<h3>Predicted sequence match to future population of circulating strains</h3>
 	<img class="stretch" data-src="/images/talks/nextflu_aug2019_tree_match.png">
+</section>
+
+<section>
+	<h3>Goal is to start rolling these forecasts out live to nextstrain.org/flu shortly</h3>
 </section>
 
 <section style="text-align: left;">
@@ -247,7 +251,7 @@ author: Trevor Bedford
 		<li>Better predictors for antigenic drift</li>
 		<li>Incorporate NA evolution</li>
 		<li>Incorporate geography</li>
-		<li>Forecast other subtypes</li>
+		<li>Forecast H1N1pdm, Vic and Yam</li>
 	</ul>
 	</p>
 </section>
@@ -297,7 +301,8 @@ author: Trevor Bedford
 	<br>
 	<p>
 	<ul class="title">
-		<li>Website: bedford.io</li>
+		<li>Lab website: bedford.io</li>
+		<li>Flu tracking: nextstrain.org</li>
 		<li>Twitter: @trvrb</li>
 		<li>Slides: bedford.io{{ page.url }}</li>
 	</ul>
