@@ -4,10 +4,11 @@ title: Mapping person-to-person variation in viral mutations that escape polyclo
 image: /images/papers/lee-serum-mapping.png
 authors: Lee JM, Eguia R, Zost SJ, Choudhary S, Wilson PC, Bedford T, Stevens-Ayers T, Boeckh M, Hurt A, Lakdawala SS, Hensley SE, Bloom JD.
 year: 2019
-ref: Lee et al. 2019. bioRxiv.
-journal: "bioRxiv 670497."
+ref: Lee et al. 2019. eLife.
+journal: "eLife 8: e49324."
 pdf: /pdfs/papers/lee-serum-mapping.pdf
-doi: 10.1101/670497
+doi: 10.7554/eLife.49324
+github: http://github.com/jbloomlab/map_flu_serum_Perth2009_H3_HA
 ---
 
 # Abstract

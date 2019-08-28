@@ -9,6 +9,7 @@ journal: "J Immunol: ji1801615."
 pdf: /pdfs/papers/dale-igh-gene-conversion.pdf
 supplement: /pdfs/papers/dale-igh-gene-conversion-supp.pdf
 doi: 10.4049/jimmunol.1801615
+github: https://github.com/blab/b-cell-ld
 ---
 
 # Abstract
