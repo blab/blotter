@@ -7,6 +7,7 @@ year: 2019
 ref: Bell et al. 2019. eLife.
 journal: "eLife 8: e42496."
 pdf: /pdfs/papers/bell-dengue-antigenic-dynamics.pdf
+supplement: /pdfs/papers/bell-dengue-antigenic-dynamics-supp.pdf
 doi:  10.7554/eLife.42496
 github: https://github.com/blab/dengue-antigenic-dynamics
 ---
