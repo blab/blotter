@@ -50,9 +50,14 @@
 		<script>
 			Reveal.initialize({
 				{% if page.widescreen == true %}
-					width: 1280
+					width: 1280,
 				{% else %}
-					width: 960
+					width: 960,
+				{% endif %}
+				{% if page.slide_number == true %}
+					slideNumber: true,
+				{% else %}
+					slideNumber: false,
 				{% endif %}
 			});
 		</script>
