@@ -1,9 +1,10 @@
 ---
 layout: talk_reveal3
-title: Using Nextstrain to track ongoing North Kivu Ebola outbreak
+title: Using Nextstrain to track the North Kivu Ebola outbreak
 event: DRC Ebola Modeling Coordination Group
 author: Trevor Bedford
 slide_number: true
+draft: true
 ---
 
 <!-- Aim for talk time of 15 minutes. -->
@@ -27,8 +28,6 @@ Ongoing DRC work
 	{{ page.event }}
 	<br>
 	{{ page.venue }}
-	<br>&nbsp;<br>
-	Slides at: bedford.io/talks
 </section>
 
 <section style="text-align: left;">
@@ -161,17 +160,28 @@ Ongoing DRC work
 	<p>
 	<ul>
 		<li>INRB in collaboration with USAMRIID is sequencing samples in Kinshasa</li>
-		<li>resulting analyses are being deployed live to <a href="https://nextstrain.org/community/inrb-drc/ebola-nord-kivu">nextstrain.org/community/inrb-drc/ebola-nord-kivu</a></li>
+		<li>Data and pipeline housed at <a href="https://github.com/inrb-drc/ebola-nord-kivu">github.com/inrb-drc/ebola-nord-kivu</a></li>
+		<li>Resulting analyses are being deployed live to <a href="https://nextstrain.org/community/inrb-drc/ebola-nord-kivu">nextstrain.org/community/inrb-drc/ebola-nord-kivu</a></li>
 	</ul>
 	</p>
 </section>
 
 <section>
-	<h3>Genomic epidemiology of the ongoing DRC Ebola epidemic</h3>
-	<img class="stretch" data-src="/images/talks/nextstrain_ebola_drc_2019_03_27.png">
+	<h3>View of current genomic data</h3>
+	<img class="stretch" data-src="/images/talks/nextstrain_ebola_drc_2019_09_10.png">
 	<div class="citation">
 		<a href="https://nextstrain.org/community/inrb-drc/ebola-nord-kivu">INRB/USAMRIID Nextstrain</a>
 	</div>
+</section>
+
+<section style="text-align: left;">
+	<h3>Current dataset:</h3>
+	<p>
+	<ul>
+		<li>349 full genomes sequenced (13.5% of confirmed cases)</li>
+		<li>Most recent sequenced viruses collected Aug 20 (3 weeks ago)</li>
+	</ul>
+	</p>
 </section>
 
 <section>
@@ -181,9 +191,34 @@ Ongoing DRC work
 </section>
 
 <section>
-	<h3>For Ebola outbreak response, I believe this to revolve around contact tracing</h3>
+	<h3>For Ebola outbreak response, I believe this needs to revolve around contact tracing</h3>
 </section>
 
+<section>
+	<h3>Superspreader event in June</h3>
+	<img class="stretch" data-src="/images/talks/nextstrain_ebola_drc_2019_09_10_recent.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/community/inrb-drc/ebola-nord-kivu">INRB/USAMRIID Nextstrain</a>
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<h3>Current dataset:</h3>
+	<p>
+	<ul>
+		<li>349 full genomes sequenced (13.5% of confirmed cases)</li>
+		<li>Most recent sequenced viruses collected Aug 20 (3 weeks ago)</li>
+	</ul>
+	</p>
+</section>
+
+<section>
+	<p>
+		Allison Black (PhD student) and James Hadfield (postdoc) are currently in DRC visiting INRB.
+		Goal is to provide training in bioinformatics, Nextstrain and genomic epidemiology.
+	</p>
+	<img class="stretch" data-src="/images/talks/nextstrain_ebola_drc_photo.png">
+</section>
 
 <section>
 	<h3>Acknowledgements</h3>
@@ -202,10 +237,16 @@ Ongoing DRC work
 		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/misja-ilcisin.jpg"> Misja Ilcisin</span>
 	</p>
 
-	<p class="even-smaller"><b>This work</b>: WHO Global Influenza Surveillance Network, John Huddleston,
-		Richard Neher, Barney Potter, James Hadfield, Dave Wentworth, Becky Garten, Marta &#321;uksza,
-		Michael L&auml;ssig, Richard Reeve, Jackie Katz, Colin Russell, John McCauley, Rod Daniels,
-		Kanta Subbarao, Ian Barr, Aeron Hurt, Tomoko Kuwahara, Takato Odagiri
+	<p class="even-smaller">
+		<b>This work</b>: James Hadfield, Allison Black, Eddy Kinganda Lusamaki,
+		Placide Mbala, Catherine Pratt, Mike Wiley, Jean-Jacques Muyembe Tamfum,
+		Steve Ahuka-Mundeke, Gustavo Palacios, Amadou Sall, Ousmane Faye,
+		Eric Delaporte, Martine Peeters
+	</p>
+
+	<p class="even-smaller">
+		<b>Nextstrain</b>: Richard Neher, James Hadfield, Emma Hodcroft, Tom Sibley,
+		John Huddleston, Sidney Bell, Barney Potter, Colin Megill, Charlton Callender
 	</p>
 
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
@@ -229,7 +270,6 @@ Ongoing DRC work
 	<p>
 	<ul class="title">
 		<li>Lab website: bedford.io</li>
-		<li>Slides: bedford.io{{ page.url }}</li>
 		<li>North Kivu INRB data and Nextstrain pipeline: github.com/inrb-drc/ebola-nord-kivu</li>
 		<li>North Kivu Nextrain view: nextstrain.org/community/inrb-drc/ebola-nord-kivu</li>
 	</ul>
