@@ -7,6 +7,7 @@ github: barneypotter24
 image: /images/team/barney-potter.jpg
 email: barney.potter.24@gmail.com
 twitter: barneypotter24
+alumni: true
 ---
 
 I just joined the Bedford lab as a research assistant, where I am contributing to [nextstrain](http://nextstrain.org) and [nextflu](http://nextflu.org). Soon, I will also begin working on applying deep learning to try to predict flu success. I am interested in developing new algorithms that can efficiently reason with large amounts of sequence data.
