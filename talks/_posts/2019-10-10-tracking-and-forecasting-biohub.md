@@ -352,7 +352,7 @@ author: Trevor Bedford
 	<p>
 	<ul>
 		<li>Attempting to write us out of the picture</li>
-		<li>JSON outputs uploaded to <code>github.com/ucsf/dengue</code>, would be available at <code>nextstrain.org/community/ucsf/dengue</code>
+		<li>JSON outputs uploaded to <code>github.com/czbiohub/dengue</code>, would be available at <code>nextstrain.org/community/czbiohub/dengue</code>
 		<li>Used now for a variety of pathogens including Lassa in Nigeria, global RSV and cassava virus</li>
 	</ul>
 	</p>
