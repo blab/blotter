@@ -48,7 +48,7 @@ categories:
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-cog fa-fw"></i>
-			<a class="off" href="https://github.com/{{ project.repo }}">github.com/{{ project.repo }}</a>
+			<a class="off" href="https://github.com/{{ project.repo }}">github.com/{{ project.repo | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
 		</div>
 		<div class="bigspacer"></div>
 		<div class="smallhead">
