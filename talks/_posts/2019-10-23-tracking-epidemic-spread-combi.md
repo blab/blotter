@@ -480,6 +480,8 @@ draft: true
 
 <section>
 	<img class="stretch" src="/images/talks/seattle_flu_logo.jpg">
+	<p class="tiny">Lead investigators: Helen Chu, Michael Boeckh, Janet Englund, Michael Famulare, Barry Lutz,
+	Deborah Nickerson, Mark Rieder, Lea Starita, Matthew Thompson, Jay Shendure, Trevor Bedford</p>
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
 		<img width="11%" data-src="/images/talks/logo_bbi_vertical.png">
 		&nbsp; &nbsp;
@@ -601,7 +603,7 @@ draft: true
 		&nbsp;
 		<b>Seattle Flu Study</b>: Helen Chu, Mark Rieder, Lea Starita, Debbie Nickerson,
 		Jay Shendure, Janet Englund, Michael Famulare, Michael Boeckh, Barry Lutz, Matthew Thompson, Thomas Sibley, Jover Lee, Kairsten Fay, Misja Ilcisin, James Hadfield,
-		Amanda Adler, Izzy Brandstetter, Jeris Bosua, Chris Frazar, Peter Han, Reena Gulati, ShiChu Huang, Michael Jackson, Anahita Kiavand, Louise Kimball, Enos Kline, Kirsten Lacombe, Jennifer Logue, Victoria Lyon, Kira Newman, Monica Zigman Suchsland, Caitlin Wolf
+		Miguel Parades, Cassia Wagner, Amanda Adler, Izzy Brandstetter, Jeris Bosua, Chris Frazar, Peter Han, Reena Gulati, Shichu Huang, Michael Jackson, Anahita Kiavand, Louise Kimball, Enos Kline, Kirsten Lacombe, Jennifer Logue, Victoria Lyon, Kira Newman, Monica Zigman Suchsland, Caitlin Wolf
 	</p>
 
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
