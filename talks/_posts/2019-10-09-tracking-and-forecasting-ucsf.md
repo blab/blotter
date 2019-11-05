@@ -687,7 +687,7 @@ author: Trevor Bedford
 		Steve Ahuka-Mundeke, Daniel Mukadi, Gustavo Palacios, Amadou Sall, Ousmane Faye,
 		Eric Delaporte, Martine Peeters, David Blazes, Cecile Viboud, David Spiro
 		&nbsp;
-		<b>Seasonal flu</b>: WHO Global Influenza Surveillance Network, John Huddleston,
+		<b>Seasonal flu</b>: WHO Global Influenza Surveillance Network, GISAID, John Huddleston,
 		Richard Neher, Barney Potter, Dave Wentworth, Becky Garten
 	</p>
 
