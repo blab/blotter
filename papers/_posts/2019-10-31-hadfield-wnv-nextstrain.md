@@ -5,9 +5,10 @@ image: /images/papers/hadfield-wnv-nextstrain.png
 authors: Hadfield J, Brito AF, Swetnam DM, Vogels CBF, Tokarz RE, Andersen KG, Smith RC, Bedford T, Grubaugh ND.
 year: 2019
 ref: Hadfield et al. 2019. PloS Pathog.
-journal: "PloS Pathog 15: e1008042."
+journal: "PLoS Pathog 15: e1008042."
 pdf: /pdfs/papers/hadfield-wnv-nextstrain.pdf
 doi: 10.1371/journal.ppat.1008042
+github: https://github.com/nextstrain/WNV
 ---
 
 # Abstract
