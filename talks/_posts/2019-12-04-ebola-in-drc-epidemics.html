@@ -1,0 +1,270 @@
+---
+layout: talk_reveal3
+title: Phylodynamics to assist in Ebola outbreak response
+venue: Charleston, SC
+event: Epidemics<sup>7</sup>
+author: Trevor Bedford
+---
+
+<!-- Total time of 20 minutes. Aim for 15 minutes to allow for questions, etc... -->
+
+<section data-background-iframe="/talks/viz/gradient/">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<p class="title">
+	Trevor Bedford (@trvrb)
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+
+<section style="text-align: left;">
+	<h3>Pathogen genomes may reveal:</h3>
+	<p>
+	<ul>
+		<li>Evolution of new adaptive variants</li>
+		<li>Epidemic origins</li>
+		<li>Patterns of geographic spread</li>
+		<li>Animal-to-human spillover</li>
+		<li>Transmission chains</li>
+	</ul>
+	</p>
+</section>
+
+<!--- Applications --->
+
+<section>
+	<h3><b>Influenza:</b> Forecasting spread of new variants for vaccine strain selection</h3>
+	<img class="stretch" src="/images/talks/nextflu_apr2018_h3n2_tree_titers.png">
+	<div class="citation">
+		<a href="/papers/bedford-feb-2018-flu-report/">Bedford and Neher. 2018. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3><b>Zika:</b> Uncovering origins of the epidemic in the Americas</h3>
+	<img class="stretch" src="/images/talks/zika_zibra_tree.png">
+	<div class="citation">
+		<a href="/papers/faria-zika-in-brazil/">Faria et al. 2017. Nature.</a>
+	</div>
+</section>
+
+<section data-transition="slide-in fade-out">
+	<h3><b>Ebola:</b> Revealing spatial spread and persistence in West Africa</h3>
+	<img class="stretch" data-src="/images/talks/ebola_mig_tree.png">
+	<div class="citation">
+		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
+	</div>
+</section>
+
+<section data-transition="fade">
+	<h3><b>Ebola:</b> Revealing spatial spread and persistence in West Africa</h3>
+	<img class="stretch" data-src="/images/talks/ebola_mig_geo_tree.png">
+	<div class="citation">
+		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
+	</div>
+</section>
+
+<section data-transition="fade-in slide-out">
+	<h3><b>Ebola:</b> Revealing spatial spread and persistence in West Africa</h3>
+	<img class="stretch" data-src="/images/talks/ebola_mig_exploded_tree.png">
+	<div class="citation">
+		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
+	</div>
+</section>
+
+<!--- Nextstrain --->
+
+<section data-background="#000">
+	<h1 class="title">Actionable inferences</h1>
+</section>
+
+<section style="text-align: left;">
+	<h3>Key challenges to making genomic epidemiology actionable</h3>
+	<p>
+	<ul>
+		<li>Timely analysis and sharing of results critical</li>
+		<li>Dissemination must be scalable</li>
+		<li>Integrate many data sources</li>
+		<li>Results must be easily interpretable and queryable</li>
+	</ul>
+	</p>
+</section>
+
+<section>
+	<h1>
+		<span class="c1s">N</span><span class="c2s">e</span><span class="c3s">x</span><span class="c4s">t</span><span class="c5s">s</span><span class="c6s">t</span><span class="c7s">r</span><span class="c8s">a</span><span class="c9s">i</span><span class="c10s">n</span>
+	</h1>
+	<p>Real-time tracking of pathogen evolution</p>
+	<p class="smaller"><i>
+		with
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/emma-hodcroft.jpg"> Emma Hodcroft,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/colin-megill.jpg"> Colin Megill,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/barney-potter.jpg"> Barney Potter,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/sidney-bell.jpg"> Sidney Bell,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/charlton-callender.jpg"> Charlton Callender,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/misja-ilcisin.jpg"> Misja Ilcisin,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/kairsten-fay.jpg"> Kairsten Fay,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee</span>
+	</i></p>
+</section>
+
+<section>
+	<h3>Nextstrain architecture</h3>
+	<p>All code open source at <a class="off" href="https://github.com/nextstrain">github.com/nextstrain</a></p>
+	<p>Two central aims: (1) <i>rapid and flexible phylodynamic analysis</i> and <br> (2) <i>interactive visualization</i></p>
+	<img class="stretch" src="/images/talks/nextstrain_components.png">
+</section>
+
+<section style="text-align: left;">
+	<h3>Rapid build pipeline for 1600 Ebola genomes</h3>
+	<p>
+	<ul>
+		<li>Align with MAFFT <i>(34 min)</i></li>
+		<li>Build ML tree with RAxML <i>(54 min)</i></li>
+		<li>Temporally resolve tree and geographic ancestry with TreeTime <i>(16 min)</i></li>
+		<li>Total pipeline <i>(1 hr 46 min)</i></li>
+	</ul>
+	</p>
+</section>
+
+<section style="text-align: left;">
+	<h3>Nextstrain is two things</h3>
+	<p>
+	<ul>
+		<li>a bioinformatics toolkit and visualization app, which can be used for a broad range of datasets</li>
+		<li>a collection of real-time pathogen analyses kept up-to-date on the website nextstrain.org</li>
+	</ul>
+	</p>
+</section>
+
+<section data-background="#000">
+	<h1 class="title">Ongoing DRC outbreak</h1>
+</section>
+
+<section>
+	<h3>Genomic epidemiology applied to North Kivu Ebola outbreak</h3>
+	<p class="smaller"><i>
+		with Placide Mbala-Kingebeni, Eddy Kinganda Lusamaki, Catherine Pratt, Mike Wiley,
+		James Hadfield, Allison Black, Jean-Jacques Muyembe Tamfum, Steve Ahuka-Mundeke,
+		Daniel Mukadi, Gustavo Palacios, Amadou Sall, Ousmane Faye, Eric Delaporte,
+		Martine Peeters and many others
+	</i></p>
+</section>
+
+<section style="text-align: left;">
+	<h3>Nextstrain is being used to track North Kivu outbreak</h3>
+	<p>
+	<ul>
+		<li>Institut National de Recherche Biomédicale (INRB) is sequencing samples in Kinshasa</li>
+		<li>Data and pipeline housed at <a href="https://github.com/inrb-drc/ebola-nord-kivu">github.com/inrb-drc/ebola-nord-kivu</a></li>
+		<li>Resulting analyses are being deployed live to <a href="https://nextstrain.org/community/inrb-drc/ebola-nord-kivu">nextstrain.org/community/inrb-drc/ebola-nord-kivu</a></li>
+	</ul>
+	</p>
+</section>
+
+<section>
+	<p>
+		Allison Black (PhD student) and James Hadfield (postdoc) working with scientists at the INRB.
+		Goal is to provide training in bioinformatics, Nextstrain and genomic epidemiology.
+	</p>
+	<img class="stretch" data-src="/images/talks/nextstrain_ebola_drc_photo.png">
+</section>
+
+<section>
+	<h3>View of current genomic data</h3>
+	<p>432 genomes most recent from late Oct</p>
+	<img class="stretch" data-src="/images/talks/nextstrain_ebola_drc_2019_12_03.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/community/inrb-drc/ebola-nord-kivu">INRB Nextstrain</a>
+	</div>
+</section>
+
+<section>
+	<h3>Often (but not always) need <i>specific</i> actionable pieces of information rather than large-scale understanding.
+	For Ebola outbreak response, I believe this needs to revolve around contact tracing.</h3>
+</section>
+
+<section>
+	<h3>Superspreader event in June</h3>
+	<img class="stretch" data-src="/images/talks/nextstrain_ebola_drc_2019_09_10_recent.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/community/inrb-drc/ebola-nord-kivu">INRB Nextstrain</a>
+	</div>
+</section>
+
+<section>
+	<h3>Using narratives to walk through specific transmission inferences</h3>
+	<p>
+	<ul>
+		<li>We're rolling out new <i>narratives</i> functionality in Nextstrain</li>
+		<li>These are Markdown posts that allow you to pair narrative text to visualization state</li>
+		<li>Made possible through an early decision to embed visualization state in URL</li>
+		<li>Example narrative for Ebola in the DRC here: <a href="https://nextstrain.org/narratives/inrb-ebola-example-sit-rep">nextstrain.org/narratives/inrb-ebola-example-sit-rep</a></li>
+	</ul>
+	</p>
+</section>
+
+<section style="text-align: left;">
+	<h3>Extraordinarily challenging outbreak, but some good things going on here</h3>
+	<p>
+	<ul>
+		<li>Samples sequenced entirely in country in full partnership with local scientists</li>
+		<li>Bioinformatics for genome assembly and for phylodynamics run entirely in country</li>
+		<li>Nextstrain narratives to aid epidemiological interpretation</li>
+		<li>Best record so far is 7 days from sample collection to genomic situation report</li>
+	</ul>
+	</p>
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="smaller"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/allison-black.jpg"> Alli Black,</span>
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span>
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span>
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span>
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span>
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/maya-lewinsohn.jpg"> Maya Lewinsohn,</span>
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span>
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span>
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/kairsten-fay.jpg"> Kairsten Fay,</span>
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/misja-ilcisin.jpg"> Misja Ilcisin,</span>
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller</span>
+	</p>
+
+	<p class="smaller">
+		<b>Nextstrain</b>: Richard Neher, James Hadfield, Emma Hodcroft, Tom Sibley,
+		John Huddleston, Sidney Bell, Barney Potter, Colin Megill, Charlton Callender
+	</p>
+	<p class="smaller">
+		<b>Ebola in DRC</b>: James Hadfield, Allison Black, Eddy Kinganda Lusamaki,
+		Placide Mbala-Kingebeni, Catherine Pratt, Mike Wiley, Jean-Jacques Muyembe Tamfum,
+		Steve Ahuka-Mundeke, Daniel Mukadi, Gustavo Palacios, Amadou Sall, Ousmane Faye,
+		Eric Delaporte, Martine Peeters, David Blazes
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="14%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="16%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="13%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="9%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_osp.jpg">
+	</div>
+</section>
