@@ -479,7 +479,7 @@ draft: true
 <!-- Seattle Flu Study -->
 
 <section>
-	<img class="stretch" src="/images/talks/seattle_flu_logo.jpg">
+	<img class="stretch" src="/images/talks/seattle_flu_logo_y1.jpg">
 	<p class="tiny">Lead investigators: Helen Chu, Michael Boeckh, Janet Englund, Michael Famulare, Barry Lutz,
 	Deborah Nickerson, Mark Rieder, Lea Starita, Matthew Thompson, Jay Shendure, Trevor Bedford</p>
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
