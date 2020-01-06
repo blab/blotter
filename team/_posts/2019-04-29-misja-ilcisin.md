@@ -4,7 +4,7 @@ title: Misja Ilcisin
 position: Program manager
 handle: misja
 email: milcisin@fredhutch.org
-github: milcisin
+github: misjailcisin
 image: /images/team/misja-ilcisin.jpg
 ---
 
