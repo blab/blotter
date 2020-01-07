@@ -1,10 +1,11 @@
 ---
 layout: post
 title: How can we improve support for open pathogen genomic analysis in public health settings?
-author: Alli Black
+author: Allison Black
 link: <ADD LINK :)>  
 ---
-Genomic epidemiological studies have been used in academic contexts to [reconstruct regional transmission of Ebola during the West African outbreak](https://bedford.io/papers/dudas-ebola-epidemic-spread/), [estimate when Zika came to Brazil](https://bedford.io/papers/faria-zika-in-brazil/), and [investigate how seasonal influenza circulates around the world](https://bedford.io/papers/bedford-global-circulation/). But these types of studies have moved out of the ivory tower, and public health agencies regularly sequence and analyze whole pathogen genomes to support surveillance and epidemiologic investigations of foodborne diseases, tuberculosis, and influenza, among other pathogens. Indeed, [almost every infectious disease program at the Centers for Disease Control and Prevention uses pathogen genomics](https://www.nejm.org/doi/pdf/10.1056/NEJMsr1813907), with increasing adoption by state and local health departments as well.
+
+Genomic epidemiological studies have been used in academic contexts to [reconstruct regional transmission of Ebola during the West African outbreak](/papers/dudas-ebola-epidemic-spread/), [estimate when Zika came to Brazil](/papers/faria-zika-in-brazil/), and [investigate how seasonal influenza circulates around the world](/bedford-global-circulation/). But these types of studies have moved out of the ivory tower, and public health agencies regularly sequence and analyze whole pathogen genomes to support surveillance and epidemiologic investigations of foodborne diseases, tuberculosis, and influenza, among other pathogens. Indeed, [almost every infectious disease program at the Centers for Disease Control and Prevention now uses pathogen genomics](https://www.nejm.org/doi/pdf/10.1056/NEJMsr1813907), with increasing adoption by state and local health departments as well.
 
 Pathogen genomics is a great addition to the public health toolbox. However, genomic data is complex and needs transformation from its raw form prior to analysis. Increasing use of pathogen genomics will require that public health agencies invest in advanced computational infrastructure, develop a broader technical workforce, and investigate new approaches to integrated data management and stewardship. As the number of agencies with genomic surveillance capabilities grows we'll need a unified network of validated, reproducible ways to analyze data. The question then is how do we build that ecosystem?
 
