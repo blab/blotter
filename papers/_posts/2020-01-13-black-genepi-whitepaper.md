@@ -4,10 +4,10 @@ title: Ten recommendations for supporting open pathogen genomic analysis in publ
 image: /images/papers/black-genepi-whitepaper.png
 authors: Black A, MacCannell DR, Sibley TR, Bedford T, on behalf of the Public Health Alliance for Genomic Epidemiology (PHA4GE).
 year: 2020
-ref: Black et al. 2020. bioRxiv.
-journal: "bioRxiv: XXX."
+ref: Black et al. 2020. Preprints.
+journal: "Preprints: 2020010107."
 pdf: /pdfs/papers/black-genepi-whitepaper.pdf
-doi: XXX
+doi: 10.20944/preprints202001.0107.v1
 ---
 
 # Abstract
