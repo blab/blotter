@@ -13,7 +13,7 @@ The simplest parsimonious explanation for this observation was that there was a 
 However, at first I struggled to reconcile this lack of genetic diversity with WHO reports of "limited human-to-human" transmission.
 The conclusion of sustained human-to-human spread became difficult to ignore on Jan 17 when nCoV genomes from the two Thai travel cases that reported no market exposure showed the same limited genetic diversity.
 This genomic data represented one of the first and strongest indications of sustained epidemic spread.
-As this became clear to me, I spent the week of Jan 20 alerting every public official I know.
+As this became clear to me, I spent the week of Jan 20 alerting every public health official I know.
 
 At this moment there are 54 publicly shared viral genomes, with genomes being shared by public health and academic groups all over the world 3-6 days after sample collection.
 I can't overstate how remarkable this is and what an inflection point it is for the field of genomic epidemiology.
