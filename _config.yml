@@ -65,7 +65,7 @@ exclude:
   - "projects/h3n2-reassortment/auspice/*"
   - "projects/dengue-antigenic-dynamics/titer_model/seasia_output/*"
   - "projects/h5n1-cambodia/data/tree-jsons/*"
-  - "projects/zika-colombia/supplemental-analysis/rarefaction-curves/*" 
+  - "projects/zika-colombia/supplemental-analysis/rarefaction-curves/*"
 
 projects:
   - trvrb/coaltrace
@@ -106,3 +106,4 @@ projects:
   - blab/h3n2-reassortment
   - blab/genomic-horizon
   - blab/h5n1-cambodia
+  - nextstrain/ncov
