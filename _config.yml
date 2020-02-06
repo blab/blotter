@@ -94,6 +94,7 @@ projects:
   - nextstrain/janus
   - nextstrain/sacra
   - nextstrain/cli
+  - nextstrain/nextstrain.org
   - blab/zika-seq
   - blab/siv-cst
   - blab/zika-usvi
@@ -107,3 +108,5 @@ projects:
   - blab/genomic-horizon
   - blab/h5n1-cambodia
   - nextstrain/ncov
+  - seattleflu/id3c
+  - seattleflu/id3c-customizations
