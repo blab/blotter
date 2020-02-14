@@ -311,6 +311,10 @@ body {
 	font-size: 60%;
 }
 
+.reveal .even-tinier {
+	font-size: 50%;
+}
+
 .citation {
   position: absolute;
   bottom: 0px;
