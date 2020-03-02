@@ -3,7 +3,6 @@ layout: member
 title: Trevor Bedford
 position: Principal investigator
 handle: trvrb
-email: trevor@bedford.io
 twitter: trvrb
 github: trvrb
 scholar: RIi-1pAAAAAJ
