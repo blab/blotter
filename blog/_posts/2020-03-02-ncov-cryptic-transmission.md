@@ -114,3 +114,29 @@ We now believe that the Seattle area seeding event was ~Jan 15 and we're now ~7 
 I expect Seattle now to look like Wuhan around ~1 Jan, when they were reporting the first clusters of patients with unexplained viral pneumonia.
 We are currently estimating ~600 infections in Seattle, this matches my [phylodynamic estimate of the number of infections in Wuhan on Jan 1](https://bedford.io/projects/ncov-phylodynamics/).
 Three weeks later Wuhan, had thousands of infections and was put in [large-scale lock-down](https://www.nytimes.com/2020/01/22/world/asia/china-coronavirus-travel.html).
+These large-scale non-pharmaceutical interventions to create social distancing had a huge impact on the resulting epidemic.
+China averted many millions of infections through these intervention measures and [cases there have declined substantially](https://covid2019.azurewebsites.net/).
+
+![](/images/blog/ncov_hubei_cases_2020_03_02.png)
+<br>
+
+This suggests that this is controllable.
+We're at a critical junction right now, but we can still mitigate this substantially.
+
+Some ways to implement non-pharmaceutical interventions include:
+
+ - Practicing social distancing, such as limiting attendance at events with large groups of people
+ - Staying home, especially if you are feeling ill
+ - Implementing good hand washing practices - it is extremely important to wash hands regularly  
+ - Covering coughs and sneezes in your elbow or tissue
+ - Avoiding touching your eyes, nose, and mouth with unwashed hands
+ - Take your temperature daily, if you develop a fever, self-isolate and call your doctor
+ - Disinfecting frequently touched surfaces, such as doorknobs
+ - Beginning some preparations in anticipation of social distancing or supply chain shortages, such as  ensuring you have sufficient supplies of prescription medicines and ensuring you have about a 2 week supply of food and other necessary household goods.
+ - With these preparation in mind, it is important to not panic buy. Panic buying unnecessarily increases strain on supply chains and can make it difficult to ensure that everyone is able to get supplies that they need.
+
+For more information please see:
+
+ - [Public Health Seattle and King County resource center for COVID-19](https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx)
+ - [Washington State Department of Health resource center for COVID-19](https://www.doh.wa.gov/Emergencies/Coronavirus)
+ - [US Centers for Disease Control and Prevention – COVID-19 resource page](https://www.cdc.gov/coronavirus/2019-ncov/index.html)
