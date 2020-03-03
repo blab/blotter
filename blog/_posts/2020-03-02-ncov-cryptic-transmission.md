@@ -97,11 +97,11 @@ Our best guess of a scenario looks something like:
 <br>
 
 We believe this may have occurred by the WA1 case having exposed someone else to the virus in the period between Jan 15 and Jan 19 before they were isolated.
-If this second case, was mild or asymptomatic, contact tracing efforts by public health would have had difficulty detecting it.
-After this point, community spread occurred and was undetected due to the [CDC narrow case definition](https://web.archive.org/web/20200225155220/https://www.cdc.gov/coronavirus/2019-ncov/hcp/clinical-criteria.html) that required  direct travel to China or direct contact with a known case to even be tested.
+If this second case was mild or asymptomatic, contact tracing efforts by public health would have had difficulty detecting it.
+After this point, community spread occurred and was undetected due to the [CDC narrow case definition](https://web.archive.org/web/20200225155220/https://www.cdc.gov/coronavirus/2019-ncov/hcp/clinical-criteria.html) that required  direct travel to China or direct contact with a known case to even be considered for testing.
 This lack of testing was a critical error and allowed an outbreak in Snohomish County and surroundings to grow to a sizable problem before it was even detected.
 
-Knowing that transmission was initiated on Jan 15, allows us to estimate the total number of infections that exist in this cluster today.
+Knowing that transmission was initiated on Jan 15 allows us to estimate the total number of infections that exist in this cluster today.
 Our preliminary analysis puts this at [570 with an 90% uncertainty interval of between 80 and 1500 infections](https://twitter.com/trvrb/status/1234589598652784642).
 
 Back on Feb 8, [I tweeted this thought experiment](https://twitter.com/trvrb/status/1226241415522373632):
@@ -109,12 +109,12 @@ Back on Feb 8, [I tweeted this thought experiment](https://twitter.com/trvrb/sta
 ![](/images/blog/ncov_seeding.jpg)
 <br>
 
-We know that Wuhan went from an index case in ~Nov-Dec 2019 to several thousand cases by mid-Jan 2020, thus going from initial seeding event to widespread local transmission in the span of ~8-10 weeks.
+We know that Wuhan went from an index case in ~Nov-Dec 2019 to several thousand cases by mid-Jan 2020, thus going from initial seeding event to widespread local transmission in the span of ~9-10 weeks.
 We now believe that the Seattle area seeding event was ~Jan 15 and we're now ~7 weeks later.
 I expect Seattle now to look like Wuhan around ~1 Jan, when they were reporting the first clusters of patients with unexplained viral pneumonia.
 We are currently estimating ~600 infections in Seattle, this matches my [phylodynamic estimate of the number of infections in Wuhan on Jan 1](https://bedford.io/projects/ncov-phylodynamics/).
-Three weeks later Wuhan, had thousands of infections and was put in [large-scale lock-down](https://www.nytimes.com/2020/01/22/world/asia/china-coronavirus-travel.html).
-These large-scale non-pharmaceutical interventions to create social distancing had a huge impact on the resulting epidemic.
+Three weeks later, Wuhan had thousands of infections and was put on [large-scale lock-down](https://www.nytimes.com/2020/01/22/world/asia/china-coronavirus-travel.html).
+However, these large-scale non-pharmaceutical interventions to create social distancing had a huge impact on the resulting epidemic.
 China averted many millions of infections through these intervention measures and [cases there have declined substantially](https://covid2019.azurewebsites.net/).
 
 ![](/images/blog/ncov_hubei_cases_2020_03_02.png)
