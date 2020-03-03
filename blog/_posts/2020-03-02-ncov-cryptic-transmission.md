@@ -7,7 +7,7 @@ author: Trevor Bedford
 The field of genomic epidemiology focuses on using the genetic sequences of pathogens to understand patterns of transmission and spread.
 Viruses mutate very quickly and accumulate changes during the process of transmission from one infected individual to another.
 The novel coronavirus SARS-CoV-2 which is responsible for the emerging COVID-19 pandemic mutates at an average of about [two mutations per month](http://virological.org/t/phylodynamic-analysis-129-genomes-24-feb-2020/356).
-After someone is exposed they will generally incubate the virus for ~5 days before symptoms develop and transmission increases.
+After someone is exposed they will generally incubate the virus for ~5 days before symptoms develop and transmission occurs.
 Other research has shown that the "serial interval" of SARS-CoV-2 is ~7 days.
 You can think of a transmission chain as looking something like:
 
@@ -36,13 +36,13 @@ As an example, if we sequenced three of these infections and found:
 ![](/images/blog/ncov_transmission_chain_sequenced.png)
 <br>
 
-We could take the "genomes" ATTT, ATCT and ATCT and infer that the infection with sequence ATTT lead to the infection with sequence ATCT and this infection lead to the infection with sequence ATCT.
+We could take the "genomes" ATTT, ATCT and GTCT and infer that the infection with sequence ATTT lead to the infection with sequence ATCT and this infection lead to the infection with sequence GTCT.
 This approach allows us learn about epidemiology and transmission in a completely novel way and can supplement more traditional contact tracing and case-based reporting.
 
 For a few years now, we've been working on the [Nextstrain](https://nextstrain.org/) software platform, which aims to make genomic epidemiology as rapid and as useful as possible.
 We had previously applied this to outbreaks like [Ebola](https://nextstrain.org/ebola), [Zika](https://nextstrain.org/zika) and [seasonal flu](https://nextstrain.org/flu/seasonal/h3n2/ha/2y).
 Owing to advances in technology and open data sharing, the genomes of 140 SARS-CoV-2 coronaviruses have been shared from all over the world via [gisaid.org](https://gisaid.org).
-As these genomes are getting shared, we download them from GISAID and [incorporate them into a global map as quickly as possible](/blog/genomic-epi-for-ncov-response/) and have an always up-to-date view of the genomic epidemiology of novel coronavirus at [nextstrain.org/ncov](https://nextstrain.org/ncov).
+As these genomes are shared, we download them from GISAID and [incorporate them into a global map as quickly as possible](/blog/genomic-epi-for-ncov-response/) and have an always up-to-date view of the genomic epidemiology of novel coronavirus at [nextstrain.org/ncov](https://nextstrain.org/ncov).
 
 The big picture looks like this at the moment:
 
@@ -54,7 +54,7 @@ where we can see the earliest infections in Wuhan, China in purple on the left s
 All these genomes from Wuhan have a common ancestor in late Nov or early Dec, suggesting that this virus has emerged recently in the human population.
 
 The first case in the USA was called "USA/WA1/2020".
-This was from a [traveller directly returning from Wuhan to Snohomish County on Jan 15, with a swab collected on Jan 19](https://www.seattletimes.com/seattle-news/health/case-of-wuhan-coronavirus-detected-in-washington-state-first-in-united-states/).
+This was from a [traveller directly returning from Wuhan to Snohomish County on Jan 15](https://www.seattletimes.com/seattle-news/health/case-of-wuhan-coronavirus-detected-in-washington-state-first-in-united-states/), with a swab collected on Jan 19.
 This virus was rapidly sequenced by the US CDC Division of Viral Diseases and [shared publicly](https://www.ncbi.nlm.nih.gov/nuccore/MN985325) on Jan 24 (huge props to the CDC for this).
 We can zoom into the tree to place WA1 among related viruses:
 
@@ -64,7 +64,7 @@ We can zoom into the tree to place WA1 among related viruses:
 
 The virus has an identical genome to the virus Fujian/8/2020 sampled in Fujian on Jan 21, also labeled as a travel export from Wuhan, suggesting a close relationship between these two cases.
 
-Earlier this week the [Seattle Flu Study](https://seattleflu.org/) started screening samples for COVID-19 as described [here](https://twitter.com/trvrb/status/1233868710156234752).
+Last week the [Seattle Flu Study](https://seattleflu.org/) started screening samples for COVID-19 as described [here](https://twitter.com/trvrb/status/1233868710156234752).
 Soon after starting screening [we found a first positive in a sample from Snohomish County](https://www.snohd.org/Blog.aspx?IID=13).
 The case was remarkable in that it was a "community case", only the second recognized in the US, someone who had sought treatment for flu-like symptoms, been tested for flu and then sent home owing to mild disease.
 After this was diagnostically confirmed by Shoreline Public Health labs on Fri Feb 28 we were able to immediately get the sample USA/WA2/2020 on a sequencer and have a genome available on Sat Feb 29.
@@ -88,4 +88,29 @@ Additional evidence for the relationship between these cases comes from location
 The Seattle Flu Study had screened viruses from all over the greater Seattle area, however, we got the positive hit in Snohomish County with cases less than 15 miles apart.
 This by itself would only be suggestive, but combined with the genetic data, is firm evidence for continued transmission.
 
-I've been referring to this scenario of 
+I've been referring to this scenario as "cryptic transmission".
+This is a technical term meaning "undetected transmission".
+Our best guess of a scenario looks something like:
+
+<br>
+![](/images/blog/ncov_transmission_chain_wa1_wa2.png)
+<br>
+
+We believe this may have occurred by the WA1 case having exposed someone else to the virus in the period between Jan 15 and Jan 19 before they were isolated.
+If this second case, was mild or asymptomatic, contact tracing efforts by public health would have had difficulty detecting it.
+After this point, community spread occurred and was undetected due to the [CDC narrow case definition](https://web.archive.org/web/20200225155220/https://www.cdc.gov/coronavirus/2019-ncov/hcp/clinical-criteria.html) that required  direct travel to China or direct contact with a known case to even be tested.
+This lack of testing was a critical error and allowed an outbreak in Snohomish County and surroundings to grow to a sizable problem before it was even detected.
+
+Knowing that transmission was initiated on Jan 15, allows us to estimate the total number of infections that exist in this cluster today.
+Our preliminary analysis puts this at [570 with an 90% uncertainty interval of between 80 and 1500 infections](https://twitter.com/trvrb/status/1234589598652784642).
+
+Back on Feb 8, [I tweeted this thought experiment](https://twitter.com/trvrb/status/1226241415522373632):
+
+![](/images/blog/ncov_seeding.jpg)
+<br>
+
+We know that Wuhan went from an index case in ~Nov-Dec 2019 to several thousand cases by mid-Jan 2020, thus going from initial seeding event to widespread local transmission in the span of ~8-10 weeks.
+We now believe that the Seattle area seeding event was ~Jan 15 and we're now ~7 weeks later.
+I expect Seattle now to look like Wuhan around ~1 Jan, when they were reporting the first clusters of patients with unexplained viral pneumonia.
+We are currently estimating ~600 infections in Seattle, this matches my [phylodynamic estimate of the number of infections in Wuhan on Jan 1](https://bedford.io/projects/ncov-phylodynamics/).
+Three weeks later Wuhan, had thousands of infections and was put in [large-scale lock-down](https://www.nytimes.com/2020/01/22/world/asia/china-coronavirus-travel.html).
