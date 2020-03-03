@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Cryptic transmission of novel coronavirus SARS-CoV-2 revealed by genomic epidemiology
+title: Cryptic transmission of novel coronavirus revealed by genomic epidemiology
 author: Trevor Bedford
 ---
 
 The field of genomic epidemiology focuses on using the genetic sequences of pathogens to understand patterns of transmission and spread.
 Viruses mutate very quickly and accumulate changes during the process of transmission from one infected individual to another.
-The novel coronavirus SARS-CoV-2 which is responsible for the emerging COVID-19 pandemic mutates at an average of about [two mutations per month](http://virological.org/t/phylodynamic-analysis-129-genomes-24-feb-2020/356).
+The novel coronavirus which is responsible for the emerging COVID-19 pandemic mutates at an average of about [two mutations per month](http://virological.org/t/phylodynamic-analysis-129-genomes-24-feb-2020/356).
 After someone is exposed they will generally incubate the virus for ~5 days before symptoms develop and transmission occurs.
 Other research has shown that the "serial interval" of SARS-CoV-2 is ~7 days.
 You can think of a transmission chain as looking something like:
@@ -126,11 +126,12 @@ We're at a critical junction right now, but we can still mitigate this substanti
 Some ways to implement non-pharmaceutical interventions include:
 
  - Practicing social distancing, such as limiting attendance at events with large groups of people
- - Staying home, especially if you are feeling ill
+ - Working from home, if your job and employer allows it
+ - Staying home if you are feeling ill
+ - Take your temperature daily, if you develop a fever, self-isolate and call your doctor 
  - Implementing good hand washing practices - it is extremely important to wash hands regularly  
  - Covering coughs and sneezes in your elbow or tissue
  - Avoiding touching your eyes, nose, and mouth with unwashed hands
- - Take your temperature daily, if you develop a fever, self-isolate and call your doctor
  - Disinfecting frequently touched surfaces, such as doorknobs
  - Beginning some preparations in anticipation of social distancing or supply chain shortages, such as  ensuring you have sufficient supplies of prescription medicines and ensuring you have about a 2 week supply of food and other necessary household goods.
  - With these preparation in mind, it is important to not panic buy. Panic buying unnecessarily increases strain on supply chains and can make it difficult to ensure that everyone is able to get supplies that they need.
