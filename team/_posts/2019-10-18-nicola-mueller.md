@@ -3,7 +3,6 @@ layout: member
 title: Nicola Felix Müller
 position: Postdoc
 handle: nicfel
-email: nicola.felix.mueller@gmail.com
 scholar: 65FxKNgAAAAJ
 github: nicfel
 twitter: nicfelm

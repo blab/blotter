@@ -3,7 +3,6 @@ layout: member
 title: Marlin Figgins
 position: Research assistant
 handle: mfiggins
-email: marlinfiggins@gmail.com
 github: marlinfiggins
 twitter: marlinfiggins
 image: /images/team/marlin-figgins.jpg

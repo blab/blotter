@@ -3,7 +3,6 @@ layout: member
 title: Gytis Dudas
 position: Fellow
 handle: evogytis
-email: gytisdudas@gmail.com
 twitter: evogytis
 github: evogytis
 scholar: nwiME18AAAAJ

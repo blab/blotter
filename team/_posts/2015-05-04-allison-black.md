@@ -6,7 +6,6 @@ handle: alliblk
 github: alliblk
 scholar: hcBF4HkAAAAJ
 image: /images/team/allison-black.jpg
-email: black.alli@gmail.com
 twitter: alliblk
 ---
 

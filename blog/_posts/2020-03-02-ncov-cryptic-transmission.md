@@ -128,7 +128,7 @@ Some ways to implement non-pharmaceutical interventions include:
  - Practicing social distancing, such as limiting attendance at events with large groups of people
  - Working from home, if your job and employer allows it
  - Staying home if you are feeling ill
- - Take your temperature daily, if you develop a fever, self-isolate and call your doctor 
+ - Take your temperature daily, if you develop a fever, self-isolate and call your doctor
  - Implementing good hand washing practices - it is extremely important to wash hands regularly  
  - Covering coughs and sneezes in your elbow or tissue
  - Avoiding touching your eyes, nose, and mouth with unwashed hands

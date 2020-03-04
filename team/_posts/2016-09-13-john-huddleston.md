@@ -3,7 +3,6 @@ layout: member
 title: John Huddleston
 position: PhD student
 handle: jlhudd
-email: jlhudd@uw.edu
 twitter: huddlej
 github: huddlej
 scholar: KCqa_hUAAAAJ

@@ -3,7 +3,6 @@ layout: member
 title: Alvason Zhenhua Li
 position: Postdoc
 handle: alvason
-email: alvali@fhcrc.org
 github: alvason
 scholar: DD6OySAAAAAJ
 image: /images/team/alvason-li.jpg

@@ -5,7 +5,6 @@ position: PhD student
 handle: sidneymbell
 github: sidneymbell
 twitter: sidneymbell
-email: sidneymb@uw.edu
 image: /images/team/sidney-bell.jpg
 alumni: true
 ---

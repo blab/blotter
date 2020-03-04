@@ -5,7 +5,6 @@ position: Rotation student
 github: gabeerion
 scholar: g1yn3_wAAAAJ
 image: /images/team/gabriel-erion.jpg
-email: erion@uw.edu
 alumni: true
 ---
 

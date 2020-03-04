@@ -6,7 +6,6 @@ handle: chacalle
 github: chacalle
 twitter: uw_chacalle
 image: /images/team/charlton-callender.jpg
-email: charltonsee@ymail.com
 alumni: true
 ---
 

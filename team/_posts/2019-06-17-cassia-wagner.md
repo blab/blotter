@@ -3,7 +3,6 @@ layout: member
 title: Cassia Wagner
 position: Rotation student
 handle: cassia
-email: cassiasw@uw.edu
 github: cassiawag
 image: /images/team/cassia-wagner.jpg
 alumni: true

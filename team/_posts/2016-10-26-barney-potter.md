@@ -5,7 +5,6 @@ position: Research assistant
 handle: bpotter
 github: barneypotter24
 image: /images/team/barney-potter.jpg
-email: barney.potter.24@gmail.com
 twitter: barneypotter24
 alumni: true
 ---
