@@ -3,6 +3,7 @@ layout: member
 title: Kairsten Fay
 position: Full-stack developer
 handle: kairsten
+twitter: databae_
 github: kairstenfay
 image: /images/team/kairsten-fay.jpg
 ---
