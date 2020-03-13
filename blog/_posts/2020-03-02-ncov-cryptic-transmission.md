@@ -86,7 +86,7 @@ To me, this not quite conclusive evidence, but still strong evidence that WA2 is
 
 Additional evidence for the relationship between these cases comes from location.
 The Seattle Flu Study had screened viruses from all over the greater Seattle area, however, we got the positive hit in Snohomish County with cases less than 15 miles apart.
-This by itself would only be suggestive, but combined with the genetic data, is firm evidence for continued transmission.
+This by itself would only be suggestive, but combined with the genetic data, is firmer evidence for continued transmission.
 
 I've been referring to this scenario as "cryptic transmission".
 This is a technical term meaning "undetected transmission".
