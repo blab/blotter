@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Cassia Wagner
-position: Rotation student
+position: MSTP student
 handle: cassia
 github: cassiawag
 twitter: wcassias
