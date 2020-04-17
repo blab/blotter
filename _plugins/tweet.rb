@@ -13,12 +13,12 @@ module Jekyll
 			@markup = "#{markup}".strip
 		end
 		def render(context)
-		
+
 			parsed = Liquid::Template.parse(@markup).render context
 			url = parsed.split(/ /).first
 			if url =~ /^\//
 				url = "http://bedford.io" + url
-			end				
+			end
 			text = parsed.split(/ /).drop(1).join(' ')
 			html = ""
 			url.gsub!(/ /, '%20')
@@ -26,9 +26,9 @@ module Jekyll
 			html += "<i class=\"fa fa-twitter fa-fw\"></i> "
             html += "<a class=\"off\" href=\"http://twitter.com/share?url=#{url}&text=#{text}\" target=\"_blank\">"
             html += "tweet"
-            html += "</a>" 
-			html 
-			
+            html += "</a>"
+			html
+
 		end
 	end
 end

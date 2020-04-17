@@ -12,3 +12,6 @@ gem 'less'
 # octokit
 gem 'octokit'
 gem 'netrc'
+
+# Twitter
+gem 'jekyll-twitter-plugin'
