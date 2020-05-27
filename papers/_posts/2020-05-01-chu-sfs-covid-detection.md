@@ -9,6 +9,7 @@ journal: "N Engl J Med: 10.1056/NEJMc2008646."
 pdf: /pdfs/papers/chu-sfs-covid-detection.pdf
 supplement: /pdfs/papers/chu-sfs-covid-detection-supp.pdf
 doi: 10.1056/NEJMc2008646
+github: https://github.com/seattleflu/covid19-early-detection
 ---
 
 # Abstract
