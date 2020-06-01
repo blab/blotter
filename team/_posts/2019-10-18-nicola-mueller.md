@@ -10,8 +10,9 @@ image: /images/team/nicola-mueller.jpg
 ---
 
 I joined the lab in October of 2019 as a Postdoc to work on several aspects of the evolution and transmission of infectious diseases.
-Currently I am involved in studying the local spread of influenza as part of the Seattle Flu Study.
-Additionally, I am studying how reassortment influences the fitness of seasonal human influenza viruses, based on [reassortment networks](https://doi.org/10.1101/726042) reconstructed from genetic sequences data of different segments from seasonal human influenza viruses.
+I am currently in the lab as a [Swiss National Science Foundation](http://www.snf.ch/en/Pages/default.aspx) [Early Postdoc Mobility](http://www.snf.ch/en/funding/careers/early-postdoc-mobility/Pages/default.aspx) fellow.
+As such, I am studying how reassortment influences the fitness of seasonal human influenza viruses, based on [reassortment networks](https://doi.org/10.1101/726042) reconstructed from genetic sequences data of different segments from seasonal human influenza viruses.
+Additionally, I am looking into recombination patterns of viruses and how to model them.
 
 Before joining the lab, I was doing a PhD with [Prof. Tanja Stadler at ETH Zürich in Switzerland](https://bsse.ethz.ch/cevo) from April 2016 to September 2019.
 During that time, I was working on theoretical aspects of models that allow us to efficiently infer [how lineages coalesce within and migrate between different sub-populations](https://academic.oup.com/mbe/article-abstract/34/11/2970/3896419).
