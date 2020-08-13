@@ -5,7 +5,7 @@ image: /images/papers/black-genepi-whitepaper.png
 authors: Black A, MacCannell DR, Sibley TR, Bedford T.
 year: 2020
 ref: Black et al. 2020. Nat Med.
-journal: "Nat Med: 10.1038/s41591-020-0935-z."
+journal: "Nat Med 26: 832–841."
 pdf: /pdfs/papers/black-genepi-whitepaper.pdf
 doi: 10.1038/s41591-020-0935-z
 ---

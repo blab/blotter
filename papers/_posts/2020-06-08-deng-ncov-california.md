@@ -5,7 +5,7 @@ image: /images/papers/deng-ncov-california.png
 authors: Deng X, Gu W, Federman S, Du Plessis L, Pybus O, Faria N, Wang C, Yu G, Pan C, Guevara H, Sotomayor-Gonzalez A, Zorn K, Gopez A, Servellita V, Hsu E, Miller S, Bedford T, Greninger A, Roychoudhury P, Famulare M, Chu HY, Shendure J, Starita L, Anderson C, Gangavarapu K, Zeller M, Spencer E, Andersen K, MacCannell D, Tong S, Armstrong G, Paden C, Li Y, Zhang Y, Morrow S, Willis M, Matyas B, Mase S, Kasirye O, Park M, Chan C, Yu A, Chai S, Villarino E, Bonin B, Wadford D, Chiu CY.
 year: 2020
 ref: Deng et al. 2020. Science.
-journal: "Science: eabb9263."
+journal: "Science 369: 582-587."
 pdf: /pdfs/papers/deng-ncov-california.pdf
 supplement: /pdfs/papers/deng-ncov-california-supp.pdf
 doi: 10.1126/science.abb9263

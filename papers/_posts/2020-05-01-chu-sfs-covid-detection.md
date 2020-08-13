@@ -5,7 +5,7 @@ image: /images/papers/chu-sfs-covid-detection.png
 authors: Chu HY, Englund JA, Starita LM, Famulare M, Brandstetter E, Nickerson DA, Rieder MJ, Adler A, Lacombe K, Kim AE, Graham C, Logue J, Wolf CR, Heimonen J, McCulloch DJ, Han PD, Sibley TR, Lee J, Ilcisin M, Fay K, Burstein R, Martin B, Lockwood CM, Thompson M, Lutz B, Jackson M, Hughes JP, Boeckh M, Shendure J, Bedford T.
 year: 2020
 ref: Chu et al. 2020. N Engl J Med.
-journal: "N Engl J Med: 10.1056/NEJMc2008646."
+journal: "N Engl J Med 383: 185-187."
 pdf: /pdfs/papers/chu-sfs-covid-detection.pdf
 supplement: /pdfs/papers/chu-sfs-covid-detection-supp.pdf
 doi: 10.1056/NEJMc2008646
