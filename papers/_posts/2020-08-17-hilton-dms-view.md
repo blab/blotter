@@ -4,11 +4,11 @@ title: "dms-view: Interactive visualization tool for deep mutational scanning da
 image: /images/papers/hilton-dms-view.png
 authors: Hilton SK, Huddleston JL, Black A, North K, Dingens AS, Bedford T, Bloom JD.
 year: 2020
-ref: Hilton et al. 2020. bioRxiv.
-journal: "bioRxiv: 2020.05.14.096842."
+ref: Hilton et al. 2020. J Open Source Softw.
+journal: "J Open Source Softw 5: 2353."
 pdf: /pdfs/papers/hilton-dms-view.pdf
-doi: 10.1101/2020.05.14.096842
-github: https://github.com/dms-view
+doi: 10.21105/joss.02353
+github: https://github.com/dms-view/dms-view.github.io
 ---
 
 # Abstract
