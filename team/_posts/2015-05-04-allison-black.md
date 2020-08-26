@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Allison Black
-position: PhD student
+position: Postdoc
 handle: alliblk
 github: alliblk
 scholar: hcBF4HkAAAAJ
