@@ -8,6 +8,7 @@ ref: Jackson et al. 2020. bioRxiv.
 journal: "bioRxiv: 2020.06.10.144071."
 pdf: /pdfs/papers/jackson-hpylori-within-host.pdf
 doi: 10.1101/2020.06.10.144071
+github: https://github.com/salama-lab/Hp-J99
 ---
 
 # Abstract
