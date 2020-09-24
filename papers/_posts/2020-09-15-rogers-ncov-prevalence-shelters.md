@@ -6,6 +6,8 @@ authors: Rogers JH, Link AC, McCulloch D, Brandstetter E, Newman KL, Jackson ML,
 year: 2020
 ref: Rogers et al. 2020. Ann Intern Med.
 journal: "Ann Intern Med: 10.7326/M20-3799."
+pdf: /pdfs/papers/rogers-ncov-prevalence-shelters.pdf
+supplement: /pdfs/papers/rogers-ncov-prevalence-shelters-supp.pdf
 doi: 10.7326/M20-3799
 ---
 
