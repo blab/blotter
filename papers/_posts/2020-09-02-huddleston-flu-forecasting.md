@@ -7,6 +7,7 @@ year: 2020
 ref: Huddleston et al. 2020. eLife.
 journal: "eLife 9: e60067."
 pdf: /pdfs/papers/huddleston-flu-forecasting.pdf
+supplement: /pdfs/papers/huddleston-flu-forecasting-supp.pdf
 doi: 10.7554/eLife.60067
 github: https://github.com/blab/flu-forecasting
 ---
