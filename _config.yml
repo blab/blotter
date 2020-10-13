@@ -70,48 +70,53 @@ exclude:
   - "projects/zika-colombia/supplemental-analysis/rarefaction-curves/*"
 
 projects:
-  - trvrb/coaltrace
-  - trvrb/stem
-  - trvrb/PACT
-  - trvrb/dynamics-practical
-  - trvrb/antigen
-  - trvrb/haplotypes
-  - trvrb/divergence
-  - trvrb/ancestry
-  - trvrb/medium-data
-  - trvrb/flutrace
-  - blab/nextflu
   - alvason/infectious-pulse
-  - blab/global-migration
-  - trvrb/sismid
-  - trvrb/sctrace
-  - trvrb/phylodynamics-lecture
-  - evogytis/baltic
   - blab/chikv
-  - blab/yellow-fever
+  - blab/dengue-antigenic-dynamics
+  - blab/flu-forecasting
+  - blab/genomic-horizon
+  - blab/global-migration
+  - blab/h3n2-reassortment
+  - blab/h5n1-cambodia
+  - blab/mers-structure
+  - blab/mitii
+  - blab/mumps-seq
+  - blab/mumps-wa-phylodynamics
+  - blab/ncov-cryptic-transmission
+  - blab/ncov-phylodynamics
+  - blab/ncov-wa-d614g
+  - blab/ncov-wa-phylodynamics
+  - blab/nextflu
+  - blab/roka
+  - blab/seasonal-cov-adaptive-evolution
+  - blab/siv-cst
   - blab/unsampled
-  - nextstrain/fauna
+  - blab/yellow-fever
+  - blab/zika-colombia
+  - blab/zika-seq
+  - blab/zika-usvi
+  - evogytis/baltic
   - nextstrain/augur
   - nextstrain/auspice
-  - nextstrain/janus
-  - nextstrain/sacra
   - nextstrain/cli
-  - nextstrain/nextstrain.org
-  - blab/zika-seq
-  - blab/siv-cst
-  - blab/zika-usvi
-  - blab/mitii
-  - blab/mers-structure
-  - blab/roka
-  - blab/mumps-seq
-  - blab/dengue-antigenic-dynamics
-  - blab/zika-colombia
-  - blab/h3n2-reassortment
-  - blab/genomic-horizon
-  - blab/h5n1-cambodia
+  - nextstrain/fauna
+  - nextstrain/janus
   - nextstrain/ncov
+  - nextstrain/nextstrain.org
+  - nextstrain/sacra
   - seattleflu/id3c
   - seattleflu/id3c-customizations
-  - blab/ncov-phylodynamics
-  - blab/ncov-wa-phylodynamics
+  - trvrb/ancestry
+  - trvrb/antigen
+  - trvrb/coaltrace
+  - trvrb/divergence
+  - trvrb/dynamics-practical
+  - trvrb/flutrace
   - trvrb/gs541-phylodynamics
+  - trvrb/haplotypes
+  - trvrb/medium-data
+  - trvrb/PACT
+  - trvrb/phylodynamics-lecture
+  - trvrb/sctrace
+  - trvrb/sismid
+  - trvrb/stem
