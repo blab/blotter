@@ -7,7 +7,7 @@ authors:
 date: 2020-10-13
 ---
 
-In this post, we summarize and synthesize the results of our recent efforts to predict influenza evolution as described in [Huddleston et al. 2020](https://doi.org/10.7554/eLife.60067) and [Barrat-Charlaix et al. 2020](https://www.biorxiv.org/content/10.1101/2020.07.31.231100v1)
+In this post, we summarize and synthesize the results of our recent efforts to predict influenza evolution as described in [Huddleston et al. 2020](https://doi.org/10.7554/eLife.60067) and [Barrat-Charlaix et al. 2020](https://www.biorxiv.org/content/10.1101/2020.07.31.231100v1).
 
 ### Why do we try to predict seasonal influenza evolution?
 
@@ -106,7 +106,7 @@ Figure 6. Mutation trajectories for seasonal influenza A/H3N2 where mutations ro
 </span>
 
 <script type="text/javascript">
-var spec = "https://gist.githubusercontent.com/huddlej/b9269ca919bc105351e928258e791a8a/raw/13fbd15391a336c04e132806a574a8308d37a131/frequency-trajectories-of-h3n2-mutations-interactive.json";
+var spec = "https://gist.githubusercontent.com/huddlej/b9269ca919bc105351e928258e791a8a/raw/bd2eba40cc47f3737344cf420a72c8a3db342713/frequency-trajectories-of-h3n2-mutations-interactive.json";
 vegaEmbed('#mutation-trajectories', spec).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
@@ -205,7 +205,7 @@ These results highlight the importance of using complete haplotypes to make pred
   <img src="/images/blog/flu-forecasting-rising_trajectories_f03.png" style="display: inline; margin: 0; width: 38%" />
 </div>
 <span class="text-figure-legend">
-Figure 8. Comparison of rising trajectories for natural H1N1pdm trajectories from Barrat-Charlaix et al. and simulated flu-like populations from Huddleston et al. 2020. A) Rising trajectories for H1N1pdm mutations as reported in Figure S9 of Barrat-Charlaix et al. B) Rising trajectories for flu-like populations simulated with SANTA-SIM in Huddleston et al. 2020. Mutation trajectories from simulated populations resemble those of natural H1N1pdm mutations.
+Figure 8. Comparison of rising trajectories for natural H1N1pdm trajectories from [Barrat-Charlaix et al. 2020](https://www.biorxiv.org/content/10.1101/2020.07.31.231100v1) and simulated flu-like populations from [Huddleston et al. 2020](https://doi.org/10.7554/eLife.60067). A) Rising trajectories for H1N1pdm mutations as reported in Figure S9 of [Barrat-Charlaix et al. 2020](https://www.biorxiv.org/content/10.1101/2020.07.31.231100v1). B) Rising trajectories for flu-like populations simulated with SANTA-SIM in [Huddleston et al. 2020](https://doi.org/10.7554/eLife.60067). Mutation trajectories from simulated populations resemble those of natural H1N1pdm mutations.
 </span>
 
 We also wanted to know whether the optimal metric from [Barrat-Charlaix et al. 2020](https://www.biorxiv.org/content/10.1101/2020.07.31.231100v1) for selecting a representative of the future, the consensus sequence of the current population, could make accurate forecasts in the modeling framework from [Huddleston et al. 2020](https://doi.org/10.7554/eLife.60067).
@@ -234,7 +234,7 @@ For the first half of the training period, the distance to consensus metric rece
 In the second half of the training period, the metric received a strong negative coefficient, as we expected.
 When we applied the mean coefficient from the training period to out-of-sample data in the test period, we found that the distance from consensus metric outperformed LBI and performed only slightly worse than the antigenic drift metric.
 These results support findings from both of our studies.
-The consensus sequence is a more robust representative of the future than LBI, as shown in [Barrat-Charlaix et al.](https://www.biorxiv.org/content/10.1101/2020.07.31.231100v1).
+The consensus sequence is a more robust representative of the future than LBI, as shown in [Barrat-Charlaix et al. 2020](https://www.biorxiv.org/content/10.1101/2020.07.31.231100v1).
 However, experimental measurements of antigenic drift still provide more information about the future population than sequence-only metrics, as shown in [Huddleston et al. 2020](https://doi.org/10.7554/eLife.60067).
 We anticipate that this new distance from consensus metric could eventually replace the existing mutational load metric in a combined model with HI antigenic novelty.
 This new combined model could potentially provide better estimates of functional constraint (by limiting changes from the consensus) and antigenic drift (by using experimental measures of antigenic drift phenotypes.)
@@ -243,82 +243,14 @@ This new combined model could potentially provide better estimates of functional
 
 In general, we found that the evolution of H3N2 flu populations remains difficult to predict.
 The frequency dynamics and fixation probabilities of individual mutations resemble neutrally evolving alleles.
-Correspondingly, the most representative sequence of future flu populations is the consensus sequence of the current population and not necessarily the sequence with the highest local branching index.
+We can weakly predict the frequency dynamics of flu clades when we combine experimental and genetic data in models that account for antigenic drift and mutational load.
+In the best case, we can use these same biologically-informed models to predict the sequence composition of future flu populations.
+However, these complex fitness models rarely outperform a naive weighted average or consensus of the current population, when predicting which individual virus is the most representative of the future population.
 
 Successful flu predictions depend on the choice of prediction targets and fitness metrics.
-We cannot estimate a mutation's fixation probability any better than its current frequency.
-We can weakly predict the frequency dynamics of flu clades when we combine experimental and genetic data in models that account for antigenic drift and mutational load.
-Better still, we can use these same models to predict the sequence composition of future flu populations.
-However, these complex fitness models barely outperform a naive weighted average of the current population, when predicting the current virus that is most representative of the future population.
-
-There is much for us to learn from these results.
-Future prediction efforts should focus on estimating the composition of future populations instead of the more complex target of frequency dynamics.
+Future prediction efforts should attempt to estimate the composition of future populations instead of future clade frequencies.
 Fitness models should account for the genetic background of beneficial mutations and favor fitness metrics that are the least susceptible to model overfitting and historical contingency.
-Most importantly, there is a lot of room to improve.
 The benefits of considering the genetic background of individual mutations in HA suggest that considering the context of all genes should yield gains, too.
 We need measures of antigenic drift from human antisera to complement current measures based on ferret antisera.
-We may also improve forecast accuracy by properly accounting for flu's global migration patterns.
-Finally, we could make the forecasting problem itself easier by reducing the lag between vaccine composition decisions and distribution to the public.
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Metric</th>
-      <th>Single strain</th>
-      <th>Population composition</th>
-      <th>Frequency dynamics</th>
-      <th>Fixation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>initial (or delta) frequency</td>
-      <td>none</td>
-      <td>none</td>
-      <td>none</td>
-      <td>none</td>
-    </tr>
-     <tr>
-      <td>antigenic drift<br />(epitope mutations)</td>
-      <td>N/A</td>
-      <td>none</td>
-      <td>N/A</td>
-      <td>none</td>
-    </tr>
-    <tr>
-      <td>antigenic drift<br />(serological data)</td>
-      <td>good</td>
-      <td>good</td>
-      <td>weak</td>
-      <td>N/A</td>
-    </tr>
-     <tr>
-      <td>mutational load<br />(non-epitope&nbsp;mutations)</td>
-      <td>N/A</td>
-      <td>weak</td>
-      <td>N/A</td>
-      <td>N/A</td>
-    </tr>
-      <tr>
-      <td>local branching index</td>
-      <td>good</td>
-      <td>good</td>
-      <td>N/A</td>
-      <td>none</td>
-    </tr>
-      <tr>
-      <td>consensus sequence / naive model</td>
-      <td>good</td>
-      <td>weak</td>
-      <td>none</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td>DMS mutational preferences</td>
-      <td>N/A</td>
-      <td>none</td>
-      <td>N/A</td>
-      <td>N/A</td>
-    </tr>
-  </tbody>
-</table>
+We may also improve forecast accuracy by accounting for flu's global migration patterns.
+Finally, we should make the forecasting problem itself easier by embracing efforts to reduce the lag between vaccine composition decisions and distribution to the public.
