@@ -102,7 +102,7 @@ We evaluated the outcomes of trajectories for mutations that had risen from 0% t
 
 <div id="mutation-trajectories"><img src="/images/blog/flu-forecasting-mutation-trajectories-static.png" style="width: 60%" /></div>
 <span class="text-figure-legend">
-Figure 6. Mutation trajectories for seasonal influenza A/H3N2 where mutations rose from a frequency of zero to approximately 30% frequency. Dashed horizontal lines represent thresholds for fixation (red) and loss (blue). Trajectory colors also indicate eventual fixation (red), loss (blue), or persistance as a polymorphism (black). The thick black dashed line indicates the average frequency of all trajectories shown. For the interactive figure, hover over individual trajectories to highlight their full extent and details about the current frequency of a given mutation at each timepoint. Use the radio buttons to filter trajectories by segment and outcome. (After Figure 1B in [Barrat-Charlaix et al 2020](https://www.biorxiv.org/content/10.1101/2020.07.31.231100v1).)
+Figure 6. Mutation trajectories for seasonal influenza A/H3N2 where mutations rose from a frequency of zero to approximately 30% frequency. Dashed horizontal lines represent thresholds for fixation (red) and loss (blue). Trajectory colors also indicate eventual fixation (red), loss (blue), or persistence as a polymorphism (black). The thick black dashed line indicates the average frequency of all trajectories shown. For the interactive figure, hover over individual trajectories to highlight their full extent and details about the current frequency of a given mutation at each timepoint. Use the radio buttons to filter trajectories by segment and outcome. (After Figure 1B in [Barrat-Charlaix et al 2020](https://www.biorxiv.org/content/10.1101/2020.07.31.231100v1).)
 </span>
 
 <script type="text/javascript">
@@ -245,7 +245,9 @@ In general, we found that the evolution of H3N2 flu populations remains difficul
 The frequency dynamics and fixation probabilities of individual mutations resemble neutrally evolving alleles.
 We can weakly predict the frequency dynamics of flu clades when we combine experimental and genetic data in models that account for antigenic drift and mutational load.
 In the best case, we can use these same biologically-informed models to predict the sequence composition of future flu populations.
-However, these complex fitness models rarely outperform a naive weighted average or consensus of the current population, when predicting which individual virus is the most representative of the future population.
+However, these complex fitness models do not always outperform simpler models, when predicting which individual virus is the most representative of the future population.
+In [Barrat-Charlaix et al. 2020](https://www.biorxiv.org/content/10.1101/2020.07.31.231100v1), the consensus sequence of the current population was as close or closer to the future population than the sequence with the highest local branching index.
+In [Huddleston et al. 2020](https://doi.org/10.7554/eLife.60067), a naive model estimated the single closest strain to the future nearly as well as the best biologically-informed models.
 
 Successful flu predictions depend on the choice of prediction targets and fitness metrics.
 Future prediction efforts should attempt to estimate the composition of future populations instead of future clade frequencies.
