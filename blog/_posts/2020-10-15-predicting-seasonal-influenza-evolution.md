@@ -100,13 +100,14 @@ We evaluated the outcomes of trajectories for mutations that had risen from 0% t
 <!-- Import vega-embed -->
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.11.1"></script>
 
-<div id="mutation-trajectories"><img src="/images/blog/flu-forecasting-mutation-trajectories-static.png" style="width: 60%" /></div>
+<div style="width: 100%" id="mutation-trajectories"><img src="/images/blog/flu-forecasting-mutation-trajectories-static.png">
+</div>
 <span class="text-figure-legend">
 Figure 6. Mutation trajectories for seasonal influenza A/H3N2 where mutations rose from a frequency of zero to approximately 30% frequency. Dashed horizontal lines represent thresholds for fixation (red) and loss (blue). Trajectory colors also indicate eventual fixation (red), loss (blue), or persistence as a polymorphism (black). The thick black dashed line indicates the average frequency of all trajectories shown. For the interactive figure, hover over individual trajectories to highlight their full extent and details about the current frequency of a given mutation at each timepoint. Use the radio buttons to filter trajectories by segment and outcome. (After Figure 1B in [Barrat-Charlaix et al 2020](https://www.biorxiv.org/content/10.1101/2020.07.31.231100v1).)
 </span>
 
 <script type="text/javascript">
-var spec = "https://gist.githubusercontent.com/huddlej/b9269ca919bc105351e928258e791a8a/raw/bd2eba40cc47f3737344cf420a72c8a3db342713/frequency-trajectories-of-h3n2-mutations-interactive.json";
+var spec = "https://gist.githubusercontent.com/huddlej/b9269ca919bc105351e928258e791a8a/raw/7a0491fcd9a7b9b5fd83b2ca03a41b9e3b4b656b/frequency-trajectories-of-h3n2-mutations-interactive.json";
 vegaEmbed('#mutation-trajectories', spec).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
