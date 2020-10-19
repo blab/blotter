@@ -1,36 +1,31 @@
 ---
 layout: talk_reveal3
 title: Genomic tracking of SARS-CoV-2 evolution and spread
-venue: Bill & Melinda Gates Foundation
-event: COVID-19 Summer Scientific Series
+venue: Fred Hutch
+event: VIDD Seminar
 author: Trevor Bedford
 widescreen: true
 ---
 
-<!-- Bio: Trevor Bedford is an Associate Professor in the Vaccine and Infectious
-Disease Division at the Fred Hutchinson Cancer Research Center and is affiliate
-faculty at the University of Washington. His research program focuses on
-phylodynamic analysis of pathogen sequence data with the goal of making
-inferences that are actionable to public health. This research program spans a
-number of viral systems including seasonal and avian influenza, Ebola, Zika,
-SIV, MERS-CoV, dengue, mumps and SARS-CoV-2. Dr. Bedford's open-source
-Nextstrain project aims to harness the scientific and public health potential of
-pathogen genome data by providing a continually-updated view of publicly
-available data alongside powerful analytic and visualization tools for use by
-the community. This platform has seen substantial public health adoption to
-improve seasonal influenza vaccines, combat Ebola outbreaks and to understand
-and curb SARS-CoV-2 transmission. With the Seattle Flu Study, Dr. Bedford lead
-the design and implementation of a next-generation infectious disease
-surveillance system that discovered community transmission of COVID-19 in
-February 2020 and radically impacted state and local response to the pandemic.
--->
+<!-- Bio: Trevor Bedford is an Associate Professor in the Vaccine and Infectious Disease Division at
+the Fred Hutchinson Cancer Research Center and is affiliate faculty at the University of Washington.
+His research program focuses on phylodynamic analysis of pathogen sequence data with the goal of
+making inferences that are actionable to public health. This research program spans a number of
+viral systems including seasonal and avian influenza, Ebola, Zika, SIV, MERS-CoV, dengue, mumps and
+SARS-CoV-2. Dr. Bedford's open-source Nextstrain project aims to harness the scientific and public
+health potential of pathogen genome data by providing a continually-updated view of publicly
+available data alongside powerful analytic and visualization tools for use by the community. This
+platform has seen substantial public health adoption to improve seasonal influenza vaccines, combat
+Ebola outbreaks and to understand and curb SARS-CoV-2 transmission. With the Seattle Flu Study, Dr.
+Bedford lead the design and implementation of a next-generation infectious disease surveillance
+system that discovered community transmission of COVID-19 in February 2020 and radically impacted
+state and local response to the pandemic. -->
 
-<!-- Abstract: Here, I present on emergence and spread of SARS-CoV-2 as
-uncovered by pathogen genome sequencing. I discuss our work with the Nextstrain
-project and ongoing attempt to democratize analysis and sharing of pathogen
-genomic data, as well as our efforts with the Seattle Flu Study to investigate
-spread of influenza, SARS-CoV-2 and other respiratory pathogens in the Seattle
-area. -->
+<!-- Abstract: Here, I present on emergence and spread of SARS-CoV-2 as uncovered by pathogen genome
+sequencing. I discuss our work with the Nextstrain project to provide a platform for genomic
+surveillance of SARS-CoV-2 and dissemination of phylodynamic analyses. I also discuss the Seattle
+Flu Study, our uncovering of community transmission of SARS-CoV-2 and our ongoing collaboration in
+local public health response. -->
 
 <!-- Total time of ~40 minutes + 20 minutes for questions -->
 
@@ -39,8 +34,6 @@ area. -->
 	<br>&nbsp;<br>
 	<p class="title">
 	Trevor Bedford (@trvrb)
-	<br>
-	Associate Professor, Fred Hutchinson Cancer Research Center
 	<br>
 	{{ page.date | date: "%-d %b %Y" }}
 	<br>
@@ -51,24 +44,24 @@ area. -->
 	Slides at: bedford.io/talks
 </section>
 
-<section>
-	<img class="stretch" data-src="/images/talks/ncov_case_counts_map_2020_07_10.png">
-	<div class="citation">
-		<a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html">New York Times</a>
-	</div>
+<section data-background="#000000">
+	<h1 class="title">This talk</h1>
 </section>
 
 <section>
-	<img class="stretch" data-src="/images/talks/ncov_rt_2020_07_10_panels.png">
-	<div class="citation">
-		<a href="https://epiforecasts.io/covid">epiforecasts.io</a>
-	</div>
-</section>
+	<h3>Start with an overview of what we've been up to since I last presented to the Division three years ago</h3>
 
-<section>
-	<h3>
-		Significant fog of war. Genomic approaches offer orthogonal data source to understand the pandemic.
-	</h3>
+	<h3>A lot of our work is shaped by what's going on in the world, with previous focus on Ebola in West Africa and the Zika epidemic in the Americas</h3>
+
+	<div>
+		<img width="14%" style="padding:5px;" src="/images/talks/tile_ebola_virus.png">
+		<img width="14%" style="padding:5px;" src="/images/talks/tile_ebola_tree.png">
+		<img width="14%" style="padding-top:5px; padding-right:25px; padding-bottom:5px; padding-left:5px;" src="/images/talks/tile_ebola_map.png">
+		<img width="14%" style="padding-top:5px; padding-right:5px; padding-bottom:5px; padding-left:25px;" src="/images/talks/tile_zika_virus.png">
+		<img width="14%" style="padding:5px;" src="/images/talks/tile_zika_tree.png">
+		<img width="14%" style="padding:5px;" src="/images/talks/tile_zika_map.png">
+	</div>
+
 </section>
 
 <section data-transition="slide-in none-out">
@@ -89,6 +82,128 @@ area. -->
 <section data-transition="none-in slide-out">
 	<h3>Sequence and determine phylogeny</h3>
 	<img class="stretch" src="/images/talks/infection_tree_4b.png">
+</section>
+
+<section data-transition="slide-in none-out">
+	<p style="margin-top: -80px;">Non-COVID "lab-lead" paper since last review in July 2017</p>
+	<table class="even-smaller" style="margin-top: -10px;">
+		<tbody>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/dudas-mers-structure.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Dudas et al. 2018. MERS-CoV spillover at the camel-human interface. eLife.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hadfield-nextstrain.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hadfield et al. 2018. Nextstrain: real-time tracking of pathogen evolution. Bioinformatics.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/lee-h3n2-dms.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Lee et al. 2018. Deep mutational scanning of hemagglutinin helps predict evolutionary fates of human H3N2 influenza variants. PNAS.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/bell-dengue-antigenic-dynamics.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Bell et al. 2019. Dengue genetic divergence generates within-serotype antigenic variation, but serotypes dominate evolutionary dynamics. eLife.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hadfield-wnv-nextstrain.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hadfield et al. 2019. Twenty years of West Nile virus spread and evolution in the Americas visualized by Nextstrain. PLoS Pathog.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/black-zika-in-colombia.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Black et al. 2019. Genomic epidemiology supports multiple introductions and cryptic transmission of Zika virus in Colombia. BMC Infect Dis.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/potter-h3n2-reassortment.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Potter et al. 2019. Evolution and rapid spread of a reassortant A(H3N2) virus that predominated the 2017-2018 influenza season. Virus Evol.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/dudas-genomic-horizon.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Dudas et al. 2019. The ability of single genes vs full genomes to resolve time and space in outbreak analysis. BMC Evol Biol.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/moncla-h5n1-cambodia.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Moncla et al. 2020. Quantifying within-host evolution of H5N1 influenza in humans and poultry in Cambodia. PLoS Pathog.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/black-genepi-whitepaper.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Black et al. 2020. Ten recommendations for supporting open pathogen genomic analysis in public health. Nat Med.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hilton-dms-view.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hilton et al. 2020. dms-view: Interactive visualization tool for deep mutational scanning data. J Open Source Softw.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/huddleston-flu-forecasting.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Huddleston et al. 2020. Integrating genotypes and phenotypes improves long-term forecasts of seasonal influenza A/H3N2 evolution. eLife.</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<section data-transition="none-in slide-out">
+	<p style="margin-top: -80px;">Non-COVID "lab-lead" paper since last review in July 2017</p>
+	<table class="even-smaller" style="margin-top: -10px;">
+		<tbody>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/dudas-mers-structure.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Dudas et al. 2018. <b>MERS-CoV</b> spillover at the camel-human interface. eLife.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hadfield-nextstrain.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hadfield et al. 2018. Nextstrain: real-time tracking of pathogen evolution. Bioinformatics.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/lee-h3n2-dms.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Lee et al. 2018. Deep mutational scanning of hemagglutinin helps predict evolutionary fates of human <b>H3N2 influenza</b> variants. PNAS.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/bell-dengue-antigenic-dynamics.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Bell et al. 2019. <b>Dengue</b> genetic divergence generates within-serotype antigenic variation, but serotypes dominate evolutionary dynamics. eLife.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hadfield-wnv-nextstrain.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hadfield et al. 2019. Twenty years of <b>West Nile</b> virus spread and evolution in the Americas visualized by Nextstrain. PLoS Pathog.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/black-zika-in-colombia.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Black et al. 2019. Genomic epidemiology supports multiple introductions and cryptic transmission of <b>Zika</b> virus in Colombia. BMC Infect Dis.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/potter-h3n2-reassortment.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Potter et al. 2019. Evolution and rapid spread of a reassortant <b>A(H3N2)</b> virus that predominated the 2017-2018 influenza season. Virus Evol.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/dudas-genomic-horizon.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Dudas et al. 2019. The ability of single genes vs full genomes to resolve time and space in outbreak analysis <i><b>of Ebola</b></i>. BMC Evol Biol.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/moncla-h5n1-cambodia.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Moncla et al. 2020. Quantifying within-host evolution of <b>H5N1 influenza</b> in humans and poultry in Cambodia. PLoS Pathog.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/black-genepi-whitepaper.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Black et al. 2020. Ten recommendations for supporting open pathogen genomic analysis in public health. Nat Med.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hilton-dms-view.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hilton et al. 2020. dms-view: Interactive visualization tool for deep mutational scanning data. J Open Source Softw.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/huddleston-flu-forecasting.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Huddleston et al. 2020. Integrating genotypes and phenotypes improves long-term forecasts of seasonal <b>influenza A/H3N2</b> evolution. eLife.</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<!-------------------------------------->
+
+<section>
+	<img class="stretch" data-src="/images/talks/ncov_case_counts_map_2020_07_10.png">
+	<div class="citation">
+		<a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html">New York Times</a>
+	</div>
+</section>
+
+<section>
+	<img class="stretch" data-src="/images/talks/ncov_rt_2020_07_10_panels.png">
+	<div class="citation">
+		<a href="https://epiforecasts.io/covid">epiforecasts.io</a>
+	</div>
+</section>
+
+<section>
+	<h3>
+		Significant fog of war. Genomic approaches offer orthogonal data source to understand the pandemic.
+	</h3>
 </section>
 
 <section>
