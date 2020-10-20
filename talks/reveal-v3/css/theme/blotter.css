@@ -323,6 +323,21 @@ body {
   font-size: 0.5em !important;
 }
 
+.inset-top-left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.inset-top-right {
+  position: absolute;
+  text-align: right;
+  top: 0px;
+  right: 0px;
+  z-index: 100;
+}
+
 .title {
   color: white !important;
   font-weight: 500 !important;
