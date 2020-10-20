@@ -253,7 +253,7 @@ local public health response. -->
 </section>
 
 <section>
-	<h3>Future population depends on frequency and fitness</h3>
+	<h3>Match strain forecast to retrospective circulation</h3>
 	<img class="stretch" data-src="/images/talks/prediction_fitness_model_schematic.png">
 	<div class="citation">
 		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
@@ -269,7 +269,7 @@ local public health response. -->
 </section>
 
 <section>
-	<h3>Composite models suggest combinations of HI drift, local branching index and non-epitope fitness</h3>
+	<h3>Composite models favor combinations of HI drift, local branching index and non-epitope fitness</h3>
 	<img class="stretch" data-src="/images/talks/prediction_performance_composite.png">
 	<div class="citation">
 		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
@@ -285,7 +285,7 @@ local public health response. -->
 </section>
 
 <section>
-	<h3>Forecasts are live at <a href="https://nextstrain.org/flu">nextstrain.org/flu</a>, but are currently difficult due to lack of recent isolates</h3>
+	<h3>Forecasts are live at <a href="https://nextstrain.org/flu">nextstrain.org/flu</a>, but are currently fraught due to lack of recent isolates</h3>
 	<img class="stretch" data-src="/images/talks/nextflu_oct2020_h3n2_tree_clades.png">
 </section>
 
@@ -399,15 +399,16 @@ local public health response. -->
 		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span>
 		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span>
 		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span>
-		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/miguel-parades.jpg"> Miguel Parades,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/ivan-aksamentov.jpg"> Ivan Aksamentov,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/moira-zuber.jpg"> Moira Zuber,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/eli-harkins.jpg"> Eli Harkins,</span>
 		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/misja-ilcisin.jpg"> Misja Ilcisin,</span>
 		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/kairsten-fay.jpg"> Kairsten Fay,</span>
 		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span>
 		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/allison-black.jpg"> Allison Black,</span>
-		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/colin-megill.jpg"> Colin Megill,</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/miguel-parades.jpg"> Miguel Parades,</span>
 		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/sidney-bell.jpg"> Sidney Bell,</span>
-		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/barney-potter.jpg"> Barney Potter,</span>
-		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/charlton-callender.jpg"> Charlton Callender</span>
+		<span class="nobreak"><img width=40 class="img-avatar" src="/images/team/colin-megill.jpg"> Colin Megill</span>
 	</i></p>
 </section>
 
@@ -434,14 +435,22 @@ local public health response. -->
 	<h3>Current data flow for SARS-CoV-2</h3>
 	<p>
 	<ol>
-		<li>Labs contribute directly to GISAID (now have >95k full genomes)</li>
+		<li>Labs contribute directly to GISAID (now have >150k full genomes)</li>
 		<li>Nextstrain pulls a complete dataset from GISAID every 24 hours</li>
 		<li>This triggers an automatic rebuild on Amazon Web Services</li>
 		<li>We manually update new lat/longs, etc...</li>
 		<li>We push this build online to nextstrain.org and tweet the update from @nextstrain</li>
 	</ol>
 	</p>
-	We do one update per day via Seattle and Basel.
+	We do one update per week day via Seattle and Basel.
+</section>
+
+<section>
+	<h3>Sequencing and data sharing in almost real-time</h3>
+	<img class="stretch" src="/images/talks/ncov_gisaid_2020_07_15_cadence.png">
+	<div class="citation">
+		Figure by Hadfield and Hodcroft using data from GISAID
+	</div>
 </section>
 
 <section data-transition="slide-in none-out">
@@ -501,8 +510,20 @@ local public health response. -->
 </section>
 
 <section>
-	<h3>Multiple introductions and subsequent community transmission in Africa</h3>
-	<img class="stretch" src="/images/talks/ncov_tree_map_2020_09_10_africa.png">
+	<div class="inset-top-right">
+		More recently, with ongoing mitigation <br> and decreased international travel, <br> regional clades have emerged
+	</div>
+	<img class="stretch" src="/images/talks/ncov_tree_2020_10_20_global_jun_oct.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<div class="inset-top-right">
+		More recently, with ongoing mitigation <br> and decreased international travel, <br> regional clades have emerged
+	</div>
+	<img class="stretch" src="/images/talks/ncov_tree_2020_10_20_asia_jun_oct.png">
 	<div class="citation">
 		<a href="https://nextstrain.org">nextstrain.org</a>
 	</div>
@@ -561,14 +582,14 @@ local public health response. -->
 <section>
 	<h3>Additional evidence from Ct values of clinical specimens</h3>
 	<p>
-		<span style="display: inline-block; width:32%;">Sheffield, UK</span>
-		<span style="display: inline-block; width:64%;">Seattle, USA</span>
+		<span style="display: inline-block; width:33%;">Sheffield, UK</span>
+		<span style="display: inline-block; width:50%;">Seattle, USA</span>
 	</p>
-	<img width="32%" data-src="/images/talks/ncov_d614g_ct_sheffield.png">
-	<img width="64%" data-src="/images/talks/ncov_d614g_ct_wa.png">
+	<img width="33%" data-src="/images/talks/ncov_d614g_ct_sheffield.png">
+	<img width="50%" data-src="/images/talks/ncov_d614g_ct_wa.png">
 	<div class="citation">
 		<a href="https://www.sciencedirect.com/science/article/pii/S0092867420308205">Korber et al. Cell,</a>
-		<a href="https://github.com/blab/ncov-D614G">Wagner et al.</a>
+		<a href="/papers/muller-ncov-wa-d614g/">Müller et al. 2020. medRxiv.</a>
 	</div>
 </section>
 
@@ -608,7 +629,7 @@ local public health response. -->
 	<p class="smaller">
 		<b>Lead investigators</b>: Helen Chu, Michael Boeckh, Janet Englund, Michael
 		Famulare, Barry Lutz, Deborah Nickerson, Mark Rieder, Lea Starita, Matthew
-		Thompson, Trevor Bedford, Jay Shendure
+		Thompson, Jay Shendure, Trevor Bedford
 	</p>
 	<p class="smaller">
 		<b>Co-investigators</b>: Amanda Adler, Elisabeth Brandstetter, Roy Burstein,
@@ -622,11 +643,11 @@ local public health response. -->
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
 		<img width="12%" data-src="/images/talks/logo_bbi_vertical.png">
 		&nbsp; &nbsp;
-		<img width="14%" data-src="/images/talks/logo_seattle_childrens.png">
+		<img width="15%" data-src="/images/talks/logo_uw_medicine.png">
 		&nbsp; &nbsp;
 		<img width="11%" data-src="/images/talks/logo_fred_hutch_vertical.png">
 		&nbsp; &nbsp;
-		<img width="15%" data-src="/images/talks/logo_uw_medicine.png">
+		<img width="14%" data-src="/images/talks/logo_seattle_childrens.png">
 	</div>
 </section>
 
@@ -636,6 +657,11 @@ local public health response. -->
 
 <section>
 	<img class="stretch" src="/images/talks/seattle_flu_enrollment.png">
+</section>
+
+<section>
+	<h3>Phylogeny of 1150 Seattle H3N2 viruses</h3>
+	<img class="stretch" src="/images/talks/seattleflu_h3n2_tree_geo.png">
 </section>
 
 <section>
@@ -668,20 +694,12 @@ local public health response. -->
 </section>
 
 <section>
-	<h3>Continued sequencing reveals state-level transmission patterns</h3>
-	<img class="stretch" src="/images/talks/ncov_wa_d614g_tree_county.png">
-	<div class="citation">
-		Müller et al.
-	</div>
-</section>
-
-<section>
 	<img class="stretch" src="/images/talks/ncov_scan_splash.png">
 </section>
 
 <section>
 	<h3>Prevalence estimates and supplemental testing</h3>
-	<img class="stretch" src="/images/talks/ncov_scan_dashboard_2020_09_09.png">
+	<img class="stretch" src="/images/talks/ncov_scan_dashboard_2020_10_20.png">
 </section>
 
 <section style="text-align: left;">
@@ -690,11 +708,24 @@ local public health response. -->
 	<ul>
 		<li>SCAN platform for distributed testing</li>
 		<li>Improvements to cost and throughput of SARS-CoV-2 testing</li>
-		<li>Focus on testing for mitigation in campus, schools and workplaces</li>
+		<li>Testing for mitigation with Husky Coronavirus Testing</li>
 		<li>Continued investigation of circulation patterns across common respiratory pathogens</li>
 		<li>Further integration of genome sequencing for epidemiological insights</li>
 	</ul>
 	</p>
+</section>
+
+<section>
+	<h3>Circulation of everything except COVID-19 and rhinovirus basically disappeared</h3>
+	<img class="stretch" src="/images/talks/seattleflu_pathogen_prevalence_2020_09_10.png">
+</section>
+
+<section>
+	<h3>State-level transmission patterns, moving towards more detailed epi metadata</h3>
+	<img class="stretch" src="/images/talks/ncov_wa_d614g_tree_county.png">
+	<div class="citation">
+		<a href="/papers/muller-ncov-wa-d614g/">Müller et al. 2020. medRxiv.</a>
+	</div>
 </section>
 
 <!-- Big picture closing about COVID and/or future pandemics -->
@@ -715,9 +746,19 @@ local public health response. -->
 	<h3>Acknowledgements</h3>
 
 	<p class="tiny">
-		<b>Genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+		<b>Seasonal flu</b>: WHO Global Influenza Surveillance Network, GISAID,
+		John Huddleston, Richard Neher, Jover Lee, Barney Potter, Dave Wentworth,
+		Becky Garten
 	</p>
-
+	<p class="tiny">
+		<b>Ebola in DRC</b>: James Hadfield, Allison Black, Eddy Kinganda Lusamaki,
+		Placide Mbala-Kingebeni, Catherine Pratt, Mike Wiley, Jean-Jacques Muyembe Tamfum,
+		Steve Ahuka-Mundeke, Daniel Mukadi, Gustavo Palacios, Amadou Sall, Ousmane Faye,
+		Eric Delaporte, Martine Peeters, David Blazes, Cecile Viboud, David Spiro
+	</p>
+	<p class="tiny">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+	</p>
 	<p class="tiny">
 		<b>Seattle Flu Study</b>: Helen Chu, Michael Boeckh, Janet Englund, Michael
 		Famulare, Barry Lutz, Deborah Nickerson, Mark Rieder, Lea Starita, Matthew
