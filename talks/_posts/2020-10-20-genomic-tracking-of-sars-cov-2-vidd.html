@@ -27,6 +27,27 @@ surveillance of SARS-CoV-2 and dissemination of phylodynamic analyses. I also di
 Flu Study, our uncovering of community transmission of SARS-CoV-2 and our ongoing collaboration in
 local public health response. -->
 
+<!-- Outline:
+- Overview of what we've been up to since I last presented to the department 3 years ago
+- A lot of work shaped by what's going on in the world, previously had been coming of of Ebola in West Africa and the Zika epidemic in the Americas
+- Since then we've had the following papers:
+  - MERS-Cov
+  - West Nile
+  - Zika
+  - seasonal influenza
+  - avian influenza
+  - Ebola
+- Briefly highlight influenza forecasting and Ebola in DRC
+- SARS-CoV-2 and this crazy year
+- emergence
+- Nextstrain
+- early pandemic spread
+- SFS
+- Cryptic transmission
+- SCAN pivot
+- Transmission in Washington State D614G
+- Ongoing SARS-CoV-2 work: UW Reopening, continued SFS, Nextstrain development, etc... -->
+
 <!-- Total time of ~40 minutes + 20 minutes for questions -->
 
 <section data-background-iframe="/talks/viz/gradient/">
@@ -48,10 +69,12 @@ local public health response. -->
 	<h1 class="title">This talk</h1>
 </section>
 
+<!-- intro and research overview -->
+
 <section>
 	<h3>Start with an overview of what we've been up to since I last presented to the Division three years ago</h3>
 
-	<h3>A lot of our work is shaped by what's going on in the world, with previous focus on Ebola in West Africa and the Zika epidemic in the Americas</h3>
+	<p>A lot of our work is shaped by what's going on in the world, with previous focus on Ebola in West Africa and the Zika epidemic in the Americas</p>
 
 	<div>
 		<img width="14%" style="padding:5px;" src="/images/talks/tile_ebola_virus.png">
@@ -85,8 +108,8 @@ local public health response. -->
 </section>
 
 <section data-transition="slide-in none-out">
-	<p style="margin-top: -80px;">Non-COVID "lab-lead" paper since last review in July 2017</p>
-	<table class="even-smaller" style="margin-top: -10px;">
+	<h3 style="margin-top: -20px;">Non-COVID "lab-lead" papers since last review in July 2017</h3>
+	<table class="even-smaller" style="line-height: 1.3em;">
 		<tbody>
 			<tr>
 				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/dudas-mers-structure.png"></td>
@@ -135,8 +158,8 @@ local public health response. -->
 </section>
 
 <section data-transition="none-in slide-out">
-	<p style="margin-top: -80px;">Non-COVID "lab-lead" paper since last review in July 2017</p>
-	<table class="even-smaller" style="margin-top: -10px;">
+	<h3 style="margin-top: -20px;">Non-COVID "lab-lead" papers since last review in July 2017</h3>
+	<table class="even-smaller" style="line-height: 1.3em;">
 		<tbody>
 			<tr>
 				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/dudas-mers-structure.png"></td>
@@ -164,7 +187,7 @@ local public health response. -->
 				<td width="45%" style="border: none; padding: 1px;">Potter et al. 2019. Evolution and rapid spread of a reassortant <b>A(H3N2)</b> virus that predominated the 2017-2018 influenza season. Virus Evol.</td>
 				<td width="2%" style="border: none; padding: 1px;"></td>
 				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/dudas-genomic-horizon.png"></td>
-				<td width="45%" style="border: none; padding: 1px;">Dudas et al. 2019. The ability of single genes vs full genomes to resolve time and space in outbreak analysis <i><b>of Ebola</b></i>. BMC Evol Biol.</td>
+				<td width="45%" style="border: none; padding: 1px;">Dudas et al. 2019. The ability of single genes vs full genomes to resolve time and space in outbreak analysis <i>of <b>Ebola</b></i>. BMC Evol Biol.</td>
 			</tr>
 			<tr>
 				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/moncla-h5n1-cambodia.png"></td>
@@ -184,27 +207,144 @@ local public health response. -->
 	</table>
 </section>
 
-<!-------------------------------------->
+<section data-background="#000000">
+	<h1 class="title">Recent work with seasonal flu and Ebola</h1>
+</section>
+
+<!-- flu forecasting -->
 
 <section>
-	<img class="stretch" data-src="/images/talks/ncov_case_counts_map_2020_07_10.png">
+	<h3>Integrating genotypes and phenotypes improves long-term forecasts of seasonal influenza A/H3N2 evolution</h3>
+	<p class="smaller"><i>
+	with <img width=40 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston, Richard Neher, Dave Wentworth, Becky Kondor, John McCauley, Hideki Hasegawa, Kanta Subbarao and others
+	</i></p>
 	<div class="citation">
-		<a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html">New York Times</a>
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
 	</div>
 </section>
 
 <section>
-	<img class="stretch" data-src="/images/talks/ncov_rt_2020_07_10_panels.png">
+	<h3>H3N2 vaccine updates occur every ~2 years</h3>
+	<img class="stretch" data-src="/images/talks/flu_vaccine_updates_2019_10.png">
+</section>
+
+<section>
+	<h3>Vaccine strain selection by WHO</h3>
+	<img class="stretch" data-src="/images/talks/flu_vaccine_schedule.jpg">
+</section>
+
+<section>
+	<h3>Select one strain from circulating diversity</h3>
+	<img class="stretch" data-src="/images/talks/flu_h3n2_tree_vaccines_2008_2020.png">
+</section>
+
+<section>
+	<h3>Fitness models project strain frequencies</h3>
+	<p>Future frequency $x_i(t+\Delta t)$ of strain $i$ derives from strain fitness $f_i$ and present day frequency $x_i(t)$, such that</p>
+	<p>$$\hat{x}_i(t+\Delta t) = x_i(t) \, \mathrm{exp}(f_i \, \Delta t)$$</p>
+	<p>
+		Total strain frequencies at each timepoint are normalized.
+		This captures clonal interference between competing lineages.
+	</p>
+	<img class="stretch" data-src="/images/talks/clonal_interferance.jpg">
 	<div class="citation">
-		<a href="https://epiforecasts.io/covid">epiforecasts.io</a>
+		<a href="http://www.nature.com/nature/journal/v507/n7490/full/nature13087.html">&#321;uksza and L&auml;ssig. 2014. Nature.</a>
 	</div>
 </section>
 
 <section>
-	<h3>
-		Significant fog of war. Genomic approaches offer orthogonal data source to understand the pandemic.
-	</h3>
+	<h3>Future population depends on frequency and fitness</h3>
+	<img class="stretch" data-src="/images/talks/prediction_fitness_model_schematic.png">
+	<div class="citation">
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
+	</div>
 </section>
+
+<section>
+	<h3>Train in 6-year sliding windows from 1995 to 2015 with most recent years held out as test</h3>
+	<img class="stretch" data-src="/images/talks/prediction_cross_validation_strategy.png">
+	<div class="citation">
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Composite models suggest combinations of HI drift, local branching index and non-epitope fitness</h3>
+	<img class="stretch" data-src="/images/talks/prediction_performance_composite.png">
+	<div class="citation">
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Model successfully predicts clade growth and best pick from model is generally close to best possible retrospective pick</h3>
+	<img class="stretch" data-src="/images/talks/prediction_validation_clade_growth_ranking.png">
+	<div class="citation">
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Forecasts are live at <a href="https://nextstrain.org/flu">nextstrain.org/flu</a>, but are currently difficult due to lack of recent isolates</h3>
+	<img class="stretch" data-src="/images/talks/nextflu_oct2020_h3n2_tree_clades.png">
+</section>
+
+<!-- DRC Ebola epidemic -->
+
+<section>
+	<h3>Operationalizing genomic epidemiology during the Nord-Kivu Ebola outbreak, Democratic Republic of the Congo</h3>
+	<p class="smaller"><i>
+	with Eddy Kinganda-Lusamaki, <img width=40 class="img-avatar" src="/images/team/allison-black.jpg"> Allison Black, Daniel Mukadi, <img width=40 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield, Placide Mbala-Kingebeni, Catherine Pratt, Jean-Jacques Muyembe Tamfum, Steve Ahuka-Mundeke, Michael Wiley, Martine Peeters, Amadou Alpha Sall, Eric Delaporte, Gustavo Palacios and many others
+	</i></p>
+	<div class="citation">
+		<a href="/papers/kinganda-lusamaki-ebola-drc/">Kinganda-Lusamaki et al. 2020. medRxiv.</a>
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<h3>Genomic epidemiology used to track North Kivu outbreak</h3>
+	<p>
+	<ul>
+		<li>Institut National de Recherche Biomédicale (INRB) sequenced samples in Kinshasa and Katwa</li>
+		<li>Data and pipeline housed at <a href="https://github.com/inrb-drc/ebola-nord-kivu">github.com/inrb-drc/ebola-nord-kivu</a></li>
+		<li>Resulting analyses deployed live to <a href="https://nextstrain.org/community/inrb-drc/ebola-nord-kivu">nextstrain.org/community/inrb-drc/ebola-nord-kivu</a></li>
+	</ul>
+	</p>
+</section>
+
+<section>
+	<h3>792 Ebola virus genomes sequenced generally within 4 weeks of sample collection, representing 24% of confirmed cases</h3>
+	<img class="stretch" src="/images/talks/ebola_drc_sampling.png">
+	<div class="citation">
+		<a href="/papers/kinganda-lusamaki-ebola-drc/">Kinganda-Lusamaki et al. 2020. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Outbreak sustained by locally transitory transmission chains</h3>
+	<img class="stretch" src="/images/talks/ebola_drc_phylogeny.png">
+	<div class="citation">
+		<a href="/papers/kinganda-lusamaki-ebola-drc/">Kinganda-Lusamaki et al. 2020. medRxiv.</a>
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<h3>Situation reports deployed as Nextstrain Narratives</h3>
+	<p>
+	<ul>
+		<li><i>Narratives</i> are Markdown posts that allow pairing of narrative text to visualization state</li>
+		<li>Situation reports describing new batches of sequenced cases shared as narratives and discussed at EOC meetings</li>
+		<li>Example narrative for Ebola in the DRC here: <a href="https://nextstrain.org/narratives/inrb-ebola-example-sit-rep">nextstrain.org/narratives/inrb-ebola-example-sit-rep</a></li>
+		<li>Focus on epidemiological inferences important for contact tracing</li>
+	</ul>
+	</p>
+</section>
+
+<section data-background="#000000">
+	<h1 class="title">SARS-CoV-2</h1>
+</section>
+
+<!-- SARS-CoV-2 pandemic spread -->
 
 <section>
 	<h3>Detection and sequencing of SARS-CoV-2 in January</h3>
