@@ -5,9 +5,10 @@ image: /images/papers/moncla-mumps-wa.png
 authors: Moncla LH, Black A, DeBolt C, Lang M, Graff NR, Pérez-Osorio AC, Müller NF, Haselow D, Lindquist S, Bedford T.
 year: 2020
 ref: Moncla et al. 2020. medRxiv.
-journal: "medRxiv: XXX."
+journal: "medRxiv: 2020.10.19.20215442."
 pdf: /pdfs/papers/moncla-mumps-wa.pdf
-doi: XXX
+supplement: /pdfs/papers/moncla-mumps-wa-supp.pdf
+doi: 10.1101/2020.10.19.20215442
 github: https://github.com/blab/mumps-wa-phylodynamics
 ---
 
