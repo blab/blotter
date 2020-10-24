@@ -5,7 +5,7 @@ image: /images/papers/caudill-cpg-evolution.png
 authors: Caudill VR, Qin S, Winstead R, Kaur J, Tisthammer K, Pineda EG, Solis C, Cobey S, Bedford T, Carja O, Eggo RM, Koelle K, Lythgoe K, Regoes R, Roy S, Allen N, Aviles M, Baker BA, Bauer W, Bermudez S, Carlson C, Castellanos E, Catalan FL, Katia A Chemel, Elliot J, Evans D, Fiutek N, Fryer E, Goodfellow MS, Hecht M, Hopp K, Hopson EDJ, Jaberi A, Kinney C, Lao D, Adrienne Le, Jacky Lo, Lopez AG, López A, Lorenzo FG, Luu GT, Mahoney AR, Melton RL, Do Nascimento G, Pradhananga A, Rodrigues NS, Shieh A, Sims J, Singh R, Sulaeman H, Thu R, Tran K, Tran L, Winters EJ, Wong A, Pennings PS.
 year: 2020
 ref: Caudill et al. 2020. Evol Ecol.
-journal: "Evol Ecol: 10.1007/s10682-020-10039-z."
+journal: "Evol Ecol 34: 339-359."
 pdf: /pdfs/papers/caudill-cpg-evolution.pdf
 doi: 10.1007/s10682-020-10039-z
 ---
