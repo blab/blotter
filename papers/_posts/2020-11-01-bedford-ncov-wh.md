@@ -4,9 +4,10 @@ title: Viral genome sequencing places White House COVID-19 outbreak into phyloge
 image: /images/papers/bedford-ncov-wh.png
 authors: Bedford T, Logue JK, Han PD, Wolf CR, Frazar CD, Pelle B, Ryke E, Lee J, Rieder MJ, Nickerson DA, Lockwood CM, Starita LM, Chu HY, Shendure J.
 year: 2020
-ref: Bedford et al. 2020. Technical report.
-journal: "Technical report."
+ref: Bedford et al. 2020. medRxiv.
+journal: "medRxiv: 2020.10.31.20223925."
 pdf: /pdfs/papers/bedford-ncov-wh.pdf
+doi: 10.1101/2020.10.31.20223925
 github: https://github.com/blab/ncov-wh
 ---
 
