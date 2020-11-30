@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Marlin Figgins
-position: Research assistant
+position: PhD student
 handle: mfiggins
 github: marlinfiggins
 twitter: marlinfiggins
