@@ -82,6 +82,17 @@ layout: default
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
+		{% if member.website %}
+		<div class="smallhead">
+			Website
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-globe fa-fw"></i>
+			<a class="off" href="{{ member.website }}">{{ member.website | remove: 'http://' | remove: 'https://' | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
 		{% if member.email %}
 		{% assign emailarray = member.email | split: '@' %}
 		<div class="smallhead">

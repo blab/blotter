@@ -6,6 +6,7 @@ handle: kairsten
 twitter: databae_
 github: kairstenfay
 image: /images/team/kairsten-fay.jpg
+website: http://kairstenfay.github.io
 ---
 
 Kairsten is working on all aspects of the [Nextstrain](http://nextstrain.org) platform.

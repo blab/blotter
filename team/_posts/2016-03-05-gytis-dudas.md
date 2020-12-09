@@ -7,6 +7,7 @@ twitter: evogytis
 github: evogytis
 scholar: nwiME18AAAAJ
 image: /images/team/gytis-dudas.jpg
+website: https://evogytis.github.io
 alumni: true
 ---
 
