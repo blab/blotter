@@ -4,8 +4,8 @@ title: Evaluating specimen quality and results from a community-wide, home-based
 image: /images/papers/kim-sfs-specimen-collection.png
 authors: Kim AE, Brandstetter E, Wilcox N, Heimonen J, Graham C, Han PD, Starita LM, McCulloch DJ, Casto AM, Nickerson DA, Van de Loo MM, Mooney J, Ilcisin M, Fay KA, Lee J, Sibley TR, Lyon V, Geyer RE, Thompson M, Lutz BR, Rieder MJ, Bedford T, Boeckh M, Englund JA, Chu HY on behalf of the Seattle Flu Study Investigators.
 year: 2020
-ref: Kim et al. 2020. medRxiv.
-journal: "medRxiv: 2020.12.07.415653."
+ref: Kim et al. 2020. bioRxiv.
+journal: "bioRxiv: 2020.12.07.415653."
 pdf: /pdfs/papers/kim-sfs-specimen-collection.pdf
 doi: 10.1101/2020.12.07.415653
 ---
