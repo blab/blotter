@@ -74,7 +74,11 @@ module Projects
 
 					if commit.author != nil
 						commit_author_login = commit.author.login
-						commit_author_url = commit.author.rels[:html].href
+						if commit.author.rels[:html] != nil
+							commit_author_url = commit.author.rels[:html].href
+						else
+							commit_author_url = ""
+						end
 					else
 						commit_author_login = ""
 						commit_author_url = ""
