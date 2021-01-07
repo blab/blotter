@@ -5,7 +5,7 @@ image: /images/papers/huddleston-modular-augur.png
 authors: Huddleston J, Hadfield J, Sibley TR, Lee J, Fay K, Ilcisin M, Harkins E, Bedford T, Neher RA, Hodcroft EB.
 year: 2021
 ref: Huddleston et al. 2021. JOSS.
-journal: "JOSS 6(57): 2906."
+journal: "JOSS 6: 2906."
 pdf: /pdfs/papers/huddleston-modular-augur.pdf
 doi: 10.21105/joss.02906
 github: https://github.com/nextstrain/augur
