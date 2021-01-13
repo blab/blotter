@@ -349,6 +349,11 @@ body {
   margin-right: auto;
 }
 
+.left-align {
+  text-align: left;
+  margin-left: 25px !important;
+}
+
 .nobreak {
   white-space: nowrap;
 }
