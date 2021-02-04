@@ -7,6 +7,7 @@ year: 2020
 ref: Kistler and Bedford. 2021. eLife.
 journal: "eLife 10: e64509."
 pdf: /pdfs/papers/kistler-hcov-adaptive-evolution.pdf
+supplement: /pdfs/papers/kistler-hcov-adaptive-evolution-supp.pdf
 doi: 10.7554/eLife.64509
 github: https://github.com/blab/seasonal-cov-adaptive-evolution
 ---
