@@ -5,6 +5,8 @@ url: http://bedford.io
 markdown: redcarpet
 permalink: /:categories/:title/
 future: true
+sass:
+  sass_dir: css
 
 plugins: ['jekyll-twitter-plugin']
 

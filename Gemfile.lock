@@ -4,8 +4,7 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
-    commonjs (0.2.7)
-    concurrent-ruby (1.1.7)
+    concurrent-ruby (1.1.8)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -14,7 +13,7 @@ GEM
     faraday (1.1.0)
       multipart-post (>= 1.2, < 3)
       ruby2_keywords
-    ffi (1.13.1)
+    ffi (1.15.0)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
@@ -37,13 +36,10 @@ GEM
     jekyll-twitter-plugin (2.1.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    kramdown (2.3.0)
+    kramdown (2.3.1)
       rexml
-    less (2.6.0)
-      commonjs (~> 0.2.7)
-    libv8 (3.16.14.19)
     liquid (4.0.3)
-    listen (3.3.3)
+    listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
@@ -59,7 +55,6 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redcarpet (3.5.1)
-    ref (2.0.0)
     rexml (3.2.4)
     rouge (3.26.0)
     ruby2_keywords (0.0.2)
@@ -72,9 +67,6 @@ GEM
     sawyer (0.8.2)
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
-    therubyracer (0.12.3)
-      libv8 (~> 3.16.14.15)
-      ref
 
 PLATFORMS
   ruby
@@ -83,11 +75,9 @@ DEPENDENCIES
   execjs
   jekyll (= 3.9.0)
   jekyll-twitter-plugin
-  less
   netrc
   octokit
   redcarpet
-  therubyracer
 
 BUNDLED WITH
    2.1.4

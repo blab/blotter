@@ -8,8 +8,9 @@ _site/
 projects/
 !projects/index.html
 
-# Jekyll metadata
+# Jekyll build process
 .jekyll-metadata
+.sass-cache
 
 # Other files
 .DS_Store
