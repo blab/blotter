@@ -2,21 +2,13 @@ name: Bedford Lab Research
 description: Science updates on evolution, epidemiology and immunology from the Bedford lab at the Fred Hutch
 url: http://bedford.io
 
-markdown: redcarpet
+markdown: kramdown
 permalink: /:categories/:title/
 future: true
 sass:
   sass_dir: css
 
 plugins: ['jekyll-twitter-plugin']
-
-redcarpet:
-  extensions:
-   - tables
-   - no_intra_emphasis
-   - autolink
-   - superscript
-   - strikethrough
 
 exclude:
   - "*.branches"

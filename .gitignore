@@ -9,6 +9,7 @@ projects/
 !projects/index.html
 
 # Jekyll build process
+.jekyll-cache
 .jekyll-metadata
 .sass-cache
 
