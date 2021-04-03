@@ -11,9 +11,9 @@ These data are 5 (draft) Zika genomes from clinical samples collected in the U.S
 Importantly this has been a group effort. The fact that we have this data is a huge testament to the benefits of open science. I’m not a wet-lab scientist by training, and Zika is not the easiest virus to sequence. This project could have been really painful, and the fact that it hasn’t been owes a lot to the openness of other groups to share their knowledge, experience, and protocols. I’m so thankful to [Josh Quick](https://twitter.com/scalene) and [Nate Grubaugh](https://twitter.com/NathanGrubaugh) who were incredibly responsive when I had questions or needed help with the protocol, and [Nick Loman](https://twitter.com/pathogenomenick) for freely sharing his entire bioinformatic pipeline. Additionally my lab has been amazing both as a sounding board for ideas and for helping with the data processing and analysis. To have so many people come together to help a project succeed is wonderful, especially so when you’re a student trying to figure things out for the first time. Keep an eye out for more data coming out soon! We'll keep the [zika-seq](/projects/zika-seq/) project updated with new sequences as we generate them.
 
 <div class="row">
-	<div class="col-md-1"></div>
-	<div class="col-md-10">
+	<div class="col-lg-1"></div>
+	<div class="col-lg-10">
 		<img src="/images/blog/usvi_sequencing.jpg">
 	</div>
-	<div class="col-md-1"></div>
+	<div class="col-lg-1"></div>
 </div>

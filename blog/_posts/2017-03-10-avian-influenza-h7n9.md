@@ -39,4 +39,4 @@ A full list of labs and authors who have made data available for analysis in the
 
 <!-- ### mutations on branches leading to expansion -->
 
-<!-- ![image-title-here](/images/blog/h7n9_geo.png){:class="img-responsive"} -->
+<!-- ![image-title-here](/images/blog/h7n9_geo.png){:class="img-fluid"} -->

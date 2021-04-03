@@ -11,11 +11,11 @@ Just as software APIs allow open source software to be built layer-upon-layer, a
 There is now public voting to determine which three entries will move forward to the final round. Although I think all six OSP entries were pretty great, we'd very much appreciate your vote. Please go to [www.openscienceprize.org](http://www.openscienceprize.org) and vote by Jan 6.
 
 <div class="row">
-	<div class="col-md-2"></div>
-	<div class="col-md-8">
+	<div class="col-lg-2"></div>
+	<div class="col-lg-8">
 		<img src="/images/blog/cotten_nextstrain_watercolor.jpg">
 	</div>
-	<div class="col-md-2"></div>
+	<div class="col-lg-2"></div>
 </div>
 
 _Watercolor courtesy of [Matt Cotten](http://www.sanger.ac.uk/people/directory/cotten-matthew)._

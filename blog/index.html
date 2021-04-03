@@ -7,16 +7,16 @@ category: blog
 ---
 
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-lg-12">
 		<div class="centered-pills">
 			<ul class="nav nav-pills note">
-				<li role="presentation" class="active">
-					<a class="off" href="/blog/">
+				<li role="presentation" class="nav-item">
+					<a class="nav-link active" href="/blog/">
 						<i class="fa fa-refresh fa-fw"></i> Timeline
 					</a>
 				</li>
-				<li role="presentation">
-					<a class="off" href="/blog/archive/">
+				<li role="presentation" class="nav-item">
+					<a class="nav-link off" href="/blog/archive/">
 						<i class="fa fa-list-ul fa-fw"></i> Index
 					</a>
 				</li>
@@ -32,8 +32,8 @@ category: blog
 
 	<div class="blog-post">
 		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-10">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
 				<div class="media">
 					<div class="media-body">
 						<div class="title media-heading">
@@ -79,14 +79,14 @@ category: blog
 					</div>
 				</div>
 			</div>
-			<div class="col-md-1"></div>
+			<div class="col-lg-1"></div>
 		</div>
 
 		<div class="bigspacer"></div>
 
 		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-10">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
 				{% if post.image %}
 				{% if post.link %}
 				<a href="{{ post.link }}">
@@ -100,7 +100,7 @@ category: blog
 					{{ post.content }}
 				</div>
 			</div>
-			<div class="col-md-1"></div>
+			<div class="col-lg-1"></div>
 		</div>
 
 		<div class="bigspacer"></div>
@@ -115,7 +115,7 @@ category: blog
 <div class="infinite-spinner"></div>
 
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-lg-12">
 		<div id="scroll" class="centered-pills">
 			<ul class="nav nav-pills note">
 				<li role="presentation">

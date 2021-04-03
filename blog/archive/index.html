@@ -6,16 +6,16 @@ categories:
 ---
 
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-lg-12">
 		<div class="centered-pills">
 			<ul class="nav nav-pills note">
-				<li role="presentation">
-					<a class="off" href="/blog/">
+				<li role="presentation" class="nav-item">
+					<a class="nav-link off" href="/blog/">
 						<i class="fa fa-refresh fa-fw"></i> Timeline
 					</a>
 				</li>
-				<li role="presentation" class="active">
-					<a class="off" href="/blog/archive/">
+				<li role="presentation" class="nav-item">
+					<a class="nav-link active" href="/blog/archive/">
 						<i class="fa fa-list-ul fa-fw"></i> Index
 					</a>
 				</li>
@@ -28,7 +28,7 @@ categories:
 {% for post in site.categories.blog %}
 
     {% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-md-4 postbox">
+		<div class="col-lg-4 postbox">
 			<div class="smallhead">
 				<a href="{{ post.url }}" class="off">{{ post.title }}</a>
 			</div>
