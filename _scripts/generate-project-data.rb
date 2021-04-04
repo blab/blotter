@@ -50,7 +50,7 @@ module Projects
 				# load contributor metadata
 				octokit_contributors = client.contributors(repo)
 				project_contributors = Array.new
-				for i in 0 ... [octokit_contributors.size, 5].min
+				for i in 0 ... [octokit_contributors.size, 10].min
 					contributor = octokit_contributors[i]
 					contributor_login = contributor.login
 					contributor_avatar = contributor.rels[:avatar].href + "&s=50"
