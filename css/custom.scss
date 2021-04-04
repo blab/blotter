@@ -10,6 +10,9 @@ $pre-color: #586E75;
 $code-font-size: 90%;
 $well-bg: #f8f8f8;
 $pre-bg: #f8f8f8;
+$breadcrumb-bg: #ffffff;
+$breadcrumb-padding-x: 0.0rem;
+$breadcrumb-active-color: #000000;
 $navbar-brand-font-size: 30px;
 $navbar-brand-padding-y: 0.0rem;
 $navbar-light-color: $gray-light;
@@ -17,12 +20,6 @@ $navbar-padding-y: 0.0rem;
 $nav-pills-link-active-color: #555;
 $nav-pills-link-active-bg: #e7e7e7;
 $nav-pills-border-radius: 0px;
-
-// @import "/css/font-awesome/font-awesome.less";
-// @fa-font-path: "font";
-
-// @import "/css/solarized.less";
-// @import "/css/katex.less";
 
 h1, .h1 { font-size: floor($font-size-base * 2.50); } /* ~34px */
 h2, .h2 { font-size: floor($font-size-base * 2.15); } /* ~30px */
@@ -294,20 +291,6 @@ blockquote {
     padding-bottom: 10px;
     padding-left: 15px;
     }
-}
-
-.breadcrumb {
-	padding: 0px 0px;
-	background-color: $body-bg;
-	> li {
-		&+li:before {
-			padding: 0px;
-			content: "\00a0@{breadcrumb-separator}\00a0";
-		}
-		&+li:after {
-			padding: 0px;
-		}
-	}
 }
 
 .feedbox {

@@ -13,23 +13,29 @@ categories:
 <div class="row">
 	<div class="col-lg-12">
 		<div class="bigtitle titlebox">
-			<ol class="breadcrumb">
-			{% assign crumbs = page.title | breadcrumb_array %}
-			{% for crumb in crumbs %}
-				{% assign name = crumb | split: '/' | last %}
-				{% for page in site.pages %}
-					{% if page.title == crumb %}
-						{% assign url = page.url %}
-					{% endif %}
-				{% endfor %}
-				{% if crumb == page.title %}
-				<li>{{ name }}</li>
-				{% else %}
-				<li><a class="off" href="{{ url | replace: 'index.html', '' }}">{{ name }}</a></li>
-				{% endif %}
-			{% endfor %}
-			</ol>
-		</div>
+      <nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+  			{% assign crumbs = page.title | breadcrumb_array %}
+  			{% for crumb in crumbs %}
+  				{% assign name = crumb | split: '/' | last %}
+  				{% for page in site.pages %}
+  					{% if page.title == crumb %}
+  						{% assign url = page.url %}
+  					{% endif %}
+  				{% endfor %}
+  				{% if crumb == page.title %}
+  				<li class="breadcrumb-item active">
+            {{ name }}
+          </li>
+  				{% else %}
+  				<li class="breadcrumb-item">
+            <a class="off" href="{{ url | replace: 'index.html', '' }}">{{ name }}</a>
+          </li>
+  				{% endif %}
+  			{% endfor %}
+  			</ol>
+      </nav>
+    </div>
 		<p>
 		<div class="head">
 			{{ project.description }}
