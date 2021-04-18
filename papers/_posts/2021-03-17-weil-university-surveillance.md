@@ -2,7 +2,7 @@
 layout: paper
 title: SARS-CoV-2 epidemiology on a public university campus in Washington State
 image: /images/papers/weil-university-surveillance.png
-authors: Ana A. Weil, Sohlberg SL, O'Hanlon JA, Casto AM, Emanuels AW, Lo NK, Greismer EP, Magedson AM, Wilcox NC, Kim AE, Back L, Frazar CD, Pelle B, Sibley TR, Ilcisin M, Lee J, Ryke EL, Craft JC, Schwabe-Fry KM, Fay KA, Cho S, Han PD, Heidl SJ, Pfau BA, Truong M, Zhong W, Srivatsan SR, Harb KF, Gottlieb GS, Hughes JP, Nickerson DA, Lockwood CM, Starita LM, Bedford T, Shendure JA, Chu HY.
+authors: Weil AA, Sohlberg SL, O'Hanlon JA, Casto AM, Emanuels AW, Lo NK, Greismer EP, Magedson AM, Wilcox NC, Kim AE, Back L, Frazar CD, Pelle B, Sibley TR, Ilcisin M, Lee J, Ryke EL, Craft JC, Schwabe-Fry KM, Fay KA, Cho S, Han PD, Heidl SJ, Pfau BA, Truong M, Zhong W, Srivatsan SR, Harb KF, Gottlieb GS, Hughes JP, Nickerson DA, Lockwood CM, Starita LM, Bedford T, Shendure JA, Chu HY.
 year: 2021
 ref: Weil et al. 2021. medRxiv.
 journal: "medRxiv: 2021.03.15.21253227."
