@@ -5,7 +5,7 @@ image: /images/papers/weil-ncov-prevalence-snf.png
 authors: Weil AA, Newman KL, Ong TD, Davidson GH , Logue J, Brandstetter E, Magedson A, McDonald D, McCulloch DJ, Neme S, Lewis J, Duchin JS, Zhong W, Starita LM, Bedford T, Roxby AC, Chu HY.
 year: 2020
 ref: Weil et al. 2020. J Gen Intern Med.
-journal: "J Gen Intern Med: 10.1007/s11606-020-06165-7."
+journal: "J Gen Intern Med 35: 3302-3307."
 pdf: /pdfs/papers/weil-ncov-prevalence-snf.pdf
 doi: 10.1007/s11606-020-06165-7
 ---
