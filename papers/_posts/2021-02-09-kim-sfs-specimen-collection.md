@@ -5,7 +5,7 @@ image: /images/papers/kim-sfs-specimen-collection.png
 authors: Kim AE, Brandstetter E, Wilcox N, Heimonen J, Graham C, Han PD, Starita LM, McCulloch DJ, Casto AM, Nickerson DA, Van de Loo MM, Mooney J, Ilcisin M, Fay KA, Lee J, Sibley TR, Lyon V, Geyer RE, Thompson M, Lutz BR, Rieder MJ, Bedford T, Boeckh M, Englund JA, Chu HY on behalf of the Seattle Flu Study Investigators.
 year: 2021
 ref: Kim et al. 2021. J Clin Microbiol.
-journal: "J Clin Microbiol: JCM.02934-20."
+journal: "J Clin Microbiol 59: e02934-20."
 pdf: /pdfs/papers/kim-sfs-specimen-collection.pdf
 doi: 10.1128/JCM.02934-20
 ---
