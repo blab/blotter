@@ -5,7 +5,7 @@ image: /images/papers/kinganda-lusamaki-ebola-drc.png
 authors: Kinganda-Lusamaki E, Black A, Mukadi DB, Hadfield J, Mbala-Kingebeni P, Pratt CB, Aziza A, Diagne MM, White B, Bisento N, Nsunda B, Akonga M, Faye M, Faye O, Edidi-Atani F, Matondo-Kuamfumu M, Mambu-Mbika F, Bulabula J, Di Paola N, Pauthner MG, Andersen KG, Palacios G, Delaporte E, Sall AA, Peeters M, Wiley MR, Ahuka-Mundeke S, Bedford T, Muyembe-Tamfum  J-J.
 year: 2021
 ref: Kinganda-Lusamaki et al. 2021. Nat Med.
-journal: "Nat Med: s41591-021-01302-z."
+journal: "Nat Med 27: 710-716."
 pdf: /pdfs/papers/kinganda-lusamaki-ebola-drc.pdf
 doi: 10.1038/s41591-021-01302-z
 github: https://github.com/blab/ebola-narrative-ms/
