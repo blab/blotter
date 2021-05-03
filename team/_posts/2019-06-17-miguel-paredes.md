@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Miguel Paredes
-position: Rotation student
+position: MSTP student
 handle: miguel
 github: miparedes
 image: /images/team/miguel-paredes.jpg
