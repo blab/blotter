@@ -2,7 +2,7 @@
 layout: paper
 title: Characterising the epidemic spread of influenza A/H3N2 within a city through phylogenetics
 image: /images/papers/muller-flu-basel.png
-authors: Müller NF, Wüthrich D, Goldman N, Sailer N, Saalfrank C, Brunner M, Noémi Augustin, Helena MB Seth-Smith, Hollenstein Y, Syedbasha M, Lang D, Neher RA, Dubuis O, Naegele M, Buser A, Nickel CH, Ritz N, Zeller A, Lang BM, Hadfield J, Bedford T, Battegay M, Schneider-Sliwa R, Egli A.
+authors: Müller NF, Wüthrich D, Goldman N, Sailer N, Saalfrank C, Brunner M, Noémi Augustin, Helena MB Seth-Smith, Hollenstein Y, Syedbasha M, Lang D, Neher RA, Dubuis O, Naegele M, Buser A, Nickel CH, Ritz N, Zeller A, Lang BM, Hadfield J, Bedford T, Battegay M, Schneider-Sliwa R, Egli A, Stadler T.
 year: 2020
 ref: Müller et al. 2020. PLoS Pathog.
 journal: "PLoS Pathog 16: e1008984."
