@@ -1,6 +1,6 @@
-name: Bedford Lab Research
-description: Science updates on evolution, epidemiology and immunology from the Bedford lab at the Fred Hutch
-url: http://bedford.io
+name: COMPHY Lab
+description: Computational & Theoretical Fluid Dynamics Lab
+url: https://comphylab.github.io
 
 markdown: kramdown
 permalink: /:categories/:title/
@@ -8,7 +8,7 @@ future: true
 sass:
   sass_dir: css
 
-plugins: ['jekyll-twitter-plugin']
+plugins: []
 
 exclude:
   - "*.branches"
@@ -41,76 +41,3 @@ exclude:
   - "*.zip"
   - "Gemfile"
   - "Gemfile.lock"
-  - "projects/nextflu/auspice/index.html"
-  - "projects/nextflu/auspice/css/*"
-  - "projects/nextflu/auspice/h3n2/*"
-  - "projects/nextflu/auspice/h1n1pdm/*"
-  - "projects/nextflu/auspice/vic/*"
-  - "projects/nextflu/auspice/yam/*"
-  - "projects/nextflu/auspice/zika/*"
-  - "projects/nextflu/auspice/zibra/*"
-  - "projects/nextflu/auspice/muttree/*"
-  - "projects/nextflu/auspice/reports/*"
-  - "projects/nextflu/auspice/js/*"
-  - "projects/nextflu/auspice/cdc/*"
-  - "projects/nextflu/auspice/gisaid/*"
-  - "projects/auspice/src/*"
-  - "projects/siv-cst/beast/main/empiricalTrees/xml/*"
-  - "projects/siv-cst/beast/supplement/discreteTraits/xml/*"
-  - "projects/siv-cst/beast/supplement/empiricalTrees/xml/*"
-  - "projects/h3n2-reassortment/auspice/*"
-  - "projects/dengue-antigenic-dynamics/titer_model/seasia_output/*"
-  - "projects/h5n1-cambodia/data/tree-jsons/*"
-  - "projects/zika-colombia/supplemental-analysis/rarefaction-curves/*"
-
-projects:
-  - alvason/infectious-pulse
-  - blab/chikv
-  - blab/dengue-antigenic-dynamics
-  - blab/flu-forecasting
-  - blab/genomic-horizon
-  - blab/global-migration
-  - blab/h3n2-reassortment
-  - blab/h5n1-cambodia
-  - blab/mers-structure
-  - blab/mitii
-  - blab/mumps-seq
-  - blab/mumps-wa-phylodynamics
-  - blab/ncov-cryptic-transmission
-  - blab/ncov-phylodynamics
-  - blab/ncov-wa-d614g
-  - blab/ncov-wa-phylodynamics
-  - blab/nextflu
-  - blab/roka
-  - blab/seasonal-cov-adaptive-evolution
-  - blab/siv-cst
-  - blab/unsampled
-  - blab/yellow-fever
-  - blab/zika-colombia
-  - blab/zika-seq
-  - blab/zika-usvi
-  - evogytis/baltic
-  - nextstrain/augur
-  - nextstrain/auspice
-  - nextstrain/cli
-  - nextstrain/fauna
-  - nextstrain/janus
-  - nextstrain/ncov
-  - nextstrain/nextstrain.org
-  - nextstrain/sacra
-  - seattleflu/id3c
-  - seattleflu/id3c-customizations
-  - trvrb/ancestry
-  - trvrb/antigen
-  - trvrb/coaltrace
-  - trvrb/divergence
-  - trvrb/dynamics-practical
-  - trvrb/flutrace
-  - trvrb/gs541-phylodynamics
-  - trvrb/haplotypes
-  - trvrb/medium-data
-  - trvrb/PACT
-  - trvrb/phylodynamics-lecture
-  - trvrb/sctrace
-  - trvrb/sismid
-  - trvrb/stem
