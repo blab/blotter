@@ -1,0 +1,309 @@
+---
+layout: talk_reveal3
+title: Real-time genomic surveillance for evolutionary forecasting and outbreak investigation
+venue: Howard Hughes Medical Institute
+event: 2021 HHMI Investigator Competition
+author: Trevor Bedford
+---
+
+<!-- 15 min presentation -->
+
+<!--
+
+Outline:
+
+Intro with toy model of phylogenetic tree I always use (maybe reconsider)
+
+Utility of genomic epidemiology (selling the field of genomic epidemiology and emphasizing my central role in the field):
+- Genomic analysis reveals importance epidemiology as well as evolution
+- Utility for outbreaks with reference to Ebola and Zika (papers from 2017)
+- Utility for understanding influenza circulation and vaccine strain selection
+
+Actionable inferences
+- Nextstrain platform
+
+Pivot to the pandemic
+- Understanding of the SARS-CoV-2 pandemic
+- Early results on human-to-human spread in Wuhan
+- Spread throughout the world including our SFS results
+- Current focus on emergence and spread of variants of concern and other evolved lineages
+
+
+
+-->
+
+<section data-background-iframe="/talks/viz/gradient/">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<p class="title">
+	Trevor Bedford (@trvrb)
+	<br>
+	Associate Professor, Fred Hutchinson Cancer Research Center
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<!--- Intro --->
+
+<!-- If using, update to include SARS-CoV-2 -->
+<section>
+	<h3>We work at the interface of virology, evolution and epidemiology</h3>
+	<div>
+		<img width="25%" style="padding:5px;" src="/images/talks/tile_ebola_virus.png">
+		<img width="25%" style="padding:5px;" src="/images/talks/tile_ebola_tree.png">
+		<img width="25%" style="padding:5px;" src="/images/talks/tile_ebola_map.png">
+	</div>
+	<div>
+		<img width="25%" style="padding:5px;" src="/images/talks/tile_zika_virus.png">
+		<img width="25%" style="padding:5px;" src="/images/talks/tile_zika_tree.png">
+		<img width="25%" style="padding:5px;" src="/images/talks/tile_zika_map.png">
+	</div>
+</section>
+
+<section>
+	<h2>Sequencing to reconstruct pathogen spread</h2>
+</section>
+
+<section data-transition="slide-in none-out">
+	<h3>Epidemic process</h3>
+	<img class="stretch" src="/images/talks/infection_tree_1.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sample some individuals</h3>
+	<img class="stretch" src="/images/talks/infection_tree_2.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" src="/images/talks/infection_tree_3b.png">
+</section>
+
+<section data-transition="none-in slide-out">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" src="/images/talks/infection_tree_4b.png">
+</section>
+
+<!-- Utility of genomic epidemiology -->
+
+<section data-background="#000000">
+	<h1 class="title">Utility of genomic epidemiology</h1>
+</section>
+
+<!-- <section>
+	<h2>Genomic tracking is revolutionizing epidemiological understanding</h2>
+</section> -->
+
+<section style="text-align: left;">
+	<h3>Pathogen genomes may reveal:</h3>
+	<p>
+	<ul>
+		<li>Evolution of new adaptive variants</li>
+		<li>Epidemic origins</li>
+		<li>Patterns of geographic spread</li>
+		<li>Animal-to-human spillover</li>
+		<li>Transmission chains</li>
+	</ul>
+	</p>
+</section>
+
+<section>
+	<h3><b>Influenza:</b> Forecasting spread of new variants for vaccine strain selection</h3>
+	<img class="stretch" src="/images/talks/nextflu_aug2019_tree_forecast.png">
+	<div class="citation">
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
+	</div>
+</section>
+
+<section>
+	<h3><b>Zika:</b> Uncovering origins of the epidemic in the Americas</h3>
+	<img class="stretch" src="/images/talks/zika_zibra_tree.png">
+	<div class="citation">
+		<a href="/papers/faria-zika-in-brazil/">Faria et al. 2017. Nature.</a>
+	</div>
+</section>
+
+<section data-transition="slide-in fade-out">
+	<h3><b>Ebola:</b> Revealing spatial spread and persistence in West Africa</h3>
+	<img class="stretch" data-src="/images/talks/ebola_mig_tree.png">
+	<div class="citation">
+		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
+	</div>
+</section>
+
+<section data-transition="fade-in slide-out">
+	<h3><b>Ebola:</b> Revealing spatial spread and persistence in West Africa</h3>
+	<img class="stretch" data-src="/images/talks/ebola_mig_geo_tree.png">
+	<div class="citation">
+		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
+	</div>
+</section>
+
+<section>
+	<h3><b>MERS:</b> Repeated spillover into the human population from camel reservoir</h3>
+	<img class="stretch" src="/images/talks/mers_tree.png">
+	<div class="citation">
+		<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
+	</div>
+</section>
+
+<section data-background="#000000">
+	<h1 class="title">Actionable inferences</h1>
+</section>
+
+<section>
+	<h3>Genomic analyses were mostly done in a retrospective manner</h3>
+	<img class="stretch" data-src="/images/talks/ebola_sampling_rugplots.png">
+	<div class="citation">
+		Dudas and Rambaut 2016
+	</div>
+</section>
+
+<section>
+	<h1>
+		<span class="c1s">N</span><span class="c2s">e</span><span class="c3s">x</span><span class="c4s">t</span><span class="c5s">s</span><span class="c6s">t</span><span class="c7s">r</span><span class="c8s">a</span><span class="c9s">i</span><span class="c10s">n</span>
+	</h1>
+	<p>Project to conduct real-time genomic epidemiology and evolutionary analysis of emerging epidemics</p>
+</section>
+
+<section>
+	<h3>Nextstrain architecture</h3>
+	<p>Central aims: (1) rapid and flexible phylodynamic analysis, (2) interactive visualization and (3) always up-to-date views at nextstrain.org</p>
+	<img width="65%" src="/images/talks/nextstrain_components_ncov.png">
+	<p>All code open source at <a class="off" href="https://github.com/nextstrain">github.com/nextstrain</a></p>
+</section>
+
+<section data-background="/images/talks/nextstrain_in_sierra_leone.jpg">
+	<h3 class="title">Rapid on-the-ground sequencing in Makeni, Sierra Leone</h3>
+	<br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p>
+</section>
+
+<!-- Pivot to the pandemic -->
+
+<section data-background="#000000">
+	<h1 class="title">Pivot to the pandemic</h1>
+</section>
+
+<!-- Update to latest view -->
+<section>
+	<h3>Over 1.5M SARS-CoV-2 genomes shared to GISAID and evolution tracked in real-time at nextstrain.org</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_map_2021_03_07_global.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Jan 11: First five genomes showed that the outbreak was caused by a novel SARS-like coronavirus</h3>
+	<img class="stretch" data-src="/images/talks/ncov_sars_like_tree.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/groups/blab/beta-cov">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Jan 19: First 12 genomes from Wuhan and Bangkok lack genetic diversity</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_2020_01_19.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>
+		Single introduction into the human population between Nov 15 and Dec 15 and
+		human-to-human epidemic spread from this point forward
+	</h3>
+</section>
+
+<section data-transition="slide-in none-out">
+	<h3>Dec/Jan: Emergence in ~Nov 2019 and spread within Wuhan</h3>
+	<img class="stretch" src="/images/talks/ncov_tree_map_2020_04_20_dec_jan.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section data-transition="none">
+	<h3>Jan/Feb: Spread within China and seeding elsewhere</h3>
+	<img class="stretch" src="/images/talks/ncov_tree_map_2020_04_20_jan_feb.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section data-transition="none-in slide-out">
+	<h3>Feb/Mar: Epidemic spread within North America and Europe</h3>
+	<img class="stretch" src="/images/talks/ncov_tree_map_2020_04_20_feb_mar.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Epidemic in the USA was introduced from China in late Jan and from Europe during Feb</h3>
+	<img class="stretch" src="/images/talks/ncov_tree_map_2020_04_20_usa_1.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Seattle Flu Study detects and genomically charts early epidemic</h3>
+	<img class="stretch" src="/images/talks/ncov_cryptic_transmission_introductions.png">
+	<div class="citation">
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Direct introduction from China ~Feb 1 responsible for the majority of the epidemic</h3>
+	<img class="stretch" src="/images/talks/ncov_cryptic_transmission_outbreak_clade.png">
+	<div class="citation">
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
+	</div>
+</section>
+
+<section>
+	<img width="45%" data-src="/images/talks/ncov_cryptic_transmission_nyt.png">
+	<img width="45%" data-src="/images/talks/ncov_cryptic_transmission_stat.png">
+</section>
+
+<section>
+	<h3>Mitigation efforts visible in virus genetic diversity</h3>
+	<img class="stretch" src="/images/talks/ncov_wa_phylodynamics_growth_rate.png">
+	<div class="citation">
+		<a href="/papers/muller-ncov-wa-d614g/">Müller et al. 2021. Sci Transl Med.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Evolved lineages are now rapidly expanding across the world</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_emerging_lineages_2021_05_07.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/global?branchLabel=emerging_lineage&c=emerging_lineage">nextstrain.org</a>
+	</div>
+</section>
+
+<!-- Future of genomic epidemiology -->
+
+<section data-background="#000000">
+	<h1 class="title">Future of genomic epidemiology</h1>
+</section>
+
+<section style="text-align: left;">
+	<h3>The COVID-19 pandemic has pushed the field perhaps ~5 years into the future</h3>
+	<p>
+	<ul>
+		<li>Ebola in West Africa: 28,646 confirmed cases and 1610 genomes</li>
+		<li>Zika in the Americas: 223,477 confirmed cases and 942 genomes</li>
+		<li>Ebola in DRC: 3300 confirmed cases and 792 genomes</li>
+		<li>2018/2019 seasonal flu in US: 290k confirmed cases and 8864 genomes</li>
+		<li>Global SARS-CoV-2 pandemic: 162M confirmed cases and 1.6M genomes</li>
+	</ul>
+	</p>
+</section>
