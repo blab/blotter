@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
 # jekyll
-gem "jekyll", "4.2.0"
+gem "jekyll", "~> 3.9"
+gem 'coderay', '~> 1.1.0'
+gem "kramdown", "~> 2.3"
+gem "kramdown-parser-gfm", "~> 1.1"
 
 # katex
 gem "execjs"
@@ -10,5 +13,3 @@ gem "execjs"
 gem 'octokit'
 gem 'netrc'
 
-# Twitter
-gem 'jekyll-twitter-plugin'
