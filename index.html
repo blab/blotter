@@ -20,162 +20,52 @@ categories:
 	<div class="col-lg-12">
 		<div class="smallhead">
       <p>
-        The Bedford Lab at the <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a> works at the
-        interface of evolution, epidemiology and virology. We apply computational and statistical methods to
-        sequence data to understand viral dynamics, and reconstruct patterns of epidemic growth and
-        geographic spread. We also link viral mutations to human population immunity and use this knowledge
-        to forecast evolutionary outcomes.
+		The COMPHY LAB (<b>COMP</b>utational &#38; t<b>H</b>eoretical <i>PH</i>ysics <i>F</i>luid <b>LAB</b>)
+		at the <a class="off" href="http://www.yonsei.ac.kr/">Yonsei University</a>
+		works at turbulence, computational fluid dynamics, data-driven fluid mechanics.
+
+		Through efficient and effective implementations of various tools of computational fluid dynamics,
+		we are investigating fundamental physics of turbulence and its applications in environmental problems.
+		Particular emphasis is placed on the study of particulate turbulence
+		such as particle-turbulence and particle-particle interactions,
+		particle behavior in near-wall turbulence, and acceleration behavior.
+		Relevant numerical methods such as a new explicit projection method
+		for incompressible flow, immersed boundary method for complex flows,
+		application of level-set method to droplet deformation are also developed.
+		Direct applications of those methods to real environmental problems
+		such as LES prediction of pollutant dispersion in real urban areas,
+		contaminant transport in indoor environment,
+		particle deposition in human lungs are also considered.
       </p>
-      <p>
-        We maintain real-time views of influenza evolution at <a href="http://nextflu.org">nextflu.org</a>
-        and pathogen evolution and epidemic spread at <a href="http://nextstrain.org">nextstrain.org</a>.
-      </p>
 		</div>
 	</div>
-</div>
-
-<div class="bigspacer"></div>
-<div class="bigspacer"></div>
-
-<div class="row">
-	<div class="col-lg-12">
-		<div class="head">
-			<a class="off" href="/blog/">Recent posts</a>
-		</div>
-		<div class="spacer"></div>
-	</div>
-</div>
-
-<div class="row">
-	{% for post in site.categories.blog limit:4 %}
-
-	{% for member in site.categories.team %}
-		{% if member.title == post.author %}
-			{% assign author = member %}
-		{% endif %}
-	{% endfor %}
-
-	<div class="col-lg-3 reduced-gutter">
-		<div class="pad-left">
-			<div class="note">
-				<i class="fa fa-comment-o fa-fw"></i>
-				<a class="off" href="{{ post.url }}">
-				{{ post.title }}
-				</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Posted
-				{{ post.date | date: "%-d %b %Y" }}
-        {% if post.author %}
-        by <a class="off" href="
-          {% for member in site.categories.team %}
-            {% if member.title == post.author %}
-              {{ member.url }}
-            {% endif %}
-          {% endfor %}
-        ">
-        {{ post.author }}
-        </a>
-        {% endif %}
-        {% if post.authors %}
-        by
-        <a class="off" href="
-          {% for member in site.categories.team %}
-            {% if member.title == post.authors.first %}
-              {{ member.url }}
-            {% endif %}
-          {% endfor %}
-        ">
-        {{ post.authors.first }}
-        </a>
-        and
-        <a class="off" href="
-          {% for member in site.categories.team %}
-            {% if member.title == post.authors.last %}
-              {{ member.url }}
-            {% endif %}
-          {% endfor %}
-        ">
-        {{ post.authors.last }}
-        </a>
-        {% endif %}
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-	</div>
-	{% endfor %}
 </div>
 
 <div class="spacer"></div>
 
 <div class="row">
-	<div class="col-lg-12">
-		<div class="head">
-			<a class="off" href="/papers/">Recent papers</a>
-		</div>
-		<div class="spacer"></div>
+	<div class="col-lg-4">
+		<h2> Turbulence </h2>
+		<p>
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		</p>
+	</div>
+	<div class="col-lg-4">
+		<h2> Computational Fluid Dynamics </h2>
+		<p>
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		</p>
+	</div>
+	<div class="col-lg-4">
+		<h2> Data-driven Fluid Mechanics </h2>
+		<p>
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		</p>
 	</div>
 </div>
 
-<div class="row">
-	{% for paper in site.categories.papers limit:4 %}
-	<div class="col-lg-3 reduced-gutter">
-		<div class="pad-left">
-			<div class="note">
-				<i class="fa fa-file-text-o fa-fw"></i>
-				<a class="off" href="{{ paper.url }}">
-				{{ paper.title }}
-				</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Posted
-				{{ paper.date | date: "%-d %b %Y" }}
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-	</div>
-	{% endfor %}
-</div>
-
-<div class="spacer"></div>
-
-<div class="row">
-	<div class="col-lg-12">
-		<div class="head">
-			<a class="off" href="/projects/">Active projects</a>
-		</div>
-		<div class="spacer"></div>
-	</div>
-</div>
-
-<div class="row">
-	{% for project in site.data.projects limit:4 %}
-	<div class="col-lg-3 reduced-gutter">
-		<div class="pad-left">
-			<div class="note">
-				<i class="fa fa-edit fa-fw"></i>
-				<a class="off" href="{{ project.url }}">
-				{{ project.title }} - {{ project.description }}
-				</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Updated
-				<a class="off" href="{{ project.commits.first.url }}">
-				{{ project.commits.first.date | date: "%-d %b %Y" }}
-				</a>
-				by
-				<a class="off" href="{{ project.commits.first.author_url }}">
-				{{ project.commits.first.author_login }}
-				</a>
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-	</div>
-	{% endfor %}
-</div>
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
 
 <div class="spacer"></div>
 
@@ -198,10 +88,10 @@ categories:
 				</li>
 				{% endfor %}
 				<li class="footernav list-inline-item">
-					<i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
+					<i class="fa fa-angle-right"></i> <a class="off" href="https://me.yonsei.ac.kr/">Mechanical Engineering @ Yonsei</a>
 				</li>
 				<li class="footernav list-inline-item">
-					<i class="fa fa-angle-right"></i> <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a>
+					<i class="fa fa-angle-right"></i> <a class="off" href="https://cse.yonsei.ac.kr">CSE @ Yonsei</a>
 				</li>
 			</ul>
 		</div>
