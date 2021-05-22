@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>{{ page.title }}</title>
+
+		<meta name="author" content="{{ page.author }}">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="/talks/reveal-v4/dist/reveal.css">
+		<link rel="stylesheet" href="/talks/reveal-v4/dist/theme/blotter.css" id="theme">
+		<link rel="stylesheet" href="/talks/reveal-v3/css/font-awesome/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+
+		<div style="position: absolute; top:10px; left:10px; z-index:100;">
+			<a href="/talks/">
+				<i class="fa fa-times-circle" style="color: #bbb; opacity: 0.1;"></i>
+			</a>
+		</div>
+
+		<div class="reveal">
+			<div class="slides">
+				{{ content }}
+			</div>
+		</div>
+
+		<script src="/talks/reveal-v4/dist/reveal.js"></script>
+		<script>
+			Reveal.initialize();
+			Reveal.configure({
+			  controls: false,
+				hash: true,
+				history: true,
+				center: true,
+				height: 720,
+				margin: 0.05,
+				minScale: 0.1,
+  			maxScale: 5.0,
+				{% if page.widescreen == true %}
+					width: 1280,
+				{% else %}
+					width: 960,
+				{% endif %}
+				{% if page.slide_number == true %}
+					slideNumber: true,
+				{% else %}
+					slideNumber: false,
+				{% endif %}
+			});
+		</script>
+
+	</body>
+</html>
