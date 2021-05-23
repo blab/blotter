@@ -1,6 +1,6 @@
 ---
 layout: default
-title: bedford lab / team
+title: COMPHY LAB / team
 categories:
  - team
 ---
@@ -20,13 +20,22 @@ categories:
     {% cycle 'add rows': '<div class="row">', '', '' %}
 		<div class="col-lg-4 memberbox">
 			<div class="media">
+				{% if member.is_url %}
   				<a class="float-left" href="{{ member.url }}">
-    				<img width=160 class="mr-3" src="{{ member.image }}">
+					<img width=160 class="mr-3" src="{{ member.image }}">
+					<div class="media-body">
+						<div class="head mb-1"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+						<p class="note">{{ member.position }}</p>
+					</div>
   				</a>
- 			 	<div class="media-body">
-    				<div class="head mb-1"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-  				</div>
+				{% else %}
+					<img width=160 class="mr-3" src="{{ member.image }}">
+				  	<div class="media-body">
+						<div class="head mb-1">{{ member.title }}</div>
+						<p class="note">{{ member.position }}</p>
+					</div>
+				{% endif %}
+
 			</div>
 			<div class="bigspacer"></div>
 			<div class="bigspacer"></div>
@@ -51,13 +60,8 @@ categories:
     {% cycle 'add rows 2': '<div class="row">', '', '' %}
 		<div class="col-lg-4 memberbox">
 			<div class="media">
-  				<!--
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=160 class="media-object" src="{{ member.image }}">
-  				</a>
-  				-->
  			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+    				<div class="head media-heading">{{ member.title }}</div>
     				<p class="note">{{ member.position }}</p>
   				</div>
 			</div>
