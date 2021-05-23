@@ -54,8 +54,7 @@ My proposed research program:
 	{{ page.venue }}
 </section>
 
-<!-- Perhaps update to include SARS-CoV-2 -->
-<section>
+<!-- <section>
 	<h3>We work at the interface of virology, evolution and epidemiology</h3>
 	<div>
 		<img width="20%" style="padding:5px;" src="/images/talks/tile_ebola_virus.png">
@@ -67,10 +66,10 @@ My proposed research program:
 		<img width="20%" style="padding:5px;" src="/images/talks/tile_zika_tree.png">
 		<img width="20%" style="padding:5px;" src="/images/talks/tile_zika_map.png">
 	</div>
-</section>
+</section> -->
 
-<section>
-	<h2>Sequencing to reconstruct pathogen spread</h2>
+<section data-background="#000000">
+	<h2 class="title">Sequencing to reconstruct pathogen spread</h2>
 </section>
 
 <section data-transition="slide-in none-out">
@@ -93,9 +92,9 @@ My proposed research program:
 	<img class="stretch" src="/images/talks/infection_tree_4b.png">
 </section>
 
-<section data-background="#000000">
+<!-- <section data-background="#000000">
 	<h1 class="title">Utility of genomic epidemiology</h1>
-</section>
+</section> -->
 
 <section style="text-align: left;">
 	<h3>Pathogen genomes may reveal</h3>
@@ -169,6 +168,9 @@ My proposed research program:
 		(3) always up-to-date analyses at nextstrain.org</p>
 	<img width="65%" src="/images/talks/nextstrain_components_ncov.png">
 	<p>All code open source at <a class="off" href="https://github.com/nextstrain">github.com/nextstrain</a></p>
+	<!-- <div class="citation">
+		<a href="/papers/hadfield-nextstrain/">Hadfield et al. 2018. Bioinformatics.</a>
+	</div> -->
 </section>
 
 <section>
@@ -246,8 +248,12 @@ My proposed research program:
 </section>
 
 <section>
-	<h3>Seattle Flu Study detects and genomically charts early epidemic</h3>
-	<img class="stretch" src="/images/talks/ncov_cryptic_transmission_introductions.png">
+	<div style="float: left; width: 44%">
+		<h3>Seattle Flu Study detects local circulation and charts early epidemic in Washington State</h3>
+	</div>
+	<div style="float: right; width: 56%">
+		<img src="/images/talks/ncov_cryptic_transmission_prevalence.png">
+	</div>
 	<div class="citation">
 		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
 	</div>
@@ -306,18 +312,37 @@ My proposed research program:
 
 <section style="text-align: left;">
 	<h3>The COVID-19 pandemic has pushed the field perhaps ~5 years into the future</h3>
-	<p>
-	<ul>
-		<li>2013-16 Ebola in West Africa: 29k confirmed cases and 1610 genomes</li>
-		<li>2015-17 Zika in the Americas: 223k confirmed cases and 942 genomes</li>
-		<!-- <li>Ebola in DRC: 3300 confirmed cases and 792 genomes</li> -->
-		<li>2018-19 seasonal flu in US: 290k confirmed cases and 8864 genomes</li>
-		<li>2020-21 COVID-19 pandemic: 162M confirmed cases and 1.6M genomes</li>
-	</ul>
-	</p>
+	<div style="float: left; width: 80%">
+		<br>
+		<table style="line-height: 2.5em;">
+			<tr>
+				<td style="border: none;">2013-16 Ebola in West Africa</td>
+				<td style="border: none;">29k confirmed cases</td>
+				<td style="border: none;">1610 genomes</td>
+			</tr>
+			<tr>
+				<td style="border: none;">2015-17 Zika in the Americas</td>
+				<td style="border: none;">223k confirmed cases</td>
+				<td style="border: none;">942 genomes</td>
+			</tr>
+			<tr>
+				<td style="border: none;">2018-19 seasonal flu in US</td>
+				<td style="border: none;">290k confirmed cases</td>
+				<td style="border: none;">8864 genomes</td>
+			</tr>
+			<tr>
+				<td style="border: none;">2020-21 COVID-19 pandemic</td>
+				<td style="border: none;">162M confirmed cases</td>
+				<td style="border: none;">1.6M genomes</td>
+			</tr>
+		</table>
+	</div>
+	<div style="float: right; width: 14%">
+		<img src="/images/talks/ncov_data_quantity.png">
+	</div>
 </section>
 
-<section style="text-align: left;">
+<!-- <section style="text-align: left;">
 	<h3>Post-pandemic future</h3>
 	<p>
 	<ul>
@@ -327,19 +352,36 @@ My proposed research program:
 			which will result in a large shift towards routine sequencing of other pathogens</li>
 	</ul>
 	</p>
-</section>
+</section> -->
 
 <section style="text-align: left;">
-	<h3>My proposed research program</h3>
-	<p>
-	<ul>
-		<li>Two major threads: "Evolutionary forecasting" and "Genomic outbreak investigation"</li>
-		<li>Continue to instantiate research innovations into the Nextstrain software platform for broader use by the community</li>
-	</ul>
-	</p>
+	<div style="float: left; width: 75%">
+		<h3>My proposed research program</h3>
+		<p>
+			<ul>
+				<li>Continue two major threads</li>
+				<ol>
+					<li>
+						Evolutionary forecasting: focus on seasonal influenza and SARS-CoV-2 for impact on vaccine strain selection
+					</li>
+					<li>
+						Genomic outbreak investigation: across pathogens with focus on spatial dynamics and recontructing spread
+					</li>
+				</ol>
+				<li>Continue to instantiate research innovations into the Nextstrain software platform for broader use by the community</li>
+			</ul>
+		</p>
+	</div>
+	<div style="float: right; width: 16%">
+		<img data-src="/images/talks/genomic_epi_frequency_dynamics.png">
+		<br>
+		<img data-src="/images/talks/genomic_epi_spatial_dynamics.png">
+	</div>
 </section>
 
-<!-- Overarching vision for the future -->
+<section>
+	<h2>Lay ground-work for near ubiquitous pathogen sequencing</h2>
+</section>
 
 <section>
 	<h3>Acknowledgements</h3>
