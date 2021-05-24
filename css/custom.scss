@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500&display=swap');
 
 $primary: #DD2D2D;
 $gray: #555;
@@ -105,22 +103,22 @@ b, strong {
 /* navbar */
 
 .navbar-brand {
-	font-size: 25px;
+	font-size: 1.563rem;
 	font-weight: 500;
   	color: $gray-light;
-	font-family: 'Saira';
+	font-family: 'Roboto';
 	/* Museo */
 }
 .navbar-nav {
-	font-size: 30px;
-	font-weight: 100;
-	font-family: 'Noto Sans KR';
+	font-size: 1.25rem;
+	font-weight: 300;
+	font-family: 'Roboto';
 	/* Museo */
 }
 .navbar-text {
-	font-size: 15px;
+	font-size: 0.9375rem;
 	font-weight: 300;
-	font-family: 'Noto Sans KR';
+	font-family: 'Roboto';
 	/* Museo */
 }
 
@@ -155,68 +153,67 @@ b, strong {
 /* headings */
 
 .bigtitle {
-	font-size: 60px;
-	line-height: 55px;
+	font-size: 3.75rem;
+	line-height: 3.438rem;
 	font-weight: 700;
-	font-family: 'Saira';
+	font-family: 'Roboto';
 	/* Museo */
 }
 
 .media-body {
 	.bigtitle {
-		font-size: 60px;
-		line-height: 55px;
+		font-size: 3.75rem;
+		line-height: 3.438rem;
 		font-weight: 300;
-		font-family: 'Noto Sans KR';
+		font-family: 'Roboto';
 		/* Museo */
 	}
 }
 
 .title {
-	font-size: 36px;
-	line-height: 40px;
-	font-weight: 100;
-	font-family: 'Noto Sans KR';
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	font-weight: 300;
+	font-family: 'Roboto';
 	/* Museo */
 }
 
 .bighead {
-	font-size: 32px;
+	font-size: 2rem;
 	font-weight: 300;
-	line-height:36px;
-	font-family: 'Saira';
+	line-height: 2.25rem;
+	font-family: 'Roboto';
 	/* Museo */
 }
 
 .head {
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 300;
-	line-height:30px;
-	font-family: 'Noto Sans KR';
+	line-height: 2.25rem;
+	font-family: 'Roboto';
 	/* Museo */
 }
 
 .smallhead {
-	font-size: 19px;
+	font-size: 1.188rem;
 	font-weight: 300;
-	line-height: 23px;
-	font-family: 'Noto Sans KR';
+	font-family: 'Roboto';
 	/* Museo */
 }
 
 .note {
-	font-size: 15px;
+	font-size: 0.9375rem;
 	font-weight: 300;
-	line-height: 18px;
-	font-family: 'Noto Sans KR';
+	line-height: 1.125rem;
+	font-family: 'Roboto';
 	/* Museo */
 }
 
 .smallnote {
-	font-size: 13px;
+	font-size: 0.8125rem;
 	font-weight: 300;
-	line-height: 16px;
-	font-family: 'Noto Sans KR';
+	line-height: 1rem;
+	font-family: 'Roboto';
 	/* Museo */
 }
 
@@ -230,35 +227,30 @@ b, strong {
 
 .text-figure-legend {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 /* other */
 
 body {
-	font-weight: 100;
-	font-family: 'Noto Sans KR';
-}
-
-p {
-	font-weight: 100;
-	font-family: 'Noto Sans KR';
+	font-weight: 300;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .hugespacer {
-	height: 50px;
+	height: 3.125rem;
 }
 
 .bigspacer {
-	height: 20px;
+	height: 1.25rem;
 }
 
 .spacer {
-	height: 10px;
+	height: 0.625rem;
 }
 
 .smallspacer {
-	height: 5px;
+	height: 0.3125rem;
 }
 
 a.off {
@@ -420,9 +412,4 @@ blockquote {
     -webkit-transform: scale(1.0);
     opacity: 0;
   }
-}
-
-#genealogy {
-	width: 100%;
-	height: 500px;
 }
