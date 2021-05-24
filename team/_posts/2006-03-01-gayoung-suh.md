@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Gayoung Suh
-position: Stanford University, Postdoctoral Research fellow
+position: California State University, Assistant Professor
 alumni: true
 ---
