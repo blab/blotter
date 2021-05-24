@@ -1,6 +1,6 @@
-name: COMPHY Lab
-description: Computational & Theoretical Fluid Dynamics Lab
-url: https://comphylab.github.io
+name: Turbulence Lab
+description: Turbulence Lab at Yonsei University
+url: https://turbulencelab.github.io
 
 markdown: kramdown
 permalink: /:categories/:title/
