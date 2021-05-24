@@ -413,3 +413,11 @@ blockquote {
     opacity: 0;
   }
 }
+
+div.mermaid {
+	text-align: center;
+}
+
+div.mermaid > SVG {
+	height: 100%;
+}

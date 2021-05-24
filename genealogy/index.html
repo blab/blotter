@@ -5,6 +5,7 @@ categories:
 - academic genealogy
 ---
 
+<script src="/js/mermaid.min.js"></script>
 
 <div class="container">
   <div class="row align-items-center">
@@ -16,8 +17,8 @@ categories:
           C --> D(Christian Ludwig Gerling<br>1788 - 1864<br>Ph. D., Göttingen, 1812)
           D --> E(Julius Plücker<br>1801 - 1868<br>Ph. D., Marburg, 1823)
 
-          F(Johann Bernoulli<br>1667-1748<br>) --> G(Leonhard Euler<br>1707 - 1783)
-          G --> H(Joseph-Louis Lagrange<br>1736 - 1813)
+          F(Johann Bernoulli<br>1667 - 1748<br>) --> G(Leonhard Euler<br>1707 - 1783)
+          G --> H(Joseph-Louis Lagrange<br>1726 - 1813)
           H --> I(Siméon Denis Poisson<br>1781 - 1840)
           H --> J(Joseph Fourier<br>1768 - 1830)
           I & J --> K(Peter Gustav Lejeune Dirichlet<br>1805 - 1859<br>hon. degree only)
@@ -33,8 +34,8 @@ categories:
           S --> T(Kip Thorne<br>1940 - <br>Ph.D. Princeton, 1965)
           T --> U(William H. Press<br>1948 - <br>Ph.D., Caltech, 1972)
           U --> V(Philip S. Marcus<br>1951 - <br>Ph.D., Princeton, 1978)
-          V --> W(John Kim<br>1947 - <br>Ph.D., Stanford, 1978)
-          W --> X(Changhoon Lee<br>1962 - <br>Ph.D., UC Berkeley, 1993)
+
+          V & W(John Kim<br>1947 - <br>Ph.D., Stanford, 1978) --> X(Changhoon Lee<br>1962 - <br>Ph.D., UC Berkeley, 1993)
 
           click A "https://en.wikipedia.org/wiki/Abraham_Gotthelf_K%C3%A4stner" _blank
           click B "https://en.wikipedia.org/wiki/Johann_Friedrich_Pfaff" _blank
@@ -65,16 +66,11 @@ categories:
   </div>
 </div>
 
-<script src="/js/mermaid.min.js"></script>
-<script>
-
+<script type="text/javascript">
   mermaid.initialize({
-    mermaid: {
-      startOnLoad: true,
-      fontFamily: "Noto Sans KR",
-      fontSize: 32,
-      theme: 'null',
-    },
+    startOnLoad: true,
+    theme: 'neutral',
+    themeCSS: ".node rect { fill: white; }",
     flowchartConfig: {
       useMaxWidth: true,
     },
@@ -84,9 +80,9 @@ categories:
 
 
 <!-- wikipedia preview 1.2.0 -->
-<script src="/js/wikipedia-preview.production.js"></script>
+<!-- <script src="/js/wikipedia-preview.production.js"></script>
 <script type="text/javascript">
   wikipediaPreview.init({
     detectLinks: true
   })
-</script>
+</script> -->
