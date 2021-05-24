@@ -162,11 +162,21 @@ b, strong {
 	/* Museo */
 }
 
+.media-body {
+	.bigtitle {
+		font-size: 60px;
+		line-height: 55px;
+		font-weight: 700;
+		font-family: 'Noto Sans KR';
+		/* Museo */
+	}
+}
+
 .title {
 	font-size: 36px;
 	line-height: 40px;
 	font-weight: 100;
-	font-family: 'Poppins';
+	font-family: 'Noto Sans KR';
 	/* Museo */
 }
 
@@ -182,7 +192,7 @@ b, strong {
 	font-size: 24px;
 	font-weight: 300;
 	line-height:30px;
-	font-family: 'Open Sans';
+	font-family: 'Noto Sans KR';
 	/* Museo */
 }
 
@@ -190,7 +200,7 @@ b, strong {
 	font-size: 19px;
 	font-weight: 300;
 	line-height: 23px;
-	font-family: 'Open Sans';
+	font-family: 'Noto Sans KR';
 	/* Museo */
 }
 
@@ -198,7 +208,7 @@ b, strong {
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 18px;
-	font-family: 'Open Sans';
+	font-family: 'Noto Sans KR';
 	/* Museo */
 }
 
@@ -206,7 +216,7 @@ b, strong {
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 16px;
-	font-family: 'Open Sans';
+	font-family: 'Noto Sans KR';
 	/* Museo */
 }
 
@@ -410,4 +420,9 @@ blockquote {
     -webkit-transform: scale(1.0);
     opacity: 0;
   }
+}
+
+#genealogy {
+	width: 100%;
+	height: 500px;
 }
