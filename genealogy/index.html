@@ -5,197 +5,88 @@ categories:
 - academic genealogy
 ---
 
-<div id="genealogy"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/2.1.40/go.min.js"
-  integrity="sha512-2fJohB0YKo87Dyn1NmfFwUTMvkFmqYs3f2Zvq4LUgffCjLTOgd7skUPPoN9sXCPqtZs//fNhzTQnsSclFJxC6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script id="code">
-  function init() {
-    var $ = go.GraphObject.make;  // for conciseness in defining templates
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col">
+      <div class="mermaid">
+        graph TD
+          A(Abraham Gotthelf Kästner<br>1719 - 1800<br>Ph.D., Leipzig, 1739) --> B(Johann Friedrich Pfaff<br>1765 - 1825<br>Dr. phil., Göttingen, 1786)
+          B --> C(Carl Friedrich Gauss<br>1777 - 1855<br>Ph. D., Helmstedt, 1799)
+          C --> D(Christian Ludwig Gerling<br>1788 - 1864<br>Ph. D., Göttingen, 1812)
+          D --> E(Julius Plücker<br>1801 - 1868<br>Ph. D., Marburg, 1823)
 
-    // some constants that will be reused within templates
-    var mt8 = new go.Margin(8, 0, 0, 0);
-    var mr8 = new go.Margin(0, 8, 0, 0);
-    var ml8 = new go.Margin(0, 0, 0, 8);
-    var roundedRectangleParams = {
-      parameter1: 2,  // set the rounded corner
-      spot1: go.Spot.TopLeft, spot2: go.Spot.BottomRight  // make content go all the way to inside edges of rounded corners
-    };
+          F(Johann Bernoulli<br>1667-1748<br>) --> G(Leonhard Euler<br>1707 - 1783)
+          G --> H(Joseph-Louis Lagrange<br>1736 - 1813)
+          H --> I(Siméon Denis Poisson<br>1781 - 1840)
+          H --> J(Joseph Fourier<br>1768 - 1830)
+          I & J --> K(Peter Gustav Lejeune Dirichlet<br>1805 - 1859<br>hon. degree only)
 
-    genealogy =
-    $(go.Diagram, "genealogy",  // the DIV HTML element
-    {
-      // Put the diagram contents at the top center of the viewport
-      initialDocumentSpot: go.Spot.Top,
-      initialViewportSpot: go.Spot.Top,
-      // OR: Scroll to show a particular node, once the layout has determined where that node is
-      // "InitialLayoutCompleted": function(e) {
-        //  var node = e.diagram.findNodeForKey(28);
-        //  if (node !== null) e.diagram.commandHandler.scrollToPart(node);
-        // },
-        layout:
-        $(go.TreeLayout,  // use a TreeLayout to position all of the nodes
-        {
-          isOngoing: false,  // don't relayout when expanding/collapsing panels
-          treeStyle: go.TreeLayout.StyleLastParents,
-          // properties for most of the tree:
-          angle: 90,
-          layerSpacing: 80,
-          // properties for the "last parents":
-          alternateAngle: 0,
-          alternateAlignment: go.TreeLayout.AlignmentStart,
-          alternateNodeIndent: 15,
-          alternateNodeIndentPastParent: 1,
-          alternateNodeSpacing: 15,
-          alternateLayerSpacing: 40,
-          alternateLayerSpacingParentOverlap: 1,
-          alternatePortSpot: new go.Spot(0.001, 1, 20, 0),
-          alternateChildPortSpot: go.Spot.Left
-        })
-      });
+          L(Karl Christian von Langsdorf<br>1757 - 1834) --> M(Georg Simon Ohm<br>1789 - 1854<br>Dr. phil. Nürnberg, 1811)
+          K & M --> N(Rudolf O. S. Lipschitz<br>1832 - 1903<br>Dr. phil., Berlin, 1853)
 
-      // This function provides a common style for most of the TextBlocks.
-      // Some of these values may be overridden in a particular TextBlock.
-      function textStyle(field) {
-        return [
-        {
-          font: "12px Noto Sans KR, sans-serif", stroke: "rgba(0, 0, 0, .60)",
-          visible: false  // only show textblocks when there is corresponding data for them
-        },
-        new go.Binding("visible", field, function(val) { return val !== undefined; })
-        ];
-      }
+          E & N --> O(C. Felix Klein<br>1849 - 1925<br>Ph.D., Bonn, 1868)
+          O --> P(C. L. Ferdinand von Lindemann<br>1852 - 1939<br>Ph.D. Nürnberg, 1873)
+          P --> Q(Arnold Sommerfeld<br>1868 - 1951<br>Ph.D. Königsberg, 1891)
+          Q --> R(Karl Herzfeld<br>1892 - 1978<br>Ph.D. Munich, 1914)
+          R --> S(John A. Wheeler<br>1911 - 2008<br>Ph.D. Johns Hopkins, 1933)
+          S --> T(Kip Thorne<br>1940 - <br>Ph.D. Princeton, 1965)
+          T --> U(William H. Press<br>1948 - <br>Ph.D., Caltech, 1972)
+          U --> V(Philip S. Marcus<br>1951 - <br>Ph.D., Princeton, 1978)
+          V --> W(John Kim<br>1947 - <br>Ph.D., Stanford, 1978)
+          W --> X(Changhoon Lee<br>1962 - <br>Ph.D., UC Berkeley, 1993)
 
-      // define the Node template
-      genealogy.nodeTemplate =
-      $(go.Node, "Auto",
-        {
-          resizable: true,
-          layoutConditions: go.Part.LayoutStandard & ~go.Part.LayoutNodeSized,
-          fromSpot: go.Spot.AllSides,
-          toSpot: go.Spot.AllSides,
-          isShadowed: true,
-          shadowBlur: 1,
-          shadowOffset: new go.Point(3, 3),
-          shadowColor: "#C5C1AA",
-          selectionAdorned: true,
-          selectionAdornmentTemplate:  // selection adornment to match shape of nodes
-            $(go.Adornment, "Auto",
-              $(go.Shape, "RoundedRectangle", roundedRectangleParams,
-              { fill: null, stroke: "#7986cb", strokeWidth: 3 }
-              ),
-              $(go.Placeholder)
-            )  // end Adornment
-        },
-        $(go.Shape, "RoundedRectangle", roundedRectangleParams,
-        { name: "SHAPE", fill: "#ffffff", strokeWidth: 0 },
-        // gold if highlighted, white otherwise
-        new go.Binding("fill", "isHighlighted", function(h) { return h ? "gold" : "#ffffff"; }).ofObject()
-        ),
-        $(go.Panel, "Vertical",
-        $(go.Panel, "Horizontal",
-        { margin: 8 },
-        $(go.Picture,  // flag image, only visible if a nation is specified
-          { margin: mr8, visible: false, desiredSize: new go.Size(50, 50) },
-          new go.Binding("visible", "nation", function(nat) { return nat !== undefined; })
-        ),
-        $(go.Panel, "Table",
-        $(go.TextBlock,
-        {
-          row: 0, alignment: go.Spot.Left,
-          font: "16px Roboto, sans-serif",
-          stroke: "rgba(0, 0, 0, .87)",
-          maxSize: new go.Size(160, NaN)
-        },
-        new go.Binding("text", "name")
-        ),
-        $(go.TextBlock, textStyle("title"),
-        {
-          row: 1, alignment: go.Spot.Left,
-          maxSize: new go.Size(160, NaN)
-        },
-        new go.Binding("text", "title")
-        ),
-        $("PanelExpanderButton", "INFO",
-        { row: 0, column: 1, rowSpan: 2, margin: ml8 }
-        )
-        )
-        ),
-        $(go.Shape, "LineH",
-        {
-          stroke: "rgba(0, 0, 0, .60)", strokeWidth: 1,
-          height: 1, stretch: go.GraphObject.Horizontal
-        },
-        new go.Binding("visible").ofObject("INFO")  // only visible when info is expanded
-        ),
-        $(go.Panel, "Vertical",
-        {
-          name: "INFO",  // identify to the PanelExpanderButton
-          stretch: go.GraphObject.Horizontal,  // take up whole available width
-          margin: 8,
-          defaultAlignment: go.Spot.Left,  // thus no need to specify alignment on each element
-        },
-        ))
-      );
+          click A "https://en.wikipedia.org/wiki/Abraham_Gotthelf_K%C3%A4stner" _blank
+          click B "https://en.wikipedia.org/wiki/Johann_Friedrich_Pfaff" _blank
+          click C "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss" _blank
+          click D "https://en.wikipedia.org/wiki/Christian_Ludwig_Gerling" _blank
+          click E "https://en.wikipedia.org/wiki/Julius_Pl%C3%BCcker" _blank
+          click F "https://en.wikipedia.org/wiki/Johann_Bernoulli" _blank
+          click G "https://en.wikipedia.org/wiki/Leonhard_Euler" _blank
+          click H "https://en.wikipedia.org/wiki/Joseph-Louis_Lagrange" _blank
+          click I "https://en.wikipedia.org/wiki/Sim%C3%A9on_Denis_Poisson" _blank
+          click J "https://en.wikipedia.org/wiki/Joseph_Fourier" _blank
+          click K "https://en.wikipedia.org/wiki/Peter_Gustav_Lejeune_Dirichlet" _blank
+          click L "https://en.wikipedia.org/wiki/Karl_Christian_von_Langsdorf" _blank
+          click M "https://en.wikipedia.org/wiki/Georg_Ohm" _blank
+          click N "https://en.wikipedia.org/wiki/Rudolf_Lipschitz" _blank
+          click O "https://en.wikipedia.org/wiki/Felix_Klein" _blank
+          click P "https://en.wikipedia.org/wiki/Ferdinand_von_Lindemann" _blank
+          click Q "https://en.wikipedia.org/wiki/Arnold_Sommerfeld" _blank
+          click R "https://en.wikipedia.org/wiki/Karl_Herzfeld" _blank
+          click S "https://en.wikipedia.org/wiki/John_Archibald_Wheeler" _blank
+          click T "https://en.wikipedia.org/wiki/Kip_Thorne" _blank
+          click U "https://en.wikipedia.org/wiki/William_H._Press" _blank
+          click V "https://cfd.me.berkeley.edu/philip-marcus/" _blank
+          click W "https://en.wikipedia.org/wiki/John_Kim_(professor)" _blank
+          click X "https://turbulencelab.github.io/team/changhoon-lee" _blank
+      </div>
+    </div>
+  </div>
+</div>
 
-      // define the Link template, a simple orthogonal line
-      genealogy.linkTemplate =
-      $(go.Link, go.Link.Orthogonal,
-      { corner: 5, selectable: false },
-      $(go.Shape, { strokeWidth: 3, stroke: "#424242" }));  // dark gray, rounded corner links
+<script src="/js/mermaid.min.js"></script>
+<script>
+
+  mermaid.initialize({
+    mermaid: {
+      startOnLoad: true,
+      fontFamily: "Noto Sans KR",
+      fontSize: 32,
+      theme: 'null',
+    },
+    flowchartConfig: {
+      useMaxWidth: true,
+    },
+    securityLevel:'loose',
+  });
+</script>
 
 
-      // set up the nodeDataArray, describing each person/position
-      var nodeDataArray = [
-        { key: 0, name: "Abraham Gotthelf Kästner", life: "1719 - 1800", "degree": "Ph.D., Leipzig, 1739", "link": "https://en.wikipedia.org/wiki/Abraham_Gotthelf_K%C3%A4stner"},
-        { key: 1, name: "Johann Friedrich Pfaff", life: "1765 - 1825", "degree": "Dr. phil., Göttingen, 1786",  "link": "https://en.wikipedia.org/wiki/Johann_Friedrich_Pfaff"},
-        { key: 2, name: "Carl Friedrich Gauss", life: "1777 - 1855", "degree": "Ph. D., Helmstedt, 1799",  "link": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss"},
-        { key: 3, name: "Christian Ludwig Gerling", life: "1788 - 1864", "degree": "Ph. D., Göttingen, 1812",  "link": "https://en.wikipedia.org/wiki/Christian_Ludwig_Gerling"},
-        { key: 4, name: "Julius Plücker", life: "1801 - 1868", "degree": "Ph. D., Marburg, 1823",  "link": "https://en.wikipedia.org/wiki/Julius_Pl%C3%BCcker"},
-        { key: 5, name: "Johann Bernoulli", life: "1667 - 1748", "link": "https://en.wikipedia.org/wiki/Johann_Bernoulli"},
-        { key: 6, name: "Leonhard Euler", life: "1707 - 1783", "link": "https://en.wikipedia.org/wiki/Leonhard_Euler"},
-        { key: 7, name: "Joseph-Louis Lagrange", life: "1736 - 1813", "link": "https://en.wikipedia.org/wiki/Joseph-Louis_Lagrange"},
-        { key: 8, name: "Siméon Denis Poisson", life: "1781 - 1840", "link": "https://en.wikipedia.org/wiki/Sim%C3%A9on_Denis_Poisson"},
-        { key: 9, name: "Joseph Fourier", life: "1768 - 1830", "link": "https://en.wikipedia.org/wiki/Joseph_Fourier"},
-        { key: 10, name: "Peter Gustav Lejeune Dirichlet", life: "1805 - 1859", "DEGREE": "hon. degree only", "link": "https://en.wikipedia.org/wiki/Peter_Gustav_Lejeune_Dirichlet"},
-        { key: 11, name: "Karl Christian von Langsdorf", life: "1757 - 1834", "degree": "hon. degree only", "link": "https://en.wikipedia.org/wiki/Karl_Christian_von_Langsdorf"},
-        { key: 12, name: "Georg Simon Ohm", life: "1789 - 1854", "degree": "Ph.D. Nürnberg, 1811", "link": "https://en.wikipedia.org/wiki/Georg_Ohm"},
-        { key: 13, name: "Rudolf O. S. Lipschitz", life: "1832 - 1903", "dgree": "Dr. phil., Berlin, 1853", "link": "https://en.wikipedia.org/wiki/Georg_Ohm"},
-        { key: 14, name: "C. Felix Klein", life: "1849 - 1925", "dgree": "Ph.D., Bonn, 1868", "link": "https://en.wikipedia.org/wiki/Felix_Klein"},
-        { key: 15, name: "C. L. Ferdinand von Lindemann", life: "1852 - 1939", "dgree": "Ph.D. Nürnberg, 1873", "link": "https://en.wikipedia.org/wiki/Ferdinand_von_Lindemann"},
-        { key: 16, name: "Arnold Sommerfeld", life: "1868 - 1951", "dgree": "Ph.D. Königsberg, 1891", "link": "https://en.wikipedia.org/wiki/Arnold_Sommerfeld"},
-        { key: 17, name: "Karl Herzfeld", life: "1892 - 1978", "dgree": "Ph.D. Munich, 1914", "link": "https://en.wikipedia.org/wiki/Karl_Herzfeld"},
-        { key: 18, name: "John A. Wheeler", life: "1911 - 2008", "dgree": "Ph.D. Johns Hopkins, 1933", "link": "https://en.wikipedia.org/wiki/John_Archibald_Wheeler"},
-        { key: 19, name: "Kip Thorne", life: "1940 - ", "dgree": "Ph.D. Princeton, 1965", "link": "https://en.wikipedia.org/wiki/Kip_Thorne"},
-        { key: 20, name: "William H. Press", life: "1948 - ", "dgree": "Ph.D. Calteh, 1972", "link": "https://en.wikipedia.org/wiki/William_H._Press"},
-        { key: 21, name: "Philip S. Marcus", life: "1951 - ", "dgree": "Ph.D. Princeton, 1978" },
-        { key: 22, name: "John Kim", life: "1947 - ", "dgree": "Ph.D. Standard, 1978", "link": "https://en.wikipedia.org/wiki/John_Kim_(professor)" },
-        { key: 23, name: "Changhoon Lee", life: "1962 - ", "dgree": "Ph.D. UC Berkeley, 1993" },
-      ];
-      var linkDataArray = [
-        { from: "0", to: "1"}, { from: "1", to: "2"}, { from: "2", to: "3"}, { from: "3", to: "4"},
-        { from: "5", to: "6"}, { from: "6", to: "7"}, { from: "7", to: "8"}, { from: "7", to: "9"}, { from: "8", to: "10"}, { from: "9", to: "10"},
-        { from: "11", to: "12"}, { from: "12", to: "13"}, { from: "10", to: "13"},
-        { from: "4", to: "14"}, { from: "13", to: "14"},
-        { from: "14", to: "15"}, { from: "15", to: "16"}, { from: "17", to: "18"},
-        { from: "18", to: "19"}, { from: "19", to: "20"}, { from: "20", to: "21"},
-        { from: "21", to: "23"}, { from: "22", to: "23"}
-      ];
-
-      // create the Model with data for the tree, and assign to the Diagram
-      genealogy.model = $(go.GraphLinksModel,
-        {
-          copiesArrays: true,
-          copiesArrayObjects: true,
-          nodeDataArray: nodeDataArray,
-          linkDataArray: linkDataArray
-        });
-
-      // Overview
-      myOverview =
-      $(go.Overview, "myOverviewDiv",  // the HTML DIV element for the Overview
-      { observed: genealogy, contentAlignment: go.Spot.Center });   // tell it which Diagram to show and pan
-    }
-
-    window.addEventListener('DOMContentLoaded', init);
+<!-- wikipedia preview 1.2.0 -->
+<script src="/js/wikipedia-preview.production.js"></script>
+<script type="text/javascript">
+  wikipediaPreview.init({
+    detectLinks: true
+  })
 </script>
