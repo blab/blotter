@@ -326,6 +326,14 @@ body {
   font-size: 0.5em !important;
 }
 
+.citation-left {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  z-index: 100;
+  font-size: 0.5em !important;
+}
+
 .inset-top-left {
   position: absolute;
   top: 0px;
