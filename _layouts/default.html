@@ -76,12 +76,12 @@
 						<a class="mx-1" href="/genealogy/">academic genealogy</a>
 						</li>
 
-						{% if page.categories.first == 'contact' %}
+						{% if page.categories.first == 'openings' %}
 						<li class="nav-link active">
 						{% else %}
 						<li class="nav-link">
 						{% endif %}
-						<a class="mx-1" href="/contact/">contact</a>
+						<a class="mx-1" href="/openings/">openings</a>
 						</li>
 
 					</ul>
@@ -100,11 +100,24 @@
 		<p>
 			© 2021–{{ site.time | date: '%Y' }} COMPHY LAB. more ›
 		</p>
-		<p>
-			117, Yonsei University <br>
-			50, Yonsei-ro, Seodaemun-gu <br>
-			Seoul 03722, South Korea
-		</p>
+		<div class="row">
+			<div class="col-lg-4">
+				Mechanical Engineering
+				<address>
+					Room N104, Building 121, Yonsei University, <br>
+					50, Yonsei-ro, Seodaemun-gu <br>
+					Seoul 03722, South Korea
+				</address>
+			</div>
+			<div class="col-lg-4">
+				CSE
+				<address>
+					Room 613, Building 117, Yonsei University, <br>
+					50, Yonsei-ro, Seodaemun-gu <br>
+					Seoul 03722, South Korea
+				</address>
+			</div>
+		</div>
 
 	</footer>
 
