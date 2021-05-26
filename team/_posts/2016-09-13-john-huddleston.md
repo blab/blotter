@@ -1,7 +1,7 @@
 ---
 layout: member
 title: John Huddleston
-position: PhD student
+position: Staff scientist
 handle: jlhudd
 twitter: huddlej
 github: huddlej
