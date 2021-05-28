@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Jungil Choi
-position: Yonsei University, Associate Professor
+position: Yonsei University, Professor
 alumni: true
 ---
