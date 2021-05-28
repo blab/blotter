@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="h-100">
 <head>
 	<meta charset="utf-8"/>
 	<title>{{ page.title }}</title>
@@ -26,8 +25,7 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-
-	<div id="header">
+	<header id="header">
 		<div class="container">
 			<nav class="navbar navbar-expand-md navbar-light bg-white box-shadow">
 				{% if page.categories.first != 'home' %}
@@ -85,38 +83,44 @@
 				</div>
 			</nav>
 		</div>
+	</header>
+
+	<div class="flex-shrink-0">
+		<div class="container mt-5">
+			{{ content }}
+		</div>
 	</div>
 
-	<div class="container mt-5">
-
-	{{ content }}
-
-	</div>
-
-	<footer class="container bg-light">
-		<p>
-			© 2021–{{ site.time | date: '%Y' }} Turbulence Lab. more ›
-		</p>
-		<div class="row">
-			<div class="col-lg-4">
-				Mechanical Engineering
-				<address>
-					Room N104, Building 121, Yonsei University, <br>
-					50, Yonsei-ro, Seodaemun-gu <br>
-					Seoul 03722, South Korea
-				</address>
-			</div>
-			<div class="col-lg-4">
-				CSE
-				<address>
-					Room 613, Building 117, Yonsei University, <br>
-					50, Yonsei-ro, Seodaemun-gu <br>
-					Seoul 03722, South Korea
-				</address>
+	<footer class="footer mt-auto py-3 bg-light">
+		<div class="container">
+			<p>
+				© 2021–{{ site.time | date: '%Y' }} Turbulence Lab. more ›
+			</p>
+			<div class="row">
+				<div class="col-lg-4">
+					<h6>
+						Mechanical Engineering
+					</h6>
+					<address>
+						Room N104, Building 121 (Engineering Hall &#35;1), <br>
+						Yonsei University, <br>
+						50, Yonsei-ro, Seodaemun-gu <br>
+						Seoul 03722, South Korea
+					</address>
+				</div>
+				<div class="col-lg-4">
+					<h6>
+						Computational Science and Engineering
+					</h6>
+					<address>
+						Room 613, Building 117 (A.S.T.C.), <br>
+						Yonsei University, <br>
+						50, Yonsei-ro, Seodaemun-gu <br>
+						Seoul 03722, South Korea
+					</address>
+				</div>
 			</div>
 		</div>
-
 	</footer>
-
 </body>
 </html>
