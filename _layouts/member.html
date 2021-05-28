@@ -6,12 +6,14 @@ layout: default
 
 <div class="row">
 	<div class="col-lg-12">
-		<div class="media">
+		<div class="d-flex flex-row">
 			{% if member.image %}
-			<img class="pull-left pad-right media-object" width=120 src="{{ member.image }}">
+			<div class="flex-shrink-0">
+				<img class="pull-left pad-right" width=120 src="{{ member.image }}">
+			</div>
 			{% endif %}
-			<div class="media-body titlebox">
-				<div class="bigtitle media-heading">
+			<div class="flex-grow-1 ms-3 titlebox">
+				<div class="bigtitle mb-1">
 					{{ member.title }}
 				</div>
 				<p>
