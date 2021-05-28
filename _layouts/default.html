@@ -28,36 +28,34 @@
 <body class="d-flex flex-column h-100">
 
 	<div id="header">
-		<nav class="navbar navbar-expand-md navbar-light bg-white">
-			<div class="container">
+		<div class="container">
+			<nav class="navbar navbar-expand-md navbar-light bg-white box-shadow">
 				{% if page.categories.first != 'home' %}
 				<a class="navbar-brand" href="/">
-					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.svg">
+					<img class="logo d-inline-block align-top" src="/images/logo.svg">
 				</a>
 				{% else %}
 				<a class="navbar-brand" href="/">
 				</a>
 				{% endif %}
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav nav-pills ml-auto">
-
-
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
 						{% if page.categories.first == 'team' %}
 						<li class="nav-link active">
 						{% else %}
 						<li class="nav-link">
 						{% endif %}
-						<a class="mx-1" href="/team/">team</a></li>
+						<a class="nav-link mx-1" href="/team/">team</a></li>
 
 						{% if page.categories.first == 'research' %}
 						<li class="nav-link active">
 						{% else %}
 						<li class="nav-link">
 						{% endif %}
-						<a class="mx-1" href="/research/">research</a>
+						<a class="nav-link mx-1" href="/research/">research</a>
 						</li>
 
 						{% if page.categories.first == 'publication' %}
@@ -65,7 +63,7 @@
 						{% else %}
 						<li class="nav-link">
 						{% endif %}
-						<a class="mx-1" href="/publication/">publication</a>
+						<a class="nav-link mx-1" href="/publication/">publication</a>
 						</li>
 
 						{% if page.categories.first == 'genealogy' %}
@@ -73,21 +71,20 @@
 						{% else %}
 						<li class="nav-link">
 						{% endif %}
-						<a class="mx-1" href="/genealogy/">academic genealogy</a>
+						<a class="nav-link mx-1" href="/genealogy/">academic genealogy</a>
 						</li>
 
-						{% if page.categories.first == 'openings' %}
+						{% if page.categories.first == 'joinus' %}
 						<li class="nav-link active">
 						{% else %}
 						<li class="nav-link">
 						{% endif %}
-						<a class="mx-1" href="/openings/">openings</a>
+						<a class="nav-link mx-1" href="/joinus/">join us</a>
 						</li>
-
 					</ul>
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</div>
 	</div>
 
 	<div class="container mt-5">
@@ -98,7 +95,7 @@
 
 	<footer class="container bg-light">
 		<p>
-			© 2021–{{ site.time | date: '%Y' }} COMPHY LAB. more ›
+			© 2021–{{ site.time | date: '%Y' }} Turbulence Lab. more ›
 		</p>
 		<div class="row">
 			<div class="col-lg-4">
