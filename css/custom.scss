@@ -199,6 +199,7 @@ b, strong {
 	/* Museo */
 }
 
+
 .note {
 	font-size: 0.9375rem;
 	font-weight: 300;
@@ -226,14 +227,6 @@ b, strong {
 .text-figure-legend {
 	font-weight: 700;
 	font-size: 0.8125rem;
-}
-
-.index-category {
-	overflow: auto;
-}
-
-.index-category-h2 {
-	min-height: 0;
 }
 
 /* other */
@@ -355,6 +348,36 @@ blockquote {
 	height: 20px;
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.index-category {
+	overflow: auto;
+}
+
+.index-category-h2 {
+	min-height: 0;
+}
+
+.research-row {
+	.research-head {
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 2.25rem;
+		font-family: 'Roboto';
+	}
+
+	.research-note {
+		font-size: 0.9375rem;
+		font-weight: 300;
+		line-height: 1.3rem;
+		font-family: 'Roboto';
+		/* Museo */
+	}
+
+	.research-img img {
+		max-height: 350px;
+		width: auto;
+	}
 }
 
 .pad-right {
