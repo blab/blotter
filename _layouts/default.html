@@ -25,7 +25,7 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-	<header id="header" class="sticky-top">
+	<header id="header" class="fixed-top">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light bg-white">
 				{% if page.categories.first != 'home' %}
@@ -88,6 +88,7 @@
 	</header>
 
 	<div class="flex-shrink-0">
+		<div class="hugespacer"></div>
 		<div class="container mt-5" id="content">
 			{{ content }}
 		</div>
@@ -126,21 +127,21 @@
 	</footer>
 
 	<script type="text/javascript">
-		var new_scroll_top = 0;
-		var last_scroll_top;
+		var last_scroll_top = 0;
 		var header = document.getElementById('header');
 
 		window.addEventListener('scroll', function(e) {
-			scroll_top = window.scrollY;
+			let scroll_top = window.scrollY;
 
-			// Scrolling down
-			if (scroll_top < last_scroll_top) {
-				header.classList.remove("slideDown");
-				header.classList.add("slideUp");
 			// Scrolling up
+			if (scroll_top > last_scroll_top && scroll_top > 20) {
+				header.classList.remove("slide-up");
+				header.classList.add("slide-down");
+			// Scrolling down
 			} else {
-				header.classList.remove("slideUp");
-				header.classList.add("slideDown");
+				header.classList.remove("slide-down");
+				header.classList.add("slide-up");
+				
 			}
 
 			last_scroll_top = scroll_top;
