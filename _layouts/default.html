@@ -26,8 +26,9 @@
 
 <body class="d-flex flex-column h-100">
 	<header id="header" class="fixed-top">
-		<nav class="navbar navbar-expand-md navbar-light bg-white">
-			<div class="container">
+		<div class="container">
+			<nav class="navbar navbar-expand-md navbar-light bg-white">
+			
 				{% if page.categories.first != 'home' %}
 				<a class="navbar-brand" href="/">
 					<img class="logo d-inline-block align-top" src="/images/logo.svg">
@@ -36,7 +37,7 @@
 				<a class="navbar-brand" href="/">
 				</a>
 				{% endif %}
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -82,8 +83,9 @@
 						</li>
 					</ul>
 				</div>	
-			</div>
+			
 		</nav>
+	</div>
 	</header>
 
 	<div class="flex-shrink-0">
