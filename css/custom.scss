@@ -145,6 +145,19 @@ b, strong {
 	margin-bottom: 14px;
 }
 
+/* Slide transitions */
+.slideDown {
+	-webkit-transform: translateY(-64px);
+			transform: translateY(-64px);
+	transition: top .7s ease-out;
+}
+
+.slideUp {
+	-webkit-transform: translateY(0);
+			transform: translateY(0);
+	transition: top .7s ease-out;
+}
+
 /* headings */
 
 .bigtitle {
@@ -153,16 +166,6 @@ b, strong {
 	font-weight: 700;
 	font-family: 'Roboto';
 	/* Museo */
-}
-
-.media-body {
-	.bigtitle {
-		font-size: 3.75rem;
-		line-height: 3.438rem;
-		font-weight: 300;
-		font-family: 'Roboto';
-		/* Museo */
-	}
 }
 
 .title {
@@ -226,7 +229,6 @@ b, strong {
 }
 
 /* other */
-
 body {
 	font-weight: 300;
 	font-family: 'Roboto';

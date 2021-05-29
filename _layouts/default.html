@@ -25,9 +25,9 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-	<header id="header">
-		<div class="container">
-			<nav class="navbar navbar-expand-md navbar-light bg-white box-shadow">
+	<header id="header" class="fixed-top">
+		<nav class="navbar navbar-expand-md navbar-light bg-white">
+			<div class="container">
 				{% if page.categories.first != 'home' %}
 				<a class="navbar-brand" href="/">
 					<img class="logo d-inline-block align-top" src="/images/logo.svg">
@@ -36,7 +36,8 @@
 				<a class="navbar-brand" href="/">
 				</a>
 				{% endif %}
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -80,13 +81,14 @@
 						<a class="nav-link mx-1" href="/joinus/">join us</a>
 						</li>
 					</ul>
-				</div>
-			</nav>
-		</div>
+				</div>	
+			</div>
+		</nav>
 	</header>
 
 	<div class="flex-shrink-0">
-		<div class="container mt-5">
+		<div class="hugespacer"></div>
+		<div class="container mt-5" id="content">
 			{{ content }}
 		</div>
 	</div>
@@ -122,5 +124,27 @@
 			</div>
 		</div>
 	</footer>
+
+	<script type="text/javascript">
+		var new_scroll_top = 0;
+		var last_scroll_top;
+		var header = document.getElementById('header');
+
+		window.addEventListener('scroll', function(e) {
+			scroll_top = window.scrollY;
+
+			// Scrolling down
+			if (scroll_top < last_scroll_top) {
+				header.classList.remove("slideDown");
+				header.classList.add("slideUp");
+			// Scrolling up
+			} else {
+				header.classList.remove("slideUp");
+				header.classList.add("slideDown");
+			}
+
+			last_scroll_top = scroll_top;
+		});
+	</script>
 </body>
 </html>
