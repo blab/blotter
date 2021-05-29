@@ -85,7 +85,7 @@ layout: default
 		<div class="bigspacer"></div>
 		{% endif %}
 		{% if member.email %}
-		{% assign emailarray = member.email | split: '@' %}
+		{% assign emailarray = member.email | split: '$' %}
 		<div class="smallhead">
 			Email
 		</div>
@@ -93,6 +93,18 @@ layout: default
 			<div class="smallspacer"></div>
 			<i class="fa fa-inbox fa-fw"></i>
 			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.phone %}
+		{% assign phonearray = member.phone | split: '$' %}
+		<div class="smallhead">
+			Telephone
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-phone fa-fw"></i>
+			{{ phonearray[0] }}<span style="display:none">obfuscate</span>-{{ phonearray[1] }}<span style="display:none">obfuscate</span>-{{ phonearray[2] }}<span style="display:none">obfuscate</span>-{{ phonearray[3] }}
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
