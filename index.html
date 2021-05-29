@@ -7,10 +7,10 @@ categories:
 
 <div class="row">
 	<div class="col-lg-12 d-flex align-items-center">
-		<div class="flex-shrink-0">
+		<div class="flex-md-shrink-1 flex-lg-shrink-0">
 			<object class="biglogo" data="/images/logo.svg" type="image/svg+xml"></object>
 		</div>
-		<div class="flex-grow-1 ms-3">
+		<div class="flex-md-grow-0 flex-lg-grow-1 ms-3">
 			<div class="bigtitle">
 				Turbulence Lab
 			</div>
@@ -47,30 +47,22 @@ categories:
 
 <div class="spacer"></div>
 
-<div class="row">
-	<div class="col-lg-4">
-		<h2> Turbulence </h2>
+<div class="row g-3">
+	<div class="col-lg-4 index-category">
+		<h2 class="index-category-h2"> Turbulence </h2>
+		<p>
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		</p>
 	</div>
 	<div class="col-lg-4">
-		<h2> Computational Fluid Dynamics </h2>
-	</div>
-	<div class="col-lg-4">
-		<h2> Data-driven Fluid Mechanics </h2>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-lg-4">
+		<h2 class="index-category-h2"> Computational Fluid Dynamics </h2>
 		<p>
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		</p>
 	</div>
 	<div class="col-lg-4">
-		<p>
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-		</p>
-	</div>
-	<div class="col-lg-4">
+		<h2 class="index-category-h2"> Data-driven Fluid Mechanics </h2>
 		<p>
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		</p>
@@ -111,3 +103,32 @@ categories:
 		<div class="spacer"></div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	// set index-category height same by maixmum of content height
+	function setMaxHeight() {
+		var h2 = document.getElementsByClassName("index-category-h2");
+		let maxHeight = 0;
+		// init minHeight, get ooffsetHeight
+		for (let i = 0; i < h2.length; i++) {
+			if (h2[i].offsetHeight > maxHeight) {
+				h2[i].style.minHeight = 0;
+				maxHeight = h2[i].offsetHeight;
+			}
+		}
+
+		for (let i = 0; i < h2.length; i++) {
+			h2[i].style.minHeight = maxHeight + "px";
+		}
+	}
+	function setMaxHeightOnMQ(m) {
+		if (m.matches) {
+			setMaxHeight();
+		}
+	}
+	var x = window.matchMedia("(min-width: 992px)");
+	var x = window.matchMedia("(min-width: 992px)");
+	setMaxHeight(x); // Call listener function at run time
+	x.addListener(setMaxHeightOnMQ); // Attach listener function on state changes
+	window.addEventListener("resize", setMaxHeight); // Attach listener function on resize event
+</script>

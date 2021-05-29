@@ -228,6 +228,14 @@ b, strong {
 	font-size: 0.8125rem;
 }
 
+.index-category {
+	overflow: auto;
+}
+
+.index-category-h2 {
+	min-height: 0;
+}
+
 /* other */
 body {
 	font-weight: 300;
