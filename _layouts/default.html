@@ -25,10 +25,9 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-	<header id="header" class="fixed-top">
+	<header id="header" class="sticky-top">
 		<div class="container">
-			<nav class="navbar navbar-expand-md navbar-light bg-white">
-			
+			<nav class="navbar navbar-expand-lg navbar-light bg-white">
 				{% if page.categories.first != 'home' %}
 				<a class="navbar-brand" href="/">
 					<img class="logo d-inline-block align-top" src="/images/logo.svg">
@@ -82,14 +81,13 @@
 						<a class="nav-link mx-1" href="/joinus/">join us</a>
 						</li>
 					</ul>
-				</div>	
-			
+				</div>
+
 		</nav>
 	</div>
 	</header>
 
 	<div class="flex-shrink-0">
-		<div class="hugespacer"></div>
 		<div class="container mt-5" id="content">
 			{{ content }}
 		</div>
