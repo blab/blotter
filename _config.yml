@@ -8,7 +8,9 @@ future: true
 sass:
   sass_dir: css
 
-plugins: []
+# Plug-ins
+plugins:
+  - jekyll/scholar
 
 exclude:
   - "*.branches"
@@ -41,3 +43,29 @@ exclude:
   - "*.zip"
   - "Gemfile"
   - "Gemfile.lock"
+
+
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
+
+scholar:
+
+  last_name: Einstein
+  first_name: [Albert, A.]
+
+  style: apa
+  locale: en
+
+  source: /_bibliography/
+  bibliography: Changhoon Lee.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
