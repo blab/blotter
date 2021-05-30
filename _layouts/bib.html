@@ -35,40 +35,22 @@
                 {% endif %}
 
                 {% if forloop.length == 1 %}
-                    {% if author_is_self %}
-                        <em>{{author.first}} {{author.last}}</em>
-                    {% else %}
-                        {{author.first}} {{author.last}}
-                    {% endif %}
+                    {{author.first}} {{author.last}}
                 {% else %}
-                    {% unless forloop.last %}
-                        {% if author_is_self %}
-                            <em>{{author.first}} {{author.last}}</em>,
-                        {% else %}
-                            {% if coauthor_url %}
-                                <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>,
-                            {% else %}
-                                {{author.first}} {{author.last}},
-                            {% endif %}
-                        {% endif %}
+                    {% if forloop.rindex == 1 %}
+                        {{author.first}} {{author.last}}
+                    {% elsif forloop.rindex == 2 %}
+                        {{author.first}} {{author.last}} and
                     {% else %}
-                        {% if author_is_self %}
-                            and <em>{{author.first}} {{author.last}}</em>
-                        {% else %}
-                            {% if coauthor_url %}
-                                and <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>
-                            {% else %}
-                                and {{author.first}} {{author.last}}
-                            {% endif %}
-                        {% endif %}
-                    {% endunless %}
+                        {{author.first}} {{author.last}},
+                    {% endif %}
                 {% endif %}
             {% endfor %}
         </div>
 
         <div class="periodical">
             {% if entry.type == "article" %}
-                <em> {{entry.journal}} </em>
+                <em> {{ entry.journal }} </em>
             {% elsif entry.type == "inproceedings" %}
                 <em> In {{entry.booktitle}} </em>
             {% endif %}
