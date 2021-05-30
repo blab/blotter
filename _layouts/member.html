@@ -113,52 +113,6 @@ layout: default
 		<div class="post">
 			{{ content }}
 		</div>
-
-		{% assign lastname = member.title | split: ' ' | last %}
-		{% assign firstinitial = member.title | split: ' ' | first | slice: 0 %}
-		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
-
-		{% for paper in site.categories.papers %}
-		{% if paper.authors contains searchstring %}
-		{% assign papersq = true %}
-		{% endif %}
-		{% endfor %}
-
-		{% if papersq == true %}
-		<div class="bigspacer"></div>
-		<div class="head">Papers</div>
-		<div class="spacer"></div>
-		{% for paper in site.categories.papers %}
-		{% if paper.authors contains searchstring %}
-		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
-		{% endif %}
-		{% endfor %}
-		{% endif %}
-
-		{% if postsq == true %}
-			<div class="bigspacer"></div>
-			<div class="head">Posts</div>
-			<div class="spacer"></div>
-			{% for post in site.categories.blog %}
-				{% if post.author %}
-					{% if member.title == post.author %}
-						<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
-					{% endif %}
-				{% endif %}
-				{% if post.authors %}
-					{% assign found = false %}
-					{% for author in post.authors %}
-						{% if member.title == author %}
-							{% assign found = true %}
-						{% endif %}
-					{% endfor %}
-					{% if found %}
-						<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		{% endif %}
-
 	</div>
 	<div class="col-lg-1"></div>
 </div>
