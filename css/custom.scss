@@ -98,20 +98,20 @@ b, strong {
 /* navbar */
 
 .navbar-brand {
-	font-size: 1.563rem;
+	@include font-size(1.563rem);
 	font-weight: 500;
   	color: $gray-light;
 	font-family: 'Roboto';
 	/* Museo */
 }
 .navbar-nav {
-	font-size: 1.25rem;
+	@include font-size(1.25rem);
 	font-weight: 300;
 	font-family: 'Roboto';
 	/* Museo */
 }
 .navbar-text {
-	font-size: 0.9375rem;
+	@include font-size(0.9375rem);
 	font-weight: 300;
 	font-family: 'Roboto';
 	/* Museo */
@@ -165,7 +165,7 @@ b, strong {
 /* headings */
 
 .bigtitle {
-	font-size: 3.75rem;
+	@include font-size(3.75rem);
 	line-height: 3.438rem;
 	font-weight: 700;
 	font-family: 'Roboto';
@@ -173,7 +173,7 @@ b, strong {
 }
 
 .title {
-	font-size: 2.25rem;
+	@include font-size(2.25rem);
 	line-height: 2.5rem;
 	font-weight: 500;
 	font-family: 'Roboto';
@@ -181,7 +181,7 @@ b, strong {
 }
 
 .bighead {
-	font-size: 2rem;
+	@include font-size(2rem);
 	font-weight: 300;
 	line-height: 2.25rem;
 	font-family: 'Roboto';
@@ -189,7 +189,7 @@ b, strong {
 }
 
 .head {
-	font-size: 1.5rem;
+	@include font-size(1.5rem);
 	font-weight: 300;
 	line-height: 2.25rem;
 	font-family: 'Roboto';
@@ -197,7 +197,7 @@ b, strong {
 }
 
 .smallhead {
-	font-size: 1.188rem;
+	@include font-size(1.188rem);
 	font-weight: 300;
 	font-family: 'Roboto';
 	/* Museo */
@@ -205,7 +205,7 @@ b, strong {
 
 
 .note {
-	font-size: 0.9375rem;
+	@include font-size(0.9375rem);
 	font-weight: 300;
 	line-height: 1.125rem;
 	font-family: 'Roboto';
@@ -213,6 +213,7 @@ b, strong {
 }
 
 .smallnote {
+	@include font-size(0.8125rem);
 	font-size: 0.8125rem;
 	font-weight: 300;
 	line-height: 1rem;
@@ -364,14 +365,14 @@ blockquote {
 
 .research-row {
 	.research-head {
-		font-size: 2rem;
+		@include font-size(2rem);
 		font-weight: 500;
 		line-height: 2.25rem;
 		font-family: 'Roboto';
 	}
 
 	.research-note {
-		font-size: 0.9375rem;
+		@include font-size(0.9375rem);
 		font-weight: 300;
 		line-height: 1.3rem;
 		font-family: 'Roboto';
