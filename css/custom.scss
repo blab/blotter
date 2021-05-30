@@ -423,13 +423,19 @@ blockquote {
 	color: #FFFAFF;
 
 	a {
-		color: #FFFAFF;
+		background: #FFFAFF;
+		color: #333;
 	}
 }
 
 // white background on even list item
 .list-group-item:nth-child(odd) {
-	background: #FFFAFF
+	background: #FFFAFF;
+
+	a {
+		background: #FFFAFF;
+		color: #333;
+	}
 }
 
 /* Infinite scroll */

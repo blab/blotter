@@ -80,43 +80,43 @@
 
     <div class="links">
         {% if entry.arxiv %}
-            <button href="https://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">arXiv</button>
+            <a href="https://arxiv.org/abs/{{ entry.arxiv }}" target="_blank" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">arXiv</a>
         {% endif %}
         {% if entry.doi %}
-            <button href="https://doi.org/{{ entry.doi }}" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">doi</button>
+            <a href="https://doi.org/{{ entry.doi }}" target="_blank" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">doi</a>
         {% endif %}
         {% if entry.url %}
-            <button href="{{ entry.url }}" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">URL</button>
+            <a href="{{ entry.url }}" target="_blank" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">URL</a>
         {% endif %}
         {% if entry.pdf %}
             {% if entry.pdf contains '://' %}
-                <button href="{{ entry.pdf }}" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">PDF</button>
+                <a href="{{ entry.pdf }}" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">PDF</a>
             {% else %}
-                <button href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">PDF</button>
+                <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">PDF</a>
             {% endif %}
         {% endif %}
         {% if entry.blog %}
-            <button href="{{ entry.blog }}" class="btn btn-sm button z-depth-0" role="button" target="_blank">Blog</button>
+            <a href="{{ entry.blog }}" class="btn btn-sm button z-depth-0" role="button" target="_blank">Blog</a>
         {% endif %}
         {% if entry.code %}
-            <button href="{{ entry.code }}" class="btn btn-sm button z-depth-0" role="button" target="_blank">Code</button>
+            <a href="{{ entry.code }}" class="btn btn-sm button z-depth-0" role="button" target="_blank">Code</>
         {% endif %}
         {% if entry.poster %}
             {% if entry.poster contains '://' %}
-                <button href="{{ entry.poster }}" class="btn btn-sm btn-info z-depth-0" role="button" target="_blank">Poster</button>
+                <a href="{{ entry.poster }}" class="btn btn-sm btn-info z-depth-0" role="button" target="_blank">Poster</a>
             {% else %}
-                <button href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm btn-info z-depth-0" role="button" target="_blank">Poster</button>
+                <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm btn-info z-depth-0" role="button" target="_blank">Poster</a>
             {% endif %}
         {% endif %}
         {% if entry.slides %}
             {% if entry.slides contains '://' %}
-                <button href="{{ entry.slides }}" class="btn btn-sm button z-depth-0" role="button" target="_blank">Slides</button>
+                <a href="{{ entry.slides }}" class="btn btn-sm button z-depth-0" role="button" target="_blank">Slides</a>
             {% else %}
-                <button href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm button z-depth-0" role="button" target="_blank">Slides</button>
+                <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm button z-depth-0" role="button" target="_blank">Slides</a>
             {% endif %}
         {% endif %}
         {% if entry.website %}
-            <button href="{{ entry.website }}" class="btn btn-sm button z-depth-0" role="button" target="_blank">Website</button>
+            <a href="{{ entry.website }}" class="btn btn-sm button z-depth-0" role="button" target="_blank">Website</a>
         {% endif %}
     </div>
 </div>
