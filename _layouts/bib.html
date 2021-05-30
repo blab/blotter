@@ -61,14 +61,14 @@
     {% endif %}
 
     <div class="links">
-        {% if entry.arxivId %}
-            <a href="https://arxiv.org/abs/{{ entry.arxivId }}" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">arXiv</a>
-        {% endif %}
         {% if entry.doi %}
             <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">doi</a>
         {% endif %}
         {% if entry.url %}
             <a href="{{ entry.url }}" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">URL</a>
+        {% endif %}
+        {% if entry.arxivid %}
+            <a href="https://arxiv.org/abs/{{ entry.arxivid }}" class="btn btn-sm btn-light z-depth-0" role="button" target="_blank">arXiv</a>
         {% endif %}
         {% if entry.pdf %}
             {% if entry.pdf contains '://' %}
