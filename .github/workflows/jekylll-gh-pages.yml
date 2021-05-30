@@ -12,28 +12,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: checkout
-      uses: actions/checkout@v2
+      - name: checkout
+        uses: actions/checkout@v2
     
-    # Use GitHub Actions' cache to cache dependencies on servers
-    - name: cache
-      uses: actions/cache@v1
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
+      # Use GitHub Actions' cache to cache dependencies on servers
+      - name: cache
+        uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
     
-    # Use GitHub Deploy Action to build and deploy to Github
-    - name: deploy
-      uses: jeffreytse/jekyll-deploy-action@v0.2.1
-      with:
-        provider: 'github'
-        token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
-        repository: ''             # Default is current repository
-        branch: 'gh-pages'         # Default is gh-pages for github provider
-        jekyll_src: './'           # Default is root directory
-        jekyll_cfg: '_config.yml'  # Default is _config.yml
-        cname: 'euler.yonsei.ac.kr'                  # Default is to not use a cname
-        actor: ''                  # Default is the GITHUB_ACTOR
+      # Use GitHub Deploy Action to build and deploy to Github
+      - name: deploy
+        uses: jeffreytse/jekyll-deploy-action@v0.2.1
+        with:
+          provider: 'github'
+          token: ${{ secrets.GH_TOKEN }} # It's your Personal Access Token(PAT)
+          repository: ''             # Default is current repository
+          branch: 'gh-pages'         # Default is gh-pages for github provider
+          jekyll_src: './'           # Default is root directory
+          jekyll_cfg: '_config.yml'  # Default is _config.yml
+          bundler_ver: '>=0'         # Default is latest bundler version
+          cname: 'euler.yonsei.ac.kr'                  # Default is to not use a cname
+          actor: ''                  # Default is the GITHUB_ACTOR
     
