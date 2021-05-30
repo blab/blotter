@@ -151,13 +151,13 @@ b, strong {
 .slide-down {
 	-webkit-transform: translateY(-64px);
 			transform: translateY(-64px);
-	transition: top .7s ease-out;
+	transition: all .5s ease-in-out;
 }
 
 .slide-up {
 	-webkit-transform: translateY(0);
 			transform: translateY(0);
-	transition: top .7s ease-out;
+	transition: all .5s ease-in-out;
 }
 
 /* headings */
