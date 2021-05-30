@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Yongnam Park
-position: Hyundai heavy industries
+position: Hyundai Heavy Industries, Researcher
 alumni: true
 ---
 

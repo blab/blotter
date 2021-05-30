@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Jinkook Yeon
-position: 
+position: Korea I.T.S. Co., Ltd.
 alumni: true
 ---

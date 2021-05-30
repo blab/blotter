@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Hyunwook Park
-position: Hankook Tire, Researcher
+position: Hankook Tire & Technology Co., Ltd, Researcher
 alumni: true
 ---

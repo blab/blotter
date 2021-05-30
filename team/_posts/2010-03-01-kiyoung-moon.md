@@ -1,6 +1,6 @@
 ---
 layout: member
-title: Kiyong Moon
+title: Kiyoung Moon
 position: Boolt Simulation
 alumni: true
 ---
