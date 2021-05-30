@@ -417,6 +417,7 @@ blockquote {
 
 /* journal */
 
+// black background on even list item
 .list-group-item:nth-child(even) {
 	background: #333;
 	color: #FFFAFF;
@@ -426,6 +427,7 @@ blockquote {
 	}
 }
 
+// white background on even list item
 .list-group-item:nth-child(odd) {
 	background: #FFFAFF
 }
