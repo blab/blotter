@@ -415,6 +415,21 @@ blockquote {
     display: inline
 }
 
+/* journal */
+
+.list-group-item:nth-child(even) {
+	background: #333;
+	color: #FFFAFF;
+
+	a {
+		color: #FFFAFF;
+	}
+}
+
+.list-group-item:nth-child(odd) {
+	background: #FFFAFF
+}
+
 /* Infinite scroll */
 
 .infinite-spinner {

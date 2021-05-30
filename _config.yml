@@ -50,16 +50,18 @@ exclude:
 # -----------------------------------------------------------------------------
 
 scholar:
-
-  last_name: Einstein
-  first_name: [Albert, A.]
-
-  style: apa
+  style: modern-language-association
   locale: en
 
+  bibliography_list_tag: 'ul class="list-group"'
+  bibliography_item_tag: 'li class="list-group-item"'
+
   source: /_bibliography/
-  bibliography: Changhoon Lee.bib
+  bibliography: clee.bib
   bibliography_template: bib
+
+  sort_by: year, title
+  order: descending
 
   replace_strings: true
   join_strings: true
