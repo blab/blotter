@@ -422,12 +422,13 @@ blockquote {
 
 // black background on even list item
 .list-group-item:nth-child(even) {
-	background: #333;
-	color: #FFFAFF;
+	background: #33333330;
+	color: #333;
 
 	a {
-		background: #333;
-		color: #FFFAFF;
+		background: #FFFAFF;
+		color: #333;
+		border-color: #333;
 	}
 }
 
