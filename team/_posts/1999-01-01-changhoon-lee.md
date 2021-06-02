@@ -38,9 +38,3 @@ is_url: true
 * 2005 Best Scientific Paper Award, The Korean Federation of Science and Technology Societies
 * 1988 National Fellowship for Study Abroad, Ministry of Education, Korea
 * 1985 Graduated with Magna cum Laude, Seoul National University
-
-## Professional Membership
-* 1991 – Pres. Member, The American Physical Society
-* 1997 – Pres. Member, The Korean Society of Mechanical Engineers
-* 2004 – Pres. Member, The Korean Society of Atmospheric Environment
-* 2003 – Pres. Member, The Korean Society of Engineering Education
