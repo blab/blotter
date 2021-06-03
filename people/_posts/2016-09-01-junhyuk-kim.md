@@ -2,5 +2,5 @@
 layout: member
 title: Junhyuk Kim
 position: PhD student
-image: /images/team/junhyuk-kim.jpg
+image: /images/people/junhyuk-kim.jpg
 ---

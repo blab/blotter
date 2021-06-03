@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Turbulence LAB / team
+title: Turbulence LAB / people
 categories:
- - team
+ - people
 ---
 
 <div class="row">
@@ -15,7 +15,7 @@ categories:
 
 <div class="bigspacer"></div>
 
-{% for member in site.categories.team reversed %}
+{% for member in site.categories.people reversed %}
 	{% if member.alumni != true %}
     {% cycle 'add rows': '<div class="row g-3">', '', '' %}
 		<div class="col-lg-4 memberbox">
@@ -59,7 +59,7 @@ categories:
 
 <div class="bigspacer"></div>
 
-{% for member in site.categories.team %}
+{% for member in site.categories.people %}
 	{% if member.alumni == true %}
     {% cycle 'add rows 2': '<div class="row">', '', '' %}
 		<div class="col-lg-4 memberbox">
