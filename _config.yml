@@ -40,7 +40,6 @@ exclude:
   - "*.tsv"
   - "*.txt"
   - "*.xml"
-  - "*.zip"
   - "Gemfile"
   - "Gemfile.lock"
   - "vendor"
