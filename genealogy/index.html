@@ -10,31 +10,30 @@ categories:
     <div class="col">
       <div class="mermaid">
         graph TD
-          %%{config: { 'fontFamily': 'Roboto' }%%
-          A(Abraham Gotthelf Kästner<br>1719 - 1800<br>Ph.D., Leipzig, 1739) --> B(Johann Friedrich Pfaff<br>1765 - 1825<br>Dr. phil., Göttingen, 1786)
-          B --> C(Carl Friedrich Gauss<br>1777 - 1855<br>Ph. D., Helmstedt, 1799)
-          C --> D(Christian Ludwig Gerling<br>1788 - 1864<br>Ph. D., Göttingen, 1812)
-          D --> E(Julius Plücker<br>1801 - 1868<br>Ph. D., Marburg, 1823)
+          A(<b>Abraham Gotthelf Kästner</b><br><i>1719 - 1800</i><br>Ph.D., Leipzig, <i>1739</i>) --> B(<b>Johann Friedrich Pfaff</b><br><i>1765 - 1825</i><br>Dr. phil., Göttingen, <i>1786</i>)
+          B --> C(<b>Carl Friedrich Gauss</b><br><i>1777 - 1855</i><br>Ph. D., Helmstedt, <i>1799</i>)
+          C --> D(<b>Christian Ludwig Gerling</b><br><i>1788 - 1864</i><br>Ph. D., Göttingen, <i>1812</i>)
+          D --> E(<b>Julius Plücker</b><br><i>1801 - 1868</i><br>Ph. D., Marburg, <i>1823</i>)
 
-          F(Johann Bernoulli<br>1667 - 1748<br>) --> G(Leonhard Euler<br>1707 - 1783)
-          G --> H(Joseph-Louis Lagrange<br>1726 - 1813)
-          H --> I(Siméon Denis Poisson<br>1781 - 1840)
-          H --> J(Joseph Fourier<br>1768 - 1830)
-          I & J --> K(Peter Gustav Lejeune Dirichlet<br>1805 - 1859<br>hon. degree only)
+          F(<b>Johann Bernoulli</b><br><i>1667 - 1748</i><br>) --> G(<b>Leonhard Euler</b><br><i>1707 - 1783</i>)
+          G --> H(<b>Joseph-Louis Lagrange</b><br><i>1726 - 1813</i>)
+          H --> I(<b>Siméon Denis Poisson</b><br><i>1781 - 1840</i>)
+          H --> J(<b>Joseph Fourier</b><br><i>1768 - 1830</i>)
+          I & J --> K(<b>Peter Gustav Lejeune Dirichlet</b><br><i>1805 - 1859</i><br>hon. degree only)
 
-          L(Karl Christian von Langsdorf<br>1757 - 1834) --> M(Georg Simon Ohm<br>1789 - 1854<br>Dr. phil. Nürnberg, 1811)
-          K & M --> N(Rudolf O. S. Lipschitz<br>1832 - 1903<br>Dr. phil., Berlin, 1853)
+          L(<b>Karl Christian von Langsdorf</b><br><i>1757 - 1834</i>) --> M(<b>Georg Simon Ohm</b><br><i>1789 - 1854</i><br>Dr. phil. Nürnberg, <i>1811</i>)
+          K & M --> N(<b>Rudolf O. S. Lipschitz</b><br><i>1832 - 1903</i><br>Dr. phil., Berlin, <i>1853</i>)
 
-          E & N --> O(C. Felix Klein<br>1849 - 1925<br>Ph.D., Bonn, 1868)
-          O --> P(C. L. Ferdinand von Lindemann<br>1852 - 1939<br>Ph.D. Nürnberg, 1873)
-          P --> Q(Arnold Sommerfeld<br>1868 - 1951<br>Ph.D. Königsberg, 1891)
-          Q --> R(Karl Herzfeld<br>1892 - 1978<br>Ph.D. Munich, 1914)
-          R --> S(John A. Wheeler<br>1911 - 2008<br>Ph.D. Johns Hopkins, 1933)
-          S --> T(Kip Thorne<br>1940 - <br>Ph.D. Princeton, 1965)
-          T --> U(William H. Press<br>1948 - <br>Ph.D., Caltech, 1972)
-          U --> V(Philip S. Marcus<br>1951 - <br>Ph.D., Princeton, 1978)
+          E & N --> O(<b>C. Felix Klein</b><br><i>1849 - 1925</i><br>Ph.D., Bonn, <i>1868</i>)
+          O --> P(<b>C. L. Ferdinand von Lindemann</b><br><i>1852 - 1939</i><br>Ph.D. Nürnberg, <i>1873</i>)
+          P --> Q(<b>Arnold Sommerfeld</b><br><i>1868 - 1951</i><br>Ph.D. Königsberg, <i>1891</i>)
+          Q --> R(<b>Karl Herzfeld</b><br><i>1892 - 1978</i><br>Ph.D. Munich, <i>1914</i>)
+          R --> S(<b>John A. Wheeler</b><br><i>1911 - 2008</i><br>Ph.D. Johns Hopkins, <i>1933</i>)
+          S --> T(<b>Kip Thorne</b><br><i>1940 - </i><br>Ph.D. Princeton, <i>1965</i>)
+          T --> U(<b>William H. Press</b><br><i>1948 - </i><br>Ph.D., Caltech, <i>1972</i>)
+          U --> V(<b>Philip S. Marcus</b><br><i>1951 - </i><br>Ph.D., Princeton, <i>1978</i>)
 
-          V & W(John Kim<br>1947 - <br>Ph.D., Stanford, 1978) --> X(Changhoon Lee<br>1962 - <br>Ph.D., UC Berkeley, 1993)
+          V & W(<b>John Kim</b><br><i>1947 - </i><br>Ph.D., Stanford, <i>1978</i>) --> X(<b>Changhoon Lee</b><br><i>1962 - </i><br>Ph.D., UC Berkeley, <i>1993</i>)
 
           click A "https://en.wikipedia.org/wiki/Abraham_Gotthelf_K%C3%A4stner" _blank
           click B "https://en.wikipedia.org/wiki/Johann_Friedrich_Pfaff" _blank
@@ -71,8 +70,9 @@ categories:
     startOnLoad: true,
     theme: 'neutral',
     themeCSS: ".node rect { fill: white; }",
-    flowchartConfig: {
+    flowchart: {
       useMaxWidth: true,
+      htmlLabels: true
     },
     securityLevel:'loose',
   });
