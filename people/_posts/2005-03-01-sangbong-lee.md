@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Sangbong Lee
-position: National Renewable Energy Lab., Researcher
+position: KAIST, Assistant Professor
 alumni: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Changhoon Lee
-position: Principal investigator
+position: Professor
 scholar: jpvOz2sAAAAJ&hl
 email: clee$yonsei.ac.kr
 orcid: 0000-0002-9813-8117
