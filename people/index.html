@@ -23,7 +23,7 @@ categories:
 				{% if member.is_url %}
 					<div class="flex-shrink-0">
 						<a href="{{ member.url }}">
-							<img width=160 src="{{ member.image }}">
+							<img width=160 src="{{ member.image }}" loading="lazy">
 						</a>
 					</div>
 					<div class="flex-grow-1 ms-3">
@@ -32,7 +32,7 @@ categories:
 					</div>
 				{% else %}
 					<div class="flex-shrink-0">
-						<img width=160 src="{{ member.image }}">
+						<img width=160 src="{{ member.image }}" loading="lazy">
 					</div>
 					<div class="flex-grow-1 ms-3">
 						<div class="head mb-1">{{ member.title }}</div>
