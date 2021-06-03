@@ -7,7 +7,7 @@ email: clee$yonsei.ac.kr
 orcid: 0000-0002-9813-8117
 image: /images/people/changhoon-lee.jpg
 cv: /pdfs/people/changhoonlee-cv.pdf
-phone: +82$2$2123$613#1
+phone: +82$2$2123$6131
 is_url: true
 ---
 
