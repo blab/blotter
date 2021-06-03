@@ -1,6 +1,6 @@
 ---
 layout: member
-title: Byung-Gu Kim
+title: Byung-gu Kim
 position: LG Electronics, Researcher
 alumni: true
 ---
