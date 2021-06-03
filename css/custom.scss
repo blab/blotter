@@ -481,6 +481,10 @@ div.mermaid {
 	text-align: center;
 }
 
-div.mermaid > SVG {
+div.mermaid svg {
 	height: 100%;
+}
+
+div.mermaid .label {
+	font-family: 'Roboto' !important;
 }
