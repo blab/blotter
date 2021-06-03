@@ -6,70 +6,68 @@ categories:
 ---
 
 <div class="container">
-    <div class="row">
-        <div class="accordion accordion-flush" id="accordionPublication">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading-1">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                    International Journal
-                </button>
-              </h2>
-              <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionPublication">
-                <div class="accordion-body">
-                    {% bibliography --file clee-journal-int.bib %}
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading-2">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                    Domestic Journal (in Korean)
-                </button>
-              </h2>
-              <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionPublication">
-                <div class="accordion-body">
-                    {% bibliography --file clee-journal-domestic %}
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading-3">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                    APS DFD Annual Meeting Abstracts
-                </button>
-              </h2>
-              <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionPublication">
-                <div class="accordion-body">
-                    {% bibliography --file clee-conf-aps.bib %}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading-4">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                    Invited Talks
-              </button>
-            </h2>
-            <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionPublication">
-              <div class="accordion-body">
-                    {% bibliography --file clee-talks.bib %}
-              </div>
-            </div>
+  <div class="row">
+    <div class="accordion accordion-flush" id="accordionPublication">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+              International Journal
+          </button>
+        </h2>
+        <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionPublication">
+          <div class="accordion-body">
+              {% bibliography --file clee-journal-int.bib %}
           </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="heading-5">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
-                    International Conference (other than APS)
-              </button>
-            </h2>
-            <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#accordionPublication">
-              <div class="accordion-body">
-                    {% bibliography --file clee-conf-int %}
-              </div>
-            </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Domestic Journal (in Korean)
+          </button>
+        </h2>
+        <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionPublication">
+          <div class="accordion-body">
+              {% bibliography --file clee-journal-domestic %}
           </div>
         </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+              APS DFD Annual Meeting Abstracts
+          </button>
+        </h2>
+        <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionPublication">
+          <div class="accordion-body">
+              {% bibliography --file clee-conf-aps.bib %}
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                Invited Talks
+          </button>
+        </h2>
+        <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionPublication">
+          <div class="accordion-body">
+                {% bibliography --file clee-talks.bib %}
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                International Conference (other than APS)
+          </button>
+        </h2>
+        <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#accordionPublication">
+          <div class="accordion-body">
+                {% bibliography --file clee-conf-int %}
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
