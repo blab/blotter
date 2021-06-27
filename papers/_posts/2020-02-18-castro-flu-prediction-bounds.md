@@ -3,7 +3,7 @@ layout: paper
 title: Early prediction of antigenic transitions for influenza A/H3N2
 image: /images/papers/castro-flu-prediction-bounds.png
 authors: Castro LA, Bedford T, Meyers LA.
-year: 2019
+year: 2020
 ref: Castro et al. 2020. PLoS Comput Biol.
 journal: "PLoS Comput Biol 16: e1007683."
 pdf: /pdfs/papers/castro-flu-prediction-bounds.pdf

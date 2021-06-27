@@ -3,7 +3,7 @@ layout: paper
 title: Limited predictability of amino acid substitutions in seasonal influenza viruses
 image: /images/papers/barrat-charlaix-flu-trajectories.png
 authors: Barrat-Charlaix P, Huddleston J, Bedford T, Neher RA.
-year: 2020
+year: 2021
 ref: Barrat-Charlaix et al. 2021. Mol Biol Evol.
 journal: "Mol Biol Evol: msab065."
 pdf: /pdfs/papers/barrat-charlaix-flu-trajectories.pdf

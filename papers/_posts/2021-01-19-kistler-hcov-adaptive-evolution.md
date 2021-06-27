@@ -3,7 +3,7 @@ layout: paper
 title: Evidence for adaptive evolution in the receptor-binding domain of seasonal coronaviruses OC43 and 229E
 image: /images/papers/kistler-hcov-adaptive-evolution.png
 authors: Kistler KE, Bedford T.
-year: 2020
+year: 2021
 ref: Kistler and Bedford. 2021. eLife.
 journal: "eLife 10: e64509."
 pdf: /pdfs/papers/kistler-hcov-adaptive-evolution.pdf
