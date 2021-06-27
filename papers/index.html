@@ -6,20 +6,55 @@ categories:
 ---
 
 {% for paper in site.categories.papers %}
-    {% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-lg-4 paperbox">
-			<div class="media">
- 			 	<div class="media-body">
-    			<div class="smallhead mb-1"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
-    			<p class="note">{{ paper.ref }}</p>
-  			</div>
-        <a href="{{ paper.url }}">
-          <img class="ml-3" width=100 class="media-object" src="{{ paper.image }}">
-        </a>
-			</div>
-			<div class="bigspacer"></div>
-			<div class="spacer"></div>
-        </div>
-    {% cycle 'close rows': '', '', '</div>' %}
+{% capture prev_year %}{{ this_year }}{% endcapture %}
+{% capture this_year %}{{ paper.year }}{% endcapture %}
+
+
+{% if forloop.first %}
+    {% assign counter = 0 %}
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{ this_year }}</h1>
+<hr style="height:2px;border:none;color:#808088;background-color:#808088;" />    </div>
+  </div>
+  <div class="row">
+  {% elsif this_year != prev_year and this_year > "2012" %}
+    {% assign counter = 0 %}
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {% if this_year != "2013" %}
+      <h1>{{ this_year }}</h1>
+      {% else %}
+      <h1>2013 and earlier</h1>
+      {% endif %}
+      <hr style="height:2px;border:none;color:#808088;background-color:#808088;" />
+
+    </div>
+  </div>
+  <div class="row">
+  {% else %}
+    {% assign counter = counter | plus: 1 %}
+    {% assign mod = counter | modulo: 3 %}
+    {% if mod == 0 %}
+
+  </div>
+  <div class="row">
+
+    {% endif %}
+  {% endif %}
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
+        <p class="note">{{ paper.ref }}</p>
+      </div>
+      <a href="{{ paper.url }}">
+        <img class="ml-3" width=100 class="media-object" src="{{ paper.image }}">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
 {% endfor %}
-{% cycle 'close rows': '', '</div>', '</div>' %}
+  </div>
