@@ -11,6 +11,7 @@ sass:
 # Plug-ins
 plugins:
   - jekyll/scholar
+  - jekyll-gzip
 
 exclude:
   - "*.branches"
