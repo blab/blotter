@@ -5,7 +5,7 @@ image: /images/papers/dale-igh-gene-conversion.png
 authors: Dale GA, Wilkins DJ, Bohannon CD, Dilernia D, Hunter E, Bedford T, Antia R, Sanz I, Jacob J.
 year: 2019
 ref: Dale et al. 2019. J Immunol.
-journal: "J Immunol: ji1801615."
+journal: "J Immunol 203: 1252-1264."
 pdf: /pdfs/papers/dale-igh-gene-conversion.pdf
 supplement: /pdfs/papers/dale-igh-gene-conversion-supp.pdf
 doi: 10.4049/jimmunol.1801615
