@@ -75,6 +75,14 @@
 						<a class="nav-link mx-1" href="/publications/">publications</a>
 						</li>
 
+						{% if page.categories.first == 'teaching' %}
+						<li class="nav-link active">
+						{% else %}
+						<li class="nav-link">
+						{% endif %}
+						<a class="nav-link mx-1" href="/teaching/">teaching</a>
+						</li>
+
 						{% if page.categories.first == 'genealogy' %}
 						<li class="nav-link active">
 						{% else %}
