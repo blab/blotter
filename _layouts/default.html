@@ -49,54 +49,67 @@
 				</button>
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
-						<li class="nav-link">
-						<a class="nav-link mx-1" href="/">home</a></li>
+						<li class="nav-item">
+							<a class="nav-link mx-1" href="/">home</a>
+						</li>
 
+						<li class="nav-item">
 						{% if page.categories.first == 'people' %}
-						<li class="nav-link active">
+							<a class="nav-link mx-1 active" href="/people/">people</a>
 						{% else %}
-						<li class="nav-link">
+							<a class="nav-link mx-1" href="/people/">people</a>
 						{% endif %}
-						<a class="nav-link mx-1" href="/people/">people</a></li>
+						</li>
 
+						<li class="nav-item">
 						{% if page.categories.first == 'research' %}
-						<li class="nav-link active">
+							<a class="nav-link mx-1 active" href="/research/">research</a>
 						{% else %}
-						<li class="nav-link">
+							<a class="nav-link mx-1" href="/research/">research</a>
 						{% endif %}
-						<a class="nav-link mx-1" href="/research/">research</a>
 						</li>
 
+						<li class="nav-item">
 						{% if page.categories.first == 'publications' %}
-						<li class="nav-link active">
+							<a class="nav-link mx-1 active" href="/publications/">publications</a>
 						{% else %}
-						<li class="nav-link">
+							<a class="nav-link mx-1" href="/publications/">publications</a>
 						{% endif %}
-						<a class="nav-link mx-1" href="/publications/">publications</a>
 						</li>
 
+						<li class="nav-item">
 						{% if page.categories.first == 'teaching' %}
-						<li class="nav-link active">
+							<a class="nav-link mx-1 active" href="/teaching/">teaching</a>
 						{% else %}
-						<li class="nav-link">
+							<a class="nav-link mx-1" href="/teaching/">teaching</a>
 						{% endif %}
-						<a class="nav-link mx-1" href="/teaching/">teaching</a>
 						</li>
 
-						{% if page.categories.first == 'genealogy' %}
-						<li class="nav-link active">
+						<li class="nav-item dropdown">
+						{% if page.categories.first == 'funs' %}
+							<a class="nav-link dropdown-toggle mx-1 active" href="#"
+								id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								funs
+							</a>
 						{% else %}
-						<li class="nav-link">
+							<a class="nav-link dropdown-toggle mx-1" href="#"
+								id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								funs
+							</a>
 						{% endif %}
-						<a class="nav-link mx-1" href="/genealogy/">academic genealogy</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li>
+									<a class="dropdown-item" href="/genealogy/">
+										academic genealogy</a></li>
+							</ul>
 						</li>
 
+						<li class="nav-item">
 						{% if page.categories.first == 'joinus' %}
-						<li class="nav-link active">
+							<a class="nav-link mx-1 active" href="/joinus/">join us</a>
 						{% else %}
-						<li class="nav-link">
+							<a class="nav-link mx-1" href="/joinus/">join us</a>
 						{% endif %}
-						<a class="nav-link mx-1" href="/joinus/">join us</a>
 						</li>
 					</ul>
 				</div>

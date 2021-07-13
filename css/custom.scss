@@ -133,14 +133,49 @@ b, strong {
 	text-decoration: none;
 }
 
+.navbar-nav .nav-item {
+	padding: 0.5rem 0.5rem;
+}
+
 .navbar-nav a {
-  	color: $gray;
+  	color: $gray-light;
 }
 
 .navbar-nav a:hover {
 	color: $primary;
 	font-weight: 500;
 	text-decoration: none;
+}
+
+.navbar-nav .dropdown-item a {
+	padding: 0.5rem 0.5rem;
+}
+
+.navbar-nav .dropdown-menu {
+	border: none;
+	color: $primary;
+}
+
+.navbar-nav .dropdown-item {
+	font-size: 1.25rem;
+	font-family: 'Roboto';
+	font-weight: 300;
+}
+
+.navbar-nav .dropdown-item:hover {
+	font-size: 1.25rem;
+	font-weight: 500;
+	text-decoration: none;
+	background-color: #fff;
+	color: $gray;
+}
+
+.navbar-nav .dropdown-item:active {
+	font-size: 1.25rem;
+	font-weight: 500;
+	text-decoration: none;
+	background-color: #fff;
+	color: $gray;
 }
 
 .navbar-toggler {
