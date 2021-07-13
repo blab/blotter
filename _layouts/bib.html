@@ -1,6 +1,6 @@
 ---
 ---
-
+<!--
 <div class="col-sm-2 abbr">
     {% if entry.abbr %}
     {% if site.data.venues[entry.abbr] %}
@@ -9,56 +9,57 @@
         <abbr class="badge">{{entry.abbr}}</abbr>
     {% endif %}
     {% endif %}
-</div>
-
-<div id="{{entry.key}}" class="col-sm-8">
-    {% if entry.type == "thesis" %}
-        {{reference}}
-    {% else %}
-        <div class="journal-title fw-bolder">{{entry.title}}</div>
-        <div class="author fw-light">
-            {% for author in entry.author_array %}
-                {% assign author_is_self = false %}
-                {% if author.last == site.scholar.last_name%}
-                    {% if site.scholar.first_name contains author.first%}
-                        {% assign author_is_self = true %}
-                    {% endif %}
-                {% endif %}
-                {% assign coauthor_url = nil %}
-                {% if site.data.coauthors[author.last] %}
-                    {% for coauthor in site.data.coauthors[author.last] %}
-                        {% if coauthor.firstname contains author.first %}
-                            {% assign coauthor_url = coauthor.url %}
-                            {% break %}
+</div> -->
+<div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+    <div id="{{entry.key}}">
+        {% if entry.type == "thesis" %}
+            {{reference}}
+        {% else %}
+            <div class="journal-title fw-bolder">{{entry.title}}</div>
+            <div class="author fw-light">
+                {% for author in entry.author_array %}
+                    {% assign author_is_self = false %}
+                    {% if author.last == site.scholar.last_name%}
+                        {% if site.scholar.first_name contains author.first%}
+                            {% assign author_is_self = true %}
                         {% endif %}
-                    {% endfor %}
-                {% endif %}
-
-                {% if forloop.length == 1 %}
-                    {{author.first}} {{author.last}}
-                {% else %}
-                    {% if forloop.rindex == 1 %}
-                        {{author.first}} {{author.last}}
-                    {% elsif forloop.rindex == 2 %}
-                        {{author.first}} {{author.last}} and
-                    {% else %}
-                        {{author.first}} {{author.last}},
                     {% endif %}
-                {% endif %}
-            {% endfor %}
-        </div>
+                    {% assign coauthor_url = nil %}
+                    {% if site.data.coauthors[author.last] %}
+                        {% for coauthor in site.data.coauthors[author.last] %}
+                            {% if coauthor.firstname contains author.first %}
+                                {% assign coauthor_url = coauthor.url %}
+                                {% break %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
 
-        <div class="periodical">
-            {% if entry.type == "article" %}
-                <em> {{ entry.journal }} </em>
-            {% elsif entry.type == "inproceedings" %}
-                <em> In {{entry.booktitle}} </em>
-            {% endif %}
-            {% if entry.year %}
-                {{entry.year}}
-            {% endif %}
-        </div>
-    {% endif %}
+                    {% if forloop.length == 1 %}
+                        {{author.first}} {{author.last}}
+                    {% else %}
+                        {% if forloop.rindex == 1 %}
+                            {{author.first}} {{author.last}}
+                        {% elsif forloop.rindex == 2 %}
+                            {{author.first}} {{author.last}} and
+                        {% else %}
+                            {{author.first}} {{author.last}},
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+            <div class="periodical">
+                {% if entry.type == "article" %}
+                    <em> {{ entry.journal }} </em>
+                {% elsif entry.type == "inproceedings" %}
+                    <em> In {{entry.booktitle}} </em>
+                {% endif %}
+                {% if entry.year %}
+                    {{entry.year}}
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
 
     <div class="links">
         <!-- {% if entry.doi %}
