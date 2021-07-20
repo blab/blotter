@@ -397,7 +397,14 @@ blockquote {
 	min-height: 0;
 }
 
+.border-grey {
+	border-color: #9e9e9e !important;
+}
+
 .research-row {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
 	.research-head {
 		@include font-size(2rem);
 		font-weight: 500;
