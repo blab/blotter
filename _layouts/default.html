@@ -180,5 +180,47 @@
 			last_scroll_top = scroll_top;
 		});
 	</script>
+<!--
+	<script type="text/x-mathjax-config">
+		window.MathJax = {
+			loader: {load: ['[tex]/color']},
+			tex: {
+				packages: ['base',],        // extensions to use
+				processEscapes: true,      // use \$ to produce a literal dollar sign
+				processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
+				processRefs: true,         // process \ref{...} outside of math mode
+				digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
+									// pattern for recognizing numbers
+				tags: 'ams',              // or 'ams' or 'all'
+				tagSide: 'right',          // side for \tag macros
+				tagIndent: '0.8em',        // amount to indent tags
+				useLabelIds: true,         // use label name rather than tag for ids
+				maxMacros: 1000,           // maximum number of macro substitutions per expression
+				maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
+				baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
+				(document.getElementsByTagName('base').length === 0) ?
+					'' : String(document.location).replace(/#.*$/, '')),
+				formatError:               // function called when TeX syntax errors occur
+					(jax, err) => jax.formatError(err)
+			},
+			options: {
+				skipHtmlTags: [            //  HTML tags that won't be searched for math
+					'script', 'noscript', 'style', 'textarea', 'pre',
+					'code', 'annotation', 'annotation-xml'
+				],
+				includeHtmlTags: {         //  HTML tags that can appear within math
+					br: '\n', wbr: '', '#comment': ''
+				},
+				ignoreHtmlClass: 'tex2jax_ignore',    //  class that marks tags not to search
+				processHtmlClass: 'tex2jax_process',  //  class that marks tags that should be searched
+				compileError: function (doc, math, err) {doc.compileError(math, err)},
+				typesetError: function (doc, math, err) {doc.typesetError(math, err)},
+				renderActions: {...}
+			}
+		}
+	</script>
+	<script type="text/javascript" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js">
+	</script> -->
 </body>
 </html>
