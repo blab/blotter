@@ -5,6 +5,7 @@ position: Postdoc
 handle: lmoncla
 twitter: LouiseHMoncla
 github: lmoncla
+scholar: _myzKrwAAAAJ
 image: /images/team/louise-moncla.jpg
 ---
 
