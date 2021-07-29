@@ -1,6 +1,6 @@
 ---
 layout: member
-title: Jungil Choi
+title: Jung-il Choi
 position: Yonsei University, Professor
 alumni: true
 ---
