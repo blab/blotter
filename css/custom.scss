@@ -443,6 +443,16 @@ blockquote {
 	height: 80px;
 }
 
+.yonsei-logo {
+	max-width: 30%;
+	max-height: 80px;
+}
+
+.bk21-logo {
+	max-width: 70%;
+	max-height: 80px;
+}
+
 .footernav {
 	@extend .note;
 	@extend .text-dark-gray;
