@@ -5,7 +5,7 @@ image: /images/papers/barrat-charlaix-flu-trajectories.png
 authors: Barrat-Charlaix P, Huddleston J, Bedford T, Neher RA.
 year: 2021
 ref: Barrat-Charlaix et al. 2021. Mol Biol Evol.
-journal: "Mol Biol Evol: msab065."
+journal: "Mol Biol Evol 38: 2767-2777."
 pdf: /pdfs/papers/barrat-charlaix-flu-trajectories.pdf
 supplement: /pdfs/papers/barrat-charlaix-flu-trajectories-supp.pdf
 doi: 10.1093/molbev/msab065
