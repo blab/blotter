@@ -4,10 +4,10 @@ title: "SwabExpress: An end-to-end protocol for extraction-free COVID-19 testing
 image: /images/papers/srivatsan-covid19-swabexpress.png
 authors: Srivatsan S, Heidl S, Pfau B, Martin BK, Han PD, Zhong W, van Raay K, McDermot E, Opsahl J, Gamboa L, Smith N, Truong M, Cho S, Barrow KA, Rich LM, Stone J, Wolf CR, McCulloch DJ, Kim AE, Brandstetter E, Sohlberg SL, Ilcisin M, Geyer RE, Chen W, Gehring J, Seattle Flu Study Investigators, Kosuri S, Bedford T, Rieder MJ, Nickerson DA, Chu HY, Konnick EQ, Debley JS, Shendure J, Lockwood CM, Starita LM.
 year: 2021
-ref: Srivatsan et al. 2021. bioRxiv.
-journal: "bioRxiv: 2020.04.22.056283."
+ref: Srivatsan et al. 2021. Clin Chem.
+journal: "Clin Chem: hvab132."
 pdf: /pdfs/papers/srivatsan-covid19-swabexpress.pdf
-doi: 10.1101/2020.04.22.056283
+doi: 10.1093/clinchem/hvab132
 ---
 
 # Abstract
