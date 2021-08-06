@@ -5,7 +5,7 @@ image: /images/papers/heimonen-household-flu-monitoring.png
 authors: Heimonen JT, McCulloch DJ, O'Hanlon J, Ashley Erin Kim, Emanuels A, Wilcox N, Brandstetter E, Stewart M, McCune D, Fry S, Parsons S, Hughes JP, Jackson ML, Uyeki TM, Boeckh M, Starita LM, Bedford T, Englund JA, Chu HY on behalf of the Seattle Flu Study Investigators.
 year: 2021
 ref: Heimonen et al. 2021. Influenza Other Respir Viruses.
-journal: "Influenza Other Respir Viruses: irv.12859."
+journal: "Influenza Other Respir Viruses 15: 469-477."
 pdf: /pdfs/papers/heimonen-household-flu-monitoring.pdf
 doi: 10.1111/irv.12859
 ---
