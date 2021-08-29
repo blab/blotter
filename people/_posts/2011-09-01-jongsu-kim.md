@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Jongsu Kim
-position:
+position: 
 alumni: true
 ---
