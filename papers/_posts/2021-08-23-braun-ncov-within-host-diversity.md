@@ -4,8 +4,8 @@ title: Acute SARS-CoV-2 infections harbor limited within-host diversity and tran
 image: /images/papers/braun-ncov-within-host-diversity.png
 authors: Braun K, Moreno G, Wagner C, Accola MA, Rehrauer WM, Baker D, Koelle K, O'Connor DH, Bedford T, Friedrich TC, Moncla LH.
 year: 2021
-ref: Braun et al. 2021. PloS Pathog.
-journal: "PloS Pathog 17: e1009849."
+ref: Braun et al. 2021. PLoS Pathog.
+journal: "PLoS Pathog 17: e1009849."
 pdf: /pdfs/papers/braun-ncov-within-host-diversity.pdf
 supplement: /pdfs/papers/braun-ncov-within-host-diversity-supp.pdf
 doi: 10.1371/journal.ppat.1009849
