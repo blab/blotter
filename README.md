@@ -5,7 +5,7 @@
 To build the website locally, clone the repo with:
 
 ```
-git clone https://github.com/blab/blotter.git
+git clone git@github.com:turbulencelab/turbulencelab.github.io.git
 ```
 
 Then install necessary Ruby dependencies by running `bundle install` from within the `blotter` directory.  After this, the site can be be built with:
@@ -18,11 +18,6 @@ bundle exec jekyll build
 
 To view the site, run `bundle exec jekyll serve` and point a browser to `http://localhost:4000/`.  More information on Jekyll can be found [here](http://jekyllrb.com/).
 
-To include projects, preprocessing scripts are necessary to clone project repos and update Jekyll metadata. This can be accomplished with:
-
-```
-ruby _scripts/update-and-preprocess.rb
-```
 
 Then `jekyll build` works as normal.
 
