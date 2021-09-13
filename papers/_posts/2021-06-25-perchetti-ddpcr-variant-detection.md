@@ -5,7 +5,7 @@ image: /images/papers/perchetti-ddpcr-variant-detection.png
 authors: Perchetti GA, Zhu H, Mills MG, Shrestha L, Wagner C, Mohamed Bakhash S, Lin M, Xie H, Meei-Li Huang, Mathias P, Bedford T, Jerome KR, Greninger AL, Roychoudhury P.
 year: 2021
 ref: Perchetti et al. 2021. J Med Virol.
-journal: "J Med Virol: jmv.27155."
+journal: "J Med Virol 93: 5931-5941."
 pdf: /pdfs/papers/perchetti-ddpcr-variant-detection.pdf
 doi: 10.1002/jmv.27155
 ---
