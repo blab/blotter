@@ -1,0 +1,685 @@
+---
+layout: talk_reveal4
+title: SARS-CoV-2 evolutionary dynamics
+venue: Fred Hutch
+event: VIDD Seminar
+author: Trevor Bedford
+widescreen: true
+---
+
+<!-- ~45 min worth of slides -->
+
+<!--
+Outline:
+
+- Nextstrain and real-time tracking of SARS-CoV-2 evolution
+- Emergence and spread of VOCs
+- Current circulation patterns
+- Katie's adaptive evolution work
+- Frequency dynamics / Marlin's work
+- Perspectives on genomic surveillance
+- Big picture (pessimistic) perspective for the future
+-->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<p class="title">
+	Trevor Bedford (@trvrb)
+	<br>
+	Associate Professor, Fred Hutchinson Cancer Research Center
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+	<br>&nbsp;<br>
+	Slides at: bedford.io/talks
+</section>
+
+<!-- Introduction and promotion review -->
+
+<section data-transition="fade" data-background="#555">
+	<h1 class="title">This talk</h1>
+</section>
+
+<section data-transition="slide-in none-out">
+	<h3 style="margin-top: -20px;">Non-COVID "lab-lead" papers since promotion on Jan 2018</h3>
+	<table style="font-size: 70%; line-height: 1.2em;">
+		<tbody>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/dudas-mers-structure.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Dudas et al. 2018. MERS-CoV spillover at the camel-human interface. eLife.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hadfield-nextstrain.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hadfield et al. 2018. Nextstrain: real-time tracking of pathogen evolution. Bioinformatics.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/lee-h3n2-dms.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Lee et al. 2018. Deep mutational scanning of hemagglutinin helps predict evolutionary fates of human H3N2 influenza variants. PNAS.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/bell-dengue-antigenic-dynamics.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Bell et al. 2019. Dengue genetic divergence generates within-serotype antigenic variation, but serotypes dominate evolutionary dynamics. eLife.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hadfield-wnv-nextstrain.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hadfield et al. 2019. Twenty years of West Nile virus spread and evolution in the Americas visualized by Nextstrain. PLoS Pathog.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/black-zika-in-colombia.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Black et al. 2019. Genomic epidemiology supports multiple introductions and cryptic transmission of Zika virus in Colombia. BMC Infect Dis.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/potter-h3n2-reassortment.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Potter et al. 2019. Evolution and rapid spread of a reassortant A(H3N2) virus that predominated the 2017-2018 influenza season. Virus Evol.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/dudas-genomic-horizon.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Dudas et al. 2019. The ability of single genes vs full genomes to resolve time and space in outbreak analysis. BMC Evol Biol.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/moncla-h5n1-cambodia.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Moncla et al. 2020. Quantifying within-host evolution of H5N1 influenza in humans and poultry in Cambodia. PLoS Pathog.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/black-genepi-whitepaper.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Black et al. 2020. Ten recommendations for supporting open pathogen genomic analysis in public health. Nat Med.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hilton-dms-view.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hilton et al. 2020. dms-view: Interactive visualization tool for deep mutational scanning data. JOSS.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/huddleston-flu-forecasting.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Huddleston et al. 2020. Integrating genotypes and phenotypes improves long-term forecasts of seasonal influenza A/H3N2 evolution. eLife.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/kistler-hcov-adaptive-evolution.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Kistler and Bedford. 2021. Evidence for adaptive evolution in the receptor-binding domain of seasonal coronaviruses OC43 and 229E. eLife.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/mbala-kingebeni-ebola-relapse.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Mbala-Kingebeni et al. 2021. Ebola virus transmission initiated by systemic Ebola virus disease relapse. NEJM.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/kinganda-lusamaki-ebola-drc.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Kinganda-Lusamaki et al. 2021. Integration of genomic sequencing into the response to the Ebola virus outbreak in Nord Kivu, DRC. Nat Med.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/moncla-mumps-wa.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Moncla et al. 2021. Repeated introductions and intensive community transmission fueled a mumps virus outbreak in Washington State. eLife.</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<section data-transition="none-in slide-out">
+	<h3 style="margin-top: -20px;">Non-COVID "lab-lead" papers since promotion on Jan 2018</h3>
+	<table style="font-size: 70%; line-height: 1.2em;">
+		<tbody>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/dudas-mers-structure.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Dudas et al. 2018. <b>MERS-CoV</b> spillover at the camel-human interface. eLife.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hadfield-nextstrain.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hadfield et al. 2018. Nextstrain: real-time tracking of pathogen evolution. Bioinformatics.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/lee-h3n2-dms.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Lee et al. 2018. Deep mutational scanning of hemagglutinin helps predict evolutionary fates of human <b>H3N2 influenza</b> variants. PNAS.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/bell-dengue-antigenic-dynamics.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Bell et al. 2019. <b>Dengue</b> genetic divergence generates within-serotype antigenic variation, but serotypes dominate evolutionary dynamics. eLife.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hadfield-wnv-nextstrain.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hadfield et al. 2019. Twenty years of <b>West Nile</b> virus spread and evolution in the Americas visualized by Nextstrain. PLoS Pathog.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/black-zika-in-colombia.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Black et al. 2019. Genomic epidemiology supports multiple introductions and cryptic transmission of <b>Zika</b> virus in Colombia. BMC Infect Dis.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/potter-h3n2-reassortment.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Potter et al. 2019. Evolution and rapid spread of a reassortant <b>A(H3N2)</b> virus that predominated the 2017-2018 influenza season. Virus Evol.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/dudas-genomic-horizon.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Dudas et al. 2019. The ability of single genes vs full genomes to resolve time and space in outbreak analysis <i>of <b>Ebola</b></i>. BMC Evol Biol.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/moncla-h5n1-cambodia.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Moncla et al. 2020. Quantifying within-host evolution of <b>H5N1 influenza</b> in humans and poultry in Cambodia. PLoS Pathog.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/black-genepi-whitepaper.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Black et al. 2020. Ten recommendations for supporting open pathogen genomic analysis in public health. Nat Med.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/hilton-dms-view.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Hilton et al. 2020. dms-view: Interactive visualization tool for deep mutational scanning data. J Open Source Softw.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/huddleston-flu-forecasting.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Huddleston et al. 2020. Integrating genotypes and phenotypes improves long-term forecasts of seasonal <b>influenza A/H3N2</b> evolution. eLife.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/kistler-hcov-adaptive-evolution.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Kistler and Bedford. 2021. Evidence for adaptive evolution in the receptor-binding domain of <b>seasonal coronaviruses</b> OC43 and 229E. eLife.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/mbala-kingebeni-ebola-relapse.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Mbala-Kingebeni et al. 2021. Ebola virus transmission initiated by systemic <b>Ebola</b> virus disease relapse. NEJM.</td>
+			</tr>
+			<tr>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/kinganda-lusamaki-ebola-drc.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Kinganda-Lusamaki et al. 2021. Integration of genomic sequencing into the response to the <b>Ebola</b> virus outbreak in Nord Kivu, DRC. Nat Med.</td>
+				<td width="2%" style="border: none; padding: 1px;"></td>
+				<td width="4%" style="border: none; padding: 1px;"><img width=50 style="vertical-align: middle;" src="/images/papers/moncla-mumps-wa.png"></td>
+				<td width="45%" style="border: none; padding: 1px;">Moncla et al. 2021. Repeated introductions and intensive community transmission fueled a <b>mumps</b> virus outbreak in Washington State. eLife.</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<section data-transition="fade" data-background="#555">
+	<h1 class="title">COVID-19</h1>
+</section>
+
+<section data-transition-speed="slow" data-background="/images/talks/ncov_tree_unrooted_2021_09_11.png">
+</section>
+
+<section class="left-align">
+	<h3>1. Real-time tracking of SARS-CoV-2 evolution</h3>
+	<h3>2. Emergence of variants of concern</h3>
+	<h3>3. Current circulation patterns</h3>
+	<h3>4. Assessing adaptive evolution</h3>
+	<h3>5. Variant transmission dynamics</h3>
+	<h3>6. Genomic surveillance</h3>
+	<h3>7. Future perspectives</h3>
+</section>
+
+<!-- Real-time tracking of SARS-CoV-2 evolution -->
+
+<section data-transition="fade" data-background="#555">
+	<h1 class="title">Real-time tracking of SARS-CoV-2 evolution</h1>
+</section>
+
+<section>
+	<h3>Over 3.4M SARS-CoV-2 genomes shared to GISAID and evolution tracked in real-time at nextstrain.org</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_map_2021_09_12_global.png">
+	<br>
+	<p class="tiny"><i>
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/emma-hodcroft.jpg"> Emma Hodcroft,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/ivan-aksamentov.jpg"> Ivan Aksamentov,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/moira-zuber.jpg"> Moira Zuber,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/eli-harkins.jpg"> Eli Harkins,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/misja-ilcisin.jpg"> Misja Ilcisin,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/kairsten-fay.jpg"> Kairsten Fay,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/allison-black.jpg"> Allison Black,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/sidney-bell.jpg"> Sidney Bell,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/denisse-sequeira.jpg"> Denisse Sequeira</span>
+	</i></p>
+</section>
+
+<section>
+	<h3>SARS-CoV-2 lineages establish globally in February and March</h3>
+	<img class="stretch" src="/images/talks/ncov_tree_map_early_pandemic.png">
+	<div class="citation">
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Limited early mutations like spike D614G spread globally during initial wave</h3>
+	<img class="stretch" src="/images/talks/ncov_d614g_european_introduction.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Spike protein is critical for cell invasion by the virus and is the primary target for human immune response</h3>
+	<img class="stretch" data-src="/images/talks/sars_cov_2_spike_structure.png">
+	<div class="citation">
+		<a href="https://science.sciencemag.org/content/367/6483/1260">Wrapp et al. 2020. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h4 class="inset-top-right">
+		After initial wave, with mitigation <br> efforts and decreased travel, <br> regional clades emerge
+	</h4>
+	<img class="stretch" src="/images/talks/ncov_tree_2020_10_20_global_jun_oct.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Mutations in summer and fall 2020 were confined to regional dominance</h3>
+	<img class="stretch" data-src="/images/talks/ncov_a222v_tree_map.jpg">
+	<div class="citation">
+		<a href="https://www.nature.com/articles/s41586-021-03677-y">Hodcroft et al. 2021. Nature.</a>
+	</div>
+</section>
+
+<!-- Emergence of variants of concern -->
+
+<section data-transition="fade" data-background="#555">
+	<h1 class="title">Emergence of variants of concern</h1>
+</section>
+
+<section>
+	<h3>Repeated emergence of 484K and 501Y across the world</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_484K_501Y_2021_05_07.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/global?c=gt-S_484,501">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Emergence of Alpha (B.1.1.7) in the UK</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_501Y.V1_clock_2021_02_10.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/groups/neherlab/ncov/united-kingdom?c=clade_membership&f_country=United%20Kingdom&l=clock&r=division">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Emergence of Beta (B.1.351) in the South Africa</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_501Y.V2_clock_2021_02_10.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/africa?f_country=South%20Africa&l=clock&r=division">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Emergence of Gamma (P.1) in the Brazil</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_501Y.V3_clock_2021_03_16.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/south-america?f_country=Brazil&l=clock&r=division">nextstrain.org</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>
+		Working hypothesis of within-host evolution occurring during infection,
+		driven by natural selection against host immunity
+	</h3>
+</section>
+
+<section>
+	<h3>Rapid within-host evolution during persistent infection</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_choi_chronic_tree.png">
+	<div class="citation">
+		<a href="https://www.nejm.org/doi/full/10.1056/NEJMc2031364">Choi et al. 2020. NEJM.</a>
+	</div>
+</section>
+
+<section>
+	<h3>484K and 501Y observed during this evolution</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_choi_chronic_alignment.png">
+	<div class="citation">
+		<a href="https://www.nejm.org/doi/full/10.1056/NEJMc2031364">Choi et al. 2020. NEJM.</a>
+	</div>
+</section>
+
+<!-- Current circulation patterns -->
+
+<section data-transition="fade" data-background="#555">
+	<h1 class="title">Current circulation patterns</h1>
+</section>
+
+<section>
+	<h3>Spread of VOC / VOI lineages across the world</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_animation_2021_09_12.gif">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global?animate=2019-12-19,2021-09-11,1,0,30000&branchLabel=none&d=tree,map&p=grid">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Delta is outcompeting other variants and is on track to sweep</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_emerging_lineages_2021_09_12.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global?c=emerging_lineage">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Variants show excess mutations across the genome</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_scatter_divergence_2021_09_12.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/groups/blab/ncov/adaptive-evolution/2021-08-15?branches=hide&l=scatter&p=full&scatterY=div">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>But show most substantial excess in the S1 domain of spike</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_scatter_s1_mutations_2021_09_12.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/groups/blab/ncov/adaptive-evolution/2021-08-15?branches=hide&l=scatter&p=full&scatterY=S1_mutations">nextstrain.org</a>
+	</div>
+</section>
+
+<!-- Assessing adaptive evolution -->
+
+<section data-transition="fade" data-background="#555">
+	<h1 class="title">Assessing adaptive evolution</h1>
+</section>
+
+<section class="left-align">
+	<h3>Rapid and parallel adaptive mutations in spike S1 drive clade success in SARS-CoV-2</h3>
+	<div class="smaller"><i>
+		<img width=50 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler, &hairsp;
+		<img width=50 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston
+	</i></div>
+	<p>&nbsp;<p>
+</section>
+
+<section>
+	<h3>Phylogeny of 10k genomes equitably sampled in space and time</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_phylogeny.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Measure clade growth as a proxy for viral fitness</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_phylogeny_logistic_growth.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Clades with more S1 nonsynonymous mutations grow faster</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_mut_accumulation_s1.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>This correlation is absent in control regions</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_mut_accumulation_control.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>This correlation is stronger in S1 than other genes</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_mut_accumulation_genes.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>S1 is quickly evolving and highly correlated with clade growth</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_mut_accumulation_all_genes.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section data-transition="slide-in none-out">
+	<h3>dN/dS through time further highlights adaptive evolution</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_dnds.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section data-transition="none-in slide-out">
+	<h3>Rapid pace of adaptive evolution relative to H3N2 influenza</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_dnds_h3n2.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>S1 mutations cluster phylogenetically, suggesting bursts of evolution</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_wait_times.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Many S1 mutations show strong convergent evolution</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_convergent.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>
+		Mutations in S1 arising via within-host pressures result increase viral fitness and are enriched in the viral population by natural selection
+	</h3>
+	<br>
+	<h3>
+		Although selection has not been primarily for antigenic drift, observed level of adaptability suggests its potential
+	</h3>
+</section>
+
+<!-- Variant transmission dynamics -->
+
+<section data-transition="fade" data-background="#555">
+	<h1 class="title">Variant transmission dynamics</h1>
+</section>
+
+<section class="left-align">
+	<h3>
+		Multiple approaches to modeling fitness differences between circulating variants
+	</h3>
+</section>
+
+<section>
+	<h3>Multinomial logistic regression models work well on frequencies</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_logistic_regression_2021_09_01.png">
+</section>
+
+<section>
+	<h3>However, frequency of a variant may rise while cases fall</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_partitioning_cases_2021_09_01.png">
+</section>
+
+<section class="left-align">
+	<h3>SARS-CoV-2 variant dynamics across US states show consistent differences in transmission rates</h3>
+	<div class="smaller"><i>
+		<img width=50 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins
+	</i></div>
+	<p>&nbsp;<p>
+</section>
+
+<section class="left-align">
+	<div class="left" style="float:left; width:35%">
+		<h3>Estimation of variant-specific Rt through time using state-level data</h3>
+		<p>State-level case counts are partitioned based on frequencies of sequenced cases</p>
+	</div>
+	<div class="right" style="float:right; width:60%">
+		<img data-src="/images/talks/sarscov2_variant_rt_method_wa_2021_09_01.png">
+	</div>
+	<div class="citation">
+		Figgins and Bedford. Unpublished.
+	</div>
+</section>
+
+<section>
+	<h3>Differences in intrinsic Rt across variants, but all trending downwards</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_trajectories_2021_09_01.png">
+	<div class="citation">
+		Figgins and Bedford. Unpublished.
+	</div>
+</section>
+
+<section>
+	<h3>By August 15 only Delta had Rt consistently greater than 1</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_histograms_2021_09_01.png">
+	<div class="citation">
+		Figgins and Bedford. Unpublished.
+	</div>
+</section>
+
+<section>
+	<h3>Consistent differences in variant-specific transmission rate across states</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_growth_advantage_2021_09_01.png">
+	<div class="citation">
+		Figgins and Bedford. Unpublished.
+	</div>
+</section>
+
+<section>
+	<h3>Consistent reductions in variant-specific Rt from vaccination</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_vaccination_2021_09_01.png">
+	<div class="citation">
+		Figgins and Bedford. Unpublished.
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>
+		Future work would ideally tie together granular empirical estimates of viral fitness from frequency data
+		together with mutational and phenotypic predictors to learn what is driving variant success
+	</h3>
+</section>
+
+<!-- Genomic surveillance -->
+
+<section data-transition="fade" data-background="#555">
+	<h1 class="title">Genomic surveillance</h1>
+</section>
+
+<section>
+	<h3>Sequences generated and shared at an unprecedented pace with 630k genomes shared in Aug 2021 alone</h3>
+	<img class="stretch" data-src="/images/talks/ncov_genomic_surveillance_dotplot_global_2021_09_12.png">
+	<div class="citation">
+		Data from gisaid.org
+	</div>
+</section>
+
+<section>
+	<h3>My favorite metric is number of sequences available from samples collected in the past 30 days</h3>
+	<img class="stretch" data-src="/images/talks/ncov_genomic_surveillance_recent_sequences_global_2021_09_12.png">
+	<div class="citation">
+		Data from gisaid.org
+	</div>
+</section>
+
+<section>
+	<h3>US, UK and Europe all have stunning genomic surveillance programs</h3>
+	<img class="stretch" data-src="/images/talks/ncov_genomic_surveillance_recent_sequences_us_uk_europe_2021_09_12.png">
+	<div class="citation">
+		Data from gisaid.org
+	</div>
+</section>
+
+<section>
+	<h3>Africa and South America have picked up dramatically but there are still geographic gaps</h3>
+	<img class="stretch" data-src="/images/talks/ncov_genomic_surveillance_recent_sequences_africa_south_america_2021_09_12.png">
+	<div class="citation">
+		Data from gisaid.org
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>
+		Global genomic surveillance aimed at rapid turnaround times important to catch new variants early
+	</h3>
+	<br>
+	<h3>
+		In depth genomic surveillance tied to data systems allows investigation of variant severity, secondary attack rate, etc...
+	</h3>
+</section>
+
+<!-- Future perspectives -->
+
+<section data-transition="fade" data-background="#555">
+	<h1 class="title">Future perspectives</h1>
+</section>
+
+<section class="left-align">
+	<h3>Broad expectations based on comparison with flu</h3>
+	<p>
+	<ol>
+		<li>
+			R0 of Delta is perhaps ~5 compared to R0 of flu of ~2. At same rates of evolution and waning expect more COVID circulation.
+		</li>
+		<li>
+			Rates of adaptive sequence evolution in SARS-CoV-2 have been about ~5X that of H3N2 flu.
+			Expect this to slow down, but suggests that virus will be generally quite adaptable.
+		</li>
+		<li>
+			IFR of COVID is roughly comparable to flu once you have prior immunity granting durable memory responses.
+		</li>
+	</ol>
+	</p>
+	<p>
+		1, 2 and 3 suggest a virus that circulates like flu does at perhaps higher levels (given R0), but individual infections
+		aren't much more severe in terms of mortality than H3N2 influenza. Expect perhaps 50-100K deaths in the US each year.
+	</p>
+</section>
+
+<section class="left-align">
+	<h3>SARS-CoV-2 scientific (and prosaic) priorities</h3>
+	<p>
+	<ol>
+		<li>
+			Forecasting evolution and ensuring vaccine updates match circulating viruses
+		</li>
+		<li>
+			Universal vaccine to engender broader immune response and/or to target more conserved epitopes
+		</li>
+		<li>
+			Plentiful testing, contact tracing and a public health apparatus
+		</li>
+		<li>
+			Treatments, ventilation, etc...
+		</li>
+	</ol>
+	</p>
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/maya-lewinsohn.jpg"> Maya Lewinsohn,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/eli-harkins.jpg"> Eli Harkins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/denisse-sequeira.jpg"> Denisse Sequeira</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="11%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_osp.jpg">
+	</div>
+</section>
