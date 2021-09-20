@@ -4,20 +4,19 @@ layout: default
 
 <div class="row">
 	<div class="col-lg-12">
-		<div class="media">
-			{% if page.image %}
-			<img class="pull-left pad-right media-object" src="{{ page.image }}">
-			{% endif %}
-			<div class="media-body titlebox">
-				<div class="title media-heading">
-					{{ page.title }}
-				</div>
-				<p>
-				<div class="smallhead">
-					{{ page.authors }}
-					{{ page.year }}.
-					{{ page.journal }}
-				</div>
+		{% if page.image %}
+		<img class="pull-left pad-right media-object d-none d-sm-block" src="{{ page.image }}">
+		<img width=85 class="float-left pad-right d-block d-sm-none" src="{{ page.image }}">
+		{% endif %}
+		<div class="titlebox">
+			<div class="title">
+				{{ page.title }}
+			</div>
+			<p>
+			<div class="smallhead">
+				{{ page.authors }}
+				{{ page.year }}.
+				{{ page.journal }}
 			</div>
 		</div>
 	</div>
