@@ -1,0 +1,295 @@
+---
+layout: talk_reveal4
+title: Real-time tracking of pathogen evolution
+venue: ARCS Foundation
+event: 2021 ARCS Luncheon
+author: Trevor Bedford
+widescreen: true
+draft: true
+---
+
+<!-- 10 min presentation -->
+
+<!--
+
+Keynote Topic: The real-time tracking of pathogen evolution. We are asking
+Trevor to speak for 10 minutes, to engage these two components in his keynote
+address:
+
+1.	Share a brief explanation of the evolution of viruses, background and
+creation of the Nextstrain platform, its role in the pandemic, and how it has
+been applied in new viral or alternative contexts (a leadup to the
+scholars/fellows topics – see below - and how they are engaging his work in
+their research)
+
+2.	Share a bit about the importance of mentorship on advancements in your
+research - your role as a mentor to student scientists, what components of
+mentorship do you find most impactful in their learning and research
+development? What do you think this brings to your own research/scientific
+process?
+
+-->
+
+<section data-background-iframe="/talks/viz/gradient/">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<p class="title">
+	Trevor Bedford (@trvrb)
+	<br>
+	Associate Professor, Fred Hutchinson Cancer Research Center
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<!-- TOPIC 1 Genomic epi -->
+
+<section data-background="#555">
+	<h1 class="title">Sequencing to reconstruct pathogen spread</h1>
+</section>
+
+<section data-transition="slide-in none-out">
+	<h3>Epidemic process</h3>
+	<img class="stretch" src="/images/talks/infection_tree_1.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sample some individuals</h3>
+	<img class="stretch" src="/images/talks/infection_tree_2.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" src="/images/talks/infection_tree_3b.png">
+</section>
+
+<section data-transition="none-in slide-out">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" src="/images/talks/infection_tree_4b.png">
+</section>
+
+<!-- <section style="text-align: left;">
+	<h3>Pathogen genomes may reveal</h3>
+	<p>
+	<ul>
+		<li>Evolution of new adaptive variants</li>
+		<li>Epidemic origins</li>
+		<li>Patterns of geographic spread</li>
+		<li>Animal-to-human spillover</li>
+		<li>Transmission chains</li>
+	</ul>
+	</p>
+</section> -->
+
+<section>
+	<h3><b>Zika:</b> Uncovering origins of the epidemic in the Americas</h3>
+	<img class="stretch" src="/images/talks/zika_zibra_tree.png">
+	<div class="citation">
+		<a href="/papers/faria-zika-in-brazil/">Faria et al. 2017. Nature.</a>
+	</div>
+</section>
+
+<section>
+	<h3><b>Ebola:</b> Revealing spatial spread and persistence in West Africa</h3>
+	<img width="43%" data-src="/images/talks/ebola_mig_tree.png">
+	<img width="43%" data-src="/images/talks/ebola_mig_geo_tree.png">
+	<div class="citation">
+		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
+	</div>
+</section>
+
+<section data-background="#555">
+	<h1 class="title">Actionable inferences</h1>
+</section>
+
+<section>
+	<h1>
+		<span class="c1s">N</span><span class="c2s">e</span><span class="c3s">x</span><span class="c4s">t</span><span class="c5s">s</span><span class="c6s">t</span><span class="c7s">r</span><span class="c8s">a</span><span class="c9s">i</span><span class="c10s">n</span>
+	</h1>
+	<p>Project to conduct real-time genomic epidemiology and evolutionary analysis of emerging epidemics</p>
+	<br>
+	<p class="tiny"><i>
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/emma-hodcroft.jpg"> Emma Hodcroft,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/ivan-aksamentov.jpg"> Ivan Aksamentov,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/moira-zuber.jpg"> Moira Zuber,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/eli-harkins.jpg"> Eli Harkins,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/misja-ilcisin.jpg"> Misja Ilcisin,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/kairsten-fay.jpg"> Kairsten Fay,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/allison-black.jpg"> Allison Black,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/sidney-bell.jpg"> Sidney Bell,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/denisse-sequeira.jpg"> Denisse Sequeira</span>
+	</i></p>
+</section>
+
+<section>
+	<h3>Operationalized during the 2018-2020 outbreak of Ebola in the Democratic Republic of the Congo</h3>
+	<img width="43%" data-src="/images/talks/nextstrain_in_drc.jpg">
+	<img width="49%" data-src="/images/talks/ebola_drc_phylogeny_only.png">
+	<div class="citation">
+		<a href="/papers/kinganda-lusamaki-ebola-drc/">Kinganda-Lusamaki et al. 2021. Nat Med.</a>
+	</div>
+</section>
+
+<section data-background="#555">
+	<h1 class="title">Genomic epidemiology during the COVID-19 pandemic</h1>
+</section>
+
+<section style="text-align: left;">
+	<h3>Three key insights that genomic epi provided during pandemic</h3>
+	<p>
+	<ol>
+		<li>Rapid human-to-human spread in Wuhan beyond initial market outbreak</li>
+		<li>Extensive local transmission while testing was rare</li>
+		<li>Identification of variants of concern and mapping of increased transmission rates</li>
+	</ol>
+	</p>
+</section>
+
+<section>
+	<h3>Jan 11: First five genomes from Wuhan showed a novel SARS-like coronavirus</h3>
+	<img class="stretch" data-src="/images/talks/ncov_sars_like_tree.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/groups/blab/beta-cov">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Jan 19: First 12 genomes from Wuhan and Bangkok showed lack of genetic diversity</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_2020_01_19.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Epidemic in the USA was introduced from China in late Jan and from Europe during Feb</h3>
+	<img class="stretch" src="/images/talks/ncov_tree_map_2020_04_20_usa_1.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<div style="float: left; width: 44%">
+		<h3>Seattle Flu Study detects local circulation and charts early epidemic in Washington State</h3>
+	</div>
+	<div style="float: right; width: 56%">
+		<img src="/images/talks/ncov_cryptic_transmission_prevalence.png">
+	</div>
+	<div class="citation">
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Direct introduction from China ~Feb 1 responsible for the majority of the epidemic</h3>
+	<img class="stretch" src="/images/talks/ncov_cryptic_transmission_outbreak_clade.png">
+	<div class="citation">
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
+	</div>
+</section>
+
+<section>
+	<img width="45%" data-src="/images/talks/ncov_cryptic_transmission_nyt.png">
+	<img width="45%" data-src="/images/talks/ncov_cryptic_transmission_stat.png">
+</section>
+
+<section data-transition-speed="slow" data-background="/images/talks/ncov_tree_unrooted_2021_09_11.png">
+</section>
+
+<!-- <section>
+	<h3>Spread of VOC / VOI lineages across the world</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_animation_2021_09_12.gif">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global?animate=2019-12-19,2021-09-11,1,0,30000&branchLabel=none&d=tree,map&p=grid">nextstrain.org</a>
+	</div>
+</section> -->
+
+<section>
+	<h3>Delta is outcompeting other variants and is on track to sweep</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_emerging_lineages_2021_09_12.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global?c=emerging_lineage">nextstrain.org</a>
+	</div>
+</section>
+
+<!-- TOPIC 2 Mentoring -->
+
+<!--
+
+Mentoring thoughts:
+
+(Gather photos for display during this rather than doing bullet pointed text)
+
+- I think pretty much everyone in this "professor" sort of role will agree that
+  seeing students and other trainees grow as scientists is certainly the most
+	rewarding aspect of the job.
+- Early on, I can remember specific lab meeting where a student brought up a
+  point I hadn't considered. Fantastic feeling like the lab is getting smarter
+	together.
+- My favorite pragmatic aspect is getting to sit down with a student and work
+  through a problem together, either in code or on the chalkboard.
+- Generally, feel that the most important thing I can do is help with big
+  picture direction. Years of experience make what would be genuienly useful
+	to a field more obvious. Set a goal, but as this is research a student is
+	always on their own in terms of particular path that they walk.
+
+-->
+
+<section data-background="#4C91C1">
+	<h1 class="title">Reflections on mentoring</h1>
+</section>
+
+<section data-transition-speed="slow" data-background="/images/talks/lab_photo_collage_1.jpg">
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/maya-lewinsohn.jpg"> Maya Lewinsohn,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/eli-harkins.jpg"> Eli Harkins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/denisse-sequeira.jpg"> Denisse Sequeira</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="11%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_osp.jpg">
+	</div>
+</section>
