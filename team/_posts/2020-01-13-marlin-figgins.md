@@ -9,4 +9,4 @@ image: /images/team/marlin-figgins.jpg
 website: https://marlinfiggins.github.io
 ---
 
-I'm a research assistant in the Bedford lab. I am primarily interested in infectious disease ecology and in particular, how various spatial structure and heterogeneities affect disease transmission. I am very excited to continue exploring these interests in the Bedford lab, focusing on the role of spatial elements in influenza dynamics and forecasting.
+I am currently a second year Applied Mathematics PhD student in the Bedford lab. My research is focused on developing methods to forecast the transmission and evolution of viruses by analyzing multiple data sources at various scales jointly. In particular, I am interested in how transmission, immune, and evolutionary dynamics occur simultaneously and how we can leverage the connections between these scales to better analyze outbreaks.
