@@ -5,7 +5,7 @@ image: /images/papers/annavajhala-ncov-ny-b.1.526.png
 authors: Annavajhala MK, Mohri H, Wang P, Nair M, Zucker JE, Sheng Z, Gomez-Simmonds A, Kelley AL, Tagliavia M, Huang Y, Bedford T, Ho DD, Uhlemann A-C.
 year: 2021
 ref: Annavajhala et al. 2021. Nature.
-journal: "Nature: s41586-021-03908-2."
+journal: "Nature 597: 703–708."
 pdf: /pdfs/papers/annavajhala-ncov-ny-b.1.526.pdf
 doi: 10.1038/s41586-021-03908-2
 github: https://github.com/blab/ncov-ny
