@@ -5,7 +5,9 @@ image: /images/papers/santiago-zika-in-puerto-rico.png
 authors: Santiago GA, Kalinich CC, Cruz-López F, González GL, Flores B, Hentoff A, Charriez KN, Fauver JR, Adams LE, Sharp TM, Black A, Bedford T, Ellis E, Ellis B, Waterman SH, Paz-Bailey G, Grubaugh ND, Muñoz-Jordán JL.
 year: 2021
 ref: Santiago et al. 2021. Emerg Infect Dis.
-journal: "Emerg Infect Dis: eid2711.211575."
+journal: "Emerg Infect Dis 27: 2971-2973."
+pdf: /pdfs/papers/santiago-zika-in-puerto-rico.pdf
+supplement: /pdfs/papers/santiago-zika-in-puerto-rico-supp.pdf
 doi: 10.3201/eid2711.211575
 ---
 
