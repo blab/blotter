@@ -5,7 +5,7 @@ image: /images/papers/chung-sars-cov-2-pediatric-ct.png
 authors: Chung E, Chow EJ, Wilcox NC, Burstein R, Brandstetter E, Han PD, Fay K, Pfau B, Adler A, Lacombe K, Lockwood CM, Uyeki TM, Shendure J, Duchin JS, Rieder MJ, Nickerson DA, Boeckh M, Famulare M, Hughes JP, Starita LM, Bedford T, Englund JA, Chu HY.
 year: 2021
 ref: Chung et al. 2021. JAMA Pediatr.
-journal: "JAMA Pediatr: 10.1001/jamapediatrics.2021.2025."
+journal: "JAMA Pediatr 175: e212025."
 pdf: /pdfs/papers/chung-sars-cov-2-pediatric-ct.pdf
 supplement: /pdfs/papers/chung-sars-cov-2-pediatric-ct-supp.pdf
 doi: 10.1001/jamapediatrics.2021.2025
