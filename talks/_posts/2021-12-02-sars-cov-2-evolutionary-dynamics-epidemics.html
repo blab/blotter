@@ -1,0 +1,486 @@
+---
+layout: talk_reveal4
+title: Phylodynamics and molecular evolution of SARS-CoV-2
+venue: Epidemics<sup>8</sup>
+author: Trevor Bedford
+widescreen: true
+---
+
+<!-- ~40 min with Q&A, so aim for ~33 min worth of slides -->
+
+<!--
+Outline:
+
+- Nextstrain and real-time tracking of SARS-CoV-2 evolution
+- Emergence and spread of VOCs
+- Current circulation patterns
+- Katie's adaptive evolution work
+- Frequency dynamics / Marlin's work
+- Omicron
+-->
+
+<!-- Color ramp: [#5097BA", "#60AA9E", "#75B681", "#8EBC66", "#AABD52", "#C4B945", "#D9AD3D", "#E59637", "#E67030", "#DF4327"] -->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<p class="title">
+	Trevor Bedford (@trvrb)
+	<br>
+	Associate Professor, Fred Hutchinson Cancer Research Center
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+	<br>&nbsp;<br>
+	Slides at: bedford.io/talks
+</section>
+
+<!-- Introduction -->
+
+<section data-transition-speed="slow" data-background="/images/talks/ncov_tree_unrooted_2021_09_11.png">
+</section>
+
+<section class="left-align">
+	<h3>1. Real-time tracking of SARS-CoV-2 evolution</h3>
+	<h3>2. Emergence of variants of concern</h3>
+	<h3>3. Current circulation patterns</h3>
+	<h3>4. Assessing adaptive evolution</h3>
+	<h3>5. Variant transmission dynamics</h3>
+	<h3>6. Omicron variant</h3>
+</section>
+
+<!-- Real-time tracking of SARS-CoV-2 evolution -->
+
+<section data-transition="fade" data-background="#5097BA">
+	<h1 class="title">Real-time tracking of SARS-CoV-2 evolution</h1>
+</section>
+
+<section>
+	<h3>Over 5.5M SARS-CoV-2 genomes shared to GISAID and evolution tracked in real-time at nextstrain.org</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_map_2021_09_12_global.png">
+	<br>
+	<p class="tiny"><i>
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/emma-hodcroft.jpg"> Emma Hodcroft,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/ivan-aksamentov.jpg"> Ivan Aksamentov,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/moira-zuber.jpg"> Moira Zuber,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/denisse-sequeira.jpg"> Denisse Sequeira,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/cornelius-roemer.jpg"> Cornelius Roemer,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang</span>
+	</i></p>
+</section>
+
+<section>
+	<h3>SARS-CoV-2 lineages establish globally in February and March</h3>
+	<img class="stretch" src="/images/talks/ncov_tree_map_early_pandemic.png">
+	<div class="citation">
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Limited early mutations like spike D614G spread globally during initial wave</h3>
+	<img class="stretch" src="/images/talks/ncov_d614g_european_introduction.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Spike protein is critical for cell invasion by the virus and is the primary target for human immune response</h3>
+	<img class="stretch" data-src="/images/talks/sars_cov_2_spike_structure.png">
+	<div class="citation">
+		<a href="https://science.sciencemag.org/content/367/6483/1260">Wrapp et al. 2020. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h4 class="inset-top-right">
+		After initial wave, with mitigation <br> efforts and decreased travel, <br> regional clades emerge
+	</h4>
+	<img class="stretch" src="/images/talks/ncov_tree_2020_10_20_global_jun_oct.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Mutations in summer and fall 2020 were confined to regional dominance</h3>
+	<img class="stretch" data-src="/images/talks/ncov_a222v_tree_map.jpg">
+	<div class="citation">
+		<a href="https://www.nature.com/articles/s41586-021-03677-y">Hodcroft et al. 2021. Nature.</a>
+	</div>
+</section>
+
+<!-- Emergence of variants of concern -->
+
+<section data-transition="fade" data-background="#60AA9E">
+	<h1 class="title">Emergence of variants of concern</h1>
+</section>
+
+<section>
+	<h3>Repeated emergence of 484K and 501Y across the world</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_484K_501Y_2021_05_07.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/global?c=gt-S_484,501">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Emergence of Alpha (B.1.1.7) in the UK</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_501Y.V1_clock_2021_02_10.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/groups/neherlab/ncov/united-kingdom?c=clade_membership&f_country=United%20Kingdom&l=clock&r=division">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Emergence of Beta (B.1.351) in the South Africa</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_501Y.V2_clock_2021_02_10.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/africa?f_country=South%20Africa&l=clock&r=division">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Emergence of Gamma (P.1) in the Brazil</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_501Y.V3_clock_2021_03_16.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/south-america?f_country=Brazil&l=clock&r=division">nextstrain.org</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>
+		Working hypothesis of within-host evolution occurring during infection,
+		driven by natural selection against host immunity
+	</h3>
+</section>
+
+<section>
+	<h3>Rapid within-host evolution during persistent infection</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_choi_chronic_tree.png">
+	<div class="citation">
+		<a href="https://www.nejm.org/doi/full/10.1056/NEJMc2031364">Choi et al. 2020. NEJM.</a>
+	</div>
+</section>
+
+<section>
+	<h3>484K and 501Y observed during this evolution</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_choi_chronic_alignment.png">
+	<div class="citation">
+		<a href="https://www.nejm.org/doi/full/10.1056/NEJMc2031364">Choi et al. 2020. NEJM.</a>
+	</div>
+</section>
+
+<!-- Current circulation patterns -->
+
+<section data-transition="fade" data-background="#75B681">
+	<h1 class="title">Current circulation patterns</h1>
+</section>
+
+<section>
+	<h3>Spread of VOC / VOI lineages across the world</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_animation_2021_09_12.gif">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global?animate=2019-12-19,2021-09-11,1,0,30000&branchLabel=none&d=tree,map&p=grid">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Delta outcompeting other variants and seemed poised to sweep</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_emerging_lineages_2021_11_23.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global?c=emerging_lineage">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Variants show excess mutations across the genome</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_scatter_divergence_2021_09_12.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/groups/blab/ncov/adaptive-evolution/2021-08-15?branches=hide&l=scatter&p=full&scatterY=div">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>But show most substantial excess in the S1 domain of spike</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_scatter_s1_mutations_2021_09_12.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/groups/blab/ncov/adaptive-evolution/2021-08-15?branches=hide&l=scatter&p=full&scatterY=S1_mutations">nextstrain.org</a>
+	</div>
+</section>
+
+<!-- Assessing adaptive evolution -->
+
+<section data-transition="fade" data-background="#8EBC66">
+	<h1 class="title">Assessing adaptive evolution</h1>
+</section>
+
+<section class="left-align">
+	<h3>Rapid and parallel adaptive mutations in spike S1 drive clade success in SARS-CoV-2</h3>
+	<div class="smaller"><i>
+		<img width=50 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler, &hairsp;
+		<img width=50 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston
+	</i></div>
+	<p>&nbsp;<p>
+</section>
+
+<section>
+	<h3>Phylogeny of 10k genomes equitably sampled in space and time</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_phylogeny.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Measure clade growth as a proxy for viral fitness</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_phylogeny_logistic_growth.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Clades with more S1 nonsynonymous mutations grow faster</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_mut_accumulation_s1.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>This correlation is absent in control regions</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_mut_accumulation_control.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>This correlation is stronger in S1 than other genes</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_mut_accumulation_genes.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>S1 is quickly evolving and highly correlated with clade growth</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_mut_accumulation_all_genes.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section data-transition="slide-in none-out">
+	<h3>dN/dS to root further highlights adaptive evolution</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_dnds.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section data-transition="none-in slide-out">
+	<h3>Rapid pace of adaptive evolution relative to H3N2 influenza</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_dnds_h3n2.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>S1 mutations cluster phylogenetically, suggesting bursts of evolution</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_wait_times.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Many S1 mutations show strong convergent evolution</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_convergent.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>
+		Mutations in S1 arising via within-host pressures result increase viral fitness and are enriched in the viral population by natural selection
+	</h3>
+	<br>
+	<h3>
+		Although selection has not been primarily for antigenic drift, observed level of adaptability suggests its potential
+	</h3>
+</section>
+
+<!-- Variant transmission dynamics -->
+
+<section data-transition="fade" data-background="#AABD52">
+	<h1 class="title">Variant transmission dynamics</h1>
+</section>
+
+<section class="left-align">
+	<h3>
+		Multiple approaches to modeling fitness differences between circulating variants
+	</h3>
+</section>
+
+<section>
+	<h3>Multinomial logistic regression models work well on frequencies</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_logistic_regression_2021_09_01.png">
+</section>
+
+<section>
+	<h3>However, frequency of a variant may rise while cases fall</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_partitioning_cases_2021_09_01.png">
+</section>
+
+<section class="left-align">
+	<h3>SARS-CoV-2 variant dynamics across US states show consistent differences in transmission rates</h3>
+	<div class="smaller"><i>
+		<img width=50 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins
+	</i></div>
+	<p>&nbsp;<p>
+</section>
+
+<section class="left-align">
+	<div class="left" style="float:left; width:35%">
+		<h3>Estimation of variant-specific Rt through time using state-level data</h3>
+		<p>State-level case counts are partitioned based on frequencies of sequenced cases</p>
+	</div>
+	<div class="right" style="float:right; width:60%">
+		<img data-src="/images/talks/sarscov2_variant_rt_method_wa_2021_09_01.png">
+	</div>
+	<div class="citation">
+		Figgins and Bedford. Unpublished.
+	</div>
+</section>
+
+<section>
+	<h3>Differences in intrinsic Rt across variants, but all trending downwards</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_trajectories_2021_09_23.png">
+	<div class="citation">
+		Figgins and Bedford. Unpublished.
+	</div>
+</section>
+
+<section>
+	<h3>Consistent differences in variant-specific transmission rate across states</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_growth_advantage_2021_09_23.png">
+	<div class="citation">
+		Figgins and Bedford. Unpublished.
+	</div>
+</section>
+
+<section>
+	<h3>Consistent reductions in variant-specific Rt from vaccination</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_vaccination_2021_09_23.png">
+	<div class="citation">
+		Figgins and Bedford. Unpublished.
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>
+		Future work would ideally tie together granular empirical estimates of viral fitness from frequency data
+		together with mutational and phenotypic predictors to learn what is driving variant success
+	</h3>
+</section>
+
+<!-- Omicron -->
+
+<section data-transition="fade" data-background="#C4B945">
+	<h1 class="title">Omicron variant</h1>
+</section>
+
+<section>
+	<h3>Lineage B.1.1.539 / clade 21K / Omicron variant emerging from basal diversity</h3>
+	<img class="stretch" data-src="/images/talks/ncov_omicron_tree_2021_11_27.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/africa">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Long branch connecting closest sequenced viruses</h3>
+	<img class="stretch" data-src="/images/talks/ncov_omicron_branching_2021_11_27.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/africa">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Omicron viruses with huge exess of mutations in S1, but little divergence in the rest of the genome</h3>
+	<img class="stretch" data-src="/images/talks/ncov_omicron_s1_mutations_2021_11_27.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/africa?l=scatter&scatterY=S1_mutations">nextstrain.org</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>
+		Text here on assessing absolute transmission rate, fitness advantage relative to Delta
+		and partitioning these advantages between intrinsic transmission potential and immune escape
+	</h3>
+</section>
+
+<section data-transition="fade" data-background="#D9AD3D">
+	<h1 class="title">Closing thoughts</h1>
+</section>
+
+<section data-background="#0A0F12">
+	<img class="stretch" src="/images/talks/shits_on_fire_yo.jpg">
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/maya-lewinsohn.jpg"> Maya Lewinsohn,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/denisse-sequeira.jpg"> Denisse Sequeira,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="11%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
