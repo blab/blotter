@@ -5,7 +5,7 @@ image: /images/papers/paredes-sarscov2-variant-outcomes.png
 authors: Paredes MI, Lunn SM, Famulare M, Frisbie LA, Painter I, Burstein R, Roychoudhury P, Xie H, Mohamed Bakhash SA, Perez R, Lukes M, Ellis S, Sathees S, Mathias P, Greninger A, Starita LM, Frazar CD, Ryke E, Zhong W, Gamboa L, Threlkeld M, Lee J, Nickerson DA, Bates DL, Hartman ME, Haugen E, Nguyen TN, Richards JD, Rodriguez JL, Stamatoyannopoulos JA, Thorland E, Melly G, Dykema PE, MacKellar DC, Gray HK, Singh A, Peterson J-A M-D, Russell D, Torres ML, Lindquist S, Bedford T, Allen KJ, Oltean HN.
 year: 2021
 ref: Paredes et al. 2021. medRxiv.
-journal: "medRxiv: 2021.09.29.21264272v1."
+journal: "medRxiv: 2021.09.29.21264272."
 pdf: /pdfs/papers/paredes-sarscov2-variant-outcomes.pdf
 doi: 10.1101/2021.09.29.21264272
 ---

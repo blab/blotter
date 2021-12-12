@@ -4,9 +4,10 @@ title: SARS-CoV-2 variant dynamics across US states show consistent differences 
 image: /images/papers/figgins-rt-from-frequency-dynamics.png
 authors: Figgins M, Bedford T.
 year: 2021
-ref: Figgins and Bedford. 2021. Technical report.
-journal: "Technical report."
+ref: Figgins and Bedford. 2021. medRxiv.
+journal: "medRxiv: 2021.12.09.21267544."
 pdf: /pdfs/papers/figgins-rt-from-frequency-dynamics.pdf
+doi: 10.1101/2021.12.09.21267544
 github: https://github.com/blab/rt-from-frequency-dynamics
 ---
 
