@@ -8,6 +8,7 @@ ref: Paredes et al. 2021. medRxiv.
 journal: "medRxiv: 2021.09.29.21264272."
 pdf: /pdfs/papers/paredes-sarscov2-variant-outcomes.pdf
 doi: 10.1101/2021.09.29.21264272
+github: https://github.com/blab/ncov-wa-variant-severity
 ---
 
 # Abstract
