@@ -5,10 +5,12 @@ position: Staff scientist
 handle: jlhudd
 twitter: huddlej
 github: huddlej
-scholar: KCqa_hUAAAAJ
+scholar: mF_VG5IAAAAJ
 image: /images/team/john-huddleston.jpg
-calendar: https://calendar.google.com/calendar/embed?src=jlhudd%40uw.edu&ctz=America/Los_Angeles
 website: https://huddlej.github.io
 ---
 
-I am a second-year MCB student in the Bedford Lab. I am generally interested in evolutionary biology, genomics, and bioinformatics. My interests in these fields developed while studying genetic algorithms during a master's program for computer science at Western Washington University (WWU). This research motivated me to return to school to study evolution where I explored prezygotic reproductive isolation between species in the apple maggot species group (*Rhagoletis*). During my master's in biology at WWU, I had the opportunity to join Evan Eichler's lab in University of Washington's Genome Sciences as a bioinformatics specialist where I studied structural variation and genome assembly in primates.
+As a staff scientist in the Bedford Lab, my work includes independent research, software development, and educational outreach and mentorship.
+I study the evolution of seasonal influenza viruses, develop computational models to predict the composition of future influenza populations, and contribute to reports to the World Health Organization's vaccine composition meetings.
+I am also a core developer of Nextstrain's real-time pathogen surveillance tools including [the Augur bioinformatics toolkit](https://github.com/nextstrain/augur) and [the SARS-CoV-2 genomic epidemiology workflow](https://github.com/nextstrain/ncov/).
+This work builds on my previous professional roles as a bioinformatics specialist and software developer and my previous educational experiences including master’s degrees in computer science and biology.
