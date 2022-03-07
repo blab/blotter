@@ -1,0 +1,335 @@
+---
+layout: talk_reveal4
+title: SARS-CoV-2 evolutionary scenarios
+venue: COVID DivDir
+author: Trevor Bedford
+widescreen: true
+draft: true
+---
+
+<!-- ~15 min -->
+
+<!--
+Outline:
+
+1. Overview of SARS-CoV-2 evolution up to this point
+ - Emergence and spread of variant viruses during 2021 due primarily to mutations to spike protein that increase transmissibility culminating in Delta’s displacement of competing diversity
+ - Emergence and rapid spread of Omicron emphasizing large spike divergence and large degree of immune escape (~10% VE against symptomatic infection in fully vaccinated)
+ - Briefly cover Omicron origin hypotheses
+2. Comparison to influenza and seasonal CoV evolution, emphasizing the rapidity of what we’ve seen so far with SARS-CoV-2 relative to flu
+ - Focus just on amino acid rate
+3. Discussion of immediate trends as existing genetic diversity plays out
+ - We’ll see displacement of BA.1 by BA.2 over the coming ~8 weeks
+ - Still potential for return of Delta viruses, which should become clear in ~April
+4. Discussion of two "paths" for SARS-CoV-2 evolution going forward, where we can expect to see:
+ - Continual refinements of transmissibility and continual push for small antigenic changes within BA.2
+ - Potential for large leaps with further “Omicron-like” saltational emergence events
+ - Given ~2 years of pandemic and observation of 1 Omicron-like event we can bracket rate of emergence, but there is substantial uncertainty
+ - ie we don’t know if Omicron was a one-off event or if these jumps will be feature of SARS-CoV-2 evolution going forward
+5. Likely scenarios over the next ~12 months
+ - Connect scenarios to levels of circulation
+
+-->
+
+<!-- Color ramp: [#5097BA", "#60AA9E", "#75B681", "#8EBC66", "#AABD52", "#C4B945", "#D9AD3D", "#E59637", "#E67030", "#DF4327"] -->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<p class="title">
+	Trevor Bedford (@trvrb)
+	<br>
+	Fred Hutchinson Cancer Research Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<section class="left-align">
+	<h3>1. Overview of SARS-CoV-2 evolution up to this point</h3>
+	<h3>2. Comparison to seasonal influenza evolution</h3>
+	<h3>3. Immediate trends as existing genetic diversity plays out</h3>
+	<h3>4. Two paths for SARS-CoV-2 evolution going forward</h3>
+</section>
+
+<!--
+1. Overview of SARS-CoV-2 evolution up to this point
+ - Emergence and spread of variant viruses during 2021 due primarily to mutations to spike protein that increase transmissibility culminating in Delta’s displacement of competing diversity
+ - Emergence and rapid spread of Omicron emphasizing large spike divergence and large degree of immune escape (~10% VE against symptomatic infection in fully vaccinated)
+ - Briefly cover Omicron origin hypotheses
+-->
+
+<!-- Unrooted tree -->
+<section>
+	<h3>Genetic relationships of SARS-CoV-2 sampled up to Mar 2022</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_tree_unrooted_2022_02_20.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global?l=unrooted&m=div">nextstrain.org</a>
+	</div>
+</section>
+
+<!-- Rectangular tree -->
+<section>
+	<h3>Repeated population turnover from 2021 to present</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_tree_frequencies_2022_03_06.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Clades with more S1 amino acid mutations grow faster</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_s1_vs_fitness.png">
+	<div class="citation">
+		<a href="https://www.medrxiv.org/content/10.1101/2021.09.07.21263228">Obermeyer et al. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Rapid accumulation of S1 mutations</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_dnds_h3n2_2022_01_01.png">
+	<div class="citation">
+		<a href="/papers/kistler-sarscov2-adaptive-evolution/">Kistler et al. 2021. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Omicron viruses possess huge excess of mutations in S1</h3>
+	<img class="stretch" data-src="/images/talks/ncov_omicron_s1_mutations_2022_02_20.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global?l=scatter&scatterY=S1_mutations">nextstrain.org</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>Primary hypotheses for Omicron's origin</h3>
+	<p>
+	<ol>
+		<li>
+			<i>(More likely) Evolution during chronic infection in an immunocompromised individual</i>
+			<ul>
+				<li>Supported by large excess of S1 mutations, but paucity of non-spike mutations</li>
+				<li>Hard to explain simultaneous BA.1, BA.2 and BA.3 sublineages otherwise</li>
+			</ul>
+		</li>
+		<li>
+			<i>(Less likely) Human to animal spillover mid-2020 and spillback in late 2021</i>
+			<ul>
+				<li>Mutational spectra and particular mutations such as 493R and 498R suggest rodent intermediary (Wei et al)</li>
+			</ul>
+		</li>
+	</ol>
+	</p>
+</section>
+
+<!-- 2. Comparison to influenza and seasonal CoV evolution, emphasizing the rapidity of what we’ve seen so far with SARS-CoV-2 relative to flu
+ - Focus just on amino acid rate -->
+
+<section>
+	<h3>S1 evolved at a rate of 12 amino acid changes per year in 2021</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_2022_02_20.png">
+</section>
+
+<section>
+	<h3>This is remarkably fast relative to seasonal influenza</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_compared_to_flu_2022_02_20.png">
+</section>
+
+<section>
+	<h3>Rapid evolution drove epidemics during 2021</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_variants_rt_countries_paritioning_cases_2022_02_20.png">
+</section>
+
+<!-- 3. Discussion of immediate trends as existing genetic diversity plays out
+ - We’ll see displacement of BA.1 by BA.2 over the coming ~8 weeks
+ - Still potential for return of Delta viruses, which should become clear in ~April -->
+
+ <section>
+ 	<h3>Omicron's incredible rate of spread drove large-scale epidemics</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_omicron_rt_log_cases_2022_03_06.png">
+ 	<div class="citation">
+ 		<a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2021. medRxiv.</a>
+ 	</div>
+ </section>
+
+ <section class="left-align">
+ 	<h3>Omicron attack rate</h3>
+ 	<p>
+ 	<ol>
+ 		<li>
+ 			We estimate US has seen 9.8% of the population as confirmed cases of Omicron through Mar 3, with the
+ 			large majority accumulating after Dec 15
+ 		</li>
+ 		<li>
+ 			Assuming a case detection rate of 1 in 5 infections, we estimate almost 50% of the US infected with Omicron, most in the span of ~10 weeks
+ 		</li>
+ 	</ol>
+ 	</p>
+ </section>
+
+ <section>
+ 	<h3>BA.2 shows a consistent transmission advantage over BA.1</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_omicron_rt_split_2022_03_06.png">
+ 	<div class="citation">
+ 		<a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2021. medRxiv.</a>
+ 	</div>
+ </section>
+
+ <section>
+	 <h3>Expect BA.2 to displace BA.1 over the coming weeks</h3>
+	 <img class="stretch" data-src="/images/talks/ncov_omicron_rt_log_cases_split_2022_03_06.png">
+	 <div class="citation">
+		 <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2021. medRxiv.</a>
+	 </div>
+ </section>
+
+ <section>
+	 <h3>BA.2 take-over in the US lagged relative to Europe</h3>
+	 <img class="stretch" data-src="/images/talks/ncov_omicron_rt_us_split_2022_03_06.png">
+	 <div class="citation">
+		 <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2021. medRxiv.</a>
+	 </div>
+ </section>
+
+ <section>
+	 <h3>BA.2 take-over in the US lagged relative to Europe</h3>
+	 <img class="stretch" data-src="/images/talks/ncov_omicron_rt_log_cases_us_split_2022_03_06.png">
+	 <div class="citation">
+		 <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2021. medRxiv.</a>
+	 </div>
+ </section>
+
+<!-- <section>
+	<h3>Omicron likely displaces Delta, but this is not yet definite</h3>
+	<p>If Delta is increasing in frequency by May, we'll likely have coexistence</p>
+	<img class="stretch" data-src="/images/talks/ncov_omicron_vs_delta_scenarios.png">
+	<div class="citation">
+		<a href="https://twitter.com/trvrb/status/1470420195567030274">@trvrb. 2021.</a>
+	</div>
+</section> -->
+
+<!-- 4. Discussion of two "paths" for SARS-CoV-2 evolution going forward, where we can expect to see:
+ - Continual refinements of transmissibility and continual push for small antigenic changes within BA.2
+ - Potential for large leaps with further “Omicron-like” saltational emergence events
+ - Given ~2 years of pandemic and observation of 1 Omicron-like event we can bracket rate of emergence, but there is substantial uncertainty
+ - ie we don’t know if Omicron was a one-off event or if these jumps will be feature of SARS-CoV-2 evolution going forward -->
+
+<section>
+	<h3>SARS-CoV-2 will continue to evolve to escape population immunity, though with multiple potential avenues</h3>
+	<img class="stretch" data-src="/images/talks/ncov_omicron_tree_2022_01_18_scenarios.png">
+</section>
+
+<section>
+	<h3>With 1 observation in ~2.3 years of virus evolution, it's currently unclear how common Omicron-like events will be</h3>
+	<img class="stretch" data-src="/images/talks/ncov_omicron_wait_time_distribution.png">
+</section>
+
+<section>
+	<h3>This rate distribution gives a naive prediction of Omicron-like emergence events occurring in the rest of 2022</h3>
+	<img class="stretch" data-src="/images/talks/ncov_omicron_prediction_distribution.png">
+</section>
+
+<!-- 5. Likely scenarios over the next ~12 months
+ - Connect scenarios to levels of circulation -->
+
+<section class="left-align">
+	<h3>Likely scenarios over the next 12 months</h3>
+	<p>
+	<ol>
+		<li>
+			Evolution within Omicron BA.2 to further increase intrinsic transmission and to escape from Omicron-derived immunity. This scenario sees lower attack rates with 2022-2023 epidemic driven by drift + waning + seasonality.
+		</li>
+		<li>
+			Another Omicron-like emergence event in which a chronic infection initiated in ~2021 incubates a new wildly divergent virus. This scenario sees high attack rates with epidemic driven by variant emergence.
+		</li>
+	</ol>
+	</p>
+</section>
+
+<!-- Expectations for endemicity -->
+
+<section class="left-align">
+	<h3>Broad expectations of endemicity based on comparison with flu</h3>
+	<p>
+	<ol>
+		<li>
+			<i>R</i><sub class="even-smaller">0</sub> of Delta/Omicron is perhaps ~6 compared to
+			<i>R</i><sub class="even-smaller">0</sub> of flu of ~2. At same rates of evolution and waning
+			expect more COVID circulation.
+		</li>
+		<li>
+			Before Omicron rates of evolution in SARS-CoV-2 S1 had been roughly equal to H3N2 flu.
+			Omicron equivalent to 5 years of H3N2 evolution.
+		</li>
+		<li>
+			Infection fatality rate (IFR) of COVID is roughly comparable to flu once you have prior immunity.
+		</li>
+	</ol>
+	</p>
+	<p>
+		1, 2 and 3 suggest a virus that circulates at higher levels than flu, but individual
+		infections aren't much more severe in terms of mortality than H3N2 influenza.
+	</p>
+	<p>
+		Seasonality suggests winter "COVID season", but Omicron-like events could overcome seasonality.
+	</p>
+</section>
+
+<section class="left-align">
+	<h3>Key parameters are seasonal attack rate and IFR</h3>
+	<p>
+	<ol>
+		<li>
+			Assume seasonal attack rate of 40%, with Omicron-like emergence driving 80% some years.
+		</li>
+		<li>
+			Assume IFR of 0.05% (compared to early pandemic IFR of 0.5%), but new variant could push this higher.
+		</li>
+		<li>
+			This would give somewhere around 60K yearly deaths at endemicity, but potential for variant emergence to push this over 100K.
+		</li>
+	</ol>
+	</p>
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/maya-lewinsohn.jpg"> Maya Lewinsohn,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/denisse-sequeira.jpg"> Denisse Sequeira,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="11%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
