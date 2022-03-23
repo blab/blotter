@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Yongsang Kim
-position: Master student
-image: /images/people/yongsang-kim.jpg
+position: LG Electronics, Researcher
+alumni: true
 ---

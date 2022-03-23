@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Jongsu Kim
-position: 
+position: LG CNS, Researcher
 alumni: true
 ---
