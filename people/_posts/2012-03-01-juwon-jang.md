@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Juwon Jang
-position: Hyundai Electric, Researcher
+position: Hyundai Heavy Industries Co., Ltd, Researcher
 alumni: true
 ---

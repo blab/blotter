@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Junhyuk Kim
-position: PhD student
+position: Postdoc
 image: /images/people/junhyuk-kim.jpg
 ---

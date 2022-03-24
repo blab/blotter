@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Junghoon Lee
-position: Yonsei University, Postdoc Researcher
+position: Hyundai Heavy Industries Co., Ltd, Researcher
 alumni: true
 ---
