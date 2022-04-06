@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Sajjad ur Rehman
-position: Sogang University, Postdoctoral Researcher
+position: National university of Science and technology H-12 Islamabad, Assistant professor
 alumni: true
 ---

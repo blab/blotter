@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Abouelmagd Abdelsamie
-position: University of Magdeburg "Otto-von-Guericke", Research Associate
+position: University of Magdeburg, Research Associate
 alumni: true
 ---
