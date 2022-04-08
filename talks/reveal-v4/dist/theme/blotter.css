@@ -374,6 +374,11 @@ body {
   vertical-align: middle !important;
 }
 
+/* Math */
+.reveal .katex {
+  font-size: 1.1em;
+}
+
 /*********************************************
  * COLORS
  *********************************************/

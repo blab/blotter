@@ -34,8 +34,11 @@
 		</div>
 
 		<script src="/talks/reveal-v4/dist/reveal.js"></script>
+		<script src="/talks/reveal-v4/plugin/math/math.js"></script>
 		<script>
-			Reveal.initialize();
+			Reveal.initialize({
+				plugins: [ RevealMath.KaTeX ]
+			});
 			Reveal.configure({
 			  controls: false,
 				hash: true,
