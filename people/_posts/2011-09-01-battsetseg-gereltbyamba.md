@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Battsetseg Gereltbyamba
-position: Mongolian University of science and technology, Senior lecturer
+position: Mongolian University of Science and Technology, Senior Lecturer
 alumni: true
 ---

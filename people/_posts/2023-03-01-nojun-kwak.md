@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Nojun Kwak
-position: Integrated Master student
+position: Integrated MS/PhD student
 image:
 ---
