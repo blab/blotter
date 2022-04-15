@@ -5,7 +5,7 @@ image: /images/papers/kistler-sarscov2-adaptive-evolution.png
 authors: Kistler KE, Huddleston J, Bedford T.
 year: 2022
 ref: Kistler et al. 2022. Cell Host Microbe.
-journal: "Cell Host Microbe: 10.1016/j.chom.2022.03.018."
+journal: "Cell Host Microbe 30: 545-555."
 pdf: /pdfs/papers/kistler-sarscov2-adaptive-evolution.pdf
 supplement: /pdfs/papers/kistler-sarscov2-adaptive-evolution-supp.pdf
 doi: 10.1016/j.chom.2022.03.018
