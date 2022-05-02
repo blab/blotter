@@ -2,6 +2,7 @@
 layout: member
 title: Victor Lin
 position: Full Stack Developer
+twitter: victorlin_
 github: victorlin
 scholar: DrzHirYAAAAJ
 image: /images/team/victor-lin.jpg
