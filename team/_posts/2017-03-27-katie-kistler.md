@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Katie Kistler
-position: PhD student
+position: Postdoc
 handle: kistlerk
 github: kistlerk
 image: /images/team/katie-kistler.jpg
