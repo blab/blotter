@@ -1,0 +1,257 @@
+---
+layout: talk_reveal4
+title: SARS-CoV-2 continuing evolution
+venue: COVID DivDir
+author: Trevor Bedford
+widescreen: true
+draft: true
+---
+
+<!-- ~15 min -->
+
+<!--
+Outline:
+
+1. Refresh of big picture of SARS-CoV-2 evolution
+2. New crop of variants
+3. Big picture expectations over the next ~12 months
+
+
+1. Overview of SARS-CoV-2 evolution up to this point
+ - Emergence and spread of variant viruses during 2021 due primarily to mutations to spike protein that increase transmissibility culminating in Delta’s displacement of competing diversity
+ - Emergence and rapid spread of Omicron emphasizing large spike divergence and large degree of immune escape (~10% VE against symptomatic infection in fully vaccinated)
+ - Briefly cover Omicron origin hypotheses
+2. Comparison to influenza and seasonal CoV evolution, emphasizing the rapidity of what we’ve seen so far with SARS-CoV-2 relative to flu
+ - Focus just on amino acid rate
+3. Discussion of immediate trends as existing genetic diversity plays out
+ - We’ll see displacement of BA.1 by BA.2 over the coming ~8 weeks
+ - Still potential for return of Delta viruses, which should become clear in ~April
+4. Discussion of two "paths" for SARS-CoV-2 evolution going forward, where we can expect to see:
+ - Continual refinements of transmissibility and continual push for small antigenic changes within BA.2
+ - Potential for large leaps with further “Omicron-like” saltational emergence events
+ - Given ~2 years of pandemic and observation of 1 Omicron-like event we can bracket rate of emergence, but there is substantial uncertainty
+ - ie we don’t know if Omicron was a one-off event or if these jumps will be feature of SARS-CoV-2 evolution going forward
+5. Likely scenarios over the next ~12 months
+ - Connect scenarios to levels of circulation
+
+-->
+
+<!-- Color ramp: [#5097BA", "#60AA9E", "#75B681", "#8EBC66", "#AABD52", "#C4B945", "#D9AD3D", "#E59637", "#E67030", "#DF4327"] -->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<p class="title">
+	Trevor Bedford (@trvrb)
+	<br>
+	Fred Hutchinson Cancer Research Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<section class="left-align">
+	<h3>1. Overview of SARS-CoV-2 over the course of the pandemic</h3>
+	<h3>2. Emerging variants</h3>
+	<h3>3. Expectations for endemicity</h3>
+</section>
+
+<!-- Overview of SARS-CoV-2 evolution up to this point -->
+
+<section>
+	<h3>Global SARS-CoV-2 evolution over the course of the pandemic</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_freq_2022_05_17.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Rapid accumulation of spike mutations driving displacement</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_scatter_s1_mutations_2022_05_17.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time?branchLabel=none&l=scatter&m=div&scatterX=num_date&scatterY=S1_mutations">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>S1 evolution remarkably fast relative to seasonal influenza</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_compared_to_flu_2022_05_17.png">
+</section>
+
+<!-- Maybe swap in Omicron origins figure -->
+
+<!-- Emerging variants -->
+
+<section>
+	<h3>Initial variants characterized by repeated evolution at spike 484K and 501Y</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_484K_501Y_2021_05_07.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/global?c=gt-S_484,501">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>We're now seeing repeated evolution at spike 452</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_452R_2022_05_17.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/6m?c=gt-S_452">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>This pattern is familiar from seasonal influenza</h3>
+	<img class="stretch" data-src="/images/talks/nextflu_h3n2_tree_186D_2022_05_17.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/flu/seasonal/h3n2/ha/3y?c=gt-HA1_186">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>BA.4 and BA.5 emerging from South Africa with spike mutations 452R and 486V</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_ba.4_ba.5_tree_map.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/africa/6m">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>BA.2.12.1 emerging from Northeastern US bearing spike mutation 452Q</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_ba.2.12.1_tree_map.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/north-america/6m">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+ <h3>Variant-specific epidemics shown by partitioning case counts with variant frequency</h3>
+ <img class="stretch" data-src="/images/talks/ncov_variants_rt_countries_log_cases_2022_05_17.png">
+ <div class="citation">
+	 <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2021. medRxiv.</a>
+ </div>
+</section>
+
+<section>
+ <h3>BA.4, BA.5, BA.2.12.1 driving cases across countries</h3>
+ <img class="stretch" data-src="/images/talks/ncov_variants_rt_countries_2022_05_17.png">
+ <div class="citation">
+	 <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2021. medRxiv.</a>
+ </div>
+</section>
+
+<section>
+ <h3>Rt for BA.2.12.1 greater than BA.2 and Rt for BA.4/5 greater still</h3>
+ <img class="stretch" data-src="/images/talks/ncov_variants_rt_us_log_cases_2022_05_17.png">
+ <div class="citation">
+	 <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2021. medRxiv.</a>
+ </div>
+</section>
+
+<section>
+ <h3>Relative fitness of BA.4, BA.5 and BA.2.12.1 visible in the US</h3>
+ <img class="stretch" data-src="/images/talks/ncov_variants_rt_us_frequencies_logit_2022_05_17.png">
+ <div class="citation">
+	 <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2021. medRxiv.</a>
+ </div>
+</section>
+
+<section>
+ <h3>BA.4 and BA.5 driving substantial epidemics in South Africa</h3>
+ <img class="stretch" data-src="/images/talks/ncov_variants_rt_south_africa_cases_2022_05_17.png">
+ <div class="citation">
+	 <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2021. medRxiv.</a>
+ </div>
+</section>
+
+<!-- Expectations for endemicity -->
+
+<section>
+	<h3>Immunity and reduced intrinsic severity has dropped CFR</h3>
+	<img class="stretch" data-src="/images/talks/ncov_severity_lagged_cfr_prediction_2022_05_17.png">
+</section>
+
+<section class="left-align">
+	<h3>Broad expectations of endemicity based on comparison with flu</h3>
+	<p>
+	<ol>
+		<li>
+			<i>R</i><sub class="even-smaller">0</sub> of Delta/Omicron is perhaps ~6 compared to
+			<i>R</i><sub class="even-smaller">0</sub> of flu of ~2. At same rates of evolution and waning
+			expect more COVID circulation.
+		</li>
+		<li>
+			Before Omicron rates of evolution in SARS-CoV-2 S1 had been roughly equal to H3N2 flu.
+			Omicron equivalent to 5 years of H3N2 evolution.
+		</li>
+		<li>
+			Infection fatality rate (IFR) of COVID is roughly comparable to flu once you have prior immunity.
+		</li>
+	</ol>
+	</p>
+	<p>
+		1, 2 and 3 suggest a virus that circulates at higher levels than flu, but individual
+		infections aren't much more severe in terms of mortality than H3N2 influenza.
+	</p>
+	<p>
+		Seasonality suggests winter "COVID season", but Omicron-like events could overcome seasonality.
+	</p>
+</section>
+
+<section class="left-align">
+	<h3>Key parameters are seasonal attack rate and IFR</h3>
+	<p>
+	<ol>
+		<li>
+			Assume seasonal attack rate of 40%, with Omicron-like emergence driving 80% some years.
+		</li>
+		<li>
+			Assume IFR of 0.05% (compared to early pandemic IFR of 0.5%), but new variant could push this higher.
+		</li>
+		<li>
+			This would give somewhere around 60K yearly deaths at endemicity, but potential for variant emergence to push this over 100K.
+		</li>
+	</ol>
+	</p>
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/maya-lewinsohn.jpg"> Maya Lewinsohn,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/denisse-sequeira.jpg"> Denisse Sequeira,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="11%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
