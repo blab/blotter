@@ -3,9 +3,9 @@ layout: paper
 title: Remote household observation for non-influenza respiratory viral illness
 image: /images/papers/emanuels-households.png
 authors: Emanuels A, Heimonen J, O'Hanlon J, Kim AE, Wilcox N, McCulloch DJ, Brandstetter E, Wolf CR, Logue JK, Han PD, Pfau B, Newman KL, Hughes JP, Jackson ML, Uyeki TM, Boeckh M, Starita LM, Nickerson DA, Bedford T, Englund JA, Chu HY, on behalf of Seattle Flu Study investigators.
-year: 2020
-ref: Emanuels et al. 2020. Clin Infect Dis.
-journal: "Clin Infect Dis: ciaa1719."
+year: 2021
+ref: Emanuels et al. 2021. Clin Infect Dis.
+journal: "Clin Infect Dis 73: e4411–e4418."
 pdf: /pdfs/papers/emanuels-households.pdf
 doi: 10.1093/cid/ciaa1719
 ---
