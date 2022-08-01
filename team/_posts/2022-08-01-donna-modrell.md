@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Donna Modrell
-position: Administrative Coordinator
+position: Administrative coordinator
 github: dmodrell
 image: /images/team/donna-modrell.jpg
 ---
