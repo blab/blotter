@@ -8,6 +8,7 @@ github: trvrb
 scholar: RIi-1pAAAAAJ
 image: /images/team/trevor-bedford.jpg
 cv: /pdfs/team/trevor-bedford-cv.pdf
+email: tb@bedford.io
 ---
 
 I'm a Professor at the [Fred Hutchinson Cancer Research Center](https://www.fredhutch.org/) in the [Vaccine and Infectious Disease Division](https://www.fredhutch.org/en/labs/vaccine-and-infectious-disease.html) and the [Computational Biology Program](https://www.fredhutch.org/en/labs/phs/projects/herbold-computational-biology-program.html), affiliate faculty in the [Department of Genome Sciences](https://www.gs.washington.edu) and the [Department of Epidemiology](https://epi.washington.edu/) at the [University of Washington](https://www.washington.edu/), and an Investigator at the [Howard Hughes Medical Institute](https://www.hhmi.org/).
