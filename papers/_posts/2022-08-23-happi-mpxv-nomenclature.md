@@ -2,7 +2,7 @@
 layout: paper
 title: Urgent need for a non-discriminatory and non-stigmatizing nomenclature for monkeypox virus
 image: /images/papers/happi-mpxv-nomenclature.png
-authors: Happi C , Adetifa I, Mbala P, Njouom R, Nakoune E, Happi A, Ndodo N, Ayansola O, Mboowa G, Bedford T, Neher RA, Roemer C, Hodcroft E, Tegally H, O'Toole A, Rambaut A, Pybus O, Kraemer MUG, Wilkinson E, Isidro J, Borges V, Pinto M, Gomes JP, Freitas L, Resende PC, Lee RTC, Maurer-Stroh S, Baxter C, Lessells R, Ogwell AE, Kebede Y, Tessema SK, de Oliveira T.
+authors: Happi C, Adetifa I, Mbala P, Njouom R, Nakoune E, Happi A, Ndodo N, Ayansola O, Mboowa G, Bedford T, Neher RA, Roemer C, Hodcroft E, Tegally H, O'Toole A, Rambaut A, Pybus O, Kraemer MUG, Wilkinson E, Isidro J, Borges V, Pinto M, Gomes JP, Freitas L, Resende PC, Lee RTC, Maurer-Stroh S, Baxter C, Lessells R, Ogwell AE, Kebede Y, Tessema SK, de Oliveira T.
 year: 2022
 ref: Happi et al. 2022. PLoS Biol.
 journal: "PLoS Biol 20: e3001769."
