@@ -1,0 +1,331 @@
+---
+layout: talk_reveal4
+title: SARS-CoV-2 variant emergence and spread
+venue: NIH NIAID
+event: SAVE Early Detection Meeting
+author: Trevor Bedford
+widescreen: true
+---
+
+<!-- ~30 min -->
+
+<!-- Color ramp: [#5097BA", "#60AA9E", "#75B681", "#8EBC66", "#AABD52", "#C4B945", "#D9AD3D", "#E59637", "#E67030", "#DF4327"] -->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<p class="title">
+	Trevor Bedford (@trvrb)
+	<br>
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<section class="left-align">
+	<h3>1. SARS-CoV-2 evolution</h3>
+	<h3>2. SARS-CoV-2 variant frequency dynamics</h3>
+	<h3>3. BA.2.75 as case study</h3>
+	<h3>4. Emerging variants</h3>
+	<h3>5. Genomic surveillance</h3>
+</section>
+
+<!-- SARS-CoV-2 evolution -->
+
+<section data-transition="fade" data-background="#5097BA">
+	<h1 class="title">SARS-CoV-2 evolution</h1>
+</section>
+
+<section>
+	<h3>Genetic relationships of globally sampled SARS-CoV-2 to present</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_tree_unrooted_2022_08_08.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2022-08-06?l=unrooted">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Rapid displacement of existing diversity by emerging variants</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_freq_2022_08_08.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2022-08-06">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>S1 evolved at a rate of 14 amino acid changes per year since pandemic start</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_2022_08_28.png">
+</section>
+
+<section>
+	<h3>Continued rapid accumulation since BA.2 with 8 amino acid changes per year</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_since_ba2_2022_08_28.png">
+</section>
+
+<section>
+	<h3>S1 evolution remarkably fast relative to seasonal influenza</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_compared_to_flu_2022_08_28.png">
+</section>
+
+<section>
+	<h3>Continued escape from neutralization by existing population immunity</h3>
+ 	<img class="stretch" data-src="/images/talks/sarscov2_titers_wang_omicron.png">
+	<div class="citation">
+ 		<a href="https://www.biorxiv.org/content/10.1101/2022.05.26.493517v2">Wang et al. 2022. bioRxiv.</a>
+ 	</div>
+</section>
+
+<!-- SARS-CoV-2 variant frequency dynamics -->
+
+<section data-transition="fade" data-background="#75B681">
+	<h1 class="title">SARS-CoV-2 variant frequency dynamics</h1>
+</section>
+
+<section>
+	<h3>Population genetic expectation of variant frequency under selection</h3>
+	<p>$x' = \frac{x \, (1+s)}{x \, (1+s) + (1-x)}$ for frequency $x$ over one generation with selective advantage $s$</p>
+	<p>$x(t) = \frac{x_0 \, (1+s)^t}{x_0 \, (1+s)^t + (1-x_0)}$ for initial frequency $x_0$ over $t$ generations</p>
+	<p>Trajectories are linear once logit transformed via $\mathrm{log}(\frac{x}{1 - x})$</p>
+	<img class="stretch" src="/images/talks/ncov_variants_selection_logit_trajectories.png">
+</section>
+
+<section>
+	<h3>Variants show consistent frequency dynamics in logit space</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_omicron_countries_frequencies_logit_2022_04_08.png">
+</section>
+
+<section>
+	<h3>Variants show consistent frequency dynamics in logit space</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_delta_countries_frequencies_logit_2021_09_07.png">
+</section>
+
+<section>
+	<h3>Multinomial logistic regression</h3>
+	<p>
+		Multinomial logistic regression models the probability of a virus sampled at time $t$ belonging to
+		variant $i$ as
+	</p>
+	<p>
+		$$\mathrm{Pr}(X = i) = x_i(t) = \frac{p_i \, \mathrm{exp}(f_i \, t)}{\sum_{1 \le j \le n} p_j \, \mathrm{exp}(f_j \, t) }$$
+	</p>
+	<p>
+		where the model has $2n$ parameters consisting of $p_i$ the frequency of variant $i$ at initial timepoint
+		and $f_i$ the growth rate or fitness of variant $i$ for $n$ variants.
+	</p>
+	<p>
+		The model is fit to minimize "log loss" of predicted variant vs observed variant across observations in
+		dataset.
+	</p>
+</section>
+
+<section>
+	<h3>Multinomial logistic regression fits variant frequencies well</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_rt_logistic_regression_2021_09_01.png">
+</section>
+
+<section>
+	<h3>Consistent fitness advantage of BA.5 across countries</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_frequencies_logit_2022_08_01.png">
+</section>
+
+<section>
+	<h3>Despite similar rates of displacement, BA.5 epidemics vary</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_partitioned_cases_2022_08_01.png">
+</section>
+
+<section>
+	<h3>Despite similar rates of displacement, BA.5 epidemics vary</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_partitioned_log_cases_2022_08_01.png">
+</section>
+
+<section>
+	<h3>These differences can be explained by consistent growth advantage of BA.5, but different baseline Rt across countries</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_rt_2022_08_01.png">
+	<div class="citation">
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>Multinomial logistic regression should work well for SARS-CoV-2 prediction, except new variants have
+		been emerging fast enough that the prediction horizon is really quite short</h3>
+</section>
+
+<!-- BA.2.75 as case study -->
+
+<section data-transition="fade" data-background="#8EBC66">
+	<h1 class="title">BA.2.75 as case study</h1>
+</section>
+
+<section>
+	<h3>BA.2.75 shows consistent selective advantage across countries</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_logit_frequencies_2022_08_24.png">
+</section>
+
+<section>
+	<h3>BA.2.75 case counts also increasing</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_partitioned_log_cases_2022_08_24.png">
+</section>
+
+<section>
+	<h3>BA.2.75 current Rt greater than 1 in the US, but lower than initial Rt of BA.5</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_rt_2022_08_24.png">
+	<div class="citation">
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>July 4: Initial frequency data from India were quite alarming</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_frequencies_rt_2022_07_04.png">
+</section>
+
+<section>
+	<h3>Differential submission lags don't explain discordance</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_submission_lags_2022_08_27.png">
+</section>
+
+<section>
+	<h3>July 4: Early data is geographically focused on Maharashtra</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_within_india_frequencies_2022_07_01.png">
+</section>
+
+<section>
+	<h3>Aug 27: Further sequencing fills out geography</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_within_india_frequencies_2022_08_27.png">
+</section>
+
+<!-- Emerging variants -->
+
+<section data-transition="fade" data-background="#AABD52">
+	<h1 class="title">Emerging variants</h1>
+</section>
+
+<section>
+	<h3>Watch lists for new Pango lineages rising quickly in frequency</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_emerging_variants_cov-spectrum_2022_08_28.png">
+	<div class="citation">
+		<a href="https://cov-spectrum.org/collections/24">CoV-Spectrum.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Hierarchical MLR models should work well to regularize and pool data</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_mutational_fitness_obermeyer_model.png">
+	<div class="citation">
+		<a href="https://www.medrxiv.org/content/10.1101/2021.09.07.21263228">Obermeyer et al. 2022. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h3>However, mutational makeup did not predict Omicron fitness</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_mutational_fitness_2022_01_16.png">
+	<div class="citation">
+		Model from <a href="https://www.medrxiv.org/content/10.1101/2021.09.07.21263228">Obermeyer et al. 2022. Science.</a>
+		Figure from <a href="https://nextstrain.org/ncov/gisaid/global/2022-01-17?branchLabel=none&l=scatter&scatterY=mutational_fitness">nextstrain.org</a>
+	</div>
+</section>
+
+<!-- Genomic surveillance -->
+
+<section data-background="#C4B945">
+	<h1 class="title">Genomic surveillance</h1>
+</section>
+
+<section>
+	<h3>Sequences generated and shared at an unprecedented pace with >5M in 2022 (compare to 8k flu genomes in 2022)</h3>
+	<img class="stretch" data-src="/images/talks/ncov_genomic_surveillance_dotplot_global_2022_08_18.png">
+	<div class="citation">
+		Data from gisaid.org
+	</div>
+</section>
+
+<section>
+	<h3>My favorite metric is number of sequences available from samples collected in the past 30 days</h3>
+	<img class="stretch" data-src="/images/talks/ncov_genomic_surveillance_recent_sequences_global_2022_08_18.png">
+	<div class="citation">
+		Data from gisaid.org
+	</div>
+</section>
+
+<section>
+	<h3>Largely consistent sequence counts for US and Europe, though recent decline in UK</h3>
+	<img class="stretch" data-src="/images/talks/ncov_genomic_surveillance_recent_sequences_us_uk_europe_2022_08_18.png">
+	<div class="citation">
+		Data from gisaid.org
+	</div>
+</section>
+
+<section>
+	<h3>Investments in genomic surveillance should focus on improving latency and throughput in LMICs</h3>
+	<img class="stretch" data-src="/images/talks/ncov_genomic_surveillance_recent_sequences_africa_south_america_asia_2022_08_18.png">
+	<div class="citation">
+		Data from gisaid.org
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>Genomic surveillance and modeling to track SARS-CoV-2 variants</h3>
+	<p>
+	<ol>
+		<li>
+			Global genomic surveillance with rapid turnaround times essential, as this allows spotting variant
+			early and provides geographic replication
+		</li>
+		<li>
+			With detailed frequency data, MLR models work well to estimate local growth rates
+		</li>
+		<li>
+			Fitness estimates become more reliable with multiple geographies
+		</li>
+		<li>
+			Automated systems for near-term fitness estimation and forecasting should be continued research priority
+		</li>
+	</ol>
+	</p>
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/maya-lewinsohn.jpg"> Maya Lewinsohn,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/denisse-sequeira.jpg"> Denisse Sequeira,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="11%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
