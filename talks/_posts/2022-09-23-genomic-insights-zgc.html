@@ -1,0 +1,302 @@
+---
+layout: talk_reveal4
+title: Genomic insights during initial viral emergence and continued surveillance of viral evolution
+venue: ZGC Forum
+author: Trevor Bedford
+widescreen: true
+draft: true
+---
+
+<!-- 15 min talk -->
+
+<!--
+Outline:
+- highlight two major themes for pathogen genomic sequencing
+- initial viral emergence
+  - SARS-CoV-2
+    - human-to-human transmission and R0 in Wuhan
+	  - rapid spread in Seattle when testing was poor
+  - Monkeypox
+    - ongoing human-to-human transmission since 2017
+- continued surveillance of viral evolution
+  - SARS-CoV-2
+	  - variant viruses
+-->
+
+<!-- Color ramp: [#5097BA", "#60AA9E", "#75B681", "#8EBC66", "#AABD52", "#C4B945", "#D9AD3D", "#E59637", "#E67030", "#DF4327"] -->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<p class="title">
+	Trevor Bedford (@trvrb)
+	<br>
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<section class="left-align">
+	<h3>1. Initial viral emergence (SARS-CoV-2 and MPXV)</h3>
+	<h3>2. Continuing viral evolution (SARS-CoV-2)</h3>
+</section>
+
+<!-- SARS-CoV-2 emergence in Wuhan -->
+
+<section data-transition="fade" data-background="#5097BA">
+	<h1 class="title">SARS-CoV-2 emergence</h1>
+</section>
+
+<section>
+	<h3>Jan 11: First five genomes from Wuhan showed a novel SARS-like coronavirus</h3>
+	<img class="stretch" data-src="/images/talks/ncov_sars_like_tree.png">
+	<div class="citation-left">
+		Data from CAMS, China CDC, Fudan University, WIV;
+		Figure from <a href="https://nextstrain.org/groups/blab/sars-like-cov">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Jan 19: First 12 genomes from Wuhan and Bangkok showed lack of genetic diversity</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_2020_01_19.png">
+	<div class="citation-left">
+		Data from CAMS, China CDC, Fudan University, Hubei CDC, Thai MOPH, WIV;
+		Figure from <a href="https://nextstrain.org/ncov/2020-01-22">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>
+		Single introduction into the human population between Nov 15 and Dec 15 and
+		subsequent rapid human-to-human spread
+	</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tmrca_r0_2020_01_23.png">
+	<div class="citation-left">
+		<a href="https://nextstrain.org/narratives/ncov/sit-rep/2020-01-23">Bedford et al. Jan 23, 2020. Technical Report.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Rapid global pandemic spread during spring 2020</h3>
+	<video data-autoplay>
+		<source data-src="/images/talks/ncov_early_tree_map_animation.mp4" type="video/mp4"/>
+	</video>
+</section>
+
+<section>
+	<h3>Epidemic in the USA was introduced from China in late Jan and from Europe during Feb</h3>
+	<img class="stretch" src="/images/talks/ncov_tree_map_2020_04_20_usa_1.png">
+	<div class="citation-left">
+		<a href="https://nextstrain.org/ncov/global/2020-04-15?f_country=USA">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<div style="float: left; width: 44%">
+		<h3>Seattle Flu Study detects local circulation and charts early epidemic in Washington State</h3>
+	</div>
+	<div style="float: right; width: 56%">
+		<img src="/images/talks/ncov_cryptic_transmission_prevalence.png">
+	</div>
+	<div class="citation-left">
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Direct introduction from China ~Feb 1 responsible for the majority of the epidemic</h3>
+	<img class="stretch" src="/images/talks/ncov_cryptic_transmission_outbreak_clade.png">
+	<div class="citation-left">
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h3>In both Wuhan and Seattle, early genomic sequencing revealed scope of SARS-CoV-2 epidemic while
+		case-based surveillance was still coming online</h3>
+</section>
+
+<!-- Monkeypox virus emergence -->
+
+<section data-transition="fade" data-background="#60AA9E">
+	<h1 class="title">MPXV emergence</h1>
+</section>
+
+<section>
+	<h3>Monkeypox virus genome</h3>
+	<p>
+		Generally expect DNA viruses to have much slower evolutionary rate of roughly 1 mutation per year compared to
+		RNA viruses like SARS-CoV-2 which mutate once every 2 weeks
+	</p>
+	<img class="stretch" src="/images/talks/mpxv_coxpox_genome_map.jpg">
+	<div class="citation-left">
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Diaz-Cánova et al. 2022. Front Microbiol.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Monkeypox viral diversity and typical epidemiology</h3>
+	<p>
+		Previously we observed stuttering transmission chains in humans after spillover from reservoir,
+		similar to viruses like MERS-CoV and Nipa
+	</p>
+	<img class="stretch" src="/images/talks/mpxv_viral_diversity.png">
+	<div class="citation-left">
+		<a href="https://nextstrain.org/monkeypox/mpxv">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Outbreak viruses are closely related as descendants of clade 3</h3>
+	<img class="stretch" src="/images/talks/mpxv_viral_diversity_outbreak.png">
+	<div class="citation-left">
+		<a href="https://nextstrain.org/monkeypox/mpxv">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Outbreak viruses differ by 47 SNPs compared to 2018</h3>
+	<p>
+		Observe ~1 mutation per month instead of the DNA virus expectation of 1 mutation per year
+	</p>
+	<img class="stretch" src="/images/talks/mpxv_outbreak_clock.png">
+	<div class="citation-left">
+		<a href="https://nextstrain.org/monkeypox/hmpxv1?branches=hide&l=clock">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Unusual mutation spectrum consistent with APOBEC editing</h3>
+	<img class="stretch" src="/images/talks/mpxv_outbreak_apobec_mutations.png">
+	<div class="citation-left">
+		<a href="https://virological.org/t/initial-observations-about-putative-apobec3-deaminase-editing-driving-short-term-evolution-of-mpxv-since-2017/">O'Toole and Rambaut. 2022. Virological.org.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Mutations consistent with APOBEC editing begin in 2018 and continue through current outbreak</h3>
+	<img class="stretch" src="/images/talks/mpxv_outbreak_ga_ct_fraction.png">
+	<div class="citation-left">
+		<a href="https://nextstrain.org/monkeypox/mpxv?c=GA_CT_fraction">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Conclude human-to-human transmission has been occuring since late 2017, with 2022 outbreak driven by
+		MPXV becoming established in the wider MSM population</h3>
+</section>
+
+<!-- SARS-CoV-2 continued evolution -->
+
+<section data-transition="fade" data-background="#75B681">
+	<h1 class="title">SARS-CoV-2 continuing evolution</h1>
+</section>
+
+<section>
+	<h3>Global SARS-CoV-2 evolution over the course of the pandemic</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_freq_2022_08_08.png">
+	<div class="citation-left">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2022-08-06">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Rapid accumulation of spike mutations driving displacement</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_scatter_s1_mutations_2022_06_20.png">
+	<div class="citation-left">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2022-08-06?branchLabel=none&l=scatter&m=div&scatterX=num_date&scatterY=S1_mutations">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>S1 evolution remarkably fast relative to seasonal influenza</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_compared_to_flu_2022_08_28.png">
+</section>
+
+<section>
+	<h3>BA.4 and BA.5 emerged from South Africa with spike mutations 452R and 486V</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_ba.4_ba.5_tree_map.png">
+	<div class="citation-left">
+		BA.4 / BA.5 described in <a href="https://www.nature.com/articles/s41591-022-01911-2">Tegally et al. 2022. Nat Med.</a>
+		Figure from <a href="https://nextstrain.org/ncov/gisaid/global/6m/2022-08-08?c=gt-S_452,486">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Population genetic expectation of variant frequency under selection</h3>
+	<p>$x' = \frac{x \, (1+s)}{x \, (1+s) + (1-x)}$ for frequency $x$ over one generation with selective advantage $s$</p>
+	<p>$x(t) = \frac{x_0 \, (1+s)^t}{x_0 \, (1+s)^t + (1-x_0)}$ for initial frequency $x_0$ over $t$ generations</p>
+	<p>Trajectories are linear once logit transformed via $\mathrm{log}(\frac{x}{1 - x})$</p>
+	<img class="stretch" src="/images/talks/ncov_variants_selection_logit_trajectories.png">
+</section>
+
+<section>
+	<h3>Consistent fitness advantage of BA.5 across countries</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_frequencies_logit_2022_08_01.png">
+</section>
+
+<section>
+	<h3>BA.2.75 shows selective advantage over BA.5</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_logit_frequencies_2022_08_28.png">
+</section>
+
+<section>
+	<h3>Sequences generated and shared at an unprecedented pace with >5M in 2022 (compare to 8k flu genomes in 2022)</h3>
+	<img class="stretch" data-src="/images/talks/ncov_genomic_surveillance_dotplot_global_2022_08_18.png">
+	<div class="citation-left">
+		Data from gisaid.org
+	</div>
+</section>
+
+<section>
+ <h3>
+	 More broadly, I expect continued genomic surveillance to respond to ongoing evolution of SARS-CoV-2,
+	 but that capacity generated for pandemic response will pivot to emerging and endemic pathogens according
+	 to threat / burden
+ </h3>
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 and MPXV genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/maya-lewinsohn.jpg"> Maya Lewinsohn,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/denisse-sequeira.jpg"> Denisse Sequeira,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="11%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
