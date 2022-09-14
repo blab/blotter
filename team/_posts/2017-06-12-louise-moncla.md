@@ -7,7 +7,10 @@ twitter: LouiseHMoncla
 github: lmoncla
 scholar: _myzKrwAAAAJ
 image: /images/team/louise-moncla.jpg
+alumni: true
 ---
+
+_Louise is now an Assistant Professor at the University of Pennsylvania School of Veterinary Medicine._
 
 I am currently a post-doc in the Bedford lab who uses genomics to understand virus emergence and transmission. I received my Bachelor's degree in biology from Penn State University, and my PhD from the University of Wisconsin-Madison under the direction of Thomas Friedrich. During my PhD, I developed protocols for generating and bioinformatically processing deep sequence data from RNA viruses. We used this data to investigate how RNA viruses evolve within individual hosts, and during transmission between them. I am particularly interested in how viruses adapt to new host species, and the role that transmission bottlenecks play in viral evolution.
 
