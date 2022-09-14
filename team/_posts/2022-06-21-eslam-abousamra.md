@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Eslam Abousamra
-position: Research assistant
+position: MPH student
 github: Eabousam
 image: /images/team/eslam-abousamra.jpg
 ---
