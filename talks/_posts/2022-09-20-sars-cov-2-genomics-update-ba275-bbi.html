@@ -1,0 +1,126 @@
+---
+layout: talk_reveal4
+title: SARS-CoV-2 genomics update
+venue: Brotman Baty Institute
+event: Viruses and Vaccines Seminar Series
+author: Trevor Bedford
+widescreen: true
+---
+
+<!-- ~5 min talk length -->
+
+<!-- Color ramp: [#5097BA", "#60AA9E", "#75B681", "#8EBC66", "#AABD52", "#C4B945", "#D9AD3D", "#E59637", "#E67030", "#DF4327"] -->
+
+<!--
+1. Evolution overview and continued spike mutation accumulation in 2022
+ - Emphasize continued accumulation of spike mutations within Omicron
+ - Mention potential for new "Omicron-like" emergence
+2. BA.2.75.2 and other emerging variants
+ - Reference BA.4/BA.5 figures from May 17 and ability to project epidemics
+ - Describe BA.2.75 and BA.2.75.2
+ - Discuss other emerging variants
+-->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<p class="title">
+	Trevor Bedford (@trvrb)
+	<br>
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<section>
+	<h3>Rapid displacement of existing diversity by emerging variants</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_freq_2022_09_17.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2022-09-17">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>S1 evolved at a rate of 13 amino acid changes per year since pandemic start</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_2022_09_17.png">
+</section>
+
+<section>
+	<h3>Continued rapid accumulation from BA.2 onwards with 7 amino acid changes per year</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_since_ba2_2022_09_17.png">
+</section>
+
+<section>
+ <h3>BA.2.75 and sublineage BA.2.75.2 emerging from India</h3>
+ <img class="stretch" data-src="/images/talks/ncov_variants_ba275_tree_map.png">
+ <div class="citation">
+	 <a href="https://nextstrain.org/groups/blab/ncov/ba275-in-india">nextstrain.org</a>
+ </div>
+</section>
+
+<section>
+	<h3>BA.2.75(.2) shows consistent selective advantage in India and US</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_logit_frequencies_2022_09_17.png">
+</section>
+
+<section>
+	<h3>BA.2.75.2 has current Rt in the US of ~1.4</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_rt_log_cases_2022_09_17.png">
+	<div class="citation">
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>However, multiple low frequency Pango lineages that may compete with BA.2.75.2</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_emerging_variants_cov-spectrum_2022_09_18.png">
+	<div class="citation">
+		<a href="https://cov-spectrum.org/collections/24">CoV-Spectrum.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/maya-lewinsohn.jpg"> Maya Lewinsohn,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/denisse-sequeira.jpg"> Denisse Sequeira,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/eslam-abousamra.jpg"> Jennifer Chang,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/donna-modrell.jpg"> Donna Modrell</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="11%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
