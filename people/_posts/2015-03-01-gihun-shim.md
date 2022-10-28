@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Gihun Shim
-position: Defense Agency for Technology and Quality
+position: University of Minnesota, PhD student
 image: /images/people/gihun-shim.jpg
 alumni: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Hyoeun Shim
-position: 
+position: Dartmouth College, PhD student
 alumni: true
 ---

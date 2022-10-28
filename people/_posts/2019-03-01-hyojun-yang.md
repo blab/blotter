@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Hyojun Yang
-position:
+position: Hanwha Aerospace, Researcher
 alumni: true
 ---
