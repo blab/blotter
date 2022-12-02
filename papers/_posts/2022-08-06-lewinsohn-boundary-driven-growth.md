@@ -2,7 +2,7 @@
 layout: paper
 title: State-dependent evolutionary models reveal modes of solid tumor growth
 image: /images/papers/lewinsohn-boundary-driven-growth.png
-authors: Lewinsohn MA, Trevor Bedford T, Müller NF, Feder AF.
+authors: Lewinsohn MA, Bedford T, Müller NF, Feder AF.
 year: 2022
 ref: Lewinsohn et al. 2022. bioRxiv.
 journal: "bioRxiv: 2022.08.05.502978."
