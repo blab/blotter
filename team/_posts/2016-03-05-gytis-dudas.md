@@ -19,4 +19,4 @@ I was a [Mahan Postdoctoral Fellow](https://www.fredhutch.org/en/labs/phs/projec
 - [MERS-CoV spillover at the camel-human interface](http://bedford.io/papers/dudas-mers-structure/)
 
 
-I am now based in Europe and you can keep up to date with what I get up to on [my website](https://evogytis.github.io/).
+I am now a group leader at Vilnius University's [Life Sciences Center](https://www.gmc.vu.lt/en/) and you can keep up to date with what I get up to on [my website](https://evogytis.github.io/).
