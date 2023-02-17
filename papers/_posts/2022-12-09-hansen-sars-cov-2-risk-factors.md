@@ -5,7 +5,7 @@ image: /images/papers/hansen-sars-cov-2-risk-factors.png
 authors: Hansen CL, Perofsky A, Burstein R, Famulare M, Boyle S, Prentice R, Marshall C, McCormick BJ-J, Reinhart D, Capodanno B, Truong M, Schwabe-Fry K, Kuchta K, Pfau B, Acker Z, Lee J, Sibley TR, McDermot E, Rodriguez-Salas L, Stone J, Gamboa L, Han PD, Duchin JS, Waghmare A, Englund JA, Shendure J, Bedford T, Chu HY, Starita LM, Viboud C.
 year: 2022
 ref: Hansen et al. 2022. JAMA Netw.
-journal: "JAMA Netw 5:e2245861."
+journal: "JAMA Netw 5: e2245861."
 pdf: /pdfs/papers/hansen-sars-cov-2-risk-factors.pdf
 supplement: /pdfs/papers/hansen-sars-cov-2-risk-factors-supp.pdf
 doi: 10.1001/jamanetworkopen.2022.45861
