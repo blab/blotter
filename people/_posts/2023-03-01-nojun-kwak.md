@@ -2,5 +2,5 @@
 layout: member
 title: Nojun Kwak
 position: Integrated MS/PhD student
-image:
+image: /images/people/nojun-kwak.jpg
 ---
