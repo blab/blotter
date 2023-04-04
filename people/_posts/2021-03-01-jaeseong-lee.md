@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Jaeseong Lee
-position: Phd student, Cranfield Univiersity
+position: Cranfield Univiersity, Phd student
 alumni: true
 ---
