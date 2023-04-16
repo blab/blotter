@@ -5,7 +5,7 @@ image: /images/papers/lewinsohn-boundary-driven-growth.png
 authors: Lewinsohn MA, Bedford T, Müller NF, Feder AF.
 year: 2023
 ref: Lewinsohn et al. 2023. Nat Ecol Evol.
-journal: "Nat Ecol Evol: s41559-023-02000-4."
+journal: "Nat Ecol Evol 7: 581-596."
 pdf: /pdfs/papers/lewinsohn-boundary-driven-growth.pdf
 doi: 10.1038/s41559-023-02000-4
 github: https://github.com/blab/spatial-tumor-phylodynamics
