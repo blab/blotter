@@ -4,8 +4,8 @@ title: "Augur: a bioinformatics toolkit for phylogenetic analyses of human patho
 image: /images/papers/huddleston-modular-augur.png
 authors: Huddleston J, Hadfield J, Sibley TR, Lee J, Fay K, Ilcisin M, Harkins E, Bedford T, Neher RA, Hodcroft EB.
 year: 2021
-ref: Huddleston et al. 2021. JOSS.
-journal: "JOSS 6: 2906."
+ref: Huddleston et al. 2021. J Open Source Softw.
+journal: "J Open Source Softw 6: 2906."
 pdf: /pdfs/papers/huddleston-modular-augur.pdf
 doi: 10.21105/joss.02906
 github: https://github.com/nextstrain/augur
