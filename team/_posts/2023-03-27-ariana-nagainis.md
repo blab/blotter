@@ -4,6 +4,7 @@ title: Ariana Nagainis
 position: Rotation student
 github: anagainis
 image: /images/team/ariana-nagainis.jpg
+alumni: true
 ---
 
 I am a first year Molecular and Cellular Biology (MCB) PhD student rotating in the Bedford Lab. My research interests are understanding viral evolution, viral immune escape and spillover events.
