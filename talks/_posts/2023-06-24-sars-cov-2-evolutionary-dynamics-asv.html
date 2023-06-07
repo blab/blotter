@@ -1,0 +1,414 @@
+---
+layout: talk_reveal4
+title: Evolutionary dynamics of SARS-CoV-2
+venue: ASV Annual Meeting
+event: Symposium on Understanding How Viruses Spread and Evolve
+author: Trevor Bedford
+widescreen: true
+draft: true
+---
+
+<!-- 30 min total, no Q&A -->
+
+<!--
+Outline
+
+1. Variant viruses introduction
+ - variant viruses and population turnover
+ - what does this mean for vaccination and burden of disease?
+
+2. Forecasting seasonal influenza evolution (maybe)
+
+3. SARS-CoV-2 genome evolution
+ - mutation accumulation and clade growth
+ - rate of evolution by dN/dS
+ - comparison of rate to other antigenically evolving viruses
+
+4. Variant frequency dynamics
+ - SARS-CoV-2 and amazing consistency of frequency dynamics
+ - multinomial logistic regression models
+ - growth advantages of recent variants
+ - Obermeyer hierarchical MLR work
+ - (ideally) comparison of growth advantages to influenza
+
+5. Evolution driving epidemics
+ - variant Rt model
+ - overall incidence from UK Infection Survey
+ - describe seasonality-gating vs immuninity-gating
+ - potential for seasonality driven epidemics
+
+6. Forecasting
+ - MLR models generate accurate short-term forecasts
+ - but new variants are appearing too quickly and so prediction threshold is poor
+ - analogy to weather fronts
+ - DMS escape prior and improved forecasting horizon
+
+7. Big picture of continued evolution
+ - potential for another Omicron-like event
+   - based on simple statistical model
+   - evidence from persistent infections and cryptic lineages
+ - should we expect evolutionary rate to slow as immunity broadens?
+ - expectations for continued incidence and burden of disease
+
+8. Research priorities going forward
+ - continued genomic surveillance and modeling
+ - development of new antivirals
+ - vaccination strategies to combat antigenic evolution and OAS
+	 - universal vaccines?
+   - cocktail vaccines?
+	 - reducing imprinted response?
+
+-->
+
+
+<!-- Color ramp: [#5097BA", "#60AA9E", "#75B681", "#8EBC66", "#AABD52", "#C4B945", "#D9AD3D", "#E59637", "#E67030", "#DF4327"] -->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<p class="title">
+	Trevor Bedford (@trvrb)
+	<br>
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<!-- Variant viruses introduction -->
+
+<!-- Update with latest data -->
+<section>
+	<h3>Population immunity has driven a dramatic shift in death toll</h3>
+	<img class="stretch" data-src="/images/talks/ncov_deaths_owid_2023_05_15.png">
+	<div class="citation">
+		<a href="https://ourworldindata.org/covid-deaths">ourworldindata.org</a>
+	</div>
+</section>
+
+<!-- Update with latest data -->
+<section>
+	<h3>But this immunity is now driving evolution of the virus</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_tree_unrooted_2023_05_15.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-05-15?l=unrooted">nextstrain.org</a>
+	</div>
+</section>
+
+<!-- Update with latest data -->
+<section>
+	<h3>In which new variants emerge that escape from existing population immunity and spread rapidly</h3>
+	<img class="stretch" data-src="/images/talks/ncov_frequencies_2023_05_15.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-05-15">nextstrain.org</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>1. SARS-CoV-2 genome evolution</h3>
+	<h3>2. Variant frequency dynamics</h3>
+	<h3>3. Evolution driving epidemics</h3>
+	<h3>4. Forecasting</h3>
+	<h3>5. Continued evolution</h3>
+</section>
+
+<section data-transition="fade" data-background="#5097BA">
+	<h1 class="title">SARS-CoV-2 genome evolution</h1>
+</section>
+
+<!-- Update with latest data -->
+<section>
+	<h3>Mutations at spike S1 propel escape from population immunity</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_2023_05_15.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-05-15?branches=hide&l=scatter&scatterY=S1_mutations">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>These mutations are continuing just as quickly post-Omicron</h3>
+ 	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_sars_cov_2.png">
+	<div class="citation">
+		<a href="https://github.com/blab/adaptive-evolution">Kistler and Bedford. 2023. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>And are accruing much more rapidly than other endemic viruses</h3>
+ 	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_comparison.png">
+	<div class="citation">
+		<a href="https://github.com/blab/adaptive-evolution">Kistler and Bedford. 2023. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Genome correlation analysis</h3>
+</section>
+
+<section>
+	<h3>Genome dN/dS analysis</h3>
+</section>
+
+<!-- Variant frequency dynamics -->
+
+<section data-transition="fade" data-background="#60AA9E">
+	<h1 class="title">Variant frequency dynamics</h1>
+</section>
+
+<section>
+	<h3>Population genetic expectation of variant frequency under selection</h3>
+	<p>$x' = \frac{x \, (1+s)}{x \, (1+s) + (1-x)}$ for frequency $x$ over one generation with selective advantage $s$</p>
+	<p>$x(t) = \frac{x_0 \, (1+s)^t}{x_0 \, (1+s)^t + (1-x_0)}$ for initial frequency $x_0$ over $t$ generations</p>
+	<p>Trajectories are linear once logit transformed via $\mathrm{log}(\frac{x}{1 - x})$</p>
+	<img class="stretch" src="/images/talks/ncov_variants_selection_logit_trajectories.png">
+</section>
+
+<section>
+	<h3>Variants show consistent frequency dynamics in logit space</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_omicron_countries_frequencies_logit_2022_04_08.png">
+</section>
+
+<!-- Update with more recent trajectories -->
+<section>
+	<h3>Variants show consistent frequency dynamics in logit space</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_delta_countries_frequencies_logit_2021_09_07.png">
+</section>
+
+<!----------------------------------------------------------------------->
+
+<section>
+	<h3>Multinomial logistic regression</h3>
+	<p>
+		Multinomial logistic regression models the probability of a virus sampled at time $t$ belonging to
+		variant $i$ as
+	</p>
+	<p>
+		$$\mathrm{Pr}(X = i) = x_i(t) = \frac{p_i \, \mathrm{exp}(f_i \, t)}{\sum_{1 \le j \le n} p_j \, \mathrm{exp}(f_j \, t) }$$
+	</p>
+	<p>
+		where the model has $2n$ parameters consisting of $p_i$ the frequency of variant $i$ at initial timepoint
+		and $f_i$ the growth rate or fitness of variant $i$ for $n$ variants.
+	</p>
+	<p>
+		The model is fit to minimize "log loss" of predicted variant vs observed variant across observations in
+		dataset.
+	</p>
+</section>
+
+<section>
+	<h3>Multinomial logistic regression fits variant frequencies well</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_rt_logistic_regression_2021_09_01.png">
+</section>
+
+<section>
+	<h3>Consistent fitness advantage of BA.5 across countries</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_frequencies_logit_2022_08_01.png">
+</section>
+
+<section>
+	<h3>Despite similar rates of displacement, BA.5 epidemics vary</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_partitioned_cases_2022_08_01.png">
+</section>
+
+<section>
+	<h3>Despite similar rates of displacement, BA.5 epidemics vary</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_partitioned_log_cases_2022_08_01.png">
+</section>
+
+<section>
+	<h3>These differences can be explained by consistent growth advantage of BA.5, but different baseline Rt across countries</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_rt_2022_08_01.png">
+	<div class="citation">
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+ <h3>May 17: fitness advantage of BA.4/BA.5 clear even though rare</h3>
+ <p>Multinomial logistic regression should work well for SARS-CoV-2 prediction, except emergence of new
+	 variants limits prediction horizon</p>
+ <img class="stretch" data-src="/images/talks/ncov_variants_rt_us_frequencies_logit_2022_05_17.png">
+</section>
+
+<!-- Emerging variants -->
+
+<section data-transition="fade" data-background="#75B681">
+	<h1 class="title">Emerging variants</h1>
+</section>
+
+<section>
+ <h3>Over 350 Pango lineages designated in 2022</h3>
+ <p>Emerging sublineages within BA.2.75 focusing on BA.2.75.2 and emerging lineages within BA.5
+	 focusing on BA.5.3.1.1.1.1.1 ie BQ.1</p>
+ <img class="stretch" data-src="/images/talks/ncov_variants_tree_pango_2022_09_29.png">
+ <div class="citation">
+	 <a href="https://nextstrain.org/nextclade/sars-cov-2?branchLabel=aa&label=clade:21M%20%28Omicron%29">nextstrain.org</a>
+ </div>
+</section>
+
+<section>
+ <h3>BA.2.75 and sublineage BA.2.75.2 emerging from India</h3>
+ <img class="stretch" data-src="/images/talks/ncov_variants_ba275_tree_map.png">
+ <div class="citation">
+	 <a href="https://nextstrain.org/groups/blab/ncov/ba275-in-india">nextstrain.org</a>
+ </div>
+</section>
+
+<section>
+	<h3>BA.2.75.2 and BQ.1 show selective advantage in UK and US</h3>
+	<p>BA.2.75.2 has R346T and F486S on top of BA.2.75 and BQ.1 has K444T, N460K on top of BA.5</p>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_logit_frequencies_2022_09_29.png">
+</section>
+
+<section>
+	<h3>BQ.1 has Rt in the US of ~1.4, approaching that of BA.5 in May</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba275_rt_log_cases_2022_09_29.png">
+	<div class="citation">
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>However, multiple low frequency Pango lineages that may compete with BA.2.75.2 and BQ.1</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_emerging_variants_cov-spectrum_2022_09_29.png">
+	<div class="citation">
+		<a href="https://cov-spectrum.org/collections/24">CoV-Spectrum.org</a>
+	</div>
+</section>
+
+<!-- Seasonality and near-term circulation -->
+
+<section data-transition="fade" data-background="#8EBC66">
+	<h1 class="title">Seasonality and near-term circulation</h1>
+</section>
+
+<section>
+	<h3>Seasonality clearly evidence in 2020-2021 winter epidemic</h3>
+	<p>Rt analysis suggests a ~30% transmission advantage going from Aug 2020 to Nov 2020</p>
+	<img class="stretch" src="/images/talks/ncov_rt_across_states_2020_11_13.jpg">
+	<div class="citation">
+		Data from rt.live
+	</div>
+</section>
+
+<!-- Update with BQ.1 -->
+<section>
+	<h3>Seasonality alone unlikely to drive BA.5 epidemic, but seasonality + novel variants will likely drive epidemics</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_rt_us_log_cases_2022_09_29.png">
+	<div class="citation">
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Generally, we expect faster antigenic drift to smooth summer vs winter circulation</h3>
+	<img class="stretch" src="/images/talks/ncov_seasonality_sirs_model_varying_waning.png">
+	<div class="citation">
+		<a href="https://twitter.com/trvrb/status/1554890573781168128">@trvrb</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>Heading into fall, we very roughly have:</h3>
+	<p>
+	<ul>
+		<li>
+			40% of the population with BA.2, BA.4, BA.5 in Mar 1 to Sep 15 (16.3M confirmed cases
+			and 8x under-reporting)
+		</li>
+		<li>
+			40% of the population with BA.1 infection in Jan/Feb (24.1M confirmed cases and
+			5x under-reporting)
+		</li>
+		<li>
+			20% of the population vaccinated, boosted or with pre-Omicron infection
+		</li>
+	</ul>
+	</p>
+</section>
+
+<!-- Continued work on forecasting -->
+
+<section data-transition="fade" data-background="#AABD52">
+	<h1 class="title">Continued work on forecasting</h1>
+</section>
+
+<section>
+	<h3>Could we predict the spread of new mutations using DMS data?</h3>
+	<p>Perhaps this worked for 486V in BA.4/BA.5</p>
+	<div class="left" style="float:left; width:64%">
+		<img data-src="/images/talks/ncov_omicron_dms_sites_bloom_2021_12_20.png">
+	</div>
+	<div class="right" style="float:right; width:34%">
+		<img data-src="/images/talks/ncov_variants_south_africa_ba4_ba5_logit_frequencies_2022_04_19.png">
+	</div>
+	<div class="citation-left">
+		<a href="https://academic.oup.com/ve/article/8/1/veac021/6549895">Greaney et al. 2022. Virus Evol.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Now working from Jesse's calculator using panel of monoclonals known to neutralize BA.2</h3>
+	<div class="left" style="float:left; width:60%">
+		<img data-src="/images/talks/ncov_escape_calculator_bloom_2022_09_29.png">
+	</div>
+	<div class="right" style="float:right; width:38%">
+		<img data-src="/images/talks/ncov_escape_tree_2022_09_29.png">
+	</div>
+	<div class="citation-left">
+		<a href="https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/">Bloom. 2022. GitHub.</a>
+	</div>
+	<div class="citation">
+		<a href="https://nextstrain.org/groups/blab/ncov/escape?branchLabel=emerging_lineage">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Proof-of-principle that we can use immune escape to predict lineage fitness</h3>
+	<img class="stretch" src="/images/talks/ncov_escape_growth_advantage_correlation_2022_09_29.png">
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/allison-li.jpg"> Allison Li,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/eslam-abousamra.jpg"> Eslam Abousamra,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/donna-modrell.jpg"> Donna Modrell,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="11%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
