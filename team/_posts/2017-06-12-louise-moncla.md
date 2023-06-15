@@ -7,6 +7,7 @@ twitter: LouiseHMoncla
 github: lmoncla
 scholar: _myzKrwAAAAJ
 image: /images/team/louise-moncla.jpg
+website: https://lmoncla.github.io/monclalab/
 alumni: true
 ---
 
