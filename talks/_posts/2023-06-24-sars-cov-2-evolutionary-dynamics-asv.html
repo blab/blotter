@@ -34,7 +34,7 @@ Outline
 5. Evolution driving epidemics
  - variant Rt model
  - overall incidence from UK Infection Survey
- - describe seasonality-gating vs immuninity-gating
+ - describe seasonality-gating vs immunity-gating
  - potential for seasonality driven epidemics
 
 6. Forecasting
@@ -228,18 +228,15 @@ Outline
 	<img class="stretch" src="/images/talks/ncov_variants_omicron_countries_frequencies_logit_2022_04_08.png">
 </section>
 
-<!-- Update with more recent trajectories -->
 <section>
 	<h3>Variants show consistent frequency dynamics in logit space</h3>
-	<img class="stretch" src="/images/talks/ncov_variants_delta_countries_frequencies_logit_2021_09_07.png">
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_frequencies_logit_2022_08_01.png">
 </section>
-
-<!----------------------------------------------------------------------->
 
 <section>
 	<h3>Multinomial logistic regression</h3>
 	<p>
-		Multinomial logistic regression models the probability of a virus sampled at time $t$ belonging to
+		Multinomial logistic regression across $n$ variants models the probability of a virus sampled at time $t$ belonging to
 		variant $i$ as
 	</p>
 	<p>
@@ -247,7 +244,7 @@ Outline
 	</p>
 	<p>
 		where the model has $2n$ parameters consisting of $p_i$ the frequency of variant $i$ at initial timepoint
-		and $f_i$ the growth rate or fitness of variant $i$ for $n$ variants.
+		and $f_i$ the growth rate or fitness of variant $i$.
 	</p>
 	<p>
 		The model is fit to minimize "log loss" of predicted variant vs observed variant across observations in
@@ -260,81 +257,46 @@ Outline
 	<img class="stretch" src="/images/talks/sarscov2_variant_rt_logistic_regression_2021_09_01.png">
 </section>
 
-<section>
-	<h3>Consistent fitness advantage of BA.5 across countries</h3>
-	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_frequencies_logit_2022_08_01.png">
-</section>
+<!-- Growth advantages across clades since BA.2 -->
+<!-- Violin barplots from forecasts-ncov-overview analysis -->
 
 <section>
-	<h3>Despite similar rates of displacement, BA.5 epidemics vary</h3>
-	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_partitioned_cases_2022_08_01.png">
-</section>
-
-<section>
-	<h3>Despite similar rates of displacement, BA.5 epidemics vary</h3>
-	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_partitioned_log_cases_2022_08_01.png">
-</section>
-
-<section>
-	<h3>These differences can be explained by consistent growth advantage of BA.5, but different baseline Rt across countries</h3>
-	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_rt_2022_08_01.png">
+	<h3>Population turnover driven by emergence of high fitness variants that displace existing diversity</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_mutational_fitness_2023_06_12.png">
 	<div class="citation">
-		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+		Model from <a href="https://www.science.org/doi/10.1126/science.abm1208">Obermeyer et al. 2022. Science.</a>
+		Figure from <a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-12?l=scatter&scatterY=mutational_fitness">nextstrain.org</a>
 	</div>
 </section>
 
-<section>
- <h3>May 17: fitness advantage of BA.4/BA.5 clear even though rare</h3>
- <p>Multinomial logistic regression should work well for SARS-CoV-2 prediction, except emergence of new
-	 variants limits prediction horizon</p>
- <img class="stretch" data-src="/images/talks/ncov_variants_rt_us_frequencies_logit_2022_05_17.png">
-</section>
-
-<!-- Emerging variants -->
+<!-- Evolution driving epidemics -->
 
 <section data-transition="fade" data-background="#75B681">
-	<h1 class="title">Emerging variants</h1>
+	<h1 class="title">Evolution driving epidemics</h1>
 </section>
 
-<section>
- <h3>Over 350 Pango lineages designated in 2022</h3>
- <p>Emerging sublineages within BA.2.75 focusing on BA.2.75.2 and emerging lineages within BA.5
-	 focusing on BA.5.3.1.1.1.1.1 ie BQ.1</p>
- <img class="stretch" data-src="/images/talks/ncov_variants_tree_pango_2022_09_29.png">
- <div class="citation">
-	 <a href="https://nextstrain.org/nextclade/sars-cov-2?branchLabel=aa&label=clade:21M%20%28Omicron%29">nextstrain.org</a>
- </div>
-</section>
-
-<section>
- <h3>BA.2.75 and sublineage BA.2.75.2 emerging from India</h3>
- <img class="stretch" data-src="/images/talks/ncov_variants_ba275_tree_map.png">
- <div class="citation">
-	 <a href="https://nextstrain.org/groups/blab/ncov/ba275-in-india">nextstrain.org</a>
- </div>
-</section>
-
-<section>
-	<h3>BA.2.75.2 and BQ.1 show selective advantage in UK and US</h3>
-	<p>BA.2.75.2 has R346T and F486S on top of BA.2.75 and BQ.1 has K444T, N460K on top of BA.5</p>
-	<img class="stretch" src="/images/talks/ncov_variants_ba275_logit_frequencies_2022_09_29.png">
-</section>
-
-<section>
-	<h3>BQ.1 has Rt in the US of ~1.4, approaching that of BA.5 in May</h3>
-	<img class="stretch" src="/images/talks/ncov_variants_ba275_rt_log_cases_2022_09_29.png">
+<section class="left-align">
+	<div class="left" style="float:left; width:35%">
+		<h3>Estimation of variant-specific Rt through time</h3>
+		<p>Case counts are partitioned across variants based on frequencies of sequenced viruses</p>
+	</div>
+	<div class="right" style="float:right; width:60%">
+		<img data-src="/images/talks/sarscov2_variant_rt_method_wa_2021_09_01.png">
+	</div>
 	<div class="citation">
-		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+		<a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
 	</div>
 </section>
 
-<section>
-	<h3>However, multiple low frequency Pango lineages that may compete with BA.2.75.2 and BQ.1</h3>
-	<img class="stretch" src="/images/talks/ncov_variants_emerging_variants_cov-spectrum_2022_09_29.png">
-	<div class="citation">
-		<a href="https://cov-spectrum.org/collections/24">CoV-Spectrum.org</a>
-	</div>
-</section>
+<!-- Rt in the US to across the same clades in the same colors as the previous growth advantage analysis -->
+
+<!-- Copy figures from https://epiforecasts.io/inc2prev/report for ONS incidence -->
+
+<!-- Ideally export daily ONS incidence data for use with variant-Rt model -->
+
+<!-- Possibly include seasonality, but probably don't -->
+
+<!----------------------------------------------------------------------->
 
 <!-- Seasonality and near-term circulation -->
 
