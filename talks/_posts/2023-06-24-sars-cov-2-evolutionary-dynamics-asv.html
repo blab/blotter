@@ -80,10 +80,9 @@ Outline
 
 <!-- Variant viruses introduction -->
 
-<!-- Update with latest data -->
 <section>
 	<h3>Population immunity has driven a dramatic shift in death toll</h3>
-	<img class="stretch" data-src="/images/talks/ncov_deaths_owid_2023_05_15.png">
+	<img class="stretch" data-src="/images/talks/ncov_deaths_owid_2023_06_17.png">
 	<div class="citation">
 		<a href="https://ourworldindata.org/covid-deaths">ourworldindata.org</a>
 	</div>
@@ -119,6 +118,16 @@ Outline
 	</div>
 </section>
 
+<!-- Update with latest data -->
+<!-- Construct figure with Greek letter labels -->
+<section>
+	<h3>We really should be at something like Omega at this point</h3>
+	<img class="stretch" data-src="/images/talks/ncov_frequencies_2023_05_15.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-05-15">nextstrain.org</a>
+	</div>
+</section>
+
 <section class="left-align">
 	<h3>1. SARS-CoV-2 genome evolution</h3>
 	<h3>2. Variant frequency dynamics</h3>
@@ -126,6 +135,8 @@ Outline
 	<h3>4. Forecasting</h3>
 	<h3>5. Continued evolution</h3>
 </section>
+
+<!-- SARS-CoV-2 genome evolution -->
 
 <section data-transition="fade" data-background="#5097BA">
 	<h1 class="title">SARS-CoV-2 genome evolution</h1>
@@ -156,8 +167,12 @@ Outline
 </section>
 
 <section>
-	<h3>Rate of amino acid evolution and correlation between mutation and clade growth strongest in S1</h3>
-	<img class="stretch" data-src="/images/talks/sarscov2_adaptive_evolution_revisited_rate_vs_r.png">
+	<div class="left" style="float:left; width:35%">
+		<p class="left-align">Rate of amino acid evolution and correlation between mutation and clade growth strongest in S1</p>
+	</div>
+	<div class="right" style="float:right; width:63%">
+		<img data-src="/images/talks/sarscov2_adaptive_evolution_revisited_rate_vs_r.png">
+	</div>
 	<div class="citation">
 		Following <a href="https://github.com/blab/sars2-adaptive-evo-revisited">Kistler et al. 2022. Cell Host Microbe.</a>
 	</div>
@@ -194,7 +209,7 @@ Outline
 </section> -->
 
 <section>
-	<h3>These mutations are continuing just as quickly post-Omicron</h3>
+	<h3>These mutations are accumulating just as quickly post-Omicron</h3>
  	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_sars_cov_2.png">
 	<div class="citation">
 		<a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. bioRxiv.</a>
@@ -243,7 +258,7 @@ Outline
 		$$\mathrm{Pr}(X = i) = x_i(t) = \frac{p_i \, \mathrm{exp}(f_i \, t)}{\sum_{1 \le j \le n} p_j \, \mathrm{exp}(f_j \, t) }$$
 	</p>
 	<p>
-		where the model has $2n$ parameters consisting of $p_i$ the frequency of variant $i$ at initial timepoint
+		with $2n$ parameters consisting of $p_i$ the frequency of variant $i$ at initial timepoint
 		and $f_i$ the growth rate or fitness of variant $i$.
 	</p>
 	<p>
@@ -257,9 +272,17 @@ Outline
 	<img class="stretch" src="/images/talks/sarscov2_variant_rt_logistic_regression_2021_09_01.png">
 </section>
 
-<!-- Growth advantages across clades since BA.2 -->
-<!-- Violin barplots from forecasts-ncov-overview analysis -->
+<section>
+	<h3>Variant frequencies across countries from Feb 2022 to present</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_frequencies_2023_06_17.png">
+</section>
 
+<section>
+	<h3>We find that recent variants like XBB.1.5 are ~300% fitter than original Omicron BA.1</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_growth_advantages_2023_06_17.png">
+</section>
+
+<!-- Update figure with latest data to fix Alpha outlier -->
 <section>
 	<h3>Population turnover driven by emergence of high fitness variants that displace existing diversity</h3>
 	<img class="stretch" data-src="/images/talks/ncov_variants_mutational_fitness_2023_06_12.png">
@@ -296,63 +319,39 @@ Outline
 
 <!-- Possibly include seasonality, but probably don't -->
 
-<!----------------------------------------------------------------------->
+<!-- Forecasting -->
 
-<!-- Seasonality and near-term circulation -->
+<!--
+- MLR models generate accurate short-term forecasts
+- but new variants are appearing too quickly and so prediction threshold is poor
+- analogy to weather fronts
+- DMS escape prior and improved forecasting horizon
+-->
 
-<section data-transition="fade" data-background="#8EBC66">
-	<h1 class="title">Seasonality and near-term circulation</h1>
+<section data-transition="fade" data-background="#75B681">
+	<h1 class="title">Forecasting</h1>
 </section>
 
 <section>
-	<h3>Seasonality clearly evidence in 2020-2021 winter epidemic</h3>
-	<p>Rt analysis suggests a ~30% transmission advantage going from Aug 2020 to Nov 2020</p>
-	<img class="stretch" src="/images/talks/ncov_rt_across_states_2020_11_13.jpg">
+	<h3>Assessing MLR models for short-term frequency forecasting</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_overview.png">
 	<div class="citation">
-		Data from rt.live
-	</div>
-</section>
-
-<!-- Update with BQ.1 -->
-<section>
-	<h3>Seasonality alone unlikely to drive BA.5 epidemic, but seasonality + novel variants will likely drive epidemics</h3>
-	<img class="stretch" src="/images/talks/ncov_variants_rt_us_log_cases_2022_09_29.png">
-	<div class="citation">
-		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+		<a href="https://github.com/blab/ncov-forecasting-fit">Eslam Abousamra and Marlin Figgins</a>
 	</div>
 </section>
 
 <section>
-	<h3>Generally, we expect faster antigenic drift to smooth summer vs winter circulation</h3>
-	<img class="stretch" src="/images/talks/ncov_seasonality_sirs_model_varying_waning.png">
+	<h3>MLR models generate accurate short-term forecasts</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_accuracy_window.png">
 	<div class="citation">
-		<a href="https://twitter.com/trvrb/status/1554890573781168128">@trvrb</a>
+		<a href="https://github.com/blab/ncov-forecasting-fit">Eslam Abousamra and Marlin Figgins</a>
 	</div>
 </section>
 
+<!-- Maybe include weather fronts figure -->
 <section class="left-align">
-	<h3>Heading into fall, we very roughly have:</h3>
-	<p>
-	<ul>
-		<li>
-			40% of the population with BA.2, BA.4, BA.5 in Mar 1 to Sep 15 (16.3M confirmed cases
-			and 8x under-reporting)
-		</li>
-		<li>
-			40% of the population with BA.1 infection in Jan/Feb (24.1M confirmed cases and
-			5x under-reporting)
-		</li>
-		<li>
-			20% of the population vaccinated, boosted or with pre-Omicron infection
-		</li>
-	</ul>
-	</p>
-</section>
-
-<!-- Continued work on forecasting -->
-
-<section data-transition="fade" data-background="#AABD52">
-	<h1 class="title">Continued work on forecasting</h1>
+	<h3>Multinomial logistic regression should work well for SARS-CoV-2 prediction, except new variants have been emerging
+		fast enough that the prediction horizon is really quite short</h3>
 </section>
 
 <section>
@@ -389,6 +388,9 @@ Outline
 	<h3>Proof-of-principle that we can use immune escape to predict lineage fitness</h3>
 	<img class="stretch" src="/images/talks/ncov_escape_growth_advantage_correlation_2022_09_29.png">
 </section>
+
+<!----------------------------------------------------------------------->
+
 
 <section>
 	<h3>Acknowledgements</h3>
