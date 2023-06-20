@@ -1,6 +1,6 @@
 ---
 layout: member
-title: Juchan-kim
+title: Juchan Kim
 position: Master student
 image: /images/people/juchan-kim.jpg
 ---
