@@ -61,7 +61,7 @@ Outline
 -->
 
 
-<!-- Color ramp: [#5097BA", "#60AA9E", "#75B681", "#8EBC66", "#AABD52", "#C4B945", "#D9AD3D", "#E59637", "#E67030", "#DF4327"] -->
+<!-- Color ramp: ["#4377CD", "#61AB9D", "#94BD61", "#CDB642", "#E68133"] -->
 
 <section data-transition="fade" data-background="#000">
 	<h2 class="title">{{ page.title }}</h2>
@@ -133,7 +133,7 @@ Outline
 
 <!-- SARS-CoV-2 genome evolution -->
 
-<section data-transition="fade" data-background="#5097BA">
+<section data-transition="fade" data-background="#4377CD">
 	<h1 class="title">SARS-CoV-2 genome evolution</h1>
 </section>
 
@@ -163,7 +163,7 @@ Outline
 
 <section>
 	<div class="left" style="float:left; width:35%">
-		<p class="left-align">Rate of amino acid evolution and correlation between mutation and clade growth strongest in S1</p>
+		<h4 class="left-align">Rate of amino acid evolution and correlation between mutation and clade growth strongest in S1</h4>
 	</div>
 	<div class="right" style="float:right; width:63%">
 		<img data-src="/images/talks/sarscov2_adaptive_evolution_revisited_rate_vs_r.png">
@@ -221,7 +221,7 @@ Outline
 
 <!-- Variant frequency dynamics -->
 
-<section data-transition="fade" data-background="#60AA9E">
+<section data-transition="fade" data-background="#61AB9D">
 	<h1 class="title">Variant frequency dynamics</h1>
 </section>
 
@@ -288,30 +288,48 @@ Outline
 
 <!-- Evolution driving epidemics -->
 
-<section data-transition="fade" data-background="#75B681">
+<section data-transition="fade" data-background="#94BD61">
 	<h1 class="title">Evolution driving epidemics</h1>
 </section>
 
-<section class="left-align">
-	<div class="left" style="float:left; width:35%">
-		<h3>Estimation of variant-specific Rt through time</h3>
-		<p>Case counts are partitioned across variants based on frequencies of sequenced viruses</p>
-	</div>
-	<div class="right" style="float:right; width:60%">
-		<img data-src="/images/talks/sarscov2_variant_rt_method_wa_2021_09_01.png">
-	</div>
+<section>
+	<h3>Many fewer reported cases in England post-Omicron</h3>
+	<img class="stretch" src="/images/talks/sarscov2_uk_attack_rate_cases.png">
 	<div class="citation">
-		<a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+		Data from <a href="https://coronavirus.data.gov.uk/details/cases?areaType=nation&areaName=England">UKHSA</a>
 	</div>
 </section>
 
-<!-- Rt in the US to across the same clades in the same colors as the previous growth advantage analysis -->
+<section>
+	<h3>ONS Infection Survey provides rare source of ground truth</h3>
+	<p>Roughly 1 in 3 infections detected in 2021, while 1 in 40 in 2023</p>
+	<img class="stretch" src="/images/talks/sarscov2_uk_attack_rate_cases_vs_infections.png">
+	<div class="citation">
+		Data from <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata">ONS</a>
+	</div>
+</section>
 
-<!-- Copy figures from https://epiforecasts.io/inc2prev/report for ONS incidence -->
+<section>
+	<div class="left" style="float:left; width:28%">
+		<h4 class="left-align">Partitioning ONS incidence based on sequencing data shows variant-driven epidemics</h4>
+	</div>
+	<div class="right" style="float:right; width:70%">
+		<img data-src="/images/talks/sarscov2_uk_attack_rate_partitioned_cases.png">
+	</div>
+	<div class="citation">
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
 
-<!-- Ideally export daily ONS incidence data for use with variant-Rt model -->
-
-<!-- Possibly include seasonality, but probably don't -->
+<section>
+	<h3>~110% population attack rate from March 2022 to March 2023</h3>
+	<p>~27k deaths in ~61M infections yields IFR of 0.04%</p>
+	<img class="stretch" src="/images/talks/sarscov2_uk_attack_rate_cumulative.png">
+	<div class="citation">
+		Data from <a href="https://coronavirus.data.gov.uk/details/deaths?areaType=nation&areaName=England">UKHSA</a>
+		and <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata">ONS</a>
+	</div>
+</section>
 
 <!-- Forecasting -->
 
@@ -322,7 +340,7 @@ Outline
 - DMS escape prior and improved forecasting horizon
 -->
 
-<section data-transition="fade" data-background="#75B681">
+<section data-transition="fade" data-background="#CDB642">
 	<h1 class="title">Forecasting</h1>
 </section>
 
@@ -342,7 +360,20 @@ Outline
 	</div>
 </section>
 
+<section>
+	<div class="left" style="float:left; width:35%">
+		<h4 class="left-align">Clade and lineage forecasts continuously updated</h4>
+	</div>
+	<div class="right" style="float:right; width:63%">
+		<img data-src="/images/talks/ncov_forecasts_clades_2023_06_19.png">
+	</div>
+	<div class="citation">
+		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins et al. nextstrain.org</a>
+	</div>
+</section>
+
 <!-- Maybe include weather fronts figure -->
+<!-- Or a figure that shows series of winner-takes-all forecasts -->
 <section class="left-align">
 	<h3>Multinomial logistic regression should work well for SARS-CoV-2 prediction, except new variants have been emerging
 		fast enough that the prediction horizon is really quite short</h3>
@@ -350,37 +381,52 @@ Outline
 
 <section>
 	<h3>Could we predict the spread of new mutations using DMS data?</h3>
-	<p>Perhaps this worked for 486V in BA.4/BA.5</p>
-	<div class="left" style="float:left; width:64%">
-		<img data-src="/images/talks/ncov_omicron_dms_sites_bloom_2021_12_20.png">
-	</div>
-	<div class="right" style="float:right; width:34%">
-		<img data-src="/images/talks/ncov_variants_south_africa_ba4_ba5_logit_frequencies_2022_04_19.png">
-	</div>
-	<div class="citation-left">
-		<a href="https://academic.oup.com/ve/article/8/1/veac021/6549895">Greaney et al. 2022. Virus Evol.</a>
+	<p>Escape from antibodies that potently neutralize BA.2</p>
+	<img class="stretch" src="/images/talks/ncov_escape_cao_dms_array_vs_ba2.png">
+	<div class="citation">
+		<a href="https://www.nature.com/articles/s41586-022-05644-7">Cao et al. 2023. Nature.</a>
 	</div>
 </section>
 
 <section>
-	<h3>Now working from Jesse's calculator using panel of monoclonals known to neutralize BA.2</h3>
-	<div class="left" style="float:left; width:60%">
-		<img data-src="/images/talks/ncov_escape_calculator_bloom_2022_09_29.png">
+	<h3>Can calculate escape of arbitrary RBD against antibodies known to neutralize BA.2</h3>
+	<div class="left" style="float:left; width:58%">
+		<img data-src="/images/talks/ncov_escape_calculator_bloom_2023_06_19.png">
 	</div>
-	<div class="right" style="float:right; width:38%">
-		<img data-src="/images/talks/ncov_escape_tree_2022_09_29.png">
+	<div class="right" style="float:right; width:40%">
+		<img data-src="/images/talks/ncov_escape_tree_2023_06_19.png">
 	</div>
 	<div class="citation-left">
-		<a href="https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/">Bloom. 2022. GitHub.</a>
+		<a href="https://jbloomlab.github.io/SARS2-RBD-escape-calc/">Greaney, Starr, Bloom. 2022. Virus Evol.</a>
 	</div>
 	<div class="citation">
-		<a href="https://nextstrain.org/groups/blab/ncov/escape?branchLabel=emerging_lineage">nextstrain.org</a>
+		<a href="https://next.nextstrain.org/ncov/gisaid/21L/global/all-time?c=immune_escape">Roemer and Neher. nextstrain.org</a>
 	</div>
 </section>
 
-<section>
-	<h3>Proof-of-principle that we can use immune escape to predict lineage fitness</h3>
-	<img class="stretch" src="/images/talks/ncov_escape_growth_advantage_correlation_2022_09_29.png">
+<!-- New plots for escape vs fitness, binding vs fitness and combination -->
+
+<!-- Continued evolution -->
+
+<!--
+7. Big picture of continued evolution
+ - potential for another Omicron-like event
+   - based on simple statistical model
+   - evidence from persistent infections and cryptic lineages
+ - should we expect evolutionary rate to slow as immunity broadens?
+ - expectations for continued incidence and burden of disease
+
+8. Research priorities going forward
+ - continued genomic surveillance and modeling
+ - development of new antivirals
+ - vaccination strategies to combat antigenic evolution and OAS
+	 - universal vaccines?
+   - cocktail vaccines?
+	 - reducing imprinted response?
+-->
+
+<section data-transition="fade" data-background="#E68133">
+	<h1 class="title">Continued evolution</h1>
 </section>
 
 <!----------------------------------------------------------------------->
