@@ -7,58 +7,7 @@ author: Trevor Bedford
 widescreen: true
 ---
 
-<!-- 20 min total -->
-
-<!--
-Outline
-
-1. Variant viruses introduction
- - variant viruses and population turnover
- - what does this mean for vaccination and burden of disease?
-
-2. Forecasting seasonal influenza evolution (maybe)
-
-3. SARS-CoV-2 genome evolution
- - mutation accumulation and clade growth
- - rate of evolution by dN/dS
- - comparison of rate to other antigenically evolving viruses
-
-4. Variant frequency dynamics
- - SARS-CoV-2 and amazing consistency of frequency dynamics
- - multinomial logistic regression models
- - growth advantages of recent variants
- - Obermeyer hierarchical MLR work
- - (ideally) comparison of growth advantages to influenza
-
-5. Evolution driving epidemics
- - variant Rt model
- - overall incidence from UK Infection Survey
- - describe seasonality-gating vs immunity-gating
- - potential for seasonality driven epidemics
-
-6. Forecasting
- - MLR models generate accurate short-term forecasts
- - but new variants are appearing too quickly and so prediction threshold is poor
- - analogy to weather fronts
- - DMS escape prior and improved forecasting horizon
-
-7. Big picture of continued evolution
- - potential for another Omicron-like event
-   - based on simple statistical model
-   - evidence from persistent infections and cryptic lineages
- - should we expect evolutionary rate to slow as immunity broadens?
- - expectations for continued incidence and burden of disease
-
-8. Research priorities going forward
- - continued genomic surveillance and modeling
- - development of new antivirals
- - vaccination strategies to combat antigenic evolution and OAS
-	 - universal vaccines?
-   - cocktail vaccines?
-	 - reducing imprinted response?
-
--->
-
+<!-- Aim for 15 min + questions -->
 
 <!-- Color ramp: ["#4377CD", "#61AB9D", "#94BD61", "#CDB642", "#E68133"] -->
 
@@ -93,6 +42,14 @@ Outline
  	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_2023_06_18.png">
 	<div class="citation">
 		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18?branches=hide&l=scatter&scatterY=S1_mutations">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>These mutations are accruing much more rapidly than other endemic viruses</h3>
+ 	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_comparison.png">
+	<div class="citation">
+		<a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. bioRxiv.</a>
 	</div>
 </section>
 
@@ -198,14 +155,14 @@ Outline
 	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_growth_advantages_2023_06_17.png">
 </section>
 
-<section>
+<!-- <section>
 	<h3>Population turnover driven by emergence of high fitness variants that displace existing diversity</h3>
 	<img class="stretch" data-src="/images/talks/ncov_variants_mutational_fitness_2023_06_18.png">
 	<div class="citation">
 		Model from <a href="https://www.science.org/doi/10.1126/science.abm1208">Obermeyer et al. 2022. Science.</a>
 		Figure from <a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18?l=scatter&scatterY=mutational_fitness">nextstrain.org</a>
 	</div>
-</section>
+</section> -->
 
 <!-- Evolution driving epidemics -->
 
@@ -271,7 +228,7 @@ Outline
 - DMS escape prior and improved forecasting horizon
 -->
 
-<section data-transition="fade" data-background="#CDB642">
+<section data-transition="fade" data-background="#94BD61">
 	<h1 class="title">Forecasting</h1>
 </section>
 
@@ -299,8 +256,51 @@ Outline
 		<img data-src="/images/talks/ncov_forecasts_clades_2023_06_19.png">
 	</div>
 	<div class="citation">
-		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins et al. nextstrain.org</a>
+		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins, Lee, Hadfield. nextstrain.org</a>
 	</div>
+</section>
+
+<!-- Hierarchical model slide -->
+
+<section>
+	<h3>Hierarchical MLR model</h3>
+	<p>
+		The hierarchical model allows pooling of growth advantages across locations. This allows us to
+		include locations with fewer sequences and to better estimate growth advantage of rare lineages.
+	</p>
+	<br>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th colspan="2">Initial frequency</th>
+				<th colspan="2">Growth advantage</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Japan</td>
+				<td>$p_{23A}$</td>
+				<td>$p_{23B}$</td>
+				<td>$f_{23A}$</td>
+				<td>$f_{23B}$</td>
+			</tr>
+			<tr>
+				<td>USA</td>
+				<td>$p_{23A}$</td>
+				<td>$p_{23B}$</td>
+				<td>$f_{23A}$</td>
+				<td>$f_{23B}$</td>
+			</tr>
+			<tr>
+				<td>hierarchical</td>
+				<td></td>
+				<td></td>
+				<td>$f_{23A}$</td>
+				<td>$f_{23B}$</td>
+			</tr>
+		</tbody>
+	</table>
 </section>
 
 <!-- Maybe include weather fronts figure -->
@@ -343,102 +343,20 @@ Outline
 	</div>
 </section>
 
-<!-- Continued evolution -->
-
-<!--
-7. Big picture of continued evolution
- - potential for another Omicron-like event
-   - based on simple statistical model
-   - evidence from persistent infections and cryptic lineages
- - should we expect evolutionary rate to slow as immunity broadens?
- - expectations for continued incidence and burden of disease
-
-8. Research priorities going forward
- - continued genomic surveillance and modeling
- - development of new antivirals
- - vaccination strategies to combat antigenic evolution and OAS
-	 - universal vaccines?
-   - cocktail vaccines?
-	 - reducing imprinted response?
--->
-
-<section data-transition="fade" data-background="#E68133">
-	<h1 class="title">Continued evolution</h1>
-</section>
-
-<section>
-	<h3>How likely are further "Omicron-like" events?</h3>
-	<img class="stretch" data-src="/images/talks/ncov_tree_scatter_s1_mutations_2023_06_18.png">
-	<div class="citation">
-		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18?l=scatter&scatterY=S1_mutations">nextstrain.org</a>
-	</div>
-</section>
-
-<section>
-	<h3>With 1 observation in 3.6 years of virus evolution, it's currently unclear how common Omicron-like events will be</h3>
-	<img class="stretch" data-src="/images/talks/ncov_omicron_wait_time_distribution_2023_06_20.png">
-</section>
-
-<section>
-	<h3>This rate distribution gives a naive prediction of ~23% probability of an Omicron-like event occurring in the next 12 months</h3>
-	<img class="stretch" data-src="/images/talks/ncov_omicron_prediction_distribution_2023_06_20.png">
-</section>
-
-<section>
-	<h3>1 in 4 seems high, but "cryptic lineages" are commonly being found in wastewater</h3>
-	<img class="stretch" data-src="/images/talks/ncov_cryptic_lineages_ohio_bronx.png">
-	<div class="citation">
-		<a href="https://twitter.com/SolidEvidence/status/1661491860010045440">Marc Johnson. Twitter</a>
-	</div>
-</section>
-
-<section>
-	<h3>Even without further "saltational" events, ongoing evolution is rapid and so far shows little evidence of slowing</h3>
- 	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_comparison.png">
-	<div class="citation">
-		<a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. bioRxiv.</a>
-	</div>
-</section>
-
 <section class="left-align">
-	<h3>This pace of evolution contributes to large burden of disease at endemicity</h3>
+	<h3>Continued research</h3>
 	<p>
 	<ul>
 		<li>
-			Assume yearly attack rate of ~50% (even without the potential for Omicron-like emergence this may be an underestimate)
+			Application of MLR models to other pathogens, such as seasonal influenza
 		</li>
 		<li>
-			Assume IFR of 0.05% (similar to influenza, compare to early pandemic IFR of 0.5%)
+			Assessing and improving accuracy of "live" models at nextstrain.org/sars-cov-2/forecasts/
 		</li>
 		<li>
-			This would give somewhere around 80K yearly deaths in the US at endemicity
-		</li>
-		<li>
-			For comparison, this year the US has seen 40k COVID-19 deaths from Jan 1 to Jun 10, which would extrapolate to 90k deaths in 2023
+			Implementing DMS priors to predict fitness of emerging and yet-to-emerge lineages
 		</li>
 	</ul>
-	</p>
-</section>
-
-<section class="left-align">
-	<h3>Research priorities to deal with this rapid evolution</h3>
-	<p>
-	<ol>
-		<li>
-			Continued genomic surveillance and evolutionary forecasting
-		</li>
-		<li>
-			Development of new antivirals
-		</li>
-		<li>
-			Vaccination strategies to combat antigenic evolution and OAS
-			<ul>
-				<li>Universal vaccines?</li>
-				<li>Cocktail vaccines?</li>
-				<li>Masking epitope sites to reduce imprinted response?</li>
-			</ul>
-		</li>
-	</ol>
 	</p>
 </section>
 
