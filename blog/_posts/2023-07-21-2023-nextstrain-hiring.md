@@ -47,7 +47,7 @@ This role advances the research aims of the Bedford lab and the Nextstrain team 
 
 To aid in applicant review, a coding sample is requested. We're happy to review whatever you're most proud of (in any programming language). If you don't have code that can be publicly shared, that's okay. Please apply anyway and just let us know that this isn't available.
 
-If you think you might be a great fit for this position but are concerned about meeting all qualifications, we'd like to hear from you. Please email Trevor Bedford at tb@bedford.io or John Huddleston at jhuddles@fredhutch.org.
+If you think you might be a great fit for this position but are concerned about meeting all qualifications, we'd like to hear from you. Please email Trevor Bedford at tb<span style="display:none">obfuscate</span>@bedford.io and John Huddleston jhuddles<span style="display:none">obfuscate</span>@fredhutch.org.
 
 To apply for this position, please go to the [official Fred Hutch listing](https://careers-fhcrc.icims.com/jobs/25697/job).
 
@@ -94,6 +94,6 @@ Integrating with an existing team both in-person and online is a key aspect of t
 
 To aid in applicant review, we request you submit a cover letter, your resume, and a coding sample. For the coding sample, we're happy to review whatever you're most proud of (in any programming language). If you don't have code that can be publicly shared, that's okay. Please apply anyway and just let us know that this isn't available.
 
-If you're interested in this position but are concerned about meeting all the qualifications, we'd like to hear from you. Please email Trevor Bedford at <tb@bedford.io> and Thomas Sibley at <tsibley@fredhutch.org>.
+If you're interested in this position but are concerned about meeting all the qualifications, we'd like to hear from you. Please email Trevor Bedford at tb<span style="display:none">obfuscate</span>@bedford.io and Thomas Sibley at tsibley<span style="display:none">obfuscate</span>@fredhutch.org.
 
 To apply for this position, please go to the [official HHMI listing](https://hhmi.wd1.myworkdayjobs.com/en-US/External/job/Software-Engineer-II--Bedford-Lab_R-2176).
