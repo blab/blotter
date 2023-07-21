@@ -59,13 +59,11 @@ The [Bedford Lab](https://bedford.io/) at the [Fred Hutch](https://fredhutch.org
 
 Nextstrain, developed in collaboration with the [Neher Lab](https://neherlab.org/) at the University of Basel, provides tools for evolutionary analysis of pathogens and genomic epidemiology. We write [open source software](https://github.com/nextstrain/) in a public development style to power [all parts](https://docs.nextstrain.org/en/latest/learn/parts.html) of Nextstrain---bioinformatics, visualizations, analysis pipelines, data management, and more---and our analyses use open data whenever possible. We work with public health entities and scientists across the world, both formally and informally, to expand pathogen surveillance capabilities and to improve the automation and robustness of these analyses. Our goal is to empower the wider genomic epidemiology and public health communities to tweak our analyses, create new ones, and communicate scientific insights using the same tools we do.
 
-#### About the role:
+#### About the role
 
 This position will be responsible for general software engineering and development work across the entire Nextstrain stack. This includes command-line applications for bioinformatics and data/workflow management (e.g. [Augur](https://github.com/nextstrain/augur), [Nextstrain CLI](https://github.com/nextstrain/cli)), visualization applications for phylogenetics (e.g. [Auspice](https://github.com/nextstrain/auspice)), full-stack web applications for sharing analyses (e.g. [nextstrain.org](https://github.com/nextstrain/nextstrain.org)), workflows for data curation and analysis (e.g. [ncov-ingest](https://github.com/nextstrain/ncov-ingest/)), runtimes for Nextstrain analyses (e.g. [docker-base](https://github.com/nextstrain/docker-base), [conda-base](https://github.com/nextstrain/conda-base)), and internal tooling/infrastructure to support all of that.
 
-Application instructions: To aid in applicant review, we request you submit a cover letter, your resume, and a coding sample. For the coding sample, we're happy to review whatever you're most proud of (in any programming language). If you don't have code that can be publicly shared, that's okay. Please apply anyway and just let us know that this isn't available. If you're interested in this position but are concerned about meeting all the qualifications, we'd like to hear from you. Please email Trevor Bedford at <tb@bedford.io> and Thomas Sibley at <tsibley@fredhutch.org>.
-
-#### What we provide:
+#### What we provide
 
 - Empowerment to craft software that helps protect the world from epidemics and pandemics
 - Thrive in an ecosystem of cross-disciplinary learning, drawing insights from scientists, public health practitioners, and fellow software developers
@@ -74,7 +72,7 @@ Application instructions: To aid in applicant review, we request you submit a co
 - A team culture that champions a healthy work life balance
 - A competitive compensation package, with comprehensive health and welfare benefits
 
-#### What you'll do:
+#### What you'll do
 
 - Design, develop, test, document, and maintain software under a coherent ecosystem
 - Release new versions of packaged programs for installation by users and deploy new versions of hosted services to users
@@ -85,7 +83,7 @@ Application instructions: To aid in applicant review, we request you submit a co
 
 Integrating with an existing team both in-person and online is a key aspect of this position. This position will work daily within a small team of Bedford Lab members and collaborators. The Nextstrain team communicates openly about project and organizational decisions and encourages participation by all team members in decision-making.
 
-#### What you bring:
+#### Minimum qualifications
 
 - 3+ years of experience in software engineering
 - Fluency in Python and JavaScript/TypeScript, or fluency in similar languages
@@ -93,5 +91,9 @@ Integrating with an existing team both in-person and online is a key aspect of t
 - Proficiency with version control and software development best practices
 - Excellent written and verbal communication skills
 - Motivation to learn and collaborate within an existing team's practices
+
+To aid in applicant review, we request you submit a cover letter, your resume, and a coding sample. For the coding sample, we're happy to review whatever you're most proud of (in any programming language). If you don't have code that can be publicly shared, that's okay. Please apply anyway and just let us know that this isn't available.
+
+If you're interested in this position but are concerned about meeting all the qualifications, we'd like to hear from you. Please email Trevor Bedford at <tb@bedford.io> and Thomas Sibley at <tsibley@fredhutch.org>.
 
 To apply for this position, please go to the [official HHMI listing](https://hhmi.wd1.myworkdayjobs.com/en-US/External/job/Software-Engineer-II--Bedford-Lab_R-2176).
