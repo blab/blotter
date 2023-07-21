@@ -49,6 +49,8 @@ To aid in applicant review, a coding sample is requested. We're happy to review 
 
 If you think you might be a great fit for this position but are concerned about meeting all qualifications, we'd like to hear from you. Please email Trevor Bedford at tb@bedford.io or John Huddleston at jhuddles@fredhutch.org.
 
+To apply for this position, please go to the [official Fred Hutch listing](https://careers-fhcrc.icims.com/jobs/25697/job).
+
 -----------------------------------------
 
 ### Software Engineer II
@@ -91,3 +93,5 @@ Integrating with an existing team both in-person and online is a key aspect of t
 - Proficiency with version control and software development best practices
 - Excellent written and verbal communication skills
 - Motivation to learn and collaborate within an existing team's practices
+
+To apply for this position, please go to the [official HHMI listing](https://hhmi.wd1.myworkdayjobs.com/en-US/External/job/Software-Engineer-II--Bedford-Lab_R-2176).
