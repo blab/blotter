@@ -45,6 +45,8 @@ This role advances the research aims of the Bedford lab and the Nextstrain team 
 -   Knowledge of automated testing and workflows such as GitHub Actions
 -   Experience configuring and deploying analyses on a cloud infrastructure
 
+The Fred Hutch is located in South Lake Union in Seattle, WA and offers a dynamic work environment with cutting-edge science and computational resources. The position is available immediately with flexible starting dates. Informal inquiries are welcome. Applications will be accepted until the position is filled. We offer a competitive salary commensurate with skills and experience, along with benefits. The Fred Hutch and the Bedford Lab are committed to improving diversity in the computational sciences. Applicants of diverse backgrounds are particularly encouraged to apply. This is a full-time (40 hours/week) position, but depending on the applicant, could be a salaried employee or contracted hourly consultant. An ideal candidate would be local to the Seattle area or willing to relocate, but remote work is also an option.
+
 To aid in applicant review, a coding sample is requested. We're happy to review whatever you're most proud of (in any programming language). If you don't have code that can be publicly shared, that's okay. Please apply anyway and just let us know that this isn't available.
 
 If you think you might be a great fit for this position but are concerned about meeting all qualifications, we'd like to hear from you. Please email Trevor Bedford at tb<span style="display:none">obfuscate</span>@bedford.io and John Huddleston jhuddles<span style="display:none">obfuscate</span>@fredhutch.org.
@@ -91,6 +93,8 @@ Integrating with an existing team both in-person and online is a key aspect of t
 - Proficiency with version control and software development best practices
 - Excellent written and verbal communication skills
 - Motivation to learn and collaborate within an existing team's practices
+
+The Fred Hutch is located in South Lake Union in Seattle, WA and offers a dynamic work environment with cutting-edge science and computational resources. The position is available immediately with flexible starting dates. Informal inquiries are welcome. Applications will be accepted until the position is filled. We offer a competitive salary commensurate with skills and experience, along with benefits. The Fred Hutch and the Bedford Lab are committed to improving diversity in the computational sciences. Applicants of diverse backgrounds are particularly encouraged to apply. This is a full-time (40 hours/week) position, but depending on the applicant, could be a salaried employee or contracted hourly consultant. An ideal candidate would be local to the Seattle area or willing to relocate, but remote work is also an option.
 
 To aid in applicant review, we request you submit a cover letter, your resume, and a coding sample. For the coding sample, we're happy to review whatever you're most proud of (in any programming language). If you don't have code that can be publicly shared, that's okay. Please apply anyway and just let us know that this isn't available.
 
