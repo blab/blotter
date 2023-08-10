@@ -8,7 +8,12 @@ future: true
 sass:
   sass_dir: css
 
-plugins: ['jekyll-twitter-plugin']
+plugins:
+  - jekyll-gzip
+  - jekyll-twitter-plugin
+
+gzip:
+  replace_files: true
 
 exclude:
   - "*.branches"
