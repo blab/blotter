@@ -99,6 +99,7 @@ categories:
 		{% endfor %}
 
 		{% if pagecount > 1 %}
+    {% unless project.readme_only %}
 		<div class="smallhead">
 			Pages
 		</div>
@@ -117,6 +118,7 @@ categories:
 			</ul>
 		</div>
 		<div class="spacer"></div>
+    {% endunless %}
 		{% endif %}
 
 	</div>

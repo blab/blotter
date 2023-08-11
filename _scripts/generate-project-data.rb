@@ -27,7 +27,8 @@ module Projects
 		project_data = {}
 
 		config = YAML.load_file(config_file)
-		projects_array = config["projects"]
+		projects_array = config["projects"] + config["readmes"]
+		readmes_array = config["readmes"]
 
 		puts "Generating projects"
 		# create octokit client
@@ -98,6 +99,12 @@ module Projects
 
 				end
 
+				if readmes_array.include? repo then
+					readme_only = true
+				else
+					readme_only = false
+				end
+
 				# assemble metadata
 				project_data = project_data.push(
 					"repo" => repo,
@@ -106,7 +113,8 @@ module Projects
 					"description" => project_description,
 					"url" => project_url,
 					"contributors" => project_contributors,
-					"commits" => project_commits
+					"commits" => project_commits,
+					"readme_only" => readme_only
 				)
 
 				# sort by date

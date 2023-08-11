@@ -7,7 +7,7 @@ name_to_repo = Hash.new
 require 'yaml'
 $basedir = Dir.pwd
 config = YAML.load_file("_config.yml")
-config["projects"].each do |repo|
+(config["projects"] + config["readmes"]).each do |repo|
 	name = repo.split('/').drop(1).join('')
 	name_to_repo[name] = repo
 end
