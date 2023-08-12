@@ -2,14 +2,23 @@
 # Run before `jekyll build` to walk through directories and add YAML front matter to Markdown files
 # and to rename readme.md files to index.md
 
-# collect mapping of project name to repo via _config.yml
-name_to_repo = Hash.new
 require 'yaml'
 $basedir = Dir.pwd
+
+# collect mapping of project name to repo via _config.yml
+name_to_repo = Hash.new
 config = YAML.load_file("_config.yml")
 (config["projects"] + config["readmes"]).each do |repo|
 	name = repo.split('/').drop(1).join('')
 	name_to_repo[name] = repo
+end
+
+# mark projects that are only readmes
+name_to_readme = Hash.new
+config = YAML.load_file("_config.yml")
+config["readmes"].each do |repo|
+	name = repo.split('/').drop(1).join('')
+	name_to_readme[name] = true
 end
 
 # collect all markdown files
@@ -65,10 +74,16 @@ mdarray.each { |md|
 	contents.gsub!(/\((\S+)\.md\)/, "(\\1.html)")
 
 	# go through file and replace all links that point to source code files with equivalent GitHub links
-	filetypes = ['class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'txt', 'xml']
+	filetypes = ['pdf', 'class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'timeseries', 'summary', 'txt', 'xml']
 	filetypes.each {|filetype|
 		contents.gsub!(/\((\S+)\.#{filetype}\)/, "(https://github.com/#{repo}/tree/master/#{within_project_directory}\\1.#{filetype})")
 	}
+
+	# if readme, replace all internal links with GitHub links
+	if name_to_readme[project_name]
+		# catching links that end in "/"
+		contents.gsub!(/\((?!http)(\S+\/)\)/, "(https://github.com/#{repo}/tree/master/#{within_project_directory}\\1)")
+	end
 
 	out.puts contents
 
