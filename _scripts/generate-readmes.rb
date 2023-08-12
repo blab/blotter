@@ -1,5 +1,6 @@
 # Walk through config: readmes and grab associated README.md for each entry
 # Write this readme out to projects/ directory
+# Delete index.md if it already exists
 
 require 'yaml'
 require 'down'
@@ -28,6 +29,8 @@ module Readmes
 				name = repo.split('/').drop(1).join('')
 				FileUtils.mkdir_p("projects/#{name}/")
 				FileUtils.mv(githubfile.path, "projects/#{name}/README.md")
+
+				File.delete("projects/#{name}/index.md") if File.exist?("projects/#{name}/index.md")
 
 			end
 		end
