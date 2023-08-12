@@ -60,7 +60,10 @@ readmes:
   - blab/ncov-wa-d614g
   - blab/ncov-wa-phylodynamics
   - blab/nextflu
+  - blab/roka
   - blab/seasonal-cov-adaptive-evolution
+  - blab/siv-cst  
+  - blab/unsampled
   - blab/zika-colombia
   - blab/zika-usvi
   - seattleflu/id3c
@@ -76,9 +79,6 @@ projects:
   - blab/mitii
   - blab/mumps-seq
   - blab/ncov-phylodynamics
-  - blab/roka
-  - blab/siv-cst
-  - blab/unsampled
   - blab/yellow-fever
   - blab/zika-seq
   - trvrb/ancestry
