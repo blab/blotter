@@ -30,7 +30,7 @@ module Projects
 		projects_array = config["projects"] + config["readmes"]
 		readmes_array = config["readmes"]
 
-		puts "Generating projects"
+		puts "Generating project data"
 		# create octokit client
 		client = Octokit::Client.new(:netrc => true, :access_token => ENV['GITHUB_TOKEN'])
 
@@ -38,7 +38,7 @@ module Projects
 		if projects_array.length > 0
 			projects_array.each do |repo|
 
-				puts "\tGenerating #{repo}"
+				puts "\t#{repo}"
 
 				# load repo metadata
 				octokit_repo = client.repository(repo)

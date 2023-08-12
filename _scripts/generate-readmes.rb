@@ -14,12 +14,12 @@ module Readmes
 		config = YAML.load_file(config_file)
 		projects_array = config["readmes"]
 
-		puts "Generating readmes"
+		puts "Downloading readmes"
 
 		if projects_array.length > 0
 			projects_array.each do |repo|
 
-				puts "\tGenerating #{repo}"
+				puts "\t#{repo}"
 
 				githubfile = Down.download(
         	"https://raw.githubusercontent.com/#{repo}/master/README.md",
