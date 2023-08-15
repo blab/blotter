@@ -22,15 +22,42 @@ module Readmes
 
 				puts "\t#{repo}"
 
-				githubfile = Down.download(
-        	"https://raw.githubusercontent.com/#{repo}/master/README.md",
-          max_redirects: 5
-        )
-				name = repo.split('/').drop(1).join('')
-				FileUtils.mkdir_p("projects/#{name}/")
-				FileUtils.mv(githubfile.path, "projects/#{name}/README.md")
+				begin
+					githubfile = Down.download(
+        		"https://raw.githubusercontent.com/#{repo}/master/README.md",
+          	max_redirects: 5
+        	)
+				rescue Down::Error
+					puts "\t\tFile not found"
+				else
+					name = repo.split('/').drop(1).join('')
+					FileUtils.mkdir_p("projects/#{name}/")
+					dir = "projects/#{name}/"
+					FileUtils.mv(githubfile.path, dir+"README.md")
 
-				File.delete("projects/#{name}/index.md") if File.exist?("projects/#{name}/index.md")
+					File.delete(dir+"index.md") if File.exist?(dir+"index.md")
+
+					# find image links within readme
+					if File.exists?(dir+"README.md")
+						contents = File.open(dir+"README.md", "r").read
+						matchesHTML = contents.scan /<img.+src=\"([^"]+)\"/
+						matchesMD = contents.scan /\!\[[^\]]*\]\(([^)]+)\)/
+						matches = matchesHTML + matchesMD
+						matches.each do |match|
+							imagePath = match[0]
+							puts "\t\t#{imagePath}"
+							imageUrl = "https://raw.githubusercontent.com/#{repo}/master/#{imagePath}"
+							begin
+								imageFile = Down.download(imageUrl, max_redirects: 5)
+							rescue Down::Error
+								puts "\t\tFile not found"
+							else
+								FileUtils.mkdir_p(File.dirname(dir+imagePath))
+								FileUtils.mv(imageFile.path, dir+imagePath)
+							end
+						end
+					end
+				end
 
 			end
 		end

@@ -52,34 +52,35 @@ exclude:
   - "projects/dengue-antigenic-dynamics/titer_model/seasia_output/*"
 
 readmes:
+  - blab/chikv
+  - blab/dengue-antigenic-dynamics
   - blab/genomic-horizon
   - blab/h3n2-reassortment
   - blab/h5n1-cambodia
+  - blab/mers-structure
   - blab/mumps-wa-phylodynamics
   - blab/ncov-cryptic-transmission
+  - blab/ncov-phylodynamics
   - blab/ncov-wa-d614g
   - blab/ncov-wa-phylodynamics
   - blab/nextflu
   - blab/roka
   - blab/seasonal-cov-adaptive-evolution
-  - blab/siv-cst  
+  - blab/siv-cst
   - blab/unsampled
+  - blab/yellow-fever
   - blab/zika-colombia
   - blab/zika-usvi
   - seattleflu/id3c
   - trvrb/antigen
   - trvrb/PACT
+  - trvrb/stem  
 
 projects:
-  - blab/chikv
-  - blab/dengue-antigenic-dynamics
   - blab/flu-forecasting
   - blab/global-migration
-  - blab/mers-structure
   - blab/mitii
   - blab/mumps-seq
-  - blab/ncov-phylodynamics
-  - blab/yellow-fever
   - blab/zika-seq
   - trvrb/ancestry
   - trvrb/coaltrace
@@ -92,4 +93,3 @@ projects:
   - trvrb/phylodynamics-lecture
   - trvrb/sctrace
   - trvrb/sismid
-  - trvrb/stem
