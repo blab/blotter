@@ -7,6 +7,8 @@
 //
 // Base class takes care of all the key behavioral aspects.
 
+@use 'sass:math';
+
 .custom-control {
   position: relative;
   z-index: 1;
@@ -83,7 +85,7 @@
   // Background-color and (when enabled) gradient
   &::before {
     position: absolute;
-    top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
+    top: math.div(($font-size-base * $line-height-base - $custom-control-indicator-size), 2);
     left: -($custom-control-gutter + $custom-control-indicator-size);
     display: block;
     width: $custom-control-indicator-size;
@@ -98,7 +100,7 @@
   // Foreground (icon)
   &::after {
     position: absolute;
-    top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
+    top: math.div(($font-size-base * $line-height-base - $custom-control-indicator-size), 2);
     left: -($custom-control-gutter + $custom-control-indicator-size);
     display: block;
     width: $custom-control-indicator-size;

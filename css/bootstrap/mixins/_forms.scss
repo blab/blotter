@@ -10,6 +10,9 @@
 //
 // Example usage: change the default blue border and shadow to white for better
 // contrast against a dark gray background.
+
+@use 'sass:math';
+
 @mixin form-control-focus($ignore-warning: false) {
   &:focus {
     color: $input-focus-color;
@@ -69,7 +72,7 @@
     // Align tooltip to form elements
     .form-row > .col > &,
     .form-row > [class*="col-"] > & {
-      left: $form-grid-gutter-width / 2;
+      left: math.div($form-grid-gutter-width, 2);
     }
   }
 
