@@ -54,6 +54,7 @@ exclude:
 readmes:
   - blab/chikv
   - blab/dengue-antigenic-dynamics
+  - blab/flu-forecasting
   - blab/genomic-horizon
   - blab/h3n2-reassortment
   - blab/h5n1-cambodia
@@ -74,10 +75,9 @@ readmes:
   - seattleflu/id3c
   - trvrb/antigen
   - trvrb/PACT
-  - trvrb/stem  
+  - trvrb/stem
 
 projects:
-  - blab/flu-forecasting
   - blab/global-migration
   - blab/mitii
   - blab/mumps-seq
