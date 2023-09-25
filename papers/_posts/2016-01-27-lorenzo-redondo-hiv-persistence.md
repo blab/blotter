@@ -7,7 +7,7 @@ year: 2016
 ref: Lorenzo-Redondo et al. 2016. Nature.
 journal: "Nature 530: 51-56."
 pdf: /pdfs/papers/lorenzo-redondo-hiv-persistence.pdf
-supplement: /pdfs/papers/lorenzo-redondo-hiv-persistence.pdf
+supplement: /pdfs/papers/lorenzo-redondo-hiv-persistence-supp.pdf
 doi: 10.1038/nature16933
 ---
 
