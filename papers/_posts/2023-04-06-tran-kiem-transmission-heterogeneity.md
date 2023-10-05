@@ -7,6 +7,7 @@ year: 2023
 ref: Tran Kiem and Bedford. 2023. medRxiv.
 journal: "medRxiv: 2023.04.05.23287263."
 pdf: /pdfs/papers/tran-kiem-transmission-heterogeneity.pdf
+supplement: /pdfs/papers/tran-kiem-transmission-heterogeneity-supp.pdf
 doi: 10.1101/2023.04.05.23287263
 github: https://github.com/blab/size-genetic-clusters
 ---
