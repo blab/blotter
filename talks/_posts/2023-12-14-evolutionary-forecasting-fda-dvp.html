@@ -1,0 +1,708 @@
+---
+layout: talk_reveal4
+title: Evolutionary forecasting for seasonal influenza and SARS-CoV-2
+venue: FDA
+event: Division of Viral Products Seminar Series
+author: Trevor Bedford
+widescreen: true
+draft: true
+---
+
+<!-- 60 min total, aim for ~45 min talk and ~15 min Q&A -->
+
+<!-- Flu:
+- overview of flu evolutionary forecasting mostly following https://bedford.io/talks/flu-forecasting-options-2019/
+- visualizing serological data via https://bedford.io/papers/neher-titers/ and https://bedford.io/papers/lee-hadfield-measurements-panel/
+- fitness model from https://bedford.io/papers/huddleston-flu-forecasting/
+
+SARS-CoV-2:
+- borrow slides from https://bedford.io/talks/sars-cov-2-evolutionary-forecasting-nwpgcoe/
+
+Pan-pathogen
+- results from atlas -->
+
+<!-- Color ramp: [#5097BA", "#60AA9E", "#75B681", "#8EBC66", "#AABD52", "#C4B945", "#D9AD3D", "#E59637", "#E67030", "#DF4327"] -->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<h4 class="title">Trevor Bedford</h4>
+	<p class="title">
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<!------------------>
+<!-- Seasonal flu -->
+<!------------------>
+
+<section data-background="#000">
+	<h1 class="title">Seasonal influenza</h1>
+</section>
+
+<section>
+	<h3>Population turnover of A/H3N2 influenza is extremely rapid</h3>
+	<img class="stretch" data-src="/images/talks/flu_h3n2_tree_beast.png">
+</section>
+
+<section>
+	<h3>Clades emerge, die out and take over</h3>
+	<img class="stretch" data-src="/images/talks/flu_h3n2_tree_clades.png">
+</section>
+
+<section>
+	<h3>Clades show rapid turnover</h3>
+	<img class="stretch" data-src="/images/talks/prediction_combined_trajectories.png">
+</section>
+
+<section>
+	<h3>Dynamics driven by antigenic drift</h3>
+	<img class="stretch" data-src="/images/talks/flu_h3n2_tree.png">
+</section>
+
+<section>
+	<h3>Drift necessitates vaccine updates</h3>
+	<img class="stretch" data-src="/images/talks/flu_h3n2_tree_vaccines.png">
+</section>
+
+<section>
+	<h3>H3N2 vaccine updates occur every ~2 years</h3>
+	<img class="stretch" data-src="/images/talks/flu_vaccine_updates_2019_10.png">
+</section>
+
+<section>
+	<h3>Vaccine strain selection by WHO</h3>
+	<img class="stretch" data-src="/images/talks/flu_vaccine_schedule.jpg">
+</section>
+
+<section>
+	<h1>
+		<span class="c2">N</span><span class="c3">e</span><span class="c4">x</span><span class="c5">t</span><span class="c6">f</span><span class="c7">l</span><span class="c8">u</span>
+	</h1>
+	<p>Project to provide a real-time view of the evolving influenza population</p>
+	<p>All in collaboration with <img width=80 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher</p>
+</section>
+
+<section>
+	<h1>
+		<span class="c2">N</span><span class="c3">e</span><span class="c4">x</span><span class="c5">t</span><span class="c6">f</span><span class="c7">l</span><span class="c8">u</span>
+		<span class="text-gray">&rarr;</span>
+		<span class="c1s">N</span><span class="c2s">e</span><span class="c3s">x</span><span class="c4s">t</span><span class="c5s">s</span><span class="c6s">t</span><span class="c7s">r</span><span class="c8s">a</span><span class="c9s">i</span><span class="c10s">n</span>
+	</h1>
+	<p>Real-time tracking of pathogen evolution</p>
+	<p class="tiny"><i>
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/ivan-aksamentov.jpg"> Ivan Aksamentov,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/emma-hodcroft.jpg"> Emma Hodcroft,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/cornelius-roemer.jpg"> Cornelius Roemer,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley</span>
+	</i></p>
+</section>
+
+<section>
+	<h3>Current view of H3N2 from nextstrain.org/flu</h3>
+	<img class="stretch" data-src="/images/talks/nextflu_aug2019_tree_map.png">
+</section>
+
+<!-- Titer work -->
+
+<section data-background="#5097BA">
+	<h2 class="title">Antigenic analysis</h2>
+</section>
+
+<section>
+	<h3>Influenza hemagglutination inhibition (HI) assay</h3>
+	<img class="stretch" data-src="/images/talks/hi_assay.png">
+</section>
+
+<section>
+	<h3>HI measures cross-reactivity across viruses</h3>
+	<img class="stretch" data-src="/images/talks/hi_cross_reactivity.jpg">
+</section>
+
+<section>
+	<h3>Data in the form of table of maximum inhibitory titers</h3>
+	<img class="stretch" data-src="/images/talks/hi_table.png">
+	<div class="citation">
+		<a href="http://www.crick.ac.uk/research/worldwide-influenza-centre/annual-and-interim-reports/">NIMR 2010</a>
+	</div>
+</section>
+
+<section>
+	<div class="left" style="float:left;width:63%">
+		<h3>Antigenic cartography compresses HI measurements into an interpretable diagram</h3>
+	</div>
+	<div class="right" style="float:right;width:26%">
+		<img data-src="/images/talks/hi_smith_map.jpg">
+	</div>
+	<div class="citation">
+		<a href="http://www.sciencemag.org/content/305/5682/371.abstract">Smith et al. 2004. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Instead of a geometric model, we sought a phylogenetic model of HI titer data</h3>
+	<img class="stretch" data-src="/images/talks/titers_tree_example.png">
+	<div class="citation">
+		<a href="http://bedford.io/papers/neher-titers/">Neher et al. 2016. PNAS.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Identify phylogeny branches associated with drops in HI titer</h3>
+	<img class="stretch" data-src="/images/talks/titer_model_with_table.png">
+	<div class="citation">
+		<a href="http://bedford.io/papers/neher-titers/">Neher et al. 2016. PNAS.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Model can be used to interpolate across tree and predict phenotype of untested viruses</h3>
+	<img class="stretch" data-src="/images/talks/titers_tree_model.png">
+	<div class="citation">
+		<a href="http://bedford.io/papers/neher-titers/">Neher et al. 2016. PNAS.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Model is highly predictive of missing titer values</h3>
+	<img class="stretch" data-src="/images/talks/titers_validation.png">
+	<div class="citation">
+		<a href="http://bedford.io/papers/neher-titers/">Neher et al. 2016. PNAS.</a>
+	</div>
+</section>
+
+<section data-transition="fade" data-background="#60AA9E">
+	<h1 class="title">Forecasting seasonal influenza evolution</h1>
+</section>
+
+<section>
+	<h3>Fitness models project strain frequencies</h3>
+	<p>Future frequency $x_i(t+\Delta t)$ of strain $i$ derives from strain fitness $f_i$ and present day frequency $x_i(t)$, such that</p>
+	<p>$$x_i(t+\Delta t) = \frac{1}{Z(t)} \, x_i(t) \, \mathrm{exp}(f_i \, \Delta t)$$</p>
+	<p>
+		Strain frequencies at each timepoint are normalized by total frequency $Z(t)$.
+		This captures clonal interference between competing lineages.
+	</p>
+	<img class="stretch" data-src="/images/talks/clonal_interferance.jpg">
+	<div class="citation">
+		<a href="http://www.nature.com/nature/journal/v507/n7490/full/nature13087.html">&#321;uksza and L&auml;ssig. 2014. Nature.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Integrating genotypes and phenotypes improves long-term forecasts of seasonal influenza A/H3N2 evolution</h3>
+	<p class="smaller"><i>
+	with <img width=40 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston, Richard Neher, Dave Wentworth, Becky Kondor, John McCauley, Hideki Hasegawa, Kanta Subbarao and others
+	</i></p>
+	<div class="citation">
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Match strain forecast to retrospective circulation</h3>
+	<img class="stretch" data-src="/images/talks/prediction_fitness_model_schematic.png">
+	<div class="citation">
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<h3>Two inputs</h3>
+	<p>
+	<ul>
+		<li>Estimate of present-day strain frequencies $x_i(t)$</li>
+		<li>Estimate of present-day strain fitnesses $f_i$</li>
+	</ul>
+	</p>
+</section>
+
+<section>
+	<h3>Strain frequency estimated via region-weighted KDE</h3>
+	<img class="stretch" data-src="/images/talks/prediction_strain_frequencies.png">
+</section>
+
+<section>
+	<h3>Strain fitness estimated from viral attributes</h3>
+	<p>The fitness $f$ of strain $i$ is estimated as</p>
+	<p>$$f_i = \beta^\mathrm{A} \, f_i^\mathrm{A} + \beta^\mathrm{B} \, f_i^\mathrm{B} + \ldots$$</p>
+	<p>where $f^A$, $f^B$, etc... are different standardized viral attributes and
+		$\beta^A$, $\beta^B$, etc... coefficients are trained based on historical evolution</p>
+	<br>
+	<table>
+		<thead>
+			<tr>
+				<th width="28%">Antigenic drift</th>
+				<th width="38%">Intrinsic fitness</th>
+				<th width="33%">Recent growth</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>epitope mutations</td>
+				<td>non-epitope mutations</td>
+				<td>local branching index</td>
+			</tr>
+			<tr>
+				<td>HI titers</td>
+				<td>DMS data (via Bloom lab)</td>
+				<td>delta frequency</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<section>
+	<h3>Future population depends on frequency and fitness</h3>
+	<img class="stretch" data-src="/images/talks/prediction_strain_projection.png">
+</section>
+
+<section>
+	<h3>Forecast assessed based on weighted distance match to observed future population (earth mover's distance)</h3>
+	<div class="left" style="float:left; width:49%">
+		<p>Poor fit</p>
+		<img data-src="/images/talks/prediction_weighted_distances_poor.png">
+	</div>
+	<div class="right" style="float:right; width:49%">
+		<p>Good fit</p>
+		<img data-src="/images/talks/prediction_weighted_distances_good.png">
+	</div>
+</section>
+
+<section>
+	<h3>Train in 6-year sliding windows from 1995 to 2015 with most recent years held out as test</h3>
+	<img class="stretch" data-src="/images/talks/prediction_cross_validation_strategy_v2.png">
+	<div class="citation">
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Composite models favor combinations of HI drift, local branching index and non-epitope fitness</h3>
+	<img class="stretch" data-src="/images/talks/prediction_performance_composite.png">
+	<div class="citation">
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Model successfully predicts clade growth and best pick from model is generally close to best possible retrospective pick</h3>
+	<img class="stretch" data-src="/images/talks/prediction_validation_clade_growth_ranking.png">
+	<div class="citation">
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Forecasts are live at <a href="https://nextstrain.org/flu">nextstrain.org/flu</a>, but are currently fraught due to lack of recent isolates</h3>
+	<img class="stretch" data-src="/images/talks/nextflu_oct2020_h3n2_tree_clades.png">
+</section>
+
+<section class="left-align">
+	<h3>Two main issues</h3>
+	<p>
+	<ol>
+		<li>
+			We swapped from assessing clade frequencies to earth mover's distance because our clade assignments were not
+			stable across trees built at different timepoints, while clade frequencies are the more natural metric.
+		</li>
+		<li>
+			Strain fitness $f_i$ is largely fixed by the "fundamentals" of the strain rather than being learned from frequency behavior.
+		</li>
+	</ol>
+	</p>
+</section>
+
+<!---------------->
+<!-- SARS-CoV-2 -->
+<!---------------->
+
+<section data-background="#000">
+	<h1 class="title">SARS-CoV-2</h1>
+</section>
+
+<!-- Variant viruses introduction -->
+
+<section>
+	<h3>SARS-CoV-2 continues to show remarkable capacity for evolution</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_tree_unrooted_2023_06_18.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18?l=unrooted">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Mutations at spike S1 propel escape from population immunity</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_2023_06_18.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18?branches=hide&l=scatter&scatterY=S1_mutations">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>These mutations are accruing much more rapidly than other endemic viruses</h3>
+ 	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_comparison.png">
+	<div class="citation">
+		<a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. bioRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>New variants emerge that escape from existing population immunity and spread rapidly</h3>
+	<img class="stretch" data-src="/images/talks/ncov_frequencies_2023_06_18.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18">nextstrain.org</a>
+	</div>
+</section>
+
+<!-- Variant frequency dynamics -->
+
+<section data-transition="fade" data-background="#4377CD">
+	<h1 class="title">Variant frequency dynamics</h1>
+</section>
+
+<section>
+	<h3>Population genetic expectation of variant frequency under selection</h3>
+	<p>$x' = \frac{x \, (1+s)}{x \, (1+s) + (1-x)}$ for frequency $x$ over one generation with selective advantage $s$</p>
+	<p>$x(t) = \frac{x_0 \, (1+s)^t}{x_0 \, (1+s)^t + (1-x_0)}$ for initial frequency $x_0$ over $t$ generations</p>
+	<p>Trajectories are linear once logit transformed via $\mathrm{log}(\frac{x}{1 - x})$</p>
+	<img class="stretch" src="/images/talks/ncov_variants_selection_logit_trajectories.png">
+</section>
+
+<section>
+	<h3>Variants show consistent frequency dynamics in logit space</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_omicron_countries_frequencies_logit_2022_04_08.png">
+</section>
+
+<section>
+	<h3>Variants show consistent frequency dynamics in logit space</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_frequencies_logit_2022_08_01.png">
+</section>
+
+<section>
+	<h3>Multinomial logistic regression</h3>
+	<p>
+		Multinomial logistic regression across $n$ variants models the probability of a virus sampled at time $t$ belonging to
+		variant $i$ as
+	</p>
+	<p>
+		$$\mathrm{Pr}(X = i) = x_i(t) = \frac{p_i \, \mathrm{exp}(f_i \, t)}{\sum_{1 \le j \le n} p_j \, \mathrm{exp}(f_j \, t) }$$
+	</p>
+	<p>
+		with $2n$ parameters consisting of $p_i$ the frequency of variant $i$ at initial timepoint
+		and $f_i$ the growth rate or fitness of variant $i$.
+	</p>
+	<p>
+		The model is fit to minimize "log loss" of predicted variant vs observed variant across observations in
+		dataset.
+	</p>
+</section>
+
+<section>
+	<h3>MLR implemented in evofr package</h3>
+	<div class="left" style="float:left; width:34%">
+		<pre class="tiny">
+ location variant date        sequences
+ Japan    22B     2023-02-10  242
+ Japan    22B     2023-02-11  56
+ Japan    22B     2023-02-12  70
+ Japan    22E     2023-02-10  80
+ Japan    22E     2023-02-11  21
+ Japan    22E     2023-02-12  27
+ USA      22B     2023-02-10  41
+ USA      22B     2023-02-11  23
+ USA      22B     2023-02-12  23
+ USA      22E     2023-02-10  368
+ USA      22E     2023-02-11  236
+ USA      22E     2023-02-12  246
+ ...
+		</pre>
+	</div>
+	<div class="right" style="float:right; width:64%">
+		<img data-src="/images/talks/sarscov2_variant_evofr_package.png">
+	</div>
+	<div class="citation">
+		<a href="https://github.com/blab/evofr">Marlin Figgins. github.com</a>
+	</div>
+</section>
+
+<section>
+	<h3>Multinomial logistic regression fits variant frequencies well</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_rt_logistic_regression_2021_09_01.png">
+</section>
+
+<section>
+	<h3>Original VOC viruses had substantially increased transmissibility</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_rt_growth_advantage_2021_09_23.png">
+	<div class="citation">
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Variant frequencies across countries from Feb 2022 to present</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_frequencies_2023_06_17.png">
+</section>
+
+<section>
+	<h3>We find that recent variants like XBB.1.5 are ~300% fitter than original Omicron BA.1</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_growth_advantages_2023_06_17.png">
+</section>
+
+<section>
+	<h3>Population turnover driven by emergence of high fitness variants that displace existing diversity</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_mutational_fitness_2023_06_18.png">
+	<div class="citation">
+		Model from <a href="https://www.science.org/doi/10.1126/science.abm1208">Obermeyer et al. 2022. Science.</a>
+		Figure from <a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18?l=scatter&scatterY=mutational_fitness">nextstrain.org</a>
+	</div>
+</section>
+
+<!-- Evolution driving epidemics -->
+
+<section data-transition="fade" data-background="#61AB9D">
+	<h1 class="title">Evolution driving epidemics</h1>
+</section>
+
+<section>
+	<h3>Many fewer reported cases in England post-Omicron</h3>
+	<img class="stretch" src="/images/talks/sarscov2_uk_attack_rate_cases.png">
+	<div class="citation">
+		Data from <a href="https://coronavirus.data.gov.uk/details/cases?areaType=nation&areaName=England">UKHSA</a>
+	</div>
+</section>
+
+<section>
+	<h3>ONS Infection Survey provides rare source of ground truth</h3>
+	<p>Roughly 1 in 3 infections detected in 2021, while 1 in 40 in 2023</p>
+	<img class="stretch" src="/images/talks/sarscov2_uk_attack_rate_cases_vs_infections.png">
+	<div class="citation">
+		Data from <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata">ONS</a>
+	</div>
+</section>
+
+<section>
+	<div class="left" style="float:left; width:28%">
+		<h4 class="left-align">Partitioning ONS incidence based on sequencing data shows variant-driven epidemics</h4>
+	</div>
+	<div class="right" style="float:right; width:70%">
+		<img data-src="/images/talks/sarscov2_uk_attack_rate_partitioned_cases.png">
+	</div>
+	<div class="citation">
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>~110% population attack rate from March 2022 to March 2023</h3>
+	<img class="stretch" src="/images/talks/sarscov2_uk_attack_rate_cumulative.png">
+	<div class="citation">
+		Data from <a href="https://coronavirus.data.gov.uk/details/deaths?areaType=nation&areaName=England">UKHSA</a>
+		and <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata">ONS</a>
+	</div>
+</section>
+
+<section>
+	<h3>Post-Omicron period shows consistent IFR of 0.04%</h3>
+	<img style="width:70%" src="/images/talks/sarscov2_uk_attack_rate_infections_vs_deaths.png">
+	<br>
+	<img style="width:70%" src="/images/talks/sarscov2_uk_attack_rate_pandemic_ifr.png">
+	<div class="citation">
+		Data from <a href="https://coronavirus.data.gov.uk/details/deaths?areaType=nation&areaName=England">UKHSA</a>
+		and <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata">ONS</a>
+	</div>
+</section>
+
+<!-- Forecasting -->
+
+<section data-transition="fade" data-background="#94BD61">
+	<h1 class="title">Forecasting</h1>
+</section>
+
+<section>
+	<h3>Assessing MLR models for short-term frequency forecasting</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_overview.png">
+	<div class="citation">
+		<a href="https://github.com/blab/ncov-forecasting-fit">Eslam Abousamra and Marlin Figgins</a>
+	</div>
+</section>
+
+<section>
+	<h3>MLR models generate accurate short-term forecasts</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_accuracy_window.png">
+	<div class="citation">
+		<a href="https://github.com/blab/ncov-forecasting-fit">Eslam Abousamra and Marlin Figgins</a>
+	</div>
+</section>
+
+<section>
+	<div class="left" style="float:left; width:35%">
+		<h4 class="left-align">Now have clade and lineage forecasts continuously updated</h4>
+	</div>
+	<div class="right" style="float:right; width:63%">
+		<img data-src="/images/talks/ncov_forecasts_clades_2023_06_19.png">
+	</div>
+	<div class="citation">
+		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins, Lee, Hadfield. nextstrain.org</a>
+	</div>
+</section>
+
+<!-- Hierarchical model slide -->
+
+<section>
+	<h3>Hierarchical MLR model</h3>
+	<p>
+		The hierarchical model allows pooling of growth advantages across locations. This allows us to
+		include locations with fewer sequences and to better estimate growth advantage of rare lineages.
+	</p>
+	<br>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th colspan="2">Initial frequency</th>
+				<th colspan="2">Growth advantage</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Japan</td>
+				<td>$p_{23A}$</td>
+				<td>$p_{23B}$</td>
+				<td>$f_{23A}$</td>
+				<td>$f_{23B}$</td>
+			</tr>
+			<tr>
+				<td>USA</td>
+				<td>$p_{23A}$</td>
+				<td>$p_{23B}$</td>
+				<td>$f_{23A}$</td>
+				<td>$f_{23B}$</td>
+			</tr>
+			<tr>
+				<td>hierarchical</td>
+				<td></td>
+				<td></td>
+				<td>$f_{23A}$</td>
+				<td>$f_{23B}$</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<!-- Maybe include weather fronts figure -->
+<!-- Or a figure that shows series of winner-takes-all forecasts -->
+<section class="left-align">
+	<h3>Multinomial logistic regression should work well for SARS-CoV-2 prediction, except new variants have been emerging
+		fast enough that the prediction horizon is really quite short</h3>
+</section>
+
+<section>
+	<h3>Could we predict the spread of new mutations using DMS data?</h3>
+	<p>Escape from antibodies that potently neutralize BA.2</p>
+	<img class="stretch" src="/images/talks/ncov_escape_cao_dms_array_vs_ba2.png">
+	<div class="citation">
+		<a href="https://www.nature.com/articles/s41586-022-05644-7">Cao et al. 2023. Nature.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Can calculate escape of arbitrary RBD against antibodies known to neutralize BA.2</h3>
+	<div class="left" style="float:left; width:58%">
+		<img data-src="/images/talks/ncov_escape_calculator_bloom_2023_06_19.png">
+	</div>
+	<div class="right" style="float:right; width:40%">
+		<img data-src="/images/talks/ncov_escape_tree_2023_06_19.png">
+	</div>
+	<div class="citation-left">
+		<a href="https://jbloomlab.github.io/SARS2-RBD-escape-calc/">Greaney, Starr, Bloom. 2022. Virus Evol.</a>
+	</div>
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/21L/global/all-time?c=immune_escape">Roemer and Neher. nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Strong correlation between DMS immune escape and lineage-level MLR growth advantage</h3>
+	<img class="stretch" src="/images/talks/ncov_escape_binding_escape_growth_advantage.png">
+	<div class="citation">
+		<a href="https://github.com/blab/ncov-escape">Figgins, Roemer et al.</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>Continued research</h3>
+	<p>
+	<ul>
+		<li>
+			Application of MLR models to other pathogens, such as seasonal influenza
+		</li>
+		<li>
+			Assessing and improving accuracy of "live" models at nextstrain.org/sars-cov-2/forecasts/
+		</li>
+		<li>
+			Implementing DMS priors to predict fitness of emerging and yet-to-emerge lineages
+		</li>
+	</ul>
+	</p>
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>Flu</b>: WHO Global Influenza Surveillance and Response System, other data producers, GISAID, John Huddleston, Richard Neher, Jennifer Chang, Jover Lee
+	</p>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2</b>: Data producers from all over the world, GISAID, the Nextstrain team, Marlin Figgins, Jover Lee, James Hadfield
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/allison-li.jpg"> Allison Li,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/eslam-abousamra.jpg"> Eslam Abousamra,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/donna-modrell.jpg"> Donna Modrell,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="10%" data-src="/images/talks/logo_fred_hutch_vertical_v2.png">
+		&nbsp; &nbsp;
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_cdc.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
