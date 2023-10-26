@@ -114,6 +114,10 @@ body {
   display: block;
   margin-left: 40px; }
 
+.reveal ol.alphaList {
+  list-style-type: lower-alpha;
+}
+
 .reveal li {
   margin: 10px 0;
 }
