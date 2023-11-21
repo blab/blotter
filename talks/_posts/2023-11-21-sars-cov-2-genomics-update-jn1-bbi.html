@@ -1,0 +1,143 @@
+---
+layout: talk_reveal4
+title: SARS-CoV-2 genomics update
+venue: Brotman Baty Institute
+event: Viruses and Vaccines Seminar Series
+author: Trevor Bedford
+widescreen: true
+---
+
+<!-- ~5 min talk length -->
+
+<!--
+1. EG.5.1 and the recent epidemic in the US
+2. Repeated evolution and spread of spike 455F
+3. BA.2.86 and JN.1
+-->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<h4 class="title">Trevor Bedford</h4>
+	<p class="title">
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+	<br>&nbsp;<br>
+	Slides at: bedford.io/talks
+</section>
+
+<section>
+	<h3>Recent wave in the US peaked in September</h3>
+	<img class="stretch" data-src="/images/talks/ncov_wastewater_biobot_2023_11_20.png">
+	<div class="citation">
+		<a href="https://biobot.io/data/covid-19">biobot.io</a>
+	</div>
+</section>
+
+<section>
+	<h3>This wave was at least partially driven by spread of EG.5.1</h3>
+	<p>EG.5.1 is XBB.1.5 (current vaccine strain) with spike mutations 52H and 456L</p>
+	<img class="stretch" data-src="/images/talks/ncov_forecasts_clade_incidence_2023_11_20.png">
+	<div class="citation">
+		Data from <a href="https://covid.cdc.gov/covid-data-tracker/#trends_weeklyhospitaladmissions_select_00">CDC</a>,
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section data-transition="slide-in none-out">
+	<h3>As is now common, we saw repeated parallel evolution for 456L</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_variants_456_tree_2023_11_20.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/21L/global/6m/2023-11-20?c=gt-S_456">nextstrain.org</a>
+	</div>
+</section>
+
+<section data-transition="none-in slide-out">
+	<h3>Due to epistatic interaction, 456L unlocked mutation at 455F</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_variants_456_455_tree_2023_11_20.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/21L/global/6m/2023-11-20?c=gt-S_456,455">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>455F has grown from 1% to 60% global frequency in 5 months</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_variants_456_455_tree_map_2023_11_20.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/21L/global/6m/2023-11-20?c=gt-S_456,455">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>BA.2.86 emerged as "saltational" variant with ~30 spike mutations and was first detected in August</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_variants_ba286_tree.png">
+	<div class="citation">
+		Figure from <a href="https://nextstrain.org/groups/neherlab/ncov/BA.2.86">Neher, Roemer, nextstrain.org</a>,
+		Citation <a href="https://www.medrxiv.org/content/10.1101/2023.09.08.23295250v1">Khan et al. 2023. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Initially BA.2.86 increased slowly in frequency</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba286_logit_frequencies_2022_11_20.png">
+</section>
+
+<section>
+	<h3>However, JN.1 sublineage picked up spike 455F and has been spreading rapidly</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_jn1_logit_frequencies_2022_11_20.png">
+</section>
+
+<section>
+	<h3>JN.1 currently the fasted growing lineage that we're tracking</h3>
+	<img class="stretch" data-src="/images/talks/ncov_forecasts_lineage_ga_2023_11_20.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins et al, nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/allison-li.jpg"> Allison Li,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/eslam-abousamra.jpg"> Eslam Abousamra,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/donna-modrell.jpg"> Donna Modrell,</span> &hairsp;
+		<span class="nobreak"><img width=35 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="10%" data-src="/images/talks/logo_fred_hutch_vertical_v2.png">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="14%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
