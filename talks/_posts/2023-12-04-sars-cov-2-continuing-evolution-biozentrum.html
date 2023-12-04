@@ -5,7 +5,6 @@ venue: University of Basel
 event: Biozentrum Symposium on Adaptation and Immune escape of RNA viruses
 author: Trevor Bedford
 widescreen: true
-draft: true
 ---
 
 <!-- 30 min talk + 15 min Q&A -->
@@ -124,12 +123,13 @@ Outline
 	</div>
 </section>
 
+<!-- REVISE -->
 <section class="left-align">
 	<h3>1. SARS-CoV-2 genome evolution</h3>
 	<h3>2. Variant frequency dynamics</h3>
 	<h3>3. Evolution driving epidemics</h3>
 	<h3>4. Forecasting</h3>
-	<h3>5. Continued evolution</h3>
+	<h3>5. Saltational evolution</h3>
 </section>
 
 <!-- SARS-CoV-2 genome evolution -->
@@ -258,10 +258,6 @@ Outline
 		with $2n$ parameters consisting of $p_i$ the frequency of variant $i$ at initial timepoint
 		and $f_i$ the growth rate or fitness of variant $i$.
 	</p>
-	<!-- <p>
-		The model is fit to minimize "log loss" of predicted variant vs observed variant across observations in
-		dataset.
-	</p> -->
 </section>
 
 <!-- <section>
@@ -279,6 +275,7 @@ Outline
 	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_growth_advantages_2023_12_04.png">
 </section>
 
+<!-- Requires fresh run of pyro-cov to include -->
 <!-- <section>
 	<h3>Population turnover driven by emergence of high fitness variants that displace existing diversity</h3>
 	<img class="stretch" data-src="/images/talks/ncov_variants_mutational_fitness_2023_06_18.png">
@@ -428,6 +425,18 @@ Outline
 	</div>
 </section>
 
+<section>
+	<div class="left" style="float:left; width:31%">
+		<h4 class="left-align">Similar results for new DMS platform measuring cell entry vs ACE2 binding vs escape from serum panel</h4>
+	</div>
+	<div class="right" style="float:right; width:67%">
+		<img data-src="/images/talks/ncov_escape_dadonaite_delta_growth_vs_dms.png">
+	</div>
+	<div class="citation">
+		<a href="https://www.biorxiv.org/content/10.1101/2023.11.13.566961v1">Dadonaite et al. 2023. bioRxiv.</a>
+	</div>
+</section>
+
 <!-- Continued evolution -->
 
 <!--
@@ -448,11 +457,11 @@ Outline
 -->
 
 <section data-transition="fade" data-background="#E68133">
-	<h1 class="title">Continued evolution</h1>
+	<h1 class="title">Saltational evolution</h1>
 </section>
 
 <section>
-	<h3>How likely are further "Omicron-like" events?</h3>
+	<h3>How likely are further Omicron-like <i>saltational</i> events?</h3>
 	<img class="stretch" data-src="/images/talks/ncov_tree_scatter_s1_mutations_2023_06_18.png">
 	<div class="citation">
 		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18?l=scatter&scatterY=S1_mutations">nextstrain.org</a>
@@ -460,32 +469,63 @@ Outline
 </section>
 
 <section>
-	<h3>With 1 observation in 3.6 years of virus evolution, it's currently unclear how common Omicron-like events will be</h3>
-	<img class="stretch" data-src="/images/talks/ncov_omicron_wait_time_distribution_2023_06_20.png">
-</section>
-
-<section>
-	<h3>This rate distribution gives a naive prediction of ~23% probability of an Omicron-like event occurring in the next 12 months</h3>
-	<img class="stretch" data-src="/images/talks/ncov_omicron_prediction_distribution_2023_06_20.png">
-</section>
-
-<section>
-	<h3>1 in 4 seems high, but "cryptic lineages" are commonly being found in wastewater</h3>
+	<h3>Highly derived "cryptic lineages" commonly being found in wastewater</h3>
 	<img class="stretch" data-src="/images/talks/ncov_cryptic_lineages_ohio_bronx.png">
 	<div class="citation">
-		<a href="https://twitter.com/SolidEvidence/status/1661491860010045440">Marc Johnson. Twitter</a>
+		<a href="https://twitter.com/SolidEvidence/status/1661491860010045440">Marc Johnson. Twitter. 2023.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Occasional chronic infection sequences uploaded that are highly distinct</h3>
+	<img class="stretch" data-src="/images/talks/ncov_cryptic_lineages_hisner_delta_chronic.jpg">
+	<div class="citation">
+		<a href="https://twitter.com/LongDesertTrain/status/1681671273691197440">Ryan Hisner. Twitter. 2023.</a>
+	</div>
+</section>
+
+<section>
+	<h3>XBB is derived from putative within-host lineage BJ.1</h3>
+	<div class="left" style="float:left; width:57%">
+		<img data-src="/images/talks/ncov_cryptic_lineages_hodcroft_xbb_recombination.jpg">
+	</div>
+	<div class="right" style="float:right; width:41%">
+		<img data-src="/images/talks/ncov_cryptic_lineages_tree_bj1_bm111.png">
+	</div>
+	<div class="citation-left">
+		<a href="https://twitter.com/firefoxx66/status/1587762412110974976">Emma Hodcroft. Twitter. 2022.</a>
+	</div>
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time?f_pango_lineage=BJ.1,BM.1.1.1">Roemer and Neher. nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>BA.2.86 emerged as "saltational" variant with ~30 spike mutations and was first detected in August</h3>
+ 	<img class="stretch" data-src="/images/talks/ncov_variants_ba286_tree.png">
+	<div class="citation">
+		Figure from <a href="https://nextstrain.org/groups/neherlab/ncov/BA.2.86">Neher, Roemer, nextstrain.org</a>,
+		Citation <a href="https://www.medrxiv.org/content/10.1101/2023.09.08.23295250v1">Khan et al. 2023. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>BA.2.86 with JN.1 is rapidly headed for global dominance</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_clades_2023_12_04.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins et al. nextstrain.org</a>
 	</div>
 </section>
 
 <section>
 	<h3>Even without further "saltational" events, ongoing evolution is rapid and so far shows little evidence of slowing</h3>
- 	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_comparison.png">
+	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_comparison_2023_11_01.png">
 	<div class="citation">
-		<a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. bioRxiv.</a>
+		<a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. Cell Host Microbe.</a>
 	</div>
 </section>
 
-<section class="left-align">
+<!-- <section class="left-align">
 	<h3>This pace of evolution contributes to large burden of disease at endemicity</h3>
 	<p>
 	<ul>
@@ -503,7 +543,7 @@ Outline
 		</li>
 	</ul>
 	</p>
-</section>
+</section> -->
 
 <section class="left-align">
 	<h3>Research priorities to deal with this rapid evolution</h3>
@@ -530,13 +570,16 @@ Outline
 <section>
 	<h3>Acknowledgements</h3>
 
-	<p class="even-smaller">John J. Holland Lectureship</p>
-
 	<p class="even-smaller">
-		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world, GISAID and the Nextstrain team
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world and GISAID
 	</p>
 
-	<p class="tiny"><b>Bedford Lab</b>:
+	<p class="even-smaller">
+		<b>Nextstrain</b>: Richard Neher, Ivan Aksamentov, Jennifer Chang, James Hadfield, Emma Hodcroft,
+		John Huddleston, Jover Lee, Victor Lin, Cornelius Roemer, Thomas Sibley
+	</p>
+
+	<p class="even-smaller"><b>Bedford Lab</b>:
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
