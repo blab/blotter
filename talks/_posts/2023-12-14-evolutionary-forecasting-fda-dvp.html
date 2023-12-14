@@ -5,7 +5,6 @@ venue: FDA
 event: Division of Viral Products Seminar Series
 author: Trevor Bedford
 widescreen: true
-draft: true
 ---
 
 <!-- 60 min total, aim for ~45 min talk and ~15 min Q&A -->
@@ -56,7 +55,7 @@ Pan-pathogen
 			Assess evolutionary forecasts for retrospective accuracy
 		</li>
 		<li>
-			Use Nextstrain to visualize serological data and antigenic differences between viral variants
+			Intrepret differences in evolutionary rate between seasonal influenza and SARS-CoV-2
 		</li>
 	</ol>
 	</p>
@@ -90,7 +89,7 @@ Pan-pathogen
 </section>
 
 <section>
-	<h3>Population turnover of A/H3N2 influenza is extremely rapid</h3>
+	<h3>Rapid turnover of the A/H3N2 influenza population</h3>
 	<img class="stretch" data-src="/images/talks/flu_h3n2_tree_beast.png">
 </section>
 
@@ -115,8 +114,8 @@ Pan-pathogen
 </section>
 
 <section>
-	<h3>H3N2 vaccine updates occur every ~2 years</h3>
-	<img class="stretch" data-src="/images/talks/flu_vaccine_updates_2019_10.png">
+	<h3>H3N2 vaccine updates occur every 1-2 years</h3>
+	<img class="stretch" data-src="/images/talks/flu_vaccine_updates_2023_12.png">
 </section>
 
 <section>
@@ -139,7 +138,7 @@ Pan-pathogen
 		<span class="c1s">N</span><span class="c2s">e</span><span class="c3s">x</span><span class="c4s">t</span><span class="c5s">s</span><span class="c6s">t</span><span class="c7s">r</span><span class="c8s">a</span><span class="c9s">i</span><span class="c10s">n</span>
 	</h1>
 	<p>Real-time tracking of pathogen evolution</p>
-	<p class="tiny"><i>
+	<p class="smaller"><i>
 		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,</span> &hairsp;
 		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/ivan-aksamentov.jpg"> Ivan Aksamentov,</span> &hairsp;
 		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang</span> &hairsp;
@@ -155,11 +154,11 @@ Pan-pathogen
 
 <section>
 	<h3>Current view of H3N2 from nextstrain.org/flu</h3>
-	<img class="stretch" data-src="/images/talks/nextflu_aug2019_tree_map.png">
+	<img class="stretch" data-src="/images/talks/nextflu_dec2023_tree_map.png">
 </section>
 
 <!-- Titer work -->
-
+<!--
 <section data-background="#5097BA">
 	<h2 class="title">Antigenic analysis</h2>
 </section>
@@ -224,7 +223,7 @@ Pan-pathogen
 	<div class="citation">
 		<a href="http://bedford.io/papers/neher-titers/">Neher et al. 2016. PNAS.</a>
 	</div>
-</section>
+</section> -->
 
 <section data-transition="fade" data-background="#60AA9E">
 	<h1 class="title">Forecasting seasonal influenza evolution</h1>
@@ -348,10 +347,10 @@ Pan-pathogen
 	</div>
 </section>
 
-<section>
+<!-- <section>
 	<h3>Forecasts are live at <a href="https://nextstrain.org/flu">nextstrain.org/flu</a>, but are currently fraught due to lack of recent isolates</h3>
 	<img class="stretch" data-src="/images/talks/nextflu_oct2020_h3n2_tree_clades.png">
-</section>
+</section> -->
 
 <section class="left-align">
 	<h3>Two main issues</h3>
@@ -388,17 +387,17 @@ Pan-pathogen
 
 <section>
 	<h3>Mutations at spike S1 propel escape from population immunity</h3>
- 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_2023_06_18.png">
+ 	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_2023_12_01.png">
 	<div class="citation">
-		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18?branches=hide&l=scatter&scatterY=S1_mutations">nextstrain.org</a>
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-12-01?branches=hide&l=scatter&scatterY=S1_mutations">nextstrain.org</a>
 	</div>
 </section>
 
 <section>
 	<h3>These mutations are accruing much more rapidly than other endemic viruses</h3>
- 	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_comparison.png">
+ 	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_comparison_2023_11_01.png">
 	<div class="citation">
-		<a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. bioRxiv.</a>
+		<a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. Cell Host Microbe.</a>
 	</div>
 </section>
 
@@ -412,7 +411,7 @@ Pan-pathogen
 
 <!-- Variant frequency dynamics -->
 
-<section data-transition="fade" data-background="#4377CD">
+<section data-transition="fade" data-background="#75B681">
 	<h1 class="title">Variant frequency dynamics</h1>
 </section>
 
@@ -425,13 +424,18 @@ Pan-pathogen
 </section>
 
 <section>
-	<h3>Variants show consistent frequency dynamics in logit space</h3>
+	<h3>Consistent frequency dynamics in logit space (BA.2 Mar 2022)</h3>
 	<img class="stretch" src="/images/talks/ncov_variants_omicron_countries_frequencies_logit_2022_04_08.png">
 </section>
 
 <section>
-	<h3>Variants show consistent frequency dynamics in logit space</h3>
+	<h3>Consistent frequency dynamics in logit space (BA.5 Jul 2022)</h3>
 	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_frequencies_logit_2022_08_01.png">
+</section>
+
+<section>
+	<h3>Consistent frequency dynamics in logit space (JN.1 Dec 2023)</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_jn1_countries_frequencies_logit_2022_12_13.png">
 </section>
 
 <section>
@@ -447,13 +451,9 @@ Pan-pathogen
 		with $2n$ parameters consisting of $p_i$ the frequency of variant $i$ at initial timepoint
 		and $f_i$ the growth rate or fitness of variant $i$.
 	</p>
-	<p>
-		The model is fit to minimize "log loss" of predicted variant vs observed variant across observations in
-		dataset.
-	</p>
 </section>
 
-<section>
+<!-- <section>
 	<h3>MLR implemented in evofr package</h3>
 	<div class="left" style="float:left; width:34%">
 		<pre class="tiny">
@@ -484,7 +484,7 @@ Pan-pathogen
 <section>
 	<h3>Multinomial logistic regression fits variant frequencies well</h3>
 	<img class="stretch" src="/images/talks/sarscov2_variant_rt_logistic_regression_2021_09_01.png">
-</section>
+</section> -->
 
 <section>
 	<h3>Original VOC viruses had substantially increased transmissibility</h3>
@@ -496,26 +496,17 @@ Pan-pathogen
 
 <section>
 	<h3>Variant frequencies across countries from Feb 2022 to present</h3>
-	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_frequencies_2023_06_17.png">
+	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_frequencies_2023_12_04.png">
 </section>
 
 <section>
-	<h3>We find that recent variants like XBB.1.5 are ~300% fitter than original Omicron BA.1</h3>
-	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_growth_advantages_2023_06_17.png">
-</section>
-
-<section>
-	<h3>Population turnover driven by emergence of high fitness variants that displace existing diversity</h3>
-	<img class="stretch" data-src="/images/talks/ncov_variants_mutational_fitness_2023_06_18.png">
-	<div class="citation">
-		Model from <a href="https://www.science.org/doi/10.1126/science.abm1208">Obermeyer et al. 2022. Science.</a>
-		Figure from <a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18?l=scatter&scatterY=mutational_fitness">nextstrain.org</a>
-	</div>
+	<h3>We find that recent variants like EG.5.1 are ~250% fitter than original Omicron BA.1</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_growth_advantages_2023_12_04.png">
 </section>
 
 <!-- Evolution driving epidemics -->
 
-<section data-transition="fade" data-background="#61AB9D">
+<section data-transition="fade" data-background="#8EBC66">
 	<h1 class="title">Evolution driving epidemics</h1>
 </section>
 
@@ -570,79 +561,50 @@ Pan-pathogen
 
 <!-- Forecasting -->
 
-<section data-transition="fade" data-background="#94BD61">
+<section data-transition="fade" data-background="#AABD52">
 	<h1 class="title">Forecasting</h1>
 </section>
 
 <section>
 	<h3>Assessing MLR models for short-term frequency forecasting</h3>
+	<p>Retrospective projections twice monthly during 2022</p>
 	<img class="stretch" src="/images/talks/ncov_forecasting_fit_overview.png">
 	<div class="citation">
-		<a href="https://github.com/blab/ncov-forecasting-fit">Eslam Abousamra and Marlin Figgins</a>
+		<a href="https://bedford.io/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2023. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>+30 day short-term forecasts across different countries </h3>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_projections.png">
+	<div class="citation">
+		<a href="https://bedford.io/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2023. medRxiv.</a>
 	</div>
 </section>
 
 <section>
 	<h3>MLR models generate accurate short-term forecasts</h3>
+	<p>30 days out, countries range from 6 to 10% mean absolute error</p>
 	<img class="stretch" src="/images/talks/ncov_forecasting_fit_accuracy_window.png">
 	<div class="citation">
-		<a href="https://github.com/blab/ncov-forecasting-fit">Eslam Abousamra and Marlin Figgins</a>
+		<a href="https://bedford.io/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2023. medRxiv.</a>
 	</div>
 </section>
 
 <section>
-	<div class="left" style="float:left; width:35%">
-		<h4 class="left-align">Now have clade and lineage forecasts continuously updated</h4>
-	</div>
-	<div class="right" style="float:right; width:63%">
-		<img data-src="/images/talks/ncov_forecasts_clades_2023_06_19.png">
-	</div>
+	<h3>Clade and lineage forecasts continuously updated at nextstrain.org</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_clades_2023_12_13.png">
 	<div class="citation">
-		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins, Lee, Hadfield. nextstrain.org</a>
+		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins et al. nextstrain.org</a>
 	</div>
 </section>
 
-<!-- Hierarchical model slide -->
-
 <section>
-	<h3>Hierarchical MLR model</h3>
-	<p>
-		The hierarchical model allows pooling of growth advantages across locations. This allows us to
-		include locations with fewer sequences and to better estimate growth advantage of rare lineages.
-	</p>
-	<br>
-	<table>
-		<thead>
-			<tr>
-				<th></th>
-				<th colspan="2">Initial frequency</th>
-				<th colspan="2">Growth advantage</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Japan</td>
-				<td>$p_{23A}$</td>
-				<td>$p_{23B}$</td>
-				<td>$f_{23A}$</td>
-				<td>$f_{23B}$</td>
-			</tr>
-			<tr>
-				<td>USA</td>
-				<td>$p_{23A}$</td>
-				<td>$p_{23B}$</td>
-				<td>$f_{23A}$</td>
-				<td>$f_{23B}$</td>
-			</tr>
-			<tr>
-				<td>hierarchical</td>
-				<td></td>
-				<td></td>
-				<td>$f_{23A}$</td>
-				<td>$f_{23B}$</td>
-			</tr>
-		</tbody>
-	</table>
+	<h3>Pango-level growth advantages place JN.1 far ahead of the curve</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_lineages_2023_12_13.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins et al. nextstrain.org</a>
+	</div>
 </section>
 
 <!-- Maybe include weather fronts figure -->
@@ -685,12 +647,24 @@ Pan-pathogen
 	</div>
 </section>
 
+<section>
+	<div class="left" style="float:left; width:31%">
+		<h4 class="left-align">Similar results for new DMS platform measuring cell entry vs ACE2 binding vs escape from serum panel</h4>
+	</div>
+	<div class="right" style="float:right; width:67%">
+		<img data-src="/images/talks/ncov_escape_dadonaite_delta_growth_vs_dms.png">
+	</div>
+	<div class="citation">
+		<a href="https://www.biorxiv.org/content/10.1101/2023.11.13.566961v1">Dadonaite et al. 2023. bioRxiv.</a>
+	</div>
+</section>
+
 <section class="left-align">
 	<h3>Continued research</h3>
 	<p>
 	<ul>
 		<li>
-			Application of MLR models to other pathogens, such as seasonal influenza
+			Application of MLR models to seasonal influenza and other pathogens
 		</li>
 		<li>
 			Assessing and improving accuracy of "live" models at nextstrain.org/sars-cov-2/forecasts/
@@ -710,7 +684,7 @@ Pan-pathogen
 	</p>
 
 	<p class="even-smaller">
-		<b>SARS-CoV-2</b>: Data producers from all over the world, GISAID, the Nextstrain team, Marlin Figgins, Jover Lee, James Hadfield
+		<b>SARS-CoV-2</b>: Data producers from all over the world, GISAID, the Nextstrain team, Katie Kistler, Marlin Figgins, Jover Lee, James Hadfield
 	</p>
 
 	<p class="tiny"><b>Bedford Lab</b>:
