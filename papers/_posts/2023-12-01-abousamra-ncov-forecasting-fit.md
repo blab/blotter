@@ -8,6 +8,7 @@ ref: Abousamra et al. 2023. medRxiv.
 journal: "medRxiv: 2023.11.30.23299240."
 pdf: /pdfs/papers/abousamra-ncov-forecasting-fit.pdf
 doi: 10.1101/2023.11.30.23299240
+github: https://github.com/blab/ncov-forecasting-fit
 ---
 
 # Abstract
