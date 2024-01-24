@@ -8,6 +8,7 @@ ref: Welsh et al. 2023. bioRxiv.
 journal: "bioRxiv: 2023.12.12.571235."
 pdf: /pdfs/papers/welsh-h3n2-dms-age-groups.pdf
 doi: 10.1101/2023.12.12.571235
+github: https://github.com/dms-vep/flu_h3_hk19_dms
 ---
 
 # Abstract
