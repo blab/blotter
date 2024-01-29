@@ -17,6 +17,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 30px;
   font-weight: 300;
+  font-variant-ligatures: no-common-ligatures;
   color: #333; }
 
 ::selection {

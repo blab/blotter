@@ -5,12 +5,17 @@ venue: HHMI
 event: Science Meeting
 author: Trevor Bedford
 widescreen: true
-draft: true
 ---
 
 <!-- 20 min total, with 15 min talk and 5 min Q&A -->
 
-<!-- Goal is to give a overview of historical phylogenetic approach to phylodynamics and why this is breaking down with deluge of SARS-CoV-2 genomic data. With only 15 minutes the goal is to give flavor of scalable non-phylogenetic approaches rather real technical detail
+<!-- We ask that you do NOT display journal names or journal covers in your talk. -->
+<!-- Remember to monitor the "fi" ligerature issue when exporting PDF -->
+
+<!-- Goal is to give a overview of historical phylogenetic approach to
+phylodynamics and why this is breaking down with deluge of SARS-CoV-2 genomic
+data. With only 15 minutes the goal is to give flavor of scalable
+non-phylogenetic approaches rather real technical detail
 
 Outline:
 
@@ -37,6 +42,8 @@ Outline:
 	{{ page.event }}
 	<br>
 	{{ page.venue }}
+	<br>&nbsp;<br>
+	Slides at: bedford.io/talks
 </section>
 
 <section data-background="#000000">
@@ -101,7 +108,7 @@ Outline:
 	</h3>
 	<img class="stretch" data-src="/images/talks/ncov_tmrca_r0_2020_01_23.png">
 	<div class="citation">
-		<a href="https://nextstrain.org/narratives/ncov/sit-rep/2020-01-23">Bedford et al. 2020. Technical Report.</a>
+		<a href="https://nextstrain.org/narratives/ncov/sit-rep/2020-01-23">Bedford et al. 2020.</a>
 	</div>
 </section>
 
@@ -124,7 +131,7 @@ Outline:
 	<h3>Early sequencing provided best estimate of extent of local outbreak</h3>
 	<img class="stretch" src="/images/talks/ncov_cryptic_transmission_outbreak_clade.png">
 	<div class="citation">
-		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020.</a>
 	</div>
 </section>
 
@@ -146,9 +153,9 @@ Outline:
 
 <section>
 	<h3>Continued evolution post-Omicron</h3>
-	<img class="stretch" data-src="/images/talks/ncov_variants_tree_unrooted_2023_06_18.png">
+	<img class="stretch" data-src="/images/talks/ncov_variants_tree_unrooted_2024_01_28.png">
 	<div class="citation">
-		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18?l=unrooted">nextstrain.org</a>
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time@2024-01-28?l=unrooted">nextstrain.org</a>
 	</div>
 </section>
 
@@ -189,24 +196,19 @@ Outline:
 </section>
 
 <section style="text-align: left;">
-	<div style="float: left; width: 75%">
-		<h3>Scable approaches to genomic epidemiology</h3>
+	<div style="float: left; width: 73%">
+		<h3>Scalable approaches to genomic epidemiology</h3>
 		<p>
-			<ul>
-				<li>Separate threads for epidemiology and evolution</li>
-				<ol>
-					<li>
-						Evolutionary forecasting: focus on seasonal influenza and SARS-CoV-2 for impact on vaccine strain selection
-					</li>
-					<li>
-						Genomic outbreak investigation: across pathogens with focus on spatial dynamics and recontructing spread
-					</li>
-				</ol>
-				<li>Continue to build out the Nextstrain software platform for broader use by the community</li>
-			</ul>
-		</p>
+			<ol>
+				<li>
+					Evolutionary forecasting: focus on seasonal influenza and SARS-CoV-2 for impact on vaccine strain selection
+				</li>
+				<li>
+					Genomic outbreak investigation: across pathogens with focus on spatial dynamics and recontructing spread
+				</li>
+			</ol>
 	</div>
-	<div style="float: right; width: 16%">
+	<div style="float: right; width: 18%">
 		<img data-src="/images/talks/genomic_epi_frequency_dynamics.png">
 		<br>
 		<img data-src="/images/talks/genomic_epi_spatial_dynamics.png">
@@ -217,11 +219,69 @@ Outline:
 	<h1 class="title">Evolutionary Forecasting</h1>
 </section>
 
+<!-- Potentially cleanup labels -->
 <section>
-	<h3>Clade and lineage forecasts continuously updated</h3>
-	<img class="stretch" data-src="/images/talks/ncov_forecasts_clades_2023_08_25.png">
+	<img class="stretch" data-src="/images/talks/ncov_tree_freq_2024_01_28.png">
 	<div class="citation">
-		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins, Lee, Hadfield. nextstrain.org</a>
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time@2024-01-28">nextstrain.org</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>Recent advances</h3>
+	<p>
+	<ol>
+		<li>Granular nomenclature and rapid classification</li>
+		<li>Multinomial logistic regression to estimate fitness</li>
+	</ol>
+</section>
+
+<section>
+	<h3>Currently 2857 Pango lineages and samples can be rapidly assigned lineages in Nextclade or UShER</h3>
+	<img class="stretch" data-src="/images/talks/ncov_nextclade_tree_2024_01_28.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/staging/nextclade/sars-cov-2">Roemer and Neher. nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Variants that are just 1-2 mutations different will get a label</h3>
+	<img class="stretch" data-src="/images/talks/ncov_nextclade_tree_ba286_2024_01_28.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/staging/nextclade/sars-cov-2?label=clade:23I">Roemer and Neher. nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<div class="left" style="float:left; width:60%">
+		<h3>Multinomial logistic regression</h3>
+		<p>
+			Multinomial logistic regression across $n$ variants models the frequency $x$ of variant $i$ at time $t$ as
+		</p>
+		<p>
+			$$x_i(t) = \frac{p_i \, \mathrm{exp}(f_i \, t)}{\sum_{1 \le j \le n} p_j \, \mathrm{exp}(f_j \, t) }$$
+		</p>
+		<p>
+			estimating parameters for the initial frequency $p$ and the growth rate or fitness $f$ of variant $i$.
+		</p>
+		<p>Trajectories are linear once logit transformed via $\mathrm{log}(\frac{x}{1 - x})$ and correspond to population genetic expectation</p>
+	</div>
+	<div class="right" style="float:right; width:38%">
+		<img data-src="/images/talks/ncov_variants_selection_logit_trajectories_vertical.png">
+	</div>
+</section>
+
+<section>
+	<h3>Consistent frequency dynamics in logit space (JN.1 Dec 2023)</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_jn1_countries_frequencies_logit_2022_12_13.png">
+</section>
+
+<section>
+	<h3>Provide continuously updated clade and lineage forecasts</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_clades_2024_01_28.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
+		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins et al. nextstrain.org</a>
 	</div>
 </section>
 
@@ -234,17 +294,17 @@ Outline:
 	<img class="stretch" src="/images/talks/ncov_king_county_mcc_clusters.png">
 	<div class="citation-with-avatar">
 		<img width=30 class="img-avatar" src="/images/team/miguel-paredes.jpg">
-		<a href="/papers/paredes-sarscov2-king-county/">Paredes et al. 2022. medRxiv.</a>
+		<a href="/papers/paredes-sarscov2-king-county/">Paredes et al. 2022.</a>
 	</div>
 </section>
 
 <section data-auto-animate>
 	<h3>Phylogeography infers migration matrix via phylogeny</h3>
-	<p>However, this approach faces issues with scalability and with sampling bias</p>
+	<p>However, this approach faces significant issues with scalability and sampling bias</p>
 	<img class="stretch" src="/images/talks/ncov_king_county_mcc_clusters.png">
 	<div class="citation-with-avatar">
 		<img width=30 class="img-avatar" src="/images/team/miguel-paredes.jpg">
-		<a href="/papers/paredes-sarscov2-king-county/"> Paredes et al. 2022. medRxiv.</a>
+		<a href="/papers/paredes-sarscov2-king-county/"> Paredes et al. 2022.</a>
 	</div>
 </section>
 
@@ -263,7 +323,7 @@ Outline:
 	<img class="stretch" src="/images/talks/phylo_kernel_tree_diagram.png">
 	<div class="citation-with-avatar">
 		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
-		<a href="/papers/tran-kiem-transmission-heterogeneity/"> Tran Kiem et al. 2023. medRxiv.</a>
+		Tran Kiem et al.
 	</div>
 </section>
 
@@ -309,14 +369,14 @@ Outline:
 	</div>
 </section>
 
-<section>
+<!-- <section>
 	<h3>Sequence-derived mixing patterns correlate well with expectations from journaling studies</h3>
 	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_age_correlation.png">
 	<div class="citation-with-avatar">
 		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
 		Tran Kiem et al.
 	</div>
-</section>
+</section> -->
 
 <section>
 	<h3>Signal for differential local vs long-distance age mixing</h3>
