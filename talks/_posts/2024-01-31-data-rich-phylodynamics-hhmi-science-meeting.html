@@ -10,7 +10,6 @@ widescreen: true
 <!-- 20 min total, with 15 min talk and 5 min Q&A -->
 
 <!-- We ask that you do NOT display journal names or journal covers in your talk. -->
-<!-- Remember to monitor the "fi" ligerature issue when exporting PDF -->
 
 <!-- Goal is to give a overview of historical phylogenetic approach to
 phylodynamics and why this is breaking down with deluge of SARS-CoV-2 genomic
@@ -25,10 +24,11 @@ Outline:
 4. Identical genomes for estimation of R0 and dispersal (5 min)
 5. Lineages and MLR models for estimation of fitness (5 min) -->
 
-<!-- To do:
+<!-- General Todo with specifics inline:
 1. Make an engaging visualization of expanding sequence data -->
 
-<!-- Color ramp: [#5097BA", "#60AA9E", "#75B681", "#8EBC66", "#AABD52", "#C4B945", "#D9AD3D", "#E59637", "#E67030", "#DF4327"] -->
+<!--             Blue     Yellow   Purple   Red     -->
+<!-- Color ramp: #4C91C1, #CFB642, #7F62A4, #E04328 -->
 
 <section data-transition="fade" data-background="#000">
 	<h1 class="title">{{ page.title }}</h1>
@@ -46,7 +46,7 @@ Outline:
 	Slides at: bedford.io/talks
 </section>
 
-<section data-background="#000000">
+<section data-background="#4C91C1">
 	<h1 class="title">Genomic epidemiology during the COVID-19 pandemic</h1>
 </section>
 
@@ -57,6 +57,7 @@ Outline:
 	<p class="tiny"><i>
 		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,</span> &hairsp;
 		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/ivan-aksamentov.jpg"> Ivan Aksamentov,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews,</span> &hairsp;
 		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang</span> &hairsp;
 		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
 		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/emma-hodcroft.jpg"> Emma Hodcroft,</span> &hairsp;
@@ -145,11 +146,30 @@ Outline:
 	</div>
 </section>
 
-<!-- Todo: Cut initial frames and add additional final frames -->
 <section>
 	<h3>Emergence and spread of initial VOC viruses</h3>
-	<img class="stretch" data-src="/images/talks/ncov_variants_animation_2021_09_12.gif">
+	<div class="left" style="float:left; width:49%">
+		Alpha
+		<img data-src="/images/talks/ncov_variants_501Y.V1_clock_2021_02_10.png">
+	</div>
+	<div class="right" style="float:right; width:49%">
+		Gamma
+		<img data-src="/images/talks/ncov_variants_501Y.V3_clock_2021_03_16.png">
+	</div>
+	<div class="citation-left">
+		Described in <a href="https://virological.org/t/preliminary-genomic-characterisation-of-an-emergent-sars-cov-2-lineage-in-the-uk-defined-by-a-novel-set-of-spike-mutations/563">Rambaut et al. 2020.</a>
+		Figure from <a href="https://nextstrain.org/ncov/europe/2021-02-10?c=clade_membership&f_country=United%20Kingdom&l=clock&r=division">nextstrain.org</a>
+	</div>
+	<div class="citation">
+		Described in <a href="https://www.science.org/doi/10.1126/science.abh2644">Faria et al. 2021.</a>
+		Figure from <a href="https://nextstrain.org/ncov/south-america/2021-03-16?f_country=Brazil&l=clock&r=division">nextstrain.org</a>
+	</div>
 </section>
+
+<!-- <section>
+	<h3>Emergence and spread of initial VOC viruses</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_animation_2021_09_12.gif">
+</section> -->
 
 <section>
 	<h3>Continued evolution post-Omicron</h3>
@@ -159,7 +179,7 @@ Outline:
 	</div>
 </section>
 
-<section data-background="#000000">
+<section data-background="#CFB642">
 	<h1 class="title">Future of genomic epidemiology</h1>
 </section>
 
@@ -199,14 +219,14 @@ Outline:
 	<div style="float: left; width: 73%">
 		<h3>Scalable approaches to genomic epidemiology</h3>
 		<p>
-			<ol>
-				<li>
-					Evolutionary forecasting: focus on seasonal influenza and SARS-CoV-2 for impact on vaccine strain selection
-				</li>
-				<li>
-					Genomic outbreak investigation: across pathogens with focus on spatial dynamics and recontructing spread
-				</li>
-			</ol>
+		<ol>
+			<li>
+				Genomic outbreak investigation: across pathogens with focus on spatial dynamics and recontructing spread
+			</li>
+			<li>
+				Evolutionary forecasting: focus on seasonal influenza and SARS-CoV-2 for impact on vaccine strain selection
+			</li>
+		</ol>
 	</div>
 	<div style="float: right; width: 18%">
 		<img data-src="/images/talks/genomic_epi_frequency_dynamics.png">
@@ -215,7 +235,112 @@ Outline:
 	</div>
 </section>
 
-<section data-background="#000000">
+
+<section data-background="#7F62A4">
+	<h1 class="title">Genomic outbreak investigation</h1>
+</section>
+
+<section data-auto-animate>
+	<h3>Phylogeography infers migration matrix via phylogeny</h3>
+	<img class="stretch" src="/images/talks/ncov_king_county_mcc_clusters.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/miguel-paredes.jpg">
+		<a href="/papers/paredes-sarscov2-king-county/">Paredes et al. 2022.</a>
+	</div>
+</section>
+
+<section data-auto-animate>
+	<h3>Phylogeography infers migration matrix via phylogeny</h3>
+	<p>However, this approach faces significant issues with scalability and sampling bias</p>
+	<img class="stretch" src="/images/talks/ncov_king_county_mcc_clusters.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/miguel-paredes.jpg">
+		<a href="/papers/paredes-sarscov2-king-county/"> Paredes et al. 2022.</a>
+	</div>
+</section>
+
+<!-- Todo: redo with a more interpretable figure, potentially series of violin plots -->
+<section>
+	<h3>Identical sequences contain the most signal for transmission linkage</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_mutation_vs_transmission.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<section>
+	<h3>Model emergence, spread and dissolution of clusters of identical sequences</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_tree_diagram.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<!-- For longer version of this talk, include 2-3 slides on tran-kiem-transmission-heterogeneity
+1. Logic of R and k from distribution of cluster sizes
+2. R and k of SARS-CoV-2 in New Zealand
+3. R of SARS-CoV-2 variants through time -->
+
+<section>
+	<h3>Spatial and social determinants of transmission from clusters of identical sequences</h3>
+	<p>114k SARS-CoV-2 genomes from Washington State sentinel surveillance annotated with <br> geographic location and age</p>
+	<img class="stretch" src="/images/talks/phylo_kernel_example_clusters.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<section>
+	<h3>Pairs of identical sequences 5.1 times more likely to come from same county</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_within_county.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<section>
+	<h3>Between county enrichment corresponds well with geography</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_maps.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<section>
+	<h3>Between age group enrichment shows social mixing patterns</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_age.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<!-- <section>
+	<h3>Sequence-derived mixing patterns correlate well with expectations from journaling studies</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_age_correlation.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section> -->
+
+<section>
+	<h3>Signal for differential local vs long-distance age mixing</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_age_by_geography.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<!-- Todo: Insert slide on future work -->
+
+<section data-background="#E04328">
 	<h1 class="title">Evolutionary Forecasting</h1>
 </section>
 
@@ -278,6 +403,7 @@ Outline:
 
 <section>
 	<h3>Provide continuously updated clade and lineage forecasts</h3>
+	<p>The global sweep of JN.1 is now largely complete</p>
 	<img class="stretch" src="/images/talks/ncov_forecasts_clades_2024_01_28.png">
 	<div class="citation-with-avatar">
 		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
@@ -285,121 +411,46 @@ Outline:
 	</div>
 </section>
 
-<section data-background="#000000">
-	<h1 class="title">Genomic outbreak investigation</h1>
-</section>
-
-<section data-auto-animate>
-	<h3>Phylogeography infers migration matrix via phylogeny</h3>
-	<img class="stretch" src="/images/talks/ncov_king_county_mcc_clusters.png">
-	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/miguel-paredes.jpg">
-		<a href="/papers/paredes-sarscov2-king-county/">Paredes et al. 2022.</a>
-	</div>
-</section>
-
-<section data-auto-animate>
-	<h3>Phylogeography infers migration matrix via phylogeny</h3>
-	<p>However, this approach faces significant issues with scalability and sampling bias</p>
-	<img class="stretch" src="/images/talks/ncov_king_county_mcc_clusters.png">
-	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/miguel-paredes.jpg">
-		<a href="/papers/paredes-sarscov2-king-county/"> Paredes et al. 2022.</a>
-	</div>
-</section>
-
-<!-- Todo: redo with a more interpretable figure, potentially series of violin plots -->
-<section>
-	<h3>Identical sequences contain the most signal for transmission linkage</h3>
-	<img class="stretch" src="/images/talks/phylo_kernel_mutation_vs_transmission.png">
-	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
-		Tran Kiem et al.
-	</div>
-</section>
+<!-- Todo: Insert slide illustrating fitness estimation of emerging lineages
+Plot frequency vs fitness curves from lineages JSON -->
 
 <section>
-	<h3>Model emergence, spread and dissolution of clusters of identical sequences</h3>
-	<img class="stretch" src="/images/talks/phylo_kernel_tree_diagram.png">
-	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
-		Tran Kiem et al.
+	<div class="left" style="float:left; width:31%">
+		<h4 class="left-align">
+			Ongoing work to lengthen prediction horizon by incorporating high-throughput experimental
+			measurements of ACE2 binding and immune escape
+		</h4>
+	</div>
+	<div class="right" style="float:right; width:67%">
+		<img data-src="/images/talks/ncov_escape_dadonaite_delta_growth_vs_dms.png">
+	</div>
+	<div class="citation">
+		<a href="https://www.biorxiv.org/content/10.1101/2023.11.13.566961v1">Dadonaite et al. 2023.</a>
 	</div>
 </section>
 
-<!-- Todo: for longer version of this talk, include 2-3 slides on tran-kiem-transmission-heterogeneity
-1. Logic of R and k from distribution of cluster sizes
-2. R and k of SARS-CoV-2 in New Zealand
-3. R of SARS-CoV-2 variants through time -->
-
-<section>
-	<h3>Spatial and social determinants of transmission from clusters of identical sequences</h3>
-	<p>114k SARS-CoV-2 genomes from Washington State sentinel surveillance annotated with <br> geographic location and age</p>
-	<img class="stretch" src="/images/talks/phylo_kernel_example_clusters.png">
-	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
-		Tran Kiem et al.
-	</div>
-</section>
-
-<section>
-	<h3>Pairs of identical sequences 5.1 times more likely to come from same county</h3>
-	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_within_county.png">
-	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
-		Tran Kiem et al.
-	</div>
-</section>
-
-<section>
-	<h3>Between county enrichment corresponds well with geography</h3>
-	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_maps.png">
-	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
-		Tran Kiem et al.
-	</div>
-</section>
-
-<section>
-	<h3>Between age group enrichment shows social mixing patterns</h3>
-	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_age.png">
-	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
-		Tran Kiem et al.
-	</div>
-</section>
-
-<!-- <section>
-	<h3>Sequence-derived mixing patterns correlate well with expectations from journaling studies</h3>
-	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_age_correlation.png">
-	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
-		Tran Kiem et al.
-	</div>
-</section> -->
-
-<section>
-	<h3>Signal for differential local vs long-distance age mixing</h3>
-	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_age_by_geography.png">
-	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
-		Tran Kiem et al.
-	</div>
-</section>
-
+<!-- Todo: Rethink conclusions slide -->
 <section>
 	<h2>Lay ground-work for near ubiquitous pathogen sequencing</h2>
 </section>
 
-<section>
+<section style="text-align: left;">
 	<h3>Acknowledgements</h3>
 
 	<p class="even-smaller">
-		<b>Flu</b>: WHO Global Influenza Surveillance and Response System, other data producers, GISAID, John Huddleston, Richard Neher, Jennifer Chang, Jover Lee
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world and GISAID
 	</p>
-
 	<p class="even-smaller">
-		<b>SARS-CoV-2</b>: Data producers from all over the world, GISAID, the Nextstrain team, Katie Kistler, Marlin Figgins, Eslam Abousamra, Jover Lee, James Hadfield
+		<b>Nextstrain</b>: Richard Neher, Ivan Aksamentov, Kim Andrews, Jennifer Chang, James Hadfield,
+		Emma Hodcroft, John Huddleston, Jover Lee, Victor Lin, Cornelius Roemer, Thomas Sibley
+	</p>
+	<p class="even-smaller">
+		<b>Determinants of transmission</b>: Cécile Tran Kiem, Amanda Perofsky,
+		Miguel Paredes, Lauren Frisbie, Allison Black, Cécile Viboud
+	</p>
+	<p class="even-smaller">
+		<b>Evolutionary forecasting</b>: Marlin Figgins, Jover Lee, James Hadfield, John Huddleston,
+		Cornelius Roemer, Richard Neher
 	</p>
 
 	<p class="tiny"><b>Bedford Lab</b>:
@@ -414,29 +465,23 @@ Outline:
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/allison-li.jpg"> Allison Li,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/eslam-abousamra.jpg"> Eslam Abousamra,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/donna-modrell.jpg"> Donna Modrell,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span>  &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews</span>
 	</p>
 
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
-		<img width="10%" data-src="/images/talks/logo_fred_hutch_vertical_v2.png">
-		&nbsp; &nbsp;
-		<img width="7%" data-src="/images/talks/logo_nih.jpg">
-		&nbsp; &nbsp;
-		<img width="14%" data-src="/images/talks/logo_bmgf.png">
-		&nbsp; &nbsp;
-		<img width="12%" data-src="/images/talks/logo_gates_ventures.png">
-		&nbsp; &nbsp;
-		<img width="8%" data-src="/images/talks/logo_pew.png">
-		&nbsp; &nbsp;
-		<img width="8%" data-src="/images/talks/logo_cdc.png">
-		&nbsp; &nbsp;
-		<img width="11%" data-src="/images/talks/logo_wellcome_trust.jpg">
-		&nbsp; &nbsp;
-		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
+		<img width="12%" data-src="/images/talks/logo_fred_hutch_vertical_v2.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="9%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="18%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="15%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_cdc.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_hhmi.jpg">
 	</div>
 </section>
