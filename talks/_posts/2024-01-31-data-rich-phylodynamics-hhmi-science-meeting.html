@@ -25,7 +25,10 @@ Outline:
 5. Lineages and MLR models for estimation of fitness (5 min) -->
 
 <!-- General Todo with specifics inline:
-1. Make an engaging visualization of expanding sequence data -->
+1. Make an engaging visualization of expanding sequence data
+  - Run tree with ~30k tips collected in the early pandemic period
+	- Plot animation frames as analysis date updates
+-->
 
 <!--             Blue     Yellow   Purple   Red     -->
 <!-- Color ramp: #4C91C1, #CFB642, #7F62A4, #E04328 -->
@@ -259,18 +262,26 @@ Outline:
 	</div>
 </section>
 
-<!-- Todo: redo with a more interpretable figure, potentially series of violin plots -->
-<section>
-	<h3>Identical sequences contain the most signal for transmission linkage</h3>
-	<img class="stretch" src="/images/talks/phylo_kernel_mutation_vs_transmission.png">
+<!-- Todo: Potentially update mutation vs transmission figure -->
+<!-- Run simulations to get distribution in a growing epidemic -->
+<!-- <section>
+	<h3>Identical sequences generally closely linked</h3>
+	<p>One mutation every ~13 days vs duration of infection of ~5 days</p>
+	<div class="left" style="float:left; width:53%">
+		<img data-src="/images/talks/ncov_mutation_rate_nuc_clock_2023_04_15.png">
+	</div>
+	<div class="right" style="float:right; width:45%">
+		<img data-src="/images/talks/phylo_kernel_mutation_vs_transmission.png">
+	</div>
 	<div class="citation-with-avatar">
 		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
 		Tran Kiem et al.
 	</div>
-</section>
+</section> -->
 
 <section>
 	<h3>Model emergence, spread and dissolution of clusters of identical sequences</h3>
+	<p>One mutation every ~13 days vs duration of infection of ~5 days</p>
 	<img class="stretch" src="/images/talks/phylo_kernel_tree_diagram.png">
 	<div class="citation-with-avatar">
 		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
@@ -338,7 +349,15 @@ Outline:
 	</div>
 </section>
 
-<!-- Todo: Insert slide on future work -->
+<!-- <section class="left-align">
+	<h3>Future work</h3>
+	<p>
+	<ol>
+		<li>Incorporate assymetry in transmission direction between groups</li>
+		<li>Estimate group-level contributions to epidemic growth</li>
+		<li>Apply more broadly</li>
+	</ol>
+</section> -->
 
 <section data-background="#E04328">
 	<h1 class="title">Evolutionary Forecasting</h1>
@@ -357,7 +376,7 @@ Outline:
 	<p>
 	<ol>
 		<li>Granular nomenclature and rapid classification</li>
-		<li>Multinomial logistic regression to estimate fitness</li>
+		<li>Detailed frequency data allowing multinomial logistic regression</li>
 	</ol>
 </section>
 
@@ -387,19 +406,19 @@ Outline:
 			$$x_i(t) = \frac{p_i \, \mathrm{exp}(f_i \, t)}{\sum_{1 \le j \le n} p_j \, \mathrm{exp}(f_j \, t) }$$
 		</p>
 		<p>
-			estimating parameters for the initial frequency $p$ and the growth rate or fitness $f$ of variant $i$.
+			estimating parameters for the initial frequency $p$ and the growth rate or fitness $f$.
 		</p>
-		<p>Trajectories are linear once logit transformed via $\mathrm{log}(\frac{x}{1 - x})$ and correspond to population genetic expectation</p>
+		<!-- <p>Trajectories are linear once logit transformed via $\mathrm{log}(\frac{x}{1 - x})$ and correspond to population genetic expectation</p> -->
 	</div>
 	<div class="right" style="float:right; width:38%">
 		<img data-src="/images/talks/ncov_variants_selection_logit_trajectories_vertical.png">
 	</div>
 </section>
 
-<section>
+<!-- <section>
 	<h3>Consistent frequency dynamics in logit space (JN.1 Dec 2023)</h3>
 	<img class="stretch" src="/images/talks/ncov_variants_jn1_countries_frequencies_logit_2022_12_13.png">
-</section>
+</section> -->
 
 <section>
 	<h3>Provide continuously updated clade and lineage forecasts</h3>
@@ -411,8 +430,15 @@ Outline:
 	</div>
 </section>
 
-<!-- Todo: Insert slide illustrating fitness estimation of emerging lineages
-Plot frequency vs fitness curves from lineages JSON -->
+<section>
+	<h3>Growth advantage readily identifiable while lineage is still rare</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_lineages_freq_vs_ga_2023_11_15.png">
+</section>
+
+<section>
+	<h3>Growth advantage readily identifiable while lineage is still rare</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_lineages_freq_vs_ga_2024_01_29.png">
+</section>
 
 <section>
 	<div class="left" style="float:left; width:31%">
@@ -429,7 +455,6 @@ Plot frequency vs fitness curves from lineages JSON -->
 	</div>
 </section>
 
-<!-- Todo: Rethink conclusions slide -->
 <section>
 	<h2>Lay ground-work for near ubiquitous pathogen sequencing</h2>
 </section>
