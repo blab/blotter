@@ -1,0 +1,633 @@
+---
+layout: talk_reveal4
+title: Data rich phylodynamics
+venue: Harvard School of Public Health
+event: CCDD ID Epi Seminar Series
+author: Trevor Bedford
+widescreen: true
+---
+
+<!-- 45 min total, with 35 min talk and 10 min Q&A -->
+
+<!-- We ask that you do NOT display journal names or journal covers in your talk. -->
+
+<!-- Goal is to give a overview of historical phylogenetic approach to
+phylodynamics and why this is breaking down with deluge of SARS-CoV-2 genomic
+data. With only 15 minutes the goal is to give flavor of scalable
+non-phylogenetic approaches rather real technical detail
+
+Outline:
+
+1. Key insights during pandemic from genomic data
+2. Data deluge
+3. New approaches for both epidemiology and evolution
+4. Identical genomes for estimation of R0 and dispersal (5 min)
+5. Lineages and MLR models for estimation of fitness (5 min) -->
+
+<!-- General Todo with specifics inline:
+1. Make an engaging visualization of expanding sequence data
+  - Run tree with ~30k tips collected in the early pandemic period
+	- Plot animation frames as analysis date updates
+-->
+
+<!--             Blue     Yellow   Purple   Red     -->
+<!-- Color ramp: #4C91C1, #CFB642, #7F62A4, #E04328 -->
+
+<section data-transition="fade" data-background="#000">
+	<h1 class="title">{{ page.title }}</h1>
+	<br>&nbsp;<br>
+	<h4 class="title">Trevor Bedford</h4>
+	<p class="title">
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+	<br>&nbsp;<br>
+	Slides at: bedford.io/talks
+</section>
+
+<section data-background="#4C91C1">
+	<h1 class="title">Genomic epidemiology during the COVID-19 pandemic</h1>
+</section>
+
+<section>
+	<h3>Over 16M SARS-CoV-2 genomes shared to GISAID and evolution tracked in real-time at nextstrain.org</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_map_2021_09_12_global.png">
+	<br>
+	<p class="tiny"><i>
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/ivan-aksamentov.jpg"> Ivan Aksamentov,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/emma-hodcroft.jpg"> Emma Hodcroft,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/cornelius-roemer.jpg"> Cornelius Roemer,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley</span>
+	</i></p>
+</section>
+
+<section style="text-align: left;">
+	<h3>Three key insights that genomic epi provided during pandemic</h3>
+	<p>
+	<ol>
+		<li>Rapid human-to-human spread in Wuhan beyond initial market outbreak</li>
+		<li>Extensive local transmission while testing was rare</li>
+		<li>Identification of variants of concern and mapping of increased transmission rates</li>
+	</ol>
+	</p>
+</section>
+
+<section>
+	<h3>Jan 11: First five genomes showed a novel SARS-like coronavirus</h3>
+	<p>
+		Initially thought clustering due to epi investigation of linked cases at
+		Huanan seafood market
+	</p>
+	<img class="stretch" data-src="/images/talks/ncov_sars_like_tree.png">
+	<div class="citation">
+		Data from CAMS, China CDC, Fudan University, WIV;
+		Figure from <a href="https://nextstrain.org/groups/blab/sars-like-cov">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Jan 19: First 12 genomes from Wuhan (blue) and Bangkok (red) showed lack of genetic diversity</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_2020_01_19.png">
+	<div class="citation">
+		Data from CAMS, China CDC, Fudan University, Hubei CDC, Thai MOPH, WIV;
+		Figure from <a href="https://nextstrain.org/ncov/2020-01-22">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>
+		Jan 23: Introduction into the human population between Nov 15 and Dec 15 and
+		subsequent rapid human-to-human spread
+	</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tmrca_r0_2020_01_23.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/narratives/ncov/sit-rep/2020-01-23">Bedford et al. 2020. Technical report.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Rapid global epidemic spread from China</h3>
+	<video data-autoplay>
+		<source data-src="/images/talks/ncov_early_tree_map_animation.mp4" type="video/mp4"/>
+	</video>
+</section>
+
+<section>
+	<h3>Epidemic in the USA was introduced from China in late Jan and from Europe during Feb</h3>
+	<img class="stretch" src="/images/talks/ncov_tree_map_2020_04_20_usa_1.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Early sequencing provided best estimate of extent of local outbreak</h3>
+	<img class="stretch" src="/images/talks/ncov_cryptic_transmission_outbreak_clade.png">
+	<div class="citation">
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
+	</div>
+</section>
+
+<section>
+	<h4 class="inset-top-right">
+		After initial wave, with mitigation <br> efforts and decreased travel, <br> regional clades emerge
+	</h4>
+	<img class="stretch" src="/images/talks/ncov_tree_2020_10_20_global_jun_oct.png">
+	<div class="citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Emergence and spread of initial VOC viruses</h3>
+	<div class="left" style="float:left; width:49%">
+		Alpha
+		<img data-src="/images/talks/ncov_variants_501Y.V1_clock_2021_02_10.png">
+	</div>
+	<div class="right" style="float:right; width:49%">
+		Gamma
+		<img data-src="/images/talks/ncov_variants_501Y.V3_clock_2021_03_16.png">
+	</div>
+	<div class="citation-left">
+		Alpha described in <a href="https://virological.org/t/preliminary-genomic-characterisation-of-an-emergent-sars-cov-2-lineage-in-the-uk-defined-by-a-novel-set-of-spike-mutations/563">Rambaut et al. 2020. Virological.org</a>
+		Figure from <a href="https://nextstrain.org/ncov/europe/2021-02-10?c=clade_membership&f_country=United%20Kingdom&l=clock&r=division">nextstrain.org</a>
+	</div>
+	<div class="citation">
+		Gamma described in <a href="https://www.science.org/doi/10.1126/science.abh2644">Faria et al. 2021. Science.</a>
+		Figure from <a href="https://nextstrain.org/ncov/south-america/2021-03-16?f_country=Brazil&l=clock&r=division">nextstrain.org</a>
+	</div>
+</section>
+
+<!-- <section>
+	<h3>Emergence and spread of initial VOC viruses</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_animation_2021_09_12.gif">
+</section> -->
+
+<section>
+	<h3>Continued evolution post-Omicron</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_tree_unrooted_2024_01_28.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time@2024-01-28?l=unrooted">nextstrain.org</a>
+	</div>
+</section>
+
+<section data-background="#CFB642">
+	<h1 class="title">Future of genomic epidemiology</h1>
+</section>
+
+<section style="text-align: left;">
+	<h3>The COVID-19 pandemic has pushed the field perhaps ~5 years into the future</h3>
+	<div style="float: left; width: 80%">
+		<br>
+		<table style="line-height: 2.5em;">
+			<tr>
+				<td style="border: none;">2013-16 Ebola in West Africa</td>
+				<td style="border: none;">29k confirmed cases</td>
+				<td style="border: none;">1610 genomes</td>
+			</tr>
+			<tr>
+				<td style="border: none;">2015-17 Zika in the Americas</td>
+				<td style="border: none;">223k confirmed cases</td>
+				<td style="border: none;">942 genomes</td>
+			</tr>
+			<tr>
+				<td style="border: none;">2018-19 seasonal flu in US</td>
+				<td style="border: none;">290k confirmed cases</td>
+				<td style="border: none;">8864 genomes</td>
+			</tr>
+			<tr>
+				<td style="border: none;">2020-22 COVID-19 pandemic</td>
+				<td style="border: none;">732M confirmed cases</td>
+				<td style="border: none;">14.5M genomes</td>
+			</tr>
+		</table>
+	</div>
+	<div style="float: right; width: 14%">
+		<img src="/images/talks/ncov_data_quantity.png">
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<div style="float: left; width: 73%">
+		<h3>Scalable approaches to genomic epidemiology</h3>
+		<p>
+		<ol>
+			<li>
+				Genomic outbreak investigation: across pathogens with focus on spatial dynamics and recontructing spread
+			</li>
+			<li>
+				Evolutionary forecasting: focus on seasonal influenza and SARS-CoV-2 for impact on vaccine strain selection
+			</li>
+		</ol>
+	</div>
+	<div style="float: right; width: 18%">
+		<img data-src="/images/talks/genomic_epi_frequency_dynamics.png">
+		<br>
+		<img data-src="/images/talks/genomic_epi_spatial_dynamics.png">
+	</div>
+</section>
+
+<section data-background="#7F62A4">
+	<h1 class="title">Genomic outbreak investigation</h1>
+</section>
+
+<section data-auto-animate>
+	<h3>Phylogeography infers migration matrix via phylogeny</h3>
+	<img class="stretch" src="/images/talks/ncov_king_county_mcc_clusters.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/miguel-paredes.jpg">
+		<a href="/papers/paredes-sarscov2-king-county/">Paredes et al. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section data-auto-animate>
+	<h3>Phylogeography infers migration matrix via phylogeny</h3>
+	<p>However, this approach faces significant issues with scalability and sampling bias</p>
+	<img class="stretch" src="/images/talks/ncov_king_county_mcc_clusters.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/miguel-paredes.jpg">
+		<a href="/papers/paredes-sarscov2-king-county/"> Paredes et al. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Model emergence, spread and dissolution of clusters of identical sequences</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_tree_diagram.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<section>
+	<h3>Identical sequences generally closely linked</h3>
+	<p>One mutation every ~13 days vs duration of infection of ~5 days</p>
+	<div class="left" style="float:left; width:53%">
+		<img data-src="/images/talks/ncov_mutation_rate_nuc_clock_2023_04_15.png">
+	</div>
+	<div class="right" style="float:right; width:45%">
+		<img data-src="/images/talks/phylo_kernel_mutation_vs_transmission.png">
+	</div>
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<!-- For longer version of this talk, include 2-3 slides on tran-kiem-transmission-heterogeneity
+1. Logic of R and k from distribution of cluster sizes
+2. R and k of SARS-CoV-2 in New Zealand
+3. R of SARS-CoV-2 variants through time -->
+
+<section>
+	<h3>Spatial and social determinants of transmission from clusters of identical sequences</h3>
+	<p>114k SARS-CoV-2 genomes from Washington State sentinel surveillance annotated with <br> geographic location and age</p>
+	<img class="stretch" src="/images/talks/phylo_kernel_example_clusters.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<section>
+	<h3>Pairs of identical sequences 5.1 times more likely to come from same county</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_within_county.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<section>
+	<h3>Relative risk score robust to sampling intensity</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_sampling_bias.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<section>
+	<h3>Between county enrichment corresponds well with geography</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_maps.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<!-- Maybe add slide showing correspondence with mobility data -->
+
+<section>
+	<h3>Between age group enrichment shows social mixing patterns</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_age.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<section>
+	<h3>Sequence-derived mixing patterns correlate well with expectations from journaling studies</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_age_correlation.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<section>
+	<h3>Signal for differential local vs long-distance age mixing</h3>
+	<img class="stretch" src="/images/talks/phylo_kernel_relative_risk_age_by_geography.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg">
+		Tran Kiem et al.
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>Future work</h3>
+	<p>
+	<ol>
+		<li>Incorporate assymetry in transmission direction between groups</li>
+		<li>Estimate group-level contributions to epidemic growth</li>
+		<li>Apply more broadly</li>
+	</ol>
+</section>
+
+<section data-background="#E04328">
+	<h1 class="title">Evolutionary Forecasting</h1>
+</section>
+
+<!-- Potentially cleanup labels -->
+<section>
+	<img class="stretch" data-src="/images/talks/ncov_tree_freq_2024_01_28.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time@2024-01-28">nextstrain.org</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>Recent advances</h3>
+	<p>
+	<ol>
+		<li>Granular nomenclature and rapid classification</li>
+		<li>Detailed frequency data allowing direct model estimates</li>
+	</ol>
+</section>
+
+<section>
+	<h3>Currently 2857 Pango lineages and samples can be rapidly assigned lineages in Nextclade or UShER</h3>
+	<img class="stretch" data-src="/images/talks/ncov_nextclade_tree_2024_01_28.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/staging/nextclade/sars-cov-2">Roemer and Neher. nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Variants that are just 1-2 mutations different will get a label</h3>
+	<img class="stretch" data-src="/images/talks/ncov_nextclade_tree_ba286_2024_01_28.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/staging/nextclade/sars-cov-2?label=clade:23I">Roemer and Neher. nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Population genetic expectation of variant frequency under selection</h3>
+	<p>$x' = \frac{x \, (1+s)}{x \, (1+s) + (1-x)}$ for frequency $x$ over one generation with selective advantage $s$</p>
+	<p>$x(t) = \frac{x_0 \, (1+s)^t}{x_0 \, (1+s)^t + (1-x_0)}$ for initial frequency $x_0$ over $t$ generations</p>
+	<p>Trajectories are linear once logit transformed via $\mathrm{log}(\frac{x}{1 - x})$</p>
+	<img class="stretch" src="/images/talks/ncov_variants_selection_logit_trajectories.png">
+</section>
+
+<section>
+	<h3>Consistent frequency dynamics in logit space (BA.2 Mar 2022)</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_omicron_countries_frequencies_logit_2022_04_08.png">
+</section>
+
+<section>
+	<h3>Consistent frequency dynamics in logit space (BA.5 Jul 2022)</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_frequencies_logit_2022_08_01.png">
+</section>
+
+<section>
+	<h3>Consistent frequency dynamics in logit space (JN.1 Dec 2023)</h3>
+	<img class="stretch" src="/images/talks/ncov_variants_jn1_countries_frequencies_logit_2022_12_13.png">
+</section>
+
+<section>
+	<h3>Multinomial logistic regression</h3>
+	<p>
+		Multinomial logistic regression across $n$ variants models the probability of a virus sampled at time $t$ belonging to
+		variant $i$ as
+	</p>
+	<p>
+		$$\mathrm{Pr}(X = i) = x_i(t) = \frac{p_i \, \mathrm{exp}(f_i \, t)}{\sum_{1 \le j \le n} p_j \, \mathrm{exp}(f_j \, t) }$$
+	</p>
+	<p>
+		with $2n$ parameters consisting of $p_i$ the frequency of variant $i$ at initial timepoint
+		and $f_i$ the growth rate or fitness of variant $i$.
+	</p>
+</section>
+
+<section>
+	<h3>Original VOC viruses had substantially increased transmissibility</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_rt_growth_advantage_2021_09_23.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Variant frequencies across countries from Feb 2022 to present</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_frequencies_2024_02_01.png">
+</section>
+
+<section>
+	<h3>We find that recent variants are ~250% fitter than original Omicron BA.1</h3>
+	<img class="stretch" src="/images/talks/sarscov2_variant_mlr_growth_advantages_2024_02_01.png">
+</section>
+
+<section>
+	<h3>Assessing MLR models for short-term frequency forecasting</h3>
+	<p>Retrospective projections twice monthly during 2022</p>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_overview.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/eslam-abousamra.jpg">
+		<a href="/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2023. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>+30 day short-term forecasts across different countries </h3>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_projections.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/eslam-abousamra.jpg">
+		<a href="/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2023. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>MLR models generate accurate short-term forecasts</h3>
+	<p>30 days out, countries range from 6 to 10% mean absolute error</p>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_accuracy_window.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/eslam-abousamra.jpg">
+		<a href="/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2023. medRxiv.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Clade and lineage forecasts continuously updated at nextstrain.org</h3>
+	<p>The global sweep of JN.1 is now largely complete</p>
+	<img class="stretch" src="/images/talks/ncov_forecasts_clades_2024_01_28.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
+		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins et al. nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Growth advantage readily identifiable while lineage is still rare</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_lineages_freq_vs_ga_2023_11_15.png">
+</section>
+
+<section>
+	<h3>Growth advantage readily identifiable while lineage is still rare</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_lineages_freq_vs_ga_2024_01_29.png">
+</section>
+
+<!-- Maybe include weather fronts figure -->
+<!-- Or a figure that shows series of winner-takes-all forecasts -->
+<section class="left-align">
+	<h3>Multinomial logistic regression should work well for SARS-CoV-2 prediction, except new variants have been emerging
+		fast enough that the prediction horizon is limited to 2-3 months</h3>
+</section>
+
+<!-- <section>
+	<h3>Could we predict the spread of new mutations using DMS data?</h3>
+	<p>Escape from antibodies that potently neutralize BA.2</p>
+	<img class="stretch" src="/images/talks/ncov_escape_cao_dms_array_vs_ba2.png">
+	<div class="citation">
+		<a href="https://www.nature.com/articles/s41586-022-05644-7">Cao et al. 2023. Nature.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Can calculate escape of arbitrary RBD against antibodies known to neutralize BA.2</h3>
+	<div class="left" style="float:left; width:58%">
+		<img data-src="/images/talks/ncov_escape_calculator_bloom_2023_06_19.png">
+	</div>
+	<div class="right" style="float:right; width:40%">
+		<img data-src="/images/talks/ncov_escape_tree_2023_06_19.png">
+	</div>
+	<div class="citation-left">
+		<a href="https://jbloomlab.github.io/SARS2-RBD-escape-calc/">Greaney, Starr, Bloom. 2022. Virus Evol.</a>
+	</div>
+	<div class="citation">
+		<a href="https://nextstrain.org/ncov/gisaid/21L/global/all-time?c=immune_escape">Roemer and Neher. nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Strong correlation between DMS immune escape and lineage-level MLR growth advantage</h3>
+	<img class="stretch" src="/images/talks/ncov_escape_binding_escape_growth_advantage.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
+		<a href="https://github.com/blab/ncov-escape">Figgins, Roemer et al.</a>
+	</div>
+</section> -->
+
+<section>
+	<div class="left" style="float:left; width:31%">
+		<h4 class="left-align">Ongoing work to lengthen prediction horizon by incorporating high-throughput experimental
+		measurements of ACE2 binding and immune escape</h4>
+	</div>
+	<div class="right" style="float:right; width:67%">
+		<img data-src="/images/talks/ncov_escape_dadonaite_delta_growth_vs_dms.png">
+	</div>
+	<div class="citation">
+		<a href="https://www.biorxiv.org/content/10.1101/2023.11.13.566961v1">Dadonaite et al. 2023. bioRxiv.</a>
+	</div>
+</section>
+
+<section class="left-align">
+	<h3>Continued research</h3>
+	<p>
+	<ul>
+		<li>
+			Application of MLR models to seasonal influenza and other pathogens
+		</li>
+		<li>
+			Assessing and improving accuracy of "live" models at nextstrain.org/sars-cov-2/forecasts/
+		</li>
+		<li>
+			Implementing DMS priors to predict fitness of emerging and yet-to-emerge lineages
+		</li>
+	</ul>
+	</p>
+</section>
+
+<section style="text-align: left;">
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world and GISAID
+	</p>
+	<p class="even-smaller">
+		<b>Nextstrain</b>: Richard Neher, Ivan Aksamentov, Kim Andrews, Jennifer Chang, James Hadfield,
+		Emma Hodcroft, John Huddleston, Jover Lee, Victor Lin, Cornelius Roemer, Thomas Sibley
+	</p>
+	<p class="even-smaller">
+		<b>Determinants of transmission</b>: Cécile Tran Kiem, Amanda Perofsky,
+		Miguel Paredes, Lauren Frisbie, Allison Black, Cécile Viboud
+	</p>
+	<p class="even-smaller">
+		<b>Evolutionary forecasting</b>: Marlin Figgins, Jover Lee, James Hadfield, John Huddleston,
+		Cornelius Roemer, Richard Neher
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/eslam-abousamra.jpg"> Eslam Abousamra,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span>  &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="12%" data-src="/images/talks/logo_fred_hutch_vertical_v2.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="9%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="18%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="15%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_cdc.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
