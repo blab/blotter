@@ -7,6 +7,7 @@ year: 2024
 ref: Nanduri et al. 2024. bioRxiv.
 journal: "bioRxiv: 2024.02.07.579374."
 pdf: /pdfs/papers/nanduri-cartography.pdf
+supplement: /pdfs/papers/nanduri-cartography-supp.pdf
 doi: 10.1101/2024.02.07.579374
 github: https://github.com/blab/cartography
 ---
