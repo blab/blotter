@@ -3,11 +3,11 @@ layout: paper
 title: Antigenic drift and subtype interference shape A(H3N2) epidemic dynamics in the United States
 image: /images/papers/perofsky-flu-antigenic-epi.png
 authors: Perofsky AC, Huddleston J, Hansen C, Barnes JR, Rowe T, Xu X, Kondor R, Wentworth DE, Lewis N, Whittaker L, Ermetal B, Harvey R, Galiano M, Daniels RS, McCauley JW, Fujisaki S, Nakamura K, Kishida N, Watanabe S, Hasegawa H, Sullivan SG, Barr IG, Subbarao K, Krammer F, Bedford T, Viboud C.
-year: 2023
-ref: Perofsky et al. 2023. medRxiv.
-journal: "medRxiv: 2023.10.02.23296453."
+year: 2024
+ref: Perofsky et al. 2024. eLife.
+journal: "eLife 13: RP91849."
 pdf: /pdfs/papers/perofsky-flu-antigenic-epi.pdf
-doi: 10.1101/2023.10.02.23296453
+doi: 10.7554/eLife.91849.1
 github: https://github.com/aperofsky/H3N2_Antigenic_Epi
 ---
 
