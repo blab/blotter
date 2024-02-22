@@ -4,6 +4,7 @@ title: Donna Modrell
 position: Administrative coordinator
 github: dmodrell
 image: /images/team/donna-modrell.jpg
+alumni: true
 ---
 
 I am an Administrative Coordinator in the Bedford Lab. I manage a variety of operational needs to help keep the lab running smoothly. I enjoy being a resource the lab can turn to for support.
