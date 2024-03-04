@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Yongsang Kim
-position: LG Electronics, Researcher
+position: Samsung Electronics, Researcher
 alumni: true
 ---
