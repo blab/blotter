@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Junghoon Lee
-position: Hyundai Heavy Industries Co., Ltd, Researcher
+position: ANSYS, Researcher
 alumni: true
 ---
