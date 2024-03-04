@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Sihyun Park
-position: Master student
-image: /images/people/sihyun-park.png
+position: SEMES, Researcher
+alumni: true
 ---
