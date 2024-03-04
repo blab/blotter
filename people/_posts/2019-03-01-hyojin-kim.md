@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Hyojin Kim
-position: PhD student
-image: /images/people/hyojin-kim.jpg
+position: KISTI, Researcher
+alumni: true
 ---
