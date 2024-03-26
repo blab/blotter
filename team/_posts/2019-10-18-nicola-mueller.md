@@ -7,6 +7,8 @@ scholar: 65FxKNgAAAAJ
 github: nicfel
 twitter: nicfelm
 image: /images/team/nicola-mueller.jpg
+website: https://muellerlab.io/
+alumni: true
 ---
 
 I joined the lab in October of 2019 as a Postdoc to work on several aspects of the evolution and transmission of infectious diseases.
