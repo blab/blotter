@@ -47,6 +47,17 @@ layout: default
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
+		{% if member.fediverse %}
+		<div class="smallhead">
+			Fediverse
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-handshake-o"></i>
+			<a class="off" href="https://{{ member.fediverse.server }}/{{ member.fediverse.handle }}">{{ member.fediverse.handle }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
 		{% if member.github %}
 		<div class="smallhead">
 			GitHub
