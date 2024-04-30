@@ -11,7 +11,7 @@ image: /images/team/john-sj-anderson.jpg
 website: https://genehack.org
 ---
 
-I joined the Bedford Lab near the end of 2024. I have a PhD in
+I joined the Bedford Lab near the end of April, 2024. I have a PhD in
 Molecular &amp; Cellular Biology from the University of Arizona,
 followed by over 20 years of software development experience in a
 variety of spheres, from Federal government contracting to
