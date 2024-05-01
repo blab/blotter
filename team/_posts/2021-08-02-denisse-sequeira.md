@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Denisse Sequeira
-position: Program Manager
+position: Program manager
 github: DSequ
 image: /images/team/denisse-sequeira.jpg
 alumni: true
