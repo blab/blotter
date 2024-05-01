@@ -3,7 +3,9 @@ layout: member
 title: Thomas Sibley
 position: Software engineer
 handle: trs
-twitter: trs
+fediverse:
+  server: metasocial.com
+  handle: "@trs"
 github: tsibley
 image: /images/team/thomas-sibley.jpg
 website: https://tsibley.net
