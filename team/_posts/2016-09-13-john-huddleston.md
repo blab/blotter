@@ -3,7 +3,9 @@ layout: member
 title: John Huddleston
 position: Staff scientist
 handle: jlhudd
-twitter: huddlej
+fediverse:
+  server: mstdn.science
+  handle: "@huddlej"
 github: huddlej
 scholar: mF_VG5IAAAAJ
 image: /images/team/john-huddleston.jpg
