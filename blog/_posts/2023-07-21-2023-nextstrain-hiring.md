@@ -4,6 +4,8 @@ title: Openings for bioinformatics analyst and software engineer to contribute t
 author: Trevor Bedford
 ---
 
+_These positions have been filled._
+
 Positions for a [bioinformatics analyst](#bioinformatics-analyst-iiiii) and a [software engineer](#software-engineer-ii) are available immediately in the Bedford lab at the Fred Hutch. Details for both positions follow:
 
 -----------------------------------------
