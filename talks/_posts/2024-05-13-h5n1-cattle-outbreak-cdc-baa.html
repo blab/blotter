@@ -5,6 +5,7 @@ venue: CDC
 event: Monthly BAA call
 author: Trevor Bedford
 widescreen: true
+draft: true
 ---
 
 <!-- ~20 min talk length -->
@@ -70,19 +71,86 @@ Data and analysis infrastructure notes
 	</div>
 </section>
 
+<section>
+	<h3>Cattle infections form distinct clade across segments indicative of single spillover and cow-to-cow spread</h3>
+	<img class="stretch" data-src="/images/talks/h5n1_avian_across_segments_2y_host_2024_05_13.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1/ha/2y@2024-05-13?c=host">HA</a>,
+		<a href="https://nextstrain.org/avian-flu/h5n1/pb2/2y@2024-05-13?c=host">PB2</a>,
+		<a href="https://nextstrain.org/avian-flu/h5n1/pa/2y@2024-05-13?c=host">PA</a>,
+	</div>
+</section>
+
+<section>
+	<h3>Reassortment in birds prior to cattle spillover, but cattle clade appears non-reassorting</h3>
+	<img class="stretch" data-src="/images/talks/h5n1_avian_ha_vs_pb2_2y_host_2024_05_13.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1/ha/2y@2024-05-13:avian-flu/h5n1/pb2/2y@2024-05-13?c=host&m=div">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Full genome analysis of concatenated segments provides substantially finer resolution</h3>
+	<img class="stretch" data-src="/images/talks/h5n1_cattle_genome_div_host_2024_05_13.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-05-13?branchLabel=aa&m=div">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Growing epizootic in cattle after introduction in ~Dec with subsequent spillback into birds</h3>
+	<img class="stretch" data-src="/images/talks/h5n1_cattle_genome_host_2024_05_13.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-05-13">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Molecular clock dating introduction into cattle</h3>
+	<p>Human case outgroups to cattle infections, suggesting unsampled diversity and potentially a second cattle introduction</p>
+	<img class="stretch" data-src="/images/talks/h5n1_cattle_worobey_tmrca.png">
+	<div class="citation">
+		<a href="https://virological.org/t/preliminary-report-on-genomic-epidemiology-of-the-2024-h5n1-influenza-a-virus-outbreak-in-u-s-cattle-part-1-of-2/970">Worobey et al. 2024. Virological.org</a>
+	</div>
+</section>
+
+<!-- <section>
+	<h3>Molecular clock dating introduction into cattle</h3>
+	<div class="left" style="float:left; width:49%">
+		<img data-src="/images/talks/h5n1_cattle_worobey_tmrca.png">
+	</div>
+	<div class="right" style="float:right; width:49%">
+		<img data-src="/images/talks/h5n1_cattle_nguyen_tmrca.png">
+	</div>
+	<div class="citation-left">
+		<a href="https://virological.org/t/preliminary-report-on-genomic-epidemiology-of-the-2024-h5n1-influenza-a-virus-outbreak-in-u-s-cattle-part-1-of-2/970">Worobey et al. 2024. Virological.org</a>
+	</div>
+	<div class="citation">
+		<a href="https://www.biorxiv.org/content/10.1101/2024.05.01.591751v1">Nguyen et al. 2024. bioRxiv.</a>
+	</div>
+</section> -->
+
+<section>
+	<h3>Epizootic origin appears to be Texas congruent with initial cases</h3>
+	<p>But note sampling bias, where 119 of 189 cattle-derived sequences were sampled from Texas</p>
+	<img class="stretch" data-src="/images/talks/h5n1_cattle_genome_division_2024_05_13.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-05-13">nextstrain.org</a>
+	</div>
+</section>
+
 <section style="text-align: left;">
 	<h3>Acknowledgements</h3>
 
 	<p class="even-smaller">
-		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world and GISAID
+		<b>H5N1 genomic data</b>: APHIS National Veterinary Services lab at the USDA for sharing cattle sequences, along with data producers from all over the world and GISAID
 	</p>
 	<p class="even-smaller">
-		<b>Nextstrain</b>: Richard Neher, Ivan Aksamentov, Kim Andrews, Jennifer Chang, James Hadfield,
+		<b>H5N1 genomic analysis</b>: <b><i>Louise Moncla</i></b>, James Hadfield, John Huddleston
+	</p>
+	<p class="even-smaller">
+		<b>Nextstrain</b>: Richard Neher, Ivan Aksamentov, John Anderson, Kim Andrews, Jennifer Chang, James Hadfield,
 		Emma Hodcroft, John Huddleston, Jover Lee, Victor Lin, Cornelius Roemer, Thomas Sibley
-	</p>
-	<p class="even-smaller">
-		<b>Evolutionary forecasting</b>: Marlin Figgins, Jover Lee, James Hadfield, John Huddleston,
-		Cornelius Roemer, Richard Neher
 	</p>
 
 	<p class="tiny"><b>Bedford Lab</b>:
@@ -91,16 +159,18 @@ Data and analysis infrastructure notes
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/eslam-abousamra.jpg"> Eslam Abousamra,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span>  &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews</span>
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cristian-ovadiuc.jpg"> Cristian Ovaduic,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/philippa-steinberg.jpg"> Philippa Steinberg,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jacob-dodds.jpg"> Jacob Dodds,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/john-sj-anderson.jpg"> John SJ Anderson</span>
 	</p>
 
 	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
