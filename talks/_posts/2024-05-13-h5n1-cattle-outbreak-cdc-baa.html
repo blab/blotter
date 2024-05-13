@@ -1,0 +1,119 @@
+---
+layout: talk_reveal4
+title: Genomic epidemiology of the H5N1 outbreak in US cattle
+venue: CDC
+event: Monthly BAA call
+author: Trevor Bedford
+widescreen: true
+---
+
+<!-- ~20 min talk length -->
+
+<!--
+Scientific results
+1. Broader context of outbreak
+2. Specific context
+3. Reassortment
+4. Concatenated full genomes
+5. TMRCA
+6. Spill-back to avian hosts
+7. Migration patterns
+8. Human case outgroup
+Data and analysis infrastructure notes
+1. Data infrastructure
+2. Reassortment
+-->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<h4 class="title">Trevor Bedford</h4>
+	<p class="title">
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<section>
+	<h3>Confirmed infections in cattle in nine states with first detection on March 25</h3>
+	<img class="stretch" data-src="/images/talks/h5n1_cattle_usda_map_2024_05_13.png">
+	<div class="citation">
+		<a href="https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/livestock">USDA</a>
+	</div>
+</section>
+
+<section>
+	<h3>Broader context of H5N1 evolution and spread</h3>
+	<img class="stretch" data-src="/images/talks/h5n1_avian_ha_all_time_region_2024_05_13.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1/ha/all-time@2024-05-13">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Introduction into Europe and the Americas of clade 2.3.4.4b</h3>
+	<img class="stretch" data-src="/images/talks/h5n1_avian_ha_all_time_clade_2024_05_13.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1/ha/all-time@2024-05-13?c=h5_label_clade">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Spread in the Americas characterized by spillover to multiple mammalian hosts</h3>
+	<img class="stretch" data-src="/images/talks/h5n1_avian_ha_2y_host_2024_05_13.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1/ha/2y@2024-05-13?c=host">nextstrain.org</a>
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<h3>Acknowledgements</h3>
+
+	<p class="even-smaller">
+		<b>SARS-CoV-2 genomic epi</b>: Data producers from all over the world and GISAID
+	</p>
+	<p class="even-smaller">
+		<b>Nextstrain</b>: Richard Neher, Ivan Aksamentov, Kim Andrews, Jennifer Chang, James Hadfield,
+		Emma Hodcroft, John Huddleston, Jover Lee, Victor Lin, Cornelius Roemer, Thomas Sibley
+	</p>
+	<p class="even-smaller">
+		<b>Evolutionary forecasting</b>: Marlin Figgins, Jover Lee, James Hadfield, John Huddleston,
+		Cornelius Roemer, Richard Neher
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cassia-wagner.jpg"> Cassia Wagner,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nicola-mueller.jpg"> Nicola Müller,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/eslam-abousamra.jpg"> Eslam Abousamra,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span>  &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="12%" data-src="/images/talks/logo_fred_hutch_vertical_v2.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="9%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="18%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="15%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_cdc.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
