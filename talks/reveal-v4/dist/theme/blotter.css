@@ -123,11 +123,20 @@ body {
   margin: 10px 0;
 }
 
+.reveal dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
 .reveal dt {
-  font-weight: bold; }
+  grid-column-start: 1;
+  font-weight: bold;
+}
 
 .reveal dd {
-  margin-left: 40px; }
+  grid-column-start: 2;
+  margin-left: 40px;
+}
 
 .reveal blockquote {
   display: block;

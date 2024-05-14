@@ -1,14 +1,13 @@
 ---
 layout: talk_reveal4
 title: Genomic epidemiology of the H5N1 outbreak in US cattle
-venue: CDC
-event: Monthly BAA call
+venue: Northwest PGCoE
+event: Monthly Meeting
 author: Trevor Bedford
 widescreen: true
-draft: true
 ---
 
-<!-- ~20 min talk length -->
+<!-- ~30 min talk length -->
 
 <!--
 Scientific results
@@ -45,6 +44,13 @@ Data and analysis infrastructure notes
 	<div class="citation">
 		<a href="https://www.aphis.usda.gov/livestock-poultry-disease/avian/avian-influenza/hpai-detections/livestock">USDA</a>
 	</div>
+</section>
+
+<section data-transition="fade" data-background="#4377CD">
+	<h1 class="title">Genomic analysis</h1>
+	<p class="smaller title"><i>
+	with <img width=60 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla, James Hadfield and John Huddleston
+	</i></p>
 </section>
 
 <section>
@@ -108,9 +114,17 @@ Data and analysis infrastructure notes
 <section>
 	<h3>Molecular clock dating introduction into cattle</h3>
 	<p>Human case outgroups to cattle infections, suggesting unsampled diversity and potentially a second cattle introduction</p>
-	<img class="stretch" data-src="/images/talks/h5n1_cattle_worobey_tmrca.png">
-	<div class="citation">
+	<div class="left" style="float:left; width:49%">
+		<img data-src="/images/talks/h5n1_cattle_worobey_tmrca.png">
+	</div>
+	<div class="right" style="float:right; width:49%">
+		<img data-src="/images/talks/h5n1_cattle_nguyen_tmrca.png">
+	</div>
+	<div class="citation-left">
 		<a href="https://virological.org/t/preliminary-report-on-genomic-epidemiology-of-the-2024-h5n1-influenza-a-virus-outbreak-in-u-s-cattle-part-1-of-2/970">Worobey et al. 2024. Virological.org</a>
+	</div>
+	<div class="citation">
+		<a href="https://www.biorxiv.org/content/10.1101/2024.05.01.591751v1">Nguyen et al. 2024. bioRxiv.</a>
 	</div>
 </section>
 
@@ -123,6 +137,63 @@ Data and analysis infrastructure notes
 	</div>
 </section>
 
+<section data-transition="fade" data-background="#61AB9D">
+	<h1 class="title">Data systems</h1>
+</section>
+
+<section style="text-align: left;">
+	<h3>Timeline of initial genomic data</h3>
+	<p>
+	<dl>
+		<dt>Mar 25</dt>
+			<dd>First confirmed detection in Texas, with 10 farms in three states on Mar 30</dd>
+		<dt>Mar 27</dt>
+			<dd>Six viral genomes from Texas shared to GISAID by NVSL and a seventh on Apr 5</dd>
+		<dt>Apr 21</dt>
+			<dd>Raw reads for 239 samples shared to <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1102327">SRA</a> (but lack metadata)</dd>
+		<dt>Apr 22</dt>
+			<dd>Karthik Gangavarapu and colleagues assemble these reads and share consensus genomes to <a href="https://github.com/andersen-lab/avian-influenza">GitHub</a></dd>
+		<dt>Apr 26</dt>
+			<dd>Florence Débarre shares metadata scraped from USDA YouTube presentation</dd>
+		<dt>May 1</dt>
+			<dd><a href="https://www.biorxiv.org/content/10.1101/2024.05.01.591751v1">Nguyen et al</a> preprint shared to bioRxiv</dd>
+		<dt>May 2</dt>
+			<dd>Consensus genomes and metadata for 170 samples from Nguyen et al shared to GISAID by NVSL</dd>
+		<dt>May 3</dt>
+			<dd>Consensus genomes and metadata for Nguyen et al samples shared to GenBank</dd>
+	</dl>
+	</p>
+</section>
+
+<section style="text-align: left;">
+	<h3>Current genomic data</h3>
+	<p>
+	<i>Filtered to just cattle sequences</i>
+	<dl>
+		<dt>GISAID</dt>
+			<dd>177 consensus genomes with metadata (from Nguyen et al)</dd>
+		<dt>GenBank</dt>
+			<dd>176 consensus genomes with metadata available via this
+				<a href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&EnvSample_s=include&VirusLineage_ss=Alphainfluenzavirus,%20taxid:197911&HostLineage_ss=Bos%20(oxen,%20cattle),%20taxid:9903&Authors_idx%20q.op%3DAND=*&SubmitterAffil_idx%20q.op%3DOR=USDA-ARS&Serotype_s=H5N1%20H5N*&CollectionDate_dr=2023-12-31T00:00:00.00Z%20TO%202024-05-08T23:59:59.00Z&SLen_i=2280%20TO%203000000">NCBI Virus query</a>
+				(from Nguyen et al)</dd>
+		<dt>SRA</dt>
+			<dd>211 samples without metadata available via this
+				<a href="https://www.ncbi.nlm.nih.gov/Traces/study/?search=cattle&query_key=2&WebEnv=MCID_663aec4dc644723b6d36956c&o=releasedate_dt%3Ad%253Bacc_s%253Bacc_s%3Bacc_s%3Aa">SRA Run Selector query</a>
+			</dd>
+	</dl>
+	</p>
+	<p>
+	<i>Sequences from cattle and other hosts</i>
+	<dl>
+		<dt>SRA</dt>
+			<dd>Currently 460 samples in <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1102327">BioProject PRJNA1102327</a> with 322 propagated to SRA Run Selector</dd>
+	</p>
+</section>
+
+<!-- Slide on current Nextstrain data flow -->
+
+<!-- Slide on Nextstrain data flow possibilities -->
+
 <section style="text-align: left;">
 	<h3>Acknowledgements</h3>
 
@@ -130,7 +201,7 @@ Data and analysis infrastructure notes
 		<b>H5N1 genomic data</b>: APHIS National Veterinary Services lab at the USDA for sharing cattle sequences, along with data producers from all over the world and GISAID
 	</p>
 	<p class="even-smaller">
-		<b>H5N1 genomic analysis</b>: <b><i>Louise Moncla</i></b>, James Hadfield, John Huddleston
+		<b>H5N1 genomic analysis</b>: <img width=46 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla, James Hadfield, John Huddleston
 	</p>
 	<p class="even-smaller">
 		<b>Nextstrain</b>: Richard Neher, Ivan Aksamentov, John Anderson, Kim Andrews, Jennifer Chang, James Hadfield,
