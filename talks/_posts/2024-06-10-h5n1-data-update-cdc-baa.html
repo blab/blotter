@@ -1,0 +1,211 @@
+---
+layout: talk_reveal4
+title: H5N1 data update
+venue: CDC
+event: Monthly BAA call
+author: Trevor Bedford
+widescreen: true
+draft: true
+---
+
+<!-- ~30 min talk length -->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<h4 class="title">Trevor Bedford</h4>
+	<p class="title">
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<section style="text-align: left;">
+	<div style="float: left; width: 50%">
+		<h3>
+			Potential for milk surveillance
+		</h3>
+		<p>
+			<ul>
+				<li>Locally sourced commerical milk screened by Peter Han, Lea Starita and colleagues</li>
+				<li>Full genome sequence from CO-derived positive sample by Pavitra Roychoudhury</li>
+				<li>Released to GenBank under accessions <a href="https://www.ncbi.nlm.nih.gov/nuccore/PP796043">PP796043</a> through
+					<a href="https://www.ncbi.nlm.nih.gov/nuccore/PP796050">PP796050</a></li>
+				<li>To my knowledge, nothing fully systematic is being done here, with the closest example being the
+					<a href="https://www.fda.gov/food/alerts-advisories-safety-information/updates-highly-pathogenic-avian-influenza-hpai#testing">FDA report</a>
+					testing 297 samples from 17 states, which was also posted as
+					<a href="https://www.medrxiv.org/content/10.1101/2024.05.21.24307706v1">Spackman et al.</a> preprint</li>
+			</ul>
+		</p>
+	</div>
+	<div style="float: right; width: 48%">
+		<img data-src="/images/talks/h5n1_cattle_genome_division_milkseq_2024_06_10.png">
+	</div>
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-06-10?c=division">nextstrain.org</a>
+	</div>
+</section>
+
+<section data-transition="fade" data-background="#000">
+	<h1 class="title">Data systems</h1>
+</section>
+
+<section style="text-align: left;">
+	<h3>Genomic data available May 14</h3>
+	<p>
+	<i>Filtered to just cattle sequences</i>
+	<dl>
+		<dt>GISAID</dt>
+			<dd>177 consensus genomes with metadata (from Nguyen et al)</dd>
+		<dt>GenBank</dt>
+			<dd>177 consensus genomes with metadata available via this
+				<a href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&EnvSample_s=include&VirusLineage_ss=Alphainfluenzavirus,%20taxid:197911&HostLineage_ss=Bos%20(oxen,%20cattle),%20taxid:9903&Authors_idx%20q.op%3DAND=*&SubmitterAffil_idx%20q.op%3DOR=USDA-ARS&Serotype_s=H5N1%20H5N*&CollectionDate_dr=2023-12-31T00:00:00.00Z%20TO%202024-05-08T23:59:59.00Z&SLen_i=2280%20TO%203000000">NCBI Virus query</a>
+				(from Nguyen et al)</dd>
+		<dt>SRA</dt>
+			<dd>211 samples without complete metadata available via this
+				<a href="https://www.ncbi.nlm.nih.gov/Traces/study/?search=cattle&query_key=2&WebEnv=MCID_663aec4dc644723b6d36956c&o=releasedate_dt%3Ad%253Bacc_s%253Bacc_s%3Bacc_s%3Aa">SRA Run Selector query</a>
+			</dd>
+	</dl>
+	</p>
+	<p>
+	<i>Sequences from cattle and other hosts</i>
+	<dl>
+		<dt>SRA</dt>
+			<dd>Currently 460 samples in <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1102327">BioProject PRJNA1102327</a> with 322 propagated to SRA Run Selector</dd>
+	</p>
+</section>
+
+<section style="text-align: left;">
+	<h3>Genomic data available as of today</h3>
+	<p>
+	<i>Filtered to just cattle sequences</i>
+	<dl>
+		<dt>GISAID</dt>
+			<dd>274 consensus genomes with metadata</dd>
+		<dt>GenBank</dt>
+			<dd>239 consensus genomes with metadata available via this
+				<a href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&EnvSample_s=include&VirusLineage_ss=Alphainfluenzavirus,%20taxid:197911&HostLineage_ss=Bos%20(oxen,%20cattle),%20taxid:9903&Serotype_s=H5N1%20H5N*&CollectionDate_dr=2023-12-31T00:00:00.00Z%20TO%202024-05-08T23:59:59.00Z&SLen_i=2280%20TO%203000000">NCBI Virus query</a>
+			</dd>
+		<dt>SRA</dt>
+			<dd>322 samples without complete metadata available via this
+				<a href="https://www.ncbi.nlm.nih.gov/Traces/study/?search=cattle&query_key=2&WebEnv=MCID_663aec4dc644723b6d36956c&o=releasedate_dt%3Ad%253Bacc_s%253Bacc_s%3Bacc_s%3Aa">SRA Run Selector query</a>
+			</dd>
+	</dl>
+	</p>
+	<p>
+	<i>Sequences from cattle and other hosts</i>
+	<dl>
+		<dt>SRA</dt>
+			<dd>Currently 509 samples in <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1102327">BioProject PRJNA1102327</a> with 322 propagated to SRA Run Selector</dd>
+	</p>
+</section>
+
+<section>
+	<h3>Nextstrain dataflow</h3>
+	<img class="stretch" data-src="/images/talks/h5n1_cattle_nextstrain_dataflow_prospective.png">
+</section>
+
+<section class="left-align">
+	<h3>NCBI GenBank ingest</h3>
+	<p>
+	<i>Now working well, but faced some decent hurdles <a href="https://github.com/nextstrain/avian-flu/pull/40">getting this set up</a>, including:</i>
+	<ol>
+		<li>
+			<a href="https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/">NCBI Datasets</a> should be the simple tool for this,
+			but NCBI Datasets lacks "strain", "serotype" and "segment" entries as metadata and so we need to
+			<a href="https://github.com/nextstrain/avian-flu/commit/c506aa880028927083f3fc935d94a8fc2dd96a65">merge data from NCBI Datasets with metadata from NCBI Virus</a>
+		</li>
+		<li>
+			NCBI treats each segment as independent record and so we need to
+			<a href="https://github.com/nextstrain/avian-flu/commit/d5db437e33f8150a751303722e75515f194acaa8">match segments into viruses via strain name</a>
+		</li>
+		<li>
+			Most GenBank records include location as just <code>/country="USA"</code> and so we need to
+			<a href="https://github.com/nextstrain/avian-flu/commit/19bc00eed3ac64178f3844628befd1816e27dc87">scrape admin division from strain name</a>, eg "Texas" from "A/cattle/Texas/24-009028-009/2024"
+		</li>
+	</ol>
+	</p>
+</section>
+
+<section data-transition="fade" data-background="#000">
+	<h1 class="title">Measles pathogen build</h1>
+</section>
+
+<section class="left-align">
+	<h3>Newly available resources</h3>
+	<p>
+	<ul>
+		<li>
+			Automated data ingest from NCBI with curated metadata at
+			<a href="https://data.nextstrain.org/files/workflows/measles/metadata.tsv.zst">data.nextstrain.org/files/workflows/measles/metadata.tsv.zst</a>
+			and sequences at
+			<a href="https://data.nextstrain.org/files/workflows/measles/sequences.fasta.zst">data.nextstrain.org/files/workflows/measles/sequences.fasta.zst</a>
+		</li>
+		<li>
+			Automatically updated full genome analysis at <a href="https://nextstrain.org/measles/genome">nextstrain.org/measles/genome</a>
+		</li>
+		<li>
+			Automatically updated N450 segment analysis at <a href="https://nextstrain.org/measles/N450">nextstrain.org/measles/N450</a>
+		</li>
+		<li>
+			Nextclade dataset to assign MeV genotype at <a href="https://clades.nextstrain.org">clades.nextstrain.org</a>
+		</li>
+	</ul>
+	</p>
+</section>
+
+<section style="text-align: left;">
+	<h3>Acknowledgements</h3>
+	<p class="even-smaller">
+		<b>H5N1 data curation and measles genomic analysis</b>: <img width=46 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee, <img width=46 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews
+	</p>
+	<p class="even-smaller">
+		<b>Milk surveillance</b>: Peter Han, Lea Starita, Pavitra Roychoudhury, Helen Chu, Sean Ellis, Luis Gamboa, Alex Greninger, Kevin Kong, Leslie Rodriguez-Salas, Hong Xie
+	</p>
+	<p class="even-smaller">
+		<b>H5N1 genomic data</b>: APHIS National Veterinary Services lab at the USDA for sharing cattle sequences,
+		other data producers from all over the world for sharing contextual sequences, GISAID and NCBI for providing data systems
+	</p>
+	<p class="even-smaller">
+		<b>Nextstrain</b>: Richard Neher, Ivan Aksamentov, John Anderson, Kim Andrews, Jennifer Chang, James Hadfield,
+		Emma Hodcroft, John Huddleston, Jover Lee, Victor Lin, Cornelius Roemer, Thomas Sibley
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/eslam-abousamra.jpg"> Eslam Abousamra,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cristian-ovadiuc.jpg"> Cristian Ovaduic,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/philippa-steinberg.jpg"> Philippa Steinberg,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jacob-dodds.jpg"> Jacob Dodds,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/john-sj-anderson.jpg"> John SJ Anderson</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="12%" data-src="/images/talks/logo_fred_hutch_vertical_v2.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="9%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="18%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="15%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_cdc.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
