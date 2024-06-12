@@ -1,0 +1,162 @@
+---
+layout: talk_reveal4
+title: H5N1 sequence data
+venue: CDC
+event: Monthly SPHERES call
+author: Trevor Bedford
+widescreen: true
+draft: true
+---
+
+<!-- ~5 min talk length -->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<h4 class="title">Trevor Bedford</h4>
+	<p class="title">
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+	<br>&nbsp;<br>
+	Slides at: bedford.io/talks
+</section>
+
+<section style="text-align: left;">
+	<h3>Genomic data available as of today</h3>
+	<p>
+	<i>H5N1 genomes from samples collected in 2024 from the USA</i>
+	<dl>
+		<dt>GISAID</dt>
+			<dd>424 consensus genomes with metadata (274 cattle sequences)</dd>
+		<dt>GenBank</dt>
+			<dd>383 consensus genomes with metadata available via this
+				<a href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&EnvSample_s=include&VirusLineage_ss=Alphainfluenzavirus,%20taxid:197911&Serotype_s=H5N1%20H5N*&SLen_i=2280%20TO%203000000&CollectionDate_dr=2024-01-01T00:00:00.00Z%20TO%202024-06-11T23:59:59.00Z">NCBI Virus query</a>
+				(239 cattle sequences)
+			</dd>
+		<dt>SRA</dt>
+			<dd>Additional 399 samples without complete metadata available from
+				<a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1102327">BioProject PRJNA1102327</a>
+				(additional 230 cattle sequences)
+			</dd>
+	</dl>
+	</p>
+</section>
+
+<section style="text-align: left;">
+	<h3>Curated sequence data</h3>
+	<p>
+	<ul>
+		<li>
+			We fetch data from Genbank via combination of NCBI Datasets and NCBI Virus, including matching across segments and annotating admin division from strain name
+		</li>
+		<li>
+			Data from SRA BioProject PRJNA1102327 is assembled into consensus genomes and shared to <a href="https://github.com/andersen-lab/avian-influenza/">GitHub</a>
+			by the Andersen Lab at Scripps. We fetch this data from GitHub and merge with GenBank based on SRA accession.
+		</li>
+		<li>
+			This ingest routine is run daily and resulting sequence data available at:
+			<ul>
+				<li>
+					<a href="https://data.nextstrain.org/files/workflows/avian-flu/h5n1/ha/sequences.fasta.zst">data.nextstrain.org/files/workflows/avian-flu/h5n1/ha/sequences.fasta.zst</a>
+				</li>
+				<li>
+					<a href="https://data.nextstrain.org/files/workflows/avian-flu/h5n1/na/sequences.fasta.zst">data.nextstrain.org/files/workflows/avian-flu/h5n1/na/sequences.fasta.zst</a>
+				</li>
+				<li>
+					etc...
+				</li>
+			</ul>
+			and metadata available at:
+			<ul>
+				<li>
+					<a href="https://data.nextstrain.org/files/workflows/avian-flu/h5n1/metadata.tsv.zst">data.nextstrain.org/files/workflows/avian-flu/h5n1/metadata.tsv.zst</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	</p>
+</section>
+
+<section>
+	<h3>GenBank vs SRA release dates</h3>
+	<p>GenBank has seen 66 submissions since May 4 (with 27 from USDA representing backfill of April SRA releases), while SRA has seen 295 submissions</p>
+	<img class="stretch" data-src="/images/talks/h5n1_cattle_genbank_vs_sra_release_date_2024_06_11.png">
+</section>
+
+<section>
+	<h3>Full genome phylogenetic analysis shows SRA samples are more derived than early GenBank samples</h3>
+	<div class="left" style="float:left; width:66%">
+		<img data-src="/images/talks/h5n1_cattle_genome_div_data_source_2024_06_11.png">
+	</div>
+	<div class="right" style="float:right; width:31%">
+		<img data-src="/images/talks/h5n1_cattle_genome_div_vs_data_source_scatter_2024_06_11.png">
+	</div>
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-06-11?c=data_source&m=div">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Full genome phylogenetic analysis shows SRA samples are more derived than early GenBank samples</h3>
+  <iframe width=1200 height=800 data-src="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-06-11?c=data_source&d=tree&m=div&onlyPanels&p=full&sidebar=closed" data-preload></iframe>
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-06-11?c=data_source&m=div">nextstrain.org</a>
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<h3>Acknowledgements</h3>
+	<p class="even-smaller">
+		<b>H5N1 data curation and measles genomic analysis</b>: <img width=46 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee, <img width=46 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews
+	</p>
+	<p class="even-smaller">
+		<b>Milk surveillance</b>: Peter Han, Lea Starita, Pavitra Roychoudhury, Helen Chu, Sean Ellis, Luis Gamboa, Alex Greninger, Kevin Kong, Leslie Rodriguez-Salas, Hong Xie
+	</p>
+	<p class="even-smaller">
+		<b>H5N1 genomic data</b>: APHIS National Veterinary Services lab at the USDA for sharing cattle sequences,
+		other data producers from all over the world for sharing contextual sequences, GISAID and NCBI for providing data systems
+	</p>
+	<p class="even-smaller">
+		<b>Nextstrain</b>: Richard Neher, Ivan Aksamentov, John Anderson, Kim Andrews, Jennifer Chang, James Hadfield,
+		Emma Hodcroft, John Huddleston, Jover Lee, Victor Lin, Cornelius Roemer, Thomas Sibley
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/eslam-abousamra.jpg"> Eslam Abousamra,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cristian-ovadiuc.jpg"> Cristian Ovaduic,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/philippa-steinberg.jpg"> Philippa Steinberg,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jacob-dodds.jpg"> Jacob Dodds,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/john-sj-anderson.jpg"> John SJ Anderson</span>
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="12%" data-src="/images/talks/logo_fred_hutch_vertical_v2.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="9%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="18%" data-src="/images/talks/logo_bmgf.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="15%" data-src="/images/talks/logo_gates_ventures.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_cdc.png">
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
