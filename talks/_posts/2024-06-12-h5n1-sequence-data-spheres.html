@@ -1,11 +1,10 @@
 ---
 layout: talk_reveal4
-title: H5N1 sequence data
+title: H5N1 sequence data update
 venue: CDC
 event: Monthly SPHERES call
 author: Trevor Bedford
 widescreen: true
-draft: true
 ---
 
 <!-- ~5 min talk length -->
@@ -39,9 +38,9 @@ draft: true
 				(239 cattle sequences)
 			</dd>
 		<dt>SRA</dt>
-			<dd>Additional 399 samples without complete metadata available from
+			<dd>Additional 399 samples lacking collection date and collection state available from
 				<a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1102327">BioProject PRJNA1102327</a>
-				(additional 230 cattle sequences)
+				(additional 230 cattle samples)
 			</dd>
 	</dl>
 	</p>
@@ -84,17 +83,17 @@ draft: true
 
 <section>
 	<h3>GenBank vs SRA release dates</h3>
-	<p>GenBank has seen 66 submissions since May 4 (with 27 from USDA representing backfill of April SRA releases), while SRA has seen 295 submissions</p>
+	<p>GenBank has seen 66 submissions since May 4 (with the 27 from USDA representing backfill of April SRA releases), while SRA has seen 295 submissions</p>
 	<img class="stretch" data-src="/images/talks/h5n1_cattle_genbank_vs_sra_release_date_2024_06_11.png">
 </section>
 
 <section>
-	<h3>Full genome phylogenetic analysis shows SRA samples are more derived than early GenBank samples</h3>
+	<h3>Full genome phylogenetic analysis shows SRA samples are more derived than GenBank samples</h3>
 	<div class="left" style="float:left; width:66%">
 		<img data-src="/images/talks/h5n1_cattle_genome_div_data_source_2024_06_11.png">
 	</div>
 	<div class="right" style="float:right; width:31%">
-		<img data-src="/images/talks/h5n1_cattle_genome_div_vs_data_source_scatter_2024_06_11.png">
+		<img data-src="/images/talks/h5n1_cattle_genome_data_source_vs_div_scatter_2024_06_11.png">
 	</div>
 	<div class="citation">
 		<a href="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-06-11?c=data_source&m=div">nextstrain.org</a>
@@ -102,20 +101,31 @@ draft: true
 </section>
 
 <section>
-	<h3>Full genome phylogenetic analysis shows SRA samples are more derived than early GenBank samples</h3>
-  <iframe width=1200 height=800 data-src="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-06-11?c=data_source&d=tree&m=div&onlyPanels&p=full&sidebar=closed" data-preload></iframe>
+	<h3>Molecular clock estimates SRA samples as primarily collected in April</h3>
+	<img class="stretch" data-src="/images/talks/h5n1_cattle_genome_clock_data_source_2024_06_11.png">
 	<div class="citation">
-		<a href="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-06-11?c=data_source&m=div">nextstrain.org</a>
+		<a href="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-06-11?branches=hide&c=data_source&l=scatter&m=div&scatterX=num_date&scatterY=div">nextstrain.org</a>
 	</div>
+</section>
+
+<section>
+	<h3>Continuing evolution of H5N1 with new lineages revealed in the SRA data</h3>
+	<img class="stretch" data-src="/images/talks/h5n1_cattle_genome_data_source_2024_06_11.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/avian-flu/h5n1-cattle-outbreak/genome@2024-06-11?branchLabel=aa&c=data_source">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h2>Timely analyses of H5N1 require SRA data</h2>
 </section>
 
 <section style="text-align: left;">
 	<h3>Acknowledgements</h3>
 	<p class="even-smaller">
-		<b>H5N1 data curation and measles genomic analysis</b>: <img width=46 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee, <img width=46 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews
-	</p>
-	<p class="even-smaller">
-		<b>Milk surveillance</b>: Peter Han, Lea Starita, Pavitra Roychoudhury, Helen Chu, Sean Ellis, Luis Gamboa, Alex Greninger, Kevin Kong, Leslie Rodriguez-Salas, Hong Xie
+		<b>H5N1 data curation and analysis</b>: <img width=46 class="img-avatar" src="/images/team/jover-lee.jpg">
+		Jover Lee, Kartik Gangavarapu, Praneeth Gangavarapu, Louise Moncla, James Hadfield, John Huddleston,
+		Kristian Andersen
 	</p>
 	<p class="even-smaller">
 		<b>H5N1 genomic data</b>: APHIS National Veterinary Services lab at the USDA for sharing cattle sequences,
