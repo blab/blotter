@@ -354,7 +354,7 @@ body {
 
 .citation-with-avatar {
   position: absolute;
-  bottom: -15px;
+  bottom: -25px;
   right: -10px;
   z-index: 100;
   font-size: 0.5em !important;
@@ -362,7 +362,7 @@ body {
 
 .citation-left-with-avatar {
   position: absolute;
-  bottom: -15px;
+  bottom: -25px;
   left: -10px;
   z-index: 100;
   font-size: 0.5em !important;
