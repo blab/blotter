@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Philippa Steinberg
-position: Rotation student
+position: PhD student
 github: Plsteinberg
 image: /images/team/philippa-steinberg.jpg
 alumni: false
