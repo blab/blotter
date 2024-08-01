@@ -2,7 +2,9 @@
 layout: member
 title: Amin Bemanian
 position: Clinical fellow
+twitter: aminsense
 github: abemanian
+scholar: vbKfGzwAAAAJ
 image: /images/team/amin-bemanian.jpg
 ---
 
