@@ -5,7 +5,7 @@ image: /images/papers/kistler-atlas-viral-evolution.png
 authors: Kistler KE, Bedford T.
 year: 2023
 ref: Kistler and Bedford. 2023. Cell Host Microbe.
-journal: "Cell Host Microbe 31: 1-12."
+journal: "Cell Host Microbe 31: 1898–1909."
 pdf: /pdfs/papers/kistler-atlas-viral-evolution.pdf
 supplement: /pdfs/papers/kistler-atlas-viral-evolution-supp.pdf
 doi: 10.1016/j.chom.2023.09.012
