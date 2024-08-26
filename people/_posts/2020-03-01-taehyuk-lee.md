@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Taehyuk Lee
-position: KT DS, Researcher
+position: SK, manager
 alumni: true
 ---
