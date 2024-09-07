@@ -5,7 +5,7 @@ image: /images/papers/paredes-mpox-dynamics.png
 authors: Paredes MI, Ahmed N, Figgins M, Colizza V, Lemey P, McCrone JT, Müller NF, Tran Kiem C, Bedford T.
 year: 2024
 ref: Paredes et al. 2024. Cell.
-journal: "Cell 187: 1-13."
+journal: "Cell 187: 1374-1386."
 pdf: /pdfs/papers/paredes-mpox-dynamics.pdf
 doi: 10.1016/j.cell.2024.02.003
 github: https://github.com/blab/mpox-dynamics
