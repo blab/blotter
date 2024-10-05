@@ -251,6 +251,165 @@ draft: true
 	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_fitness_s1_muts_composite_2024_10_05.png">
 </section>
 
+<section>
+	<h3>ONS Infection Survey provides rare source of ground truth</h3>
+	<p>Roughly 1 in 3 infections detected in 2021, while 1 in 40 in 2023</p>
+	<img class="stretch" src="/images/talks/sarscov2_uk_attack_rate_cases_vs_infections.png">
+	<div class="citation">
+		Data from <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata">ONS</a>
+	</div>
+</section>
+
+<section>
+	<div style="float: left; width: 38.5%">
+		<img data-src="/images/talks/sarscov2_uk_attack_rate_cumulative.png">
+		<p>~110% population attack rate from March 2022 to March 2023</p>
+	</div>
+	<div style="float: right; width: 61.5%">
+		<p>Post-Omicron period shows consistent IFR of 0.04%</p>
+		<img data-src="/images/talks/sarscov2_uk_attack_rate_infections_vs_deaths.png">
+		<br>
+		<img data-src="/images/talks/sarscov2_uk_attack_rate_pandemic_ifr.png">
+	</div>
+	<div class="citation">
+		Data from <a href="https://coronavirus.data.gov.uk/details/deaths?areaType=nation&areaName=England">UKHSA</a>
+		and <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata">ONS</a>
+	</div>
+</section>
+
+<section data-background="#7F62A4">
+	<h1 class="title">Evolutionary forecasting</h1>
+</section>
+
+<section>
+	<h3>Assessing MLR models for short-term frequency forecasting</h3>
+	<p>Retrospective projections twice monthly during 2022</p>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_overview.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/eslam-abousamra.jpg">
+		<a href="/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2024. PLoS Comput Biol.</a>
+	</div>
+</section>
+
+<section>
+	<h3>+30 day short-term forecasts across different countries</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_projections.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/eslam-abousamra.jpg">
+		<a href="/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2024. PLoS Comput Biol.</a>
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<div style="float: left; width: 30%">
+		<h4>MLR models generate accurate short-term forecasts</h4>
+		<p>30 days out, countries range from 5 to 15% mean absolute error</p>
+	</div>
+	<div style="float: right; width: 68%">
+		<img data-src="/images/talks/ncov_forecasting_fit_accuracy_window_8_countries.png">
+	</div>
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/eslam-abousamra.jpg">
+		<a href="/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2024. PLoS Comput Biol.</a>
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<div style="float: left; width: 30%">
+		<h4>Hierarchical MLR model pools variant fitness estimates across countries</h4>
+		<p>This approach improves poor model accuracy in countries with less intensive genomic surveillance</p>
+	</div>
+	<div style="float: right; width: 68%">
+		<img data-src="/images/talks/ncov_forecasting_fit_accuracy_window_8_countries_hier.png">
+	</div>
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/eslam-abousamra.jpg">
+		<a href="/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2024. PLoS Comput Biol.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Clade and lineage forecasts continuously updated at nextstrain.org</h3>
+	<p>Rapid sweep of JN.1 over Dec to Jan 2024</p>
+	<img class="stretch" src="/images/talks/ncov_forecasts_clades_2024_01_28.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
+		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins et al. nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Assess currently circulating lineages by comparing frequency to population weighted growth advantage</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_lineages_freq_vs_ga_2024_10_05.png">
+</section>
+
+<section>
+	<h3>Eventual lineage success largely determined by initial fitness</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_lineages_freq_vs_ga_2023_11_15_to_2024_01_15.png">
+</section>
+
+<section>
+	<h3>Eventual lineage success largely determined by initial fitness</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_lineages_freq_vs_ga_2024_01_01_to_2024_05_15.png">
+</section>
+
+<section>
+	<h3>Eventual lineage success largely determined by initial fitness</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasts_lineages_freq_vs_ga_2024_05_08_2024_10_05.png">
+</section>
+
+<section class="left-align">
+	<h3>Picking the winner among circulating SARS-CoV-2 variants is a solved problem, but impactful mutations arise
+		fast enough that the prediction horizon is limited to 2-3 months</h3>
+</section>
+
+<section>
+	<div class="left" style="float:left; width:31%">
+		<h4 class="left-align">Ongoing work to lengthen prediction horizon by incorporating high-throughput experimental
+		measurements of ACE2 binding and immune escape</h4>
+	</div>
+	<div class="right" style="float:right; width:67%">
+		<img data-src="/images/talks/ncov_escape_dadonaite_delta_growth_vs_dms.png">
+	</div>
+	<div class="citation">
+		<a href="/papers/dadonaite-sarscov2-spike-dms-fitness/">Dadonaite et al. 2024. Nature.</a>
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<div style="float: left; width: 67%">
+		<h4>Prediction of variant fitness from empirical priors</h4>
+		<p>
+			Rather than estimate variant specific fitness $f_i$ directly, we instead
+			parameterize as the "innovation" in fitness in going from parent lineage
+			$p$ to child lineage $i$ as $\psi_i = (f_i - f_p)$.
+		</p>
+		<p>
+			We then compare a non-informative model of
+			$$\psi_i = (f_i - f_p) \sim \mathrm{Normal}(0, \sigma)$$
+			to a model where each "innovation" value has an informed prior based on
+			a linear combination of predictors such as ACE2 binding, immune escape
+			and S1 mutations
+			$$\psi_i = (f_i - f_p) \sim \mathrm{Normal}\left(\sum_p \beta_p \, x_p, \sigma\right)$$
+		</p>
+	</div>
+	<div style="float: right; width: 31%">
+		<img data-src="/images/talks/ncov_escape_pango_variant_tree.png">
+	</div>
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
+		Figgins et al. In prep.
+	</div>
+</section>
+
+<section>
+	<h3>Exciting developments in applying protein language models to estimate sequence-level fitness</h3>
+	<img class="stretch" src="/images/talks/ncov_escape_ito_model_diagram.png">
+	<div class="citation">
+		<a href="https://www.biorxiv.org/content/10.1101/2024.03.15.584819v1">Ito et al. 2024. bioRxiv.</a>
+	</div>
+</section>
+
 <section style="text-align: left;">
 	<h3>Acknowledgements</h3>
 
@@ -262,7 +421,10 @@ draft: true
 		James Hadfield, Emma Hodcroft, John Huddleston, Jover Lee, Victor Lin, Cornelius Roemer, Thomas Sibley
 	</p>
 	<p class="tiny">
-		<b>Evolutionary forecasting</b>: Marlin Figgins, Jover Lee, James Hadfield, John Huddleston,
+		<b>Adaptive evolution across human endemic viruses</b>: Katie Kistler
+	</p>
+	<p class="tiny">
+		<b>MLR models and evolutionary forecasting</b>: Marlin Figgins, Jover Lee, James Hadfield, John Huddleston,
 		Eslam Abousamra, Jesse Bloom, Cornelius Roemer, Richard Neher
 	</p>
 
@@ -286,17 +448,11 @@ draft: true
 		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/amin-bemanian.jpg"> Amin Bemanian</span>
 	</p>
 
-	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
-		<img width="12%" data-src="/images/talks/logo_fred_hutch_vertical_v2.png">
-		&nbsp; &nbsp; &nbsp; &nbsp;
-		<img width="9%" data-src="/images/talks/logo_nih.jpg">
-		&nbsp; &nbsp; &nbsp; &nbsp;
-		<img width="18%" data-src="/images/talks/logo_bmgf.png">
-		&nbsp; &nbsp; &nbsp; &nbsp;
-		<img width="15%" data-src="/images/talks/logo_gates_ventures.png">
-		&nbsp; &nbsp; &nbsp; &nbsp;
-		<img width="10%" data-src="/images/talks/logo_cdc.png">
-		&nbsp; &nbsp; &nbsp; &nbsp;
-		<img width="10%" data-src="/images/talks/logo_hhmi.jpg">
+	<div width="100%" style="display: flex; justify-content: space-between; align-items: center;">
+		<img width="10%" data-src="/images/talks/logo_fred_hutch_vertical_v2.png">
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		<img width="15%" data-src="/images/talks/logo_bmgf.png">
+		<img width="8%" data-src="/images/talks/logo_cdc.png">
+		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
 	</div>
 </section>
