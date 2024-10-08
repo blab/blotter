@@ -5,7 +5,6 @@ venue: University of California Santa Barbara
 event: KITP Workshop on Interactions and Co-evolution between Viruses and Immune Systems
 author: Trevor Bedford
 widescreen: true
-draft: true
 ---
 
 <!-- ~60 min talk length with lots of questions -->
@@ -81,6 +80,15 @@ draft: true
 </section>
 
 <section>
+	<h3>Calculate the rate of fixation events through time</h3>
+	<img class="stretch" data-src="/images/talks/adaptive_evolution_bhatt_method.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/katie-kistler.jpg">
+		<a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. Cell Host Microbe.</a>
+	</div>
+</section>
+
+<section>
 	<h3>A subset of viruses show adaptive evolution in their surface-located receptor-binding proteins</h3>
 	<img class="stretch" data-src="/images/talks/adaptive_evolution_genome_wide_comparison.png">
 	<div class="citation-with-avatar">
@@ -114,11 +122,37 @@ draft: true
 	</div>
 </section>
 
-<section>
+<section class="left-align">
 	<h3>
-		Was the emergence of transmission enhancing / immune escape variants predictable from
+		Were transmission enhancing / immune escape variants predictable from
 		spike protein structure or SARS-CoV-2 biology?
 	</h3>
+</section>
+
+<section>
+	<h3>Rapid evolution of SARS-CoV-2 drives high levels of incidence</h3>
+	<p>ONS Infection Survey provides rare source of ground truth, roughly 1 in 3 infections detected in 2021, while 1 in 40 in 2023</p>
+	<img class="stretch" src="/images/talks/sarscov2_uk_attack_rate_cases_vs_infections.png">
+	<div class="citation">
+		Data from <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata">ONS</a>
+	</div>
+</section>
+
+<section>
+	<div style="float: left; width: 38.5%">
+		<img data-src="/images/talks/sarscov2_uk_attack_rate_cumulative.png">
+		<p>~110% population attack rate from March 2022 to March 2023</p>
+	</div>
+	<div style="float: right; width: 61.5%">
+		<p>Post-Omicron period shows consistent IFR of 0.04%</p>
+		<img data-src="/images/talks/sarscov2_uk_attack_rate_infections_vs_deaths.png">
+		<br>
+		<img data-src="/images/talks/sarscov2_uk_attack_rate_pandemic_ifr.png">
+	</div>
+	<div class="citation">
+		Data from <a href="https://coronavirus.data.gov.uk/details/deaths?areaType=nation&areaName=England">UKHSA</a>
+		and <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata">ONS</a>
+	</div>
 </section>
 
 <section data-background="#CFB642">
@@ -225,7 +259,7 @@ draft: true
 
 <section>
 	<h3>Clade-level frequency dynamics and MLR fits in sliding windows</h3>
-	<p>Constant fitness within each window, USA data only, ignoring within-clade fitness variation</p>
+	<p>Constant clade fitness within each window, USA data only, ignoring within-clade fitness variation</p>
 	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_frequencies_2024_10_05.png">
 </section>
 
@@ -236,7 +270,7 @@ draft: true
 </section>
 
 <section>
-	<h3>On average, SARS-CoV-2 accumulates 13-14 spike S1 mutations every year</h3>
+	<h3>On average, SARS-CoV-2 accumulated 13-14 spike S1 mutations every year</h3>
 	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_s1_muts_2024_10_05.png">
 </section>
 
@@ -249,32 +283,6 @@ draft: true
 	<h3>Differences with influenza H3N2 are perhaps instructive</h3>
 	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_fitness_s1_muts_composite_2024_10_05.png">
 	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_fitness_s1_muts_composite_2024_10_05.png">
-</section>
-
-<section>
-	<h3>ONS Infection Survey provides rare source of ground truth</h3>
-	<p>Roughly 1 in 3 infections detected in 2021, while 1 in 40 in 2023</p>
-	<img class="stretch" src="/images/talks/sarscov2_uk_attack_rate_cases_vs_infections.png">
-	<div class="citation">
-		Data from <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata">ONS</a>
-	</div>
-</section>
-
-<section>
-	<div style="float: left; width: 38.5%">
-		<img data-src="/images/talks/sarscov2_uk_attack_rate_cumulative.png">
-		<p>~110% population attack rate from March 2022 to March 2023</p>
-	</div>
-	<div style="float: right; width: 61.5%">
-		<p>Post-Omicron period shows consistent IFR of 0.04%</p>
-		<img data-src="/images/talks/sarscov2_uk_attack_rate_infections_vs_deaths.png">
-		<br>
-		<img data-src="/images/talks/sarscov2_uk_attack_rate_pandemic_ifr.png">
-	</div>
-	<div class="citation">
-		Data from <a href="https://coronavirus.data.gov.uk/details/deaths?areaType=nation&areaName=England">UKHSA</a>
-		and <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata">ONS</a>
-	</div>
 </section>
 
 <section data-background="#7F62A4">
@@ -304,6 +312,13 @@ draft: true
 	<div style="float: left; width: 30%">
 		<h4>MLR models generate accurate short-term forecasts</h4>
 		<p>30 days out, countries range from 5 to 15% mean absolute error</p>
+		<p>Correlates with data availability (median number of sequences available from the previous 30 days):</p>
+		<dl class="smaller">
+			<dt>USA</dt><dd>~45k sequences</dd>
+			<dt>Australia</dt><dd>~4k sequences</dd>
+			<dt>South Africa</dt><dd>170 sequences</dd>
+			<dt>Vietnam</dt><dd>30 sequences</dd>
+		</dl>
 	</div>
 	<div style="float: right; width: 68%">
 		<img data-src="/images/talks/ncov_forecasting_fit_accuracy_window_8_countries.png">
@@ -389,8 +404,8 @@ draft: true
 			$$\psi_i = (f_i - f_p) \sim \mathrm{Normal}(0, \sigma)$$
 			to a model where each "innovation" value has an informed prior based on
 			a linear combination of predictors such as ACE2 binding, immune escape
-			and S1 mutations
-			$$\psi_i = (f_i - f_p) \sim \mathrm{Normal}\left(\sum_p \beta_p \, x_p, \sigma\right)$$
+			and S1 mutations, where $z_k$ represents the value of predictor $k$
+			$$\psi_i = (f_i - f_p) \sim \mathrm{Normal}\left(\sum_k \beta_k \, z_k, \sigma\right)$$
 		</p>
 	</div>
 	<div style="float: right; width: 31%">
@@ -410,6 +425,10 @@ draft: true
 	</div>
 </section>
 
+<section>
+	<h2>Truly "out of sample" prediction difficult</h2>
+</section>
+
 <section style="text-align: left;">
 	<h3>Acknowledgements</h3>
 
@@ -424,7 +443,7 @@ draft: true
 		<b>Adaptive evolution across human endemic viruses</b>: Katie Kistler
 	</p>
 	<p class="tiny">
-		<b>MLR models and evolutionary forecasting</b>: Marlin Figgins, Jover Lee, James Hadfield, John Huddleston,
+		<b>MLR and evolutionary forecasting</b>: Marlin Figgins, Jover Lee, James Hadfield, John Huddleston,
 		Eslam Abousamra, Jesse Bloom, Cornelius Roemer, Richard Neher
 	</p>
 
