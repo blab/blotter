@@ -7,7 +7,7 @@ year: 2024
 ref: Perofsky et al. 2024. eLife.
 journal: "eLife 13: RP91849."
 pdf: /pdfs/papers/perofsky-flu-antigenic-epi.pdf
-doi: 10.7554/eLife.91849.1
+doi: 10.7554/eLife.91849.3
 github: https://github.com/aperofsky/H3N2_Antigenic_Epi
 ---
 
