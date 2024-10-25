@@ -7,6 +7,7 @@ year: 2024
 ref: Loes et al. 2024. J Virol.
 journal: "J Virol: e00689-24."
 pdf: /pdfs/papers/loes-flu-seqneut-h1n1-ha.pdf
+supplement: /pdfs/papers/loes-flu-seqneut-h1n1-ha-supp.pdf
 doi: 10.1128/jvi.00689-24
 github: https://github.com/jbloomlab/seqneut-pipeline
 ---
