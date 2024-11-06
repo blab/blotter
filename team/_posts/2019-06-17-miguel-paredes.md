@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Miguel Paredes
-position: MSTP student
+position: Postdoc
 handle: miguel
 github: miparedes
 image: /images/team/miguel-paredes.jpg
