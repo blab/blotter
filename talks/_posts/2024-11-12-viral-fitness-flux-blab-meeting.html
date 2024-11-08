@@ -1,6 +1,6 @@
 ---
 layout: talk_reveal4
-title: Fitness flux in SARS-CoV-2 and seasonal influenza
+title: Fitness flux in SARS-CoV-2 and seasonal influenza H3N2
 venue: Fred Hutchinson Cancer Center
 event: Bedford Lab meeting
 author: Trevor Bedford
@@ -70,7 +70,7 @@ draft: true
 	<h3>This talk</h3>
 	<ul>
 		<li>Frequency dynamics and fitness estimation</li>
-		<li>Fitness flux in SARS-CoV-2 and seasonal influenza H3N2</li>
+		<li>Fitness flux</li>
 		<li>Mutational fitness effects</li>
 	</ul>
 </section>
@@ -127,7 +127,7 @@ draft: true
 		variant $i$ as
 	</p>
 	<p>
-		$$\mathrm{Pr}(X = i) = x_i(t) = \frac{p_i \, \mathrm{exp}(f_i \, t)}{\sum_{1 \le j \le n} p_j \, \mathrm{exp}(f_j \, t) }$$
+		$$\mathrm{Pr}(X = i) = x_i(t) = \frac{p_i \, \mathrm{exp}(f_i \, t)}{\sum_j p_j \, \mathrm{exp}(f_j \, t) }$$
 	</p>
 	<p>
 		with $2n$ parameters consisting of $p_i$ the frequency of variant $i$ at initial timepoint
@@ -181,12 +181,26 @@ draft: true
 	</div>
 </section>
 
-<!------------------------------------------------------------>
-<!-- Fitness flux in SARS-CoV-2 and seasonal influenza H3N2 -->
-<!------------------------------------------------------------>
+<!------------------>
+<!-- Fitness flux -->
+<!------------------>
 
 <section data-background="#CFB642">
-	<h1 class="title">Fitness flux in SARS-CoV-2 and seasonal influenza H3N2</h1>
+	<h1 class="title">Fitness flux</h1>
+</section>
+
+<section>
+	<h3>Fitness flux is the rate of change of mean population fitness</h3>
+	<p>Originally introduced by Ville Mustonen and Michael Lässig</p>
+	<p>
+		Mean population fitness $\bar{f}(t) = \sum_i x_i(t) \, f_i$
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		Fitness flux $\phi(t) = \Delta \bar{f}(t) / \Delta t$
+	</p>
+	<img class="stretch" src="/images/talks/mustonen_fitness_flux_diagram.png">
+	<div class="citation">
+		<a href="https://doi.org/10.1073/pnas.0907953107">Mustonen and Lässig. 2010. PNAS.</a>
+	</div>
 </section>
 
 <section>
@@ -272,14 +286,34 @@ draft: true
 <section>
 	<h3>This is a specific example of Fisher's fundemental theorem</h3>
 	<p>
-		"The rate of increase in fitness of any organism at any time is equal to its <br> genetic variance in fitness at that time," ie $d\bar{f} / dt = Var(f)$
+		"The rate of increase in fitness of any organism at any time is equal to <br> its genetic variance in fitness at that time," ie
+		$$\frac{d\bar{f}}{dt} = Var(f)$$
 	</p>
 	<div class="citation">
 		Fisher. 1930.
 	</div>
 </section>
 
-<!-- Slides on selective pressure and epidemic growth -->
+<section>
+	<h3>Selective pressure metric</h3>
+	<p>
+		$$\psi(t) = \mathbb{E}_{x(t)} \left[ \frac{d f_i}{d t}\right] +  \mathbb{V}_{x(t)}[f_{i}]$$
+	</p>
+	<img class="stretch" src="/images/talks/relative_fitness_mechanisms_frequencies_and_selective_pressure.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
+		Figgins and Bedford. In prep.
+	</div>
+</section>
+
+<section>
+	<h3>Selective pressure predicts epidemic growth rate</h3>
+	<img class="stretch" src="/images/talks/relative_fitness_mechanisms_selective_pressure_prediction.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
+		Figgins and Bedford. In prep.
+	</div>
+</section>
 
 <!-------------------------------->
 <!-- Mutational fitness effects -->
