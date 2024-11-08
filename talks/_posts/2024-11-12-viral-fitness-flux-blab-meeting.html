@@ -190,17 +190,67 @@ draft: true
 </section>
 
 <section>
-	<h3>Fitness flux is the rate of change of mean population fitness</h3>
-	<p>Originally introduced by Ville Mustonen and Michael Lässig</p>
-	<p>
-		Mean population fitness $\bar{f}(t) = \sum_i x_i(t) \, f_i$
-		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-		Fitness flux $\phi(t) = \Delta \bar{f}(t) / \Delta t$
-	</p>
-	<img class="stretch" src="/images/talks/mustonen_fitness_flux_diagram.png">
-	<div class="citation">
-		<a href="https://doi.org/10.1073/pnas.0907953107">Mustonen and Lässig. 2010. PNAS.</a>
-	</div>
+
+	<section>
+		<h3>Fitness flux is the rate of change of mean population fitness</h3>
+		<p>Originally introduced by Ville Mustonen and Michael Lässig</p>
+		<p>
+			Mean population fitness $\bar{f}(t) = \sum_i x_i(t) \, f_i$
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			Fitness flux $\phi(t) = \Delta \bar{f}(t) / \Delta t$
+		</p>
+		<img class="stretch" src="/images/talks/mustonen_fitness_flux_diagram.png">
+		<div class="citation">
+			<a href="https://doi.org/10.1073/pnas.0907953107">Mustonen and Lässig. 2010. PNAS.</a>
+		</div>
+	</section>
+
+	<section>
+		<h3>Defining terms</h3>
+		<table style="line-height: 300%; border: none;">
+			<tr>
+				<td style="border: none;">
+					Mean population fitness
+				</td>
+				<td style="border: none;">
+					$\bar{f}(t) = \sum_i x_i(t) \, f_i$
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none;">
+					Variance in fitness across population
+				</td>
+				<td style="border: none;">
+					$\mathrm{Var}[f(t)] = \sum_i x_i(t) \, (f_i - \bar{f}(t))^2$
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none;">
+					Selective pressure
+				</td>
+				<td style="border: none;">
+					$\psi(t) = \Delta \bar{f}(t) / \Delta t$
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none;">
+					Fitness flux (Mustonen and Lässig)
+				</td>
+				<td style="border: none;">
+					$\phi(t) = s(x, t) \Delta x / \Delta t$
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none;">
+					Fitness flux (Figgins)
+				</td>
+				<td style="border: none;">
+					$\phi(t) = \left( \sum_i f_i \, \Delta x_i \right) / \Delta t$
+				</td>
+			</tr>
+		</table>
+	</section>
+
 </section>
 
 <section>
