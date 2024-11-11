@@ -25,8 +25,6 @@ draft: true
 	{{ page.event }}
 	<br>
 	{{ page.venue }}
-	<br>&nbsp;<br>
-	Slides at: bedford.io/talks
 </section>
 
 <section>
@@ -190,67 +188,55 @@ draft: true
 </section>
 
 <section>
+	<h3>Fitness flux is the rate of change of mean population fitness</h3>
+	<p>Originally introduced by Ville Mustonen and Michael Lässig</p>
+	<p>
+		Mean population fitness $\bar{f}(t) = \sum_i x_i(t) \, f_i$
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		Fitness flux $\phi(t) = \Delta \bar{f}(t) / \Delta t$
+	</p>
+	<img class="stretch" src="/images/talks/mustonen_fitness_flux_diagram.png">
+	<div class="citation">
+		<a href="https://doi.org/10.1073/pnas.0907953107">Mustonen and Lässig. 2010. PNAS.</a>
+	</div>
+</section>
 
-	<section>
-		<h3>Fitness flux is the rate of change of mean population fitness</h3>
-		<p>Originally introduced by Ville Mustonen and Michael Lässig</p>
-		<p>
-			Mean population fitness $\bar{f}(t) = \sum_i x_i(t) \, f_i$
-			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-			Fitness flux $\phi(t) = \Delta \bar{f}(t) / \Delta t$
-		</p>
-		<img class="stretch" src="/images/talks/mustonen_fitness_flux_diagram.png">
-		<div class="citation">
-			<a href="https://doi.org/10.1073/pnas.0907953107">Mustonen and Lässig. 2010. PNAS.</a>
-		</div>
-	</section>
-
-	<section>
-		<h3>Defining terms</h3>
-		<table style="line-height: 300%; border: none;">
-			<tr>
-				<td style="border: none;">
-					Mean population fitness
-				</td>
-				<td style="border: none;">
-					$\bar{f}(t) = \sum_i x_i(t) \, f_i$
-				</td>
-			</tr>
-			<tr>
-				<td style="border: none;">
-					Variance in fitness across population
-				</td>
-				<td style="border: none;">
-					$\mathrm{Var}[f(t)] = \sum_i x_i(t) \, (f_i - \bar{f}(t))^2$
-				</td>
-			</tr>
-			<tr>
-				<td style="border: none;">
-					Selective pressure
-				</td>
-				<td style="border: none;">
-					$\psi(t) = \Delta \bar{f}(t) / \Delta t$
-				</td>
-			</tr>
-			<tr>
-				<td style="border: none;">
-					Fitness flux (Mustonen and Lässig)
-				</td>
-				<td style="border: none;">
-					$\phi(t) = s(x, t) \Delta x / \Delta t$
-				</td>
-			</tr>
-			<tr>
-				<td style="border: none;">
-					Fitness flux (Figgins)
-				</td>
-				<td style="border: none;">
-					$\phi(t) = \left( \sum_i f_i \, \Delta x_i \right) / \Delta t$
-				</td>
-			</tr>
-		</table>
-	</section>
-
+<section>
+	<h3>Defining terms</h3>
+	<table style="line-height: 300%; border: none;">
+		<tr>
+			<td style="border: none;">
+				Mean population fitness
+			</td>
+			<td style="border: none;">
+				$\bar{f}(t) = \sum_i x_i(t) \, f_i$
+			</td>
+		</tr>
+		<tr>
+			<td style="border: none;">
+				Variance in fitness across population
+			</td>
+			<td style="border: none;">
+				$\mathrm{Var}[f(t)] = \sum_i x_i(t) \, (f_i - \bar{f}(t))^2$
+			</td>
+		</tr>
+		<tr>
+			<td style="border: none;">
+				Velocity of mean population fitness ("selective pressure")
+			</td>
+			<td style="border: none;">
+				$\psi(t) = \Delta \bar{f}(t) / \Delta t$
+			</td>
+		</tr>
+		<tr>
+			<td style="border: none;">
+				Fitness flux
+			</td>
+			<td style="border: none;">
+				$\phi(t) = \left( \sum_i \Delta x_i \, f_i \right) / \Delta t$
+			</td>
+		</tr>
+	</table>
 </section>
 
 <section>
@@ -347,7 +333,7 @@ draft: true
 <section>
 	<h3>Selective pressure metric</h3>
 	<p>
-		$$\psi(t) = \mathbb{E}_{x(t)} \left[ \frac{d f_i}{d t}\right] +  \mathbb{V}_{x(t)}[f_{i}]$$
+		$$\psi(t) = \Delta \bar{f}(t) / \Delta t = \mathbb{E}_{x(t)} \left[ \frac{d f_i}{d t}\right] +  \mathbb{V}_{x(t)}[f_{i}]$$
 	</p>
 	<img class="stretch" src="/images/talks/relative_fitness_mechanisms_frequencies_and_selective_pressure.png">
 	<div class="citation-with-avatar">
@@ -375,18 +361,44 @@ draft: true
 
 <section>
 	<h3>On average, SARS-CoV-2 accumulated 13-14 spike S1 mutations every year</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_s1_muts_2024_10_05.png">
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_s1_muts_2024_11_06.png">
 </section>
 
 <section>
-	<h3>Consequently, we estimate that 14 mutations to spike S1 will result in a doubling of fitness</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_s1_muts_vs_fitness_2024_10_05.png">
+	<h3>14 mutations to spike S1 resulted in a doubling of fitness</h3>
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_s1_muts_vs_fitness_2024_11_06.png">
 </section>
 
 <section>
-	<h3>Differences with influenza H3N2 are perhaps instructive</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_fitness_s1_muts_composite_2024_10_05.png">
-	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_fitness_s1_muts_composite_2024_10_05.png">
+	<h3>Again, we see substantial differences with influenza H3N2</h3>
+	<p>The edge of the distribution of mutational effects is ~0.05 for SARS-CoV-2 and ~0.02 for H3N2</p>
+	<div style="float: left; width: 49%">
+		<img data-src="/images/talks/fitness_dynamics_sarscov2_clades_s1_muts_vs_fitness_narrow_2024_11_06.png">
+	</div>
+	<div style="float: right; width: 49%">
+		<img data-src="/images/talks/fitness_dynamics_h3n2_clades_ha_muts_vs_fitness_narrow_2024_11_06.png">
+	</div>
+</section>
+
+<section>
+	<h3>Switch to analyzing differences between parent/child lineages</h3>
+	<p>Collapsed to 366 Pango lineages with at least 1000 sequence counts in the US</p>
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_pango_relationships.png">
+</section>
+
+<section>
+	<h3>Most Pango branches have 0-1 spike mutations and change log fitness by ±0.1</h3>
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_nonspike_fitness_hist_2024_11_08.png">
+</section>
+
+<section>
+	<h3>Spike mutations increase log fitness by 0.04 on average</h3>
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_count_vs_fitness_2024_11_08.png">
+</section>
+
+<section>
+	<h3>Non-spike mutations do not impact fitness on average</h3>
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_non_spike_count_vs_fitness_2024_11_08.png">
 </section>
 
 <section style="text-align: left;">
