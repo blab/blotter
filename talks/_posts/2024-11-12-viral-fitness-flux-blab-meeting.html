@@ -188,8 +188,11 @@ draft: true
 </section>
 
 <section>
-	<h3>Fitness flux is the rate of change of mean population fitness</h3>
-	<p>Originally introduced by Ville Mustonen and Michael Lässig</p>
+	<h3>Fitness flux is the rate of change of fitness across the population</h3>
+	<p>Fitness flux $\phi(t) = \left( \sum_i \Delta x_i \, f_i \right) / \Delta t$</p>
+	<p>
+		With constant variant fitness, fitness flux equals the rate of change of mean population fitness
+	</p>
 	<p>
 		Mean population fitness $\bar{f}(t) = \sum_i x_i(t) \, f_i$
 		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -222,7 +225,7 @@ draft: true
 		</tr>
 		<tr>
 			<td style="border: none;">
-				Velocity of mean population fitness ("selective pressure")
+				Velocity of mean population fitness
 			</td>
 			<td style="border: none;">
 				$\psi(t) = \Delta \bar{f}(t) / \Delta t$
@@ -304,19 +307,19 @@ draft: true
 <section>
 	<h3>Using empirical frequencies and MLR fitness to characterize fitness wave</h3>
 	<p>SARS-CoV-2</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_flux_location_2024_11_06.png">
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_location_2024_11_06.png">
 </section>
 
 <section>
 	<h3>Periods with greater variance in fitness correspond to periods of greater fitness flux</h3>
 	<p>Remarkable match to theoretical expectation</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_flux_variance_vs_velocity_2024_11_06.png">
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_variance_vs_flux_2024_11_06.png">
 </section>
 
 <section>
 	<h3>Periods with greater variance in fitness correspond to periods of greater fitness flux</h3>
 	<p>Remarkable match to theoretical expectation</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_clades_flux_variance_vs_velocity_2024_11_06.png">
+	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_clades_variance_vs_flux_2024_11_06.png">
 </section>
 
 <section>
@@ -370,8 +373,8 @@ draft: true
 </section>
 
 <section>
-	<h3>Again, we see substantial differences with influenza H3N2</h3>
-	<p>The edge of the distribution of mutational effects is ~0.05 for SARS-CoV-2 and ~0.02 for H3N2</p>
+	<h3>Again, we see a substantial difference with influenza H3N2</h3>
+	<p>Fitness effects of fixed mutations are ~0.05 for SARS-CoV-2 and ~0.02 for H3N2</p>
 	<div style="float: left; width: 49%">
 		<img data-src="/images/talks/fitness_dynamics_sarscov2_clades_s1_muts_vs_fitness_narrow_2024_11_06.png">
 	</div>
@@ -399,6 +402,29 @@ draft: true
 <section>
 	<h3>Non-spike mutations do not impact fitness on average</h3>
 	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_non_spike_count_vs_fitness_2024_11_08.png">
+</section>
+
+<section style="text-align: left;">
+	<div>
+		<h3>Prediction of variant fitness from empirical priors</h3>
+		<p>
+			Rather than estimate variant specific fitness $f_i$ directly, instead
+			parameterize the "innovation" in fitness in going from parent lineage
+			$p$ to child lineage $i$ as $\delta_i = (f_i - f_p)$.
+		</p>
+		<p>
+			Compare a non-informative model of
+			$$\delta_i = (f_i - f_p) \sim \mathrm{Normal}(0, \sigma)$$
+			to a model where each "innovation" value has an informed prior based on
+			a linear combination of predictors such as ACE2 binding, immune escape
+			and spike mutations, where $z_k$ represents the value of predictor $k$
+			$$\delta_i = (f_i - f_p) \sim \mathrm{Normal}\left(\sum_k \beta_k \, z_k, \sigma\right)$$
+		</p>
+	</div>
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
+		Figgins et al. In prep.
+	</div>
 </section>
 
 <section style="text-align: left;">
