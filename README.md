@@ -43,7 +43,7 @@ bundle exec jekyll build
 > If you are getting errors at this stage, it may be due to your version of `bundle`.
 > Try `gem uninstall bundler` + `gem install bundler -v 1.13.1`.
 
-View the site.
+Start a local Jekyll server to view the site.
 
 ``` bash
 bundle exec jekyll serve
