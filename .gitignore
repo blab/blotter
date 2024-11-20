@@ -15,5 +15,4 @@ projects/
 
 # Other files
 .DS_Store
-.ruby-version
 .tweet-cache

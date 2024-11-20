@@ -12,7 +12,7 @@ cd blotter/
 Install the latest version of Ruby supported by blotter using [rbenv](https://github.com/rbenv/rbenv) to work around any system-wide Ruby installations that may be incompatible.
 
 ``` bash
-rbenv install 3.2.6
+rbenv install
 ```
 
 Set a local Ruby version for the blotter directory.
