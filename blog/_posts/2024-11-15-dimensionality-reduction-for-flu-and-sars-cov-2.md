@@ -28,7 +28,7 @@ Viruses exist only because they succeed in accomplishing two main goals (Figure 
     <figcaption><strong>Figure 1. Viruses have two goals: make more copies and infect new hosts.</strong>. Each larger orange circle represents a single copy of a virus.</figcaption>
 </figure>
 
-When a virus infects us, it makes many more copies of itself with a pretty terrible copier machine that makes mistakes or “mutations” with each copy.
+When a virus infects us, it makes many more copies of itself with a pretty terrible copy machine that makes mistakes or “mutations” with each copy.
 The new mutated copies are still close enough to the original to be considered the same type of virus (like seasonal flu) but different enough that our immune systems may not recognize them.
 
 When we sneeze or cough in an elevator and transmit one of those mutated copies to someone else, the copy could look different enough to that person's immune system that the virus can infect them again, make more copies of itself with more mutations, and then transmit again to someone new.
@@ -36,8 +36,8 @@ For a prettier visual explanation of this process, check out [Jonathan Corum's a
 
 ### What can we learn about mutations we find in viruses?
 
-As a virus researcher in [Trevor Bedford's lab](https://bedford.io/) at the Fred Hutchinson Cancer Center, I spend a lot of time thinking about these mutations that viruses make.
-For example, when we find a lot of seasonal flu viruses with the same mutation that allows those viruses to reinfect a lot of people in world, we can usually track that mutation back to a single common ancestor of all those recently successful virus copies.
+As a virus researcher in [Trevor Bedford's lab](https://bedford.io/) at the Fred Hutchinson Cancer Center, I spend a lot of time thinking about these viral mutations.
+For example, when we find a lot of seasonal flu viruses with the same mutation that allows those viruses to reinfect a lot of people in the world, we can usually track that mutation back to a single common ancestor of all those recently successful virus copies.
 For SARS-CoV-2, these groups of successful virus copies tend to get names like “Delta” or “Omicron” or “JN.1”.
 
 Most of the time, we can use the collection of mutations that each virus has to build a family tree of all the virus copies we've observed in the world.
@@ -58,13 +58,13 @@ These bigger changes in the new virus copies break the rules that allow us to ma
 ### Could we find groups of related flu viruses without building a family tree?
 
 In the Bedford lab, we recently stumbled on a new approach to find groups of virus copies that share the same mutations no matter how many parents they have and without building a family tree at all.
-This approach was a long time in the making, though, and started in July 2019 when a rising junior in high school, [Sravani Nanduri](https://bedford.io/team/sravani-nanduri/), joined the lab for a 2-month summer internship under joint mentorship of [Alli Black](https://bedford.io/team/allison-black/) and me.
+This approach was a long time in the making, though, and started in July 2019 when a rising junior in high school, [Sravani Nanduri](https://bedford.io/team/sravani-nanduri/), joined the lab for a 2-month summer internship under the joint mentorship of [Alli Black](https://bedford.io/team/allison-black/) and myself.
 Sravani already knew how to write computer programs, but she wanted to learn more about programming and data visualization for biology.
 
 Her internship project came from an idea Trevor had: what if, instead of building family trees of viruses based on their shared mutations, we could put viruses on a two-dimensional map where the distances between each pair of viruses reflected the mutations that differed between them?
 
-We had a lot of questions for a 2-month internship project: How would we build these maps? Would same groups of viruses we see in a tree place together in the maps? What would the distance between any two virus copies actually _mean_ on one of these maps? How would we visualize these maps? What would be the most fun bits of this project for Sravani to work on?
-Sravani, Alli, Trevor, and I ended up sketching the following example of what a final visualization would be for the project (Figure 3), with the idea that Sravani would apply a couple of well-known methods to one type of virus and plot the resulting maps for each method along side the tree of the same virus copies.
+We had a lot of questions for a 2-month internship project: How would we build these maps? Would the same groups of viruses we see in a tree place together in the maps? What would the distance between any two virus copies actually _mean_ on one of these maps? How would we visualize these maps? What would be the most fun bits of this project for Sravani to work on?
+Sravani, Alli, Trevor, and I ended up sketching out the following example of what a final visualization would be for the project (Figure 3), with the idea that Sravani would apply a couple of well-known methods to one type of virus and plot the resulting maps for each method alongside the tree of the same virus copies.
 
 <figure>
     <img src="/images/blog/cartography-original-whiteboard-sketch-for-project.jpg" alt="Original whiteboard sketch of Sravani's summer internship project" />
@@ -104,7 +104,7 @@ Sravani and I continued to meet monthly through the beginning of the SARS-CoV-2 
 By June 2023, we'd both been busy with other projects.
 Sravani had been focused on class work as an undergraduate in the University of Washington's Computer Science program.
 I had been working with the Nextstrain team on pandemic response efforts.
-By the summer of 2023, Sravani was eager to revise the original paper and publish it in a scientific journal.
+Despite our other commitments, Sravani was eager to revise the original paper and publish it in a scientific journal.
 
 We decided to focus on two viruses (seasonal influenza H3N2 and SARS-CoV-2) and the original four methods of making maps (PCA, MDS, t-SNE, and UMAP).
 We wanted to measure how well the groups of viruses that we found in these maps matched the groups from family trees that experts had already identified for flu and SARS-CoV-2.
@@ -136,6 +136,7 @@ We also realized we could make maps from viruses that had multiple parents even 
 For example, each flu virus is made up of 8 separate pieces that need to get bundled together to make a complete virus.
 When we get infected by a single flu virus, that virus will make copies of all 8 pieces and its child viruses will get those copies from the same parent.
 When we get infected by more than one flu virus at the same time, those viruses can accidentally swap some of their 8 pieces such that parts of their child viruses come from different parents.
+(Scientists call this swapping process "reassortment".)
 This accidental swapping of viral pieces means that we normally have to make separate family trees for each of the 8 pieces because the methods to make family trees assume that each virus piece comes from a single parent.
 To build a family tree that allows for multiple parents, researchers have developed more sophisticated methods that try to work out which of the 8 pieces for each virus belong to which parent.
 
