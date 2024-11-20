@@ -15,10 +15,11 @@ Install the latest version of Ruby supported by blotter using [rbenv](https://gi
 rbenv install
 ```
 
-Set a local Ruby version for the blotter directory.
+Check that `gem` is available through the rbenv installation.
+If it is not, consult the rbenv documentation above to resolve the issue.
 
 ``` bash
-rbenv local 3.2.6
+which gem
 ```
 
 Install bundler.
