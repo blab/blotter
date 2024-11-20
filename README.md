@@ -2,21 +2,55 @@
 
 ## Build site
 
-To build the website locally, clone the repo with:
+To build the website locally, clone the repo and change into the repo's directory.
 
 ```
 git clone https://github.com/blab/blotter.git
+cd blotter/
 ```
 
-Then install necessary Ruby dependencies by running `bundle install` from within the `blotter` directory.  After this, the site can be be built with:
+Install the latest version of Ruby supported by blotter using [rbenv](https://github.com/rbenv/rbenv) to work around any system-wide Ruby installations that may be incompatible.
+
+``` bash
+rbenv install
+```
+
+Check that `gem` is available through the rbenv installation.
+If it is not, consult the rbenv documentation above to resolve the issue.
+
+``` bash
+which gem
+```
+
+Install bundler.
+
+``` bash
+gem install bundler
+```
+
+Install blotter's Ruby dependencies.
+
+``` bash
+bundle install
+```
+
+Build the site.
 
 ```
 bundle exec jekyll build
 ```
 
-(If you are getting errors at this stage, it may be due to your version of `bundle`. Try `gem uninstall bundler` + `gem install bundler -v 1.13.1`.)
+> [!IMPORTANT]
+> If you are getting errors at this stage, it may be due to your version of `bundle`.
+> Try `gem uninstall bundler` + `gem install bundler -v 1.13.1`.
 
-To view the site, run `bundle exec jekyll serve` and point a browser to `http://localhost:4000/`.  More information on Jekyll can be found [here](http://jekyllrb.com/).
+Start a local Jekyll server to view the site.
+
+``` bash
+bundle exec jekyll serve
+```
+
+Open your browser to `http://localhost:4000/`. More information on Jekyll can be found [here](http://jekyllrb.com/).
 
 To include projects, preprocessing scripts are necessary to clone project repos and update Jekyll metadata. This can be accomplished with:
 
