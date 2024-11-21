@@ -2,7 +2,7 @@
 layout: post
 title: Automated maps of seasonal flu and SARS-CoV-2 viruses show important evolutionary groups
 author: John Huddleston
-date: 2024-11-15
+date: 2024-11-20
 ---
 
 <style>
@@ -164,9 +164,9 @@ These results suggested that we could use these simple methods to find meaningfu
 </figure>
 
 Five years after starting this project, Sravani is now a senior in University of Washington's Computer Science program.
-She has presented her work on this project at her first international research conference in Italy, and she has published this work in [her first lead-author scientific manuscript in the journal *Virus Evolution*](https://doi.org/10.1093/ve/veae087).
+She has presented her work on this project at her first international research conference in Italy, and she has published this work in [her first lead-author scientific manuscript in the journal *Virus Evolution*](/papers/nanduri-cartography/).
 We now routinely make maps of seasonal flu viruses in our weekly Nextstrain analyses (for example, [see today's results for H3N2](https://nextstrain.org/seasonal-flu/h3n2/ha/2y@2024-11-15?c=tsne_cluster&l=scatter&scatterX=tsne_x&scatterY=tsne_y)) to look for new groups of viruses that might become more successful at infecting people.
 We have also begun to apply these maps to recent flu viruses collected from birds and cows where viruses with multiple parents tend to be better at jumping into new hosts.
 We still have a lot of questions about how to apply these maps to different viruses or bigger datasets, but we've learned a lot already from a project that started as a 2-month internship led by a motivated and dedicated young researcher.
 
-To learn more about this project, [read Sravani's paper](https://doi.org/10.1093/ve/veae087) and explore [the interactive views of our maps for flu and SARS-CoV-2 on Nextstrain](https://github.com/blab/cartography/tree/master?tab=readme-ov-file#phylogenetic-trees-and-embeddings) and [our interactive figures on GitHub](https://github.com/blab/cartography/tree/master?tab=readme-ov-file#interactive-figures).
+To learn more about this project, [read Sravani's paper](/papers/nanduri-cartography/) and explore [the interactive views of our maps for flu and SARS-CoV-2 on Nextstrain](https://github.com/blab/cartography/tree/master?tab=readme-ov-file#phylogenetic-trees-and-embeddings) and [our interactive figures on GitHub](https://github.com/blab/cartography/tree/master?tab=readme-ov-file#interactive-figures).
