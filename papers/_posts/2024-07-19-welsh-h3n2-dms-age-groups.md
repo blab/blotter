@@ -5,7 +5,7 @@ image: /images/papers/welsh-h3n2-dms-age-groups.png
 authors: Welsh FC, Eguia RT, Lee JM, Haddox HK, Galloway J, Nguyen VVN, Loes AN, Huddleston J, Yu TC, Le MQ, Nguyen TDN, Nguyen TLT, Greninger AL, Chu HY, Englund JA, Bedford T, Matsen FA, Boni MF, Bloom JD.
 year: 2024
 ref: Welsh et al. 2024. Cell Host Microbe.
-journal: "Cell Host Microbe 32: 1-15."
+journal: "Cell Host Microbe 32: 1397–1411."
 pdf: /pdfs/papers/welsh-h3n2-dms-age-groups.pdf
 supplement: /pdfs/papers/welsh-h3n2-dms-age-groups-supp.pdf
 doi: 10.1016/j.chom.2024.06.015
