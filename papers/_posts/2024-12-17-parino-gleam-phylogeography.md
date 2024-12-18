@@ -9,6 +9,7 @@ journal: "PNAS Nexus: pgae561."
 pdf: /pdfs/papers/parino-gleam-phylogeography.pdf
 supplement: /pdfs/papers/parino-gleam-phylogeography-supp.pdf
 doi: 10.1093/pnasnexus/pgae561
+github: https://github.com/phylogeography/GLEAM-phylogeography
 ---
 
 # Abstract
