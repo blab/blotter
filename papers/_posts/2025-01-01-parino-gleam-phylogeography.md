@@ -3,9 +3,9 @@ layout: paper
 title: Integrating dynamical modeling and phylogeographic inference to characterize global influenza circulation
 image: /images/papers/parino-gleam-phylogeography.png
 authors: Parino F, Gustani-Buss E, Bedford T, Suchard MA, Trovão NS, Rambaut A, Colizza V, Poletto C, Lemey P.
-year: 2024
-ref: Parino et al. 2024. PNAS Nexus.
-journal: "PNAS Nexus: pgae561."
+year: 2025
+ref: Parino et al. 2025. PNAS Nexus.
+journal: "PNAS Nexus 4: pgae561."
 pdf: /pdfs/papers/parino-gleam-phylogeography.pdf
 supplement: /pdfs/papers/parino-gleam-phylogeography-supp.pdf
 doi: 10.1093/pnasnexus/pgae561
