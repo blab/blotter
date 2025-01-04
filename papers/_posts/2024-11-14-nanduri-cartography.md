@@ -5,7 +5,7 @@ image: /images/papers/nanduri-cartography.png
 authors: Nanduri S, Black A, Bedford T, Huddleston J.
 year: 2024
 ref: Nanduri et al. 2024. Virus Evol.
-journal: "Virus Evol: veae087."
+journal: "Virus Evol 10: veae087."
 pdf: /pdfs/papers/nanduri-cartography.pdf
 supplement: /pdfs/papers/nanduri-cartography-supp.pdf
 doi: 10.1093/ve/veae087

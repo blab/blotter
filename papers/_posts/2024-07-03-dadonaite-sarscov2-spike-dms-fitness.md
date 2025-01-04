@@ -5,7 +5,7 @@ image: /images/papers/dadonaite-sarscov2-spike-dms-fitness.png
 authors: Dadonaite B, Brown J, McMahon TE, Farrell AG, Figgins MD, Asarnow D, Stewart C, Lee J, Logue J, Bedford T, Murrell B, Chu HY, Veesler D, Bloom JD.
 year: 2024
 ref: Dadonaite et al. 2024. Nature.
-journal: "Nature 10.1038/s41586-024-07636-1."
+journal: "Nature 631: 617-626."
 pdf: /pdfs/papers/dadonaite-sarscov2-spike-dms-fitness.pdf
 supplement: /pdfs/papers/dadonaite-sarscov2-spike-dms-fitness-supp.pdf
 doi: 10.1038/s41586-024-07636-1

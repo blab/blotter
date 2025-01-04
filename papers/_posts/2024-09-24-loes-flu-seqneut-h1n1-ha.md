@@ -5,7 +5,7 @@ image: /images/papers/loes-flu-seqneut-h1n1-ha.png
 authors: Loes AN, Tarabi RAL, Huddleston J, Touyon L, Wong SS, Cheng SMS, Leung NHL, Hannon WW, Bedford T, Cobey S, Cowling BJ, Bloom JD.
 year: 2024
 ref: Loes et al. 2024. J Virol.
-journal: "J Virol: e00689-24."
+journal: "J Virol 98: e00689-24."
 pdf: /pdfs/papers/loes-flu-seqneut-h1n1-ha.pdf
 supplement: /pdfs/papers/loes-flu-seqneut-h1n1-ha-supp.pdf
 doi: 10.1128/jvi.00689-24
