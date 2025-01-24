@@ -1,7 +1,7 @@
 ---
 layout: member
 title: James Hadfield
-position: Postdoc / Programmer
+position: Computational biologist
 handle: jameshadfield
 twitter: hamesjadfield
 github: jameshadfield

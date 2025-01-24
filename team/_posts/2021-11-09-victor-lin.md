@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Victor Lin
-position: Full Stack Developer
+position: Software engineer
 twitter: victorlin_
 github: victorlin
 scholar: DrzHirYAAAAJ
