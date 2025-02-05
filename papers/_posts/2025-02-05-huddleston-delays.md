@@ -3,11 +3,11 @@ layout: paper
 title: Timely vaccine strain selection and genomic surveillance improves evolutionary forecast accuracy of seasonal influenza A/H3N2
 image: /images/papers/huddleston-delays.png
 authors: Huddleston J, Bedford T.
-year: 2024
-ref: Huddleston et al. 2024. medRxiv.
-journal: "medRxiv: 2024.09.11.24313489."
+year: 2025
+ref: Huddleston and Bedford. 2025. eLife.
+journal: "eLife 14: RP104282."
 pdf: /pdfs/papers/huddleston-delays.pdf
-doi: 10.1101/2024.09.11.24313489
+doi: 10.7554/eLife.104282
 github: https://github.com/blab/flu-forecasting-delays
 ---
 
