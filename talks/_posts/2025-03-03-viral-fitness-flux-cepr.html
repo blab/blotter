@@ -5,10 +5,9 @@ venue: London School of Hygiene and Tropical Medicine
 event: CEPR Seminar
 author: Trevor Bedford
 widescreen: true
-draft: true
 ---
 
-<!-- ~30 min talk length with lots of questions -->
+<!-- ~45 min talk with ~10 min Q&A -->
 
 <!--             Blue     Yellow   Purple   Red     -->
 <!-- Color ramp: #4C91C1, #CFB642, #7F62A4, #E04328 -->
@@ -44,31 +43,31 @@ fitness altering mutations.
 </section>
 
 <section style="text-align: left;">
-	<div style="float: left; width: 25%">
+	<div style="float: left; width: 30%">
 		<h4>Rapid displacement of existing diversity by emerging variants</h4>
 	</div>
-	<div style="float: right; width: 75%">
-		<img data-src="/images/talks/ncov_tree_freq_2024_07_08.png">
+	<div style="float: right; width: 70%">
+		<img data-src="/images/talks/ncov_tree_freq_2025_02_27.png">
 	</div>
 	<div class="citation">
-		<a href="https://nextstrain.org/ncov/gisaid/global/all-time@2024-07-08">nextstrain.org</a>
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time@2025-02-27">nextstrain.org</a>
 	</div>
 </section>
 
 <section>
 	<h3>Mutations in S1 domain of spike protein driving displacement</h3>
-	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_2024_07_31.png">
+	<img class="stretch" data-src="/images/talks/ncov_mutation_rate_spike_clock_2025_02_27.png">
 	<div class="citation">
-		<a href="https://nextstrain.org/ncov/gisaid/global/all-time@2024-07-31?branches=hide&l=scatter&scatterY=S1_mutations">nextstrain.org</a>
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time@2025-02-27?branches=hide&l=scatter&scatterY=S1_mutations">nextstrain.org</a>
 	</div>
 </section>
 
 <section>
 	<h3>SARS-CoV-2 evolution fast relative to previous endemic viruses</h3>
-	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_comparison_2024_08_01.png">
+	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_comparison_2025_02_27.png">
 	<div class="citation-with-avatar">
 		<img width=30 class="img-avatar" src="/images/team/katie-kistler.jpg">
-		<a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. Cell Host Microbe.</a>
+		Method from <a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. Cell Host Microbe.</a>
 	</div>
 </section>
 
@@ -78,6 +77,7 @@ fitness altering mutations.
 		<li>Frequency dynamics and fitness estimation</li>
 		<li>Fitness flux</li>
 		<li>Mutational fitness effects</li>
+		<li>Evolutionary forecasting</li>
 	</ul>
 </section>
 
@@ -101,11 +101,6 @@ fitness altering mutations.
 	<h3>Consistent frequency dynamics in logit space (BA.2 Mar 2022)</h3>
 	<img class="stretch" src="/images/talks/ncov_variants_omicron_countries_frequencies_logit_2022_04_08.png">
 </section>
-
-<!-- <section>
-	<h3>Consistent frequency dynamics in logit space (BA.5 Jul 2022)</h3>
-	<img class="stretch" src="/images/talks/ncov_variants_ba5_countries_frequencies_logit_2022_08_01.png">
-</section> -->
 
 <section>
 	<h3>Consistent frequency dynamics in logit space (JN.1 Dec 2023)</h3>
@@ -182,101 +177,107 @@ fitness altering mutations.
 </section>
 
 <section>
-	<h3>Fitness flux is the rate of change of fitness across the population</h3>
-	<p>Fitness flux $\phi(t) = \left( \sum_i \Delta x_i \, f_i \right) / \Delta t$</p>
-	<p>
-		With constant variant fitness, fitness flux equals the rate of change of mean population fitness
-	</p>
-	<p>
-		Mean population fitness $\bar{f}(t) = \sum_i x_i(t) \, f_i$
-		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-		Fitness flux $\phi(t) = \Delta \bar{f}(t) / \Delta t$
-	</p>
-	<img class="stretch" src="/images/talks/mustonen_fitness_flux_diagram.png">
-	<div class="citation">
-		<a href="https://doi.org/10.1073/pnas.0907953107">Mustonen and Lässig. 2010. PNAS.</a>
-	</div>
+
+	<section>
+		<h3>Fitness flux is the rate of change of fitness across the population</h3>
+		<p>Fitness flux $\phi(t) = \left( \sum_i \Delta x_i \, f_i \right) / \Delta t$</p>
+		<p>
+			With constant variant fitness, fitness flux equals the rate of change of mean population fitness
+		</p>
+		<p>
+			Mean population fitness $\bar{f}(t) = \sum_i x_i(t) \, f_i$
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			Fitness flux $\phi(t) = \Delta \bar{f}(t) / \Delta t$
+		</p>
+		<img class="stretch" src="/images/talks/mustonen_fitness_flux_diagram.png">
+		<div class="citation">
+			<a href="https://doi.org/10.1073/pnas.0907953107">Mustonen and Lässig. 2010. PNAS.</a>
+		</div>
+	</section>
+
+	<section>
+		<h3>Defining terms</h3>
+		<table style="line-height: 300%; border: none;">
+			<tr>
+				<td style="border: none;">
+					Mean population fitness
+				</td>
+				<td style="border: none;">
+					$\bar{f}(t) = \sum_i x_i(t) \, f_i$
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none;">
+					Variance in fitness across population
+				</td>
+				<td style="border: none;">
+					$\mathrm{Var}[f(t)] = \sum_i x_i(t) \, (f_i - \bar{f}(t))^2$
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none;">
+					Velocity of mean population fitness
+				</td>
+				<td style="border: none;">
+					$\psi(t) = \Delta \bar{f}(t) / \Delta t$
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none;">
+					Fitness flux
+				</td>
+				<td style="border: none;">
+					$\phi(t) = \left( \sum_i \Delta x_i \, f_i \right) / \Delta t$
+				</td>
+			</tr>
+		</table>
+	</section>
+
 </section>
 
-<section>
-	<h3>Defining terms</h3>
-	<table style="line-height: 300%; border: none;">
-		<tr>
-			<td style="border: none;">
-				Mean population fitness
-			</td>
-			<td style="border: none;">
-				$\bar{f}(t) = \sum_i x_i(t) \, f_i$
-			</td>
-		</tr>
-		<tr>
-			<td style="border: none;">
-				Variance in fitness across population
-			</td>
-			<td style="border: none;">
-				$\mathrm{Var}[f(t)] = \sum_i x_i(t) \, (f_i - \bar{f}(t))^2$
-			</td>
-		</tr>
-		<tr>
-			<td style="border: none;">
-				Velocity of mean population fitness
-			</td>
-			<td style="border: none;">
-				$\psi(t) = \Delta \bar{f}(t) / \Delta t$
-			</td>
-		</tr>
-		<tr>
-			<td style="border: none;">
-				Fitness flux
-			</td>
-			<td style="border: none;">
-				$\phi(t) = \left( \sum_i \Delta x_i \, f_i \right) / \Delta t$
-			</td>
-		</tr>
-	</table>
-</section>
+<!-- TODO: include ocean wave analogy figure -->
 
 <section>
 	<h3>Clade-level frequency dynamics and MLR fits in sliding windows</h3>
 	<p>Constant clade fitness within each window, USA data only, ignores within-clade fitness variation</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clade_frequencies_2024_11_06.png">
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clade_frequencies_2025_03_01.png">
 </section>
 
 <section>
 	<h3>Fitness within each window is to an arbitrary baseline variant</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clade_direct_timepoint_fitness_2024_11_06.png">
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clade_direct_timepoint_fitness_2025_03_01.png">
 </section>
 
 <section>
 	<h3>However, we can use ratio of variant fitnesses between adjacent timepoints to scaffold a combined set of fitness values</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clade_scaffolded_timepoint_fitness_2024_11_06.png">
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clade_scaffolded_timepoint_fitness_2025_03_01.png">
 </section>
 
 <section>
 	<h3>SAR-CoV-2 roughly doubled in fitness every year</h3>
-	<p>Line thickness is proportional to variant frequency, 33 total variants</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_2024_11_06.png">
+	<p>Line thickness is proportional to variant frequency, 36 total variants</p>
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_2025_03_01.png">
 </section>
 
 <section>
 	<h3>Analogous frequency dynamics and MLR fits for H3N2</h3>
 	<p>Constant clade fitness within each window, USA data only, ignores within-clade fitness variation</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_clade_frequencies_2024_11_06.png">
+	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_clade_frequencies_2025_03_01.png">
 </section>
 
 <section>
 	<h3>H3N2 roughly doubled in fitness every 10 years</h3>
-	<p>Line thickness is proportional to variant frequency, 26 total variants</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_clades_fitness_2024_11_06.png">
+	<p>Line thickness is proportional to variant frequency, 32 total variants</p>
+	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_clades_fitness_2025_03_01.png">
 </section>
 
 <section>
 	<h3>Dramatically faster fitness flux of SARS-CoV-2</h3>
 	<div style="float: left; width: 49%">
-		<img data-src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_narrow_2024_11_06.png">
+		<img data-src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_narrow_2025_03_01.png">
 	</div>
 	<div style="float: right; width: 49%">
-		<img data-src="/images/talks/fitness_dynamics_h3n2_clades_fitness_narrow_2024_11_06.png">
+		<img data-src="/images/talks/fitness_dynamics_h3n2_clades_fitness_narrow_2025_03_01.png">
 	</div>
 </section>
 
@@ -301,19 +302,17 @@ fitness altering mutations.
 <section>
 	<h3>Using empirical frequencies and MLR fitness to characterize fitness wave</h3>
 	<p>SARS-CoV-2</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_location_2024_11_06.png">
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_location_2025_03_01.png">
 </section>
 
 <section>
-	<h3>Periods with greater variance in fitness correspond to periods of greater fitness flux</h3>
-	<p>Remarkable match to theoretical expectation</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_variance_vs_flux_2024_11_06.png">
+	<h3>Fitness variance correlates well with fitness flux</h3>
+	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_variance_vs_flux_2025_03_01.png">
 </section>
 
 <section>
-	<h3>Periods with greater variance in fitness correspond to periods of greater fitness flux</h3>
-	<p>Remarkable match to theoretical expectation</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_clades_variance_vs_flux_2024_11_06.png">
+	<h3>Fitness variance correlates well with fitness flux</h3>
+	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_clades_variance_vs_flux_2025_03_01.png">
 </section>
 
 <section>
