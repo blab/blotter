@@ -9,8 +9,9 @@ widescreen: true
 
 <!-- ~45 min talk with ~10 min Q&A -->
 
-<!--             Blue     Yellow   Purple   Red     -->
-<!-- Color ramp: #4C91C1, #CFB642, #7F62A4, #E04328 -->
+<!-- Color ramp: -->
+<!-- blue     yellow,  purple,  green,   red      orange  -->
+<!-- #799BB3, #CEB541, #7F62A4, #96BD60, #DF4327, #E68B35 -->
 
 <!--
 Summary: SARS-CoV-2 and seasonal influenza rapidly evolve to escape from human
@@ -43,10 +44,10 @@ fitness altering mutations.
 </section>
 
 <section style="text-align: left;">
-	<div style="float: left; width: 30%">
+	<div style="float: left; width: 35%">
 		<h4>Rapid displacement of existing diversity by emerging variants</h4>
 	</div>
-	<div style="float: right; width: 70%">
+	<div style="float: right; width: 65%">
 		<img data-src="/images/talks/ncov_tree_freq_2025_02_27.png">
 	</div>
 	<div class="citation">
@@ -66,8 +67,8 @@ fitness altering mutations.
 	<h3>SARS-CoV-2 evolution fast relative to previous endemic viruses</h3>
 	<img class="stretch" data-src="/images/talks/adaptive_evolution_rates_comparison_2025_02_27.png">
 	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/katie-kistler.jpg">
-		Method from <a href="https://bedford.io/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. Cell Host Microbe.</a>
+		<img width=30 class="img-avatar" data-src="/images/team/katie-kistler.jpg">
+		Method from <a href="/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. Cell Host Microbe.</a>
 	</div>
 </section>
 
@@ -75,9 +76,9 @@ fitness altering mutations.
 	<h3>This talk</h3>
 	<ul>
 		<li>Frequency dynamics and fitness estimation</li>
+		<li>Evolutionary forecasting</li>
 		<li>Fitness flux</li>
 		<li>Mutational fitness effects</li>
-		<li>Evolutionary forecasting</li>
 	</ul>
 </section>
 
@@ -85,7 +86,7 @@ fitness altering mutations.
 <!-- Frequency dynamics and fitness estimation -->
 <!----------------------------------------------->
 
-<section data-background="#4C91C1">
+<section data-background="#799BB3">
 	<h1 class="title">Frequency dynamics and fitness estimation</h1>
 </section>
 
@@ -94,17 +95,17 @@ fitness altering mutations.
 	<p>$x' = \frac{x \, (1+s)}{x \, (1+s) + (1-x)}$ for frequency $x$ over one generation with selective advantage $s$</p>
 	<p>$x(t) = \frac{x_0 \, (1+s)^t}{x_0 \, (1+s)^t + (1-x_0)}$ for initial frequency $x_0$ over $t$ generations</p>
 	<p>Trajectories are linear once logit transformed via $\mathrm{log}(\frac{x}{1 - x})$</p>
-	<img class="stretch" src="/images/talks/ncov_variants_selection_logit_trajectories.png">
+	<img class="stretch" data-src="/images/talks/ncov_variants_selection_logit_trajectories.png">
 </section>
 
 <section>
 	<h3>Consistent frequency dynamics in logit space (BA.2 Mar 2022)</h3>
-	<img class="stretch" src="/images/talks/ncov_variants_omicron_countries_frequencies_logit_2022_04_08.png">
+	<img class="stretch" data-src="/images/talks/ncov_variants_omicron_countries_frequencies_logit_2022_04_08.png">
 </section>
 
 <section>
 	<h3>Consistent frequency dynamics in logit space (JN.1 Dec 2023)</h3>
-	<img class="stretch" src="/images/talks/ncov_variants_jn1_countries_frequencies_logit_2022_12_13.png">
+	<img class="stretch" data-src="/images/talks/ncov_variants_jn1_countries_frequencies_logit_2022_12_13.png">
 </section>
 
 <section>
@@ -149,22 +150,80 @@ fitness altering mutations.
 
 	</div>
 	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
+		<img width=30 class="img-avatar" data-src="/images/team/marlin-figgins.jpg">
 		<a href="https://github.com/blab/evofr">Marlin Figgins. github.com</a>
 	</div>
 </section>
 
 <section>
 	<h3>Multinomial logistic regression fits variant frequencies well</h3>
-	<img class="stretch" src="/images/talks/sarscov2_variant_rt_logistic_regression_2021_09_01.png">
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_logistic_regression_2021_09_01.png">
 </section>
 
 <section>
 	<h3>Original VOC viruses had substantially increased transmissibility</h3>
-	<img class="stretch" src="/images/talks/sarscov2_variant_rt_growth_advantage_2021_09_23.png">
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_growth_advantage_2021_09_23.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" data-src="/images/team/marlin-figgins.jpg">
+		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+	</div>
+</section>
+
+<!------------------>
+<!-- Evolutionary forecasting -->
+<!------------------>
+
+<section data-background="#CEB541">
+	<h1 class="title">Evolutionary forecasting</h1>
+</section>
+
+<section>
+	<h3>Clade and lineage forecasts continuously updated at nextstrain.org</h3>
+	<p>Rapid sweep of JN.1 over Dec to Jan 2024</p>
+	<img class="stretch" src="/images/talks/ncov_forecasts_clades_2024_01_28.png">
 	<div class="citation-with-avatar">
 		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
-		Model from <a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2022. medRxiv.</a>
+		<a href="https://nextstrain.org/sars-cov-2/forecasts/">Figgins et al. nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>Assessing MLR models for short-term frequency forecasting</h3>
+	<p>Retrospective projections twice monthly during 2022</p>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_overview.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/eslam-abousamra.jpg">
+		<a href="/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2024. PLoS Comput Biol.</a>
+	</div>
+</section>
+
+<section>
+	<h3>+30 day short-term forecasts across different countries</h3>
+	<img class="stretch" src="/images/talks/ncov_forecasting_fit_projections.png">
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/eslam-abousamra.jpg">
+		<a href="/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2024. PLoS Comput Biol.</a>
+	</div>
+</section>
+
+<section style="text-align: left;">
+	<div style="float: left; width: 30%">
+		<h4>MLR models generate accurate short-term forecasts</h4>
+		<p>30 days out, countries range from 5 to 15% mean absolute error</p>
+		<p>Correlates with data availability (median number of sequences available from the previous 30 days):</p>
+		<dl class="smaller">
+			<dt>USA</dt><dd>~45k sequences</dd>
+			<dt>Australia</dt><dd>~4k sequences</dd>
+			<dt>South Africa</dt><dd>170 sequences</dd>
+			<dt>Vietnam</dt><dd>30 sequences</dd>
+		</dl>
+	</div>
+	<div style="float: right; width: 68%">
+		<img data-src="/images/talks/ncov_forecasting_fit_accuracy_window_8_countries.png">
+	</div>
+	<div class="citation-with-avatar">
+		<img width=30 class="img-avatar" src="/images/team/eslam-abousamra.jpg">
+		<a href="/papers/abousamra-ncov-forecasting-fit/">Abousamra, Figgins and Bedford. 2024. PLoS Comput Biol.</a>
 	</div>
 </section>
 
@@ -172,7 +231,7 @@ fitness altering mutations.
 <!-- Fitness flux -->
 <!------------------>
 
-<section data-background="#CFB642">
+<section data-background="#7F62A4">
 	<h1 class="title">Fitness flux</h1>
 </section>
 
@@ -189,7 +248,7 @@ fitness altering mutations.
 			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 			Fitness flux $\phi(t) = \Delta \bar{f}(t) / \Delta t$
 		</p>
-		<img class="stretch" src="/images/talks/mustonen_fitness_flux_diagram.png">
+		<img class="stretch" data-src="/images/talks/mustonen_fitness_flux_diagram.png">
 		<div class="citation">
 			<a href="https://doi.org/10.1073/pnas.0907953107">Mustonen and Lässig. 2010. PNAS.</a>
 		</div>
@@ -235,40 +294,41 @@ fitness altering mutations.
 
 </section>
 
-<!-- TODO: include ocean wave analogy figure -->
+<section data-background-image="/images/talks/ocean_wave.jpg">
+</section>
 
 <section>
 	<h3>Clade-level frequency dynamics and MLR fits in sliding windows</h3>
 	<p>Constant clade fitness within each window, USA data only, ignores within-clade fitness variation</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clade_frequencies_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clade_frequencies_2025_03_01.png">
 </section>
 
 <section>
 	<h3>Fitness within each window is to an arbitrary baseline variant</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clade_direct_timepoint_fitness_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clade_direct_timepoint_fitness_2025_03_01.png">
 </section>
 
 <section>
 	<h3>However, we can use ratio of variant fitnesses between adjacent timepoints to scaffold a combined set of fitness values</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clade_scaffolded_timepoint_fitness_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clade_scaffolded_timepoint_fitness_2025_03_01.png">
 </section>
 
 <section>
 	<h3>SAR-CoV-2 roughly doubled in fitness every year</h3>
 	<p>Line thickness is proportional to variant frequency, 36 total variants</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_2025_03_01.png">
 </section>
 
 <section>
 	<h3>Analogous frequency dynamics and MLR fits for H3N2</h3>
 	<p>Constant clade fitness within each window, USA data only, ignores within-clade fitness variation</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_clade_frequencies_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_h3n2_clade_frequencies_2025_03_01.png">
 </section>
 
 <section>
 	<h3>H3N2 roughly doubled in fitness every 10 years</h3>
 	<p>Line thickness is proportional to variant frequency, 32 total variants</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_clades_fitness_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_h3n2_clades_fitness_2025_03_01.png">
 </section>
 
 <section>
@@ -281,9 +341,17 @@ fitness altering mutations.
 	</div>
 </section>
 
+<!----------------------------->
+<!-- Traveling fitness waves -->
+<!----------------------------->
+
+<section data-background="#96BD60">
+	<h1 class="title">Traveling fitness waves</h1>
+</section>
+
 <section>
 	<h3>Multistrain models produce traveling waves in antigenic space</h3>
-	<img class="stretch" src="/images/talks/canalization_dynamics_grid.png">
+	<img class="stretch" data-src="/images/talks/canalization_dynamics_grid.png">
 	<div class="citation">
 		<a href="/papers/bedford-canalization/">Bedford, Rambaut and Pascual. 2012. BMC Biol.</a>
 	</div>
@@ -293,7 +361,7 @@ fitness altering mutations.
 	<h3>Many mutations of small effect create traveling fitness waves</h3>
 	<p>Richard Neher and others have analytically characterized these waves</p>
 	<p>Diffusion constant $D = \mu \, \langle \delta^2 \rangle/2$, where the average $\langle \ldots \rangle$ is over the distribution of mutational effects $K(\delta)$</p>
-	<img class="stretch" src="/images/talks/neher_fitness_wave_diagram.png">
+	<img class="stretch" data-src="/images/talks/neher_fitness_wave_diagram.png">
 	<div class="citation">
 		<a href="https://doi.org/10.1073/pnas.1213113110">Neher and Hallatschek. 2013. PNAS.</a>
 	</div>
@@ -302,17 +370,17 @@ fitness altering mutations.
 <section>
 	<h3>Using empirical frequencies and MLR fitness to characterize fitness wave</h3>
 	<p>SARS-CoV-2</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_location_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_location_2025_03_01.png">
 </section>
 
 <section>
 	<h3>Fitness variance correlates well with fitness flux</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_clades_variance_vs_flux_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_variance_vs_flux_2025_03_01.png">
 </section>
 
 <section>
 	<h3>Fitness variance correlates well with fitness flux</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_h3n2_clades_variance_vs_flux_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_h3n2_clades_variance_vs_flux_2025_03_01.png">
 </section>
 
 <section>
@@ -327,23 +395,27 @@ fitness altering mutations.
 </section>
 
 <section>
+	<h2>Fitness flux drives infection incidence</h2>
+</section>
+
+<section>
 	<h3>Selective pressure metric</h3>
 	<p>
 		$$\psi(t) = \Delta \bar{f}(t) / \Delta t = \mathbb{E}_{x(t)} \left[ \frac{d f_i}{d t}\right] +  \mathbb{V}_{x(t)}[f_{i}]$$
 	</p>
-	<img class="stretch" src="/images/talks/relative_fitness_mechanisms_frequencies_and_selective_pressure.png">
+	<img class="stretch" data-src="/images/talks/relative_fitness_mechanisms_frequencies_and_selective_pressure.png">
 	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
-		Figgins and Bedford. In prep.
+		<img width=30 class="img-avatar" data-src="/images/team/marlin-figgins.jpg">
+		<a href="/papers/figgins-relative-fitness-mechanisms/">Figgins and Bedford. 2024. medRxiv.</a>
 	</div>
 </section>
 
 <section>
 	<h3>Selective pressure predicts epidemic growth rate</h3>
-	<img class="stretch" src="/images/talks/relative_fitness_mechanisms_selective_pressure_prediction.png">
+	<img class="stretch" data-src="/images/talks/relative_fitness_mechanisms_selective_pressure_prediction.png">
 	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
-		Figgins and Bedford. In prep.
+		<img width=30 class="img-avatar" data-src="/images/team/marlin-figgins.jpg">
+		<a href="/papers/figgins-relative-fitness-mechanisms/">Figgins and Bedford. 2024. medRxiv.</a>
 	</div>
 </section>
 
@@ -351,50 +423,86 @@ fitness altering mutations.
 <!-- Mutational fitness effects -->
 <!-------------------------------->
 
-<section data-background="#7F62A4">
+<section data-background="#DF4327">
 	<h1 class="title">Mutational fitness effects</h1>
 </section>
 
 <section>
 	<h3>On average, SARS-CoV-2 accumulated 13-14 spike S1 mutations every year</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_s1_muts_2024_11_06.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_s1_muts_2025_03_01.png">
 </section>
 
 <section>
-	<h3>14 mutations to spike S1 resulted in a doubling of fitness</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_s1_muts_vs_fitness_2024_11_06.png">
+	<h3>15 mutations to spike S1 resulted in a doubling of fitness</h3>
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_s1_muts_vs_fitness_2025_03_01.png">
 </section>
 
 <section>
 	<h3>Again, we see a substantial difference with influenza H3N2</h3>
 	<p>Fitness effects of fixed mutations are ~0.05 for SARS-CoV-2 and ~0.02 for H3N2</p>
 	<div style="float: left; width: 49%">
-		<img data-src="/images/talks/fitness_dynamics_sarscov2_clades_s1_muts_vs_fitness_narrow_2024_11_06.png">
+		<img data-src="/images/talks/fitness_dynamics_sarscov2_clades_s1_muts_vs_fitness_narrow_2025_03_01.png">
 	</div>
 	<div style="float: right; width: 49%">
-		<img data-src="/images/talks/fitness_dynamics_h3n2_clades_ha_muts_vs_fitness_narrow_2024_11_06.png">
+		<img data-src="/images/talks/fitness_dynamics_h3n2_clades_ha_muts_vs_fitness_narrow_2025_03_01.png">
 	</div>
 </section>
 
 <section>
 	<h3>Switch to analyzing differences between parent/child lineages</h3>
-	<p>Collapsed to 366 Pango lineages with at least 1000 sequence counts in the US</p>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_pango_relationships.png">
+	<p>Collapsed to 367 Pango lineages with at least 1000 sequence counts in the US</p>
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_pango_relationships.png">
 </section>
 
 <section>
 	<h3>Most Pango branches have 0-1 spike mutations and change log fitness by ±0.1</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_nonspike_fitness_hist_2024_11_08.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_nonspike_fitness_hist_2025_03_01.png">
 </section>
 
 <section>
-	<h3>Spike mutations increase log fitness by 0.04 on average</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_count_vs_fitness_2024_11_08.png">
+	<h3>Spike mutations tend to increase fitness</h3>
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_count_vs_fitness_2025_03_01.png">
 </section>
 
 <section>
 	<h3>Non-spike mutations do not impact fitness on average</h3>
-	<img class="stretch" src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_non_spike_count_vs_fitness_2024_11_08.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_non_spike_count_vs_fitness_2025_03_01.png">
+</section>
+
+<!-- The S1 subunit contains a receptor-binding domain that recognizes and binds to the
+host receptor angiotensin-converting enzyme 2 ACE-2, while the S2 subunit mediates viral
+cell membrane fusion by forming a six-helical bundle via the two-heptad repeat domain. -->
+
+<section>
+	<h3>Looking across the genome shows that spike is the focus for positive selection, but accessory genes have some signal</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_genome_structure.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_genome_regions_vs_fitness_2025_03_01.png">
+</section>
+
+<section>
+	<h3>Some attentuation of fitness effects over time</h3>
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_genome_regions_vs_fitness_split_2025_03_01.png">
+</section>
+
+<section>
+	<h3>Framework to compare predictors of fitness</h3>
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_count_evescape_vs_fitness_2025_03_01.png">
+	<div class="citation">
+		EvEscape from <a href="https://doi.org/10.1038/s41586-023-06617-0">Thadani et al. 2023. Nature.</a>
+	</div>
+</section>
+
+<section>
+	<div class="left" style="float:left; width:31%">
+		<h4 class="left-align">Ongoing work to incorporate high-throughput experimental
+		measurements of ACE2 binding and immune escape</h4>
+	</div>
+	<div class="right" style="float:right; width:67%">
+		<img data-src="/images/talks/ncov_escape_dadonaite_delta_growth_vs_dms.png">
+	</div>
+	<div class="citation">
+		<a href="/papers/dadonaite-sarscov2-spike-dms-fitness/">Dadonaite et al. 2024. Nature.</a>
+	</div>
 </section>
 
 <section style="text-align: left;">
@@ -415,9 +523,13 @@ fitness altering mutations.
 		</p>
 	</div>
 	<div class="citation-with-avatar">
-		<img width=30 class="img-avatar" src="/images/team/marlin-figgins.jpg">
+		<img width=30 class="img-avatar" data-src="/images/team/marlin-figgins.jpg">
 		Figgins et al. In prep.
 	</div>
+</section>
+
+<section>
+	<h3>Still need approaches that explicitly model mutations and emergence of novel lineages</h3>
 </section>
 
 <section style="text-align: left;">
@@ -436,24 +548,24 @@ fitness altering mutations.
 	</p>
 
 	<p class="tiny"><b>Bedford Lab</b>:
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/kim-andrews.jpg"> Kim Andrews,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/cristian-ovadiuc.jpg"> Cristian Ovaduic,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/philippa-steinberg.jpg"> Philippa Steinberg,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/jacob-dodds.jpg"> Jacob Dodds,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/john-sj-anderson.jpg"> John SJ Anderson</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/nobuaki-masaki.jpg"> Nobuaki Masaki</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" src="/images/team/amin-bemanian.jpg"> Amin Bemanian</span>
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/miguel-paredes.jpg"> Miguel Paredes,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/kim-andrews.jpg"> Kim Andrews,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/cristian-ovadiuc.jpg"> Cristian Ovaduic,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/philippa-steinberg.jpg"> Philippa Steinberg,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/jacob-dodds.jpg"> Jacob Dodds,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/john-sj-anderson.jpg"> John SJ Anderson</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/nobuaki-masaki.jpg"> Nobuaki Masaki</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/amin-bemanian.jpg"> Amin Bemanian</span>
 	</p>
 
 	<div width="100%" style="display: flex; justify-content: space-between; align-items: center;">
