@@ -1,6 +1,6 @@
 ---
 layout: member
 title: Seulgi Lee
-position: Postdoc
-image: /images/people/seulgi-lee.jpg
+position: Korea Polar Research Institute, Researcher
+alumni: true
 ---
