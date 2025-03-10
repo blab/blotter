@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Marlin Figgins
-position: PhD student
+position: Postdoc
 handle: mfiggins
 github: marlinfiggins
 twitter: marlinfiggins
