@@ -9,6 +9,8 @@ twitter: nicfelm
 image: /images/team/nicola-mueller.jpg
 website: https://muellerlab.io/
 alumni: true
+joined: 2019
+departed: 2024
 ---
 
 I joined the lab in October of 2019 as a Postdoc to work on several aspects of the evolution and transmission of infectious diseases.

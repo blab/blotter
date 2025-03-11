@@ -8,6 +8,8 @@ scholar: hcBF4HkAAAAJ
 image: /images/team/allison-black.jpg
 twitter: alliblk
 alumni: true
+joined: 2015
+departed: 2020
 ---
 
 I'm a PhD student in the [Department of Epidemiology](https://epi.washington.edu/) at the University of Washington. My research focuses on using evolutionary analysis of viral genome sequences to explore how diseases move around, whether that be from person-to-person or country-to-country.

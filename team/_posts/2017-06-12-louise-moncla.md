@@ -9,6 +9,8 @@ scholar: _myzKrwAAAAJ
 image: /images/team/louise-moncla.jpg
 website: https://lmoncla.github.io/monclalab/
 alumni: true
+joined: 2017
+departed: 2022
 ---
 
 _Louise is now an Assistant Professor at the University of Pennsylvania School of Veterinary Medicine._

@@ -9,6 +9,8 @@ scholar: nwiME18AAAAJ
 image: /images/team/gytis-dudas.jpg
 website: https://evogytis.github.io
 alumni: true
+joined: 2016
+departed: 2018
 ---
 
 I was a [Mahan Postdoctoral Fellow](https://www.fredhutch.org/en/labs/phs/projects/herbold-computational-biology-program/mahan-postdoctoral-fellowship/past-mahan-fellows.html) with the Bedford lab at the [Fred Hutchinson Cancer Research Center](http://www.fhcrc.org/) where I worked on or contributed to phylogenetic studies of RNA virus outbreak dynamics:

@@ -7,6 +7,8 @@ github: sidneymbell
 twitter: sidneymbell
 image: /images/team/sidney-bell.jpg
 alumni: true
+joined: 2015
+departed: 2018
 ---
 
 _Sidney is now a Computational Biologist at the Chan-Zuckerberg Initiative._
