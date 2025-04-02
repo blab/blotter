@@ -261,7 +261,17 @@ cell membrane fusion by forming a six-helical bundle via the two-heptad repeat d
 
 <section>
 	<h3>Framework to compare predictors of fitness</h3>
-	<p>Predict immune escape via dissimilarity of embeddings. I re-implemented Brian's metric in ESM-2.</p>
+	<p>Predict immune escape via dissimilarity of embeddings. I re-implemented Brian's metric in ESM-2 via CLS token embedding.</p>
+	<img class="stretch" data-src="/images/talks/llm_cls_token.png">
+	<div class="citation">
+		Semanticity following <a href="https://doi.org/10.1126/science.abd7331">Hie et al. 2021. Science.</a>
+		ESM-2 from <a href="https://doi.org/10.1073/pnas.2016239118">Rives et al. 2021. PNAS.</a>
+	</div>
+</section>
+
+<section>
+	<h3>Framework to compare predictors of fitness</h3>
+	<p>Semantic dissimilarity does no better than counting spike mutations</p>
 	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_count_esm_vs_fitness_2025_03_01.png">
 	<div class="citation">
 		Semanticity following <a href="https://doi.org/10.1126/science.abd7331">Hie et al. 2021. Science.</a>
