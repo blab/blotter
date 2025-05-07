@@ -5,7 +5,7 @@ image: /images/papers/tran-kiem-sarscov2-phylo-kernel.png
 authors: Tran Kiem C, Paredes MI, Perofsky AC, Frisbie LA, Xie H, Kong K, Weixler A, Greninger AL, Roychoudhury P, Peterson JM, Delgado A, Halstead H, MacKellar D, Dykema P, Gamboa L, Frazar CD, Ryke E, Stone J, Reinhart D, Starita L, Thibodeau A, Yun C, Aragona F, Black A, Viboud C, Bedford T.
 year: 2025
 ref: Tran Kiem et al. 2025. Nature.
-journal: "Nature: 10.1038/s41586-025-08637-4."
+journal: "Nature 640: 176–185."
 pdf: /pdfs/papers/tran-kiem-sarscov2-phylo-kernel.pdf
 supplement: /pdfs/papers/tran-kiem-sarscov2-phylo-kernel-supp.pdf
 doi: 10.1038/s41586-025-08637-4
