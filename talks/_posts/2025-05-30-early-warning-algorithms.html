@@ -1,0 +1,193 @@
+---
+layout: talk_reveal4
+title: Can algorithms turn an avalanche of genomic data into an early‑warning system for future outbreaks, epidemics, and pandemics?
+venue: Kyoto Meeting
+author: Trevor Bedford
+widescreen: true
+---
+
+<!-- 5 min talk -->
+
+<section data-transition="fade" data-background="#000">
+	<h2 class="title">{{ page.title }}</h2>
+	<br>&nbsp;<br>
+	<h4 class="title">Trevor Bedford</h4>
+	<p class="title">
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<!-- TODO: potentially cleanup / modernize this intro -->
+
+<section data-transition="slide-in none-out">
+	<h3>Epidemic process</h3>
+	<img class="stretch" src="/images/talks/infection_tree_1.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sample some individuals</h3>
+	<img class="stretch" src="/images/talks/infection_tree_2.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" src="/images/talks/infection_tree_3b.png">
+</section>
+
+<section data-transition="none-in slide-out">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" src="/images/talks/infection_tree_4b.png">
+</section>
+
+<section>
+	<h3>This approach allows us to learn about outbreaks and epidemics</h3>
+	<div>
+		<div style="position:relative; display:inline-block; width:22%; padding:5px;">
+		  <img src="/images/talks/tile_ebola_virus.png" style="width:100%; display:block;">
+		  <span style="position:absolute; top:22px; left:15px; color:white; font-weight:bold; text-shadow:0px 0px 4px black;">
+		    Ebola
+		  </span>
+		</div>
+		<img width="22%" style="padding:5px;" data-src="/images/talks/tile_ebola_tree.png">
+		<img width="22%" style="padding:5px;" data-src="/images/talks/tile_ebola_map.png">
+	</div>
+	<div>
+		<div style="position:relative; display:inline-block; width:22%; padding:5px;">
+		  <img src="/images/talks/tile_zika_virus.png" style="width:100%; display:block;">
+		  <span style="position:absolute; top:22px; left:15px; color:white; font-weight:bold; text-shadow:0px 0px 4px black;">
+		    Zika
+		  </span>
+		</div>
+		<img width="22%" style="padding:5px;" data-src="/images/talks/tile_zika_tree.png">
+		<img width="22%" style="padding:5px;" data-src="/images/talks/tile_zika_map.png">
+	</div>
+</section>
+
+<!-- Todo: revise with map and mutation markers -->
+
+<section>
+	<h3>On Jan 19, 2020, the first 12 viral genomes from Wuhan (blue) and Bangkok (red) showed lack of genetic diversity</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_2020_01_19.png">
+	<div class="citation">
+		Data from CAMS, China CDC, Fudan University, Hubei CDC, Thai MOPH, WIV;
+		Figure from <a href="https://nextstrain.org/ncov/2020-01-22">nextstrain.org</a>
+	</div>
+</section>
+
+<section>
+	<h3>
+		Allowed us to infer introduction between Nov 15 and Dec 15 and subsequent rapid human-to-human spread
+	</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tmrca_r0_2020_01_23.png">
+	<div class="citation">
+		<a href="https://nextstrain.org/narratives/ncov/sit-rep/2020-01-23">Bedford et al. 2020. Technical Report.</a>
+	</div>
+</section>
+
+<!-- "This trickle of early data became a deluge and we've an unprecedented view into the evolution and spread of SARS-CoV-2" -->
+
+<!-- TODO:
+Ideally animate something like this, zooming out as evolution occurs
+https://nextstrain.org/ncov/gisaid/global/all-time?l=unrooted
+I started this with early-tree-animation in ncov-outbreak -->
+
+<section>
+	<h3>
+		<i>Placeholder slide for tree animation</i>
+	</h3>
+</section>
+
+<!-- TODO: update with high-fidelity tree and map -->
+
+<section>
+	<h3>To date, over 17M SARS-CoV-2 genomes have been shared and we've tracked evolution in real-time at nextstrain.org</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_map_2021_09_12_global.png">
+</section>
+
+<!-- TODO: fill out slide with 3-6 examples, the point is to be busy
+- soup of different variants that replace each other, maybe this is just a streamplot
+- emergence of saltational variants, something with long branch
+- detailed transmission patterns, lines on a map would work best -->
+
+<section>
+	<h3>
+		Foundational resource tracking evolution and epidemiology
+	</h3>
+	<img class="stretch" data-src="/images/talks/ncov_examples_tree_map.png">
+</section>
+
+<section>
+	<h3>
+		Though still only really scratching the surface of this data
+	</h3>
+</section>
+
+<section>
+	<h3>
+		Sequence language models have amazing potential
+	</h3>
+	<p>Evo2 is trained on 9.3 trillion DNA bases and predicts mutation effects, learns biological features and can generate life-like sequences</p>
+	<div style="float: left; width: 49%">
+		<img data-src="/images/talks/evo2_training_umap.png">
+	</div>
+	<div style="float: right; width: 49%">
+		<img data-src="/images/talks/evo2_architecture.png">
+	</div>
+	<div class="citation">
+		<a href="https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1">Brixi et al. 2025. bioRxiv.</a>
+	</div>
+</section>
+
+<!-- AI applications
+
+ - evolutionary forecasting
+ - patterns of spread
+ - pan-pathogen surveillance -->
+
+ <!-- Figure out closing -->
+
+ <section>
+ 	<h3>
+ 		How does this get actualized?
+ 	</h3>
+ </section>
+
+<section style="text-align: left;">
+	<h3>Acknowledgements</h3>
+
+	<p class="tiny">
+		<b>Nextstrain</b>: Richard Neher, Ivan Aksamentov, John SJ Anderson, Kim Andrews, Jennifer Chang,
+		James Hadfield, Emma Hodcroft, John Huddleston, Jover Lee, Victor Lin, Cornelius Roemer, Thomas Sibley
+	</p>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/katie-kistler.jpg"> Katie Kistler,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/thomas-sibley.jpg"> Thomas Sibley,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/marlin-figgins.jpg"> Marlin Figgins,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/jennifer-chang.jpg"> Jennifer Chang,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/kim-andrews.jpg"> Kim Andrews,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/cristian-ovadiuc.jpg"> Cristian Ovaduic,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/philippa-steinberg.jpg"> Philippa Steinberg,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/jacob-dodds.jpg"> Jacob Dodds,</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/john-sj-anderson.jpg"> John SJ Anderson</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/nobuaki-masaki.jpg"> Nobuaki Masaki</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/amin-bemanian.jpg"> Amin Bemanian</span>
+	</p>
+
+	<div width="100%" style="display: flex; justify-content: space-between; align-items: center;">
+		<img width="10%" data-src="/images/talks/logo_fred_hutch_vertical_v2.png">
+		<img width="7%" data-src="/images/talks/logo_nih.jpg">
+		<img width="15%" data-src="/images/talks/logo_bmgf.png">
+		<img width="8%" data-src="/images/talks/logo_cdc.png">
+		<img width="8%" data-src="/images/talks/logo_hhmi.jpg">
+	</div>
+</section>
