@@ -22,6 +22,7 @@ draft: true
 </section>
 
 <!-- TODO: potentially cleanup / modernize this intro -->
+<!-- Or maybe don't touch it? -->
 
 <section data-transition="slide-in none-out">
 	<h3>Epidemic process</h3>
@@ -29,19 +30,21 @@ draft: true
 </section>
 
 <section data-transition="none">
-	<h3>Sample some individuals</h3>
+	<h3>Sample some infections</h3>
 	<img class="stretch" src="/images/talks/infection_tree_2.png">
 </section>
 
 <section data-transition="none">
-	<h3>Sequence and determine phylogeny</h3>
+	<h3>Sequence viral genomes and determine phylogeny</h3>
 	<img class="stretch" src="/images/talks/infection_tree_3b.png">
 </section>
 
 <section data-transition="none-in slide-out">
-	<h3>Sequence and determine phylogeny</h3>
+	<h3>Sequence viral genomes and determine phylogeny</h3>
 	<img class="stretch" src="/images/talks/infection_tree_4b.png">
 </section>
+
+<!-- Allowing us a window that we wouldn't otherwise have through case counts and other traditional means -->
 
 <section>
 	<h3>This approach allows us to learn about outbreaks and epidemics</h3>
@@ -70,18 +73,16 @@ draft: true
 <!-- Todo: revise with map and mutation markers -->
 
 <section>
-	<h3>On Jan 19, 2020, the first 12 viral genomes from Wuhan (blue) and Bangkok (red) showed lack of genetic diversity</h3>
-	<img class="stretch" data-src="/images/talks/ncov_tree_2020_01_19.png">
+	<h3>On Jan 19, 2020, the first 13 viral genomes from Wuhan and Bangkok showed little genetic diversity</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_2020_01_19_revised.png">
 	<div class="citation">
 		Data from CAMS, China CDC, Fudan University, Hubei CDC, Thai MOPH, WIV;
-		Figure from <a href="https://nextstrain.org/ncov/2020-01-22">nextstrain.org</a>
+		Figure from <a href="https://nextstrain.org/ncov@2020-01-19">nextstrain.org</a>
 	</div>
 </section>
 
 <section>
-	<h3>
-		Allowed us to infer introduction between Nov 15 and Dec 15 and subsequent rapid human-to-human spread
-	</h3>
+	<h3>Allowed us to infer introduction between Nov 15 and Dec 15 and subsequent rapid human-to-human spread</h3>
 	<img class="stretch" data-src="/images/talks/ncov_tmrca_r0_2020_01_23.png">
 	<div class="citation">
 		<a href="https://nextstrain.org/narratives/ncov/sit-rep/2020-01-23">Bedford et al. 2020. Technical Report.</a>
@@ -90,41 +91,36 @@ draft: true
 
 <!-- "This trickle of early data became a deluge and we've an unprecedented view into the evolution and spread of SARS-CoV-2" -->
 
+<!-- This doesn't work via jekyll serve because HTTP range requests aren't supported,
+to preview instead cd into _site and run `python3 -m http.server 8000` -->
+
 <section>
 	<video data-autoplay muted data-src="/images/talks/ncov_early_tree_animation_15s.mp4">
   </video>
 </section>
 
 <!-- TODO: update with high-fidelity tree and map -->
+<!-- Or maybe this is fine? -->
 
 <section>
 	<h3>To date, over 17M SARS-CoV-2 genomes have been shared and we've tracked evolution in real-time at nextstrain.org</h3>
 	<img class="stretch" data-src="/images/talks/ncov_tree_map_2021_09_12_global.png">
 </section>
 
-<!-- TODO: fill out slide with 3-6 examples, the point is to be busy
-- soup of different variants that replace each other, maybe this is just a streamplot
-- emergence of saltational variants, something with long branch
-- detailed transmission patterns, lines on a map would work best -->
-
 <section>
-	<h3>
-		Foundational resource tracking evolution and epidemiology
-	</h3>
+	<h3>Wealth of genome data represents a foundational resource for tracking viral evolution and epidemiology</h3>
 	<img class="stretch" data-src="/images/talks/ncov_examples_tree_map.png">
 </section>
 
 <section>
 	<h3>
-		Though still only really scratching the surface of this data
+		Though we're still only scratching the surface of this data, in large part due to methodological limitations
 	</h3>
 </section>
 
 <section>
-	<h3>
-		Sequence language models have amazing potential
-	</h3>
-	<p>Evo2 is trained on 9.3 trillion DNA bases and predicts mutation effects, learns biological features and can generate life-like sequences</p>
+	<h3>Sequence language models have amazing potential</h3>
+	<p>Evo2 is trained on 9.3 trillion DNA bases and predicts mutation effects, learns biological features and can generate quasi-life-like sequences</p>
 	<div style="float: left; width: 49%">
 		<img data-src="/images/talks/evo2_training_umap.png">
 	</div>
@@ -136,19 +132,38 @@ draft: true
 	</div>
 </section>
 
-<!-- AI applications
+<!-- Slide on AI to model evolutionary process ala diffusion models -->
+<!-- Phylogenetic tree as vector field, illustrated via Bezier curves -->
 
- - evolutionary forecasting
- - patterns of spread
- - pan-pathogen surveillance -->
+<section>
+	<h3>Directly model the evolutionary process as movement through high-dimensional latent space</h3>
+	<img class="stretch" data-src="/images/talks/evolutionary_diffusion_model.png">
+</section>
 
- <!-- Figure out closing -->
-
- <section>
- 	<h3>
- 		How does this get actualized?
- 	</h3>
- </section>
+<section style="text-align: left;">
+	<h3>With model in hand, we can better tackle</h3>
+	<p>
+	<ul>
+		<li>
+			<b>Evolutionary forecasting</b>
+			<br>
+			<i>Which new COVID variant will emerge? Will H5N1 mutate to become human transmissible?</i>
+		</li>
+		<li>
+			<b>Patterns of spread</b>
+			<br>
+			<i>Given early outbreak sequences, where are infections today?</i>
+		</li>
+		<li>
+			<b>Pan-pathogen surveillance via metagenomics</b>
+			<br>
+			<i>Which anomolies represent threats?</i>
+		</li>
+	</ul>
+	</p>
+	I generally hope to be moving surveillance towards something closer to weather forecasting with always-on models
+	projecting current fronts (epidemic waves) and incipient storms (outbreaks)
+</section>
 
 <section style="text-align: left;">
 	<h3>Acknowledgements</h3>
@@ -170,12 +185,12 @@ draft: true
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/kim-andrews.jpg"> Kim Andrews,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/cristian-ovadiuc.jpg"> Cristian Ovaduic,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/philippa-steinberg.jpg"> Philippa Steinberg,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/jacob-dodds.jpg"> Jacob Dodds,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/john-sj-anderson.jpg"> John SJ Anderson</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/nobuaki-masaki.jpg"> Nobuaki Masaki</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/amin-bemanian.jpg"> Amin Bemanian</span>
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/amin-bemanian.jpg"> Amin Bemanian</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/carlos-avendano.jpg"> Carlos Avendano</span>
 	</p>
 
 	<div width="100%" style="display: flex; justify-content: space-between; align-items: center;">
