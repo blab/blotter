@@ -4,10 +4,10 @@ title: High-throughput neutralization measurements correlate strongly with evolu
 image: /images/papers/kikawa-h3n2-dms-evol-corr.png
 authors: Kikawa C, Loes AN, Huddleston J, Figgins MD, Steinberg P, Griffiths T, Drapeau EM, Peck H, Barr IG, Englund JA, Hensley SE, Bedford T, Bloom JD.
 year: 2025
-ref: Kikawa et al. 2025. bioRxiv.
-journal: "bioRxiv: 2025.03.04.641544."
+ref: Kikawa et al. 2025. eLife.
+journal: "eLife 14: RP106811."
 pdf: /pdfs/papers/kikawa-h3n2-dms-evol-corr.pdf
-doi: 10.1101/2025.03.04.641544
+doi: 10.7554/eLife.106811.1
 github: https://github.com/jbloomlab/flu_H3_2023_seqneut_vs_growth
 ---
 
