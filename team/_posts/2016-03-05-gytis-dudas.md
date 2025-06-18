@@ -13,6 +13,8 @@ joined: 2016
 departed: 2018
 ---
 
+_Gytis is now a Research Professor at Vilnius University’s Life Sciences Center._
+
 I was a [Mahan Postdoctoral Fellow](https://www.fredhutch.org/en/labs/phs/projects/herbold-computational-biology-program/mahan-postdoctoral-fellowship/past-mahan-fellows.html) with the Bedford lab at the [Fred Hutchinson Cancer Research Center](http://www.fhcrc.org/) where I worked on or contributed to phylogenetic studies of RNA virus outbreak dynamics:
 
 - [Genome-wide evolutionary dynamics of influenza B viruses on a global scale](http://bedford.io/papers/langat-flu-b-dynamics/) led by Pinky Langat

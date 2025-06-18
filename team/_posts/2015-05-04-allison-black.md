@@ -12,6 +12,8 @@ joined: 2015
 departed: 2020
 ---
 
+_Alli now leads the WA Department of Health [Molecular Epidemiology Program](https://doh.wa.gov/about-us/executive-offices/health-and-science/disease-control-and-health-statistics/communicable-disease-epidemiology/molecular-epidemiology-program)._ 
+
 I'm a PhD student in the [Department of Epidemiology](https://epi.washington.edu/) at the University of Washington. My research focuses on using evolutionary analysis of viral genome sequences to explore how diseases move around, whether that be from person-to-person or country-to-country.
 
 Most of my work so far has focused on understanding the Zika epidemic in the Americas. I've been involved in estimating when [Zika was introduced to Brazil](https://bedford.io/papers/faria-zika-in-brazil/) and investigating how frequently [Zika was introduced to the US Virgin Islands](https://www.biorxiv.org/content/early/2017/03/03/113100.1). While joint analysis of sequence data and surveillance data is a relatively new domain for infectious disease epidemiologists, these analyses can help us better define populations at risk, investigate factors associated with disease spread, and evaluate infection control measures, all of which are critical components of epidemiology.
