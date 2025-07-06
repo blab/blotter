@@ -1,0 +1,433 @@
+---
+layout: talk_reveal5
+title: Interpreting viral evolution
+venue: Fred Hutch
+event: SURP Seminar
+author: Trevor Bedford
+draft: true
+---
+
+<!-- 1hr total for talk, aim for ~45 minutes to allow for questions, etc... -->
+
+<!-- Color ramp: ["#511EA8", "#4432BD", "#3F4BCA", "#4065CF", "#447ECC", "#4C91BF", "#56A0AE", "#63AC9A", "#71B486", "#81BA72", "#94BD62", "#A7BE54", "#BABC4A", "#CBB742", "#D9AE3E", "#E29E39", "#E68935", "#E56E30", "#E14F2A", "#DC2F24"] -->
+
+<section data-transition="fade" data-background="#000">
+	<div style="float:left; width:20%">
+		<img width=55% src="/images/talks/giphy_virus.gif">
+	</div>
+	<h1 class="title right-align">{{ page.title }}</h1>
+	<br>
+	<h4 class="title left-align">Trevor Bedford</h4>
+	<p class="title left-align">
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+	<br>
+	Slides at: bedford.io/talks
+</section>
+
+<section>
+	<h3>We work at the interface of virology, evolution and epidemiology</h3>
+	<div>
+		<div style="position:relative; display:inline-block; width:22%; padding:5px;">
+		  <img src="/images/talks/tile_ebola_virus.png" style="width:100%; display:block;">
+		  <span style="position:absolute; top:22px; left:15px; color:white; font-weight:bold; text-shadow:0px 0px 4px black;">
+		    Ebola
+		  </span>
+		</div>
+		<img width="22%" style="padding:5px;" data-src="/images/talks/tile_ebola_tree.png">
+		<img width="22%" style="padding:5px;" data-src="/images/talks/tile_ebola_map.png">
+	</div>
+	<div>
+		<div style="position:relative; display:inline-block; width:22%; padding:5px;">
+		  <img src="/images/talks/tile_zika_virus.png" style="width:100%; display:block;">
+		  <span style="position:absolute; top:22px; left:15px; color:white; font-weight:bold; text-shadow:0px 0px 4px black;">
+		    Zika
+		  </span>
+		</div>
+		<img width="22%" style="padding:5px;" data-src="/images/talks/tile_zika_tree.png">
+		<img width="22%" style="padding:5px;" data-src="/images/talks/tile_zika_map.png">
+	</div>
+</section>
+
+<section data-background="#511EA8">
+	<h2 class="title">Segue through data vizualization</h2>
+</section>
+
+<section>
+	<h2>Data tells a story</h2>
+</section>
+
+<section>
+	<h3><a href="http://en.wikipedia.org/wiki/Charles_Joseph_Minard">Charles Minard</a> and Napoleon's 1812 campaign</h3>
+	<a class="stretch" href="/images/talks/dataviz_minard.png"><img data-src="/images/talks/dataviz_minard.png"></a>
+</section>
+
+<section>
+	<h2>If data are looked at in the right way, answers become immediately clear</h2>
+</section>
+
+<section>
+	<h3><a href="http://www.edwardtufte.com/">Edward Tufte</a></h3>
+	<a href="http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142">
+		<img class="fragment fade-out" data-fragment-index="1" width="20%" data-src="/images/talks/dataviz_visual_display.jpg">
+	</a>
+	<a href="http://www.amazon.com/Envisioning-Information-Edward-R-Tufte/dp/0961392118">
+		<img data-fragment-index="1" width="20%" data-src="/images/talks/dataviz_envisioning_information.jpg">
+	</a>
+	<a href="http://www.amazon.com/Visual-Explanations-Quantities-Evidence-Narrative/dp/0961392126">
+		<img data-fragment-index="1" width="20%" data-src="/images/talks/dataviz_visual_explanations.jpg">
+	</a>
+	<a href="http://www.amazon.com/Beautiful-Evidence-Edward-R-Tufte/dp/0961392177">
+		<img class="fragment fade-out" data-fragment-index="1" width="20%" data-src="/images/talks/dataviz_beautiful_evidence.jpg">
+	</a>
+</section>
+
+<section>
+	<h2>Above all, show the data</h2>
+	A good graphic is <i>honest</i>
+</section>
+
+<section>
+	<h3>Barchart of average value</h3>
+	<img class="stretch" data-src="/images/talks/dataviz_barchart.png">
+</section>
+
+<section>
+	<h3>Box-and-whisker plot showing variation</h3>
+	<img class="stretch" data-src="/images/talks/dataviz_barchart_whiskers.png">
+</section>
+
+<section>
+	<h3>Showing the data</h3>
+	<img class="stretch" data-src="/images/talks/dataviz_barchart_points.png">
+</section>
+
+<section>
+	<h3><a href="http://www.edwardtufte.com/">To clarify add detail</a></h3>
+	"To clarify, add detail... Clutter and overload are not attributes of information, they are failures of design. If the information is in chaos, don’t start throwing out information, instead fix the design." <br> – Tufte
+</section>
+
+<section data-background="black">
+	<h3 class="title">Evolution of <i>Conus</i> shells</h3>
+	<img class="stretch" data-src="/images/talks/dataviz_conus.jpg">
+	<template class="slide-citation">
+		<a href="https://www.pnas.org/content/early/2012/01/04/1119859109">Gong et al. 2012. PNAS.</a>
+	</template>
+</section>
+
+<section>
+	<h3>Greenland rising</h3>
+	<img class="stretch" data-src="/images/talks/dataviz_greenland.jpg">
+	<template class="slide-citation">
+		<a href="https://www.pnas.org/content/109/30/11944.full">Bevis et al. 2012. PNAS.</a>
+	</template>
+</section>
+
+<section>
+	<h3><a href="http://en.wikipedia.org/wiki/Small_multiple">Small multiples</a> and dimensionality</h3>
+	<img class="stretch" data-src="/images/talks/dataviz_small_multiples_map.jpg">
+</section>
+
+<section>
+	<h2>Mapping infection spread</h2>
+	<a href="http://en.wikipedia.org/wiki/John_Snow_(physician)">John Snow</a> and the founding of epidemiology
+</section>
+
+<section data-background="/images/talks/dataviz_cholera_map.jpg">
+</section>
+
+<section data-background="#000000">
+	<h1 class="title">My research</h1>
+</section>
+
+<section data-background="#4432BD">
+	<h2 class="title">Methods focus on sequencing to reconstruct pathogen spread</h2>
+</section>
+
+<section data-transition="slide-in none-out">
+	<h3>Epidemic process</h3>
+	<img class="stretch" data-src="/images/talks/infection_tree_1.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sample some individuals</h3>
+	<img class="stretch" data-src="/images/talks/infection_tree_2.png">
+</section>
+
+<section data-transition="none">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" data-src="/images/talks/infection_tree_3b.png">
+</section>
+
+<section data-transition="none-in slide-out">
+	<h3>Sequence and determine phylogeny</h3>
+	<img class="stretch" data-src="/images/talks/infection_tree_4b.png">
+</section>
+
+<section style="text-align: left;">
+	<h3>Pathogen genomes may reveal</h3>
+	<p>
+	<ul>
+		<li>Evolution of new adaptive variants</li>
+		<li>Epidemic origins</li>
+		<li>Patterns of geographic spread</li>
+		<li>Animal-to-human spillover</li>
+		<li>Transmission chains</li>
+	</ul>
+	</p>
+</section>
+
+<section>
+	<h3><b>Influenza:</b> Forecasting spread of new variants for vaccine strain selection</h3>
+	<img class="stretch" src="/images/talks/nextflu_aug2019_tree_forecast.png">
+	<template class="slide-citation">
+		<a href="/papers/huddleston-flu-forecasting/">Huddleston et al. 2020. eLife.</a>
+	</template>
+</section>
+
+<section>
+	<h3><b>Zika:</b> Uncovering origins of the epidemic in the Americas</h3>
+	<img class="stretch" src="/images/talks/zika_zibra_tree.png">
+	<template class="slide-citation">
+		<a href="/papers/faria-zika-in-brazil/">Faria et al. 2017. Nature.</a>
+	</template>
+</section>
+
+<section>
+	<h3><b>Ebola:</b> Revealing spatial spread and persistence in West Africa</h3>
+	<img width="43%" data-src="/images/talks/ebola_mig_tree.png">
+	<img width="43%" data-src="/images/talks/ebola_mig_geo_tree.png">
+	<template class="slide-citation">
+		<a href="/papers/dudas-ebola-epidemic-spread/">Dudas et al. 2017. Nature.</a>
+	</template>
+</section>
+
+<section>
+	<h3><b>MERS:</b> Repeated spillover into the human population from camel reservoir</h3>
+	<img class="stretch" src="/images/talks/mers_tree.png">
+	<template class="slide-citation">
+		<a href="/papers/dudas-mers-structure/">Dudas et al. 2018. eLife.</a>
+	</template>
+</section>
+
+<section data-background="#000000">
+	<h1 class="title">Actionable inferences</h1>
+</section>
+
+<section>
+	<h1>
+		<span class="c1s">N</span><span class="c2s">e</span><span class="c3s">x</span><span class="c4s">t</span><span class="c5s">s</span><span class="c6s">t</span><span class="c7s">r</span><span class="c8s">a</span><span class="c9s">i</span><span class="c10s">n</span>
+	</h1>
+	<p>Project to conduct real-time genomic epidemiology and evolutionary analysis of emerging epidemics</p>
+</section>
+
+<section>
+	<h3>Nextstrain architecture</h3>
+	<p>Central aims: (1) rapid and flexible bioinformatic workflows,
+		(2) interactive visualization and
+		(3) always up-to-date analyses at nextstrain.org</p>
+	<img width="65%" src="/images/talks/nextstrain_components_ncov.png">
+	<p>
+		All code open source at <a class="off" href="https://github.com/nextstrain">github.com/nextstrain</a>
+	</p>
+	<template class="slide-citation">
+		<a href="/papers/hadfield-nextstrain/">Hadfield et al. 2018. Bioinformatics.</a>
+	</template>
+</section>
+
+<section>
+	<h3>Operationalized during the 2018-2020 outbreak of Ebola in the Democratic Republic of the Congo</h3>
+	<img width="43%" data-src="/images/talks/nextstrain_in_drc.jpg">
+	<img width="49%" data-src="/images/talks/ebola_drc_phylogeny_only.png">
+	<template class="slide-citation">
+		<a href="/papers/kinganda-lusamaki-ebola-drc/">Kinganda-Lusamaki et al. 2021. Nat Med.</a>
+	</template>
+</section>
+
+<section data-background="#000000">
+	<h1 class="title">Genomic epidemiology during the COVID-19 pandemic</h1>
+</section>
+
+<section>
+	<h3>Over 15M SARS-CoV-2 genomes shared to GISAID and evolution tracked in real-time at nextstrain.org</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_map_2021_09_12_global.png">
+	<br>
+	<p class="tiny"><i>
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/richard-neher.jpg"> Richard Neher,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/ivan-aksamentov.jpg"> Ivan Aksamentov,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jennifer-chang.jpg"> Jennifer Chang</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/emma-hodcroft.jpg"> Emma Hodcroft,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/victor-lin.jpg"> Victor Lin,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/cornelius-roemer.jpg"> Cornelius Roemer,</span> &hairsp;
+		<span class="nobreak"><img width=30 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley</span>
+	</i></p>
+</section>
+
+<section style="text-align: left;">
+	<h3>Three key insights that genomic epi provided during pandemic</h3>
+	<p>
+	<ol>
+		<li>Rapid human-to-human spread in Wuhan beyond initial market outbreak</li>
+		<li>Extensive local transmission while testing was rare</li>
+		<li>Identification of variants of concern and mapping of increased transmission rates</li>
+	</ol>
+	</p>
+</section>
+
+<section>
+	<h3>Jan 11: First five genomes showed a novel SARS-like coronavirus</h3>
+	<p>
+		Initially thought clustering due to epi investigation of linked cases at
+		Huanan seafood market
+	</p>
+	<img class="stretch" data-src="/images/talks/ncov_sars_like_tree.png">
+	<template class="slide-citation">
+		Data from CAMS, China CDC, Fudan University, WIV;
+		Figure from <a href="https://nextstrain.org/groups/blab/sars-like-cov">nextstrain.org</a>
+  </template>
+</section>
+
+<section>
+	<h3>Jan 19: First 12 genomes from Wuhan (blue) and Bangkok (red) showed lack of genetic diversity</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_2020_01_19.png">
+	<template class="slide-citation">
+		Data from CAMS, China CDC, Fudan University, Hubei CDC, Thai MOPH, WIV;
+		Figure from <a href="https://nextstrain.org/ncov/2020-01-22">nextstrain.org</a>
+	</template>
+</section>
+
+<section>
+	<h3>
+		Jan 23: Introduction into the human population between Nov 15 and Dec 15 and
+		subsequent rapid human-to-human spread
+	</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tmrca_r0_2020_01_23.png">
+	<template class="slide-citation">
+		<a href="https://nextstrain.org/narratives/ncov/sit-rep/2020-01-23">Bedford et al. 2020. Technical Report.</a>
+	</template>
+</section>
+
+<section>
+	<h3>Rapid global epidemic spread from China</h3>
+	<video data-autoplay>
+		<source data-src="/images/talks/ncov_early_tree_map_animation.mp4" type="video/mp4"/>
+	</video>
+</section>
+
+<section>
+	<h3>Epidemic in the USA was introduced from China in late Jan and from Europe during Feb</h3>
+	<img class="stretch" src="/images/talks/ncov_tree_map_2020_04_20_usa_1.png">
+	<template class="slide-citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</template>
+</section>
+
+<section>
+	<h3>Early sequencing provided best estimate of extent of local outbreak</h3>
+	<img class="stretch" src="/images/talks/ncov_cryptic_transmission_outbreak_clade.png">
+	<template class="slide-citation">
+		<a href="/papers/bedford-ncov-cryptic-transmission/">Bedford et al. 2020. Science.</a>
+	</template>
+</section>
+
+<section>
+	<h4 class="inset-top-right">
+		After initial wave, with mitigation <br> efforts and decreased travel, <br> regional clades emerge
+	</h4>
+	<img class="stretch" src="/images/talks/ncov_tree_2020_10_20_global_jun_oct.png">
+	<template class="slide-citation">
+		<a href="https://nextstrain.org">nextstrain.org</a>
+	</template>
+</section>
+
+<section>
+	<h3>Emergence of Alpha in the UK with excess spike mutations</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_501Y.V1_clock_2021_02_10.png">
+	<template class="slide-citation">
+		Alpha described in <a href="https://virological.org/t/preliminary-genomic-characterisation-of-an-emergent-sars-cov-2-lineage-in-the-uk-defined-by-a-novel-set-of-spike-mutations/563">Rambaut et al. 2020. Virological.org.</a>
+		Figure from <a href="https://nextstrain.org/ncov/europe/2021-02-10?c=clade_membership&f_country=United%20Kingdom&l=clock&r=division">nextstrain.org</a>
+	</template>
+</section>
+
+<section>
+	<h3>Further emergence of variants with increased transmissibility</h3>
+	<img class="stretch" data-src="/images/talks/sarscov2_variant_rt_growth_advantage_2021_09_23.png">
+	<template class="slide-citation">
+		<a href="/papers/figgins-rt-from-frequency-dynamics/">Figgins and Bedford. 2021. medRxiv.</a>
+	</template>
+</section>
+
+<section>
+	<h3>Variant emergence and spread has continued</h3>
+	<img class="stretch" data-src="/images/talks/ncov_variants_tree_unrooted_2023_06_18.png">
+	<template class="slide-citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18?l=unrooted">nextstrain.org</a>
+	</template>
+</section>
+
+<section>
+	<h3>In which new variants emerge that escape from existing population immunity and spread rapidly</h3>
+	<img class="stretch" data-src="/images/talks/ncov_frequencies_2023_06_18.png">
+	<template class="slide-citation">
+		<a href="https://nextstrain.org/ncov/gisaid/global/all-time/2023-06-18">nextstrain.org</a>
+	</template>
+</section>
+
+<section>
+	<h3>Acknowledgements</h3>
+
+	<p class="tiny"><b>Bedford Lab</b>:
+		<img width=35 class="img-avatar" src="/images/team/allison-black.jpg"> Alli Black,
+		<img width=35 class="img-avatar" src="/images/team/john-huddleston.jpg"> John Huddleston,
+		<img width=35 class="img-avatar" src="/images/team/barney-potter.jpg"> Barney Potter,
+		<img width=35 class="img-avatar" src="/images/team/james-hadfield.jpg"> James Hadfield,
+		<br>
+		<img width=35 class="img-avatar" src="/images/team/katie-kistler.jpg"> Katie Kistler,
+		<img width=35 class="img-avatar" src="/images/team/louise-moncla.jpg"> Louise Moncla,
+		<img width=35 class="img-avatar" src="/images/team/maya-lewinsohn.jpg"> Maya Lewinsohn,
+		<img width=35 class="img-avatar" src="/images/team/thomas-sibley.jpg"> Thomas Sibley,
+		<br>
+		<img width=35 class="img-avatar" src="/images/team/jover-lee.jpg"> Jover Lee,
+		<img width=35 class="img-avatar" src="/images/team/kairsten-fay.jpg"> Kairsten Fay,
+		<img width=35 class="img-avatar" src="/images/team/misja-ilcisin.jpg"> Misja Ilcisin
+	</p>
+
+	<p class="tiny"><b>Influenza</b>: WHO Global Influenza Surveillance Network, GISAID, Richard Neher, John
+	Huddleston, Barney Potter, Dave Wentworth, Becky Kondor
+	&nbsp;
+	<b>Ebola</b>: Gytis Dudas, Andrew Rambaut, Luiz Carvalho, Philippe Lemey, Marc Suchard, Andrew
+	Tatem
+	&nbsp;
+	<b>Zika</b>: Nick Loman, Nuno Faria, Oli Pybus, Josh Quick, Ingra Claro, Julien Thézé, Jaquilene
+	de Jesus, Marta Giovanetti, Moritz Kraemer, Sarah Hill, Ester Sabino, Luiz Alcantara, Allison
+	Black
+	&nbsp;
+	<b>Nextstrain</b>: Richard Neher, James Hadfield, Emma Hodcroft, Thomas Sibley, John Huddleston,
+	Sidney Bell, Barney Potter, Colin Megill, Charlton Callender
+	</p>
+
+	<div class="pull-right" style="vertical-align: bottom; display: table-cell;">
+		<img width="15%" data-src="/images/talks/logo_fred_hutch_vertical.png">
+		&nbsp; &nbsp;
+		<img width="11%" data-src="/images/talks/logo_pew.png">
+		&nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_hhmi.jpg">
+		&nbsp; &nbsp;
+		<img width="12%" data-src="/images/talks/logo_wellcome_trust.jpg">
+		&nbsp; &nbsp;
+		<img width="10%" data-src="/images/talks/logo_nih.jpg">
+		&nbsp; &nbsp;
+		<img width="15%" data-src="/images/talks/logo_osp.jpg">
+	</div>
+</section>
+
+<section data-background="#000000">
+</section>
