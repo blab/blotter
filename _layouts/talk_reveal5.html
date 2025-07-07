@@ -64,17 +64,44 @@
 
 			// Updating citations
 			const box = document.getElementById('citation-box');
+
+			/* --------------- helpers --------------- */
+			const show  = html => { box.innerHTML = html; box.classList.add('is-visible'); };
+			const hide  = ()    => { box.classList.remove('is-visible'); };
+			const fullyVisible = () =>
+			  box.classList.contains('is-visible') &&
+			  getComputedStyle(box).opacity === '1';
+
+			/* --------------- core updater --------------- */
 			function updateCitation(slide){
-			  const tpl = slide.querySelector('template.slide-citation');
-			  if (!tpl){
-			    box.style.display = 'none';
-			    return;
-			  }
-			  box.style.display = '';
-			  box.innerHTML = tpl.innerHTML;        // full HTML fragment
+			  const tpl      = slide.querySelector('template.slide-citation');
+			  const newHTML  = tpl ? tpl.innerHTML : '';
+
+			  /* no citation for this slide → just hide */
+			  if (!newHTML){ hide(); return; }
+
+			  /* first load or box suppressed by .reveal.busy → show immediately */
+			  if (!fullyVisible()){ show(newHTML); return; }
+
+			  /* same markup already showing → nothing to do */
+			  if (box.innerHTML.trim() === newHTML.trim()) return;
+
+			  /* cross-fade: fade out, swap, fade in */
+			  box.addEventListener('transitionend', function handler(){
+			    box.removeEventListener('transitionend', handler);
+			    show(newHTML);                               // fade back in
+			  }, { once:true });
+
+			  hide();                                        // start fade-out
 			}
+
+			/* --------------- wire-up ---------------- */
 			Reveal.on('slidechanged', e => updateCitation(e.currentSlide));
-			Reveal.on('ready',         e => updateCitation(Reveal.getCurrentSlide()));
+
+			/* wait one frame after “ready” so .busy is gone, then prime the box */
+			Reveal.on('ready', () =>
+			  requestAnimationFrame(() => updateCitation(Reveal.getCurrentSlide()))
+			);
 
 		</script>
 	</body>

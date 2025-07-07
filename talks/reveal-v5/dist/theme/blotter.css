@@ -342,10 +342,18 @@ body {
   right: 1.5rem;
   font-size: 0.8em;
   z-index: 100;
+  /* fade in/out */
+  opacity: 0;                            /* default is invisible        */
+  transition: opacity .1s ease-in-out;  /* adjust time/curve as needed */
 }
 
+#citation-box.is-visible {
+  opacity: 1;
+}
+
+/* keep it hidden during slide animation so you never see two at once */
 .reveal.busy #citation-box {
-  opacity:0;
+  opacity:0 !important;
 }
 
 .citation-left {
