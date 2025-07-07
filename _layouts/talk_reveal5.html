@@ -50,10 +50,10 @@
 				margin: 0.05,
 				minScale: 0.1,
   			maxScale: 5.0,
-				{% if page.widescreen == true %}
-					width: 1280,
-				{% else %}
+				{% if page.narrow == true %}
 					width: 960,
+				{% else %}
+					width: 1280,
 				{% endif %}
 				{% if page.slide_number == true %}
 					slideNumber: true,
