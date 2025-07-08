@@ -273,13 +273,13 @@ draft: true
 </section>
 
 <section>
-	<video data-autoplay muted data-src="/images/talks/ncov_early_tree_animation_15s.mp4">
-  </video>
+	<h3>To date, over 17M SARS-CoV-2 genomes shared to GISAID and evolution tracked in real-time at nextstrain.org</h3>
+	<img class="stretch" data-src="/images/talks/ncov_tree_map_2021_09_12_global.png">
 </section>
 
 <section>
-	<h3>To date, over 17M SARS-CoV-2 genomes shared to GISAID and evolution tracked in real-time at nextstrain.org</h3>
-	<img class="stretch" data-src="/images/talks/ncov_tree_map_2021_09_12_global.png">
+	<video data-autoplay muted data-src="/images/talks/ncov_early_tree_animation_15s.mp4">
+  </video>
 </section>
 
 <section style="text-align: left;">
@@ -395,6 +395,76 @@ draft: true
 	<template class="slide-citation">
 		<img width=32 class="img-avatar" src="/images/team/katie-kistler.jpg">
 		Method from <a href="/papers/kistler-atlas-viral-evolution/">Kistler and Bedford. 2023. Cell Host Microbe.</a>
+	</template>
+</section>
+
+<section data-background="#000000">
+	<h1 class="title">Current directions</h1>
+</section>
+
+<section>
+	<h3>Wealth of genome data represents a foundational resource for tracking viral evolution and epidemiology</h3>
+	<img class="stretch" data-src="/images/talks/ncov_examples_tree_map.png">
+	<template class="slide-citation">
+		<a href="https://www.nature.com/articles/s41586-022-05200-3">McCrone et al. 2022. Nature.</a>
+	</template>
+</section>
+
+<section>
+	<h3>
+		Though we're still only scratching the surface of this data, in large part due to methodological limitations
+	</h3>
+</section>
+
+<section style="text-align: left;">
+	<h3>AI approaches</h3>
+	<p>
+	<ul>
+		<li>
+			New approaches follow recent human language AI models and treat DNA nucleotides or protein amino acids as a text corpus
+		</li>
+		<li>
+			These models follow the familiar generative logic of being trained to predict the next token (nucleotide / amino acid)
+		</li>
+		<li>
+			The resulting models have a rich biological understanding encoded into the resulting internal model representations
+		</li>
+	</ul>
+	</p>
+	<img class="stretch" data-src="/images/talks/transformer_architecture_effrosynidis.png">
+	<template class="slide-citation">
+		Image from <a href="https://pub.towardsai.net/the-transformer-architecture-from-a-top-view-e8079c96b473">Effrosynidis</a>
+	</template>
+</section>
+
+<section style="text-align: left;">
+	<div style="float: left; width: 42%">
+		<h3>Large language models are based on a transformer architecture</h3>
+		<ul>
+			<li>Models are trained to predict the next token from the preceeding tokens</li>
+			<li>Words (or parts of words) are converted into input embedding vectors and these vectors are multiplied through a large stack of matrices</li>
+			<li>The resulting output embedding vectors determine predicted token probabilities</li>
+		</ul>
+	</div>
+	<div style="float: right; width: 58%">
+		<img data-src="/images/talks/transformer_architecture_wolfe.jpg">
+	</div>
+	<template class="slide-citation">
+		Image from <a href="https://cameronrwolfe.substack.com/p/language-model-training-and-inference">Wolfe</a>
+	</template>
+</section>
+
+<section>
+	<h3>Sequence language models have amazing potential</h3>
+	<p>Evo2 is trained on 9.3 trillion DNA bases and predicts mutation effects, learns biological features and can generate quasi-life-like sequences</p>
+	<div style="float: left; width: 44%">
+		<img data-src="/images/talks/evo2_training_umap.png">
+	</div>
+	<div style="float: right; width: 56%">
+		<img data-src="/images/talks/evo2_architecture_v2.png">
+	</div>
+	<template class="slide-citation">
+		<a href="https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1">Brixi et al. 2025. bioRxiv.</a>
 	</template>
 </section>
 

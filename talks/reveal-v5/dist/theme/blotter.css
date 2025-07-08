@@ -340,7 +340,7 @@ body {
   position: fixed;
   bottom: 1.2rem;
   right: 1.5rem;
-  font-size: 0.8em;
+  font-size: 0.75em;
   z-index: 100;
   /* fade in/out */
   opacity: 0;                            /* default is invisible        */
