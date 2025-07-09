@@ -4,7 +4,6 @@ title: Interpreting viral evolution
 venue: Fred Hutch
 event: SURP Seminar
 author: Trevor Bedford
-draft: true
 ---
 
 <!-- 1hr total for talk, aim for ~45 minutes to allow for questions, etc... -->
@@ -453,7 +452,7 @@ draft: true
 
 <section>
 	<h3>Sequence language models have amazing potential</h3>
-	<p>Evo2 is trained on 9.3 trillion DNA bases and predicts mutation effects, learns biological features and can generate quasi-life-like sequences</p>
+	<p>Evo 2 is trained on 9.3 trillion DNA bases and predicts mutation effects, learns biological features and can generate quasi-life-like sequences</p>
 	<div style="float: left; width: 44%">
 		<img data-src="/images/talks/evo2_training_umap.png">
 	</div>
@@ -466,20 +465,40 @@ draft: true
 </section>
 
 <section>
+	<h3>Evo 2 predicts fitness effects of genomic changes</h3>
+	<img class="stretch" data-src="/images/talks/evo2_fitness_effects.png">
+	<template class="slide-citation">
+		<a href="https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1">Brixi et al. 2025. bioRxiv.</a>
+	</template>
+</section>
+
+<section>
+	<h3>Under the hood, biological features inform Evo 2 embeddings</h3>
+	<img class="stretch" data-src="/images/talks/evo2_sae_ecoli.png">
+	<template class="slide-citation">
+		<a href="https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1">Brixi et al. 2025. bioRxiv.</a>
+	</template>
+</section>
+
+<section style="text-align: left;">
 	<h3>Acknowledgements</h3>
 
-	<p class="tiny"><b>Influenza</b>: WHO Global Influenza Surveillance Network, GISAID, Richard Neher, John
-	Huddleston, Barney Potter, Dave Wentworth, Becky Kondor
-	&nbsp;
-	<b>Ebola</b>: Gytis Dudas, Andrew Rambaut, Luiz Carvalho, Philippe Lemey, Marc Suchard, Andrew
-	Tatem
-	&nbsp;
-	<b>Zika</b>: Nick Loman, Nuno Faria, Oli Pybus, Josh Quick, Ingra Claro, Julien Thézé, Jaquilene
-	de Jesus, Marta Giovanetti, Moritz Kraemer, Sarah Hill, Ester Sabino, Luiz Alcantara, Allison
-	Black
-	&nbsp;
-	<b>Nextstrain</b>: Richard Neher, James Hadfield, Emma Hodcroft, Thomas Sibley, John Huddleston,
-	Sidney Bell, Barney Potter, Colin Megill, Charlton Callender
+	<p class="tiny">
+		<b>Influenza</b>: WHO Global Influenza Surveillance Network, GISAID, Richard Neher, John Huddleston.
+		&nbsp;
+		<b>Zika</b>: Nick Loman, Nuno Faria, Oli Pybus, Josh Quick, Ingra Claro, Julien Thézé, Jaquilene
+			de Jesus, Marta Giovanetti, Moritz Kraemer, Sarah Hill, Ester Sabino, Luiz Alcantara, Allison Black.
+		&nbsp;
+		<b>Ebola</b>: Gytis Dudas, Andrew Rambaut, Luiz Carvalho, Philippe Lemey, Marc Suchard, Andrew Tatem,
+			Eddy Kinganda-Lusamaki, Placide Mbala-Kingebeni, Catherine Pratt, Jean-Jacques Muyembe Tamfum.
+		&nbsp;
+		<b>MERS</b>: Gytis Dudas, Andrew Rambaut, Luiz Carvalho.
+		&nbsp;
+		<b>SARS-CoV-2</b>: Data producers from all over the world, GISAID, the Nextstrain team, Marlin Figgins, Katie Kistler.
+		&nbsp;
+		<b>Nextstrain</b>: Richard Neher, Ivan Aksamentov, John SJ Anderson, Kim Andrews, Jennifer Chang,
+			James Hadfield, Emma Hodcroft, John Huddleston, Jover Lee, Victor Lin, Colin Megill, Cornelius Roemer,
+			Thomas Sibley.
 	</p>
 
 	<p class="tiny"><b>Bedford Lab</b>:
@@ -494,12 +513,14 @@ draft: true
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/nashwa-ahmed.jpg"> Nashwa Ahmed,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/cecile-tran-kiem.jpg"> Cécile Tran Kiem,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/kim-andrews.jpg"> Kim Andrews,</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/cristian-ovadiuc.jpg"> Cristian Ovaduic,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/philippa-steinberg.jpg"> Philippa Steinberg,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/jacob-dodds.jpg"> Jacob Dodds,</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/john-sj-anderson.jpg"> John SJ Anderson</span> &hairsp;
 		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/nobuaki-masaki.jpg"> Nobuaki Masaki</span> &hairsp;
-		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/amin-bemanian.jpg"> Amin Bemanian</span>
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/amin-bemanian.jpg"> Amin Bemanian</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/carlos-avendano.jpg"> Carlos Avendano</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/aayush-verma.jpg"> Aayush Verma</span> &hairsp;
+		<span class="nobreak"><img width=38 class="img-avatar" data-src="/images/team/lucy-obrien.jpg"> Lucy O'Brien</span>
 	</p>
 
 	<div width="100%" style="display: flex; justify-content: space-between; align-items: center;">
