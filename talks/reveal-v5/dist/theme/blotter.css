@@ -339,7 +339,6 @@ body {
 .citation {
   position: fixed;
   bottom: 1.2rem;
-  right: 1.5rem;
   font-size: 0.75em;
   z-index: 100;
   /* fade in/out */
@@ -347,37 +346,26 @@ body {
   transition: opacity .1s ease-in-out;  /* adjust time/curve as needed */
 }
 
-#citation-box.is-visible {
+.citation-right {
+  right: 1.5rem;
+  text-align: right;
+}
+.citation-left {
+  left: 1.5rem;
+  text-align: left;
+}
+
+#citation-box-left.is-visible {
+  opacity: 1;
+}
+
+#citation-box-right.is-visible {
   opacity: 1;
 }
 
 /* keep it hidden during slide animation so you never see two at once */
-.reveal.busy #citation-box {
+.reveal.busy .citation {
   opacity:0 !important;
-}
-
-.citation-left {
-  position: absolute;
-  bottom: -10px;
-  left: -10px;
-  z-index: 100;
-  font-size: 0.5em !important;
-}
-
-.citation-with-avatar {
-  position: absolute;
-  bottom: -25px;
-  right: -10px;
-  z-index: 100;
-  font-size: 0.5em !important;
-}
-
-.citation-left-with-avatar {
-  position: absolute;
-  bottom: -25px;
-  left: -10px;
-  z-index: 100;
-  font-size: 0.5em !important;
 }
 
 .inset-top-left {

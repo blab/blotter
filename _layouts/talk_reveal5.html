@@ -31,7 +31,8 @@
 			<div class="slides">
 				{{ content }}
 			</div>
-			<div id="citation-box" class="citation"></div>
+			<div id="citation-box-left"  class="citation citation-left"></div>
+			<div id="citation-box-right" class="citation citation-right"></div>
 		</div>
 
 		<script src="/talks/reveal-v5/dist/reveal.js"></script>
@@ -61,48 +62,62 @@
 					slideNumber: false,
 				{% endif %}
 			});
+		</script>
 
-			// Updating citations
-			const box = document.getElementById('citation-box');
+		<!-- Updating citations -->
+		<script>
+			/* grab the two fixed boxes */
+			const boxR = document.getElementById('citation-box-right');
+			const boxL = document.getElementById('citation-box-left');
 
-			/* --------------- helpers --------------- */
-			const show  = html => { box.innerHTML = html; box.classList.add('is-visible'); };
-			const hide  = ()    => { box.classList.remove('is-visible'); };
-			const fullyVisible = () =>
-			  box.classList.contains('is-visible') &&
-			  getComputedStyle(box).opacity === '1';
+			/* helper that knows whether the box is already showing */
+			function swapBox (box, newHTML) {
+				/* nothing to show → just hide */
+				if (!newHTML) {
+					box.classList.remove('is-visible');
+					box.innerHTML = '';
+					return;
+				}
 
-			/* --------------- core updater --------------- */
-			function updateCitation(slide){
-			  const tpl      = slide.querySelector('template.slide-citation');
-			  const newHTML  = tpl ? tpl.innerHTML : '';
+				const isVisible = box.classList.contains('is-visible');
 
-			  /* no citation for this slide → just hide */
-			  if (!newHTML){ hide(); return; }
+				/* first time (or currently hidden) → inject and show immediately */
+				if (!isVisible) {
+					box.innerHTML = newHTML;
+					box.classList.add('is-visible');
+					return;                      // done
+				}
 
-			  /* first load or box suppressed by .reveal.busy → show immediately */
-			  if (!fullyVisible()){ show(newHTML); return; }
+				/* already visible... same text? then do nothing */
+				if (box.innerHTML.trim() === newHTML.trim()) return;
 
-			  /* same markup already showing → nothing to do */
-			  if (box.innerHTML.trim() === newHTML.trim()) return;
+				/* cross-fade: fade out → swap → fade in */
+				box.addEventListener('transitionend', function h () {
+					box.removeEventListener('transitionend', h);
+					box.innerHTML = newHTML;
+					box.classList.add('is-visible');   // fade back in
+				}, { once: true });
 
-			  /* cross-fade: fade out, swap, fade in */
-			  box.addEventListener('transitionend', function handler(){
-			    box.removeEventListener('transitionend', handler);
-			    show(newHTML);                               // fade back in
-			  }, { once:true });
-
-			  hide();                                        // start fade-out
+				box.classList.remove('is-visible');   // start fade-out
 			}
 
-			/* --------------- wire-up ---------------- */
-			Reveal.on('slidechanged', e => updateCitation(e.currentSlide));
+			/* main updater */
+			function updateCitations (slide) {
+				const tplLeft  = slide.querySelector('template.slide-citation-left');
+				const tplRight = slide.querySelector(
+					'template.slide-citation-right, template.slide-citation'
+				);
 
-			/* wait one frame after “ready” so .busy is gone, then prime the box */
-			Reveal.on('ready', () =>
-			  requestAnimationFrame(() => updateCitation(Reveal.getCurrentSlide()))
+				swapBox(boxL, tplLeft  ? tplLeft.innerHTML  : '');
+				swapBox(boxR, tplRight ? tplRight.innerHTML : '');
+			}
+
+			/* wire-up */
+			Reveal.on('slidechanged', e => updateCitations(e.currentSlide));
+			Reveal.on('ready',        () =>
+				requestAnimationFrame(() => updateCitations(Reveal.getCurrentSlide()))
 			);
-
 		</script>
+
 	</body>
 </html>
