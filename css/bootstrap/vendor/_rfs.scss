@@ -81,7 +81,7 @@ $rfs-breakpoint-unit-cache: unit($rfs-breakpoint);
 
     // Remove px-unit from $fs for calculations
     @if $fs-unit == "px" {
-      $fs: $fs / ($fs * 0 + 1);
+      $fs: math.div($fs, $fs * 0 + 1);
     }
     @else if $fs-unit == "rem" {
       $fs: math.div($fs, ($fs * 0 + math.div(1, $rfs-rem-value)));
@@ -105,20 +105,20 @@ $rfs-breakpoint-unit-cache: unit($rfs-breakpoint);
       $variable-unit: null;
 
       // Calculate minimum font-size for given font-size
-      $fs-min: $rfs-base-font-size + ($fs - $rfs-base-font-size) / $rfs-factor;
+      $fs-min: $rfs-base-font-size + math.div($fs - $rfs-base-font-size, $rfs-factor);
 
       // Calculate difference between given font-size and minimum font-size for given font-size
       $fs-diff: $fs - $fs-min;
 
       // Base font-size formatting
       // No need to check if the unit is valid, because we did that before
-      $min-width: if($rfs-font-size-unit == rem, #{$fs-min / $rfs-rem-value}rem, #{$fs-min}px);
+      $min-width: if($rfs-font-size-unit == rem, #{math.div($fs-min, $rfs-rem-value)}rem, #{$fs-min}px);
 
       // If two-dimensional, use smallest of screen width and height
       $variable-unit: if($rfs-two-dimensional, vmin, vw);
 
       // Calculate the variable width between 0 and $rfs-breakpoint
-      $variable-width: #{$fs-diff * 100 / $rfs-breakpoint}#{$variable-unit};
+      $variable-width: #{math.div($fs-diff * 100, $rfs-breakpoint)}#{$variable-unit};
 
       // Set the calculated font-size.
       $rfs-fluid: calc(#{$min-width} + #{$variable-width}) #{$rfs-suffix};
@@ -134,7 +134,7 @@ $rfs-breakpoint-unit-cache: unit($rfs-breakpoint);
 
       // RFS breakpoint formatting
       @if $rfs-breakpoint-unit == em or $rfs-breakpoint-unit == rem {
-        $mq-value: #{$rfs-breakpoint / $rfs-rem-value}#{$rfs-breakpoint-unit};
+        $mq-value: #{math.div($rfs-breakpoint, $rfs-rem-value)}#{$rfs-breakpoint-unit};
       }
       @else if $rfs-breakpoint-unit == px {
         $mq-value: #{$rfs-breakpoint}px;
