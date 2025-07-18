@@ -31,7 +31,7 @@ layout: default
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fa fa-file-text-o fa-fw"></i>
+			<i class="fa-regular fa-file-text fa-fw"></i>
 			<a class="off" href="{{ member.cv }}">{{ member.cv | split: '/' | last }}</a>
 		</div>
 		<div class="bigspacer"></div>
@@ -42,7 +42,7 @@ layout: default
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fa fa-twitter fa-fw"></i>
+			<i class="fa-brands fa-twitter fa-fw"></i>
 			<a class="off" href="https://twitter.com/{{ member.twitter }}">{{ member.twitter }}</a>
 		</div>
 		<div class="bigspacer"></div>
@@ -53,7 +53,7 @@ layout: default
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fa fa-handshake-o"></i>
+			<i class="fa-regular fa-handshake"></i>
 			<a class="off" href="https://{{ member.fediverse.server }}/{{ member.fediverse.handle }}">{{ member.fediverse.handle }}</a>
 		</div>
 		<div class="bigspacer"></div>
@@ -64,7 +64,7 @@ layout: default
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fa fa-github-alt fa-fw"></i>
+			<i class="fa-brands fa-github-alt fa-fw"></i>
 			<a class="off" href="https://github.com/{{ member.github }}">{{ member.github }}</a>
 		</div>
 		<div class="bigspacer"></div>
@@ -75,7 +75,7 @@ layout: default
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fa fa-book fa-fw"></i>
+			<i class="fa-brands fa-google-scholar fa-fw"></i>
 			<a class="off" href="http://scholar.google.com/citations?user={{ member.scholar }}">{{ member.title }}</a>
 		</div>
 		<div class="bigspacer"></div>
@@ -86,7 +86,7 @@ layout: default
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fa fa-calendar fa-fw"></i>
+			<i class="fa-regular fa-calendar fa-fw"></i>
 			<a class="off" href="{{ member.calendar }}">{{ member.title }}</a>
 		</div>
 		<div class="bigspacer"></div>
@@ -97,7 +97,7 @@ layout: default
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fa fa-globe fa-fw"></i>
+			<i class="fa-solid fa-globe fa-fw"></i>
 			<a class="off" href="{{ member.website }}">{{ member.website | remove: 'http://' | remove: 'https://' | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
 		</div>
 		<div class="bigspacer"></div>
@@ -109,7 +109,7 @@ layout: default
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fa fa-inbox fa-fw"></i>
+			<i class="fa-regular fa-envelope fa-fw"></i>
 			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
 		</div>
 		<div class="bigspacer"></div>

@@ -74,6 +74,16 @@ h6 {
   text-align: center;
 }
 
+.pull-left  {
+  float: left !important;
+  margin-right: .1em;
+}
+
+.pull-right {
+  float: right !important;
+  margin-left : .1em;
+}
+
 // also modify Bootstrap source in _reboot.scss
 b, strong {
   font-weight: bold;

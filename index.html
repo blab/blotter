@@ -57,7 +57,7 @@ categories:
 	<div class="col-lg-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<i class="fa fa-comment-o fa-fw"></i>
+				<i class="fa-regular fa-comment fa-fw"></i>
 				<a class="off" href="{{ post.url }}">
 				{{ post.title }}
 				</a>
@@ -122,7 +122,7 @@ categories:
 	<div class="col-lg-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<i class="fa fa-file-text-o fa-fw"></i>
+				<i class="fa-regular fa-file-text fa-fw"></i>
 				<a class="off" href="{{ paper.url }}">
 				{{ paper.title }}
 				</a>
@@ -154,7 +154,7 @@ categories:
 	<div class="col-lg-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<i class="fa fa-edit fa-fw"></i>
+				<i class="fa-regular fa-edit fa-fw"></i>
 				<a class="off" href="{{ project.url }}">
 				{{ project.title }} - {{ project.description }}
 				</a>
@@ -193,11 +193,11 @@ categories:
 			<ul class="list-inline">
 				{% for page in site.categories.misc %}
 				<li class="footernav list-inline-item">
-					<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url }}">{{ page.title }}</a>
+					<i class="fa-solid fa-angle-right"></i> <a class="off" href="{{ page.url }}">{{ page.title }}</a>
 				</li>
 				{% endfor %}
 				<li class="footernav list-inline-item">
-					<i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
+					<i class="fa-solid fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
 				</li>
 			</ul>
 		</div>
