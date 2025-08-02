@@ -424,6 +424,7 @@ body {
 
 .text-gray { color: #777777; }
 .text-light-gray { color: #CCCCCC; }
+
 .c1 { color: #4C90C0; }
 .c2 { color: #5DA8A3; }
 .c3 { color: #75B681; }
@@ -433,6 +434,7 @@ body {
 .c7 { color: #E1A03A; }
 .c8 { color: #E67C32; }
 .c9 { color: #E04929; }
+
 .c1s { color: #5097BA; }
 .c2s { color: #5DA8A3; }
 .c3s { color: #6EB389; }
@@ -443,3 +445,10 @@ body {
 .c8s { color: #D9AD3D; }
 .c9s { color: #E49938; }
 .c10s { color: #E67C32; }
+
+.c-blue { color: #799BB3; }
+.c-yellow { color: #CEB541; }
+.c-purple { color: #7F62A4; }
+.c-green { color: #96BD60; }
+.c-red { color: #DF4327; }
+.c-orange { color: #E68B35; }
