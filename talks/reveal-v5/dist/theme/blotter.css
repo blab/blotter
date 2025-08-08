@@ -127,17 +127,19 @@ body {
 
 .reveal dl {
   display: grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: max-content 1fr; column-gap: 0.5em;
 }
 
 .reveal dt {
   grid-column-start: 1;
   font-weight: bold;
+  justify-self: end;
 }
 
 .reveal dd {
   grid-column-start: 2;
   margin-left: 40px;
+  margin: 0;
 }
 
 .reveal blockquote {
