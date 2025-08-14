@@ -326,7 +326,7 @@ fitness altering mutations.
 <section>
 	<h3>Clade-level frequency dynamics and MLR fits in sliding windows</h3>
 	<p>Constant clade fitness within each window, USA data only, ignores within-clade fitness variation</p>
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clade_frequencies_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clade_frequencies_2025_08_13.png">
 </section>
 
 <!-- <section>
@@ -341,8 +341,8 @@ fitness altering mutations.
 
 <section>
 	<h3>SARS-CoV-2 roughly doubled in fitness every year</h3>
-	<p>Line thickness is proportional to variant frequency, 36 total variants</p>
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_2025_03_01.png">
+	<p>Line thickness is proportional to variant frequency, 40 total variants</p>
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_2025_08_13.png">
 </section>
 
 <section>
@@ -360,7 +360,7 @@ fitness altering mutations.
 <section>
 	<h3>Dramatically faster fitness flux of SARS-CoV-2</h3>
 	<div style="float: left; width: 49%">
-		<img data-src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_narrow_2025_03_01.png">
+		<img data-src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_narrow_2025_08_13.png">
 	</div>
 	<div style="float: right; width: 49%">
 		<img data-src="/images/talks/fitness_dynamics_h3n2_clades_fitness_narrow_2025_03_01.png">
@@ -402,12 +402,12 @@ fitness altering mutations.
 
 <section>
 	<h3>Using empirical frequencies and MLR fitness to characterize fitness wave in SARS-CoV-2</h3>
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_location_joyplot_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_location_joyplot_2025_08_13.png">
 </section>
 
 <section>
 	<h3>Fitness variance correlates well with fitness flux</h3>
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_variance_vs_flux_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_variance_vs_flux_2025_08_13.png">
 </section>
 
 <section>
@@ -493,17 +493,17 @@ fitness altering mutations.
 
 <section>
 	<h3>Most Pango branches have 0-1 spike mutations and change log fitness by ±0.1</h3>
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_nonspike_fitness_hist_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_nonspike_fitness_hist_2025_08_13.png">
 </section>
 
 <section>
 	<h3>Spike mutations tend to increase fitness</h3>
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_count_vs_fitness_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_count_vs_fitness_2025_08_13.png">
 </section>
 
 <section>
 	<h3>Non-spike mutations do not impact fitness on average</h3>
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_non_spike_count_vs_fitness_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_non_spike_count_vs_fitness_2025_08_13.png">
 </section>
 
 <!-- The S1 subunit contains a receptor-binding domain that recognizes and binds to the
@@ -513,17 +513,17 @@ cell membrane fusion by forming a six-helical bundle via the two-heptad repeat d
 <section>
 	<h3>Looking across the genome shows that spike is the focus for positive selection, but accessory genes have some signal</h3>
 	<img class="stretch" data-src="/images/talks/sarscov2_genome_structure.png">
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_genome_regions_vs_fitness_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_genome_regions_vs_fitness_2025_08_13.png">
 </section>
 
 <section>
 	<h3>Some attenuation of fitness effects over time</h3>
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_genome_regions_vs_fitness_split_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_genome_regions_vs_fitness_split_2025_08_13.png">
 </section>
 
 <section>
 	<h3>Mean mutation effect through time</h3>
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_slope_through_time_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_slope_through_time_2025_08_13.png">
 </section>
 
 <!-------------------------------->
@@ -544,12 +544,15 @@ cell membrane fusion by forming a six-helical bundle via the two-heptad repeat d
 <section>
 	<h3>Simple linear model to combine predictors into a fitness estimate</h3>
 	<p>In this case, a very simple model of mutation counts</p>
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_genome_regions_vs_fitness_lm_split_2025_03_01.png">
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_genome_regions_vs_fitness_lm_split_2025_08_13.png">
 </section>
 
 <section>
 	<h3>Framework to compare predictors of fitness</h3>
-	<p>EvEscape is a metric that combines a variational autoencoder for mutation effect + antibody accessibility + biochemical dissimilarity</p>
+</section>
+
+<section>
+	<h3>EvEscape combines a variational autoencoder for mutation effect + antibody accessibility + biochemical dissimilarity</h3>
 	<img class="stretch" data-src="/images/talks/sarscov2_thadani_evescape.png">
 	<template class="slide-citation">
 		EvEscape from <a href="https://doi.org/10.1038/s41586-023-06617-0">Thadani et al. 2023. Nature.</a>
@@ -557,11 +560,27 @@ cell membrane fusion by forming a six-helical bundle via the two-heptad repeat d
 </section>
 
 <section>
-	<h3>Framework to compare predictors of fitness</h3>
-	<p>EvEscape does no better than counting spike mutations</p>
-	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_count_evescape_vs_fitness_2025_03_01.png">
+	<h3>EvEscape does no better than counting spike mutations</h3>
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_count_evescape_vs_fitness_2025_08_13.png">
 	<template class="slide-citation">
 		EvEscape from <a href="https://doi.org/10.1038/s41586-023-06617-0">Thadani et al. 2023. Nature.</a>
+	</template>
+</section>
+
+<section>
+	<h3>CoVFit uses spike protein embeddings from ESM-2 to predict MLR fitnesses</h3>
+	<img class="stretch" data-src="/images/talks/ncov_escape_ito_model_diagram.png">
+	<template class="slide-citation">
+		CoVFit from <a href="https://doi.org/10.1038/s41467-025-59422-w">Ito et al. 2025. Nat Commun.</a>
+	</template>
+</section>
+
+<section>
+	<h3>CoVFit performs poorly outside of training window</h3>
+	<p>Note also the importance of properly assessing independent parent/child lineage deltas</p>
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_lineage_delta_spike_count_covfit_vs_fitness_2025_08_13.png">
+	<template class="slide-citation">
+		CoVFit from <a href="https://doi.org/10.1038/s41467-025-59422-w">Ito et al. 2025. Nat Commun.</a>
 	</template>
 </section>
 
@@ -630,14 +649,10 @@ cell membrane fusion by forming a six-helical bundle via the two-heptad repeat d
 	</template>
 </section> -->
 
-<!-- TODO: Conduct analysis and include figure -->
 <section>
-	<h3>Analysis of CoVFit</h3>
-	<p><i>todo</i></p>
-</section>
-
-<section>
-	<h3>Still need approaches that explicitly model mutations and emergence of novel lineages</h3>
+	<h3>
+		Even with excellent out-of-sample fitness prediction, we still need approaches that explicitly model mutations and emergence of novel lineages
+	</h3>
 </section>
 
 <section style="text-align: left;">
