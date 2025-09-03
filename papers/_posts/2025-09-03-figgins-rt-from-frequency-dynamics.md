@@ -3,11 +3,11 @@ layout: paper
 title: Inferring variant-specific effective reproduction numbers from combined case and sequencing data
 image: /images/papers/figgins-rt-from-frequency-dynamics.png
 authors: Figgins M, Bedford T.
-year: 2024
-ref: Figgins and Bedford. 2024. medRxiv.
-journal: "medRxiv: 2021.12.09.21267544."
+year: 2025
+ref: Figgins and Bedford. 2025. eLife.
+journal: "eLife 14: RP104802"
 pdf: /pdfs/papers/figgins-rt-from-frequency-dynamics.pdf
-doi: 10.1101/2021.12.09.21267544
+doi: 10.7554/eLife.104802.1
 github: https://github.com/blab/rt-from-frequency-dynamics
 ---
 
