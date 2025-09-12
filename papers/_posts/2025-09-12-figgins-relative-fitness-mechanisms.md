@@ -3,8 +3,8 @@ layout: paper
 title: Frequency dynamics predict viral fitness, antigenic relationships and epidemic growth
 image: /images/papers/figgins-relative-fitness-mechanisms.png
 authors: Figgins M, Bedford T.
-year: 2024
-ref: Figgins and Bedford. 2024. medRxiv.
+year: 2025
+ref: Figgins and Bedford. 2025. medRxiv.
 journal: "medRxiv: 2024.12.02.24318334."
 pdf: /pdfs/papers/figgins-relative-fitness-mechanisms.pdf
 doi: 10.1101/2024.12.02.24318334
