@@ -4,11 +4,11 @@ title: Seasonal influenza viruses show distinct adaptive dynamics during growth 
 image: /images/papers/kistler-flu-egg-adaptation.png
 authors: Kistler K, Bedford T.
 year: 2025
-ref: Kistler and Bedford. 2025. bioRxiv.
-journal: "bioRxiv: 2025.06.12.659400."
+ref: Kistler and Bedford. 2025. Mol Biol Evol.
+journal: "Mol Biol Evol: msaf227."
 pdf: /pdfs/papers/kistler-flu-egg-adaptation.pdf
 supplement: /pdfs/papers/kistler-flu-egg-adaptation-supp.pdf
-doi: 10.1101/2025.06.12.659400
+doi: 10.1093/molbev/msaf227
 github: https://github.com/blab/egg-adaptation/
 ---
 
