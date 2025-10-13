@@ -5,7 +5,7 @@ image: /images/papers/kistler-flu-egg-adaptation.png
 authors: Kistler K, Bedford T.
 year: 2025
 ref: Kistler and Bedford. 2025. Mol Biol Evol.
-journal: "Mol Biol Evol: msaf227."
+journal: "Mol Biol Evol 42: msaf227."
 pdf: /pdfs/papers/kistler-flu-egg-adaptation.pdf
 supplement: /pdfs/papers/kistler-flu-egg-adaptation-supp.pdf
 doi: 10.1093/molbev/msaf227
