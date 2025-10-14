@@ -9,6 +9,7 @@ fediverse:
   handle: "@genehack"
 image: /images/team/john-sj-anderson.jpg
 website: https://genehack.org
+alumni: true
 ---
 
 I joined the Bedford Lab near the end of April, 2024. I have a PhD in
