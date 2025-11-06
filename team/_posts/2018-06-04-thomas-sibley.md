@@ -9,6 +9,9 @@ fediverse:
 github: tsibley
 image: /images/team/thomas-sibley.jpg
 website: https://tsibley.net
+alumni: true
+joined: 2018
+departed: 2025
 ---
 
 I joined the Bedford Lab in mid 2018 as a computing generalist focused on software engineering.
@@ -17,3 +20,5 @@ My focus, as of late 2021, is reducing the barriers to entry to use Nextstrain i
 
 From late 2018 to mid 2021, I was focused on the [Seattle Flu Study](https://seattleflu.org), where I started as the sole engineer for the informatics group.
 I designed and built the Study's [central informatics system](https://github.com/seattleflu/id3c) and staffed up and lead the software development team to build and maintain the [many software systems](https://github.com/seattleflu) which support the ever-changing work of the Study.
+
+In late 2025, I left the lab.
