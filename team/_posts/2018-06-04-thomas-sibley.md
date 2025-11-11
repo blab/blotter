@@ -9,6 +9,9 @@ fediverse:
 github: tsibley
 image: /images/team/thomas-sibley.jpg
 website: https://tsibley.net
+alumni: true
+joined: 2018
+departed: 2025
 ---
 
 I joined the Bedford Lab in mid 2018 as a computing generalist focused on software engineering.
