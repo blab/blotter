@@ -4,10 +4,10 @@ title: Near real-time data on the human neutralizing antibody landscape to influ
 image: /images/papers/kikawa-flu-antibody-landscape.png
 authors: Kikawa C, Huddleston J, Loes AN, Turner SA, Lee J, Barr IG, Cowling BJ, Englund JA, Greninger AL, Harvey R, Hasegawa H, Ho F, Lacombe K, Leung NHL, Lewis NS, Peck H, Watanabe S, Smith DJ, Bedford T, Bloom JD.
 year: 2025
-ref: Kikawa et al. 2025. bioRxiv.
-journal: "bioRxiv: 2025.09.06.674661"
+ref: Kikawa et al. 2025. Virus Evol.
+journal: "Virus Evol: veaf086"
 pdf: /pdfs/papers/kikawa-flu-antibody-landscape.pdf
-doi: 10.1101/2025.09.06.674661
+doi: 10.1093/ve/veaf086
 github: https://github.com/jbloomlab/flu-seqneut-2025
 ---
 
