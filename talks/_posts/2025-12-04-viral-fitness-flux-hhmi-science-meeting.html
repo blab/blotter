@@ -1,6 +1,6 @@
 ---
 layout: talk_reveal5
-title: Fitness flux in SARS-CoV-2 and influenza H3N2
+title: Fitness flux in SARS-CoV-2
 venue: HHMI
 event: Science Meeting
 author: Trevor Bedford
@@ -29,11 +29,11 @@ Todo:
 -->
 
 <section data-transition="fade" data-background="#000">
-	<!-- <div style="float:left; width:20%">
-		<img width=55% src="/images/talks/giphy_virus.gif">
-	</div> -->
-	<h1 class="title right-align">{{ page.title }}</h1>
+	<h1 class="title">{{ page.title }}</h1>
 	<br>
+	<div style="float:right; width:20%">
+		<img width=55% src="/images/talks/gemini_sarscov2.png">
+	</div>
 	<h4 class="title left-align">Trevor Bedford</h4>
 	<p class="title left-align">
 	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
@@ -90,7 +90,7 @@ Todo:
 <section class="left-align">
 	<h3>This talk</h3>
 	<ul>
-		<li>Frequency dynamics and fitness estimation</li>
+		<li>Frequency dynamics</li>
 		<li>Fitness flux</li>
 		<li>Mutational fitness effects</li>
 	</ul>
@@ -111,7 +111,7 @@ Todo:
   </h1>
 </section>
 
-<!-- TODO: Remove this slide -->
+<!-- TODO: Maybe remove this slide -->
 <section>
 	<h3>Population genetic expectation of variant frequency under selection</h3>
 	<p>$x' = \frac{x \, (1+s)}{x \, (1+s) + (1-x)}$ for frequency $x$ over one generation with selective advantage $s$</p>
@@ -120,19 +120,19 @@ Todo:
 	<img class="stretch" data-src="/images/talks/ncov_variants_selection_logit_trajectories.png">
 </section>
 
-<!-- TODO: Remove this slide -->
+<!-- TODO: Maybe remove this slide -->
 <section>
 	<h3>Consistent frequency dynamics in logit space (BA.2 Mar 2022)</h3>
 	<img class="stretch" data-src="/images/talks/ncov_variants_omicron_countries_frequencies_logit_2022_04_08.png">
 </section>
 
-<!-- TODO: Remove this slide -->
+<!-- TODO: Maybe remove this slide -->
 <section>
 	<h3>Consistent frequency dynamics in logit space (JN.1 Dec 2023)</h3>
 	<img class="stretch" data-src="/images/talks/ncov_variants_jn1_countries_frequencies_logit_2022_12_13.png">
 </section>
 
-<!-- TODO: Update with simple figure and pop gen language -->
+<!-- TODO: Maybe update with simple figure and pop gen language -->
 <section>
 	<h3>Multinomial logistic regression</h3>
 	<p>
@@ -162,12 +162,12 @@ Todo:
 	<h1 class="title">Fitness flux</h1>
 </section> -->
 
-<!-- <section data-background="#000">
+<section data-background="#000">
   <h1 class="title">
-    <i class="fa-solid fa-arrows-left-right fa-fw c-red"></i>
+    <i class="fa-solid fa-arrows-left-right fa-fw c-blue"></i>
     Fitness flux
   </h1>
-</section> -->
+</section>
 
 <section>
 	<h3>Fitness flux is the rate of change of mean population fitness</h3>
@@ -200,19 +200,19 @@ Todo:
 	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_2025_08_13.png">
 </section>
 
-<section>
+<!-- <section>
 	<h3>Analogous frequency dynamics and MLR fits for H3N2</h3>
 	<p>Constant clade fitness within each window, USA data only, ignores within-clade fitness variation</p>
 	<img class="stretch" data-src="/images/talks/fitness_dynamics_h3n2_clade_frequencies_2025_03_01.png">
-</section>
+</section> -->
 
-<section>
+<!-- <section>
 	<h3>H3N2 roughly doubled in fitness every 10 years</h3>
 	<p>Line thickness is proportional to variant frequency, 32 total variants</p>
 	<img class="stretch" data-src="/images/talks/fitness_dynamics_h3n2_clades_fitness_2025_03_01.png">
-</section>
+</section> -->
 
-<section>
+<!-- <section>
 	<h3>Dramatically faster fitness flux of SARS-CoV-2</h3>
 	<div style="float: left; width: 49%">
 		<img data-src="/images/talks/fitness_dynamics_sarscov2_clades_fitness_narrow_2025_08_13.png">
@@ -220,7 +220,7 @@ Todo:
 	<div style="float: right; width: 49%">
 		<img data-src="/images/talks/fitness_dynamics_h3n2_clades_fitness_narrow_2025_03_01.png">
 	</div>
-</section>
+</section> -->
 
 <!----------------------------->
 <!-- Traveling fitness waves -->
@@ -230,20 +230,30 @@ Todo:
 	<h1 class="title">Traveling fitness waves</h1>
 </section> -->
 
-<section data-background="#000">
+<!-- <section data-background="#000">
   <h1 class="title">
     <i class="fa-solid fa-wave-square fa-fw c-green"></i>
     Traveling fitness waves
   </h1>
+</section> -->
+
+<section>
+	<h3>Traveling wave as viral population increases in fitness</h3>
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_location_joyplot_2025_08_13.png">
 </section>
 
 <section>
+	<h3>Slow down of fitness flux after 2022, but still rapid evolution</h3>
+	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_flux_2025_08_13.png">
+</section>
+
+<!-- <section>
 	<h3>Multistrain models produce traveling waves in antigenic space</h3>
 	<img class="stretch" data-src="/images/talks/canalization_dynamics_grid.png">
 	<template class="slide-citation">
 		<a href="/papers/bedford-canalization/">Bedford, Rambaut and Pascual. 2012.</a>
 	</template>
-</section>
+</section> -->
 
 <section>
 	<h3>Many mutations of small effect create traveling fitness waves</h3>
@@ -255,20 +265,20 @@ Todo:
 	</template>
 </section>
 
-<section>
+<!-- <section>
 	<h3>Using empirical frequencies and MLR fitness to characterize fitness wave in SARS-CoV-2</h3>
 	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_location_joyplot_2025_08_13.png">
-</section>
+</section> -->
 
 <section>
 	<h3>Fitness variance correlates well with fitness flux</h3>
 	<img class="stretch" data-src="/images/talks/fitness_dynamics_sarscov2_clades_variance_vs_flux_2025_08_13.png">
 </section>
 
-<section>
+<!-- <section>
 	<h3>Fitness variance correlates well with fitness flux</h3>
 	<img class="stretch" data-src="/images/talks/fitness_dynamics_h3n2_clades_variance_vs_flux_2025_03_01.png">
-</section>
+</section> -->
 
 <section>
 	<h3>This is a specific example of Fisher's fundamental theorem</h3>
@@ -291,7 +301,7 @@ Todo:
 
 <section data-background="#000">
   <h1 class="title">
-    <i class="fa-solid fa-square-virus fa-fw c-purple"></i>
+    <i class="fa-solid fa-square-virus fa-fw c-blue"></i>
     Mutational fitness effects
   </h1>
 </section>
@@ -341,12 +351,12 @@ cell membrane fusion by forming a six-helical bundle via the two-heptad repeat d
 	<h1 class="title">Predicting fitness effects</h1>
 </section> -->
 
-<section data-background="#000">
+<!-- <section data-background="#000">
   <h1 class="title">
     <i class="fa-solid fa-meteor fa-fw c-orange"></i>
     Predicting fitness effects
   </h1>
-</section>
+</section> -->
 
 <section>
 	<h3>Simple linear model to combine predictors into a fitness estimate</h3>
