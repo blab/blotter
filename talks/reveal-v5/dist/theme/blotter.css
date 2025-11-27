@@ -420,6 +420,23 @@ body {
   font-size: 1.1em;
 }
 
+.stack {
+   display: inline-flex;
+   flex-direction: column;
+   align-items: center;     /* center text above icons */
+   line-height: 1;
+ }
+ .stack .label {
+   font-style: italic;
+   font-size: 0.75em;       /* like a <sup>, but easier to place */
+   margin-bottom: 0.1em;
+ }
+ .icons {
+   display: inline-flex;
+   align-items: center;
+   gap: .25em;              /* space between icons, optional */
+ }
+
 /*********************************************
  * COLORS
  *********************************************/
