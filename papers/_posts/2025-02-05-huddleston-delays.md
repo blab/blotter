@@ -7,7 +7,8 @@ year: 2025
 ref: Huddleston and Bedford. 2025. eLife.
 journal: "eLife 14: RP104282."
 pdf: /pdfs/papers/huddleston-delays.pdf
-doi: 10.7554/eLife.104282.3
+supplement: /pdfs/papers/huddleston-delays-supp.pdf
+doi: 10.7554/eLife.104282
 github: https://github.com/blab/flu-forecasting-delays
 ---
 
