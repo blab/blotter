@@ -7,7 +7,7 @@ year: 2025
 ref: Kikawa et al. 2025. eLife.
 journal: "eLife 14: RP106811."
 pdf: /pdfs/papers/kikawa-h3n2-dms-evol-corr.pdf
-doi: 10.7554/eLife.106811.1
+doi: 10.7554/eLife.106811
 github: https://github.com/jbloomlab/flu_H3_2023_seqneut_vs_growth
 ---
 
