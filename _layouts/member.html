@@ -80,6 +80,17 @@ layout: default
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
+		{% if member.citation %}
+		<div class="smallhead">
+			Citation Data
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa-solid fa-chart-bar fa-fw"></i>
+			<a class="off" href="http://{{ member.citation }}">{{ member.citation }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
 		{% if member.calendar %}
 		<div class="smallhead">
 			Calendar

@@ -6,6 +6,7 @@ handle: trvrb
 twitter: trvrb
 github: trvrb
 scholar: RIi-1pAAAAAJ
+citation: trvrb.github.io/index
 image: /images/team/trevor-bedford.jpg
 cv: /pdfs/team/trevor-bedford-cv.pdf
 email: tb@bedford.io
