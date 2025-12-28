@@ -5,7 +5,7 @@ image: /images/papers/kikawa-flu-antibody-landscape.png
 authors: Kikawa C, Huddleston J, Loes AN, Turner SA, Lee J, Barr IG, Cowling BJ, Englund JA, Greninger AL, Harvey R, Hasegawa H, Ho F, Lacombe K, Leung NHL, Lewis NS, Peck H, Watanabe S, Smith DJ, Bedford T, Bloom JD.
 year: 2025
 ref: Kikawa et al. 2025. Virus Evol.
-journal: "Virus Evol: veaf086"
+journal: "Virus Evol 11: veaf086"
 pdf: /pdfs/papers/kikawa-flu-antibody-landscape.pdf
 doi: 10.1093/ve/veaf086
 github: https://github.com/jbloomlab/flu-seqneut-2025
