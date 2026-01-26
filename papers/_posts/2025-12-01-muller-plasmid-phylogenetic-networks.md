@@ -2,7 +2,7 @@
 layout: paper
 title: Quantifying plasmid movement in drug-resistant Shigella species using phylodynamic inference
 image: /images/papers/muller-plasmid-phylogenetic-networks.png
-authors: Müller NF, Wick RR, Judd LM, Williamson DA, Bedford T, Howden B, Duchêne S, Ingle DJ
+authors: Müller NF, Wick RR, Judd LM, Williamson DA, Bedford T, Howden B, Duchêne S, Ingle DJ.
 year: 2025
 ref: Müller et al. 2025. PLoS Pathog.
 journal: "PLoS Pathog 21: e1013621."
