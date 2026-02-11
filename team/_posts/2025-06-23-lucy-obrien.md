@@ -5,6 +5,7 @@ position: Undergraduate Intern
 github: lucinaob
 image: /images/team/lucy-obrien.jpg
 joined: 2025
+departed: 2025
 alumni: true
 ---
 

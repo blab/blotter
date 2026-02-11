@@ -6,6 +6,9 @@ github: kimandrews
 scholar: M2_G2OQAAAAJ
 image: /images/team/kim-andrews.jpg
 website: https://kimberlyandrews.net/
+joined: 2023
+departed: 2025
+alumni: true
 ---
 
 I joined the lab in December 2023 as a Bioinformatician. I obtained my PhD in 2009 from the University of Hawai‘i specializing in ecology and evolution, and I have broad interest in using genomic tools to explore evolutionary questions. Previously I held research and bioinformatics positions at Durham University, University of Idaho, and University of Washington.

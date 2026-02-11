@@ -4,6 +4,8 @@ title: Donna Modrell
 position: Administrative coordinator
 github: dmodrell
 image: /images/team/donna-modrell.jpg
+joined: 2022
+departed: 2024
 alumni: true
 ---
 

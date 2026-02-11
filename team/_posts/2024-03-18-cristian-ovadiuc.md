@@ -5,9 +5,9 @@ position: Rotation student
 github: lab01atgc
 image: /images/team/cristian-ovadiuc.jpg
 website: https://lab01atgc.github.io/
-alumni: true
 joined: 2024
 departed: 2024
+alumni: true
 ---
 
 _Cristian is now a researcher at Microsoft AI Red Team._

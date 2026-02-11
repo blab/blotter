@@ -4,9 +4,9 @@ title: Eslam Abousamra
 position: MPH student
 github: Eabousam
 image: /images/team/eslam-abousamra.jpg
-alumni: true
 joined: 2022
 departed: 2024
+alumni: true
 ---
 
 _Eslam is now a student in the [CUNY SPH](https://sph.cuny.edu/) PhD program._

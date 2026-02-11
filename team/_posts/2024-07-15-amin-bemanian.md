@@ -6,6 +6,7 @@ twitter: aminsense
 github: abemanian
 scholar: vbKfGzwAAAAJ
 image: /images/team/amin-bemanian.jpg
+joined: 2024
 ---
 
 I am a pediatric infectious disease fellow at the University of Washington/Seattle Children's Hospital who joined the lab in July 2024. My research focuses on investigating geospatial patterns of spread and transmission in viruses by utilizing phylogenetic and sequencing data.

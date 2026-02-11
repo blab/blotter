@@ -4,6 +4,8 @@ title: Ariana Nagainis
 position: Rotation student
 github: anagainis
 image: /images/team/ariana-nagainis.jpg
+joined: 2023
+departed: 2023
 alumni: true
 ---
 
