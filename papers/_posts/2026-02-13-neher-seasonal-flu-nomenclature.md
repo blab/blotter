@@ -5,7 +5,7 @@ image: /images/papers/neher-seasonal-flu-nomenclature.png
 authors: Neher RA, Huddleston J, Bedford T, Lewis NS, Harvey R, Galiano M, Byrne AMP, James S, Smith D, Łuksza M, Ruchnewitz D, Lässig M, Fujisaki S, Watanabe S, Hasegawa H, Hassell N, Wentworth DE, Kondor R, Deng Y-M, Dapat C, Subbarao K, Barr I.
 year: 2026
 ref: Neher et al. 2026. Influenza Other Respir Viruses.
-journal: "Influenza Other Respir Viruses 20 :e70230."
+journal: "Influenza Other Respir Viruses 20: e70230."
 pdf: /pdfs/papers/neher-seasonal-flu-nomenclature.pdf
 doi: 10.1111/irv.70230
 github: https://github.com/influenza-clade-nomenclature
