@@ -38,7 +38,7 @@ module Readmes
 					File.delete(dir+"index.md") if File.exist?(dir+"index.md")
 
 					# find image links within readme
-					if File.exists?(dir+"README.md")
+					if File.exist?(dir+"README.md")
 						contents = File.open(dir+"README.md", "r").read
 						matchesHTML = contents.scan /<img.+src=\"([^"]+)\"/
 						matchesMD = contents.scan /\!\[[^\]]*\]\(([^)]+)\)/

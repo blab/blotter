@@ -8,7 +8,7 @@ config = YAML.load_file("_config.yml")
 config["projects"].each do |repo|
 	name = repo.split('/').drop(1).join('')
 	Dir.chdir($basedir + "/projects")
-	if !Dir.exists?(name)								# clone project repo
+	if !Dir.exist?(name)								# clone project repo
 		`git clone https://github.com/#{repo}.git`
 	end
 	Dir.chdir($basedir + "/projects/" + name)			# drop into blotter dir
