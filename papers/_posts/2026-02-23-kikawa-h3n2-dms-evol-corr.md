@@ -3,8 +3,8 @@ layout: paper
 title: High-throughput neutralization measurements correlate strongly with evolutionary success of human influenza strains
 image: /images/papers/kikawa-h3n2-dms-evol-corr.png
 authors: Kikawa C, Loes AN, Huddleston J, Figgins MD, Steinberg P, Griffiths T, Drapeau EM, Peck H, Barr IG, Englund JA, Hensley SE, Bedford T, Bloom JD.
-year: 2025
-ref: Kikawa et al. 2025. eLife.
+year: 2026
+ref: Kikawa et al. 2026. eLife.
 journal: "eLife 14: RP106811."
 pdf: /pdfs/papers/kikawa-h3n2-dms-evol-corr.pdf
 doi: 10.7554/eLife.106811
