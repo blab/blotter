@@ -114,14 +114,15 @@ layout: default
 		<div class="bigspacer"></div>
 		{% endif %}
 		{% if member.email %}
-		{% assign emailarray = member.email | split: '@' %}
+		{% assign emailparts = member.email | split: '@' %}
 		<div class="smallhead">
 			Email
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa-regular fa-envelope fa-fw"></i>
-			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+			<span class="email-link" data-user="{{ emailparts.first }}" data-domain="{{ emailparts.last }}"></span>
+			<noscript>{{ emailparts.first }}<span style="display:none">obfuscate</span>&#64;{{ emailparts.last }}</noscript>
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
@@ -219,3 +220,14 @@ layout: default
 	</div>
 	<div class="col-lg-1"></div>
 </div>
+
+<script>
+	document.querySelectorAll('.email-link').forEach(function(el) {
+		var addr = el.dataset.user + '@' + el.dataset.domain;
+		var a = document.createElement('a');
+		a.className = 'off';
+		a.href = 'mailto:' + addr;
+		a.textContent = addr;
+		el.appendChild(a);
+	});
+</script>
