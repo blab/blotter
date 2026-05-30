@@ -7,6 +7,16 @@ permalink: /:categories/:title/
 future: true
 sass:
   sass_dir: css
+  # Silence Sass deprecation warnings from vendored Bootstrap 5.3.x and
+  # from our own @import-based entry point. Bootstrap 5.3 was finalized
+  # before Dart Sass turned these categories on by default (Aug 2024) and
+  # the @use migration is held for Bootstrap 6. Revisit when BS6 is adopted.
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - if-function
+    - global-builtin
+    - color-functions
 
 plugins:
   - jekyll-gzip
