@@ -1,4 +1,9 @@
+@use "sass:math";
+
 $primary: #DD2D2D;
+$link-decoration: none;
+$link-hover-decoration: underline;
+$grid-gutter-width: 1.875rem;
 $gray: #555;
 $gray-light: #777;
 $line-height-base: 1.6;
@@ -21,12 +26,12 @@ $nav-pills-link-active-color: #555;
 $nav-pills-link-active-bg: #e7e7e7;
 $nav-pills-border-radius: 0px;
 
-h1, .h1 { font-size: floor($font-size-base * 2.50); } /* ~34px */
-h2, .h2 { font-size: floor($font-size-base * 2.15); } /* ~30px */
-h3, .h3 { font-size: ceil($font-size-base * 1.70); }  /* ~24px */
-h4, .h4 { font-size: ceil($font-size-base * 1.25); }  /* ~18px */
+h1, .h1 { font-size: math.floor($font-size-base * 2.50); } /* ~34px */
+h2, .h2 { font-size: math.floor($font-size-base * 2.15); } /* ~30px */
+h3, .h3 { font-size: math.ceil($font-size-base * 1.70); }  /* ~24px */
+h4, .h4 { font-size: math.ceil($font-size-base * 1.25); }  /* ~18px */
 h5, .h5 { font-size: $font-size-base; }
-h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
+h6, .h6 { font-size: math.ceil($font-size-base * 0.85); }  /* ~12px */
 
 // 20px gutter
 .reduced-gutter.row {
@@ -87,6 +92,15 @@ h6 {
 // also modify Bootstrap source in _reboot.scss
 b, strong {
   font-weight: bold;
+}
+
+// Bootstrap 5 removed the media object component
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+.media-body {
+  flex: 1;
 }
 
 /* logo */

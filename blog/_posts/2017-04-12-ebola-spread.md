@@ -8,8 +8,8 @@ author: Gytis Dudas
 We just had a big paper accepted in [Nature](http://www.nature.com/nature/journal/vaop/ncurrent/full/nature22040.html), which looks at the [entirety of the West African Ebola virus epidemic of 2013-2015](/papers/dudas-ebola-epidemic-spread/).
 The project has existed in a variety of incarnations for well over a year with hints here and there of something big in the making, which unsurprisingly is the last bit of work that followed me from my PhD in Edinburgh to Seattle.
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j4Ut4krp8GQ"></iframe>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/j4Ut4krp8GQ"></iframe>
 </div>
 <br>
 
