@@ -9,6 +9,7 @@ journal: "bioRxiv: 2026.03.23.713807."
 pdf: /pdfs/papers/andrews-nextstrain-pathogens.pdf
 doi: 10.64898/2026.03.23.713807
 github: https://github.com/nextstrain
+website: https://nextstrain.org/pathogens
 ---
 
 # Abstract
