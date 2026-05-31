@@ -62,22 +62,47 @@ exclude:
   - "projects/dengue-antigenic-dynamics/titer_model/seasia_output/*"
 
 readmes:
+  - blab/adaptive-evolution
+  - blab/cartography
   - blab/chikv
+  - blab/cytb
   - blab/dengue-antigenic-dynamics
+  - blab/egg-adaptation
+  - blab/esm-selection
+  - blab/evofr
+  - blab/fitness-flux
   - blab/flu-forecasting
+  - blab/flu-forecasting-delays
   - blab/genomic-horizon
   - blab/h3n2-reassortment
   - blab/h5n1-cambodia
+  - blab/measurements-panel
   - blab/mers-structure
+  - blab/mpox-dynamics
+  - blab/mpox-la
   - blab/mumps-wa-phylodynamics
   - blab/ncov-cryptic-transmission
+  - blab/ncov-forecasting-fit
+  - blab/ncov-king-county
+  - blab/ncov-orf8
   - blab/ncov-phylodynamics
+  - blab/ncov-saltational
   - blab/ncov-wa-d614g
   - blab/ncov-wa-phylodynamics
+  - blab/ncov-wa-variant-severity
+  - blab/ncov-usa-mig
   - blab/nextflu
+  - blab/pathogen-embed
+  - blab/phylo-kernel-public
+  - blab/phylogeo-signal
+  - blab/relative-fitness-mechanisms
   - blab/roka
+  - blab/rt-from-frequency-dynamics
   - blab/seasonal-cov-adaptive-evolution
   - blab/siv-cst
+  - blab/size-genetic-clusters
+  - blab/spatial-tumor-phylodynamics
+  - blab/trellis
   - blab/unsampled
   - blab/yellow-fever
   - blab/zika-colombia
