@@ -84,7 +84,7 @@ mdarray.each { |md|
 	end
 
 	# go through file and replace all links that point to source code files with equivalent GitHub links
-	filetypes = ['pdf', 'class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'timeseries', 'summary', 'txt', 'xml']
+	filetypes = ['pdf', 'class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'timeseries', 'summary', 'txt', 'xml', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'bmp', 'tiff', 'yml', 'yaml', 'toml', 'sh', 'bash', 'md5', 'sha256', 'bib', 'tex', 'zip', 'tar', 'gz', 'tgz', 'mp4', 'mov']
 	filetypes.each {|filetype|
 		contents.gsub!(/\((?!http)(\S+)\.#{filetype}\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1.#{filetype})")
 	}
@@ -93,6 +93,24 @@ mdarray.each { |md|
 	if name_to_readme[project_name]
 		# catching links that end in "/"
 		contents.gsub!(/\((?!http)(\S+\/)\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1)")
+		# catching remaining relative-path link targets with no extension and no trailing slash
+		# (e.g. [doc](./ingest), [doc](HIV/bayesian_timetree), [doc](LICENSE)).
+		# Anchored to ](...) to avoid mangling parenthetical prose like "(see also)".
+		contents.gsub!(/\]\(([^\s)]+)\)/) do |match|
+			target = $1
+			if target =~ /\A(?:https?:|mailto:|tel:|javascript:|ftp:|#|\/)/
+				match
+			elsif target.end_with?('/')
+				match
+			elsif target.sub(/\A\.{1,2}\//, '').include?('.')
+				# any remaining "." after stripping leading ./ or ../ indicates
+				# either a file extension or a domain-like author error (e.g.
+				# www.nextstrain.org/dengue); leave untouched
+				match
+			else
+				"](https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}#{target})"
+			end
+		end
 	end
 
 	out.puts contents
