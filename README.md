@@ -52,13 +52,34 @@ bundle exec jekyll serve
 
 Open your browser to `http://localhost:4000/`. More information on Jekyll can be found [here](http://jekyllrb.com/).
 
-To include projects, preprocessing scripts are necessary to clone project repos and update Jekyll metadata. This can be accomplished with:
+To include project pages, three preprocessing scripts fetch data from GitHub before Jekyll runs. First-time setup clones the `projects:` full-clone repos into `projects/<name>/`:
 
 ```
 ruby _scripts/update-and-preprocess.rb
 ```
 
-Then `jekyll build` works as normal.
+After that, use the Rakefile targets below for day-to-day iteration.
+
+## Development workflow
+
+A `Rakefile` exposes the preprocessing steps and Jekyll build as named targets:
+
+| Target | What it does |
+|---|---|
+| `rake readmes` | Fetch each repo in `_config.yml`'s `readmes:` list, rewrite links to GitHub, download images, write `projects/<name>/index.md`. |
+| `rake preprocess` | Walk `.md` files under `projects:` (full-clone) project directories, add front matter, rewrite `.md → .html` and source-file links. |
+| `rake data` | Query GitHub via Octokit for project metadata (contributors, recent commits, homepage). Writes `_data/projects.yml`. Requires `GITHUB_TOKEN`. |
+| `rake build` | `bundle exec jekyll build`. |
+| `rake serve` | `bundle exec jekyll serve --livereload`. |
+| `rake all` | Run `readmes`, `preprocess`, `data`, then `build`. Useful for a clean re-seed. |
+
+Typical inner loop:
+
+1. Once per session (or whenever upstream data may have changed), seed: `rake all`.
+2. Iterate: `rake serve` and edit files. Jekyll auto-rebuilds.
+3. When editing a preprocessing script, re-run only that script's target — e.g. `rake readmes && rake build`. The `_scripts/generate-readmes.rb` output is idempotent, so you can re-run freely without first wiping state.
+
+The deploy driver `blotter-deploy.rb` (in the sibling `blotter-deploy` repo) rebuilds everything from a clean state via `git reset --hard` + `git clean -f`, and is meant for validating the full deploy pipeline, not for fast iteration. Don't edit files inside its `blotter/` checkout — they'll be wiped on the next `--test` run.
 
 ## Contribute
 
