@@ -98,6 +98,7 @@ readmes:
   - blab/relative-fitness-mechanisms
   - blab/roka
   - blab/rt-from-frequency-dynamics
+  - blab/sarscov2-adaptive-evolution
   - blab/seasonal-cov-adaptive-evolution
   - blab/siv-cst
   - blab/size-genetic-clusters
