@@ -56,6 +56,17 @@ categories:
 			<i class="fa-solid fa-gears fa-fw"></i>
 			<a class="off" href="https://github.com/{{ project.repo }}">github.com/{{ project.repo | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
 		</div>
+		{% if project.homepage %}
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Website
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa-solid fa-globe fa-fw"></i>
+			<a class="off" href="{{ project.homepage }}">{{ project.homepage | remove: 'http://' | remove: 'https://' | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
+		</div>
+		{% endif %}
 		<div class="bigspacer"></div>
 		<div class="smallhead">
 			Contributors

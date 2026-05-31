@@ -47,6 +47,8 @@ module Projects
 				project_description = octokit_repo.description
 				project_url = "/projects/#{project_title}/"
 				project_date = octokit_repo.updated_at
+				project_homepage = octokit_repo.homepage
+				project_homepage = nil if project_homepage.nil? || project_homepage.strip.empty?
 
 				# load contributor metadata
 				octokit_contributors = client.contributors(repo)
@@ -112,6 +114,7 @@ module Projects
 					"owner" => project_owner,
 					"description" => project_description,
 					"url" => project_url,
+					"homepage" => project_homepage,
 					"contributors" => project_contributors,
 					"commits" => project_commits,
 					"readme_only" => readme_only
