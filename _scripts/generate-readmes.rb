@@ -11,6 +11,7 @@ module Readmes
 	def self.generate_readmes(config_file)
 
 		project_data = {}
+		branches = {}
 
 		config = YAML.load_file(config_file)
 		projects_array = config["readmes"]
@@ -22,14 +23,25 @@ module Readmes
 
 				puts "\t#{repo}"
 
-				begin
-					githubfile = Down.download(
-        		"https://raw.githubusercontent.com/#{repo}/master/README.md",
-          	max_redirects: 5
-        	)
-				rescue Down::Error
+				githubfile = nil
+				branch = nil
+				['main', 'master'].each do |b|
+					begin
+						githubfile = Down.download(
+							"https://raw.githubusercontent.com/#{repo}/#{b}/README.md",
+							max_redirects: 5
+						)
+						branch = b
+						break
+					rescue Down::Error
+						next
+					end
+				end
+
+				if githubfile.nil?
 					puts "\t\tFile not found"
 				else
+					branches[repo] = branch
 					name = repo.split('/').drop(1).join('')
 					FileUtils.mkdir_p("projects/#{name}/")
 					dir = "projects/#{name}/"
@@ -46,7 +58,7 @@ module Readmes
 						matches.each do |match|
 							imagePath = match[0]
 							puts "\t\t#{imagePath}"
-							imageUrl = "https://raw.githubusercontent.com/#{repo}/master/#{imagePath}"
+							imageUrl = "https://raw.githubusercontent.com/#{repo}/#{branch}/#{imagePath}"
 							begin
 								imageFile = Down.download(imageUrl, max_redirects: 5)
 							rescue Down::Error
@@ -61,6 +73,9 @@ module Readmes
 
 			end
 		end
+
+		FileUtils.mkdir_p("_data")
+		File.write("_data/readme_branches.yml", branches.to_yaml)
 
 	end
 
