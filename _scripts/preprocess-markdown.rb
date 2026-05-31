@@ -1,33 +1,28 @@
-# Preprocessing script
-# Run before `jekyll build` to walk through directories and add YAML front matter to Markdown files
-# and to rename readme.md files to index.md
+# Preprocessing script for `projects:` (full-clone) projects only.
+# Renames README.md -> index.md, adds YAML front matter to .md files
+# that lack it, and rewrites links to local pages (.md -> .html) and
+# to source files (.py, .ipynb, ...) -> GitHub.
+#
+# Readme-only projects (config: readmes:) are handled end-to-end by
+# generate-readmes.rb and are NOT touched here.
 
 require 'yaml'
 $basedir = Dir.pwd
 
-# collect mapping of project name to repo via _config.yml
-name_to_repo = Hash.new
 config = YAML.load_file("_config.yml")
-(config["projects"] + config["readmes"]).each do |repo|
+
+# map project name -> repo for the full-clone set only
+name_to_repo = Hash.new
+project_names = []
+(config["projects"] || []).each do |repo|
 	name = repo.split('/').drop(1).join('')
 	name_to_repo[name] = repo
+	project_names << name
 end
 
-# mark projects that are only readmes
-name_to_readme = Hash.new
-config = YAML.load_file("_config.yml")
-config["readmes"].each do |repo|
-	name = repo.split('/').drop(1).join('')
-	name_to_readme[name] = true
-end
+# collect markdown files only under full-clone project directories
+mdarray = project_names.flat_map { |n| Dir.glob("projects/#{n}/**/*.md") }
 
-# load per-repo default branch resolved by generate-readmes.rb
-branches = File.exist?("_data/readme_branches.yml") ? YAML.load_file("_data/readme_branches.yml") : {}
-
-# collect all markdown files
-mdarray = Dir.glob("projects/**/*.md")
-
-# go through each markdown file
 mdarray.each { |md|
 
 	basename = File.basename(md)
@@ -53,7 +48,6 @@ mdarray.each { |md|
 	end
 
 	repo = name_to_repo[project_name]
-	branch = branches[repo] || "master"
 	within_project_directory = full_directory[/projects\/#{project_name}\/(.*)/, 1]
 
 	# if file is lacking YAML front matter, add some
@@ -74,44 +68,15 @@ mdarray.each { |md|
 		out.puts
 	end
 
-	# rewrite .md links: for readme-only repos, point at GitHub (the
-	# .html targets don't exist locally); for full project clones, swap
-	# to the .html that jekyll will produce
-	if name_to_readme[project_name]
-		contents.gsub!(/\((?!http)(\S+)\.md\)/, "(https://github.com/#{repo}/blob/#{branch}/#{within_project_directory}\\1.md)")
-	else
-		contents.gsub!(/\((?!http)(\S+)\.md\)/, "(\\1.html)")
-	end
+	# rewrite .md links to .html (these point to local Jekyll-rendered pages)
+	contents.gsub!(/\((?!http)(\S+)\.md\)/, "(\\1.html)")
 
-	# go through file and replace all links that point to source code files with equivalent GitHub links
-	filetypes = ['pdf', 'class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'timeseries', 'summary', 'txt', 'xml', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'bmp', 'tiff', 'yml', 'yaml', 'toml', 'sh', 'bash', 'md5', 'sha256', 'bib', 'tex', 'zip', 'tar', 'gz', 'tgz', 'mp4', 'mov']
+	# rewrite source-file links to GitHub. `projects:` repos are master-only today;
+	# revisit if any switches to main.
+	filetypes = ['pdf', 'class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'timeseries', 'summary', 'txt', 'xml']
 	filetypes.each {|filetype|
-		contents.gsub!(/\((?!http)(\S+)\.#{filetype}\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1.#{filetype})")
+		contents.gsub!(/\((?!http)(\S+)\.#{filetype}\)/, "(https://github.com/#{repo}/tree/master/#{within_project_directory}\\1.#{filetype})")
 	}
-
-	# if readme, replace all internal links with GitHub links
-	if name_to_readme[project_name]
-		# catching links that end in "/"
-		contents.gsub!(/\((?!http)(\S+\/)\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1)")
-		# catching remaining relative-path link targets with no extension and no trailing slash
-		# (e.g. [doc](./ingest), [doc](HIV/bayesian_timetree), [doc](LICENSE)).
-		# Anchored to ](...) to avoid mangling parenthetical prose like "(see also)".
-		contents.gsub!(/\]\(([^\s)]+)\)/) do |match|
-			target = $1
-			if target =~ /\A(?:https?:|mailto:|tel:|javascript:|ftp:|#|\/)/
-				match
-			elsif target.end_with?('/')
-				match
-			elsif target.sub(/\A\.{1,2}\//, '').include?('.')
-				# any remaining "." after stripping leading ./ or ../ indicates
-				# either a file extension or a domain-like author error (e.g.
-				# www.nextstrain.org/dengue); leave untouched
-				match
-			else
-				"](https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}#{target})"
-			end
-		end
-	end
 
 	out.puts contents
 
