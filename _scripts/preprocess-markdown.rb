@@ -74,8 +74,14 @@ mdarray.each { |md|
 		out.puts
 	end
 
-	# go through file and replace all links that point to .md files with the equivalent .html file
-	contents.gsub!(/\((?!http)(\S+)\.md\)/, "(\\1.html)")
+	# rewrite .md links: for readme-only repos, point at GitHub (the
+	# .html targets don't exist locally); for full project clones, swap
+	# to the .html that jekyll will produce
+	if name_to_readme[project_name]
+		contents.gsub!(/\((?!http)(\S+)\.md\)/, "(https://github.com/#{repo}/blob/#{branch}/#{within_project_directory}\\1.md)")
+	else
+		contents.gsub!(/\((?!http)(\S+)\.md\)/, "(\\1.html)")
+	end
 
 	# go through file and replace all links that point to source code files with equivalent GitHub links
 	filetypes = ['pdf', 'class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'timeseries', 'summary', 'txt', 'xml']
