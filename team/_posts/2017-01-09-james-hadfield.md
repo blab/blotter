@@ -9,6 +9,8 @@ scholar: bgbbikoAAAAJ
 image: /images/team/james-hadfield.jpg
 ---
 
+_James's primary supervisor is JT McCrone, Trevor remains as advisor for James and the Nextstrain team_
+
 I work on all aspects of [nextstrain](http://nextstrain.org), including a mixture of programming, data visualization, modeling, phylogenetics and communication. I have ongoing research projects on Influenza and viral reassortment detection.
 
 I received my BSc(hons) in mathematics from Canterbury University, New Zealand and my PhD in bacterial genomics from the [Sanger Institute](http://www.sanger.ac.uk/) (University of Cambridge) supervised by [Julian Parkhill](http://www.sanger.ac.uk/people/directory/parkhill-julian) and [Nick Thomson](http://www.sanger.ac.uk/people/directory/thomson-nicholas-robert). I've previously worked in virology with [Arvind Varsani](https://biodesign.asu.edu/arvind-varsani) and in RNA bioinformatics with [Paul Gardner](http://www.biol.canterbury.ac.nz/people/gardner.shtml).
