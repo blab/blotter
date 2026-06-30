@@ -22,12 +22,7 @@
 
       .line {
         fill: none;
-        stroke: #3b759e;
         stroke-width: 3px;
-      }
-
-      .point {
-        fill: #3b759e;
       }
 
       .axis text {
@@ -55,6 +50,11 @@
         fill: #333;
       }
 
+      .legend text {
+        font-size: 15px;
+        fill: #333;
+      }
+
     </style>
   </head>
 
@@ -66,6 +66,9 @@
 
     <script>
 
+      var TOTAL_COLOR  = "#3b759e";
+      var CLAUDE_COLOR = "#d97757";
+
       var margin = { top: 20, right: 30, bottom: 45, left: 55 };
       var parseMonth = d3.timeParse("%Y-%m");
 
@@ -76,7 +79,8 @@
 
         data.forEach(function(d) {
           d.date = parseMonth(d.month);
-          d.count = +d.count;
+          d.total = +d.total;
+          d.claude = +d.claude;
         });
 
         function render() {
@@ -99,13 +103,9 @@
             .range([0, innerWidth]);
 
           var y = d3.scaleLinear()
-            .domain([0, d3.max(data, function(d) { return d.count; })])
+            .domain([0, d3.max(data, function(d) { return d.total; })])
             .nice()
             .range([innerHeight, 0]);
-
-          var line = d3.line()
-            .x(function(d) { return x(d.date); })
-            .y(function(d) { return y(d.count); });
 
           // horizontal gridlines
           g.append("g")
@@ -138,21 +138,47 @@
             .attr("text-anchor", "middle")
             .text("Commits per month");
 
-          // line
-          g.append("path")
-            .datum(data)
-            .attr("class", "line")
-            .attr("d", line);
+          function drawSeries(accessor, color) {
+            var line = d3.line()
+              .x(function(d) { return x(d.date); })
+              .y(function(d) { return y(accessor(d)); });
 
-          // points
-          g.selectAll(".point")
-            .data(data)
-            .enter()
-            .append("circle")
-            .attr("class", "point")
-            .attr("cx", function(d) { return x(d.date); })
-            .attr("cy", function(d) { return y(d.count); })
-            .attr("r", 3.5);
+            g.append("path")
+              .datum(data)
+              .attr("class", "line")
+              .style("stroke", color)
+              .attr("d", line);
+
+            g.append("g").selectAll("circle")
+              .data(data)
+              .enter()
+              .append("circle")
+              .attr("cx", function(d) { return x(d.date); })
+              .attr("cy", function(d) { return y(accessor(d)); })
+              .attr("r", 3)
+              .style("fill", color);
+          }
+
+          drawSeries(function(d) { return d.total; }, TOTAL_COLOR);
+          drawSeries(function(d) { return d.claude; }, CLAUDE_COLOR);
+
+          // legend (top-left, where the plot is empty)
+          var series = [
+            { label: "All commits", color: TOTAL_COLOR },
+            { label: "Claude co-authored", color: CLAUDE_COLOR }
+          ];
+          var legend = g.append("g")
+            .attr("class", "legend")
+            .attr("transform", "translate(8,6)");
+          series.forEach(function(s, i) {
+            var row = legend.append("g").attr("transform", "translate(0," + (i * 23) + ")");
+            row.append("line")
+              .attr("x1", 0).attr("x2", 26).attr("y1", 0).attr("y2", 0)
+              .style("stroke", s.color).style("stroke-width", 3);
+            row.append("circle")
+              .attr("cx", 13).attr("cy", 0).attr("r", 3).style("fill", s.color);
+            row.append("text").attr("x", 34).attr("y", 5).text(s.label);
+          });
         }
 
         render();
