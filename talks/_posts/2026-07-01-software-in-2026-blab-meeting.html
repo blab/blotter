@@ -1,0 +1,108 @@
+---
+layout: talk_reveal5
+title: Writing Software in 2026
+venue: Fred Hutch
+event: McCrone / Bedford Lab meeting
+author: Trevor Bedford
+draft: true
+---
+
+<section data-transition="fade" data-background="#000">
+	<h1 class="title">{{ page.title }}</h1>
+	<br>&nbsp;<br>
+	<h4 class="title left-align">Trevor Bedford</h4>
+	<p class="title left-align">
+	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
+	<br>
+	{{ page.date | date: "%-d %b %Y" }}
+	<br>
+	{{ page.event }}
+	<br>
+	{{ page.venue }}
+</section>
+
+<section>
+    <h4>
+        <p class="left left-align" style="float:left;">
+            "It is a profoundly erroneous truism, repeated by all copy-books and by eminent
+            people when they are making speeches, that we should cultivate the habit of
+            thinking of what we are doing. The precise opposite is the case. <b>Civilization advances
+            by extending the number of important operations which we can perform without thinking
+            about them.</b> Operations of thought are like cavalry charges in a battle — they are strictly
+            limited in number, they require fresh horses, and must only be made at decisive moments."
+        </p>
+        <p class="right" style="float:right;">
+            — Alfred North Whitehead, 1911
+        </p>
+    </h4>
+</section>
+
+<!--<section >
+    <h2>
+        <p class="left left-align" style="float:left;">
+            "Civilization advances by extending the number of operations we can perform without
+            thinking about them"
+        </p>
+        <p class="right" style="float:right;">
+            — Alfred North Whitehead, 1911
+        </p>
+    </h2>
+</section>-->
+
+<section class="left-align">
+	<h2>
+	    Software has gotten incredibly <i>cheap</i> to build. You can just make one-off things
+		for experiments, tasks, etc...
+	</h2>
+</section>
+
+<section>
+	<h3>My monthly GitHub commits</h3>
+	<iframe class="stretch" data-src="/talks/viz/commit-counts/"></iframe>
+</section>
+
+<section class="left-align">
+	<h3>Today I'll discuss general iteration loop with Claude Code and specific examples</h3>
+	<ul>
+		<li>Color ramp tuning with Palette</li>
+		<li>Synthetic training data with Trellis</li>
+		<li>JavaScript figures in Fitness Flux</li>
+	</ul>
+</section>
+
+<section class="left-align">
+	<h3>General workflow</h3>
+	<ul>
+		<li>One project = one GitHub repo = one web Claude conversation thread</li>
+		<li>This thread keep's context for Claude in one place</li>
+		<li>I prefer web Claude for learning about a topic and its internet search
+		    is better than Claude Code</li>
+		<li>I produce "spec" documents in Markdown from web Claude and use these to plan out
+		    features in Claude Code</li>
+		<li>Development flow of spec → plan mode → implement plan → refine / fixups → commit</li>
+	</ul>
+</section>
+
+<section class="left-align">
+	<h3>Color ramp tuning with Palette</h3>
+	<ul>
+		<li>Original Nextstrain color ramp in Mathematica</li>
+		<li>Palette tuner at <a href="https://localhost:5173/">localhost:5173</a></li>
+	</ul>
+</section>
+
+<section class="left-align">
+	<h3>Synthetic training data with Trellis</h3>
+	<ul>
+		<li>Demo trajectory at <a href="https://blab.github.io/trellis/viz/">blab.github.io/trellis/viz/</a></li>
+	    <li>GitHub repo at <a href="https://github.com/blab/trellis">github.com/blab/trellis</a></li>
+	</ul>
+</section>
+
+<section class="left-align">
+	<h3>JavaScript figures in Fitness Flux</h3>
+	<ul>
+		<li>Online manuscript at <a href="https://blab.github.io/fitness-flux/">blab.github.io/fitness-flux/</a></li>
+        <li>GitHub repo at <a href="https://github.com/blab/fitness-flux">github.com/blab/fitness-flux</a></li>
+	</ul>
+</section>
