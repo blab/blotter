@@ -16,6 +16,11 @@ task :data do
 	sh "ruby _scripts/generate-project-data.rb"
 end
 
+desc "Query GitHub GraphQL for monthly commit-contribution counts; writes talks/viz/commit-counts/commits.json (requires GITHUB_TOKEN)"
+task :commits do
+	sh "ruby _scripts/generate-commit-counts.rb"
+end
+
 desc "bundle exec jekyll build"
 task :build do
 	sh "bundle exec jekyll build"

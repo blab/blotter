@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+  <head>
+    <style>
+
+      @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      svg {
+        display: block;
+      }
+
+      .line {
+        fill: none;
+        stroke: #3b759e;
+        stroke-width: 3px;
+      }
+
+      .point {
+        fill: #3b759e;
+      }
+
+      .axis text {
+        font-size: 15px;
+        fill: #333;
+      }
+
+      .axis path,
+      .axis line {
+        stroke: #999;
+        shape-rendering: crispEdges;
+      }
+
+      .grid line {
+        stroke: #e6e6e6;
+        shape-rendering: crispEdges;
+      }
+
+      .grid path {
+        stroke: none;
+      }
+
+      .axis-label {
+        font-size: 16px;
+        fill: #333;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <script src="/js/d3.v4.min.js"></script>
+
+    <svg></svg>
+
+    <script>
+
+      var margin = { top: 20, right: 30, bottom: 45, left: 55 };
+      var parseMonth = d3.timeParse("%Y-%m");
+
+      var svg = d3.select("svg");
+
+      d3.json("commits.json", function(error, data) {
+        if (error) throw error;
+
+        data.forEach(function(d) {
+          d.date = parseMonth(d.month);
+          d.count = +d.count;
+        });
+
+        function render() {
+
+          // size to the iframe viewport so the chart fills it exactly (no scrollbars)
+          var width = window.innerWidth,
+              height = window.innerHeight;
+
+          var innerWidth = width - margin.left - margin.right,
+              innerHeight = height - margin.top - margin.bottom;
+
+          svg.attr("width", width).attr("height", height);
+          svg.selectAll("*").remove();
+
+          var g = svg.append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+          var x = d3.scaleTime()
+            .domain(d3.extent(data, function(d) { return d.date; }))
+            .range([0, innerWidth]);
+
+          var y = d3.scaleLinear()
+            .domain([0, d3.max(data, function(d) { return d.count; })])
+            .nice()
+            .range([innerHeight, 0]);
+
+          var line = d3.line()
+            .x(function(d) { return x(d.date); })
+            .y(function(d) { return y(d.count); });
+
+          // horizontal gridlines
+          g.append("g")
+            .attr("class", "grid")
+            .call(d3.axisLeft(y).ticks(6).tickSize(-innerWidth).tickFormat(""));
+
+          // x axis: yearly ticks for long spans, quarterly for short ones
+          var xAxis = d3.axisBottom(x);
+          if (data.length > 48) {
+            xAxis.ticks(d3.timeYear.every(1)).tickFormat(d3.timeFormat("%Y"));
+          } else {
+            xAxis.ticks(d3.timeMonth.every(3)).tickFormat(d3.timeFormat("%b %Y"));
+          }
+          g.append("g")
+            .attr("class", "axis")
+            .attr("transform", "translate(0," + innerHeight + ")")
+            .call(xAxis);
+
+          // y axis
+          g.append("g")
+            .attr("class", "axis")
+            .call(d3.axisLeft(y).ticks(6));
+
+          // y axis label
+          g.append("text")
+            .attr("class", "axis-label")
+            .attr("transform", "rotate(-90)")
+            .attr("x", -innerHeight / 2)
+            .attr("y", -margin.left + 16)
+            .attr("text-anchor", "middle")
+            .text("Commits per month");
+
+          // line
+          g.append("path")
+            .datum(data)
+            .attr("class", "line")
+            .attr("d", line);
+
+          // points
+          g.selectAll(".point")
+            .data(data)
+            .enter()
+            .append("circle")
+            .attr("class", "point")
+            .attr("cx", function(d) { return x(d.date); })
+            .attr("cy", function(d) { return y(d.count); })
+            .attr("r", 3.5);
+        }
+
+        render();
+        window.addEventListener("resize", render);
+
+      });
+
+    </script>
+
+  </body>
+</html>
