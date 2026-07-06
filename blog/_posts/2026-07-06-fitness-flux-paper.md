@@ -10,7 +10,7 @@ In the preprint ["Fitness flux in SARS-CoV-2 and influenza H3N2"](/papers/bedfor
 
 All the way back during postdoc I been playing around with lightweight online "publishing" for my scientific papers. A first experiment in 2012 was with the [BMC Biology "canalization" paper](/papers/bedford-canalization/), where I had mirrored it online to [trvrb.github.io/canalization](https://trvrb.github.io/canalization/). Here, I had set up the [LaTeX manuscript](https://github.com/trvrb/canalization/blob/gh-pages/canal.tex) to compile to PDF for journal submission but to also compile to HTML for sharing via GitHub Pages.
 
-In first author work on the fitness flux preprint, I took the opportunity to revisit this same theme with more modern technology. The paper is available at [blab.github.io/fitness-flux](https://blab.github.io/fitness-flux/). Here I've included a few things including
+In first author work on the fitness flux preprint, I took the opportunity to revisit this same theme with more modern technology. The paper is available at [blab.github.io/fitness-flux](https://blab.github.io/fitness-flux/). Here I've included things such as
 1. Interactive JavaScript figures, allowing for nice affordances like toggling axes and hovering over datapoints for context,
 2. Everything you'd expect for scientific authoring including TeX math, figure and table references, citations, etc...
 3. Responsive design where the whole paper reflows for mobile vs desktop including figure panel layout.
@@ -22,5 +22,6 @@ Given one of the main questions of the paper was "is SARS-CoV-2 slowing in its e
 
 This structure would even permit a fully automated "living paper" that continually updates through GitHub Actions every day or every week as fresh data appears.
 This is similar in spirit to the machinery we arrived at for [Nextstrain pathogen surveillance](/papers/andrews-nextstrain-pathogens/).
+I've set up semantic versioning for the paper to provide a foundation for potential continued updates.
 
 I'll be submitting the paper in the normal preprint to peer review flow, but I'd encourage feedback through either comments to [bioRxiv preprint](), issues to [GitHub repo](https://github.com/blab/fitness-flux) or just email.
