@@ -57,6 +57,13 @@ draft: true
 </section>
 
 <section>
+	<img class="stretch" data-src="/images/talks/metr_time_horizon_2026_05_08.png">
+	<template class="slide-citation">
+		<a href="https://metr.org/time-horizons/">METR. 2026.</a>
+	</template>
+</section>
+
+<section>
 	<h3>My monthly GitHub commits</h3>
 	<iframe class="stretch" data-src="/talks/viz/commit-counts/"></iframe>
 </section>
@@ -66,7 +73,8 @@ draft: true
 	<ul>
 		<li>Color ramp tuning with Palette</li>
 		<li>Synthetic training data with Trellis</li>
-		<li>JavaScript figures in Fitness Flux</li>
+		<li>Fitness flux workflow and figures</li>
+		<li>(If there's time) code decrufting and performance improvements in Nextstrain</li>
 	</ul>
 </section>
 
@@ -74,25 +82,42 @@ draft: true
 	<h3>General workflow</h3>
 	<ul>
 		<li>One project = one GitHub repo = one web Claude conversation thread</li>
-		<li>This thread keep's context for Claude in one place</li>
-		<li>I prefer web Claude for learning about a topic and its internet search
-		    is better than Claude Code</li>
+		<li>This thread keeps context for Claude in one place</li>
+		<li>I prefer web Claude for learning about a topic, its internet search
+		    is better than Claude Code and it's tuned towards more "blue skies" thinking than
+			Claude Code's skilled plumbing</li>
 		<li>I produce "spec" documents in Markdown from web Claude and use these to plan out
 		    features in Claude Code</li>
 		<li>Development flow of spec → plan mode → implement plan → refine / fixups → commit</li>
+		<li>The spec document is committed alongside other commits in the feature branch / PR,
+		    serving to document design goals</li>
 	</ul>
 </section>
 
 <section class="left-align">
 	<h3>Color ramp tuning with Palette</h3>
+	<p>
+	    My original Nextstrain color ramp was a one off Mathematica notebook. In working on updated color ramp I wanted a tool for
+		live tuning, but this is something that's incredibly bespoke and there's no available bit of software. However, it's now
+		possible to just build the specific tool in a couple days of work.
+	</p>
 	<ul>
-		<li>Original Nextstrain color ramp in Mathematica</li>
 		<li>Palette tuner at <a href="https://localhost:5173/">localhost:5173</a></li>
 	</ul>
 </section>
 
 <section class="left-align">
 	<h3>Synthetic training data with Trellis</h3>
+	<p>
+	    <i>Lattice proteins</i> are a particular scientific instrument that was familiar with from the literature, but there's not great
+		simulators to accomplish what I wanted to accomplish (Jesse's <a href="https://github.com/jbloomlab/latticeproteins">repo</a>
+		from 2011 came decently close, but there were a number of things that I still wanted).
+		Engineering effort was easy and we get all kinds of unit tests, etc... in a way that I'm always too lazy / too busy
+		to implement.
+	</p>
+	<p>
+	    Plus I get a bunch of coaching on how to submit large-scale AWS Batch jobs.
+	</p>
 	<ul>
 		<li>Demo trajectory at <a href="https://blab.github.io/trellis/viz/">blab.github.io/trellis/viz/</a></li>
 	    <li>GitHub repo at <a href="https://github.com/blab/trellis">github.com/blab/trellis</a></li>
@@ -100,9 +125,28 @@ draft: true
 </section>
 
 <section class="left-align">
-	<h3>JavaScript figures in Fitness Flux</h3>
+	<h3>Fitness flux workflow and figures</h3>
+	<p>
+	    Although I've used Python for workflows for a while now, I was still relying on Mathematica for figures.
+		Here, I moved to everything in workflow with Observable Plot as the viz workhorse. It's verbose, but Claude is good
+		at verbose. This is a similar, but more atomic direction, to the Observable Plot dashboards you saw previously.
+	</p>
 	<ul>
 		<li>Online manuscript at <a href="https://blab.github.io/fitness-flux/">blab.github.io/fitness-flux/</a></li>
         <li>GitHub repo at <a href="https://github.com/blab/fitness-flux">github.com/blab/fitness-flux</a></li>
+	</ul>
+</section>
+
+<section class="left-align">
+	<h3>Code decrufting and performance improvements in Nextstrain</h3>
+	<p>
+	    Bioinformatic software is very often characterized by transforming some particular input files into some particular output files.
+	    Claude Code benefits when there's a stable harness to evaluate against and producing byte-identical output is a powerful constraint.
+	</p>
+	<ul>
+		<li>2X speed up to <code>augur filter</code> subsampling in <a href="https://github.com/nextstrain/augur/pull/2018">Augur PR #2018</a></li>
+		<li>Mainly code cleanup but some performance and features to
+		    <a href="https://github.com/nextstrain/ncov/pulls?q=is%3Apr+author%3Atrvrb+created%3A%3E2026-06-01">ncov</a> and
+			<a href="https://github.com/nextstrain/ncov-ingest/pulls?q=is%3Apr+author%3Atrvrb+created%3A%3E2026-06-01">ncov-ingest</a></li>
 	</ul>
 </section>
