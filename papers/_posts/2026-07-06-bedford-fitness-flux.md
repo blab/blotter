@@ -5,8 +5,9 @@ image: /images/papers/bedford-fitness-flux.png
 authors: Bedford T.
 year: 2026
 ref: Bedford. 2026. bioRxiv.
-journal: "bioRxiv: XXX."
+journal: "bioRxiv: 2026.07.05.736619."
 pdf: /pdfs/papers/bedford-fitness-flux.pdf
+doi: 10.64898/2026.07.05.736619
 github: https://github.com/blab/fitness-flux
 website: https://blab.github.io/fitness-flux/
 ---
