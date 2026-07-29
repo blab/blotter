@@ -3,7 +3,9 @@ layout: member
 title: Cécile Tran Kiem
 position: Postdoc
 github: CecileTK
+scholar: 5iSE3cwAAAAJ
 image: /images/team/cecile-tran-kiem.jpg
+website: https://ceciletk.github.io/
 email: ctrankie@fredhutch.org
 joined: 2022
 ---
