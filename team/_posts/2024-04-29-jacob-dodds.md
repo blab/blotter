@@ -5,6 +5,8 @@ position: Administrative coordinator
 github: jacobdodds
 image: /images/team/jacob-dodds.jpg
 joined: 2024
+departed: 2026
+alumni: true
 ---
 
 Hello! I am an Administrative Coordinator in the Bedford Lab. I am responsible for managing various operational and administrative tasks that help keep the lab operating smoothly. I aim to be a resource for those working within and alongside the lab.

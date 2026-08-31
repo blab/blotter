@@ -44,10 +44,10 @@ bundle exec jekyll build
 > If you are getting errors at this stage, it may be due to your version of `bundle`.
 > Try `gem uninstall bundler` + `gem install bundler -v 1.13.1`.
 
-Start a local Jekyll server to view the site.
+Start a local Jekyll server to view the site, using `--incremental` to speed up build cycles.
 
 ``` bash
-bundle exec jekyll serve
+bundle exec jekyll serve --incremental
 ```
 
 Open your browser to `http://localhost:4000/`. More information on Jekyll can be found [here](http://jekyllrb.com/).

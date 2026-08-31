@@ -9,7 +9,7 @@ image: /images/team/victor-lin.jpg
 website: https://victorl.in
 ---
 
-_Victor's primary supervisor is JT McCrone, Trevor remains as advisor for Victor and the Nextstrain team_
+_Victor's primary supervisor is JT McCrone, Trevor remains as informal advisor for Victor and the Nextstrain team._
 
 I am a full stack developer supporting development of [Nextstrain](https://nextstrain.org). Previously, I was a software engineer on the Microsoft cloud security team building automation tools for security analysts. Other prior involvements include building [serratus.io](https://serratus.io), a virus discovery platform based on public data within the Sequence Read Archive, and supporting cancer research under [Dr. Lei Zhou](http://mgm.ufl.edu/profile/zhou-lei/).
 

@@ -9,7 +9,7 @@ scholar: bgbbikoAAAAJ
 image: /images/team/james-hadfield.jpg
 ---
 
-_James's primary supervisor is JT McCrone, Trevor remains as advisor for James and the Nextstrain team_
+_James's primary supervisor is JT McCrone, Trevor remains as informal advisor for James and the Nextstrain team._
 
 I work on all aspects of [nextstrain](http://nextstrain.org), including a mixture of programming, data visualization, modeling, phylogenetics and communication. I have ongoing research projects on Influenza and viral reassortment detection.
 

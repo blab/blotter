@@ -12,7 +12,7 @@ image: /images/team/john-huddleston.jpg
 website: https://huddlej.github.io
 ---
 
-_John's faculty sponsor is Jesse Bloom, Trevor remains as collaborator for John's work on seasonal influenza_
+_John's faculty sponsor is Jesse Bloom, Trevor remains as collaborator for John's work on seasonal influenza._
 
 As a senior staff scientist in the Bedford Lab and [Bloom Lab](https://jbloomlab.org/), my work includes independent research, software development, and educational outreach and mentorship.
 I study the evolution of seasonal influenza viruses, develop computational models to predict the composition of future influenza populations, and contribute to reports to the World Health Organization's vaccine composition meetings.

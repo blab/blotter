@@ -9,7 +9,7 @@ image: /images/team/amin-bemanian.jpg
 joined: 2024
 ---
 
-_Amin's primary advisor is Josh Schiffer, Trevor remains as co-mentor_
+_Amin's primary advisor is Josh Schiffer, Trevor remains as co-mentor._
 
 I am a pediatric infectious disease fellow at the University of Washington/Seattle Children's Hospital who joined the lab in July 2024. My research focuses on investigating geospatial patterns of spread and transmission in viruses by utilizing phylogenetic and sequencing data.
 

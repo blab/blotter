@@ -8,6 +8,8 @@ image: /images/team/cecile-tran-kiem.jpg
 website: https://ceciletk.github.io/
 email: ctrankie@fredhutch.org
 joined: 2022
+departed: 2026
+alumni: true
 ---
 
 I joined the lab as a postdoc in October 2022. I am interested in developing modelling approaches to better understand the propagation of pathogens in populations by combining more traditional epidemiological data with viral sequence information.
