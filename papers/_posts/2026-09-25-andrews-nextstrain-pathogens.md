@@ -4,10 +4,11 @@ title: Nextstrain automates real-time phylogenetic analysis of open data for end
 image: /images/papers/andrews-nextstrain-pathogens.png
 authors: Andrews KR, Chang J, Roemer C, Hadfield J, Lin V, Brito AF, Daodu RO, Joia IA, Kistler K, Li A, Moncla LH, Paredes MI, Kühnert D, Torres LM, Voitl L, Aksamentov I, Hodcroft EB, Huddleston J, McCrone JT, Anderson JSJ, Sibley TR, Lee J, Neher RA, Bedford T. 
 year: 2026
-ref: Andrews et al. 2026. bioRxiv.
-journal: "bioRxiv: 2026.03.23.713807."
+ref: Andrews et al. 2026. Bioinformatics.
+journal: "Bioinformatics: btag705."
 pdf: /pdfs/papers/andrews-nextstrain-pathogens.pdf
-doi: 10.64898/2026.03.23.713807
+supplment: /pdfs/papers/andrews-nextstrain-pathogens-supp.pdf
+doi: 10.1093/bioinformatics/btag705
 github: https://github.com/nextstrain
 website: https://nextstrain.org/pathogens
 ---
@@ -18,4 +19,5 @@ website: https://nextstrain.org/pathogens
 
 **Results:** Nextstrain provides continually updated real-time genomic surveillance for 21 viruses and the bacterial pathogen Mycobacterium tuberculosis, with most analyses relying solely on open sequence data. Each pathogen includes steps to fetch and curate open data, classify sequences using established nomenclature systems, perform phylogenetic analyses, and share the results publicly. These analyses are automated, with most running daily to provide continually updated snapshots of pathogen evolution.
 
-**Availability and Implementation:** All source code is available at [github.com/nextstrain](https://github.com/nextstrain). Phylogenetic results can be visualized and downloaded at [nextstrain.org/pathogens](https://nextstrain.org/pathogens), and open sequence data and curated metadata are available at [nextstrain.org/pathogens/files](https://nextstrain.org/pathogens/files).
+**Availability and Implementation:**
+All source code is available at [github.com/nextstrain](https://github.com/nextstrain) and a snapshot is archived at [Zenodo](https://doi.org/10.5281/zenodo.22697730). Phylogenetic results can be visualized and downloaded at [nextstrain.org/pathogens](https://nextstrain.org/pathogens), and open sequence data and curated metadata are available at [nextstrain.org/pathogens/files](https://nextstrain.org/pathogens/files).
