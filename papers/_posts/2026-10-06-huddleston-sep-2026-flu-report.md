@@ -4,7 +4,7 @@ title: Seasonal influenza circulation patterns and projections for September 202
 image: /images/papers/huddleston-sep-2026-flu-report.png
 authors: Huddleston J, Lee J, Steinberg P, Kikawa C, Butler A, Bloom JD, Bedford T, Neher RA.
 year: 2026
-ref: Huddleston et al. 2026b. Zenodo.
+ref: Huddleston et al. 2026. Zenodo.
 journal: "Zenodo: 23194451."
 pdf: /pdfs/papers/huddleston-sep-2026-flu-report.pdf
 doi: 10.5281/zenodo.23194451
