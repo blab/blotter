@@ -4,10 +4,10 @@ title: Fitness flux in SARS-CoV-2 and influenza H3N2
 image: /images/papers/bedford-fitness-flux.png
 authors: Bedford T.
 year: 2026
-ref: Bedford. 2026. bioRxiv.
-journal: "bioRxiv: 2026.07.05.736619."
+ref: Bedford. 2026. eLife.
+journal: "eLife 15: RP112601."
 pdf: /pdfs/papers/bedford-fitness-flux.pdf
-doi: 10.64898/2026.07.05.736619
+doi: 10.7554/eLife.112601.1
 github: https://github.com/blab/fitness-flux
 website: https://blab.github.io/fitness-flux/
 ---
