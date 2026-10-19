@@ -5,7 +5,7 @@ image: /images/papers/andrews-nextstrain-pathogens.png
 authors: Andrews KR, Chang J, Roemer C, Hadfield J, Lin V, Brito AF, Daodu RO, Joia IA, Kistler K, Li A, Moncla LH, Paredes MI, Kühnert D, Torres LM, Voitl L, Aksamentov I, Hodcroft EB, Huddleston J, McCrone JT, Anderson JSJ, Sibley TR, Lee J, Neher RA, Bedford T. 
 year: 2026
 ref: Andrews et al. 2026. Bioinformatics.
-journal: "Bioinformatics: btag705."
+journal: "Bioinformatics 42: btag705."
 pdf: /pdfs/papers/andrews-nextstrain-pathogens.pdf
 supplment: /pdfs/papers/andrews-nextstrain-pathogens-supp.pdf
 doi: 10.1093/bioinformatics/btag705
