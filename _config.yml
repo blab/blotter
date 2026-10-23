@@ -56,6 +56,7 @@ exclude:
   - "*.zip"
   - "Gemfile"
   - "Gemfile.lock"
+  - "environment*.sh"
   - "projects/siv-cst/beast/main/empiricalTrees/xml/*"
   - "projects/siv-cst/beast/supplement/discreteTraits/xml/*"
   - "projects/siv-cst/beast/supplement/empiricalTrees/xml/*"
