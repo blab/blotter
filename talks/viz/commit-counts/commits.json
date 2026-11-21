@@ -1,7 +1,7 @@
 [
   {
     "month": "2023-07",
-    "total": 37,
+    "total": 38,
     "claude": 0
   },
   {
@@ -11,172 +11,192 @@
   },
   {
     "month": "2023-09",
-    "total": 6,
-    "claude": 0
-  },
-  {
-    "month": "2023-10",
-    "total": 12,
-    "claude": 0
-  },
-  {
-    "month": "2023-11",
-    "total": 23,
-    "claude": 0
-  },
-  {
-    "month": "2023-12",
-    "total": 21,
-    "claude": 0
-  },
-  {
-    "month": "2024-01",
-    "total": 18,
-    "claude": 0
-  },
-  {
-    "month": "2024-02",
-    "total": 13,
-    "claude": 0
-  },
-  {
-    "month": "2024-03",
-    "total": 31,
-    "claude": 0
-  },
-  {
-    "month": "2024-04",
-    "total": 36,
-    "claude": 0
-  },
-  {
-    "month": "2024-05",
-    "total": 49,
-    "claude": 0
-  },
-  {
-    "month": "2024-06",
-    "total": 34,
-    "claude": 0
-  },
-  {
-    "month": "2024-07",
-    "total": 26,
-    "claude": 0
-  },
-  {
-    "month": "2024-08",
-    "total": 35,
-    "claude": 0
-  },
-  {
-    "month": "2024-09",
-    "total": 28,
-    "claude": 0
-  },
-  {
-    "month": "2024-10",
-    "total": 53,
-    "claude": 0
-  },
-  {
-    "month": "2024-11",
-    "total": 46,
-    "claude": 0
-  },
-  {
-    "month": "2024-12",
-    "total": 35,
-    "claude": 0
-  },
-  {
-    "month": "2025-01",
-    "total": 33,
-    "claude": 0
-  },
-  {
-    "month": "2025-02",
-    "total": 33,
-    "claude": 0
-  },
-  {
-    "month": "2025-03",
-    "total": 41,
-    "claude": 0
-  },
-  {
-    "month": "2025-04",
-    "total": 18,
-    "claude": 0
-  },
-  {
-    "month": "2025-05",
-    "total": 9,
-    "claude": 0
-  },
-  {
-    "month": "2025-06",
     "total": 7,
     "claude": 0
   },
   {
-    "month": "2025-07",
-    "total": 16,
+    "month": "2023-10",
+    "total": 15,
     "claude": 0
   },
   {
-    "month": "2025-08",
+    "month": "2023-11",
     "total": 26,
+    "claude": 0
+  },
+  {
+    "month": "2023-12",
+    "total": 25,
+    "claude": 0
+  },
+  {
+    "month": "2024-01",
+    "total": 24,
+    "claude": 0
+  },
+  {
+    "month": "2024-02",
+    "total": 18,
+    "claude": 0
+  },
+  {
+    "month": "2024-03",
+    "total": 43,
+    "claude": 0
+  },
+  {
+    "month": "2024-04",
+    "total": 51,
+    "claude": 0
+  },
+  {
+    "month": "2024-05",
+    "total": 51,
+    "claude": 0
+  },
+  {
+    "month": "2024-06",
+    "total": 49,
+    "claude": 0
+  },
+  {
+    "month": "2024-07",
+    "total": 30,
+    "claude": 0
+  },
+  {
+    "month": "2024-08",
+    "total": 39,
+    "claude": 0
+  },
+  {
+    "month": "2024-09",
+    "total": 37,
+    "claude": 0
+  },
+  {
+    "month": "2024-10",
+    "total": 67,
+    "claude": 0
+  },
+  {
+    "month": "2024-11",
+    "total": 61,
+    "claude": 0
+  },
+  {
+    "month": "2024-12",
+    "total": 45,
+    "claude": 0
+  },
+  {
+    "month": "2025-01",
+    "total": 36,
+    "claude": 0
+  },
+  {
+    "month": "2025-02",
+    "total": 51,
+    "claude": 0
+  },
+  {
+    "month": "2025-03",
+    "total": 60,
+    "claude": 0
+  },
+  {
+    "month": "2025-04",
+    "total": 39,
+    "claude": 0
+  },
+  {
+    "month": "2025-05",
+    "total": 45,
+    "claude": 0
+  },
+  {
+    "month": "2025-06",
+    "total": 20,
+    "claude": 0
+  },
+  {
+    "month": "2025-07",
+    "total": 68,
+    "claude": 20
+  },
+  {
+    "month": "2025-08",
+    "total": 36,
     "claude": 0
   },
   {
     "month": "2025-09",
-    "total": 21,
-    "claude": 0
+    "total": 106,
+    "claude": 28
   },
   {
     "month": "2025-10",
-    "total": 21,
-    "claude": 12
+    "total": 86,
+    "claude": 48
   },
   {
     "month": "2025-11",
-    "total": 14,
+    "total": 28,
     "claude": 0
   },
   {
     "month": "2025-12",
-    "total": 26,
+    "total": 33,
     "claude": 10
   },
   {
     "month": "2026-01",
-    "total": 50,
-    "claude": 19
+    "total": 84,
+    "claude": 34
   },
   {
     "month": "2026-02",
-    "total": 67,
-    "claude": 28
+    "total": 214,
+    "claude": 117
   },
   {
     "month": "2026-03",
-    "total": 23,
-    "claude": 3
+    "total": 79,
+    "claude": 34
   },
   {
     "month": "2026-04",
-    "total": 1,
-    "claude": 0
+    "total": 24,
+    "claude": 18
   },
   {
     "month": "2026-05",
-    "total": 107,
-    "claude": 73
+    "total": 203,
+    "claude": 133
   },
   {
     "month": "2026-06",
-    "total": 100,
-    "claude": 48
+    "total": 339,
+    "claude": 226
+  },
+  {
+    "month": "2026-07",
+    "total": 320,
+    "claude": 207
+  },
+  {
+    "month": "2026-08",
+    "total": 77,
+    "claude": 49
+  },
+  {
+    "month": "2026-09",
+    "total": 93,
+    "claude": 63
+  },
+  {
+    "month": "2026-10",
+    "total": 242,
+    "claude": 174
   }
 ]

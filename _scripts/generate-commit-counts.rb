@@ -25,7 +25,7 @@ require 'date'
 require 'fileutils'
 
 START_MONTH = Date.new(2023, 7, 1)
-END_MONTH   = Date.new(2026, 6, 1)
+END_MONTH   = Date.new(2026, 10, 1)
 OUTPUT      = "talks/viz/commit-counts/commits.json"
 
 # A commit is Claude-co-authored if its message carries the trailer. Matches
